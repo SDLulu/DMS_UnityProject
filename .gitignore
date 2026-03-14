@@ -1,0 +1,52 @@
+# Unity generated folders
+/Library/
+/Temp/
+/Obj/
+/Build/
+/Builds/
+/Logs/
+/UserSettings/
+/MemoryCaptures/
+/Recordings/
+/ProfileRecordings/
+
+# Addressables / player build output
+/ServerData/
+
+# IDE / editor caches
+/.vs/
+/.vscode/
+/.idea/
+/.fleet/
+
+# OS / tooling noise
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Generated project files
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Build artifacts
+*.apk
+*.aab
+*.unitypackage
+
+# Crash / diagnostic output
+sysinfo.txt
