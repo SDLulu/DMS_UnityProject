@@ -1,0 +1,832 @@
+fileFormatVersion: 2
+guid: 92a697cc573305b4b93bb8595af2edad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8685270517539730170
+    second: 4_Small_Crushed and exploded_0
+  - first:
+      213: -4226605765732811867
+    second: 4_Small_Crushed and exploded_1
+  - first:
+      213: -3774890220768903045
+    second: 4_Small_Crushed and exploded_2
+  - first:
+      213: 5652869882048630778
+    second: 4_Small_Crushed and exploded_3
+  - first:
+      213: 2771554793157524318
+    second: 4_Small_Crushed and exploded_4
+  - first:
+      213: -7236682896051938667
+    second: 4_Small_Crushed and exploded_5
+  - first:
+      213: 2227755031624583692
+    second: 4_Small_Crushed and exploded_6
+  - first:
+      213: 2824427973578412821
+    second: 4_Small_Crushed and exploded_7
+  - first:
+      213: 2156340535864807013
+    second: 4_Small_Crushed and exploded_8
+  - first:
+      213: 4829549280415542771
+    second: 4_Small_Crushed and exploded_9
+  - first:
+      213: 7150574303939349895
+    second: 4_Small_Crushed and exploded_10
+  - first:
+      213: -593692311225969428
+    second: 4_Small_Crushed and exploded_11
+  - first:
+      213: 5898016637310822597
+    second: 4_Small_Crushed and exploded_12
+  - first:
+      213: 4335870260011361322
+    second: 4_Small_Crushed and exploded_13
+  - first:
+      213: 7574822106510196038
+    second: 4_Small_Crushed and exploded_14
+  - first:
+      213: -3226369722011201610
+    second: 4_Small_Crushed and exploded_15
+  - first:
+      213: -2674340037746602617
+    second: 4_Small_Crushed and exploded_16
+  - first:
+      213: -2052100028311325444
+    second: 4_Small_Crushed and exploded_17
+  - first:
+      213: -4465199079746210393
+    second: 4_Small_Crushed and exploded_18
+  - first:
+      213: 5885466401439369015
+    second: 4_Small_Crushed and exploded_19
+  - first:
+      213: -1538591581283541476
+    second: 4_Small_Crushed and exploded_20
+  - first:
+      213: -5172712173954711739
+    second: 4_Small_Crushed and exploded_21
+  - first:
+      213: 5165436086442317814
+    second: 4_Small_Crushed and exploded_22
+  - first:
+      213: -5009239034692344497
+    second: 4_Small_Crushed and exploded_23
+  - first:
+      213: -3199851537140106168
+    second: 4_Small_Crushed and exploded_24
+  - first:
+      213: -1957830894719405339
+    second: 4_Small_Crushed and exploded_25
+  - first:
+      213: 4196094755610484160
+    second: 4_Small_Crushed and exploded_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_0
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 7
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2f028e487488870800000000000000
+      internalID: 8685270517539730170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_1
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 5
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5abb0e713741855c0800000000000000
+      internalID: -4226605765732811867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_2
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 39
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7049fc2855ec9bc0800000000000000
+      internalID: -3774890220768903045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_3
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 4
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff43012537037e40800000000000000
+      internalID: 5652869882048630778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_4
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 6
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b7fa9666a867620800000000000000
+      internalID: 2771554793157524318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_5
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 11
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59adda46f33229b90800000000000000
+      internalID: -7236682896051938667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_6
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 14
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a829ae5639aee10800000000000000
+      internalID: 2227755031624583692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_7
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 18
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51351da0742623720800000000000000
+      internalID: 2824427973578412821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_8
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 35
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e4ff6ea4cdced10800000000000000
+      internalID: 2156340535864807013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_9
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 32
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fd69648b71060340800000000000000
+      internalID: 4829549280415542771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_10
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 40
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d475ea171fb3360800000000000000
+      internalID: 7150574303939349895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_11
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 37
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4de7b0df7c2c7f0800000000000000
+      internalID: -593692311225969428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c86142f1e6f9d150800000000000000
+      internalID: 5898016637310822597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_13
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 15
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a246820770b1c2c30800000000000000
+      internalID: 4335870260011361322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_14
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 15
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64df05f929c2f1960800000000000000
+      internalID: 7574822106510196038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_15
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf4275f4d1a933d0800000000000000
+      internalID: -3226369722011201610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_16
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 11
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d4289a7e5d2ead0800000000000000
+      internalID: -2674340037746602617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_17
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 26
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf43fe095e97583e0800000000000000
+      internalID: -2052100028311325444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_18
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 28
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a57358381d6802c0800000000000000
+      internalID: -4465199079746210393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_19
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 26
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7374a4372806da150800000000000000
+      internalID: 5885466401439369015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_20
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 25
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e103fcb13d5aae0800000000000000
+      internalID: -1538591581283541476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_21
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 13
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f371a1fa5d638b0800000000000000
+      internalID: -5172712173954711739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_22
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 31
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f7d062c0c05fa740800000000000000
+      internalID: 5165436086442317814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_23
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 13
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45642653ab9b7ab0800000000000000
+      internalID: -5009239034692344497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_24
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 16
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84cb6c20bf7d793d0800000000000000
+      internalID: -3199851537140106168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_25
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 9
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e2f6fd9c2364d4e0800000000000000
+      internalID: -1957830894719405339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Small_Crushed and exploded_26
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 20
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cdda08c2f58b3a30800000000000000
+      internalID: 4196094755610484160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      4_Small_Crushed and exploded_0: 8685270517539730170
+      4_Small_Crushed and exploded_1: -4226605765732811867
+      4_Small_Crushed and exploded_10: 7150574303939349895
+      4_Small_Crushed and exploded_11: -593692311225969428
+      4_Small_Crushed and exploded_12: 5898016637310822597
+      4_Small_Crushed and exploded_13: 4335870260011361322
+      4_Small_Crushed and exploded_14: 7574822106510196038
+      4_Small_Crushed and exploded_15: -3226369722011201610
+      4_Small_Crushed and exploded_16: -2674340037746602617
+      4_Small_Crushed and exploded_17: -2052100028311325444
+      4_Small_Crushed and exploded_18: -4465199079746210393
+      4_Small_Crushed and exploded_19: 5885466401439369015
+      4_Small_Crushed and exploded_2: -3774890220768903045
+      4_Small_Crushed and exploded_20: -1538591581283541476
+      4_Small_Crushed and exploded_21: -5172712173954711739
+      4_Small_Crushed and exploded_22: 5165436086442317814
+      4_Small_Crushed and exploded_23: -5009239034692344497
+      4_Small_Crushed and exploded_24: -3199851537140106168
+      4_Small_Crushed and exploded_25: -1957830894719405339
+      4_Small_Crushed and exploded_26: 4196094755610484160
+      4_Small_Crushed and exploded_3: 5652869882048630778
+      4_Small_Crushed and exploded_4: 2771554793157524318
+      4_Small_Crushed and exploded_5: -7236682896051938667
+      4_Small_Crushed and exploded_6: 2227755031624583692
+      4_Small_Crushed and exploded_7: 2824427973578412821
+      4_Small_Crushed and exploded_8: 2156340535864807013
+      4_Small_Crushed and exploded_9: 4829549280415542771
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

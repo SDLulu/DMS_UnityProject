@@ -1,0 +1,2938 @@
+fileFormatVersion: 2
+guid: 30ee1b1ba222cf946b44cd9ab0cdc153
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2905532795119713257
+    second: wall_sindow_allin_0
+  - first:
+      213: 228712192315469599
+    second: wall_sindow_allin_1
+  - first:
+      213: 2693732317043145741
+    second: wall_sindow_allin_2
+  - first:
+      213: 5474103345203126473
+    second: wall_sindow_allin_3
+  - first:
+      213: 7977142557083841871
+    second: wall_sindow_allin_4
+  - first:
+      213: 6509378084791537803
+    second: wall_sindow_allin_5
+  - first:
+      213: -732554212493444400
+    second: wall_sindow_allin_6
+  - first:
+      213: 3761376256034810862
+    second: wall_sindow_allin_7
+  - first:
+      213: -4550653561834395800
+    second: wall_sindow_allin_8
+  - first:
+      213: 2183857099700960485
+    second: wall_sindow_allin_9
+  - first:
+      213: 7992550694621666887
+    second: wall_sindow_allin_10
+  - first:
+      213: 8564584225524343063
+    second: wall_sindow_allin_11
+  - first:
+      213: 214136952903647482
+    second: wall_sindow_allin_12
+  - first:
+      213: -8034345940937272298
+    second: wall_sindow_allin_13
+  - first:
+      213: 8878226253409800328
+    second: wall_sindow_allin_14
+  - first:
+      213: 8352282751066350886
+    second: wall_sindow_allin_15
+  - first:
+      213: 1122770183096481464
+    second: wall_sindow_allin_16
+  - first:
+      213: 6048734498151983694
+    second: wall_sindow_allin_17
+  - first:
+      213: -7897433701933344881
+    second: wall_sindow_allin_18
+  - first:
+      213: 4733925004575379091
+    second: wall_sindow_allin_19
+  - first:
+      213: 2686347301271796960
+    second: wall_sindow_allin_20
+  - first:
+      213: -7301689517620961890
+    second: wall_sindow_allin_21
+  - first:
+      213: -4568862376636963623
+    second: wall_sindow_allin_22
+  - first:
+      213: -5203824731974696942
+    second: wall_sindow_allin_23
+  - first:
+      213: 5577198934582538484
+    second: wall_sindow_allin_24
+  - first:
+      213: 8097939040970220038
+    second: wall_sindow_allin_25
+  - first:
+      213: 924817371801728143
+    second: wall_sindow_allin_26
+  - first:
+      213: 4168552960343252104
+    second: wall_sindow_allin_27
+  - first:
+      213: 703497423763854157
+    second: wall_sindow_allin_28
+  - first:
+      213: -4358792929432969653
+    second: wall_sindow_allin_29
+  - first:
+      213: 4902025673433603584
+    second: wall_sindow_allin_30
+  - first:
+      213: -3819861677997997139
+    second: wall_sindow_allin_31
+  - first:
+      213: 6247104443791349264
+    second: wall_sindow_allin_32
+  - first:
+      213: -4485000500068103276
+    second: wall_sindow_allin_33
+  - first:
+      213: -1393611251778871684
+    second: wall_sindow_allin_34
+  - first:
+      213: -3367519644617595824
+    second: wall_sindow_allin_35
+  - first:
+      213: 8754108457846690713
+    second: wall_sindow_allin_36
+  - first:
+      213: 7960101677501858813
+    second: wall_sindow_allin_37
+  - first:
+      213: -6717849271887117365
+    second: wall_sindow_allin_38
+  - first:
+      213: -7765515396791038603
+    second: wall_sindow_allin_39
+  - first:
+      213: -1959449308063542638
+    second: wall_sindow_allin_40
+  - first:
+      213: 687431827191425094
+    second: wall_sindow_allin_41
+  - first:
+      213: -4252158097398851686
+    second: wall_sindow_allin_42
+  - first:
+      213: 8496726941527997523
+    second: wall_sindow_allin_43
+  - first:
+      213: 5568073440690818435
+    second: wall_sindow_allin_44
+  - first:
+      213: 7556532795320818794
+    second: wall_sindow_allin_45
+  - first:
+      213: 4115425296733479226
+    second: wall_sindow_allin_46
+  - first:
+      213: 2496340901595487047
+    second: wall_sindow_allin_47
+  - first:
+      213: -1442030195537642646
+    second: wall_sindow_allin_48
+  - first:
+      213: -958709743972956465
+    second: wall_sindow_allin_49
+  - first:
+      213: -4536593297638299695
+    second: wall_sindow_allin_50
+  - first:
+      213: 7315447662116680468
+    second: wall_sindow_allin_51
+  - first:
+      213: 7121689237454437298
+    second: wall_sindow_allin_52
+  - first:
+      213: -6322276418615568284
+    second: wall_sindow_allin_53
+  - first:
+      213: 3908914617773820845
+    second: wall_sindow_allin_54
+  - first:
+      213: 7689944847254471200
+    second: wall_sindow_allin_55
+  - first:
+      213: 3415126738416829355
+    second: wall_sindow_allin_56
+  - first:
+      213: -1122257960860618871
+    second: wall_sindow_allin_57
+  - first:
+      213: 4991383153778046172
+    second: wall_sindow_allin_58
+  - first:
+      213: -915851233475972982
+    second: wall_sindow_allin_59
+  - first:
+      213: 1123958157844835614
+    second: wall_sindow_allin_60
+  - first:
+      213: 1717314270971511248
+    second: wall_sindow_allin_61
+  - first:
+      213: 9173344153170198630
+    second: wall_sindow_allin_62
+  - first:
+      213: 8475285897196361387
+    second: wall_sindow_allin_63
+  - first:
+      213: 5247177147917544382
+    second: wall_sindow_allin_64
+  - first:
+      213: -2814407211236632970
+    second: wall_sindow_allin_65
+  - first:
+      213: -8389880672593027537
+    second: wall_sindow_allin_66
+  - first:
+      213: 141688214376856500
+    second: wall_sindow_allin_67
+  - first:
+      213: -8720265282574358797
+    second: wall_sindow_allin_68
+  - first:
+      213: 935909651590867994
+    second: wall_sindow_allin_69
+  - first:
+      213: -8208676377524445406
+    second: wall_sindow_allin_70
+  - first:
+      213: 2781502976903093764
+    second: wall_sindow_allin_71
+  - first:
+      213: -3430986232434517086
+    second: wall_sindow_allin_72
+  - first:
+      213: -1800513912874802489
+    second: wall_sindow_allin_73
+  - first:
+      213: -2242225838401245732
+    second: wall_sindow_allin_74
+  - first:
+      213: 4839035375970515839
+    second: wall_sindow_allin_75
+  - first:
+      213: -7831929257510216060
+    second: wall_sindow_allin_76
+  - first:
+      213: -2875288748395489103
+    second: wall_sindow_allin_77
+  - first:
+      213: 1792012440785121423
+    second: wall_sindow_allin_78
+  - first:
+      213: -6705374765990883825
+    second: wall_sindow_allin_79
+  - first:
+      213: 8884938812087029471
+    second: wall_sindow_allin_80
+  - first:
+      213: 1625076074396690683
+    second: wall_sindow_allin_81
+  - first:
+      213: -6256533273782651335
+    second: wall_sindow_allin_82
+  - first:
+      213: 678472304685438123
+    second: wall_sindow_allin_83
+  - first:
+      213: 6929988891055546324
+    second: wall_sindow_allin_84
+  - first:
+      213: -3839909682554705400
+    second: wall_sindow_allin_85
+  - first:
+      213: 5569865582276062903
+    second: wall_sindow_allin_86
+  - first:
+      213: 7769434865445489382
+    second: wall_sindow_allin_87
+  - first:
+      213: 7046467421709620833
+    second: wall_sindow_allin_88
+  - first:
+      213: 4720966807659525008
+    second: wall_sindow_allin_89
+  - first:
+      213: 8793205063335008143
+    second: wall_sindow_allin_90
+  - first:
+      213: 3388569491101333450
+    second: wall_sindow_allin_91
+  - first:
+      213: -7548148239167871784
+    second: wall_sindow_allin_92
+  - first:
+      213: 5772859095797822072
+    second: wall_sindow_allin_93
+  - first:
+      213: 7013574278195951731
+    second: wall_sindow_allin_94
+  - first:
+      213: 2705413263145327960
+    second: wall_sindow_allin_95
+  - first:
+      213: 8858984079852088862
+    second: wall_sindow_allin_96
+  - first:
+      213: -1973993983537941394
+    second: wall_sindow_allin_97
+  - first:
+      213: -873340099602763504
+    second: wall_sindow_allin_98
+  - first:
+      213: -8504808845740388181
+    second: wall_sindow_allin_99
+  - first:
+      213: 1501657784335514543
+    second: wall_sindow_allin_100
+  - first:
+      213: -4883036873525814766
+    second: wall_sindow_allin_101
+  - first:
+      213: 7384738327020625331
+    second: wall_sindow_allin_102
+  - first:
+      213: 5119605104601113879
+    second: wall_sindow_allin_103
+  - first:
+      213: -648865247241825076
+    second: wall_sindow_allin_104
+  - first:
+      213: -6763729687821077846
+    second: wall_sindow_allin_105
+  - first:
+      213: 5355223959350796121
+    second: wall_sindow_allin_106
+  - first:
+      213: -7426163871644250323
+    second: wall_sindow_allin_107
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wall_sindow_allin_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1487
+        width: 258
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71444a721597da7d0800000000000000
+      internalID: -2905532795119713257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_1
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1487
+        width: 258
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1fa3c2f68c8c2300800000000000000
+      internalID: 228712192315469599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_2
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1727
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0cb855354f026520800000000000000
+      internalID: 2693732317043145741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_3
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1727
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c02c9a4dfbe7fb40800000000000000
+      internalID: 5474103345203126473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_4
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1727
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4532a514e084be60800000000000000
+      internalID: 7977142557083841871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_5
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1599
+        width: 66
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8056b441e4f55a50800000000000000
+      internalID: 6509378084791537803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_6
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1599
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dabc9133d175d5f0800000000000000
+      internalID: -732554212493444400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_7
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1695
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb2b87b6c7133430800000000000000
+      internalID: 3761376256034810862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_8
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1695
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867aef622b4d8d0c0800000000000000
+      internalID: -4550653561834395800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_9
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1695
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ecf3eb267e9e4e10800000000000000
+      internalID: 2183857099700960485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_10
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1599
+        width: 66
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ed93aa28e3bee60800000000000000
+      internalID: 7992550694621666887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_11
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1599
+        width: 66
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711ea4bd9f38bd670800000000000000
+      internalID: 8564584225524343063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_12
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1663
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af04b139c64c8f200800000000000000
+      internalID: 214136952903647482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_13
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1663
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61415db3fe4408090800000000000000
+      internalID: -8034345940937272298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_14
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1663
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 880d9061dbbc53b70800000000000000
+      internalID: 8878226253409800328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_15
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 1599
+        width: 66
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625aee8e8e449e370800000000000000
+      internalID: 8352282751066350886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_16
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1599
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6bdd76881e49f00800000000000000
+      internalID: 1122770183096481464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_17
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 1599
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4aeffe7afb61f350800000000000000
+      internalID: 6048734498151983694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_18
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1487
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f879017f3eda66290800000000000000
+      internalID: -7897433701933344881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_19
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1423
+        width: 50
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e0e03d5b742b140800000000000000
+      internalID: 4733925004575379091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_20
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1423
+        width: 50
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec72ab33a2d74520800000000000000
+      internalID: 2686347301271796960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_21
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1423
+        width: 50
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d520ad1103baa90800000000000000
+      internalID: -7301689517620961890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_22
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1423
+        width: 50
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d428e410e32890c0800000000000000
+      internalID: -4568862376636963623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_23
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 1423
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21081413afc48c7b0800000000000000
+      internalID: -5203824731974696942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_24
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 1423
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0ba79b1e0366d40800000000000000
+      internalID: 5577198934582538484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_25
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1199
+        width: 258
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6022ccd27a8a16070800000000000000
+      internalID: 8097939040970220038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_26
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1343
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f843a50ff7c95dc00800000000000000
+      internalID: 924817371801728143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_27
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1343
+        width: 66
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c99acd4dca9d930800000000000000
+      internalID: 4168552960343252104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_28
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1423
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43d8dbfd2353c900800000000000000
+      internalID: 703497423763854157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_29
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1247
+        width: 34
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ed9aface47283c0800000000000000
+      internalID: -4358792929432969653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_30
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1247
+        width: 34
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00edad0c06e770440800000000000000
+      internalID: 4902025673433603584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_31
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1247
+        width: 34
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da34dc7da002dfac0800000000000000
+      internalID: -3819861677997997139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_32
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1247
+        width: 34
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01692fe946c22b650800000000000000
+      internalID: 6247104443791349264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_33
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 1247
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49bcdf7cec312c1c0800000000000000
+      internalID: -4485000500068103276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_34
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1247
+        width: 34
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e9bbe33f5e8ace0800000000000000
+      internalID: -1393611251778871684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_35
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1247
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0542b60a9ba2441d0800000000000000
+      internalID: -3367519644617595824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_36
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 895
+        width: 258
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993d13bd247dc7970800000000000000
+      internalID: 8754108457846690713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_37
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 895
+        width: 258
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df34d7f1d46f77e60800000000000000
+      internalID: 7960101677501858813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_38
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1135
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc34d8e0ea765c2a0800000000000000
+      internalID: -6717849271887117365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_39
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1135
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57d817cd3e85b3490800000000000000
+      internalID: -7765515396791038603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_40
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1135
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292dc756c33aec4e0800000000000000
+      internalID: -1959449308063542638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_41
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1007
+        width: 66
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648ea0bca9f3a8900800000000000000
+      internalID: 687431827191425094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_42
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1007
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a979db34dbc4df4c0800000000000000
+      internalID: -4252158097398851686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_43
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1103
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c744fb2207ae570800000000000000
+      internalID: 8496726941527997523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_44
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1103
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38dc9ab1b45c54d40800000000000000
+      internalID: 5568073440690818435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_45
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1103
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6cdfa68a823ed860800000000000000
+      internalID: 7556532795320818794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_46
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1007
+        width: 66
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31a47fb08dec1930800000000000000
+      internalID: 4115425296733479226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_47
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1007
+        width: 66
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74b90e5e2d8c4a220800000000000000
+      internalID: 2496340901595487047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_48
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1071
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b77976d21ecfbe0800000000000000
+      internalID: -1442030195537642646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_49
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1071
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc649cb319af1b2f0800000000000000
+      internalID: -958709743972956465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_50
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1071
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d7e9d38e68ca01c0800000000000000
+      internalID: -4536593297638299695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_51
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 1007
+        width: 66
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4133d69c3e0b58560800000000000000
+      internalID: 7315447662116680468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_52
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1007
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bbb13f01a255d260800000000000000
+      internalID: 7121689237454437298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_53
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 1007
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46817981813c248a0800000000000000
+      internalID: -6322276418615568284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_54
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 895
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dab8db172214f3630800000000000000
+      internalID: 3908914617773820845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_55
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 831
+        width: 50
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022c2f2781c28ba60800000000000000
+      internalID: 7689944847254471200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_56
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 831
+        width: 50
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3064aaca7f46f20800000000000000
+      internalID: 3415126738416829355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_57
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 831
+        width: 50
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f6c80a450fc60f0800000000000000
+      internalID: -1122257960860618871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_58
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 831
+        width: 50
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd43fca6884f44540800000000000000
+      internalID: 4991383153778046172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_59
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 831
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a80bf81d72e3a43f0800000000000000
+      internalID: -915851233475972982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_60
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 831
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d6eb45df9199f00800000000000000
+      internalID: 1123958157844835614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_61
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 607
+        width: 258
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d147f01b3025d710800000000000000
+      internalID: 1717314270971511248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_62
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 751
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660cd14a7e34e4f70800000000000000
+      internalID: 9173344153170198630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_63
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 751
+        width: 66
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba654489e934e9570800000000000000
+      internalID: 8475285897196361387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_64
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 831
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb2c27b0d7b1d840800000000000000
+      internalID: 5247177147917544382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_65
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 655
+        width: 34
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67651f08d8731f8d0800000000000000
+      internalID: -2814407211236632970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_66
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 655
+        width: 34
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e5d22daf7219b80800000000000000
+      internalID: -8389880672593027537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_67
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 655
+        width: 34
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bbbac62ea067f100800000000000000
+      internalID: 141688214376856500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_68
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 655
+        width: 34
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6ebfc6de46bf680800000000000000
+      internalID: -8720265282574358797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_69
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 655
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ceee49ed40dfc00800000000000000
+      internalID: 935909651590867994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_70
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 655
+        width: 34
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22fd389735ce41e80800000000000000
+      internalID: -8208676377524445406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_71
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 655
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e10007832e99620800000000000000
+      internalID: 2781502976903093764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_72
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 303
+        width: 258
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab1c722330b260d0800000000000000
+      internalID: -3430986232434517086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_73
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 303
+        width: 258
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c2e2f1c22a4307e0800000000000000
+      internalID: -1800513912874802489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_74
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 543
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd24e3da7302e0e0800000000000000
+      internalID: -2242225838401245732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_75
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 543
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7b75404905b72340800000000000000
+      internalID: 4839035375970515839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_76
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 543
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e5d1ce5d56f4390800000000000000
+      internalID: -7831929257510216060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_77
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 415
+        width: 66
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b895350e1ce818d0800000000000000
+      internalID: -2875288748395489103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_78
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 415
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80f31602d18ed810800000000000000
+      internalID: 1792012440785121423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_79
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 511
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ece3b4d29b1f2a0800000000000000
+      internalID: -6705374765990883825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_80
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 511
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde478176c4ad4b70800000000000000
+      internalID: 8884938812087029471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_81
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 511
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf8a663641e6d8610800000000000000
+      internalID: 1625076074396690683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_82
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 415
+        width: 66
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 936f5c2d2245c29a0800000000000000
+      internalID: -6256533273782651335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_83
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 415
+        width: 66
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba457b667fa6a6900800000000000000
+      internalID: 678472304685438123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_84
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 479
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dfd4c40e244c2060800000000000000
+      internalID: 6929988891055546324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_85
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 479
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a6eb90d76e5bac0800000000000000
+      internalID: -3839909682554705400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_86
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 479
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7be2d369c332c4d40800000000000000
+      internalID: 5569865582276062903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_87
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 415
+        width: 66
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eac96c88d392db60800000000000000
+      internalID: 7769434865445489382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_88
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 415
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1665d5849c41ac160800000000000000
+      internalID: 7046467421709620833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_89
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 415
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 093b4fe7c4e348140800000000000000
+      internalID: 4720966807659525008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_90
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 303
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87df3daa6db70a70800000000000000
+      internalID: 8793205063335008143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_91
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 239
+        width: 50
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac732ddaffd960f20800000000000000
+      internalID: 3388569491101333450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_92
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 239
+        width: 50
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4a8641b279f3790800000000000000
+      internalID: -7548148239167871784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_93
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 239
+        width: 50
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 872796ff2c05d1050800000000000000
+      internalID: 5772859095797822072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_94
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 239
+        width: 50
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378bfa185a8355160800000000000000
+      internalID: 7013574278195951731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_95
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 239
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d5868670f8b8520800000000000000
+      internalID: 2705413263145327960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_96
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 239
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1eac6e651f61fa70800000000000000
+      internalID: 8858984079852088862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_97
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 258
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64767e3ee6fa94e0800000000000000
+      internalID: -1973993983537941394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_98
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 159
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 011b21b7ec541e3f0800000000000000
+      internalID: -873340099602763504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_99
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 159
+        width: 66
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba05b0b4a69d8f980800000000000000
+      internalID: -8504808845740388181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_100
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 239
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fabb4897cc5f6d410800000000000000
+      internalID: 1501657784335514543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_101
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 63
+        width: 34
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21a1c50c5d7fb3cb0800000000000000
+      internalID: -4883036873525814766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_102
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 63
+        width: 34
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bdd645e16cdb7660800000000000000
+      internalID: 7384738327020625331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_103
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 63
+        width: 34
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 715a602c7bd7c0740800000000000000
+      internalID: 5119605104601113879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_104
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 63
+        width: 34
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc41e07de74cef6f0800000000000000
+      internalID: -648865247241825076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_105
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 63
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa239a84fa76222a0800000000000000
+      internalID: -6763729687821077846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_106
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 63
+        width: 34
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95fd3cd51d3915a40800000000000000
+      internalID: 5355223959350796121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_sindow_allin_107
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 63
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f0ec2ed47f0f890800000000000000
+      internalID: -7426163871644250323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      wall_sindow_allin_0: -2905532795119713257
+      wall_sindow_allin_1: 228712192315469599
+      wall_sindow_allin_10: 7992550694621666887
+      wall_sindow_allin_100: 1501657784335514543
+      wall_sindow_allin_101: -4883036873525814766
+      wall_sindow_allin_102: 7384738327020625331
+      wall_sindow_allin_103: 5119605104601113879
+      wall_sindow_allin_104: -648865247241825076
+      wall_sindow_allin_105: -6763729687821077846
+      wall_sindow_allin_106: 5355223959350796121
+      wall_sindow_allin_107: -7426163871644250323
+      wall_sindow_allin_11: 8564584225524343063
+      wall_sindow_allin_12: 214136952903647482
+      wall_sindow_allin_13: -8034345940937272298
+      wall_sindow_allin_14: 8878226253409800328
+      wall_sindow_allin_15: 8352282751066350886
+      wall_sindow_allin_16: 1122770183096481464
+      wall_sindow_allin_17: 6048734498151983694
+      wall_sindow_allin_18: -7897433701933344881
+      wall_sindow_allin_19: 4733925004575379091
+      wall_sindow_allin_2: 2693732317043145741
+      wall_sindow_allin_20: 2686347301271796960
+      wall_sindow_allin_21: -7301689517620961890
+      wall_sindow_allin_22: -4568862376636963623
+      wall_sindow_allin_23: -5203824731974696942
+      wall_sindow_allin_24: 5577198934582538484
+      wall_sindow_allin_25: 8097939040970220038
+      wall_sindow_allin_26: 924817371801728143
+      wall_sindow_allin_27: 4168552960343252104
+      wall_sindow_allin_28: 703497423763854157
+      wall_sindow_allin_29: -4358792929432969653
+      wall_sindow_allin_3: 5474103345203126473
+      wall_sindow_allin_30: 4902025673433603584
+      wall_sindow_allin_31: -3819861677997997139
+      wall_sindow_allin_32: 6247104443791349264
+      wall_sindow_allin_33: -4485000500068103276
+      wall_sindow_allin_34: -1393611251778871684
+      wall_sindow_allin_35: -3367519644617595824
+      wall_sindow_allin_36: 8754108457846690713
+      wall_sindow_allin_37: 7960101677501858813
+      wall_sindow_allin_38: -6717849271887117365
+      wall_sindow_allin_39: -7765515396791038603
+      wall_sindow_allin_4: 7977142557083841871
+      wall_sindow_allin_40: -1959449308063542638
+      wall_sindow_allin_41: 687431827191425094
+      wall_sindow_allin_42: -4252158097398851686
+      wall_sindow_allin_43: 8496726941527997523
+      wall_sindow_allin_44: 5568073440690818435
+      wall_sindow_allin_45: 7556532795320818794
+      wall_sindow_allin_46: 4115425296733479226
+      wall_sindow_allin_47: 2496340901595487047
+      wall_sindow_allin_48: -1442030195537642646
+      wall_sindow_allin_49: -958709743972956465
+      wall_sindow_allin_5: 6509378084791537803
+      wall_sindow_allin_50: -4536593297638299695
+      wall_sindow_allin_51: 7315447662116680468
+      wall_sindow_allin_52: 7121689237454437298
+      wall_sindow_allin_53: -6322276418615568284
+      wall_sindow_allin_54: 3908914617773820845
+      wall_sindow_allin_55: 7689944847254471200
+      wall_sindow_allin_56: 3415126738416829355
+      wall_sindow_allin_57: -1122257960860618871
+      wall_sindow_allin_58: 4991383153778046172
+      wall_sindow_allin_59: -915851233475972982
+      wall_sindow_allin_6: -732554212493444400
+      wall_sindow_allin_60: 1123958157844835614
+      wall_sindow_allin_61: 1717314270971511248
+      wall_sindow_allin_62: 9173344153170198630
+      wall_sindow_allin_63: 8475285897196361387
+      wall_sindow_allin_64: 5247177147917544382
+      wall_sindow_allin_65: -2814407211236632970
+      wall_sindow_allin_66: -8389880672593027537
+      wall_sindow_allin_67: 141688214376856500
+      wall_sindow_allin_68: -8720265282574358797
+      wall_sindow_allin_69: 935909651590867994
+      wall_sindow_allin_7: 3761376256034810862
+      wall_sindow_allin_70: -8208676377524445406
+      wall_sindow_allin_71: 2781502976903093764
+      wall_sindow_allin_72: -3430986232434517086
+      wall_sindow_allin_73: -1800513912874802489
+      wall_sindow_allin_74: -2242225838401245732
+      wall_sindow_allin_75: 4839035375970515839
+      wall_sindow_allin_76: -7831929257510216060
+      wall_sindow_allin_77: -2875288748395489103
+      wall_sindow_allin_78: 1792012440785121423
+      wall_sindow_allin_79: -6705374765990883825
+      wall_sindow_allin_8: -4550653561834395800
+      wall_sindow_allin_80: 8884938812087029471
+      wall_sindow_allin_81: 1625076074396690683
+      wall_sindow_allin_82: -6256533273782651335
+      wall_sindow_allin_83: 678472304685438123
+      wall_sindow_allin_84: 6929988891055546324
+      wall_sindow_allin_85: -3839909682554705400
+      wall_sindow_allin_86: 5569865582276062903
+      wall_sindow_allin_87: 7769434865445489382
+      wall_sindow_allin_88: 7046467421709620833
+      wall_sindow_allin_89: 4720966807659525008
+      wall_sindow_allin_9: 2183857099700960485
+      wall_sindow_allin_90: 8793205063335008143
+      wall_sindow_allin_91: 3388569491101333450
+      wall_sindow_allin_92: -7548148239167871784
+      wall_sindow_allin_93: 5772859095797822072
+      wall_sindow_allin_94: 7013574278195951731
+      wall_sindow_allin_95: 2705413263145327960
+      wall_sindow_allin_96: 8858984079852088862
+      wall_sindow_allin_97: -1973993983537941394
+      wall_sindow_allin_98: -873340099602763504
+      wall_sindow_allin_99: -8504808845740388181
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

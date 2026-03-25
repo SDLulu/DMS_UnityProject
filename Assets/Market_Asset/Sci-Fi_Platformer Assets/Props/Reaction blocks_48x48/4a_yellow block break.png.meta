@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: da7a728374604354f8c1123edab9c44a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8151680350207735775
+    second: 4a_yellow block break_0
+  - first:
+      213: -3679489833058511461
+    second: 4a_yellow block break_1
+  - first:
+      213: -8646042871714106771
+    second: 4a_yellow block break_2
+  - first:
+      213: 6637579543960760436
+    second: 4a_yellow block break_3
+  - first:
+      213: -777598711014960688
+    second: 4a_yellow block break_4
+  - first:
+      213: 7740420793228941290
+    second: 4a_yellow block break_5
+  - first:
+      213: -4027680329079730055
+    second: 4a_yellow block break_6
+  - first:
+      213: 6875771369849923638
+    second: 4a_yellow block break_7
+  - first:
+      213: -2118110216752744810
+    second: 4a_yellow block break_8
+  - first:
+      213: 3195683145841249396
+    second: 4a_yellow block break_9
+  - first:
+      213: 5079141940682332934
+    second: 4a_yellow block break_10
+  - first:
+      213: -1905731718738658990
+    second: 4a_yellow block break_11
+  - first:
+      213: -5643287304875520691
+    second: 4a_yellow block break_12
+  - first:
+      213: 3361002271729496048
+    second: 4a_yellow block break_13
+  - first:
+      213: 5322463403754522421
+    second: 4a_yellow block break_14
+  - first:
+      213: -6601416254877304821
+    second: 4a_yellow block break_15
+  - first:
+      213: 3016820949546268007
+    second: 4a_yellow block break_16
+  - first:
+      213: 7322335160436259980
+    second: 4a_yellow block break_17
+  - first:
+      213: -2973067867365850344
+    second: 4a_yellow block break_18
+  - first:
+      213: -3911017454413712524
+    second: 4a_yellow block break_19
+  - first:
+      213: -2689199621404523484
+    second: 4a_yellow block break_20
+  - first:
+      213: -1381063330761785476
+    second: 4a_yellow block break_21
+  - first:
+      213: -8640672412492271848
+    second: 4a_yellow block break_22
+  - first:
+      213: 9018478791654793110
+    second: 4a_yellow block break_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 4a_yellow block break_0
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 14
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7f9acc616902170800000000000000
+      internalID: 8151680350207735775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_1
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 12
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b95d2e9dd73dfecc0800000000000000
+      internalID: -3679489833058511461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_2
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 11
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d62beae11d5130880800000000000000
+      internalID: -8646042871714106771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_3
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 16
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4703e268d6b6d1c50800000000000000
+      internalID: 6637579543960760436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_4
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 11
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d1d62c971a6535f0800000000000000
+      internalID: -777598711014960688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_5
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 16
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae7557073bf7b6b60800000000000000
+      internalID: 7740420793228941290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_6
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 27
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970df5c841eca18c0800000000000000
+      internalID: -4027680329079730055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_7
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 21
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 638a4b8a1a5ab6f50800000000000000
+      internalID: 6875771369849923638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_8
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 26
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 696b357eaf5fa92e0800000000000000
+      internalID: -2118110216752744810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_9
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 15
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c0292c3e8595c20800000000000000
+      internalID: 3195683145841249396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_10
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 34
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60b98224facbc7640800000000000000
+      internalID: 5079141940682332934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_11
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 27
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 259336b491b7d85e0800000000000000
+      internalID: -1905731718738658990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_12
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 11
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d4c6b78140fa1b0800000000000000
+      internalID: -5643287304875520691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_13
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ffa7bf32cda4ae20800000000000000
+      internalID: 3361002271729496048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_14
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 18
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5370ece14403dd940800000000000000
+      internalID: 5322463403754522421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_15
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 17
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b087c8954ee0364a0800000000000000
+      internalID: -6601416254877304821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_16
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 16
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76579a87ba6edd920800000000000000
+      internalID: 3016820949546268007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_17
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 10
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8cf72478092e9560800000000000000
+      internalID: 7322335160436259980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_18
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 14
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 813c780d68a8db6d0800000000000000
+      internalID: -2973067867365850344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_19
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 15
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473715fb85649b9c0800000000000000
+      internalID: -3911017454413712524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_20
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 13
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 424811c313b0eaad0800000000000000
+      internalID: -2689199621404523484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_21
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 11
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f30a5c73a75dce0800000000000000
+      internalID: -1381063330761785476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_22
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 9
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f61e8983a261880800000000000000
+      internalID: -8640672412492271848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4a_yellow block break_23
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 10
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f5af6dda2182d70800000000000000
+      internalID: 9018478791654793110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      4a_yellow block break_0: 8151680350207735775
+      4a_yellow block break_1: -3679489833058511461
+      4a_yellow block break_10: 5079141940682332934
+      4a_yellow block break_11: -1905731718738658990
+      4a_yellow block break_12: -5643287304875520691
+      4a_yellow block break_13: 3361002271729496048
+      4a_yellow block break_14: 5322463403754522421
+      4a_yellow block break_15: -6601416254877304821
+      4a_yellow block break_16: 3016820949546268007
+      4a_yellow block break_17: 7322335160436259980
+      4a_yellow block break_18: -2973067867365850344
+      4a_yellow block break_19: -3911017454413712524
+      4a_yellow block break_2: -8646042871714106771
+      4a_yellow block break_20: -2689199621404523484
+      4a_yellow block break_21: -1381063330761785476
+      4a_yellow block break_22: -8640672412492271848
+      4a_yellow block break_23: 9018478791654793110
+      4a_yellow block break_3: 6637579543960760436
+      4a_yellow block break_4: -777598711014960688
+      4a_yellow block break_5: 7740420793228941290
+      4a_yellow block break_6: -4027680329079730055
+      4a_yellow block break_7: 6875771369849923638
+      4a_yellow block break_8: -2118110216752744810
+      4a_yellow block break_9: 3195683145841249396
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 9992ced690c9f974d8bbfa6960b2ad76
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 552449880716477262
+    second: 4_yellow block break_0
+  - first:
+      213: -4667763803534892019
+    second: 4_yellow block break_1
+  - first:
+      213: -5041627969551826720
+    second: 4_yellow block break_2
+  - first:
+      213: 3499761614296175656
+    second: 4_yellow block break_3
+  - first:
+      213: -5967092542646029367
+    second: 4_yellow block break_4
+  - first:
+      213: 3333359142644551701
+    second: 4_yellow block break_5
+  - first:
+      213: 272217198961504901
+    second: 4_yellow block break_6
+  - first:
+      213: -6256006653246691322
+    second: 4_yellow block break_7
+  - first:
+      213: -8294891882233983462
+    second: 4_yellow block break_8
+  - first:
+      213: 4790036951326605449
+    second: 4_yellow block break_9
+  - first:
+      213: 6445809483975303660
+    second: 4_yellow block break_10
+  - first:
+      213: -6764467461130660779
+    second: 4_yellow block break_11
+  - first:
+      213: 4717862078796927259
+    second: 4_yellow block break_12
+  - first:
+      213: 8270245993325505251
+    second: 4_yellow block break_13
+  - first:
+      213: 3389540495675393586
+    second: 4_yellow block break_14
+  - first:
+      213: 3113786767256474524
+    second: 4_yellow block break_15
+  - first:
+      213: -1331686065887370728
+    second: 4_yellow block break_16
+  - first:
+      213: -2636961837246399210
+    second: 4_yellow block break_17
+  - first:
+      213: -7385863761701377764
+    second: 4_yellow block break_18
+  - first:
+      213: -8431661666534713523
+    second: 4_yellow block break_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 4_yellow block break_0
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 14
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4300505d32baa700800000000000000
+      internalID: 552449880716477262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_1
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 12
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0460e23d85c83fb0800000000000000
+      internalID: -4667763803534892019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_2
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 11
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e08039c21a880ab0800000000000000
+      internalID: -5041627969551826720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_3
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 11
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 824dbaa45a6a19030800000000000000
+      internalID: 3499761614296175656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_4
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 10
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c373bd82f0a03da0800000000000000
+      internalID: -5967092542646029367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_5
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 13
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5101126ba78724e20800000000000000
+      internalID: 3333359142644551701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_6
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 15
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5823ad5a91c17c300800000000000000
+      internalID: 272217198961504901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_7
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 34
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60820c838133e29a0800000000000000
+      internalID: -6256006653246691322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 27
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e0c2508cf92ec80800000000000000
+      internalID: -8294891882233983462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_9
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 23
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98041d08a31a97240800000000000000
+      internalID: 4790036951326605449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_10
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 11
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce12136039d147950800000000000000
+      internalID: 6445809483975303660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_11
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5545e9c0fa8cf12a0800000000000000
+      internalID: -6764467461130660779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_12
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 18
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b111af97096397140800000000000000
+      internalID: 4717862078796927259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_13
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 17
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eaa34dc9e0d5c270800000000000000
+      internalID: 8270245993325505251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_14
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 16
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236888c4f111a0f20800000000000000
+      internalID: 3389540495675393586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_15
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 16
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9352a83194663b20800000000000000
+      internalID: 3113786767256474524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_16
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 11
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81222722496e48de0800000000000000
+      internalID: -1331686065887370728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_17
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 16
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61dbaa42e21a76bd0800000000000000
+      internalID: -2636961837246399210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_18
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 9
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19eb5c6a04208990800000000000000
+      internalID: -7385863761701377764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_yellow block break_19
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 10
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d479beb1368bcfa80800000000000000
+      internalID: -8431661666534713523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      4_yellow block break_0: 552449880716477262
+      4_yellow block break_1: -4667763803534892019
+      4_yellow block break_10: 6445809483975303660
+      4_yellow block break_11: -6764467461130660779
+      4_yellow block break_12: 4717862078796927259
+      4_yellow block break_13: 8270245993325505251
+      4_yellow block break_14: 3389540495675393586
+      4_yellow block break_15: 3113786767256474524
+      4_yellow block break_16: -1331686065887370728
+      4_yellow block break_17: -2636961837246399210
+      4_yellow block break_18: -7385863761701377764
+      4_yellow block break_19: -8431661666534713523
+      4_yellow block break_2: -5041627969551826720
+      4_yellow block break_3: 3499761614296175656
+      4_yellow block break_4: -5967092542646029367
+      4_yellow block break_5: 3333359142644551701
+      4_yellow block break_6: 272217198961504901
+      4_yellow block break_7: -6256006653246691322
+      4_yellow block break_8: -8294891882233983462
+      4_yellow block break_9: 4790036951326605449
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1144 @@
+fileFormatVersion: 2
+guid: 93dab0c5890e3ba4d9608450becc5841
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7477540194309877023
+    second: Ladders_scaffolding_ containers_0
+  - first:
+      213: 1461608514597857967
+    second: Ladders_scaffolding_ containers_1
+  - first:
+      213: 6334172494354515398
+    second: Ladders_scaffolding_ containers_2
+  - first:
+      213: -5968340661510385561
+    second: Ladders_scaffolding_ containers_3
+  - first:
+      213: 7420882599087223353
+    second: Ladders_scaffolding_ containers_4
+  - first:
+      213: 5963927373519411512
+    second: Ladders_scaffolding_ containers_5
+  - first:
+      213: 7979613420681697057
+    second: Ladders_scaffolding_ containers_6
+  - first:
+      213: 5661477826531813408
+    second: Ladders_scaffolding_ containers_7
+  - first:
+      213: 4976237959630522778
+    second: Ladders_scaffolding_ containers_8
+  - first:
+      213: 8660677219453367282
+    second: Ladders_scaffolding_ containers_9
+  - first:
+      213: -9050017222561467657
+    second: Ladders_scaffolding_ containers_10
+  - first:
+      213: 5040114819441663604
+    second: Ladders_scaffolding_ containers_11
+  - first:
+      213: -5516246513288173368
+    second: Ladders_scaffolding_ containers_12
+  - first:
+      213: -9133160933850524414
+    second: Ladders_scaffolding_ containers_13
+  - first:
+      213: 6832408518726676435
+    second: Ladders_scaffolding_ containers_14
+  - first:
+      213: 9018779140371998291
+    second: Ladders_scaffolding_ containers_15
+  - first:
+      213: 8482541754758680379
+    second: Ladders_scaffolding_ containers_16
+  - first:
+      213: -9165768400389289684
+    second: Ladders_scaffolding_ containers_17
+  - first:
+      213: 3233505287428518868
+    second: Ladders_scaffolding_ containers_18
+  - first:
+      213: -6685378915225494413
+    second: Ladders_scaffolding_ containers_19
+  - first:
+      213: 6429092952564517061
+    second: Ladders_scaffolding_ containers_20
+  - first:
+      213: 2161199163879892401
+    second: Ladders_scaffolding_ containers_21
+  - first:
+      213: 321284161603317168
+    second: Ladders_scaffolding_ containers_22
+  - first:
+      213: -3008604451687349441
+    second: Ladders_scaffolding_ containers_23
+  - first:
+      213: -7318720441344363911
+    second: Ladders_scaffolding_ containers_24
+  - first:
+      213: -5152888346836336755
+    second: Ladders_scaffolding_ containers_25
+  - first:
+      213: -4455807232330718843
+    second: Ladders_scaffolding_ containers_26
+  - first:
+      213: 9079703962247481147
+    second: Ladders_scaffolding_ containers_27
+  - first:
+      213: -7657512413702994840
+    second: Ladders_scaffolding_ containers_28
+  - first:
+      213: 130686052618569547
+    second: Ladders_scaffolding_ containers_29
+  - first:
+      213: -2259044758721778961
+    second: Ladders_scaffolding_ containers_30
+  - first:
+      213: -8654445493353990339
+    second: Ladders_scaffolding_ containers_31
+  - first:
+      213: -1415111426034236019
+    second: Ladders_scaffolding_ containers_32
+  - first:
+      213: 3968903834466331114
+    second: Ladders_scaffolding_ containers_33
+  - first:
+      213: -2153556746010285195
+    second: Ladders_scaffolding_ containers_34
+  - first:
+      213: -8785060049525310482
+    second: Ladders_scaffolding_ containers_35
+  - first:
+      213: -2659325583668234884
+    second: Ladders_scaffolding_ containers_36
+  - first:
+      213: 1440913617365491007
+    second: Ladders_scaffolding_ containers_37
+  - first:
+      213: 1125510020295615284
+    second: Ladders_scaffolding_ containers_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 575
+        width: 65
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1dab83603f85c760800000000000000
+      internalID: 7477540194309877023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 575
+        width: 82
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faaaa49333da84410800000000000000
+      internalID: 1461608514597857967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_2
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 575
+        width: 226
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c50d00e25087e750800000000000000
+      internalID: 6334172494354515398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_3
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 575
+        width: 194
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 760572c3ac13c2da0800000000000000
+      internalID: -5968340661510385561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_4
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 575
+        width: 34
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932b87608654cf660800000000000000
+      internalID: 7420882599087223353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_5
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 575
+        width: 34
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8395ad4195024c250800000000000000
+      internalID: 5963927373519411512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 65
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1271ca8d0284dbe60800000000000000
+      internalID: 7979613420681697057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_7
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 415
+        width: 82
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028ed22661c919e40800000000000000
+      internalID: 5661477826531813408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_8
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 415
+        width: 226
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99879d1f062f0540800000000000000
+      internalID: 4976237959630522778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_9
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 415
+        width: 210
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f3f5db7b08e03870800000000000000
+      internalID: 8660677219453367282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_10
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 415
+        width: 34
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f27e0ef841e76280800000000000000
+      internalID: -9050017222561467657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_11
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 415
+        width: 34
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e900089b512f540800000000000000
+      internalID: 5040114819441663604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 303
+        width: 162
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8a8f1c50b5273b0800000000000000
+      internalID: -5516246513288173368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_13
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 271
+        width: 162
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2055d5d258e704180800000000000000
+      internalID: -9133160933850524414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_14
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 335
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df6e0f195791de50800000000000000
+      internalID: 6832408518726676435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_15
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 335
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 356639938d3292d70800000000000000
+      internalID: 9018779140371998291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_16
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 335
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f4fc498ca08b570800000000000000
+      internalID: 8482541754758680379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_17
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 287
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c29cb41c336acc080800000000000000
+      internalID: -9165768400389289684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 255
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d336845de7bfdc20800000000000000
+      internalID: 3233505287428518868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_19
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 255
+        width: 114
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c19191c43c833a0800000000000000
+      internalID: -6685378915225494413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_20
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 255
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c843914af9b83950800000000000000
+      internalID: 6429092952564517061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_21
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 255
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5aee3603f1efd10800000000000000
+      internalID: 2161199163879892401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_22
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 255
+        width: 82
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bd23542e3e657400800000000000000
+      internalID: 321284161603317168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_23
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 191
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f334483013a4f36d0800000000000000
+      internalID: -3008604451687349441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_24
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 159
+        width: 162
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 972774be88eae6a90800000000000000
+      internalID: -7318720441344363911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_25
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 127
+        width: 162
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ff19789534d78b0800000000000000
+      internalID: -5152888346836336755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_26
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 191
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 581af491eeac922c0800000000000000
+      internalID: -4455807232330718843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_27
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 191
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b37c777b5a6910e70800000000000000
+      internalID: 9079703962247481147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_28
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 191
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 864c61ee70d0bb590800000000000000
+      internalID: -7657512413702994840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_29
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 31
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b478d6fb54a40d100800000000000000
+      internalID: 130686052618569547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_30
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 31
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea2ea8c2c246a0e0800000000000000
+      internalID: -2259044758721778961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_31
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 31
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37b7a05dab35e780800000000000000
+      internalID: -8654445493353990339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_32
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 31
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8502a5d7a38c5ce0800000000000000
+      internalID: -1415111426034236019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_33
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 111
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae92d016201641730800000000000000
+      internalID: 3968903834466331114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_34
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 111
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b296eac870d12e0800000000000000
+      internalID: -2153556746010285195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_35
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 111
+        width: 82
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb71912e62351680800000000000000
+      internalID: -8785060049525310482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_36
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 111
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75b85ba87d281bd0800000000000000
+      internalID: -2659325583668234884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_37
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 47
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3dd71bfc472ff310800000000000000
+      internalID: 1440913617365491007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladders_scaffolding_ containers_38
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 47
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433ecd6766d9e9f00800000000000000
+      internalID: 1125510020295615284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ladders_scaffolding_ containers_0: 7477540194309877023
+      Ladders_scaffolding_ containers_1: 1461608514597857967
+      Ladders_scaffolding_ containers_10: -9050017222561467657
+      Ladders_scaffolding_ containers_11: 5040114819441663604
+      Ladders_scaffolding_ containers_12: -5516246513288173368
+      Ladders_scaffolding_ containers_13: -9133160933850524414
+      Ladders_scaffolding_ containers_14: 6832408518726676435
+      Ladders_scaffolding_ containers_15: 9018779140371998291
+      Ladders_scaffolding_ containers_16: 8482541754758680379
+      Ladders_scaffolding_ containers_17: -9165768400389289684
+      Ladders_scaffolding_ containers_18: 3233505287428518868
+      Ladders_scaffolding_ containers_19: -6685378915225494413
+      Ladders_scaffolding_ containers_2: 6334172494354515398
+      Ladders_scaffolding_ containers_20: 6429092952564517061
+      Ladders_scaffolding_ containers_21: 2161199163879892401
+      Ladders_scaffolding_ containers_22: 321284161603317168
+      Ladders_scaffolding_ containers_23: -3008604451687349441
+      Ladders_scaffolding_ containers_24: -7318720441344363911
+      Ladders_scaffolding_ containers_25: -5152888346836336755
+      Ladders_scaffolding_ containers_26: -4455807232330718843
+      Ladders_scaffolding_ containers_27: 9079703962247481147
+      Ladders_scaffolding_ containers_28: -7657512413702994840
+      Ladders_scaffolding_ containers_29: 130686052618569547
+      Ladders_scaffolding_ containers_3: -5968340661510385561
+      Ladders_scaffolding_ containers_30: -2259044758721778961
+      Ladders_scaffolding_ containers_31: -8654445493353990339
+      Ladders_scaffolding_ containers_32: -1415111426034236019
+      Ladders_scaffolding_ containers_33: 3968903834466331114
+      Ladders_scaffolding_ containers_34: -2153556746010285195
+      Ladders_scaffolding_ containers_35: -8785060049525310482
+      Ladders_scaffolding_ containers_36: -2659325583668234884
+      Ladders_scaffolding_ containers_37: 1440913617365491007
+      Ladders_scaffolding_ containers_38: 1125510020295615284
+      Ladders_scaffolding_ containers_4: 7420882599087223353
+      Ladders_scaffolding_ containers_5: 5963927373519411512
+      Ladders_scaffolding_ containers_6: 7979613420681697057
+      Ladders_scaffolding_ containers_7: 5661477826531813408
+      Ladders_scaffolding_ containers_8: 4976237959630522778
+      Ladders_scaffolding_ containers_9: 8660677219453367282
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

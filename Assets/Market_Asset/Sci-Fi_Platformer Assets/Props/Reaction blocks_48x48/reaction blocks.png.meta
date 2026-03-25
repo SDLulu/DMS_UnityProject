@@ -1,0 +1,1196 @@
+fileFormatVersion: 2
+guid: 5a172c6e80166e94d8b45ec0139a9260
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8204541590130062837
+    second: reaction blocks_0
+  - first:
+      213: -6487539046927265775
+    second: reaction blocks_1
+  - first:
+      213: 3884833817201401649
+    second: reaction blocks_2
+  - first:
+      213: -51190869964451082
+    second: reaction blocks_3
+  - first:
+      213: 2744278459019080464
+    second: reaction blocks_4
+  - first:
+      213: -4295289110140819542
+    second: reaction blocks_5
+  - first:
+      213: -3533567207063154345
+    second: reaction blocks_6
+  - first:
+      213: -5684520631479801330
+    second: reaction blocks_7
+  - first:
+      213: 3277848839289446492
+    second: reaction blocks_8
+  - first:
+      213: 8726453410524279806
+    second: reaction blocks_9
+  - first:
+      213: -8453800339496341200
+    second: reaction blocks_10
+  - first:
+      213: 958448555489523130
+    second: reaction blocks_11
+  - first:
+      213: -5988749532329407810
+    second: reaction blocks_12
+  - first:
+      213: -5738194765625426591
+    second: reaction blocks_13
+  - first:
+      213: 7935037629344833727
+    second: reaction blocks_14
+  - first:
+      213: -8359196765602082821
+    second: reaction blocks_15
+  - first:
+      213: 660575745217074625
+    second: reaction blocks_16
+  - first:
+      213: -2407495091589808290
+    second: reaction blocks_17
+  - first:
+      213: 5690416812185991005
+    second: reaction blocks_18
+  - first:
+      213: 7626648457037425064
+    second: reaction blocks_19
+  - first:
+      213: -1811383627749990464
+    second: reaction blocks_20
+  - first:
+      213: -6060275624369574533
+    second: reaction blocks_21
+  - first:
+      213: -1016415369347112095
+    second: reaction blocks_22
+  - first:
+      213: -8872536575635194364
+    second: reaction blocks_23
+  - first:
+      213: -7234562954294204157
+    second: reaction blocks_24
+  - first:
+      213: -254321609340385846
+    second: reaction blocks_25
+  - first:
+      213: -5992054140275623912
+    second: reaction blocks_26
+  - first:
+      213: -194813704401814678
+    second: reaction blocks_27
+  - first:
+      213: 6359806767143206203
+    second: reaction blocks_28
+  - first:
+      213: 4204244504500342476
+    second: reaction blocks_29
+  - first:
+      213: 5945414353533901838
+    second: reaction blocks_30
+  - first:
+      213: 6261291106552146398
+    second: reaction blocks_31
+  - first:
+      213: -8054967241001380563
+    second: reaction blocks_32
+  - first:
+      213: -6983085414553114413
+    second: reaction blocks_33
+  - first:
+      213: 8727581900386379050
+    second: reaction blocks_34
+  - first:
+      213: -1159322888735630443
+    second: reaction blocks_35
+  - first:
+      213: -6118318534965263691
+    second: reaction blocks_36
+  - first:
+      213: 2472082607577071709
+    second: reaction blocks_37
+  - first:
+      213: 1814600394860333934
+    second: reaction blocks_38
+  - first:
+      213: 7116565650039408374
+    second: reaction blocks_39
+  - first:
+      213: -7440541410885120228
+    second: reaction blocks_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: reaction blocks_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 255
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a016fa4ec932e80800000000000000
+      internalID: -8204541590130062837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 255
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1109c69fb91a7f5a0800000000000000
+      internalID: -6487539046927265775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 257
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13fd6b526c3b9e530800000000000000
+      internalID: 3884833817201401649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 255
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f2960ccc222a4ff0800000000000000
+      internalID: -51190869964451082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 255
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013b69af7b2a51620800000000000000
+      internalID: 2744278459019080464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_5
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 207
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7e37ecf411464c0800000000000000
+      internalID: -4295289110140819542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_6
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 208
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7511809c85f36fec0800000000000000
+      internalID: -3533567207063154345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_7
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 208
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a64428a968c11b0800000000000000
+      internalID: -5684520631479801330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_8
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 208
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50264d07224d7d20800000000000000
+      internalID: 3277848839289446492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_9
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 160
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef3bb4364279a1970800000000000000
+      internalID: 8726453410524279806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_10
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 160
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0317e32a1611eaa80800000000000000
+      internalID: -8453800339496341200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_11
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 160
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5707512e71d4d00800000000000000
+      internalID: 958448555489523130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_12
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 159
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba08b4b700b3eca0800000000000000
+      internalID: -5988749532329407810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_13
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 110
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16df3ee4346dd50b0800000000000000
+      internalID: -5738194765625426591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_14
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 108
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb0e478aeaaee1e60800000000000000
+      internalID: 7935037629344833727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_15
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 107
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff81b2a4da2efb80800000000000000
+      internalID: -8359196765602082821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_16
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 107
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c517e0f326da2900800000000000000
+      internalID: 660575745217074625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_17
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 106
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5ffa4b38fbd69ed0800000000000000
+      internalID: -2407495091589808290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_18
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 109
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57b14a01fb68fe40800000000000000
+      internalID: 5690416812185991005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_19
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 111
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a92f7c2d5c47d960800000000000000
+      internalID: 7626648457037425064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_20
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 130
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cfd00c003cacd6e0800000000000000
+      internalID: -1811383627749990464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_21
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 123
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d2e78ad6395eba0800000000000000
+      internalID: -6060275624369574533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_22
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 119
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16361d55b97f4e1f0800000000000000
+      internalID: -1016415369347112095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_23
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 107
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e7a904efa6ed480800000000000000
+      internalID: -8872536575635194364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_24
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 111
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 309e71cc25ba99b90800000000000000
+      internalID: -7234562954294204157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_25
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 114
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac58f8008d7787cf0800000000000000
+      internalID: -254321609340385846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_26
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 113
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81876f5b182f7dca0800000000000000
+      internalID: -5992054140275623912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_27
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 112
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b70cfc7f1eb4df0800000000000000
+      internalID: -194813704401814678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_28
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 112
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d32bb1f82924850800000000000000
+      internalID: 6359806767143206203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_29
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 107
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce81af0a1a785a30800000000000000
+      internalID: 4204244504500342476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_30
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 112
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c95e8bada528250800000000000000
+      internalID: 5945414353533901838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_31
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 105
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed96a51761394e650800000000000000
+      internalID: 6261291106552146398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_32
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 106
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2554baa8f1073090800000000000000
+      internalID: -8054967241001380563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_33
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 63
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8a95d30d8171f90800000000000000
+      internalID: -6983085414553114413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_34
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 63
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a25a8a86f799e1970800000000000000
+      internalID: 8727581900386379050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_35
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 63
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bdeec99f149efe0800000000000000
+      internalID: -1159322888735630443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_36
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 63
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b205bc65bd571ba0800000000000000
+      internalID: -6118318534965263691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_37
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 15
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d508d00b80a9e4220800000000000000
+      internalID: 2472082607577071709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_38
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b0fe8e171ce2910800000000000000
+      internalID: 1814600394860333934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_39
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f68857e0ce13c260800000000000000
+      internalID: 7116565650039408374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction blocks_40
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1fcb9b2203edb890800000000000000
+      internalID: -7440541410885120228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      reaction blocks_0: -8204541590130062837
+      reaction blocks_1: -6487539046927265775
+      reaction blocks_10: -8453800339496341200
+      reaction blocks_11: 958448555489523130
+      reaction blocks_12: -5988749532329407810
+      reaction blocks_13: -5738194765625426591
+      reaction blocks_14: 7935037629344833727
+      reaction blocks_15: -8359196765602082821
+      reaction blocks_16: 660575745217074625
+      reaction blocks_17: -2407495091589808290
+      reaction blocks_18: 5690416812185991005
+      reaction blocks_19: 7626648457037425064
+      reaction blocks_2: 3884833817201401649
+      reaction blocks_20: -1811383627749990464
+      reaction blocks_21: -6060275624369574533
+      reaction blocks_22: -1016415369347112095
+      reaction blocks_23: -8872536575635194364
+      reaction blocks_24: -7234562954294204157
+      reaction blocks_25: -254321609340385846
+      reaction blocks_26: -5992054140275623912
+      reaction blocks_27: -194813704401814678
+      reaction blocks_28: 6359806767143206203
+      reaction blocks_29: 4204244504500342476
+      reaction blocks_3: -51190869964451082
+      reaction blocks_30: 5945414353533901838
+      reaction blocks_31: 6261291106552146398
+      reaction blocks_32: -8054967241001380563
+      reaction blocks_33: -6983085414553114413
+      reaction blocks_34: 8727581900386379050
+      reaction blocks_35: -1159322888735630443
+      reaction blocks_36: -6118318534965263691
+      reaction blocks_37: 2472082607577071709
+      reaction blocks_38: 1814600394860333934
+      reaction blocks_39: 7116565650039408374
+      reaction blocks_4: 2744278459019080464
+      reaction blocks_40: -7440541410885120228
+      reaction blocks_5: -4295289110140819542
+      reaction blocks_6: -3533567207063154345
+      reaction blocks_7: -5684520631479801330
+      reaction blocks_8: 3277848839289446492
+      reaction blocks_9: 8726453410524279806
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

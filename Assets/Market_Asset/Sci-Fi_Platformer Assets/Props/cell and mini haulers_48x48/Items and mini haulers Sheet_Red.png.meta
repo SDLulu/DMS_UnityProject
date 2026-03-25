@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 53475ce79a35ac04bafb409b45742ac6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1042012036301479217
+    second: Items and mini haulers Sheet_Red_0
+  - first:
+      213: 2715075482102688473
+    second: Items and mini haulers Sheet_Red_1
+  - first:
+      213: 4434588141308807072
+    second: Items and mini haulers Sheet_Red_2
+  - first:
+      213: 8622917277703881538
+    second: Items and mini haulers Sheet_Red_3
+  - first:
+      213: -3364046618144762547
+    second: Items and mini haulers Sheet_Red_4
+  - first:
+      213: -7686923551282107300
+    second: Items and mini haulers Sheet_Red_5
+  - first:
+      213: -1912629396020759842
+    second: Items and mini haulers Sheet_Red_6
+  - first:
+      213: 3533043049313850849
+    second: Items and mini haulers Sheet_Red_7
+  - first:
+      213: -3023909618986159518
+    second: Items and mini haulers Sheet_Red_8
+  - first:
+      213: 754814059192929395
+    second: Items and mini haulers Sheet_Red_9
+  - first:
+      213: 7863103705665105685
+    second: Items and mini haulers Sheet_Red_10
+  - first:
+      213: 7523693082424612422
+    second: Items and mini haulers Sheet_Red_11
+  - first:
+      213: 7540881177320998205
+    second: Items and mini haulers Sheet_Red_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Items and mini haulers Sheet_Red_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 159
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc2a194e2970a81f0800000000000000
+      internalID: -1042012036301479217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items and mini haulers Sheet_Red_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 159
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da6a1114c2eda520800000000000000
+      internalID: 2715075482102688473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items and mini haulers Sheet_Red_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 159
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a70fd74b62da8d30800000000000000
+      internalID: 4434588141308807072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items and mini haulers Sheet_Red_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 159
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2434e11f391caa770800000000000000
+      internalID: 8622917277703881538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items and mini haulers Sheet_Red_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 111
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4590ad9c618051d0800000000000000
+      internalID: -3364046618144762547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items and mini haulers Sheet_Red_5
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 63
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5cee36d1cf825590800000000000000
+      internalID: -7686923551282107300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items and mini haulers Sheet_Red_6
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 63
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed27637a2b9f475e0800000000000000
+      internalID: -1912629396020759842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items and mini haulers Sheet_Red_7
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 63
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e5d38a3fe3e70130800000000000000
+      internalID: 3533043049313850849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items and mini haulers Sheet_Red_8
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 63
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 262717f093ae806d0800000000000000
+      internalID: -3023909618986159518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items and mini haulers Sheet_Red_9
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 16
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c4aad3363a97a00800000000000000
+      internalID: 754814059192929395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items and mini haulers Sheet_Red_10
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 16
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51fe938e82b5f1d60800000000000000
+      internalID: 7863103705665105685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items and mini haulers Sheet_Red_11
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 16
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6469bf80ff6896860800000000000000
+      internalID: 7523693082424612422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items and mini haulers Sheet_Red_12
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 16
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35c5ab3a7796a860800000000000000
+      internalID: 7540881177320998205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Items and mini haulers Sheet_Red_0: -1042012036301479217
+      Items and mini haulers Sheet_Red_1: 2715075482102688473
+      Items and mini haulers Sheet_Red_10: 7863103705665105685
+      Items and mini haulers Sheet_Red_11: 7523693082424612422
+      Items and mini haulers Sheet_Red_12: 7540881177320998205
+      Items and mini haulers Sheet_Red_2: 4434588141308807072
+      Items and mini haulers Sheet_Red_3: 8622917277703881538
+      Items and mini haulers Sheet_Red_4: -3364046618144762547
+      Items and mini haulers Sheet_Red_5: -7686923551282107300
+      Items and mini haulers Sheet_Red_6: -1912629396020759842
+      Items and mini haulers Sheet_Red_7: 3533043049313850849
+      Items and mini haulers Sheet_Red_8: -3023909618986159518
+      Items and mini haulers Sheet_Red_9: 754814059192929395
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

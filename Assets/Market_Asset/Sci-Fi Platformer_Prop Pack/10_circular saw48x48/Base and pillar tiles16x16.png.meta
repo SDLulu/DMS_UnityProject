@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 66a1b138ef9e9c146b04cc164d7a63a8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1175557224175985212
+    second: Base and pillar tiles16x16_0
+  - first:
+      213: -2617971208310452040
+    second: Base and pillar tiles16x16_1
+  - first:
+      213: 9090766843381253315
+    second: Base and pillar tiles16x16_2
+  - first:
+      213: -1565385022032506274
+    second: Base and pillar tiles16x16_3
+  - first:
+      213: -5448963693355945585
+    second: Base and pillar tiles16x16_4
+  - first:
+      213: -4735270048500483695
+    second: Base and pillar tiles16x16_5
+  - first:
+      213: 4980168870034578681
+    second: Base and pillar tiles16x16_6
+  - first:
+      213: 8580347766493347474
+    second: Base and pillar tiles16x16_7
+  - first:
+      213: 5853794275351070191
+    second: Base and pillar tiles16x16_8
+  - first:
+      213: -5514717224823514012
+    second: Base and pillar tiles16x16_9
+  - first:
+      213: -1770011650289682083
+    second: Base and pillar tiles16x16_10
+  - first:
+      213: 4771142298140582886
+    second: Base and pillar tiles16x16_11
+  - first:
+      213: 4139373180512600552
+    second: Base and pillar tiles16x16_12
+  - first:
+      213: -2600405608780274902
+    second: Base and pillar tiles16x16_13
+  - first:
+      213: 8687019020615496369
+    second: Base and pillar tiles16x16_14
+  - first:
+      213: -5981716762345916247
+    second: Base and pillar tiles16x16_15
+  - first:
+      213: -9073783321560469083
+    second: Base and pillar tiles16x16_16
+  - first:
+      213: -8220988753652352921
+    second: Base and pillar tiles16x16_17
+  - first:
+      213: -3152153530517998785
+    second: Base and pillar tiles16x16_18
+  - first:
+      213: 7692173472663479941
+    second: Base and pillar tiles16x16_19
+  - first:
+      213: -7968604231504680705
+    second: Base and pillar tiles16x16_20
+  - first:
+      213: -4896454970874084476
+    second: Base and pillar tiles16x16_21
+  - first:
+      213: -6392022930978565693
+    second: Base and pillar tiles16x16_22
+  - first:
+      213: -4060035231174599701
+    second: Base and pillar tiles16x16_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 159
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c326728211b605010800000000000000
+      internalID: 1175557224175985212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_1
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 159
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b094708e091babd0800000000000000
+      internalID: -2617971208310452040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 207
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c483a37744e82e70800000000000000
+      internalID: 9090766843381253315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 207
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e521901cd92a64ae0800000000000000
+      internalID: -1565385022032506274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 127
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f81b48704646164b0800000000000000
+      internalID: -5448963693355945585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_5
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 127
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 199f49bbaf0f84eb0800000000000000
+      internalID: -4735270048500483695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_6
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 127
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc9ed3833d1d1540800000000000000
+      internalID: 4980168870034578681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_7
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 127
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ef62f35d4831770800000000000000
+      internalID: 8580347766493347474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_8
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 127
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe50482f0eadc3150800000000000000
+      internalID: 5853794275351070191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_9
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 127
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c9aa9f6e9c773b0800000000000000
+      internalID: -5514717224823514012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_10
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 143
+        width: 16
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d593e2038c7af67e0800000000000000
+      internalID: -1770011650289682083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 143
+        width: 16
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e3a28d34a0863240800000000000000
+      internalID: 4771142298140582886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 47
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e18b31f9f1027930800000000000000
+      internalID: 4139373180512600552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_13
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 47
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23e7b850e089ebd0800000000000000
+      internalID: -2600405608780274902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_14
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 112
+        width: 50
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b239d006cd7e8870800000000000000
+      internalID: 8687019020615496369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_15
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 112
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a83f511c4cacfca0800000000000000
+      internalID: -5981716762345916247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_16
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 80
+        width: 50
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1368dd422731280800000000000000
+      internalID: -9073783321560469083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_17
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 80
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768f114094e29ed80800000000000000
+      internalID: -8220988753652352921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f333bf7901d4144d0800000000000000
+      internalID: -3152153530517998785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_19
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5862accb40710ca60800000000000000
+      internalID: 7692173472663479941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_20
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff82d71cba4d96190800000000000000
+      internalID: -7968604231504680705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_21
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 483ca52852c4c0cb0800000000000000
+      internalID: -4896454970874084476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_22
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c11fdab209fa47a0800000000000000
+      internalID: -6392022930978565693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base and pillar tiles16x16_23
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beb544ed77bd7a7c0800000000000000
+      internalID: -4060035231174599701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Base and pillar tiles16x16_0: 1175557224175985212
+      Base and pillar tiles16x16_1: -2617971208310452040
+      Base and pillar tiles16x16_10: -1770011650289682083
+      Base and pillar tiles16x16_11: 4771142298140582886
+      Base and pillar tiles16x16_12: 4139373180512600552
+      Base and pillar tiles16x16_13: -2600405608780274902
+      Base and pillar tiles16x16_14: 8687019020615496369
+      Base and pillar tiles16x16_15: -5981716762345916247
+      Base and pillar tiles16x16_16: -9073783321560469083
+      Base and pillar tiles16x16_17: -8220988753652352921
+      Base and pillar tiles16x16_18: -3152153530517998785
+      Base and pillar tiles16x16_19: 7692173472663479941
+      Base and pillar tiles16x16_2: 9090766843381253315
+      Base and pillar tiles16x16_20: -7968604231504680705
+      Base and pillar tiles16x16_21: -4896454970874084476
+      Base and pillar tiles16x16_22: -6392022930978565693
+      Base and pillar tiles16x16_23: -4060035231174599701
+      Base and pillar tiles16x16_3: -1565385022032506274
+      Base and pillar tiles16x16_4: -5448963693355945585
+      Base and pillar tiles16x16_5: -4735270048500483695
+      Base and pillar tiles16x16_6: 4980168870034578681
+      Base and pillar tiles16x16_7: 8580347766493347474
+      Base and pillar tiles16x16_8: 5853794275351070191
+      Base and pillar tiles16x16_9: -5514717224823514012
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

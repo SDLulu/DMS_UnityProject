@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: 9b41585347d67844ab2abf66bc9b67db
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5479498850148319096
+    second: front wall_template_0
+  - first:
+      213: -8354252453302955276
+    second: front wall_template_1
+  - first:
+      213: 1426540038679688974
+    second: front wall_template_2
+  - first:
+      213: -5823376941437064206
+    second: front wall_template_3
+  - first:
+      213: -974003727731508746
+    second: front wall_template_4
+  - first:
+      213: -6931796092727126708
+    second: front wall_template_5
+  - first:
+      213: 7261142095734956130
+    second: front wall_template_6
+  - first:
+      213: -2284952896643162329
+    second: front wall_template_7
+  - first:
+      213: 5450003709598030091
+    second: front wall_template_8
+  - first:
+      213: -3196010688150231485
+    second: front wall_template_9
+  - first:
+      213: -4128474264545563119
+    second: front wall_template_10
+  - first:
+      213: 4350941695285366800
+    second: front wall_template_11
+  - first:
+      213: -571464365390486613
+    second: front wall_template_12
+  - first:
+      213: -6713924266204451478
+    second: front wall_template_13
+  - first:
+      213: -5232338002488520858
+    second: front wall_template_14
+  - first:
+      213: 6168605602197470828
+    second: front wall_template_15
+  - first:
+      213: -8762991140022636045
+    second: front wall_template_16
+  - first:
+      213: 3322125013113187537
+    second: front wall_template_17
+  - first:
+      213: 8016484968851984341
+    second: front wall_template_18
+  - first:
+      213: -3964942600886799791
+    second: front wall_template_19
+  - first:
+      213: 744036909758202525
+    second: front wall_template_20
+  - first:
+      213: 7858480733118736435
+    second: front wall_template_21
+  - first:
+      213: 6715321339932492164
+    second: front wall_template_22
+  - first:
+      213: 8496943682427551790
+    second: front wall_template_23
+  - first:
+      213: -8850395868518497934
+    second: front wall_template_24
+  - first:
+      213: 1526643947910093799
+    second: front wall_template_25
+  - first:
+      213: -5132014756081836635
+    second: front wall_template_26
+  - first:
+      213: 50525753437602094
+    second: front wall_template_27
+  - first:
+      213: 3093698248181386198
+    second: front wall_template_28
+  - first:
+      213: -4837980390368496533
+    second: front wall_template_29
+  - first:
+      213: -4414150600925175877
+    second: front wall_template_30
+  - first:
+      213: 3435581571403302416
+    second: front wall_template_31
+  - first:
+      213: 8197826647454759068
+    second: front wall_template_32
+  - first:
+      213: -782544202045280082
+    second: front wall_template_33
+  - first:
+      213: 7079121552237326641
+    second: front wall_template_34
+  - first:
+      213: -525388206460903058
+    second: front wall_template_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: front wall_template_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 893
+        width: 444
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8808fb1d3d8e4f3b0800000000000000
+      internalID: -5479498850148319096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_1
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 831
+        width: 194
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f211fc08abbf0c80800000000000000
+      internalID: -8354252453302955276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_2
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 895
+        width: 444
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e07ff576b961cc310800000000000000
+      internalID: 1426540038679688974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_3
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 833
+        width: 194
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fb617c76853f2fa0800000000000000
+      internalID: -5823376941437064206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_4
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 717
+        width: 188
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f938a625c4ab72f0800000000000000
+      internalID: -974003727731508746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_5
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 717
+        width: 252
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c451f8d0e205dcf90800000000000000
+      internalID: -6931796092727126708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_6
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 717
+        width: 220
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 260eaefc342c4c460800000000000000
+      internalID: 7261142095734956130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_7
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 719
+        width: 188
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f951b52773a40e0800000000000000
+      internalID: -2284952896643162329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_8
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 719
+        width: 252
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b09d62f9f7d42ab40800000000000000
+      internalID: 5450003709598030091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_9
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 719
+        width: 220
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 346247a563d75a3d0800000000000000
+      internalID: -3196010688150231485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_10
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 541
+        width: 444
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e6b6da786b4b6c0800000000000000
+      internalID: -4128474264545563119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_11
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 637
+        width: 220
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0109be96b66a16c30800000000000000
+      internalID: 4350941695285366800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_12
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 543
+        width: 444
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba32b1bff20c118f0800000000000000
+      internalID: -571464365390486613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_13
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 639
+        width: 220
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d2208a37953d2a0800000000000000
+      internalID: -6713924266204451478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_14
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 543
+        width: 98
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f05e01f400367b0800000000000000
+      internalID: -5232338002488520858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_15
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 543
+        width: 114
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ef67ecc1a4b9550800000000000000
+      internalID: 6168605602197470828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_16
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 545
+        width: 98
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f13e098cf9936680800000000000000
+      internalID: -8762991140022636045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_17
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 545
+        width: 114
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc2d0a191f8a1e20800000000000000
+      internalID: 3322125013113187537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_18
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 367
+        width: 444
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df4ea32b96404f60800000000000000
+      internalID: 8016484968851984341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_19
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 305
+        width: 194
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 152345f26b1b9f8c0800000000000000
+      internalID: -3964942600886799791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_20
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 367
+        width: 444
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d92cae990a9535a00800000000000000
+      internalID: 744036909758202525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_21
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 305
+        width: 194
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3382bcb379eee0d60800000000000000
+      internalID: 7858480733118736435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_22
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 191
+        width: 188
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 481c64bed2d913d50800000000000000
+      internalID: 6715321339932492164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_23
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 191
+        width: 252
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e20089ba2453be570800000000000000
+      internalID: 8496943682427551790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_24
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 191
+        width: 220
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271ce5759d31d2580800000000000000
+      internalID: -8850395868518497934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_25
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 191
+        width: 188
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb5ea5059abf2510800000000000000
+      internalID: 1526643947910093799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_26
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 191
+        width: 252
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5addda915cb67c8b0800000000000000
+      internalID: -5132014756081836635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_27
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 191
+        width: 220
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2148a1b7e083b000800000000000000
+      internalID: 50525753437602094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_28
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 15
+        width: 444
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db89156a260fea20800000000000000
+      internalID: 3093698248181386198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_29
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 111
+        width: 220
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b64b7c9b77a0cdcb0800000000000000
+      internalID: -4837980390368496533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_30
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 15
+        width: 444
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf17c66a69cdb2c0800000000000000
+      internalID: -4414150600925175877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_31
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 111
+        width: 220
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0164f589c33adaf20800000000000000
+      internalID: 3435581571403302416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_32
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 17
+        width: 98
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98b5c3e6e784c170800000000000000
+      internalID: 8197826647454759068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_33
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 17
+        width: 114
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea0bc00c138d325f0800000000000000
+      internalID: -782544202045280082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_34
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 17
+        width: 98
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 131fae28b871e3260800000000000000
+      internalID: 7079121552237326641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front wall_template_35
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 17
+        width: 114
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61e7b8b53275b8f0800000000000000
+      internalID: -525388206460903058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      front wall_template_0: -5479498850148319096
+      front wall_template_1: -8354252453302955276
+      front wall_template_10: -4128474264545563119
+      front wall_template_11: 4350941695285366800
+      front wall_template_12: -571464365390486613
+      front wall_template_13: -6713924266204451478
+      front wall_template_14: -5232338002488520858
+      front wall_template_15: 6168605602197470828
+      front wall_template_16: -8762991140022636045
+      front wall_template_17: 3322125013113187537
+      front wall_template_18: 8016484968851984341
+      front wall_template_19: -3964942600886799791
+      front wall_template_2: 1426540038679688974
+      front wall_template_20: 744036909758202525
+      front wall_template_21: 7858480733118736435
+      front wall_template_22: 6715321339932492164
+      front wall_template_23: 8496943682427551790
+      front wall_template_24: -8850395868518497934
+      front wall_template_25: 1526643947910093799
+      front wall_template_26: -5132014756081836635
+      front wall_template_27: 50525753437602094
+      front wall_template_28: 3093698248181386198
+      front wall_template_29: -4837980390368496533
+      front wall_template_3: -5823376941437064206
+      front wall_template_30: -4414150600925175877
+      front wall_template_31: 3435581571403302416
+      front wall_template_32: 8197826647454759068
+      front wall_template_33: -782544202045280082
+      front wall_template_34: 7079121552237326641
+      front wall_template_35: -525388206460903058
+      front wall_template_4: -974003727731508746
+      front wall_template_5: -6931796092727126708
+      front wall_template_6: 7261142095734956130
+      front wall_template_7: -2284952896643162329
+      front wall_template_8: 5450003709598030091
+      front wall_template_9: -3196010688150231485
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

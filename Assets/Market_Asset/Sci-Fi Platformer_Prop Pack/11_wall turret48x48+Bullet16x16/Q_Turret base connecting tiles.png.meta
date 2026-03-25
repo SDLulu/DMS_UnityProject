@@ -1,0 +1,1508 @@
+fileFormatVersion: 2
+guid: 10a3be0a8096b3845a21275d48b5efe5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7053243251731124376
+    second: Q_Turret base connecting tiles_0
+  - first:
+      213: -5650750402119772226
+    second: Q_Turret base connecting tiles_1
+  - first:
+      213: 7567412392841311682
+    second: Q_Turret base connecting tiles_2
+  - first:
+      213: -1568951731549630422
+    second: Q_Turret base connecting tiles_3
+  - first:
+      213: -8252429770936864113
+    second: Q_Turret base connecting tiles_4
+  - first:
+      213: 7647860265504402445
+    second: Q_Turret base connecting tiles_5
+  - first:
+      213: -7053524735064973262
+    second: Q_Turret base connecting tiles_6
+  - first:
+      213: -8857867788284875062
+    second: Q_Turret base connecting tiles_7
+  - first:
+      213: 8293711844448765416
+    second: Q_Turret base connecting tiles_8
+  - first:
+      213: 6417277382104421431
+    second: Q_Turret base connecting tiles_9
+  - first:
+      213: -2688985110524724191
+    second: Q_Turret base connecting tiles_10
+  - first:
+      213: 7799043434201853751
+    second: Q_Turret base connecting tiles_11
+  - first:
+      213: 3538812705615359607
+    second: Q_Turret base connecting tiles_12
+  - first:
+      213: -4579864683964820896
+    second: Q_Turret base connecting tiles_13
+  - first:
+      213: -5981983830650847704
+    second: Q_Turret base connecting tiles_14
+  - first:
+      213: 2919829909656231971
+    second: Q_Turret base connecting tiles_15
+  - first:
+      213: 2047829758708340330
+    second: Q_Turret base connecting tiles_16
+  - first:
+      213: 7609039905662808264
+    second: Q_Turret base connecting tiles_17
+  - first:
+      213: 1350817382698563590
+    second: Q_Turret base connecting tiles_18
+  - first:
+      213: -6982739671930391272
+    second: Q_Turret base connecting tiles_19
+  - first:
+      213: 5321493973224962998
+    second: Q_Turret base connecting tiles_20
+  - first:
+      213: -5346077426451633382
+    second: Q_Turret base connecting tiles_21
+  - first:
+      213: -2179921381301320992
+    second: Q_Turret base connecting tiles_22
+  - first:
+      213: 4356335442403948962
+    second: Q_Turret base connecting tiles_23
+  - first:
+      213: -3913285290268066056
+    second: Q_Turret base connecting tiles_24
+  - first:
+      213: 5536116502481101945
+    second: Q_Turret base connecting tiles_25
+  - first:
+      213: 2776878473926047962
+    second: Q_Turret base connecting tiles_26
+  - first:
+      213: 1387774779566867592
+    second: Q_Turret base connecting tiles_27
+  - first:
+      213: 9067120890173323492
+    second: Q_Turret base connecting tiles_28
+  - first:
+      213: -1929989108193123202
+    second: Q_Turret base connecting tiles_29
+  - first:
+      213: 5940994701852525751
+    second: Q_Turret base connecting tiles_30
+  - first:
+      213: 4264600063840567371
+    second: Q_Turret base connecting tiles_31
+  - first:
+      213: 2704736726822728882
+    second: Q_Turret base connecting tiles_32
+  - first:
+      213: -65274541123328158
+    second: Q_Turret base connecting tiles_33
+  - first:
+      213: 8786068107101476015
+    second: Q_Turret base connecting tiles_34
+  - first:
+      213: 8629563356992393282
+    second: Q_Turret base connecting tiles_35
+  - first:
+      213: 1016977298164375591
+    second: Q_Turret base connecting tiles_36
+  - first:
+      213: -2186067713528062854
+    second: Q_Turret base connecting tiles_37
+  - first:
+      213: 3767463361372676649
+    second: Q_Turret base connecting tiles_38
+  - first:
+      213: 3465657192144311391
+    second: Q_Turret base connecting tiles_39
+  - first:
+      213: 6673509270758757682
+    second: Q_Turret base connecting tiles_40
+  - first:
+      213: -78346372426178640
+    second: Q_Turret base connecting tiles_41
+  - first:
+      213: -5487343734253676788
+    second: Q_Turret base connecting tiles_42
+  - first:
+      213: 1719315370671049379
+    second: Q_Turret base connecting tiles_43
+  - first:
+      213: -5054975123921952565
+    second: Q_Turret base connecting tiles_44
+  - first:
+      213: -2998657813390805363
+    second: Q_Turret base connecting tiles_45
+  - first:
+      213: -5461820102729760518
+    second: Q_Turret base connecting tiles_46
+  - first:
+      213: -1687096001345416771
+    second: Q_Turret base connecting tiles_47
+  - first:
+      213: -2572807564232634097
+    second: Q_Turret base connecting tiles_48
+  - first:
+      213: 2063657323482244126
+    second: Q_Turret base connecting tiles_49
+  - first:
+      213: 1718093594349354602
+    second: Q_Turret base connecting tiles_50
+  - first:
+      213: 5192560297368393549
+    second: Q_Turret base connecting tiles_51
+  - first:
+      213: 3740143992479488990
+    second: Q_Turret base connecting tiles_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 287
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 890dad52e5722e160800000000000000
+      internalID: 7053243251731124376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 287
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb7514fb2708491b0800000000000000
+      internalID: -5650750402119772226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 287
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5f1383a79d40960800000000000000
+      internalID: 7567412392841311682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_3
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 287
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20104b76b6f93ae0800000000000000
+      internalID: -1568951731549630422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_4
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 287
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f823379b8da797d80800000000000000
+      internalID: -8252429770936864113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_5
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 287
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ce6313468a22a60800000000000000
+      internalID: 7647860265504402445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_6
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 287
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2306508ef98dc1e90800000000000000
+      internalID: -7053524735064973262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_7
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 287
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acea7e37d28821580800000000000000
+      internalID: -8857867788284875062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_8
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 287
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e581d50bfe291370800000000000000
+      internalID: 8293711844448765416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_9
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 287
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7349b7167cfbe0950800000000000000
+      internalID: 6417277382104421431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_10
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 287
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12cfbd0f94eceaad0800000000000000
+      internalID: -2688985110524724191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_11
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 287
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73fa17baea4cb3c60800000000000000
+      internalID: 7799043434201853751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 255
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ea7d408636c1130800000000000000
+      internalID: 3538812705615359607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_13
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 255
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0629be8c55d0170c0800000000000000
+      internalID: -4579864683964820896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_14
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 255
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82efce16669bbfca0800000000000000
+      internalID: -5981983830650847704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_15
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 255
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320ee9935d1558820800000000000000
+      internalID: 2919829909656231971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_16
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 255
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66d840d05a5b6c10800000000000000
+      internalID: 2047829758708340330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_17
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 255
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0bdc2da7db89960800000000000000
+      internalID: 7609039905662808264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_18
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 255
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 608bb2ca0411fb210800000000000000
+      internalID: 1350817382698563590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_19
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 255
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 815bf87b343581f90800000000000000
+      internalID: -6982739671930391272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_20
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 223
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bbb47cf29eb9d940800000000000000
+      internalID: 5321493973224962998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_21
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 223
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1bad96c7eaeec5b0800000000000000
+      internalID: -5346077426451633382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_22
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 223
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2814dad0d5fb1e0800000000000000
+      internalID: -2179921381301320992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_23
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 223
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a97ee60100d47c30800000000000000
+      internalID: 4356335442403948962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_24
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 223
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe7fc013c731b9c0800000000000000
+      internalID: -3913285290268066056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_25
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 223
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 974609d90ac34dc40800000000000000
+      internalID: 5536116502481101945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_26
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 223
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad87ace6244798620800000000000000
+      internalID: 2776878473926047962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_27
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 223
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 884445c2fcd524310800000000000000
+      internalID: 1387774779566867592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_28
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 191
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e8fd42f862e4dd70800000000000000
+      internalID: 9067120890173323492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_29
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 191
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e74a6c1b12d4735e0800000000000000
+      internalID: -1929989108193123202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_30
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 191
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b4c5606437a27250800000000000000
+      internalID: 5940994701852525751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_31
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 191
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b40435ac927ee2b30800000000000000
+      internalID: 4264600063840567371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_32
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 191
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4b83509b7298520800000000000000
+      internalID: 2704736726822728882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_33
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 191
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267a7739629181ff0800000000000000
+      internalID: -65274541123328158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_34
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 191
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa41c2094626ee970800000000000000
+      internalID: 8786068107101476015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_35
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 191
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240524cd62e52c770800000000000000
+      internalID: 8629563356992393282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_36
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 159
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72069b9e6770d1e00800000000000000
+      internalID: 1016977298164375591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_37
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 159
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7c95303ff689a1e0800000000000000
+      internalID: -2186067713528062854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_38
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 159
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 922eaee57f7b84430800000000000000
+      internalID: 3767463361372676649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_39
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 159
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f541a0bbadc781030800000000000000
+      internalID: 3465657192144311391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_40
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 159
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2351ad0f2511d9c50800000000000000
+      internalID: 6673509270758757682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_41
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 159
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bfd81ea368a9eef0800000000000000
+      internalID: -78346372426178640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_42
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 159
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c07185762f909d3b0800000000000000
+      internalID: -5487343734253676788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_43
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 159
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aa87b5683c3cd710800000000000000
+      internalID: 1719315370671049379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_44
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 159
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0223e38ee19d9b0800000000000000
+      internalID: -5054975123921952565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_45
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 159
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8634e53b90a266d0800000000000000
+      internalID: -2998657813390805363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_46
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 159
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af084b5fd87b334b0800000000000000
+      internalID: -5461820102729760518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_47
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 159
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db113d9102b3698e0800000000000000
+      internalID: -1687096001345416771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_48
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 31
+        width: 98
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f01d972d62d8b4cd0800000000000000
+      internalID: -2572807564232634097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_49
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 53
+        width: 260
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e14ea48e66593ac10800000000000000
+      internalID: 2063657323482244126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_50
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 52
+        width: 226
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e311e6505e7d710800000000000000
+      internalID: 1718093594349354602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_51
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 31
+        width: 98
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47907f341eaf0840800000000000000
+      internalID: 5192560297368393549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_Turret base connecting tiles_52
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 80
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb1d802529a7e330800000000000000
+      internalID: 3740143992479488990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Q_Turret base connecting tiles_0: 7053243251731124376
+      Q_Turret base connecting tiles_1: -5650750402119772226
+      Q_Turret base connecting tiles_10: -2688985110524724191
+      Q_Turret base connecting tiles_11: 7799043434201853751
+      Q_Turret base connecting tiles_12: 3538812705615359607
+      Q_Turret base connecting tiles_13: -4579864683964820896
+      Q_Turret base connecting tiles_14: -5981983830650847704
+      Q_Turret base connecting tiles_15: 2919829909656231971
+      Q_Turret base connecting tiles_16: 2047829758708340330
+      Q_Turret base connecting tiles_17: 7609039905662808264
+      Q_Turret base connecting tiles_18: 1350817382698563590
+      Q_Turret base connecting tiles_19: -6982739671930391272
+      Q_Turret base connecting tiles_2: 7567412392841311682
+      Q_Turret base connecting tiles_20: 5321493973224962998
+      Q_Turret base connecting tiles_21: -5346077426451633382
+      Q_Turret base connecting tiles_22: -2179921381301320992
+      Q_Turret base connecting tiles_23: 4356335442403948962
+      Q_Turret base connecting tiles_24: -3913285290268066056
+      Q_Turret base connecting tiles_25: 5536116502481101945
+      Q_Turret base connecting tiles_26: 2776878473926047962
+      Q_Turret base connecting tiles_27: 1387774779566867592
+      Q_Turret base connecting tiles_28: 9067120890173323492
+      Q_Turret base connecting tiles_29: -1929989108193123202
+      Q_Turret base connecting tiles_3: -1568951731549630422
+      Q_Turret base connecting tiles_30: 5940994701852525751
+      Q_Turret base connecting tiles_31: 4264600063840567371
+      Q_Turret base connecting tiles_32: 2704736726822728882
+      Q_Turret base connecting tiles_33: -65274541123328158
+      Q_Turret base connecting tiles_34: 8786068107101476015
+      Q_Turret base connecting tiles_35: 8629563356992393282
+      Q_Turret base connecting tiles_36: 1016977298164375591
+      Q_Turret base connecting tiles_37: -2186067713528062854
+      Q_Turret base connecting tiles_38: 3767463361372676649
+      Q_Turret base connecting tiles_39: 3465657192144311391
+      Q_Turret base connecting tiles_4: -8252429770936864113
+      Q_Turret base connecting tiles_40: 6673509270758757682
+      Q_Turret base connecting tiles_41: -78346372426178640
+      Q_Turret base connecting tiles_42: -5487343734253676788
+      Q_Turret base connecting tiles_43: 1719315370671049379
+      Q_Turret base connecting tiles_44: -5054975123921952565
+      Q_Turret base connecting tiles_45: -2998657813390805363
+      Q_Turret base connecting tiles_46: -5461820102729760518
+      Q_Turret base connecting tiles_47: -1687096001345416771
+      Q_Turret base connecting tiles_48: -2572807564232634097
+      Q_Turret base connecting tiles_49: 2063657323482244126
+      Q_Turret base connecting tiles_5: 7647860265504402445
+      Q_Turret base connecting tiles_50: 1718093594349354602
+      Q_Turret base connecting tiles_51: 5192560297368393549
+      Q_Turret base connecting tiles_52: 3740143992479488990
+      Q_Turret base connecting tiles_6: -7053524735064973262
+      Q_Turret base connecting tiles_7: -8857867788284875062
+      Q_Turret base connecting tiles_8: 8293711844448765416
+      Q_Turret base connecting tiles_9: 6417277382104421431
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

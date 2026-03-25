@@ -1,0 +1,1378 @@
+fileFormatVersion: 2
+guid: 5b4b2b3fcb188e14e9815a612174629f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3645057603154678674
+    second: Turret base connecting tiles_0
+  - first:
+      213: -8680474320617182895
+    second: Turret base connecting tiles_1
+  - first:
+      213: -7009496543642447335
+    second: Turret base connecting tiles_2
+  - first:
+      213: -4409927366042380380
+    second: Turret base connecting tiles_3
+  - first:
+      213: -7088264961704313285
+    second: Turret base connecting tiles_4
+  - first:
+      213: -192611936849426367
+    second: Turret base connecting tiles_5
+  - first:
+      213: 5505137273807306912
+    second: Turret base connecting tiles_6
+  - first:
+      213: -4864255284906553968
+    second: Turret base connecting tiles_7
+  - first:
+      213: -8639430396502853446
+    second: Turret base connecting tiles_8
+  - first:
+      213: -338533248267077570
+    second: Turret base connecting tiles_9
+  - first:
+      213: 8073870357608228383
+    second: Turret base connecting tiles_10
+  - first:
+      213: 105013281862098753
+    second: Turret base connecting tiles_11
+  - first:
+      213: 609770887706552263
+    second: Turret base connecting tiles_12
+  - first:
+      213: 1375050759001239924
+    second: Turret base connecting tiles_13
+  - first:
+      213: -6634749346333380253
+    second: Turret base connecting tiles_14
+  - first:
+      213: 7487413255761333436
+    second: Turret base connecting tiles_15
+  - first:
+      213: -3167940930740021831
+    second: Turret base connecting tiles_16
+  - first:
+      213: 3594436890305699407
+    second: Turret base connecting tiles_17
+  - first:
+      213: 1669689710161880714
+    second: Turret base connecting tiles_18
+  - first:
+      213: -2968341881701252002
+    second: Turret base connecting tiles_19
+  - first:
+      213: 4178803031547376865
+    second: Turret base connecting tiles_20
+  - first:
+      213: -774041765812694816
+    second: Turret base connecting tiles_21
+  - first:
+      213: -8118071453744481966
+    second: Turret base connecting tiles_22
+  - first:
+      213: 2087759166177769497
+    second: Turret base connecting tiles_23
+  - first:
+      213: 8220116393045832128
+    second: Turret base connecting tiles_24
+  - first:
+      213: -955015818573405722
+    second: Turret base connecting tiles_25
+  - first:
+      213: 331446214436591183
+    second: Turret base connecting tiles_26
+  - first:
+      213: 8870053907274661816
+    second: Turret base connecting tiles_27
+  - first:
+      213: 1397727941760953811
+    second: Turret base connecting tiles_28
+  - first:
+      213: -5758140909252158656
+    second: Turret base connecting tiles_29
+  - first:
+      213: 4604281020523944518
+    second: Turret base connecting tiles_30
+  - first:
+      213: -2442959680821864141
+    second: Turret base connecting tiles_31
+  - first:
+      213: -7359027323163170603
+    second: Turret base connecting tiles_32
+  - first:
+      213: -165166855869174002
+    second: Turret base connecting tiles_33
+  - first:
+      213: -8494267161180525470
+    second: Turret base connecting tiles_34
+  - first:
+      213: 2618502897622768003
+    second: Turret base connecting tiles_35
+  - first:
+      213: -8419945379347227030
+    second: Turret base connecting tiles_36
+  - first:
+      213: -8852410183693239896
+    second: Turret base connecting tiles_37
+  - first:
+      213: -3110680487757084349
+    second: Turret base connecting tiles_38
+  - first:
+      213: -5707099135399443927
+    second: Turret base connecting tiles_39
+  - first:
+      213: -4937177598451044070
+    second: Turret base connecting tiles_40
+  - first:
+      213: 6950967551575308801
+    second: Turret base connecting tiles_41
+  - first:
+      213: 2942191160025993882
+    second: Turret base connecting tiles_42
+  - first:
+      213: -5999698992040910425
+    second: Turret base connecting tiles_43
+  - first:
+      213: -7954968211237794384
+    second: Turret base connecting tiles_44
+  - first:
+      213: -3018716496568780508
+    second: Turret base connecting tiles_45
+  - first:
+      213: -8460775491401296725
+    second: Turret base connecting tiles_46
+  - first:
+      213: -3872388052972703416
+    second: Turret base connecting tiles_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Turret base connecting tiles_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 143
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6ce02a1c672a6dc0800000000000000
+      internalID: -3645057603154678674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 143
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15966b5b892c88780800000000000000
+      internalID: -8680474320617182895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 143
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9121ddd080449be90800000000000000
+      internalID: -7009496543642447335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_3
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 143
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a715c5ec6accc2c0800000000000000
+      internalID: -4409927366042380380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_4
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 143
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e34c3929c61ad90800000000000000
+      internalID: -7088264961704313285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_5
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 143
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1480794c674b35df0800000000000000
+      internalID: -192611936849426367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_6
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 143
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a00c0dde2d266c40800000000000000
+      internalID: 5505137273807306912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_7
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 143
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09d045e1791be7cb0800000000000000
+      internalID: -4864255284906553968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_8
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 143
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab83cbaf3d39a1880800000000000000
+      internalID: -8639430396502853446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_9
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 143
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e38b168edc94d4bf0800000000000000
+      internalID: -338533248267077570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_10
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 143
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f166bc320562c0070800000000000000
+      internalID: 8073870357608228383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_11
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 143
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f96120605157100800000000000000
+      internalID: 105013281862098753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 111
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7af144467567800800000000000000
+      internalID: 609770887706552263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_13
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 111
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47176664169251310800000000000000
+      internalID: 1375050759001239924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_14
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 111
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3613b063f92ace3a0800000000000000
+      internalID: -6634749346333380253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_15
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 111
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc8434afa2a8e760800000000000000
+      internalID: 7487413255761333436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_16
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 111
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b512d902863904d0800000000000000
+      internalID: -3167940930740021831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_17
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 111
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e1b3ebe4102e130800000000000000
+      internalID: 3594436890305699407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_18
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 111
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a86e25be1fdeb2710800000000000000
+      internalID: 1669689710161880714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_19
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 111
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e54484919c45ec6d0800000000000000
+      internalID: -2968341881701252002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_20
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4f4b987371ef930800000000000000
+      internalID: 4178803031547376865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_21
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e01b637d1d0245f0800000000000000
+      internalID: -774041765812694816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_22
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25932523601d65f80800000000000000
+      internalID: -8118071453744481966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_23
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918779476e539fc10800000000000000
+      internalID: 2087759166177769497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_24
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c1bcd3be48b31270800000000000000
+      internalID: 8220116393045832128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_25
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e1ad034c2a1fb2f0800000000000000
+      internalID: -955015818573405722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_26
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4614a17398899400800000000000000
+      internalID: 331446214436591183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_27
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bffba97803c81b70800000000000000
+      internalID: 8870053907274661816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_28
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ddac45582ab56310800000000000000
+      internalID: 1397727941760953811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_29
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b5169d959f610b0800000000000000
+      internalID: -5758140909252158656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_30
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a17629131b5ef30800000000000000
+      internalID: 4604281020523944518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_31
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339d2081d1dd81ed0800000000000000
+      internalID: -2442959680821864141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_32
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d8277ea3ab7fd990800000000000000
+      internalID: -7359027323163170603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_33
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0fef33ae9535bdf0800000000000000
+      internalID: -165166855869174002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_34
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ca19e750d4e1a80800000000000000
+      internalID: -8494267161180525470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_35
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 389d220138ac65420800000000000000
+      internalID: 2618502897622768003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_36
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e11dbc948562b80800000000000000
+      internalID: -8419945379347227030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_37
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9f9ea07dbe52580800000000000000
+      internalID: -8852410183693239896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_38
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3490085d394a4d4d0800000000000000
+      internalID: -3110680487757084349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_39
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 922c398e29f4cc0b0800000000000000
+      internalID: -5707099135399443927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_40
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a113f4be12f9b7bb0800000000000000
+      internalID: -4937177598451044070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_41
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ab9ec092cc67060800000000000000
+      internalID: 6950967551575308801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_42
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92d4aa8543c4d820800000000000000
+      internalID: 2942191160025993882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_43
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1e124fd89ccbca0800000000000000
+      internalID: -5999698992040910425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_44
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bd85a12f864a9190800000000000000
+      internalID: -7954968211237794384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_45
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429f768175d5b16d0800000000000000
+      internalID: -3018716496568780508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_46
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4d1b68489459a80800000000000000
+      internalID: -8460775491401296725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret base connecting tiles_47
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84178162593824ac0800000000000000
+      internalID: -3872388052972703416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Turret base connecting tiles_0: -3645057603154678674
+      Turret base connecting tiles_1: -8680474320617182895
+      Turret base connecting tiles_10: 8073870357608228383
+      Turret base connecting tiles_11: 105013281862098753
+      Turret base connecting tiles_12: 609770887706552263
+      Turret base connecting tiles_13: 1375050759001239924
+      Turret base connecting tiles_14: -6634749346333380253
+      Turret base connecting tiles_15: 7487413255761333436
+      Turret base connecting tiles_16: -3167940930740021831
+      Turret base connecting tiles_17: 3594436890305699407
+      Turret base connecting tiles_18: 1669689710161880714
+      Turret base connecting tiles_19: -2968341881701252002
+      Turret base connecting tiles_2: -7009496543642447335
+      Turret base connecting tiles_20: 4178803031547376865
+      Turret base connecting tiles_21: -774041765812694816
+      Turret base connecting tiles_22: -8118071453744481966
+      Turret base connecting tiles_23: 2087759166177769497
+      Turret base connecting tiles_24: 8220116393045832128
+      Turret base connecting tiles_25: -955015818573405722
+      Turret base connecting tiles_26: 331446214436591183
+      Turret base connecting tiles_27: 8870053907274661816
+      Turret base connecting tiles_28: 1397727941760953811
+      Turret base connecting tiles_29: -5758140909252158656
+      Turret base connecting tiles_3: -4409927366042380380
+      Turret base connecting tiles_30: 4604281020523944518
+      Turret base connecting tiles_31: -2442959680821864141
+      Turret base connecting tiles_32: -7359027323163170603
+      Turret base connecting tiles_33: -165166855869174002
+      Turret base connecting tiles_34: -8494267161180525470
+      Turret base connecting tiles_35: 2618502897622768003
+      Turret base connecting tiles_36: -8419945379347227030
+      Turret base connecting tiles_37: -8852410183693239896
+      Turret base connecting tiles_38: -3110680487757084349
+      Turret base connecting tiles_39: -5707099135399443927
+      Turret base connecting tiles_4: -7088264961704313285
+      Turret base connecting tiles_40: -4937177598451044070
+      Turret base connecting tiles_41: 6950967551575308801
+      Turret base connecting tiles_42: 2942191160025993882
+      Turret base connecting tiles_43: -5999698992040910425
+      Turret base connecting tiles_44: -7954968211237794384
+      Turret base connecting tiles_45: -3018716496568780508
+      Turret base connecting tiles_46: -8460775491401296725
+      Turret base connecting tiles_47: -3872388052972703416
+      Turret base connecting tiles_5: -192611936849426367
+      Turret base connecting tiles_6: 5505137273807306912
+      Turret base connecting tiles_7: -4864255284906553968
+      Turret base connecting tiles_8: -8639430396502853446
+      Turret base connecting tiles_9: -338533248267077570
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
