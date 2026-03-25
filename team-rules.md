@@ -81,10 +81,10 @@ crashlytics-build.properties
 Assets/
 ├── _Scenes/
 │   ├── Main/              # 실제 게임에 들어가는 씬 (스테이지별)
-│   └── Dev/               # 각자 테스트용 씬 (Dev_용우, Dev_B, Dev_C)
+│   └── Dev/               # 각자 테스트용 씬 (Dev_yongwoo, Dev_B, Dev_C)
 │
 ├── _WIP/                  # 🔧 각자 작업 공간 (여기서 모든 작업을 한다)
-│   ├── 용우/
+│   ├── yongwoo/
 │   │   ├── Scripts/
 │   │   ├── Art/
 │   │   ├── Prefabs/
