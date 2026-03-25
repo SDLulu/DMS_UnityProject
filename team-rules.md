@@ -66,10 +66,10 @@ crashlytics-build.properties
 ### 체크리스트
 
 - [ ] Unity 버전 통일 확인
-- [ ] Asset Serialization → Force Text
-- [ ] Version Control → Visible Meta Files
-- [ ] .gitignore 적용
-- [ ] 폴더 구조 생성 (아래 참고)
+- [x] Asset Serialization → Force Text
+- [x] Version Control → Visible Meta Files
+- [x] .gitignore 적용
+- [x] 폴더 구조 생성 (아래 참고)
 - [ ] 각자 개인 브랜치 생성
 - [ ] 각자 Dev 씬 생성
 
