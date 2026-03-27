@@ -44,8 +44,20 @@ TagManager:
   - name: BackGround
     uniqueID: 3047988779
     locked: 0
+  - name: ' building'
+    uniqueID: 2737274267
+    locked: 0
   - name: Tile
     uniqueID: 3625992293
+    locked: 0
+  - name: NPC
+    uniqueID: 3628358275
+    locked: 0
+  - name: Enemy
+    uniqueID: 2797877441
+    locked: 0
+  - name: Player
+    uniqueID: 1292592147
     locked: 0
   m_RenderingLayers:
   - Default
