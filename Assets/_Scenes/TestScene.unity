@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Intensity: 0.2
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000002b9eacb5654020d813640b4d835a44d8c138c4a69b7d27a3
+  m_ApplyToSortingLayers: 000000002b9eacb5654020d813640b4d835a44d8c138c4a69b7d27a353691c5c
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Intensity: 0.01
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000002b9eacb5654020d813640b4d835a44d8c138c4a69b7d27a3
+  m_ApplyToSortingLayers: 000000002b9eacb5654020d813640b4d835a44d8c138c4a69b7d27a353691c5c
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -287,7 +287,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1267536348}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &681599484
+--- !u!43 &686978033
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -628,7 +628,7 @@ MonoBehaviour:
   m_CastsShadows: 1
   m_SelfShadows: 0
   m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 000000002b9eacb5654020d813640b4d835a44d8c138c4a69b7d27a3
+  m_ApplyToSortingLayers: 000000002b9eacb5654020d813640b4d835a44d8c138c4a69b7d27a353691c5c
   m_ShapePath:
   - {x: -0.5, y: -0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
@@ -641,7 +641,7 @@ MonoBehaviour:
     rid: -2
   m_ShadowCastingSource: 1
   m_ShadowMesh:
-    m_Mesh: {fileID: 681599484}
+    m_Mesh: {fileID: 686978033}
     m_LocalBounds:
       m_Center: {x: 0, y: 0, z: 0}
       m_Extent: {x: 0.5, y: 0.5, z: 0}

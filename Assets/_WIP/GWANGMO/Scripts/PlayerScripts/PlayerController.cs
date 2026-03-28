@@ -3,10 +3,17 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    //기본 움직임 속도
     public float moveSpeed = 5f;
+    // 달리기 속도 비율: 1.3
+    public float runMultiplier = 1.3f;
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
+    private Portal currentPortal;
+
+    // Player 상태
+    private bool isRunning;
 
     void Awake()
     {
@@ -18,8 +25,45 @@ public class PlayerController : MonoBehaviour
         moveInput = context.ReadValue<Vector2>();
     }
 
+    public void OnRun(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+            isRunning = true;
+        else if (context.canceled)
+            isRunning = false;
+    }
+
     void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
+        float speed = isRunning ? moveSpeed * runMultiplier : moveSpeed;
+        rb.linearVelocity = new Vector2(moveInput.x * speed, rb.linearVelocity.y);
+    }
+
+    // 상호작용 F Key
+    public void OnInteract(InputAction.CallbackContext context)
+    {
+        if (context.performed && currentPortal != null)
+        {
+            currentPortal.Interact();
+            Debug.Log("상호작용 실행");
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Portal portal = collision.GetComponent<Portal>();
+        if (portal != null)
+        {
+            currentPortal = portal;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        Portal portal = collision.GetComponent<Portal>();
+        if (portal != null)
+        {
+            currentPortal = null;
+        }
     }
 }

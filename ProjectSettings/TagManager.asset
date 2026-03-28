@@ -50,6 +50,9 @@ TagManager:
   - name: Tile
     uniqueID: 3625992293
     locked: 0
+  - name: Portal
+    uniqueID: 1545365843
+    locked: 0
   - name: NPC
     uniqueID: 3628358275
     locked: 0
