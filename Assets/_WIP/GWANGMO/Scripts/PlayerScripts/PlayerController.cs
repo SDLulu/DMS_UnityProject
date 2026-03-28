@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
+
     private Portal currentPortal;
 
     // Player 상태
@@ -45,10 +46,11 @@ public class PlayerController : MonoBehaviour
         if (context.performed && currentPortal != null)
         {
             currentPortal.Interact();
-            Debug.Log("상호작용 실행");
+            //Debug.Log("상호작용 실행");
         }
     }
 
+    // Portal 관련 상호작용
     void OnTriggerEnter2D(Collider2D collision)
     {
         Portal portal = collision.GetComponent<Portal>();

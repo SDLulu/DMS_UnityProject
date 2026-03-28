@@ -1,7 +1,11 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Portal : MonoBehaviour
 {
+    // 넘어갈 씬 이름
+    public string nextSceneName;
+
     private bool isPlayerInRange = false;
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -26,6 +30,7 @@ public class Portal : MonoBehaviour
         if (isPlayerInRange)
         {
             Debug.Log("다음 Scene 넘어가기");
+            SceneManager.LoadScene(nextSceneName);
         }
     }
 }

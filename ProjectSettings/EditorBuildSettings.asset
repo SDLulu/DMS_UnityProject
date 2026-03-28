@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/_WIP/GWANGMO/Art/Map/TestScene.unity
+    guid: 24f1cd6b412760c4ab64fb5e9f6edc33
+  - enabled: 1
+    path: Assets/_WIP/GWANGMO/Art/Map/Village.unity
+    guid: cac0059dbbed82242bff48fd90673b86
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
