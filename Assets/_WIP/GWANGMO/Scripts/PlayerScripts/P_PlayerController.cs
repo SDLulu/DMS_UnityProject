@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class P_PlayerController : MonoBehaviour
 {
     //기본 움직임 속도
     public float moveSpeed = 5f;
@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
 
-    private Portal currentPortal;
+    private P_Portal currentPortal;
 
     // Player 상태
     private bool isRunning;
@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
     // Portal 관련 상호작용
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Portal portal = collision.GetComponent<Portal>();
+        P_Portal portal = collision.GetComponent<P_Portal>();
         if (portal != null)
         {
             currentPortal = portal;
@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        Portal portal = collision.GetComponent<Portal>();
+        P_Portal portal = collision.GetComponent<P_Portal>();
         if (portal != null)
         {
             currentPortal = null;

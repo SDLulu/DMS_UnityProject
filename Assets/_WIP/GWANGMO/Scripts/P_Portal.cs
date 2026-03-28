@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Portal : MonoBehaviour
+public class P_Portal : MonoBehaviour
 {
     // 넘어갈 씬 이름
     public string nextSceneName;
