@@ -327,7 +327,7 @@ MonoBehaviour:
   jumpThreshold: 0.1
   defaultAttackDuration: 0.28
   crossFadeDuration: 0.04
-  attackVisualYOffset: -0.08
+  attackVisualYOffset: 0
   visualAnchorLerpSpeed: 16
 --- !u!114 &767779722435611025
 MonoBehaviour:
