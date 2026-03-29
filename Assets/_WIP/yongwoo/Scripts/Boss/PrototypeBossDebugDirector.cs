@@ -88,13 +88,13 @@ public class PrototypeBossDebugDirector : MonoBehaviour
             bossObject.transform.SetParent(root.transform);
         }
 
-        SpriteRenderer renderer = bossObject.GetComponent<SpriteRenderer>();
+        SpriteRenderer renderer = bossObject.GetComponentInChildren<SpriteRenderer>();
         if (renderer != null)
         {
             renderer.color = config.core.normalColor.ToColor();
         }
 
-        Animator animator = bossObject.GetComponent<Animator>();
+        Animator animator = bossObject.GetComponentInChildren<Animator>();
         if (animator != null && animator.runtimeAnimatorController == null)
         {
             RuntimeAnimatorController bossController = Resources.Load<RuntimeAnimatorController>(BossAnimatorControllerPath);

@@ -25,8 +25,18 @@
 - `PrototypePlayerRuntimeConfig`
 - `Rigidbody2D`
 - `BoxCollider2D`
-- 자식 `RobotMaidVisual`
-- 자식 `GroundCheck`
+- 자식 `Visual`
+- 자식 `Sensors`
+- 자식 `Debug`
+
+각 자식의 의미는 아래와 같다.
+
+- `Visual`
+  플레이어 스프라이트와 애니메이터를 담는 표현 레이어다
+- `Sensors`
+  현재는 바닥 판정 기준점 하나를 담는 감지 레이어다
+- `Debug`
+  이후 디버그용 시각화나 기준점을 붙일 여지를 남겨 둔 레이어다
 
 이 중 하나라도 빠지면 디버그룸에서 정상 동작하지 않는다고 본다.
 
@@ -67,7 +77,7 @@
 
 - 이동 입력이 있으면 그 방향을 현재 바라보는 방향으로 저장한다
 - 저장된 방향은 `FacingDirection`으로 외부에 공개된다
-- 비주얼은 루트 오브젝트를 뒤집지 않고 `RobotMaidVisual`의 스프라이트만 뒤집는다
+- 비주얼은 루트 오브젝트를 뒤집지 않고 `Visual`의 스프라이트만 뒤집는다
 
 이 규칙의 목적은 두 가지다.
 

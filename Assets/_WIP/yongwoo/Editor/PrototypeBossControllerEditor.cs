@@ -6,11 +6,26 @@ public class PrototypeBossControllerEditor : Editor
 {
     public override void OnInspectorGUI()
     {
+        EditorGUILayout.HelpBox(
+            "이 컴포넌트는 보스 전투 규칙과 튜닝값의 기준입니다.\n" +
+            "Boss.prefab의 Visual / Sensors / Debug 자식 구조를 전제로 동작하며,\n" +
+            "패턴 수치, 몸통 판정, 투사체 발사 기준은 여기에서 조정합니다.",
+            MessageType.Info);
+
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("프리팹에서 같이 볼 것", EditorStyles.boldLabel);
+        EditorGUILayout.HelpBox(
+            "- Visual: SpriteRenderer + Animator\n" +
+            "- Sensors/ProjectileSpawn: 투사체 발사 기준점\n" +
+            "- Debug: 대시/내려찍기 시각화 부모",
+            MessageType.None);
+
+        EditorGUILayout.Space();
         DrawDefaultInspector();
 
         if (!Application.isPlaying)
         {
-            EditorGUILayout.HelpBox("보스 패턴과 전투값은 이 컴포넌트에 모아둡니다. 플레이 중 바꾼 값은 즉시 반영되고, 플레이 모드를 끌 때 Boss 프리팹에 저장됩니다.", MessageType.Info);
+            EditorGUILayout.HelpBox("플레이 중 바꾼 값은 즉시 반영되고, 플레이 모드를 끌 때 Boss 프리팹에 저장됩니다.", MessageType.Info);
             return;
         }
 

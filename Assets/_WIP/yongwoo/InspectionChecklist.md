@@ -41,6 +41,8 @@
 ## 구조
 
 - [ ] 플레이어 기준 자산은 `Player.prefab`으로 이해 가능하다
+- [ ] `Player.prefab`을 열면 `Visual`, `Sensors`, `Debug` 역할이 바로 읽힌다
 - [ ] 보스 기준 자산은 `Boss.prefab`으로 이해 가능하다
+- [ ] `Boss.prefab`을 열면 `Visual`, `Sensors`, `Debug`, `ProjectileSpawn` 역할이 바로 읽힌다
 - [ ] 디버그룸은 전투 테스트를 위한 연결과 UI만 담당한다
 - [ ] 튜닝값의 소스 오브 트루스가 prefab 하나로 유지된다

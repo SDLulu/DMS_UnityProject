@@ -12,7 +12,6 @@ public enum PrototypeBossAnimationState
 }
 
 [DisallowMultipleComponent]
-[RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(PrototypeHealth))]
 public class PrototypeBossController : MonoBehaviour
@@ -22,6 +21,10 @@ public class PrototypeBossController : MonoBehaviour
     [SerializeField] private bool invertSpriteFacing = false;
     [SerializeField] private Color dashHitboxColor = new Color(1f, 0.25f, 0.25f, 0.22f);
     [SerializeField] private Color leapHitboxColor = new Color(1f, 0.65f, 0.2f, 0.2f);
+    [SerializeField] private Transform visualRoot;
+    [SerializeField] private SpriteRenderer visualRenderer;
+    [SerializeField] private Transform projectileSpawnPoint;
+    [SerializeField] private Transform debugRoot;
 
     private enum BossState
     {
@@ -70,6 +73,9 @@ public class PrototypeBossController : MonoBehaviour
 
     public PrototypeBossAnimationState AnimationState => _animationState;
     public PrototypeBossConfig RuntimeConfig => _config;
+    public Transform VisualRoot => visualRoot;
+    public SpriteRenderer VisualRenderer => visualRenderer;
+    public Transform ProjectileSpawnPoint => projectileSpawnPoint;
 
     private void Awake()
     {
@@ -100,9 +106,21 @@ public class PrototypeBossController : MonoBehaviour
 
     private void CacheComponents()
     {
-        if (_spriteRenderer == null)
+        if (visualRoot == null)
         {
-            _spriteRenderer = GetComponent<SpriteRenderer>();
+            visualRoot = transform.Find("Visual");
+        }
+
+        if (visualRenderer == null)
+        {
+            _spriteRenderer = visualRoot != null
+                ? visualRoot.GetComponent<SpriteRenderer>()
+                : GetComponentInChildren<SpriteRenderer>();
+            visualRenderer = _spriteRenderer;
+        }
+        else
+        {
+            _spriteRenderer = visualRenderer;
         }
 
         if (_boxCollider == null)
@@ -113,6 +131,17 @@ public class PrototypeBossController : MonoBehaviour
         if (_health == null)
         {
             _health = GetComponent<PrototypeHealth>();
+        }
+
+        if (projectileSpawnPoint == null)
+        {
+            Transform sensorsRoot = transform.Find("Sensors");
+            projectileSpawnPoint = sensorsRoot != null ? sensorsRoot.Find("ProjectileSpawn") : null;
+        }
+
+        if (debugRoot == null)
+        {
+            debugRoot = transform.Find("Debug");
         }
     }
 
@@ -546,7 +575,16 @@ public class PrototypeBossController : MonoBehaviour
         _burstsRemaining--;
         _burstTimer = _activePattern.volleySpacing;
 
-        Vector3 spawnPosition = transform.position + new Vector3(_activePattern.projectileSpawnX * _facing, _activePattern.projectileSpawnY, 0f);
+        Vector3 spawnPosition;
+        if (projectileSpawnPoint != null)
+        {
+            Vector3 sensorOffset = projectileSpawnPoint.position - transform.position;
+            spawnPosition = transform.position + new Vector3(Mathf.Abs(sensorOffset.x) * _facing, sensorOffset.y, 0f);
+        }
+        else
+        {
+            spawnPosition = transform.position + new Vector3(_activePattern.projectileSpawnX * _facing, _activePattern.projectileSpawnY, 0f);
+        }
         Vector2 centerDirection = _target != null
             ? ((Vector2)_target.position - (Vector2)spawnPosition).normalized
             : new Vector2(_facing, 0f);
@@ -768,6 +806,11 @@ public class PrototypeBossController : MonoBehaviour
     private GameObject CreateHitboxVisual(string objectName, Sprite sprite, int sortingOrder)
     {
         GameObject visual = new GameObject(objectName);
+        if (debugRoot != null)
+        {
+            visual.transform.SetParent(debugRoot, false);
+        }
+
         SpriteRenderer renderer = visual.AddComponent<SpriteRenderer>();
         renderer.sprite = sprite;
         renderer.sortingOrder = sortingOrder;

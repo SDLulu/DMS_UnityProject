@@ -3,15 +3,18 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class PrototypePlayerAnimationDriver : MonoBehaviour
 {
+    private const float GroundedAnimationConfirmDuration = 0.06f;
+
     private static readonly int IdleState = Animator.StringToHash("Base Layer.Idle");
     private static readonly int RunState = Animator.StringToHash("Base Layer.Run");
     private static readonly int AttackState = Animator.StringToHash("Base Layer.Attack");
     private static readonly int JumpState = Animator.StringToHash("Base Layer.Jump");
     private static readonly int FallState = Animator.StringToHash("Base Layer.Fall");
 
-    [SerializeField] private string visualChildName = "RobotMaidVisual";
+    [SerializeField] private Transform visualRoot;
     [SerializeField] private float runThreshold = 0.05f;
-    [SerializeField] private float jumpThreshold = 0.1f;
+    [SerializeField] private float jumpThreshold = 0.2f;
+    [SerializeField] private float fallThreshold = -0.15f;
     [SerializeField] private float defaultAttackDuration = 0.28f;
     [SerializeField] private float crossFadeDuration = 0.04f;
     [SerializeField] private float attackVisualYOffset = 0f;
@@ -24,6 +27,7 @@ public class PrototypePlayerAnimationDriver : MonoBehaviour
     private Transform _visualTransform;
     private Vector3 _baseVisualLocalPosition;
     private float _attackTimer;
+    private float _groundedConfirmTimer;
     private int _currentState;
 
     private void Awake()
@@ -75,11 +79,26 @@ public class PrototypePlayerAnimationDriver : MonoBehaviour
         float horizontalSpeed = _body != null ? Mathf.Abs(_body.linearVelocity.x) : 0f;
         float verticalSpeed = _body != null ? _body.linearVelocity.y : 0f;
         bool isGrounded = _controller != null && _controller.IsGroundedNow;
+        _groundedConfirmTimer = isGrounded
+            ? _groundedConfirmTimer + Time.deltaTime
+            : 0f;
 
         int desiredState;
-        if (!isGrounded)
+        bool groundedForAnimation = isGrounded && _groundedConfirmTimer >= GroundedAnimationConfirmDuration;
+        if (!groundedForAnimation)
         {
-            desiredState = verticalSpeed > jumpThreshold ? JumpState : FallState;
+            if (verticalSpeed > jumpThreshold)
+            {
+                desiredState = JumpState;
+            }
+            else if (verticalSpeed < fallThreshold)
+            {
+                desiredState = FallState;
+            }
+            else
+            {
+                desiredState = _currentState == FallState ? FallState : JumpState;
+            }
         }
         else
         {
@@ -114,12 +133,21 @@ public class PrototypePlayerAnimationDriver : MonoBehaviour
 
         if (_animator == null)
         {
-            Transform visual = transform.Find(visualChildName);
-            if (visual != null)
+            if (visualRoot == null && _controller != null)
             {
-                _visualTransform = visual;
-                _baseVisualLocalPosition = visual.localPosition;
-                _animator = visual.GetComponent<Animator>();
+                visualRoot = _controller.VisualRoot;
+            }
+
+            if (visualRoot == null)
+            {
+                visualRoot = transform.Find("Visual") ?? transform.Find("RobotMaidVisual");
+            }
+
+            if (visualRoot != null)
+            {
+                _visualTransform = visualRoot;
+                _baseVisualLocalPosition = visualRoot.localPosition;
+                _animator = visualRoot.GetComponent<Animator>();
             }
         }
     }

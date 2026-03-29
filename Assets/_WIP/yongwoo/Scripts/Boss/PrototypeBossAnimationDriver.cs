@@ -1,7 +1,6 @@
 using UnityEngine;
 
 [DisallowMultipleComponent]
-[RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(PrototypeBossController))]
 [RequireComponent(typeof(PrototypeHealth))]
 public class PrototypeBossAnimationDriver : MonoBehaviour
@@ -13,6 +12,7 @@ public class PrototypeBossAnimationDriver : MonoBehaviour
     private static readonly int ShootState = Animator.StringToHash("Base Layer.Shoot");
     private static readonly int HitState = Animator.StringToHash("Base Layer.Hit");
 
+    [SerializeField] private Animator visualAnimator;
     [SerializeField] private float crossFadeDuration = 0.05f;
     [SerializeField] private float hitDuration = 0.18f;
 
@@ -24,14 +24,13 @@ public class PrototypeBossAnimationDriver : MonoBehaviour
 
     private void Awake()
     {
-        _animator = GetComponent<Animator>();
-        _controller = GetComponent<PrototypeBossController>();
-        _health = GetComponent<PrototypeHealth>();
+        CacheReferences();
         PlayState(IdleState, true);
     }
 
     private void OnEnable()
     {
+        CacheReferences();
         if (_health != null)
         {
             _health.Damaged += HandleDamaged;
@@ -48,6 +47,11 @@ public class PrototypeBossAnimationDriver : MonoBehaviour
 
     private void Update()
     {
+        if (_animator == null || _controller == null)
+        {
+            CacheReferences();
+        }
+
         if (_animator == null || _controller == null)
         {
             return;
@@ -77,6 +81,34 @@ public class PrototypeBossAnimationDriver : MonoBehaviour
             default:
                 PlayState(IdleState, false);
                 break;
+        }
+    }
+
+    private void CacheReferences()
+    {
+        if (_controller == null)
+        {
+            _controller = GetComponent<PrototypeBossController>();
+        }
+
+        if (_health == null)
+        {
+            _health = GetComponent<PrototypeHealth>();
+        }
+
+        if (_animator == null)
+        {
+            if (visualAnimator == null)
+            {
+                visualAnimator = GetComponent<Animator>();
+            }
+
+            if (visualAnimator == null)
+            {
+                visualAnimator = GetComponentInChildren<Animator>();
+            }
+
+            _animator = visualAnimator;
         }
     }
 

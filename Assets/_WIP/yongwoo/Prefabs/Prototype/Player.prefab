@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6711499937779945676}
   - component: {fileID: 809301512936430063}
   m_Layer: 0
-  m_Name: RobotMaidVisual
+  m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,6 +152,7 @@ Transform:
   m_Children:
   - {fileID: 3961786691620537870}
   - {fileID: 1186911569272290889}
+  - {fileID: 8417712401432309100}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2249624132469796711
@@ -188,7 +189,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.66}
+  m_Offset: {x: 0.030636072, y: -0.829836}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -198,7 +199,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.4, y: 0.45}
+  m_Size: {x: 0.2718854, y: 0.5223038}
   m_EdgeRadius: 0
 --- !u!50 &5774349901685184387
 Rigidbody2D:
@@ -246,15 +247,15 @@ MonoBehaviour:
   airAcceleration: 54
   airDeceleration: 42
   turnaroundAccelerationMultiplier: 1.65
-  jumpForce: 8.6
+  jumpForce: 10
   coyoteTime: 0.1
   jumpBufferTime: 0.12
-  fallGravityMultiplier: 2.35
-  jumpCutGravityMultiplier: 2.9
-  apexGravityMultiplier: 0.92
-  apexMoveSpeedMultiplier: 1.08
+  fallGravityMultiplier: 3
+  jumpCutGravityMultiplier: 3
+  apexGravityMultiplier: 1
+  apexMoveSpeedMultiplier: 1
   apexThreshold: 1.2
-  maxFallSpeed: 18
+  maxFallSpeed: 24
   groundedStickForce: 1.5
   baseGravityScale: 3
   groundCheck: {fileID: 1186911569272290889}
@@ -262,7 +263,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
-  visualRoot: {fileID: 0}
+  visualRoot: {fileID: 3961786691620537870}
   invertVisualFacing: 1
 --- !u!114 &4762030214991739480
 MonoBehaviour:
@@ -300,8 +301,8 @@ MonoBehaviour:
   attackDamage: 1
   attackCooldown: 0.28
   attackAnimationDuration: 0.18
-  attackSize: {x: 0.33, y: 0.53}
-  attackOffset: {x: 0.36, y: -0.95}
+  attackSize: {x: 0.33, y: 0.68}
+  attackOffset: {x: 0.36, y: -1.25}
   attackKnockbackX: 6
   attackKnockbackY: 2.5
   hitLayers:
@@ -322,9 +323,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c8953f31b511064c8f2189050e139d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrototypePlayerAnimationDriver
-  visualChildName: RobotMaidVisual
+  visualRoot: {fileID: 3961786691620537870}
   runThreshold: 0.05
-  jumpThreshold: 0.1
+  jumpThreshold: 0.2
+  fallThreshold: -0.15
   defaultAttackDuration: 0.28
   crossFadeDuration: 0.04
   attackVisualYOffset: 0
@@ -350,15 +352,15 @@ MonoBehaviour:
       airAcceleration: 54
       airDeceleration: 42
       turnaroundAccelerationMultiplier: 1.65
-      jumpForce: 8.6
+      jumpForce: 10
       coyoteTime: 0.1
       jumpBufferTime: 0.12
-      fallGravityMultiplier: 2.35
-      jumpCutGravityMultiplier: 2.9
-      apexGravityMultiplier: 0.92
-      apexMoveSpeedMultiplier: 1.08
+      fallGravityMultiplier: 3
+      jumpCutGravityMultiplier: 3
+      apexGravityMultiplier: 1
+      apexMoveSpeedMultiplier: 1
       apexThreshold: 1.2
-      maxFallSpeed: 18
+      maxFallSpeed: 24
       groundedStickForce: 1.5
       gravityScale: 3
       groundCheckRadius: 0.12
@@ -366,8 +368,8 @@ MonoBehaviour:
       attackDamage: 1
       attackCooldown: 0.28
       attackAnimationDuration: 0.18
-      attackSize: {x: 0.33, y: 0.53}
-      attackOffset: {x: 0.36, y: -0.95}
+      attackSize: {x: 0.33, y: 0.68}
+      attackOffset: {x: 0.36, y: -1.25}
       attackKnockbackX: 6
       attackKnockbackY: 2.5
       showAttackVisual: 1
@@ -398,10 +400,10 @@ MonoBehaviour:
         b: 0.25
         a: 1
     collider:
-      width: 0.4
-      height: 0.45
-      offsetX: 0
-      offsetY: -0.66
+      width: 0.2718854
+      height: 0.5223038
+      offsetX: 0.030636072
+      offsetY: -0.829836
       isTrigger: 0
     camera:
       offset:
@@ -422,7 +424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1186911569272290889}
   m_Layer: 0
-  m_Name: GroundCheck
+  m_Name: Sensors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -437,7 +439,38 @@ Transform:
   m_GameObject: {fileID: 6329646601198042698}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.896, z: 0}
+  m_LocalPosition: {x: 0, y: -1.098, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3651190054026640413}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7573534861154171012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8417712401432309100}
+  m_Layer: 0
+  m_Name: Debug
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8417712401432309100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7573534861154171012}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

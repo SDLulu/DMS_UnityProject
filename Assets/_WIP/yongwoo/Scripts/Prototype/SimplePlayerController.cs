@@ -6,6 +6,13 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D))]
 public class SimplePlayerController : MonoBehaviour
 {
+    private const string DefaultSensorName = "Sensors";
+    private const string LegacyGroundCheckName = "GroundCheck";
+    private const string DefaultVisualName = "Visual";
+    private const string LegacyVisualName = "RobotMaidVisual";
+    private const float JumpGroundIgnoreDuration = 0.08f;
+    private const float UpwardUngroundedVelocity = 0.05f;
+
     [Header("Movement")]
     [SerializeField] private float groundMoveSpeed = 6.25f;
     [SerializeField] private float airMoveSpeed = 6f;
@@ -14,15 +21,15 @@ public class SimplePlayerController : MonoBehaviour
     [SerializeField] private float airAcceleration = 54f;
     [SerializeField] private float airDeceleration = 42f;
     [SerializeField] private float turnaroundAccelerationMultiplier = 1.65f;
-    [SerializeField] private float jumpForce = 8.6f;
+    [SerializeField] private float jumpForce = 9.35f;
     [SerializeField] private float coyoteTime = 0.1f;
     [SerializeField] private float jumpBufferTime = 0.12f;
-    [SerializeField] private float fallGravityMultiplier = 2.35f;
-    [SerializeField] private float jumpCutGravityMultiplier = 2.9f;
+    [SerializeField] private float fallGravityMultiplier = 2.85f;
+    [SerializeField] private float jumpCutGravityMultiplier = 3.25f;
     [SerializeField] private float apexGravityMultiplier = 0.92f;
     [SerializeField] private float apexMoveSpeedMultiplier = 1.08f;
     [SerializeField] private float apexThreshold = 1.2f;
-    [SerializeField] private float maxFallSpeed = 18f;
+    [SerializeField] private float maxFallSpeed = 22f;
     [SerializeField] private float groundedStickForce = 1.5f;
     [SerializeField] private float baseGravityScale = 3f;
 
@@ -42,11 +49,15 @@ public class SimplePlayerController : MonoBehaviour
     private float _jumpBufferTimer;
     private bool _jumpHeld;
     private float _facing = 1f;
+    private float _jumpGroundIgnoreTimer;
     private SpriteRenderer _visualRenderer;
+    private Collider2D[] _selfColliders = System.Array.Empty<Collider2D>();
 
     public Vector2 CurrentVelocity => _body != null ? _body.linearVelocity : Vector2.zero;
     public bool IsGroundedNow => _isGrounded;
     public float FacingDirection => _facing;
+    public Transform VisualRoot => visualRoot;
+    public Transform GroundSensor => groundCheck;
 
     public PlayerMovementConfig CreateConfigSnapshot()
     {
@@ -106,6 +117,7 @@ public class SimplePlayerController : MonoBehaviour
     private void Awake()
     {
         _body = GetComponent<Rigidbody2D>();
+        _selfColliders = GetComponentsInChildren<Collider2D>(includeInactive: true);
         gameObject.tag = "Player";
         _body.freezeRotation = true;
 
@@ -116,17 +128,14 @@ public class SimplePlayerController : MonoBehaviour
 
         if (groundCheck == null)
         {
-            Transform existingGroundCheck = transform.Find("GroundCheck");
+            Transform existingGroundCheck = transform.Find(DefaultSensorName) ?? transform.Find(LegacyGroundCheckName);
             if (existingGroundCheck != null)
             {
                 groundCheck = existingGroundCheck;
             }
             else
             {
-                GameObject groundCheckObject = new GameObject("GroundCheck");
-                groundCheckObject.transform.SetParent(transform);
-                groundCheckObject.transform.localPosition = new Vector3(0f, -0.65f, 0f);
-                groundCheck = groundCheckObject.transform;
+                Debug.LogWarning("Player prefab is missing Sensors transform. Fix the prefab instead of relying on runtime fallback.", this);
             }
         }
 
@@ -137,10 +146,14 @@ public class SimplePlayerController : MonoBehaviour
 
         if (visualRoot == null)
         {
-            Transform existingVisual = transform.Find("RobotMaidVisual");
+            Transform existingVisual = transform.Find(DefaultVisualName) ?? transform.Find(LegacyVisualName);
             if (existingVisual != null)
             {
                 visualRoot = existingVisual;
+            }
+            else
+            {
+                Debug.LogWarning("Player prefab is missing Visual transform. Fix the prefab instead of relying on runtime fallback.", this);
             }
         }
 
@@ -171,7 +184,14 @@ public class SimplePlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _isGrounded = IsGrounded();
+        bool detectedGround = IsGrounded();
+        if (_jumpGroundIgnoreTimer > 0f)
+        {
+            _jumpGroundIgnoreTimer = Mathf.Max(0f, _jumpGroundIgnoreTimer - Time.fixedDeltaTime);
+        }
+
+        bool risingFromJump = _body.linearVelocity.y > UpwardUngroundedVelocity;
+        _isGrounded = detectedGround && _jumpGroundIgnoreTimer <= 0f && !risingFromJump;
         _coyoteTimer = _isGrounded ? coyoteTime : Mathf.Max(0f, _coyoteTimer - Time.fixedDeltaTime);
 
         float targetSpeed = _moveInput * (_isGrounded ? groundMoveSpeed : airMoveSpeed);
@@ -202,6 +222,7 @@ public class SimplePlayerController : MonoBehaviour
             _isGrounded = false;
             _coyoteTimer = 0f;
             _jumpBufferTimer = 0f;
+            _jumpGroundIgnoreTimer = JumpGroundIgnoreDuration;
         }
 
         float gravityScale = baseGravityScale;
@@ -264,7 +285,32 @@ public class SimplePlayerController : MonoBehaviour
             return false;
         }
 
-        return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(groundCheck.position, groundCheckRadius, groundLayer);
+        for (int i = 0; i < hits.Length; i++)
+        {
+            Collider2D hit = hits[i];
+            if (hit == null)
+            {
+                continue;
+            }
+
+            bool isSelfCollider = false;
+            for (int selfIndex = 0; selfIndex < _selfColliders.Length; selfIndex++)
+            {
+                if (_selfColliders[selfIndex] == hit)
+                {
+                    isSelfCollider = true;
+                    break;
+                }
+            }
+
+            if (!isSelfCollider)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private float ReadHorizontal()

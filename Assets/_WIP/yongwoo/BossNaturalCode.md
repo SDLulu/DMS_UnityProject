@@ -23,9 +23,19 @@
 - `PrototypeBossController`
 - `PrototypeBossAnimationDriver`
 - `PrototypeHealth`
-- `SpriteRenderer`
-- `Animator`
 - `BoxCollider2D`
+- 자식 `Visual`
+- 자식 `Sensors`
+- 자식 `Debug`
+
+각 자식의 의미는 아래와 같다.
+
+- `Visual`
+  보스 스프라이트와 애니메이터를 담는 표현 레이어다
+- `Sensors`
+  투사체 발사 위치처럼 전투 기준점을 담는 감지 레이어다
+- `Debug`
+  대시/내려찍기 시각화 같은 디버그용 표식을 담는 레이어다
 
 이 프리팹은 보스의 기본 구조를 이미 가져야 한다.  
 디버그룸 설치 코드는 빠진 컴포넌트를 몰래 채워 넣지 않는다.
