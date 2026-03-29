@@ -5,6 +5,8 @@ public class P_Portal : MonoBehaviour
 {
     // 넘어갈 씬 이름
     public string nextSceneName;
+    // 이동할 SpawnPoint 위치
+    public string targetSpawnID;
 
     private bool isPlayerInRange = false;
 
@@ -30,6 +32,7 @@ public class P_Portal : MonoBehaviour
         if (isPlayerInRange)
         {
             Debug.Log("다음 Scene 넘어가기");
+            P_SpawnManager.nextSpawnID = targetSpawnID;
             SceneManager.LoadScene(nextSceneName);
         }
     }

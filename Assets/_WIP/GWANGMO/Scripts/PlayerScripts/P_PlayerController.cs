@@ -15,6 +15,10 @@ public class P_PlayerController : MonoBehaviour
 
     // Player 상태
     private bool isRunning;
+    void Start()
+    {
+        MoveToSpawnPoint();
+    }
 
     void Awake()
     {
@@ -66,6 +70,24 @@ public class P_PlayerController : MonoBehaviour
         if (portal != null)
         {
             currentPortal = null;
+        }
+    }
+    // 스폰포인트로 이동
+    void MoveToSpawnPoint()
+    {
+        if (string.IsNullOrEmpty(P_SpawnManager.nextSpawnID))
+            return;
+
+        P_SpawnPoint[] spawnPoints = FindObjectsByType<P_SpawnPoint>(FindObjectsSortMode.None);
+
+        foreach (P_SpawnPoint spawnPoint in spawnPoints)
+        {
+            if (spawnPoint.spawnID == P_SpawnManager.nextSpawnID)
+            {
+                transform.position = spawnPoint.transform.position;
+                P_SpawnManager.nextSpawnID = "";
+                break;
+            }
         }
     }
 }

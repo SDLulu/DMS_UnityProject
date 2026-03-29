@@ -53,6 +53,9 @@ TagManager:
   - name: Portal
     uniqueID: 1545365843
     locked: 0
+  - name: SpawnPoint
+    uniqueID: 1576150151
+    locked: 0
   - name: NPC
     uniqueID: 3628358275
     locked: 0
