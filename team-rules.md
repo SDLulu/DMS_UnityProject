@@ -66,10 +66,10 @@ crashlytics-build.properties
 ### 체크리스트
 
 - [ ] Unity 버전 통일 확인
-- [x] Asset Serialization → Force Text
-- [x] Version Control → Visible Meta Files
-- [x] .gitignore 적용
-- [x] 폴더 구조 생성 (아래 참고)
+- [ ] Asset Serialization → Force Text
+- [ ] Version Control → Visible Meta Files
+- [ ] .gitignore 적용
+- [ ] 폴더 구조 생성 (아래 참고)
 - [ ] 각자 개인 브랜치 생성
 - [ ] 각자 Dev 씬 생성
 
@@ -79,15 +79,12 @@ crashlytics-build.properties
 
 ```
 Assets/
-├── _Scenes/               # 씬은 여기 한 곳에 모아두고 이름으로 구분한다
-│   ├── Stage_01.unity     # 실제 게임에 들어가는 씬
-│   ├── Stage_02.unity
-│   ├── Dev_yongwoo.unity  # 개인 테스트용 씬
-│   ├── Dev_B.unity
-│   └── Dev_C.unity
+├── _Scenes/
+│   ├── Main/              # 실제 게임에 들어가는 씬 (스테이지별)
+│   └── Dev/               # 각자 테스트용 씬 (Dev_용우, Dev_B, Dev_C)
 │
 ├── _WIP/                  # 🔧 각자 작업 공간 (여기서 모든 작업을 한다)
-│   ├── yongwoo/
+│   ├── 용우/
 │   │   ├── Scripts/
 │   │   ├── Art/
 │   │   ├── Prefabs/
@@ -136,10 +133,11 @@ Assets/
 │
 ├── Data/                  # ScriptableObject, JSON 등
 ├── Fonts/
-├── ThirdParty/            # 서드파티 에셋은 여기 아래 에셋별 폴더로 둔다
+├── Feel/                  # 서드파티 에셋은 에셋별로 폴더를 분리해서 둔다
 ├── Plugins/               # 코드/셰이더/툴 성격의 플러그인만 둔다
 ├── Resources/             # 플러그인/에셋 설정 파일 (예: DOTweenSettings)
-└── Settings/              # 렌더 파이프라인/프로젝트용 설정 에셋
+├── ToonFX/                # 서드파티 VFX 에셋
+└── Market_Asset/          # 기타 외부 아트/리소스 에셋
 ```
 
 ### 폴더 규칙
@@ -150,20 +148,18 @@ Assets/
 - **완성되면** 해당하는 공용 폴더(Scripts/Enemy/, Art/Sprites/ 등)로 옮긴다.
 - 현재 프로젝트는 **플러그인**과 **서드파티 에셋**을 구분해서 관리한다.
   - 플러그인성 자산은 `Assets/Plugins`에 둔다.
-  - 에셋 팩 / VFX / 아트 리소스는 `Assets/ThirdParty/에셋이름/` 형태로 분리한다.
-- 현재 프로젝트의 대표 예시는 `Assets/ThirdParty/Feel`, `Assets/ThirdParty/ToonFX`, `Assets/ThirdParty/Market_Asset` 이다.
-- 새 서드파티 에셋을 들여올 때도 가능하면 `Assets/ThirdParty/에셋이름/` 형태로 둔다.
+  - 에셋 팩 / VFX / 아트 리소스는 `Assets/Feel`, `Assets/ToonFX`, `Assets/Market_Asset`처럼 **에셋별 전용 폴더**로 분리한다.
+- 새 서드파티 에셋을 들여올 때도 가능하면 `Assets/에셋이름/` 형태로 따로 둔다.
 - 외부 에셋 원본 파일은 절대 직접 수정하지 않는다. 필요하면 복사해서 사용한다.
-- 이미 임포트된 외부 에셋 폴더는 **팀이 정한 구조 없이 수시로** 옮기지 않는다.
-  - 현재 프로젝트는 `Assets/ThirdParty/에셋이름` 구조를 기준으로 정리한다.
+- 이미 임포트된 외부 에셋 폴더는 함부로 `ThirdParty/` 같은 단일 공용 폴더로 몰아 옮기지 않는다.
+  - 에셋마다 경로를 가정하거나 `Resources` 로딩을 사용하는 경우가 있다.
   - 특히 `Assets/Resources/DOTweenSettings.asset` 같은 파일은 `Resources` 규칙을 유지해야 한다.
 - 폴더를 분리해 두면 에셋 출처와 용도를 바로 파악할 수 있고, 삭제/업데이트/라이선스 관리도 편하다.
 
 ### 외부 에셋 관련 주의사항
 
-- 외부 에셋은 가능하면 `Assets/ThirdParty` 아래에서 **에셋별 폴더를 유지**한다.
+- 외부 에셋은 가능하면 **에셋별 폴더를 유지**한다.
 - `Plugins`는 아무 외부 에셋이나 넣는 폴더가 아니라, 코드/셰이더/에디터 툴 같은 플러그인만 넣는다.
-- `Resources`는 경로 규칙이 중요한 파일이 있을 수 있으므로, 필요한 경우만 유지하고 함부로 옮기지 않는다.
 - 폴더 이동이 꼭 필요하면 **반드시 Unity Editor 안에서** 이동하고, 임포트 후 참조가 유지되는지 확인한다.
 - 데모 씬, 샘플 에셋, 대용량 파일은 꼭 필요한 것만 유지한다. 필요 없으면 저장소에 올리기 전에 정리한다.
 - 저장소가 **public**이면 유료 Asset Store 에셋 원본 업로드는 재배포 문제가 생길 수 있으니 주의한다.
@@ -211,8 +207,8 @@ Unity의 씬(.unity) 파일과 프리팹(.prefab) 파일은 내부적으로 수�
 | 상황 | 선언 |
 |------|------|
 | `_WIP/내이름/` 안에서 작업 | ❌ 필요 없음 |
-| `_Scenes/Dev_내이름.unity` 작업 | ❌ 필요 없음 |
-| `_Scenes/Stage_01.unity` 수정 | ✅ **선언 필수** |
+| `_Scenes/Dev/Dev_내이름` 작업 | ❌ 필요 없음 |
+| `_Scenes/Main/Stage_01.unity` 수정 | ✅ **선언 필수** |
 | 공용 `Scripts/Player/` 안의 파일 수정 | ✅ **선언 필수** |
 | 공용 `Prefabs/` 안의 프리팹 수정 | ✅ **선언 필수** |
 | 다른 사람의 `_WIP/` 파일 수정 | ✅ **선언 필수** (본인에게 먼저 말하기) |
@@ -234,15 +230,15 @@ Unity의 씬(.unity) 파일과 프리팹(.prefab) 파일은 내부적으로 수�
 
 ```bash
 # 상대방 것을 쓰겠다 (내 작업을 버림)
-git checkout --theirs Assets/_Scenes/Stage_01.unity
+git checkout --theirs Assets/_Scenes/Main/Stage_01.unity
 
 # 내 것을 쓰겠다 (상대방 작업을 버림)
-git checkout --ours Assets/_Scenes/Stage_01.unity
+git checkout --ours Assets/_Scenes/Main/Stage_01.unity
 ```
 
 선택한 후:
 ```bash
-git add Assets/_Scenes/Stage_01.unity
+git add Assets/_Scenes/Main/Stage_01.unity
 git commit -m "[Fix] Stage_01 씬 충돌 해결 (내 것 선택)"
 ```
 
