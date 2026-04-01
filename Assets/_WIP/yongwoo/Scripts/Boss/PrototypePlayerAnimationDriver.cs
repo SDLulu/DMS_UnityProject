@@ -14,7 +14,7 @@ public class PrototypePlayerAnimationDriver : MonoBehaviour
     [SerializeField] private float jumpThreshold = 0.1f;
     [SerializeField] private float defaultAttackDuration = 0.28f;
     [SerializeField] private float crossFadeDuration = 0.04f;
-    [SerializeField] private float attackVisualYOffset = 0f;
+    [SerializeField] private float attackVisualYOffset = -0.08f;
     [SerializeField] private float visualAnchorLerpSpeed = 16f;
 
     private Animator _animator;
