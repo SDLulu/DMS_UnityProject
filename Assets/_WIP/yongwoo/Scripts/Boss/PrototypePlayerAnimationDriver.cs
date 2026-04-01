@@ -10,12 +10,6 @@ public class PrototypePlayerAnimationDriver : MonoBehaviour
     private static readonly int AttackState = Animator.StringToHash("Base Layer.Attack");
     private static readonly int JumpState = Animator.StringToHash("Base Layer.Jump");
     private static readonly int FallState = Animator.StringToHash("Base Layer.Fall");
-    private static readonly int CrouchEnterState = Animator.StringToHash("Base Layer.CrouchEnter");
-    private static readonly int CrouchHoldState = Animator.StringToHash("Base Layer.CrouchHold");
-    private static readonly int CrouchExitState = Animator.StringToHash("Base Layer.CrouchExit");
-    private static readonly int DashState = Animator.StringToHash("Base Layer.Dash");
-    private static readonly int RollState = Animator.StringToHash("Base Layer.Roll");
-    private const float CrouchTransitionDuration = 0.3f;
 
     [SerializeField] private Transform visualRoot;
     [SerializeField] private float runThreshold = 0.05f;
@@ -34,7 +28,6 @@ public class PrototypePlayerAnimationDriver : MonoBehaviour
     private Vector3 _baseVisualLocalPosition;
     private float _attackTimer;
     private float _groundedConfirmTimer;
-    private float _crouchTransitionTimer;
     private int _currentState;
 
     private void Awake()
@@ -73,18 +66,6 @@ public class PrototypePlayerAnimationDriver : MonoBehaviour
 
         UpdateVisualAnchor();
 
-        if (_controller != null && _controller.IsRolling)
-        {
-            PlayState(RollState, false);
-            return;
-        }
-
-        if (_controller != null && _controller.IsDashing)
-        {
-            PlayState(DashState, false);
-            return;
-        }
-
         if (_attackTimer > 0f)
         {
             _attackTimer -= Time.deltaTime;
@@ -106,7 +87,6 @@ public class PrototypePlayerAnimationDriver : MonoBehaviour
         bool groundedForAnimation = isGrounded && _groundedConfirmTimer >= GroundedAnimationConfirmDuration;
         if (!groundedForAnimation)
         {
-            _crouchTransitionTimer = 0f;
             if (verticalSpeed > jumpThreshold)
             {
                 desiredState = JumpState;
@@ -122,11 +102,6 @@ public class PrototypePlayerAnimationDriver : MonoBehaviour
         }
         else
         {
-            if (TryHandleCrouchAnimation())
-            {
-                return;
-            }
-
             desiredState = horizontalSpeed > runThreshold ? RunState : IdleState;
         }
 
@@ -194,49 +169,6 @@ public class PrototypePlayerAnimationDriver : MonoBehaviour
             _visualTransform.localPosition,
             targetPosition,
             Time.deltaTime * visualAnchorLerpSpeed);
-    }
-
-    private bool TryHandleCrouchAnimation()
-    {
-        bool wantsCrouch = _controller != null && _controller.IsCrouching;
-
-        if (wantsCrouch)
-        {
-            if (_currentState == CrouchHoldState)
-            {
-                return true;
-            }
-
-            if (_currentState == CrouchEnterState)
-            {
-                _crouchTransitionTimer = Mathf.Max(0f, _crouchTransitionTimer - Time.deltaTime);
-                if (_crouchTransitionTimer <= 0f)
-                {
-                    PlayState(CrouchHoldState, true);
-                }
-
-                return true;
-            }
-
-            PlayState(CrouchEnterState, true);
-            _crouchTransitionTimer = CrouchTransitionDuration;
-            return true;
-        }
-
-        if (_currentState == CrouchEnterState || _currentState == CrouchHoldState)
-        {
-            PlayState(CrouchExitState, true);
-            _crouchTransitionTimer = CrouchTransitionDuration;
-            return true;
-        }
-
-        if (_currentState == CrouchExitState)
-        {
-            _crouchTransitionTimer = Mathf.Max(0f, _crouchTransitionTimer - Time.deltaTime);
-            return _crouchTransitionTimer > 0f;
-        }
-
-        return false;
     }
 
     private void PlayState(int stateHash, bool restart)
