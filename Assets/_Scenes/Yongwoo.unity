@@ -471,6 +471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 767779722435611025, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
+      propertyPath: _config.collider.width
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3651190054026640413, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.06

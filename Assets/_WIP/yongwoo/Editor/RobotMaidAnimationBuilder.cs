@@ -38,7 +38,7 @@ public static class RobotMaidAnimationBuilder
             {
                 new ClipDefinition("Idle", "1_Idle.png", 10f, true),
                 new ClipDefinition("Run", "3_Run.png", 14f, true),
-                new ClipDefinition("Jump", "7_Jump.png", 14f, true),
+                new ClipDefinition("Jump", "7_Jump.png", 14f, false),
                 new ClipDefinition("Fall", "8_Fall.png", 14f, true),
                 new ClipDefinition("Attack", "12_Attack1.png", 18f, false)
             });

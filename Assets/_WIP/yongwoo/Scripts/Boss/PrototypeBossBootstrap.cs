@@ -42,23 +42,21 @@ public static class PrototypeBossBootstrap
 
     private static PrototypeHealth SetupPlayer(GameObject playerObject)
     {
-        SimplePlayerController playerController = playerObject.GetComponent<SimplePlayerController>();
         PrototypeHealth playerHealth = playerObject.GetComponent<PrototypeHealth>();
+
         SimplePlayerCombat combat = playerObject.GetComponent<SimplePlayerCombat>();
         BoxCollider2D bodyCollider = playerObject.GetComponent<BoxCollider2D>();
         PrototypePlayerRuntimeConfig runtimeConfig = playerObject.GetComponent<PrototypePlayerRuntimeConfig>();
-        Transform visualTransform = playerController != null
-            ? playerController.VisualRoot
-            : playerObject.transform.Find("Visual") ?? playerObject.transform.Find("RobotMaidVisual");
+        Transform visualTransform = playerObject.transform.Find("RobotMaidVisual");
 
-        if (playerController == null || playerHealth == null || combat == null || bodyCollider == null || runtimeConfig == null || visualTransform == null)
+        if (playerHealth == null || combat == null || bodyCollider == null || runtimeConfig == null || visualTransform == null)
         {
             Debug.LogWarning("Player prefab is missing required prototype components. Fix the prefab instead of relying on runtime fallback.");
             return null;
         }
 
         ConfigurePlayerAnimation(playerObject, visualTransform.gameObject);
-        SetupPlayerRuntimeConfig(runtimeConfig, playerController, combat, playerHealth, bodyCollider);
+        SetupPlayerRuntimeConfig(runtimeConfig, playerObject, combat, playerHealth, bodyCollider);
         return playerHealth;
     }
 
@@ -83,8 +81,9 @@ public static class PrototypeBossBootstrap
         }
     }
 
-    private static void SetupPlayerRuntimeConfig(PrototypePlayerRuntimeConfig runtimeConfig, SimplePlayerController controller, SimplePlayerCombat combat, PrototypeHealth playerHealth, BoxCollider2D bodyCollider)
+    private static void SetupPlayerRuntimeConfig(PrototypePlayerRuntimeConfig runtimeConfig, GameObject playerObject, SimplePlayerCombat combat, PrototypeHealth playerHealth, BoxCollider2D bodyCollider)
     {
+        SimplePlayerController controller = playerObject.GetComponent<SimplePlayerController>();
         SimpleCameraFollow cameraFollow = Object.FindFirstObjectByType<SimpleCameraFollow>();
         runtimeConfig.Initialize(controller, combat, playerHealth, bodyCollider, cameraFollow);
     }

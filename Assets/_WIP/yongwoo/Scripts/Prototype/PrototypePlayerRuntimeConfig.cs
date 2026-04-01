@@ -3,7 +3,7 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class PrototypePlayerRuntimeConfig : MonoBehaviour
 {
-    [SerializeField, HideInInspector] private PrototypePlayerConfig _config = new PrototypePlayerConfig();
+    [SerializeField] private PrototypePlayerConfig _config = new PrototypePlayerConfig();
 
     private SimplePlayerController _controller;
     private SimplePlayerCombat _combat;
