@@ -78,9 +78,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingLayerID: 1100000001
+  m_SortingLayer: 3
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6852852300743010206, guid: bc48335a46b143a44ad8ea03c3bce2dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -100,7 +100,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37734614180507818}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 95d0314ed37b93a459226ffa530848ab, type: 2}
   m_CullingMode: 0
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 6982118999348350709}
   - component: {fileID: 6684791423197779739}
   - component: {fileID: 767779722435611025}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -258,11 +258,16 @@ MonoBehaviour:
   maxFallSpeed: 24
   groundedStickForce: 1.5
   baseGravityScale: 3
+  dashSpeed: 13
+  dashDuration: 0.12
+  dashCooldown: 0.5
+  rollSpeed: 8.5
+  rollDuration: 0.36
   groundCheck: {fileID: 1186911569272290889}
   groundCheckRadius: 0.12
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   visualRoot: {fileID: 3961786691620537870}
   invertVisualFacing: 1
 --- !u!114 &4762030214991739480
@@ -307,7 +312,7 @@ MonoBehaviour:
   attackKnockbackY: 2.5
   hitLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   showAttackVisual: 1
   attackVisualDuration: 0.12
   attackVisualColor: {r: 1, g: 0.9, b: 0.2, a: 0.28}
@@ -364,6 +369,11 @@ MonoBehaviour:
       groundedStickForce: 1.5
       gravityScale: 3
       groundCheckRadius: 0.12
+      dashSpeed: 13
+      dashDuration: 0.12
+      dashCooldown: 0.5
+      rollSpeed: 8.5
+      rollDuration: 0.36
     attack:
       attackDamage: 1
       attackCooldown: 0.28

@@ -13,18 +13,22 @@ public static class RobotMaidAnimationBuilder
 
     private readonly struct ClipDefinition
     {
-        public ClipDefinition(string stateName, string sourceFile, float frameRate, bool loop)
+        public ClipDefinition(string stateName, string sourceFile, float frameRate, bool loop, int startFrame = 0, int frameCount = -1)
         {
             StateName = stateName;
             SourceFile = sourceFile;
             FrameRate = frameRate;
             Loop = loop;
+            StartFrame = startFrame;
+            FrameCount = frameCount;
         }
 
         public string StateName { get; }
         public string SourceFile { get; }
         public float FrameRate { get; }
         public bool Loop { get; }
+        public int StartFrame { get; }
+        public int FrameCount { get; }
     }
 
     [MenuItem("Tools/Prototype/Build Robot Maid Animation Assets")]
@@ -37,9 +41,14 @@ public static class RobotMaidAnimationBuilder
             new[]
             {
                 new ClipDefinition("Idle", "1_Idle.png", 10f, true),
+                new ClipDefinition("CrouchEnter", "2_Down.png", 10f, false, 0, 3),
+                new ClipDefinition("CrouchHold", "2_Down.png", 10f, false, 2, 1),
+                new ClipDefinition("CrouchExit", "2_Down.png", 10f, false, 2, 3),
                 new ClipDefinition("Run", "3_Run.png", 14f, true),
                 new ClipDefinition("Jump", "7_Jump.png", 14f, true),
                 new ClipDefinition("Fall", "8_Fall.png", 14f, true),
+                new ClipDefinition("Dash", "9_DashJump.png", 18f, false),
+                new ClipDefinition("Roll", "11_Rolling.png", 14f, false),
                 new ClipDefinition("Attack", "12_Attack1.png", 18f, false)
             });
 
@@ -77,6 +86,17 @@ public static class RobotMaidAnimationBuilder
                 continue;
             }
 
+            int startFrame = Mathf.Clamp(definition.StartFrame, 0, sprites.Length - 1);
+            int frameCount = definition.FrameCount > 0
+                ? Mathf.Min(definition.FrameCount, sprites.Length - startFrame)
+                : sprites.Length - startFrame;
+            Sprite[] selectedSprites = sprites.Skip(startFrame).Take(frameCount).ToArray();
+            if (selectedSprites.Length == 0)
+            {
+                Debug.LogWarning($"Robot Maid animation source has no selected sprites: {sourcePath}");
+                continue;
+            }
+
             string outputPath = $"{OutputRoot}/{category}/{definition.StateName}.anim";
             AnimationClip clip = AssetDatabase.LoadAssetAtPath<AnimationClip>(outputPath);
             if (clip == null)
@@ -87,13 +107,13 @@ public static class RobotMaidAnimationBuilder
 
             clip.frameRate = definition.FrameRate;
 
-            ObjectReferenceKeyframe[] keyframes = new ObjectReferenceKeyframe[sprites.Length];
-            for (int i = 0; i < sprites.Length; i++)
+            ObjectReferenceKeyframe[] keyframes = new ObjectReferenceKeyframe[selectedSprites.Length];
+            for (int i = 0; i < selectedSprites.Length; i++)
             {
                 keyframes[i] = new ObjectReferenceKeyframe
                 {
                     time = i / definition.FrameRate,
-                    value = sprites[i]
+                    value = selectedSprites[i]
                 };
             }
 

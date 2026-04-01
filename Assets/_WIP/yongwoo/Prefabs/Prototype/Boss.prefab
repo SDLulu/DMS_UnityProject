@@ -78,9 +78,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingLayerID: 1100000002
+  m_SortingLayer: 4
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6852852300743010206, guid: bc48335a46b143a44ad8ea03c3bce2dc, type: 3}
   m_Color: {r: 0.33, g: 0.78, b: 1, a: 1}
@@ -123,7 +123,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 700100000000000004}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sensors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
