@@ -75,7 +75,7 @@ public class SimplePlayerCombat : MonoBehaviour
     {
         if (hitLayers.value == 0)
         {
-            hitLayers = LayerMask.GetMask("Default");
+            hitLayers = LayerMask.GetMask("Enemy");
         }
 
         _selfHealth = GetComponent<PrototypeHealth>();
@@ -90,6 +90,11 @@ public class SimplePlayerCombat : MonoBehaviour
         }
 
         UpdateAttackVisual();
+
+        if (_controller != null && _controller.IsActionLocked)
+        {
+            return;
+        }
 
         if (_cooldownTimer <= 0f && ReadAttackPressed())
         {

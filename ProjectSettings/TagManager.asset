@@ -13,11 +13,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Player
+  - Enemy
+  - Trigger
+  - Trap
   - 
   - 
   - 
@@ -41,11 +41,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: BackGround
+  - name: Background
     uniqueID: 3047988779
     locked: 0
-  - name: Tile
+  - name: Ground
     uniqueID: 3625992293
+    locked: 0
+  - name: Player
+    uniqueID: 1100000001
+    locked: 0
+  - name: Enemy
+    uniqueID: 1100000002
+    locked: 0
+  - name: Effect
+    uniqueID: 1100000003
+    locked: 0
+  - name: Foreground
+    uniqueID: 1100000004
     locked: 0
   m_RenderingLayers:
   - Default

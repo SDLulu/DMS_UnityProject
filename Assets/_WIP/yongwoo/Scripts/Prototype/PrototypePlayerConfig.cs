@@ -32,6 +32,11 @@ public class PlayerMovementConfig
     public float groundedStickForce = 1.5f;
     public float gravityScale = 3f;
     public float groundCheckRadius = 0.18f;
+    public float dashSpeed = 12f;
+    public float dashDuration = 0.14f;
+    public float dashCooldown = 2f;
+    public float rollSpeed = 8.5f;
+    public float rollDuration = 0.36f;
 }
 
 [System.Serializable]
@@ -141,6 +146,11 @@ public static class PrototypePlayerConfigLoader
         config.movement.groundedStickForce = Mathf.Max(0f, config.movement.groundedStickForce);
         config.movement.gravityScale = Mathf.Max(0.1f, config.movement.gravityScale);
         config.movement.groundCheckRadius = Mathf.Max(0.01f, config.movement.groundCheckRadius);
+        config.movement.dashSpeed = Mathf.Max(0.1f, config.movement.dashSpeed);
+        config.movement.dashDuration = Mathf.Max(0.01f, config.movement.dashDuration);
+        config.movement.dashCooldown = Mathf.Max(0f, config.movement.dashCooldown);
+        config.movement.rollSpeed = Mathf.Max(0.1f, config.movement.rollSpeed);
+        config.movement.rollDuration = Mathf.Max(0.01f, config.movement.rollDuration);
 
         config.attack.attackDamage = Mathf.Max(0f, config.attack.attackDamage);
         config.attack.attackCooldown = Mathf.Max(0.01f, config.attack.attackCooldown);

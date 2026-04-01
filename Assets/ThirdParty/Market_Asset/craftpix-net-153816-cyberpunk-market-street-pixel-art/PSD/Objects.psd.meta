@@ -1,156 +1,3865 @@
 fileFormatVersion: 2
 guid: 52ec3deadb3232d49a4cdeeee99e32d5
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 7642980859614939925
-    second: Objects_0
+importerOverride:
+  nativeImporterType: 2089858483
+  scriptedImporterType:
+    serializedVersion: 2
+    Hash: b10b55a1aa6a1aa32521bc0cab59632e
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 13
-  mipmaps:
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
     mipMapMode: 0
-    enableMipMap: 0
-    sRGBTexture: 1
-    linearTexture: 0
+    enableMipMap: 1
     fadeOut: 0
     borderMipMap: 0
     mipMapsPreserveCoverage: 0
     alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
-  bumpmap:
     convertToNormalMap: 0
-    externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
-  streamingMipmaps: 0
-  streamingMipmapsPriority: 0
-  vTOnly: 0
-  ignoreMipmapLimit: 0
-  grayScaleToAlpha: 0
-  generateCubemap: 6
-  cubemapConvolution: 0
-  seamlessCubemap: 0
-  textureFormat: 1
-  maxTextureSize: 2048
-  textureSettings:
-    serializedVersion: 2
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
-  nPOTScale: 0
-  lightmap: 0
-  compressionQuality: 50
-  spriteMode: 2
-  spriteExtrude: 1
-  spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
-  alphaUsage: 1
-  alphaIsTransparency: 1
-  spriteTessellationDetail: -1
-  textureType: 8
-  textureShape: 1
-  singleChannelComponent: 0
-  flipbookRows: 1
-  flipbookColumns: 1
-  maxTextureSizeSet: 0
-  compressionQualitySet: 0
-  textureFormatSet: 0
-  ignorePngGamma: 0
-  applyGammaDecoding: 0
-  swizzle: 50462976
-  cookieLightType: 0
-  platformSettings:
-  - serializedVersion: 4
-    buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  spriteSheet:
-    serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Objects_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 293
-        height: 247
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 51b457af892511a60800000000000000
-      internalID: 7642980859614939925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    outline: []
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
-    physicsShape: []
-    bones: []
-    spriteID: 
-    internalID: 0
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 505c3fda0422154488b2744da85c0cb2
+    spriteBone: []
+    spriteOutline: []
     vertices: []
+    spritePhysicsOutline: []
     indices: 
     edges: []
-    weights: []
-    secondaryTextures: []
-    spriteCustomMetadata:
-      entries: []
-    nameFileIdTable:
-      Objects_0: 7642980859614939925
-  mipmapLimitGroupName: 
-  pSDRemoveMatte: 0
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 427
+      width: 32
+      height: 33
+    spriteID: c03a957d5a3e46f4db131ba778b43fbd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 427}
+    spritePosition: {x: 7, y: 190}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 356
+      y: 107
+      width: 32
+      height: 11
+    spriteID: a9e03d2df979c7547a6099953df637d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 356, y: 107}
+    spritePosition: {x: 7, y: 198}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 799
+      width: 34
+      height: 35
+    spriteID: 046107d78a89b96428b593ba394713db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 799}
+    spritePosition: {x: 6, y: 189}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 842
+      width: 28
+      height: 42
+    spriteID: 471490cf062a71a4a86355adf040e378
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 842}
+    spritePosition: {x: 46, y: 190}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 468
+      width: 20
+      height: 45
+    spriteID: ed81cd69486cde44d8b80072ed4ed447
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 468}
+    spritePosition: {x: 53, y: 193}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 423
+      width: 30
+      height: 50
+    spriteID: 9a6d8adebe282044e8cede99e3aae546
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 423}
+    spritePosition: {x: 45, y: 189}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 291
+      width: 40
+      height: 36
+    spriteID: 2a133987aabd4b142a1f47e99a852cc5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 291}
+    spritePosition: {x: 82, y: 190}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 354
+      y: 127
+      width: 33
+      height: 8
+    spriteID: ae676b8df5f7b0f40a01ff03d01ef565
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 354, y: 127}
+    spritePosition: {x: 83, y: 219}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 967
+      width: 42
+      height: 39
+    spriteID: fa325d9ae758df14c9185c0f9992e8e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 967}
+    spritePosition: {x: 81, y: 189}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 583
+      width: 55
+      height: 54
+    spriteID: d026e1ad3c1402e4fae7f0ec1c3b9952
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 583}
+    spritePosition: {x: 134, y: 190}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 990
+      width: 31
+      height: 27
+    spriteID: 33747d2fa70e4a94eaa5f30e44453d8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 990}
+    spritePosition: {x: 138, y: 210}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 519
+      width: 57
+      height: 56
+    spriteID: 2d4d4ff89e2743f479f0f1dc1ccfb74b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 519}
+    spritePosition: {x: 133, y: 189}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 521
+      width: 22
+      height: 40
+    spriteID: ca2fc6af644d71d4fbe6f8cb56e7a424
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 521}
+    spritePosition: {x: 198, y: 192}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 106
+      y: 902
+      width: 24
+      height: 42
+    spriteID: a804a3c3f6cb973428d8249c9707ae94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 106, y: 902}
+    spritePosition: {x: 197, y: 191}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 305
+      y: 127
+      width: 41
+      height: 10
+    spriteID: 0be3a0b2da5a0474f9758d437458812a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 305, y: 127}
+    spritePosition: {x: 159, y: 185}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 815
+      width: 20
+      height: 10
+    spriteID: 2d7ef9de18e7dfe488abf4544aa01c77
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 815}
+    spritePosition: {x: 169, y: 185}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 305
+      y: 107
+      width: 43
+      height: 12
+    spriteID: ef1f0c06ba21b834aad54f4983ce9950
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 305, y: 107}
+    spritePosition: {x: 158, y: 184}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 140
+      y: 259
+      width: 28
+      height: 58
+    spriteID: c83553bdfc7613849879a4efddc3ffd0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 140, y: 259}
+    spritePosition: {x: 253, y: 170}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 569
+      width: 22
+      height: 40
+    spriteID: 34aa8ce1048892f408f8ca5dbf91c275
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 569}
+    spritePosition: {x: 256, y: 202}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 645
+      width: 30
+      height: 74
+    spriteID: ba5dff341352f154dbf2a1fddc151a0b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 645}
+    spritePosition: {x: 252, y: 169}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 519
+      width: 42
+      height: 42
+    spriteID: 0124729873a21b645acbb998c00a5403
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 519}
+    spritePosition: {x: 212, y: 155}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 727
+      width: 44
+      height: 44
+    spriteID: f16bf49ad29a5d44685931c40524f854
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 727}
+    spritePosition: {x: 211, y: 154}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 1001
+      width: 32
+      height: 11
+    spriteID: 6e3a8ed86f59e184690c5c8f7edd6c97
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 1001}
+    spritePosition: {x: 167, y: 159}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 305
+      y: 58
+      width: 42
+      height: 21
+    spriteID: 46c731b438c2dab49a5e2ddb86f99eae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 305, y: 58}
+    spritePosition: {x: 162, y: 154}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 305
+      y: 27
+      width: 44
+      height: 23
+    spriteID: b90ae406b1919ec4f95542386f3d270b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 305, y: 27}
+    spritePosition: {x: 161, y: 153}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 985
+      width: 36
+      height: 34
+    spriteID: bb6b4d44fe777dd4fbcc64603de4f111
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 985}
+    spritePosition: {x: 118, y: 148}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 846
+      width: 26
+      height: 24
+    spriteID: d730e4eb67d15144599c00828f44f714
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 846}
+    spritePosition: {x: 120, y: 149}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 335
+      width: 38
+      height: 36
+    spriteID: b3f056c713254534ab7d85bce8966bec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 335}
+    spritePosition: {x: 117, y: 147}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 267
+      y: 291
+      width: 26
+      height: 35
+    spriteID: b3131b7580d72084f998e75cd8641326
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 267, y: 291}
+    spritePosition: {x: 80, y: 145}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 115
+      y: 422
+      width: 15
+      height: 15
+    spriteID: cff316366add60945984900dee8b83b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 115, y: 422}
+    spritePosition: {x: 90, y: 168}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 379
+      width: 28
+      height: 40
+    spriteID: d8cecee3550dabd42a12e3dc9cb65889
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 379}
+    spritePosition: {x: 79, y: 144}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 357
+      y: 27
+      width: 31
+      height: 22
+    spriteID: 69ab8a1aca50be04e8af74c80025b969
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 357, y: 27}
+    spritePosition: {x: 7, y: 155}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 305
+      y: 145
+      width: 44
+      height: 9
+    spriteID: 9428ec7b4eccf7a4db7c35a5ad59052d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 305, y: 145}
+    spritePosition: {x: 24, y: 164}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 259
+      width: 63
+      height: 24
+    spriteID: 6b20088323c9ef2489816745305ec8f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 259}
+    spritePosition: {x: 6, y: 154}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 385
+      width: 103
+      height: 54
+    spriteID: e8081207de45ea44b9a8b3cbd2a96ab1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 385}
+    spritePosition: {x: 6, y: 82}
+  - name: Shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 305
+      y: 4
+      width: 83
+      height: 15
+    spriteID: e14a4cbb90ed30c46973e23757ed985c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 305, y: 4}
+    spritePosition: {x: 20, y: 82}
+  - name: Deep_shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 323
+      width: 123
+      height: 54
+    spriteID: 663ec40f2f1679e44a7cf4a15fcefe7a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 323}
+    spritePosition: {x: 9, y: 82}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 259
+      width: 128
+      height: 56
+    spriteID: 13cbc6c4812835147b60a6ef1c386e1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 259}
+    spritePosition: {x: 5, y: 81}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 617
+      width: 22
+      height: 40
+    spriteID: 292d93386bd30ba4689f5725bad3d0f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 617}
+    spritePosition: {x: 142, y: 86}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 748
+      width: 28
+      height: 43
+    spriteID: a2a965bb4a8b9ba479e6658cdd9ef95c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 748}
+    spritePosition: {x: 142, y: 83}
+  - name: Shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 106
+      y: 837
+      width: 25
+      height: 42
+    spriteID: baae3f2f99b5aca4392a6f06463cfd05
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 106, y: 837}
+    spritePosition: {x: 145, y: 83}
+  - name: Deep_shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 813
+      width: 28
+      height: 25
+    spriteID: d17f07ced67e27a429369dafa2a2c0ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 813}
+    spritePosition: {x: 142, y: 82}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 481
+      width: 30
+      height: 46
+    spriteID: 3d48c56bc4780aa468167137bcdca85b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 481}
+    spritePosition: {x: 141, y: 81}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 695
+      width: 25
+      height: 1
+    spriteID: a9c77d9bd6317d2458b4261f037eac04
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 695}
+    spritePosition: {x: 178, y: 127}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 535
+      width: 30
+      height: 46
+    spriteID: e04a93b2f790ee64b85bd14edabb81cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 535}
+    spritePosition: {x: 178, y: 82}
+  - name: Shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 589
+      width: 30
+      height: 45
+    spriteID: ed1d6e6f971ba654b88dec773f4e975e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 589}
+    spritePosition: {x: 178, y: 82}
+  - name: Deep_shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 696
+      width: 28
+      height: 44
+    spriteID: a9ea4dbd4dcd0264782281fafd24ae37
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 696}
+    spritePosition: {x: 180, y: 82}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 311
+      width: 32
+      height: 48
+    spriteID: 11354159a12a3094faf38aa1a67d4342
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 311}
+    spritePosition: {x: 177, y: 81}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 713
+      width: 26
+      height: 32
+    spriteID: 197758cda6046b5409f1b62f5c9ddfde
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 713}
+    spritePosition: {x: 216, y: 112}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 639
+      width: 23
+      height: 48
+    spriteID: d250ce9e6e7274a4a878bda598f902d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 639}
+    spritePosition: {x: 216, y: 84}
+  - name: Shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 569
+      width: 28
+      height: 62
+    spriteID: a90d66b503c0b3b4c9c6f0e519f102ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 569}
+    spritePosition: {x: 216, y: 82}
+  - name: Deep_shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 769
+      width: 28
+      height: 60
+    spriteID: b5bb98c0dda7d4843bf65168d2cbcb4e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 769}
+    spritePosition: {x: 216, y: 82}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 779
+      width: 30
+      height: 64
+    spriteID: 83e892554eb5e124ab20793fbc93b41e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 779}
+    spritePosition: {x: 215, y: 81}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 906
+      width: 19
+      height: 27
+    spriteID: 31689f762634ef74aabffc716b5549ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 906}
+    spritePosition: {x: 257, y: 99}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 704
+      width: 25
+      height: 43
+    spriteID: c8778e9930e4e0541a382719d8995ac6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 704}
+    spritePosition: {x: 252, y: 82}
+  - name: Shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 665
+      width: 22
+      height: 40
+    spriteID: 086700105b93cb24d930af8103ea16ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 665}
+    spritePosition: {x: 255, y: 88}
+  - name: Deep_shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 642
+      width: 28
+      height: 46
+    spriteID: a639dd42e4f6d3541bb45cca793fbacf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 642}
+    spritePosition: {x: 254, y: 82}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 367
+      width: 32
+      height: 48
+    spriteID: 426a43b122e3bde498829fcde75d12f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 367}
+    spritePosition: {x: 251, y: 81}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 892
+      width: 28
+      height: 41
+    spriteID: dfffe26e6c9c648429e47b9de98a9548
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 892}
+    spritePosition: {x: 212, y: 24}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 639
+      width: 30
+      height: 57
+    spriteID: d64bcd439e526c64b9b117d12013eb25
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 639}
+    spritePosition: {x: 212, y: 12}
+  - name: Shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 837
+      width: 29
+      height: 57
+    spriteID: 48b9accb37338b84fb5b9c624aee87f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 837}
+    spritePosition: {x: 213, y: 12}
+  - name: Deep_shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 769
+      width: 26
+      height: 38
+    spriteID: aee609bf2bddfb1438f380136e3359e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 769}
+    spritePosition: {x: 215, y: 21}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 851
+      width: 32
+      height: 59
+    spriteID: 72ead446213650c4d842cb2e18afc934
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 851}
+    spritePosition: {x: 211, y: 11}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 941
+      width: 28
+      height: 41
+    spriteID: e0f7150961643424a9fb7d9aa7cf5c71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 941}
+    spritePosition: {x: 252, y: 24}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 704
+      width: 30
+      height: 57
+    spriteID: c2915cca187ad08429b30ca0f978aa3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 704}
+    spritePosition: {x: 252, y: 12}
+  - name: Shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 902
+      width: 29
+      height: 57
+    spriteID: 4ff96707bf0f1714c98d898a6119d9e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 902}
+    spritePosition: {x: 253, y: 12}
+  - name: Deep_shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 569
+      width: 26
+      height: 38
+    spriteID: 1df296f4f1a1486498f54bf6db5a851c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 569}
+    spritePosition: {x: 255, y: 21}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 918
+      width: 32
+      height: 59
+    spriteID: a595cb412ece20047abd442ce9364bbb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 918}
+    spritePosition: {x: 251, y: 11}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 851
+      width: 16
+      height: 29
+    spriteID: 56b1d04d44800b84698f3cd3898abf39
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 851}
+    spritePosition: {x: 91, y: 45}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 968
+      width: 16
+      height: 25
+    spriteID: 8c3d8389657b16545a4b1398782d9e54
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 968}
+    spritePosition: {x: 92, y: 48}
+  - name: Shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 941
+      width: 4
+      height: 17
+    spriteID: ef3628be30ce4be4b837b2dd76c2e515
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 941}
+    spritePosition: {x: 98, y: 53}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 779
+      width: 19
+      height: 31
+    spriteID: ccfa77339a8b18a4fa6f1e3bc303713b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 779}
+    spritePosition: {x: 90, y: 44}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 115
+      y: 385
+      width: 17
+      height: 29
+    spriteID: a21ec041678dcc04cb34688dd5082be6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 115, y: 385}
+    spritePosition: {x: 114, y: 45}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 265
+      y: 335
+      width: 15
+      height: 25
+    spriteID: ee5f9149fc6a4dc4fb21152424e80f5a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 265, y: 335}
+    spritePosition: {x: 115, y: 48}
+  - name: Shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 955
+      width: 10
+      height: 17
+    spriteID: 83f0822985d671f439c403a20e500439
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 955}
+    spritePosition: {x: 120, y: 53}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 645
+      width: 19
+      height: 31
+    spriteID: 4c5b19a13f42232489f7c320d2f0ba89
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 645}
+    spritePosition: {x: 113, y: 44}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 918
+      width: 16
+      height: 29
+    spriteID: 1a6248a43977cc64c99a93c14855219c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 918}
+    spritePosition: {x: 138, y: 45}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 265
+      y: 368
+      width: 15
+      height: 25
+    spriteID: 9275a5bb38e36fb4eb8f384707570223
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 265, y: 368}
+    spritePosition: {x: 137, y: 48}
+  - name: Shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 989
+      width: 7
+      height: 17
+    spriteID: a5cc5531d28587c49882c3eab34ecd63
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 989}
+    spritePosition: {x: 141, y: 53}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 684
+      width: 19
+      height: 31
+    spriteID: 8e1972d4aeecdf54899957597d4ee9c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 684}
+    spritePosition: {x: 136, y: 44}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 305
+      y: 87
+      width: 67
+      height: 12
+    spriteID: 779818445bf0bc04ea73bda4594d6f9b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 305, y: 87}
+    spritePosition: {x: 8, y: 56}
+  - name: Shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 259
+      width: 35
+      height: 44
+    spriteID: a20764c3e6b80d749a5805f584340600
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 259}
+    spritePosition: {x: 45, y: 29}
+  - name: Deep_shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 447
+      width: 37
+      height: 62
+    spriteID: e8bb6e7c514d9f042bb3b433ed016cab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 447}
+    spritePosition: {x: 41, y: 12}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 447
+      width: 74
+      height: 64
+    spriteID: f363abba8fbe22e4686f0ccef9e02296
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 447}
+    spritePosition: {x: 7, y: 11}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 888
+      width: 15
+      height: 14
+    spriteID: c586c901077e0ae4ca1416b439313906
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 888}
+    spritePosition: {x: 84, y: 20}
+  - name: Shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 246
+      y: 906
+      width: 10
+      height: 22
+    spriteID: 781c186c5b1f34d41b1a15cb6bb12179
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 246, y: 906}
+    spritePosition: {x: 83, y: 12}
+  - name: Deep_shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 967
+      width: 10
+      height: 14
+    spriteID: e4f2343bb756b6e4da86b75d8c698111
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 967}
+    spritePosition: {x: 89, y: 12}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 818
+      width: 18
+      height: 24
+    spriteID: eb2def8f54d84cc43afeec2c2dcd0dcf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 818}
+    spritePosition: {x: 82, y: 11}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 985
+      width: 11
+      height: 14
+    spriteID: 60fda58fa562da948adff9b879fd6b4d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 985}
+    spritePosition: {x: 105, y: 20}
+  - name: Shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 401
+      width: 9
+      height: 8
+    spriteID: 1e0b6a616c3df0b41ab37936f13b722a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 288, y: 401}
+    spritePosition: {x: 106, y: 12}
+  - name: Deep_shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 1007
+      width: 11
+      height: 7
+    spriteID: 8193c4e7e69b08843812bbd0f60621ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 1007}
+    spritePosition: {x: 105, y: 19}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 243
+      y: 968
+      width: 13
+      height: 24
+    spriteID: d38ede69f4a9c7244bfebb30fa8e8b64
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 243, y: 968}
+    spritePosition: {x: 104, y: 11}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 615
+      width: 12
+      height: 14
+    spriteID: 08678ba1b61ea5143a01cafe520b93cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 615}
+    spritePosition: {x: 123, y: 20}
+  - name: Shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 417
+      width: 7
+      height: 8
+    spriteID: ee080fd110c3b8242a90cd08fdf24079
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 288, y: 417}
+    spritePosition: {x: 123, y: 12}
+  - name: Deep_shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 335
+      width: 9
+      height: 22
+    spriteID: 1951f50452b4e634eb9713e482c225b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 288, y: 335}
+    spritePosition: {x: 127, y: 12}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 265
+      y: 401
+      width: 15
+      height: 24
+    spriteID: 6112c2491374c304ea6eaab1531dc74f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 265, y: 401}
+    spritePosition: {x: 122, y: 11}
+  - name: Shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 355
+      y: 58
+      width: 29
+      height: 20
+    spriteID: f25f9f5b3d44a5c4cb15de92260fe364
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 355, y: 58}
+    spritePosition: {x: 146, y: 12}
+  - name: Deep_shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 878
+      width: 29
+      height: 20
+    spriteID: b6cd3769951779147a9462660654d37d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 878}
+    spritePosition: {x: 145, y: 12}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 753
+      width: 32
+      height: 22
+    spriteID: 658f58c6668571645bf8cd28b2283f3f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 753}
+    spritePosition: {x: 144, y: 11}
+  - name: Highlights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 1014
+      width: 30
+      height: 6
+    spriteID: b081393bd5103d8469b4166d16d22e03
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 1014}
+    spritePosition: {x: 178, y: 26}
+  - name: Midtones
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 265
+      y: 433
+      width: 27
+      height: 4
+    spriteID: 6e242a5c13eb7934b827a5ce0a2fa2b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 265, y: 433}
+    spritePosition: {x: 178, y: 26}
+  - name: Shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 380
+      y: 87
+      width: 4
+      height: 4
+    spriteID: cc2482ad74e3d964e9b0159954ae69af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 380, y: 87}
+    spritePosition: {x: 191, y: 12}
+  - name: Deep_shadows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 941
+      width: 25
+      height: 19
+    spriteID: 8e145ccf1e4deec49885f173de7e3be4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 941}
+    spritePosition: {x: 178, y: 12}
+  - name: Outline_stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 783
+      width: 32
+      height: 22
+    spriteID: a8a99fb4708ca1841bc5610dd56cac92
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 783}
+    spritePosition: {x: 177, y: 11}
+  - name: Back
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 293
+      height: 247
+    spriteID: 480335fb8eb6dee4f9f352337c2784b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData: []
+  rigSpriteImportData: []
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  generateTileAssets: 0
+  tilePaletteCellLayout: 0
+  tilePaletteHexagonLayout: 0
+  tilePaletteCellSize: {x: 1, y: 1, z: 0}
+  tilePaletteCellSizing: 0
+  transparencySortMode: 0
+  transparencySortAxis: {x: 0, y: 0, z: 1}
+  tileTemplate: {instanceID: 0}
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: Signboards
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 752888c42ed1e6a4bb64223f4550b5a3
+    layerID: 546
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: 12
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 1b80439bfa60bc44caa910e2f83a9d0f
+    layerID: 430
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 1
+    spriteID: c03a957d5a3e46f4db131ba778b43fbd
+    layerID: 545
+    mosaicPosition: {x: 219, y: 427}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 1
+    spriteID: a9e03d2df979c7547a6099953df637d3
+    layerID: 544
+    mosaicPosition: {x: 356, y: 107}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 046107d78a89b96428b593ba394713db
+    layerID: 348
+    mosaicPosition: {x: 176, y: 799}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 11
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 392a702fb3b974b4cbe3ad156817828d
+    layerID: 428
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 5
+    spriteID: 471490cf062a71a4a86355adf040e378
+    layerID: 541
+    mosaicPosition: {x: 176, y: 842}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 5
+    spriteID: ed81cd69486cde44d8b80072ed4ed447
+    layerID: 540
+    mosaicPosition: {x: 219, y: 468}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 5
+    spriteID: 9a6d8adebe282044e8cede99e3aae546
+    layerID: 349
+    mosaicPosition: {x: 176, y: 423}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 10
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 5c9c0f9179d7f4e41842a8c7f8bd6002
+    layerID: 426
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 2a133987aabd4b142a1f47e99a852cc5
+    layerID: 537
+    mosaicPosition: {x: 219, y: 291}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 9
+    spriteID: ae676b8df5f7b0f40a01ff03d01ef565
+    layerID: 536
+    mosaicPosition: {x: 354, y: 127}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 9
+    spriteID: fa325d9ae758df14c9185c0f9992e8e4
+    layerID: 350
+    mosaicPosition: {x: 69, y: 967}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 9
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 49852762fc0ba894a8463fdea2f658cb
+    layerID: 424
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 13
+    spriteID: d026e1ad3c1402e4fae7f0ec1c3b9952
+    layerID: 533
+    mosaicPosition: {x: 4, y: 583}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 13
+    spriteID: 33747d2fa70e4a94eaa5f30e44453d8b
+    layerID: 532
+    mosaicPosition: {x: 176, y: 990}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 13
+    spriteID: 2d4d4ff89e2743f479f0f1dc1ccfb74b
+    layerID: 351
+    mosaicPosition: {x: 4, y: 519}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 8
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 693d4196939cf924b854a3989399c9e5
+    layerID: 422
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 17
+    spriteID: ca2fc6af644d71d4fbe6f8cb56e7a424
+    layerID: 529
+    mosaicPosition: {x: 219, y: 521}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 17
+    spriteID: a804a3c3f6cb973428d8249c9707ae94
+    layerID: 352
+    mosaicPosition: {x: 106, y: 902}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 7
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: f1098cb680ac4f44fb09febd18811d21
+    layerID: 418
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 20
+    spriteID: 0be3a0b2da5a0474f9758d437458812a
+    layerID: 525
+    mosaicPosition: {x: 305, y: 127}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 20
+    spriteID: 2d7ef9de18e7dfe488abf4544aa01c77
+    layerID: 524
+    mosaicPosition: {x: 105, y: 815}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 20
+    spriteID: ef1f0c06ba21b834aad54f4983ce9950
+    layerID: 353
+    mosaicPosition: {x: 305, y: 107}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 6
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 7ae5f539096f4754386f68f5b3f95ce0
+    layerID: 420
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 24
+    spriteID: c83553bdfc7613849879a4efddc3ffd0
+    layerID: 521
+    mosaicPosition: {x: 140, y: 259}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 24
+    spriteID: 34aa8ce1048892f408f8ca5dbf91c275
+    layerID: 520
+    mosaicPosition: {x: 219, y: 569}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 24
+    spriteID: ba5dff341352f154dbf2a1fddc151a0b
+    layerID: 354
+    mosaicPosition: {x: 4, y: 645}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 5
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 2626b2add1f3f9f43923d7d27ce64fab
+    layerID: 416
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 28
+    spriteID: 0124729873a21b645acbb998c00a5403
+    layerID: 517
+    mosaicPosition: {x: 69, y: 519}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 28
+    spriteID: f16bf49ad29a5d44685931c40524f854
+    layerID: 355
+    mosaicPosition: {x: 4, y: 727}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 4
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 4e6fd5345d952474b98ec72c000b5bed
+    layerID: 414
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 31
+    spriteID: 6e3a8ed86f59e184690c5c8f7edd6c97
+    layerID: 513
+    mosaicPosition: {x: 219, y: 1001}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 31
+    spriteID: 46c731b438c2dab49a5e2ddb86f99eae
+    layerID: 512
+    mosaicPosition: {x: 305, y: 58}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 31
+    spriteID: b90ae406b1919ec4f95542386f3d270b
+    layerID: 356
+    mosaicPosition: {x: 305, y: 27}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 879b71154a17f8248a1c66974ba507c2
+    layerID: 412
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 35
+    spriteID: bb6b4d44fe777dd4fbcc64603de4f111
+    layerID: 509
+    mosaicPosition: {x: 4, y: 985}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 35
+    spriteID: d730e4eb67d15144599c00828f44f714
+    layerID: 508
+    mosaicPosition: {x: 219, y: 846}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 35
+    spriteID: b3f056c713254534ab7d85bce8966bec
+    layerID: 357
+    mosaicPosition: {x: 219, y: 335}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 2
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: c60d7b6c6bb29a94995a60ef5132d89d
+    layerID: 410
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 39
+    spriteID: b3131b7580d72084f998e75cd8641326
+    layerID: 505
+    mosaicPosition: {x: 267, y: 291}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 39
+    spriteID: cff316366add60945984900dee8b83b4
+    layerID: 504
+    mosaicPosition: {x: 115, y: 422}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 39
+    spriteID: d8cecee3550dabd42a12e3dc9cb65889
+    layerID: 358
+    mosaicPosition: {x: 219, y: 379}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 1
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: c2739ad1745325b4e99b79c708e59bde
+    layerID: 408
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 43
+    spriteID: 69ab8a1aca50be04e8af74c80025b969
+    layerID: 501
+    mosaicPosition: {x: 357, y: 27}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 43
+    spriteID: 9428ec7b4eccf7a4db7c35a5ad59052d
+    layerID: 500
+    mosaicPosition: {x: 305, y: 145}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 43
+    spriteID: 6b20088323c9ef2489816745305ec8f0
+    layerID: 359
+    mosaicPosition: {x: 219, y: 259}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Vending machines
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 264d1ab1f4240a649b746ba53ba828b1
+    layerID: 548
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: 7
+    spriteName: 
+    isGroup: 1
+    parentIndex: 47
+    spriteID: 7fd631e9e603b4c449846124a975b695
+    layerID: 406
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 48
+    spriteID: e8081207de45ea44b9a8b3cbd2a96ab1
+    layerID: 496
+    mosaicPosition: {x: 4, y: 385}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadows
+    spriteName: Shadows
+    isGroup: 0
+    parentIndex: 48
+    spriteID: e14a4cbb90ed30c46973e23757ed985c
+    layerID: 495
+    mosaicPosition: {x: 305, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Deep_shadows
+    spriteName: Deep_shadows
+    isGroup: 0
+    parentIndex: 48
+    spriteID: 663ec40f2f1679e44a7cf4a15fcefe7a
+    layerID: 494
+    mosaicPosition: {x: 4, y: 323}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 48
+    spriteID: 13cbc6c4812835147b60a6ef1c386e1c
+    layerID: 360
+    mosaicPosition: {x: 4, y: 259}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 6
+    spriteName: 
+    isGroup: 1
+    parentIndex: 47
+    spriteID: ac6d1c88770062b41a6a472e4dc89faa
+    layerID: 404
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 53
+    spriteID: 292d93386bd30ba4689f5725bad3d0f3
+    layerID: 493
+    mosaicPosition: {x: 219, y: 617}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 53
+    spriteID: a2a965bb4a8b9ba479e6658cdd9ef95c
+    layerID: 492
+    mosaicPosition: {x: 176, y: 748}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadows
+    spriteName: Shadows
+    isGroup: 0
+    parentIndex: 53
+    spriteID: baae3f2f99b5aca4392a6f06463cfd05
+    layerID: 491
+    mosaicPosition: {x: 106, y: 837}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Deep_shadows
+    spriteName: Deep_shadows
+    isGroup: 0
+    parentIndex: 53
+    spriteID: d17f07ced67e27a429369dafa2a2c0ac
+    layerID: 490
+    mosaicPosition: {x: 219, y: 813}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 53
+    spriteID: 3d48c56bc4780aa468167137bcdca85b
+    layerID: 361
+    mosaicPosition: {x: 176, y: 481}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 5
+    spriteName: 
+    isGroup: 1
+    parentIndex: 47
+    spriteID: 2902c528389965d4f99231a7e472770a
+    layerID: 402
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 59
+    spriteID: a9c77d9bd6317d2458b4261f037eac04
+    layerID: 489
+    mosaicPosition: {x: 107, y: 695}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 59
+    spriteID: e04a93b2f790ee64b85bd14edabb81cc
+    layerID: 488
+    mosaicPosition: {x: 176, y: 535}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadows
+    spriteName: Shadows
+    isGroup: 0
+    parentIndex: 59
+    spriteID: ed1d6e6f971ba654b88dec773f4e975e
+    layerID: 487
+    mosaicPosition: {x: 176, y: 589}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Deep_shadows
+    spriteName: Deep_shadows
+    isGroup: 0
+    parentIndex: 59
+    spriteID: a9ea4dbd4dcd0264782281fafd24ae37
+    layerID: 486
+    mosaicPosition: {x: 176, y: 696}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 59
+    spriteID: 11354159a12a3094faf38aa1a67d4342
+    layerID: 362
+    mosaicPosition: {x: 176, y: 311}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 4
+    spriteName: 
+    isGroup: 1
+    parentIndex: 47
+    spriteID: a30e43f21b3fe384abdf5f819d0233db
+    layerID: 400
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 65
+    spriteID: 197758cda6046b5409f1b62f5c9ddfde
+    layerID: 485
+    mosaicPosition: {x: 219, y: 713}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 65
+    spriteID: d250ce9e6e7274a4a878bda598f902d1
+    layerID: 484
+    mosaicPosition: {x: 107, y: 639}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadows
+    spriteName: Shadows
+    isGroup: 0
+    parentIndex: 65
+    spriteID: a90d66b503c0b3b4c9c6f0e519f102ca
+    layerID: 483
+    mosaicPosition: {x: 69, y: 569}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Deep_shadows
+    spriteName: Deep_shadows
+    isGroup: 0
+    parentIndex: 65
+    spriteID: b5bb98c0dda7d4843bf65168d2cbcb4e
+    layerID: 482
+    mosaicPosition: {x: 69, y: 769}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 65
+    spriteID: 83e892554eb5e124ab20793fbc93b41e
+    layerID: 363
+    mosaicPosition: {x: 4, y: 779}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3
+    spriteName: 
+    isGroup: 1
+    parentIndex: 47
+    spriteID: 2e7f6454f21a5fe44a71849e5bafc9a8
+    layerID: 398
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 71
+    spriteID: 31689f762634ef74aabffc716b5549ec
+    layerID: 481
+    mosaicPosition: {x: 219, y: 906}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 71
+    spriteID: c8778e9930e4e0541a382719d8995ac6
+    layerID: 480
+    mosaicPosition: {x: 107, y: 704}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadows
+    spriteName: Shadows
+    isGroup: 0
+    parentIndex: 71
+    spriteID: 086700105b93cb24d930af8103ea16ad
+    layerID: 479
+    mosaicPosition: {x: 219, y: 665}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Deep_shadows
+    spriteName: Deep_shadows
+    isGroup: 0
+    parentIndex: 71
+    spriteID: a639dd42e4f6d3541bb45cca793fbacf
+    layerID: 478
+    mosaicPosition: {x: 176, y: 642}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 71
+    spriteID: 426a43b122e3bde498829fcde75d12f2
+    layerID: 364
+    mosaicPosition: {x: 176, y: 367}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 2
+    spriteName: 
+    isGroup: 1
+    parentIndex: 47
+    spriteID: 36cbd17388d4f1546b220df42ecb88c2
+    layerID: 378
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 77
+    spriteID: dfffe26e6c9c648429e47b9de98a9548
+    layerID: 441
+    mosaicPosition: {x: 176, y: 892}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 77
+    spriteID: d64bcd439e526c64b9b117d12013eb25
+    layerID: 440
+    mosaicPosition: {x: 69, y: 639}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadows
+    spriteName: Shadows
+    isGroup: 0
+    parentIndex: 77
+    spriteID: 48b9accb37338b84fb5b9c624aee87f2
+    layerID: 439
+    mosaicPosition: {x: 69, y: 837}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Deep_shadows
+    spriteName: Deep_shadows
+    isGroup: 0
+    parentIndex: 77
+    spriteID: aee609bf2bddfb1438f380136e3359e5
+    layerID: 438
+    mosaicPosition: {x: 105, y: 769}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 77
+    spriteID: 72ead446213650c4d842cb2e18afc934
+    layerID: 374
+    mosaicPosition: {x: 4, y: 851}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 1
+    spriteName: 
+    isGroup: 1
+    parentIndex: 47
+    spriteID: 4a403bd2d0211ce4eb910e4118362126
+    layerID: 376
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 83
+    spriteID: e0f7150961643424a9fb7d9aa7cf5c71
+    layerID: 437
+    mosaicPosition: {x: 176, y: 941}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 83
+    spriteID: c2915cca187ad08429b30ca0f978aa3c
+    layerID: 436
+    mosaicPosition: {x: 69, y: 704}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadows
+    spriteName: Shadows
+    isGroup: 0
+    parentIndex: 83
+    spriteID: 4ff96707bf0f1714c98d898a6119d9e9
+    layerID: 435
+    mosaicPosition: {x: 69, y: 902}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Deep_shadows
+    spriteName: Deep_shadows
+    isGroup: 0
+    parentIndex: 83
+    spriteID: 1df296f4f1a1486498f54bf6db5a851c
+    layerID: 434
+    mosaicPosition: {x: 105, y: 569}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 83
+    spriteID: a595cb412ece20047abd442ce9364bbb
+    layerID: 375
+    mosaicPosition: {x: 4, y: 918}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lamps
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: d6b17cdcf510a5a47b69b90119cd22ac
+    layerID: 550
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: 3
+    spriteName: 
+    isGroup: 1
+    parentIndex: 89
+    spriteID: c4a170fea317f9348a808ec84dfa5e58
+    layerID: 396
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 90
+    spriteID: 56b1d04d44800b84698f3cd3898abf39
+    layerID: 477
+    mosaicPosition: {x: 44, y: 851}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 90
+    spriteID: 8c3d8389657b16545a4b1398782d9e54
+    layerID: 476
+    mosaicPosition: {x: 219, y: 968}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadows
+    spriteName: Shadows
+    isGroup: 0
+    parentIndex: 90
+    spriteID: ef3628be30ce4be4b837b2dd76c2e515
+    layerID: 475
+    mosaicPosition: {x: 252, y: 941}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 90
+    spriteID: ccfa77339a8b18a4fa6f1e3bc303713b
+    layerID: 365
+    mosaicPosition: {x: 42, y: 779}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 2
+    spriteName: 
+    isGroup: 1
+    parentIndex: 89
+    spriteID: 2936153f6f5a3494687ad80725e07ad9
+    layerID: 394
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 95
+    spriteID: a21ec041678dcc04cb34688dd5082be6
+    layerID: 473
+    mosaicPosition: {x: 115, y: 385}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 95
+    spriteID: ee5f9149fc6a4dc4fb21152424e80f5a
+    layerID: 472
+    mosaicPosition: {x: 265, y: 335}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadows
+    spriteName: Shadows
+    isGroup: 0
+    parentIndex: 95
+    spriteID: 83f0822985d671f439c403a20e500439
+    layerID: 471
+    mosaicPosition: {x: 44, y: 955}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 95
+    spriteID: 4c5b19a13f42232489f7c320d2f0ba89
+    layerID: 366
+    mosaicPosition: {x: 42, y: 645}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 1
+    spriteName: 
+    isGroup: 1
+    parentIndex: 89
+    spriteID: ac9d807d82de63d4a8199f5a5b4025c9
+    layerID: 392
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 100
+    spriteID: 1a6248a43977cc64c99a93c14855219c
+    layerID: 469
+    mosaicPosition: {x: 44, y: 918}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 100
+    spriteID: 9275a5bb38e36fb4eb8f384707570223
+    layerID: 468
+    mosaicPosition: {x: 265, y: 368}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadows
+    spriteName: Shadows
+    isGroup: 0
+    parentIndex: 100
+    spriteID: a5cc5531d28587c49882c3eab34ecd63
+    layerID: 467
+    mosaicPosition: {x: 119, y: 989}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 100
+    spriteID: 8e1972d4aeecdf54899957597d4ee9c0
+    layerID: 367
+    mosaicPosition: {x: 42, y: 684}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Terrace
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: d8d583ba70dcfb04f846f95a29d8c9a7
+    layerID: 552
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: 6
+    spriteName: 
+    isGroup: 1
+    parentIndex: 105
+    spriteID: 71be3c05fa6d5f6468d04c6f1542888a
+    layerID: 390
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 106
+    spriteID: 779818445bf0bc04ea73bda4594d6f9b
+    layerID: 465
+    mosaicPosition: {x: 305, y: 87}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadows
+    spriteName: Shadows
+    isGroup: 0
+    parentIndex: 106
+    spriteID: a20764c3e6b80d749a5805f584340600
+    layerID: 463
+    mosaicPosition: {x: 176, y: 259}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Deep_shadows
+    spriteName: Deep_shadows
+    isGroup: 0
+    parentIndex: 106
+    spriteID: e8bb6e7c514d9f042bb3b433ed016cab
+    layerID: 462
+    mosaicPosition: {x: 86, y: 447}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 106
+    spriteID: f363abba8fbe22e4686f0ccef9e02296
+    layerID: 368
+    mosaicPosition: {x: 4, y: 447}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 5
+    spriteName: 
+    isGroup: 1
+    parentIndex: 105
+    spriteID: 1897d45d877252541b76bbf9e5006fe0
+    layerID: 388
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 111
+    spriteID: c586c901077e0ae4ca1416b439313906
+    layerID: 461
+    mosaicPosition: {x: 44, y: 888}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadows
+    spriteName: Shadows
+    isGroup: 0
+    parentIndex: 111
+    spriteID: 781c186c5b1f34d41b1a15cb6bb12179
+    layerID: 459
+    mosaicPosition: {x: 246, y: 906}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Deep_shadows
+    spriteName: Deep_shadows
+    isGroup: 0
+    parentIndex: 111
+    spriteID: e4f2343bb756b6e4da86b75d8c698111
+    layerID: 458
+    mosaicPosition: {x: 119, y: 967}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 111
+    spriteID: eb2def8f54d84cc43afeec2c2dcd0dcf
+    layerID: 369
+    mosaicPosition: {x: 42, y: 818}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 4
+    spriteName: 
+    isGroup: 1
+    parentIndex: 105
+    spriteID: 102441bc7fe452045a221375e4e8cf93
+    layerID: 386
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 116
+    spriteID: 60fda58fa562da948adff9b879fd6b4d
+    layerID: 457
+    mosaicPosition: {x: 48, y: 985}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadows
+    spriteName: Shadows
+    isGroup: 0
+    parentIndex: 116
+    spriteID: 1e0b6a616c3df0b41ab37936f13b722a
+    layerID: 455
+    mosaicPosition: {x: 288, y: 401}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Deep_shadows
+    spriteName: Deep_shadows
+    isGroup: 0
+    parentIndex: 116
+    spriteID: 8193c4e7e69b08843812bbd0f60621ba
+    layerID: 454
+    mosaicPosition: {x: 48, y: 1007}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 116
+    spriteID: d38ede69f4a9c7244bfebb30fa8e8b64
+    layerID: 370
+    mosaicPosition: {x: 243, y: 968}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3
+    spriteName: 
+    isGroup: 1
+    parentIndex: 105
+    spriteID: 06da0392079f9104985cd95691452ffa
+    layerID: 384
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 121
+    spriteID: 08678ba1b61ea5143a01cafe520b93cd
+    layerID: 453
+    mosaicPosition: {x: 105, y: 615}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadows
+    spriteName: Shadows
+    isGroup: 0
+    parentIndex: 121
+    spriteID: ee080fd110c3b8242a90cd08fdf24079
+    layerID: 451
+    mosaicPosition: {x: 288, y: 417}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Deep_shadows
+    spriteName: Deep_shadows
+    isGroup: 0
+    parentIndex: 121
+    spriteID: 1951f50452b4e634eb9713e482c225b1
+    layerID: 450
+    mosaicPosition: {x: 288, y: 335}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 121
+    spriteID: 6112c2491374c304ea6eaab1531dc74f
+    layerID: 371
+    mosaicPosition: {x: 265, y: 401}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 2
+    spriteName: 
+    isGroup: 1
+    parentIndex: 105
+    spriteID: 726cf1e2d5d08304088b71c0b9145acc
+    layerID: 382
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Shadows
+    spriteName: Shadows
+    isGroup: 0
+    parentIndex: 126
+    spriteID: f25f9f5b3d44a5c4cb15de92260fe364
+    layerID: 447
+    mosaicPosition: {x: 355, y: 58}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Deep_shadows
+    spriteName: Deep_shadows
+    isGroup: 0
+    parentIndex: 126
+    spriteID: b6cd3769951779147a9462660654d37d
+    layerID: 446
+    mosaicPosition: {x: 219, y: 878}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 126
+    spriteID: 658f58c6668571645bf8cd28b2283f3f
+    layerID: 372
+    mosaicPosition: {x: 219, y: 753}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 1
+    spriteName: 
+    isGroup: 1
+    parentIndex: 105
+    spriteID: 2bdaaf8e1de910f4b9bfbfba437f0e22
+    layerID: 380
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Highlights
+    spriteName: Highlights
+    isGroup: 0
+    parentIndex: 130
+    spriteID: b081393bd5103d8469b4166d16d22e03
+    layerID: 445
+    mosaicPosition: {x: 69, y: 1014}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Midtones
+    spriteName: Midtones
+    isGroup: 0
+    parentIndex: 130
+    spriteID: 6e242a5c13eb7934b827a5ce0a2fa2b4
+    layerID: 444
+    mosaicPosition: {x: 265, y: 433}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadows
+    spriteName: Shadows
+    isGroup: 0
+    parentIndex: 130
+    spriteID: cc2482ad74e3d964e9b0159954ae69af
+    layerID: 443
+    mosaicPosition: {x: 380, y: 87}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Deep_shadows
+    spriteName: Deep_shadows
+    isGroup: 0
+    parentIndex: 130
+    spriteID: 8e145ccf1e4deec49885f173de7e3be4
+    layerID: 442
+    mosaicPosition: {x: 219, y: 941}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Outline_stroke
+    spriteName: Outline_stroke
+    isGroup: 0
+    parentIndex: 130
+    spriteID: a8a99fb4708ca1841bc5610dd56cac92
+    layerID: 373
+    mosaicPosition: {x: 219, y: 783}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back
+    spriteName: Back
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 480335fb8eb6dee4f9f352337c2784b1
+    layerID: 6
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers: []
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
