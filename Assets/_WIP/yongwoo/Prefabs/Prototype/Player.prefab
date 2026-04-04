@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 5774349901685184387}
   - component: {fileID: 1697112091944236789}
   - component: {fileID: 4762030214991739480}
+  - component: {fileID: 910200000000000001}
   - component: {fileID: 6982118999348350709}
   - component: {fileID: 6684791423197779739}
   - component: {fileID: 767779722435611025}
@@ -153,6 +154,8 @@ Transform:
   - {fileID: 3961786691620537870}
   - {fileID: 1186911569272290889}
   - {fileID: 8417712401432309100}
+  - {fileID: 1001001001001001002}
+  - {fileID: 1001001001001001004}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2249624132469796711
@@ -281,7 +284,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8b4d7b3c15a94d48983577ecd76ed83, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PrototypeHealth
+  m_EditorClassIdentifier: Assembly-CSharp::CombatHealth
   faction: 1
   maxHealth: 5
   invulnerabilityDuration: 0.08
@@ -291,6 +294,19 @@ MonoBehaviour:
   destroyOnDeath: 0
   respawnOnDeath: 1
   respawnDelay: 0.75
+--- !u!114 &910200000000000001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561777602665425509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f4fa31c0d654e36944cf7b53b4b5cf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
+  health: {fileID: 4762030214991739480}
 --- !u!114 &6982118999348350709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,19 +319,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 240348861f3d20d498bc8a5d1a9de28c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimplePlayerCombat
-  attackDamage: 1
-  attackCooldown: 0.28
-  attackAnimationDuration: 0.18
-  attackSize: {x: 0.33, y: 0.68}
-  attackOffset: {x: 0.36, y: -1.25}
-  attackKnockbackX: 6
-  attackKnockbackY: 2.5
+  weaponOrigin: {fileID: 1001001001001001002}
+  muzzle: {fileID: 1001001001001001004}
   hitLayers:
     serializedVersion: 2
     m_Bits: 1024
-  showAttackVisual: 1
-  attackVisualDuration: 0.12
-  attackVisualColor: {r: 1, g: 0.9, b: 0.2, a: 0.28}
+  defaultWeapon: 0
+  attackAnimationDuration: 0.18
+  aimFacingThreshold: 0.18
+  swordOriginOffset: {x: 0.22, y: -0.72}
+  swordDamage: 1
+  swordCooldown: 0.28
+  swordRange: 1.1
+  swordArcAngle: 90
+  swordKnockbackX: 6
+  swordKnockbackY: 2.5
+  swordVisualDuration: 0.12
+  swordVisualColor: {r: 1, g: 0.9, b: 0.2, a: 0.32}
+  showSwordAimPreview: 1
+  swordPreviewColor: {r: 1, g: 0.75, b: 0.15, a: 0.22}
+  gunMuzzleOffset: {x: 0.28, y: -0.72}
+  gunDamage: 1
+  gunCooldown: 0.18
+  gunProjectileSpeed: 15
+  gunProjectileLifetime: 1.2
+  gunProjectileRadius: 0.1
+  gunKnockbackX: 5
+  gunKnockbackY: 1.2
+  gunMuzzleVisualDuration: 0.06
+  gunVisualColor: {r: 1, g: 0.6, b: 0.2, a: 0.85}
 --- !u!114 &6684791423197779739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,7 +359,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c8953f31b511064c8f2189050e139d3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PrototypePlayerAnimationDriver
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimationDriver
   visualRoot: {fileID: 3961786691620537870}
   runThreshold: 0.05
   jumpThreshold: 0.2
@@ -347,7 +379,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b0eaa59dfb3ffe44b6379faafdfeac2, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PrototypePlayerRuntimeConfig
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerRuntimeConfig
   _config:
     movement:
       groundMoveSpeed: 6.25
@@ -375,20 +407,36 @@ MonoBehaviour:
       rollSpeed: 8.5
       rollDuration: 0.36
     attack:
-      attackDamage: 1
-      attackCooldown: 0.28
+      defaultWeapon: 0
       attackAnimationDuration: 0.18
-      attackSize: {x: 0.33, y: 0.68}
-      attackOffset: {x: 0.36, y: -1.25}
-      attackKnockbackX: 6
-      attackKnockbackY: 2.5
-      showAttackVisual: 1
-      attackVisualDuration: 0.12
-      attackVisualColor:
+      aimFacingThreshold: 0.18
+      swordOriginOffset: {x: 0.22, y: -0.72}
+      swordDamage: 1
+      swordCooldown: 0.28
+      swordRange: 1.1
+      swordArcAngle: 90
+      swordKnockbackX: 6
+      swordKnockbackY: 2.5
+      swordVisualDuration: 0.12
+      swordVisualColor:
         r: 1
         g: 0.9
         b: 0.2
-        a: 0.28
+        a: 0.32
+      gunMuzzleOffset: {x: 0.28, y: -0.72}
+      gunDamage: 1
+      gunCooldown: 0.18
+      gunProjectileSpeed: 15
+      gunProjectileLifetime: 1.2
+      gunProjectileRadius: 0.1
+      gunKnockbackX: 5
+      gunKnockbackY: 1.2
+      gunMuzzleVisualDuration: 0.06
+      gunVisualColor:
+        r: 1
+        g: 0.6
+        b: 0.2
+        a: 0.85
     health:
       maxHealth: 5
       invulnerabilityDuration: 0.08
@@ -424,6 +472,69 @@ MonoBehaviour:
       horizontalLookAhead: 1.45
       lookAheadSmoothing: 8
       verticalFollowSpeed: 5.5
+  _spawnPositionInitialized: 0
+--- !u!1 &1001001001001001001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1001001001001001002}
+  m_Layer: 0
+  m_Name: WeaponOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1001001001001001002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001001001001001001}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.22, y: -0.72, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3651190054026640413}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1001001001001001003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1001001001001001004}
+  m_Layer: 0
+  m_Name: Muzzle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1001001001001001004
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001001001001001003}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.28, y: -0.72, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3651190054026640413}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6329646601198042698
 GameObject:
   m_ObjectHideFlags: 0
