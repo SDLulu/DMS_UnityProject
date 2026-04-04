@@ -219,8 +219,10 @@ GameObject:
   - component: {fileID: 4371615155042930004}
   - component: {fileID: 8890754262655523644}
   - component: {fileID: 5774027212285530889}
+  - component: {fileID: 910200000000000002}
   - component: {fileID: 2761747258631592754}
   - component: {fileID: 1001680284971174855}
+  - component: {fileID: 3616620788134644420}
   m_Layer: 0
   m_Name: Neon Executioner
   m_TagString: Untagged
@@ -303,7 +305,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8b4d7b3c15a94d48983577ecd76ed83, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PrototypeHealth
+  m_EditorClassIdentifier: Assembly-CSharp::CombatHealth
   faction: 2
   maxHealth: 14
   invulnerabilityDuration: 0.08
@@ -313,6 +315,19 @@ MonoBehaviour:
   destroyOnDeath: 0
   respawnOnDeath: 1
   respawnDelay: 1.25
+--- !u!114 &910200000000000002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2314604958623954950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 748b3fd7499a4f989ee17ca56f65f461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossInteraction
+  health: {fileID: 5774027212285530889}
 --- !u!114 &2761747258631592754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,7 +339,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f00c6a2754b15a4ca59f4cc6bee8c2c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PrototypeBossController
+  m_EditorClassIdentifier: Assembly-CSharp::BossController
   _config:
     core:
       bossName: Neon Executioner
@@ -559,7 +574,22 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ccf8b3dbbbad3d346ac0d3f77bed07e4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PrototypeBossAnimationDriver
+  m_EditorClassIdentifier: Assembly-CSharp::BossAnimationDriver
   visualAnimator: {fileID: 3417855356572874498}
   crossFadeDuration: 0.05
   hitDuration: 0.18
+--- !u!114 &3616620788134644420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2314604958623954950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c41f1e42794bdb34fb4a879409a23f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CombatTargetTracker
+  explicitTarget: {fileID: 0}
+  fallbackTargetTag: Player
+  reacquireInterval: 0.35
