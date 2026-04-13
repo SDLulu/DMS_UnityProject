@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: e251cb431c459574a8e838501882e9fd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7167582964468686605
+    second: 3. full-charge_0
+  - first:
+      213: -4622698483232758058
+    second: 3. full-charge_1
+  - first:
+      213: 1837057642539859300
+    second: 3. full-charge_2
+  - first:
+      213: 60959741185333834
+    second: 3. full-charge_3
+  - first:
+      213: 7906252094134514282
+    second: 3. full-charge_4
+  - first:
+      213: -639047746568044580
+    second: 3. full-charge_5
+  - first:
+      213: -7235187151760603982
+    second: 3. full-charge_6
+  - first:
+      213: 202396170207748232
+    second: 3. full-charge_7
+  - first:
+      213: -6126211564323730445
+    second: 3. full-charge_8
+  - first:
+      213: -4809792473671427070
+    second: 3. full-charge_9
+  - first:
+      213: -6369790661747498151
+    second: 3. full-charge_10
+  - first:
+      213: -8468262177271699600
+    second: 3. full-charge_11
+  - first:
+      213: -7501003868281993767
+    second: 3. full-charge_12
+  - first:
+      213: 6621446351334737372
+    second: 3. full-charge_13
+  - first:
+      213: -1803613124536024511
+    second: 3. full-charge_14
+  - first:
+      213: 8115228884475362943
+    second: 3. full-charge_15
+  - first:
+      213: -2680577897737221747
+    second: 3. full-charge_16
+  - first:
+      213: 2381598743428989399
+    second: 3. full-charge_17
+  - first:
+      213: 1061780132947915769
+    second: 3. full-charge_18
+  - first:
+      213: 5396853939884973499
+    second: 3. full-charge_19
+  - first:
+      213: 3309836026607072942
+    second: 3. full-charge_20
+  - first:
+      213: 4498655289730566871
+    second: 3. full-charge_21
+  - first:
+      213: -75566028490418589
+    second: 3. full-charge_22
+  - first:
+      213: -3549686416443893924
+    second: 3. full-charge_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 3. full-charge_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 0
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0e3b0f441a78c90800000000000000
+      internalID: -7167582964468686605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_1
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 0
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6ac2bb830e8dfb0800000000000000
+      internalID: -4622698483232758058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_2
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 0
+        width: 86
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d3187513a8e7910800000000000000
+      internalID: 1837057642539859300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_3
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 0
+        width: 71
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a93f6cf8298d000800000000000000
+      internalID: 60959741185333834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_4
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 0
+        width: 86
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a627397f366a8bd60800000000000000
+      internalID: 7906252094134514282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_5
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 23
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf3c47d575a127f0800000000000000
+      internalID: -639047746568044580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_6
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 0
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4c6df7e93779b90800000000000000
+      internalID: -7235187151760603982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_7
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 0
+        width: 86
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 880e1259e3e0fc200800000000000000
+      internalID: 202396170207748232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_8
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 0
+        width: 76
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb08915a035bfaa0800000000000000
+      internalID: -6126211564323730445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_9
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 0
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c97738a3f204db0800000000000000
+      internalID: -4809792473671427070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_10
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 32
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 953a0f84425f997a0800000000000000
+      internalID: -6369790661747498151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_11
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 0
+        width: 86
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07728d2aa60ba7a80800000000000000
+      internalID: -8468262177271699600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_12
+      rect:
+        serializedVersion: 2
+        x: 1985
+        y: 0
+        width: 88
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5883c49b417e790800000000000000
+      internalID: -7501003868281993767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_13
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 0
+        width: 84
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd50d96ef5a14eb50800000000000000
+      internalID: 6621446351334737372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_14
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 0
+        width: 78
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1424ccf4b6748f6e0800000000000000
+      internalID: -1803613124536024511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_15
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 32
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7eb4229ca51f9070800000000000000
+      internalID: 8115228884475362943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_16
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 0
+        width: 68
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d890c94ba9caccad0800000000000000
+      internalID: -2680577897737221747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_17
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 0
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d10a9b50732d0120800000000000000
+      internalID: 2381598743428989399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_18
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 16
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f37de5c7633cbe00800000000000000
+      internalID: 1061780132947915769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_19
+      rect:
+        serializedVersion: 2
+        x: 2445
+        y: 16
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbdd287801a75ea40800000000000000
+      internalID: 5396853939884973499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_20
+      rect:
+        serializedVersion: 2
+        x: 2449
+        y: 1
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea674b67456eeed20800000000000000
+      internalID: 3309836026607072942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_21
+      rect:
+        serializedVersion: 2
+        x: 2641
+        y: 14
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da825fa62f6e6e30800000000000000
+      internalID: 4498655289730566871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_22
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 0
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366ddb2f81983fef0800000000000000
+      internalID: -75566028490418589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3. full-charge_23
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 0
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5715d3e20bfcbec0800000000000000
+      internalID: -3549686416443893924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      3. full-charge_0: -7167582964468686605
+      3. full-charge_1: -4622698483232758058
+      3. full-charge_10: -6369790661747498151
+      3. full-charge_11: -8468262177271699600
+      3. full-charge_12: -7501003868281993767
+      3. full-charge_13: 6621446351334737372
+      3. full-charge_14: -1803613124536024511
+      3. full-charge_15: 8115228884475362943
+      3. full-charge_16: -2680577897737221747
+      3. full-charge_17: 2381598743428989399
+      3. full-charge_18: 1061780132947915769
+      3. full-charge_19: 5396853939884973499
+      3. full-charge_2: 1837057642539859300
+      3. full-charge_20: 3309836026607072942
+      3. full-charge_21: 4498655289730566871
+      3. full-charge_22: -75566028490418589
+      3. full-charge_23: -3549686416443893924
+      3. full-charge_3: 60959741185333834
+      3. full-charge_4: 7906252094134514282
+      3. full-charge_5: -639047746568044580
+      3. full-charge_6: -7235187151760603982
+      3. full-charge_7: 202396170207748232
+      3. full-charge_8: -6126211564323730445
+      3. full-charge_9: -4809792473671427070
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

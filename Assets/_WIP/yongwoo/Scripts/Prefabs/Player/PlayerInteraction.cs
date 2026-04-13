@@ -10,7 +10,7 @@ using UnityEngine;
 // - 플레이어가 자기 체력/피격/부활 규칙을 직접 소유하고, 씬/시스템에는 이 표면만 공개합니다.
 
 [DisallowMultipleComponent]
-public class PlayerInteraction : MonoBehaviour
+public class PlayerInteraction : MonoBehaviour, IDamageReceiver
 {
     [Header("Health")]
     [SerializeField] private float maxHealth = 5f;

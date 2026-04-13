@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 4a0078bb771dff744b80401a61b85a23
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 861867651882148566
+    second: BOOM_bomb_0
+  - first:
+      213: -920929523086658045
+    second: BOOM_bomb_1
+  - first:
+      213: 3454163227406251199
+    second: BOOM_bomb_2
+  - first:
+      213: 5348501346882081586
+    second: BOOM_bomb_3
+  - first:
+      213: -3924723819122946156
+    second: BOOM_bomb_4
+  - first:
+      213: -6122591586062916971
+    second: BOOM_bomb_5
+  - first:
+      213: -4452196313784671234
+    second: BOOM_bomb_6
+  - first:
+      213: -2619391817052791598
+    second: BOOM_bomb_7
+  - first:
+      213: -1221011295711981127
+    second: BOOM_bomb_8
+  - first:
+      213: 4799730769260240587
+    second: BOOM_bomb_9
+  - first:
+      213: -657608429213728326
+    second: BOOM_bomb_10
+  - first:
+      213: 6978053523718841342
+    second: BOOM_bomb_11
+  - first:
+      213: 3746004035575210582
+    second: BOOM_bomb_12
+  - first:
+      213: 4458947989261132107
+    second: BOOM_bomb_13
+  - first:
+      213: 2341447578331771303
+    second: BOOM_bomb_14
+  - first:
+      213: 929786259605918450
+    second: BOOM_bomb_15
+  - first:
+      213: -5406788377425469382
+    second: BOOM_bomb_16
+  - first:
+      213: -8585151859539979176
+    second: BOOM_bomb_17
+  - first:
+      213: 1100352720813241177
+    second: BOOM_bomb_18
+  - first:
+      213: -614838613411730432
+    second: BOOM_bomb_19
+  - first:
+      213: -4730722818709147909
+    second: BOOM_bomb_20
+  - first:
+      213: -2369292714510348105
+    second: BOOM_bomb_21
+  - first:
+      213: 3097038067220356785
+    second: BOOM_bomb_22
+  - first:
+      213: -667117556705077299
+    second: BOOM_bomb_23
+  - first:
+      213: 4450070138276390502
+    second: BOOM_bomb_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BOOM_bomb_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 7
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d2e5d12018f5fb00800000000000000
+      internalID: 861867651882148566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 6
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 306ff316a733833f0800000000000000
+      internalID: -920929523086658045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_2
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 36
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb434c58727afef20800000000000000
+      internalID: 3454163227406251199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 3
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 233da9d23a1b93a40800000000000000
+      internalID: 5348501346882081586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_4
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 17
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f89a70b749889c0800000000000000
+      internalID: -3924723819122946156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_5
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 29
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 592acef246f280ba0800000000000000
+      internalID: -6122591586062916971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_6
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 28
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef3af869a0f9632c0800000000000000
+      internalID: -4452196313784671234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_7
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 37
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dcd001450d06abd0800000000000000
+      internalID: -2619391817052791598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_8
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 31
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1195c12b81e0fe0800000000000000
+      internalID: -1221011295711981127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_9
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 0
+        width: 63
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bced44f54b11c9240800000000000000
+      internalID: 4799730769260240587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_10
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 18
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1c9672e94bfd6f0800000000000000
+      internalID: -657608429213728326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_11
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 17
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef3ace065b607d060800000000000000
+      internalID: 6978053523718841342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_12
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 22
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 652e3abb2da7cf330800000000000000
+      internalID: 3746004035575210582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_13
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 23
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b412adb529d51ed30800000000000000
+      internalID: 4458947989261132107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_14
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 22
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1f9aeba2e7e7020800000000000000
+      internalID: 2341447578331771303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_15
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 17
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f299d84da347ec00800000000000000
+      internalID: 929786259605918450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_16
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 10
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3028dbfd9a37f4b0800000000000000
+      internalID: -5406788377425469382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_17
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 3
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854d55daed96bd880800000000000000
+      internalID: -8585151859539979176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_18
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 14
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95335bb38fc354f00800000000000000
+      internalID: 1100352720813241177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_19
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 9
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c6665e987a777f0800000000000000
+      internalID: -614838613411730432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_20
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 6
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfea10c29a8195eb0800000000000000
+      internalID: -4730722818709147909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_21
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b090b644d49e1fd0800000000000000
+      internalID: -2369292714510348105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_22
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be188c96b3eafa20800000000000000
+      internalID: 3097038067220356785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_23
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7da21ed1cedb6f0800000000000000
+      internalID: -667117556705077299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_24
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 5
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 666a9899633d1cd30800000000000000
+      internalID: 4450070138276390502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BOOM_bomb_0: 861867651882148566
+      BOOM_bomb_1: -920929523086658045
+      BOOM_bomb_10: -657608429213728326
+      BOOM_bomb_11: 6978053523718841342
+      BOOM_bomb_12: 3746004035575210582
+      BOOM_bomb_13: 4458947989261132107
+      BOOM_bomb_14: 2341447578331771303
+      BOOM_bomb_15: 929786259605918450
+      BOOM_bomb_16: -5406788377425469382
+      BOOM_bomb_17: -8585151859539979176
+      BOOM_bomb_18: 1100352720813241177
+      BOOM_bomb_19: -614838613411730432
+      BOOM_bomb_2: 3454163227406251199
+      BOOM_bomb_20: -4730722818709147909
+      BOOM_bomb_21: -2369292714510348105
+      BOOM_bomb_22: 3097038067220356785
+      BOOM_bomb_23: -667117556705077299
+      BOOM_bomb_24: 4450070138276390502
+      BOOM_bomb_3: 5348501346882081586
+      BOOM_bomb_4: -3924723819122946156
+      BOOM_bomb_5: -6122591586062916971
+      BOOM_bomb_6: -4452196313784671234
+      BOOM_bomb_7: -2619391817052791598
+      BOOM_bomb_8: -1221011295711981127
+      BOOM_bomb_9: 4799730769260240587
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 // 역할:
 // - 대사 재생 생명주기와 입력 모드 전환을 수행하는 범용 대화 매니저입니다.
-// - 보스 조우, NPC 대화, 스토리 이벤트 등 여러 객체가 대화를 재생할 때 이 매니저를 호출합니다.
+// - NPC 대화, 스토리 이벤트 등 여러 객체가 대화를 재생할 때 이 매니저를 호출합니다.
 
 [DisallowMultipleComponent]
 public class DialogueManager : MonoBehaviour
@@ -12,11 +12,9 @@ public class DialogueManager : MonoBehaviour
     private const string DefaultDialogueObjectName = "DialogueUI";
 
     [Header("References")]
-    [SerializeField] private EncounterDialoguePanel dialogueView;
+    [SerializeField] private DialoguePanel dialogueView;
     [SerializeField] private PlayerInteraction playerInteraction;
     [SerializeField] private SimpleCameraFollow cameraFollow;
-
-    private readonly List<EncounterDialogueLine> _runtimeLines = new();
 
     private DialoguePlaybackContext _activeContext;
     private bool _isPlaying;
@@ -27,7 +25,7 @@ public class DialogueManager : MonoBehaviour
     private bool _previousCameraFollowState;
 
     public bool IsPlaying => _isPlaying;
-    public EncounterDialoguePanel DialogueView => dialogueView;
+    public DialoguePanel DialogueView => dialogueView;
 
     private void Awake()
     {
@@ -45,7 +43,7 @@ public class DialogueManager : MonoBehaviour
         AutoWire();
     }
 
-    public void BindView(EncounterDialoguePanel view)
+    public void BindView(DialoguePanel view)
     {
         dialogueView = view;
     }
@@ -108,31 +106,6 @@ public class DialogueManager : MonoBehaviour
             return false;
         }
 
-        _runtimeLines.Clear();
-        for (int i = 0; i < lines.Count; i++)
-        {
-            DialogueLineData line = lines[i];
-            if (line == null)
-            {
-                continue;
-            }
-
-            _runtimeLines.Add(new EncounterDialogueLine
-            {
-                speakerName = line.speakerName,
-                text = line.text,
-                portraitSprite = line.portraitSprite,
-                portraitSide = line.portraitSide == DialoguePortraitSide.Right
-                    ? EncounterPortraitSide.Right
-                    : EncounterPortraitSide.Left
-            });
-        }
-
-        if (_runtimeLines.Count == 0)
-        {
-            return false;
-        }
-
         _activeContext = context;
         _isPlaying = true;
         _manageInputMode = context?.manageInputMode ?? true;
@@ -154,7 +127,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         _activeContext?.onStarted?.Invoke();
-        dialogueView.Play(_runtimeLines, HandleDialogueCompleted);
+        dialogueView.Play((IList<DialogueLineData>)lines, HandleDialogueCompleted);
         return true;
     }
 
@@ -222,7 +195,7 @@ public class DialogueManager : MonoBehaviour
 
     private void AutoWire()
     {
-        dialogueView ??= UnityEngine.Object.FindFirstObjectByType<EncounterDialoguePanel>();
+        dialogueView ??= UnityEngine.Object.FindFirstObjectByType<DialoguePanel>();
         playerInteraction ??= UnityEngine.Object.FindFirstObjectByType<PlayerInteraction>();
         cameraFollow ??= UnityEngine.Object.FindFirstObjectByType<SimpleCameraFollow>();
     }
@@ -237,12 +210,12 @@ public class DialogueManager : MonoBehaviour
         GameObject dialogueObject = GameObject.Find(DefaultDialogueObjectName);
         if (dialogueObject != null)
         {
-            dialogueView = dialogueObject.GetComponent<EncounterDialoguePanel>();
+            dialogueView = dialogueObject.GetComponent<DialoguePanel>();
         }
 
         if (dialogueView == null)
         {
-            Debug.LogWarning("DialogueManager could not find EncounterDialoguePanel in the scene. Place the dialogue UI in the scene and bind it instead of relying on runtime creation.", this);
+            Debug.LogWarning("DialogueManager could not find DialoguePanel in the scene. Place the dialogue UI in the scene and bind it instead of relying on runtime creation.", this);
         }
     }
 }

@@ -1,0 +1,5213 @@
+fileFormatVersion: 2
+guid: 2394d8f28c662ef439aafa97b8d1e126
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8604571348995281754
+    second: After Dying_0
+  - first:
+      213: -7989327483313681290
+    second: After Dying_1
+  - first:
+      213: -5046705096034047631
+    second: After Dying_2
+  - first:
+      213: 3675049477154398560
+    second: After Dying_3
+  - first:
+      213: 2546658777477672453
+    second: After Dying_4
+  - first:
+      213: -6402740596111378319
+    second: After Dying_5
+  - first:
+      213: -8004173682315205544
+    second: After Dying_6
+  - first:
+      213: 2887107816121331801
+    second: After Dying_7
+  - first:
+      213: 3078653725024959941
+    second: After Dying_8
+  - first:
+      213: 355706642250380209
+    second: After Dying_9
+  - first:
+      213: 6227757261049036475
+    second: After Dying_10
+  - first:
+      213: 2696410363440235717
+    second: After Dying_11
+  - first:
+      213: -1657259720643275306
+    second: After Dying_12
+  - first:
+      213: 4022551679534269062
+    second: After Dying_13
+  - first:
+      213: -4582836989895225836
+    second: After Dying_14
+  - first:
+      213: -7100637342297556804
+    second: After Dying_15
+  - first:
+      213: -8826145426990073896
+    second: After Dying_16
+  - first:
+      213: 5769288674628476819
+    second: After Dying_17
+  - first:
+      213: -3245438449117292472
+    second: After Dying_18
+  - first:
+      213: -8442363525257454082
+    second: After Dying_19
+  - first:
+      213: 1375956315006908570
+    second: After Dying_20
+  - first:
+      213: -1269403502437526903
+    second: After Dying_21
+  - first:
+      213: 5174948597565019132
+    second: After Dying_22
+  - first:
+      213: -4640340445090943602
+    second: After Dying_23
+  - first:
+      213: 3404833743272310633
+    second: After Dying_24
+  - first:
+      213: 8350848567472290023
+    second: After Dying_25
+  - first:
+      213: -4491681483330882114
+    second: After Dying_26
+  - first:
+      213: -628098904611664247
+    second: After Dying_27
+  - first:
+      213: 6286924809118932594
+    second: After Dying_28
+  - first:
+      213: 4660857003936577763
+    second: After Dying_29
+  - first:
+      213: -2616883845997117778
+    second: After Dying_30
+  - first:
+      213: 7752296329932557185
+    second: After Dying_31
+  - first:
+      213: -749784637047958503
+    second: After Dying_32
+  - first:
+      213: -4234067423623498381
+    second: After Dying_33
+  - first:
+      213: 4948275496476410000
+    second: After Dying_34
+  - first:
+      213: 5699396815992963089
+    second: After Dying_35
+  - first:
+      213: 868115789386901925
+    second: After Dying_36
+  - first:
+      213: -3124374050739010598
+    second: After Dying_37
+  - first:
+      213: 3833341109342051199
+    second: After Dying_38
+  - first:
+      213: 3091005274836087461
+    second: After Dying_39
+  - first:
+      213: 2690038458043619324
+    second: After Dying_40
+  - first:
+      213: -4576563051201453509
+    second: After Dying_41
+  - first:
+      213: 1941888099410001755
+    second: After Dying_42
+  - first:
+      213: 4950568761431794262
+    second: After Dying_43
+  - first:
+      213: 4011179106774752692
+    second: After Dying_44
+  - first:
+      213: 8067641700526499094
+    second: After Dying_45
+  - first:
+      213: -1915468675878242739
+    second: After Dying_46
+  - first:
+      213: -8878191358103227680
+    second: After Dying_47
+  - first:
+      213: 1354906866772121701
+    second: After Dying_48
+  - first:
+      213: 2353592106802140647
+    second: After Dying_49
+  - first:
+      213: 8431391988581793409
+    second: After Dying_50
+  - first:
+      213: 4986703878618782848
+    second: After Dying_51
+  - first:
+      213: 37528221922859261
+    second: After Dying_52
+  - first:
+      213: 1327896550732113305
+    second: After Dying_53
+  - first:
+      213: -3692065060626409735
+    second: After Dying_54
+  - first:
+      213: 6110852173716269294
+    second: After Dying_55
+  - first:
+      213: 2737545662059979037
+    second: After Dying_56
+  - first:
+      213: -430301293254277288
+    second: After Dying_57
+  - first:
+      213: -442436140608816567
+    second: After Dying_58
+  - first:
+      213: 7449395145549846949
+    second: After Dying_59
+  - first:
+      213: -6734965844369288644
+    second: After Dying_60
+  - first:
+      213: -478333790906414055
+    second: After Dying_61
+  - first:
+      213: -3924359448190442949
+    second: After Dying_62
+  - first:
+      213: 1171205468746558134
+    second: After Dying_63
+  - first:
+      213: 5590959572056120382
+    second: After Dying_64
+  - first:
+      213: 1581336701610900179
+    second: After Dying_65
+  - first:
+      213: 112398346023077781
+    second: After Dying_66
+  - first:
+      213: -2532976189360520240
+    second: After Dying_67
+  - first:
+      213: -7524944968293745369
+    second: After Dying_68
+  - first:
+      213: -7202397950772184535
+    second: After Dying_69
+  - first:
+      213: 2806129905564824803
+    second: After Dying_70
+  - first:
+      213: -3763825967459188733
+    second: After Dying_71
+  - first:
+      213: 1384437002292042077
+    second: After Dying_72
+  - first:
+      213: 6697913694710276645
+    second: After Dying_73
+  - first:
+      213: -3993120861079910284
+    second: After Dying_74
+  - first:
+      213: -1789855449106925719
+    second: After Dying_75
+  - first:
+      213: 5330943545858117545
+    second: After Dying_76
+  - first:
+      213: -7603630328240874660
+    second: After Dying_77
+  - first:
+      213: -4430571730785341504
+    second: After Dying_78
+  - first:
+      213: 1841274867002054791
+    second: After Dying_79
+  - first:
+      213: 5280377680203093443
+    second: After Dying_80
+  - first:
+      213: -4525445183619168291
+    second: After Dying_81
+  - first:
+      213: 7609487947598571796
+    second: After Dying_82
+  - first:
+      213: -5847312127406012941
+    second: After Dying_83
+  - first:
+      213: 1438125232224183003
+    second: After Dying_84
+  - first:
+      213: -3753414937511545228
+    second: After Dying_85
+  - first:
+      213: -7357909413914356066
+    second: After Dying_86
+  - first:
+      213: -6459397186518567784
+    second: After Dying_87
+  - first:
+      213: 7176027985173808532
+    second: After Dying_88
+  - first:
+      213: 2516778944767710693
+    second: After Dying_89
+  - first:
+      213: 1133969983217247895
+    second: After Dying_90
+  - first:
+      213: 6736439743332515905
+    second: After Dying_91
+  - first:
+      213: 8983088825157847257
+    second: After Dying_92
+  - first:
+      213: -4549896329879009953
+    second: After Dying_93
+  - first:
+      213: 8790783809388468234
+    second: After Dying_94
+  - first:
+      213: 2666474448395184315
+    second: After Dying_95
+  - first:
+      213: 2534421996707357287
+    second: After Dying_96
+  - first:
+      213: -8124268910768902717
+    second: After Dying_97
+  - first:
+      213: 7519635779902975788
+    second: After Dying_98
+  - first:
+      213: 1342261237333973461
+    second: After Dying_99
+  - first:
+      213: -8256574928366791342
+    second: After Dying_100
+  - first:
+      213: -1858811893960977026
+    second: After Dying_101
+  - first:
+      213: 1283154436045103458
+    second: After Dying_102
+  - first:
+      213: -7241327964285001557
+    second: After Dying_103
+  - first:
+      213: -8071698074367601560
+    second: After Dying_104
+  - first:
+      213: -5454104067797700340
+    second: After Dying_105
+  - first:
+      213: 8970632293235273073
+    second: After Dying_106
+  - first:
+      213: -8539032925374328611
+    second: After Dying_107
+  - first:
+      213: 4913626673872091045
+    second: After Dying_108
+  - first:
+      213: 8339808528105232049
+    second: After Dying_109
+  - first:
+      213: 3354115811147376672
+    second: After Dying_110
+  - first:
+      213: 5659645243505958965
+    second: After Dying_111
+  - first:
+      213: 4243685171892429416
+    second: After Dying_112
+  - first:
+      213: -6098705269226850051
+    second: After Dying_113
+  - first:
+      213: -7775224395452459928
+    second: After Dying_114
+  - first:
+      213: 2299702868249644489
+    second: After Dying_115
+  - first:
+      213: 3048340216405994823
+    second: After Dying_116
+  - first:
+      213: -2992940026983996569
+    second: After Dying_117
+  - first:
+      213: -8688854046074071459
+    second: After Dying_118
+  - first:
+      213: -5927512314984741337
+    second: After Dying_119
+  - first:
+      213: -7281930760829345415
+    second: After Dying_120
+  - first:
+      213: -7573733146014608362
+    second: After Dying_121
+  - first:
+      213: 2722406434173570626
+    second: After Dying_122
+  - first:
+      213: 6942845630727069085
+    second: After Dying_123
+  - first:
+      213: -8431426117292413889
+    second: After Dying_124
+  - first:
+      213: -7652713636953307601
+    second: After Dying_125
+  - first:
+      213: 5125362883951214045
+    second: After Dying_126
+  - first:
+      213: 5460425319400675597
+    second: After Dying_127
+  - first:
+      213: -5376253027828496883
+    second: After Dying_128
+  - first:
+      213: 6892881760757040141
+    second: After Dying_129
+  - first:
+      213: 2199486872145749066
+    second: After Dying_130
+  - first:
+      213: -6619632479216789249
+    second: After Dying_131
+  - first:
+      213: 5796578439276381631
+    second: After Dying_132
+  - first:
+      213: 537616546750692010
+    second: After Dying_133
+  - first:
+      213: -7418092187431752709
+    second: After Dying_134
+  - first:
+      213: -1801128592774602821
+    second: After Dying_135
+  - first:
+      213: -7005141344082692790
+    second: After Dying_136
+  - first:
+      213: 3603146889464644989
+    second: After Dying_137
+  - first:
+      213: 4130058636983506803
+    second: After Dying_138
+  - first:
+      213: -8196173765684963251
+    second: After Dying_139
+  - first:
+      213: -9050618079318271754
+    second: After Dying_140
+  - first:
+      213: 2937645963647184125
+    second: After Dying_141
+  - first:
+      213: -8798374299610263287
+    second: After Dying_142
+  - first:
+      213: 5447107262065143428
+    second: After Dying_143
+  - first:
+      213: 2197741132863623665
+    second: After Dying_144
+  - first:
+      213: 7588260537710330287
+    second: After Dying_145
+  - first:
+      213: -237894618788693192
+    second: After Dying_146
+  - first:
+      213: 5626508279902370866
+    second: After Dying_147
+  - first:
+      213: 4818244610170797936
+    second: After Dying_148
+  - first:
+      213: 4983118849704219184
+    second: After Dying_149
+  - first:
+      213: 6879712406605484798
+    second: After Dying_150
+  - first:
+      213: 471081186230512931
+    second: After Dying_151
+  - first:
+      213: 4991565849991302236
+    second: After Dying_152
+  - first:
+      213: -4362346276148125686
+    second: After Dying_153
+  - first:
+      213: 8980959730201304401
+    second: After Dying_154
+  - first:
+      213: -4309926516541874438
+    second: After Dying_155
+  - first:
+      213: -7765728625471095388
+    second: After Dying_156
+  - first:
+      213: -2195559302437285908
+    second: After Dying_157
+  - first:
+      213: -7975556043847725420
+    second: After Dying_158
+  - first:
+      213: 296352629044710395
+    second: After Dying_159
+  - first:
+      213: -2948920636791811086
+    second: After Dying_160
+  - first:
+      213: 465956768150286695
+    second: After Dying_161
+  - first:
+      213: -7325219147127094771
+    second: After Dying_162
+  - first:
+      213: -2683331605656018778
+    second: After Dying_163
+  - first:
+      213: 3641749850241300297
+    second: After Dying_164
+  - first:
+      213: -2625765133569120184
+    second: After Dying_165
+  - first:
+      213: 7893359807539256575
+    second: After Dying_166
+  - first:
+      213: 2887986528808283
+    second: After Dying_167
+  - first:
+      213: 1599072772994570543
+    second: After Dying_168
+  - first:
+      213: 5325102473450846335
+    second: After Dying_169
+  - first:
+      213: -351872589733506527
+    second: After Dying_170
+  - first:
+      213: -4939582203231213185
+    second: After Dying_171
+  - first:
+      213: -8416271738304422539
+    second: After Dying_172
+  - first:
+      213: -6402864958734510017
+    second: After Dying_173
+  - first:
+      213: 1305717411945591760
+    second: After Dying_174
+  - first:
+      213: 3230885886528635168
+    second: After Dying_175
+  - first:
+      213: -1979437549413981080
+    second: After Dying_176
+  - first:
+      213: -847218006601027662
+    second: After Dying_177
+  - first:
+      213: -6807792409202628999
+    second: After Dying_178
+  - first:
+      213: -8070943136468580229
+    second: After Dying_179
+  - first:
+      213: 2955594246041207830
+    second: After Dying_180
+  - first:
+      213: 5689765744020345928
+    second: After Dying_181
+  - first:
+      213: -1533300777484032065
+    second: After Dying_182
+  - first:
+      213: 7995656039482993305
+    second: After Dying_183
+  - first:
+      213: 4011999020301518565
+    second: After Dying_184
+  - first:
+      213: 7180934603545532033
+    second: After Dying_185
+  - first:
+      213: 4300152800479781828
+    second: After Dying_186
+  - first:
+      213: -4798901162662600519
+    second: After Dying_187
+  - first:
+      213: 8362608119988543863
+    second: After Dying_188
+  - first:
+      213: 5999930727589655359
+    second: After Dying_189
+  - first:
+      213: 5008090974474872164
+    second: After Dying_190
+  - first:
+      213: -3577103917893313787
+    second: After Dying_191
+  - first:
+      213: -1333718029185102
+    second: After Dying_192
+  - first:
+      213: -5598614264686746377
+    second: After Dying_193
+  - first:
+      213: -2571480452543375766
+    second: After Dying_194
+  - first:
+      213: -654626434557632601
+    second: After Dying_195
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: After Dying_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ace1a272fb669880800000000000000
+      internalID: -8604571348995281754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c82d2bbf4302190800000000000000
+      internalID: -7989327483313681290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_2
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179acb8247086f9b0800000000000000
+      internalID: -5046705096034047631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_3
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 061e5c93706600330800000000000000
+      internalID: 3675049477154398560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50eefa35aac875320800000000000000
+      internalID: 2546658777477672453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_5
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178fecbd955e427a0800000000000000
+      internalID: -6402740596111378319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_6
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8546211a1767be090800000000000000
+      internalID: -8004173682315205544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_7
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9507a202341111820800000000000000
+      internalID: 2887107816121331801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_8
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 0
+        width: 94
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cdbb82604399ba20800000000000000
+      internalID: 3078653725024959941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_9
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b3b4977e49bfe400800000000000000
+      internalID: 355706642250380209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_10
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbeff2c9b307d6650800000000000000
+      internalID: 6227757261049036475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_11
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4898970f29b6520800000000000000
+      internalID: 2696410363440235717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_12
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d59e7a801b3009e0800000000000000
+      internalID: -1657259720643275306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_13
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6828a4da079f2d730800000000000000
+      internalID: 4022551679534269062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_14
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e46c1e90e7660c0800000000000000
+      internalID: -4582836989895225836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_15
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8fa7d35f7757d90800000000000000
+      internalID: -7100637342297556804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_16
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d771504f7b338580800000000000000
+      internalID: -8826145426990073896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_17
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39f1ae98b71a01050800000000000000
+      internalID: 5769288674628476819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_18
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84818f3fce2e5f2d0800000000000000
+      internalID: -3245438449117292472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_19
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd90547a13b6da80800000000000000
+      internalID: -8442363525257454082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_20
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9831767af0681310800000000000000
+      internalID: 1375956315006908570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_21
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98213987d3c226ee0800000000000000
+      internalID: -1269403502437526903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_22
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf3d4c8d45c11d740800000000000000
+      internalID: 5174948597565019132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_23
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8de97563f23a9fb0800000000000000
+      internalID: -4640340445090943602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_24
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 967720bff36604f20800000000000000
+      internalID: 3404833743272310633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_25
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8f345078c24e370800000000000000
+      internalID: 8350848567472290023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_26
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5fcd52d775aa1c0800000000000000
+      internalID: -4491681483330882114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_27
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e4fc2cf5b8847f0800000000000000
+      internalID: -628098904611664247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_28
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27edf19edc4af3750800000000000000
+      internalID: 6286924809118932594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_29
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e8f78430c0bea040800000000000000
+      internalID: 4660857003936577763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_30
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eae32e4c106feabd0800000000000000
+      internalID: -2616883845997117778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_31
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18bc13b4070b59b60800000000000000
+      internalID: 7752296329932557185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_32
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91416ba58da3895f0800000000000000
+      internalID: -749784637047958503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_33
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3753edb7c129d35c0800000000000000
+      internalID: -4234067423623498381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_34
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0900f32d85ecba440800000000000000
+      internalID: 4948275496476410000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_35
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110c04b1533581f40800000000000000
+      internalID: 5699396815992963089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_36
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9605206ba2c0c00800000000000000
+      internalID: 868115789386901925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_37
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3c040ca5ef3a4d0800000000000000
+      internalID: -3124374050739010598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_38
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7b1c35dd63c23530800000000000000
+      internalID: 3833341109342051199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_39
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2b67dabe475ea20800000000000000
+      internalID: 3091005274836087461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_40
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf754d3a9bfe45520800000000000000
+      internalID: 2690038458043619324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_41
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b32a5f01728cc70c0800000000000000
+      internalID: -4576563051201453509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_42
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f34e610f8f2fa10800000000000000
+      internalID: 1941888099410001755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_43
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 652a94d2f04f3b440800000000000000
+      internalID: 4950568761431794262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_44
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd17cd35229aa730800000000000000
+      internalID: 4011179106774752692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_45
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615a207e16506ff60800000000000000
+      internalID: 8067641700526499094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_46
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46b3eb4363ea65e0800000000000000
+      internalID: -1915468675878242739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_47
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2705c9ff35ac480800000000000000
+      internalID: -8878191358103227680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_48
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56890b1ed989dc210800000000000000
+      internalID: 1354906866772121701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_49
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e5da102d83a9a020800000000000000
+      internalID: 2353592106802140647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_50
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18efd799752520570800000000000000
+      internalID: 8431391988581793409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_51
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c9225c1c4543540800000000000000
+      internalID: 4986703878618782848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_52
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df893c018b3558000800000000000000
+      internalID: 37528221922859261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_53
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 995aadc90e2ad6210800000000000000
+      internalID: 1327896550732113305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_54
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f65bb5836623ccc0800000000000000
+      internalID: -3692065060626409735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_55
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee82841ecab1ec450800000000000000
+      internalID: 6110852173716269294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_56
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d112f778647bdf520800000000000000
+      internalID: 2737545662059979037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_57
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 857003de043470af0800000000000000
+      internalID: -430301293254277288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_58
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a773b9ca62cd9f0800000000000000
+      internalID: -442436140608816567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_59
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a994029a61916760800000000000000
+      internalID: 7449395145549846949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_60
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c32daf77f389882a0800000000000000
+      internalID: -6734965844369288644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_61
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91c05f493fd9c59f0800000000000000
+      internalID: -478333790906414055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_62
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3229afbfdfd989c0800000000000000
+      internalID: -3924359448190442949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_63
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba22a32b25f04010800000000000000
+      internalID: 1171205468746558134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_64
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c99fdcb14179d40800000000000000
+      internalID: 5590959572056120382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_65
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da3ec11a5902f510800000000000000
+      internalID: 1581336701610900179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_66
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5970c0043b15f8100800000000000000
+      internalID: 112398346023077781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_67
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3c4a8739f09dcd0800000000000000
+      internalID: -2532976189360520240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_68
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72dfc729b66029790800000000000000
+      internalID: -7524944968293745369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_69
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92af8354931fb0c90800000000000000
+      internalID: -7202397950772184535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_70
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e4bac6184061f620800000000000000
+      internalID: 2806129905564824803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_71
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3004435693434cbc0800000000000000
+      internalID: -3763825967459188733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_72
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5916875e12863310800000000000000
+      internalID: 1384437002292042077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_73
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5222e6da405c3fc50800000000000000
+      internalID: 6697913694710276645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_74
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 478412abbb59598c0800000000000000
+      internalID: -3993120861079910284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_75
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9673facb3f72927e0800000000000000
+      internalID: -1789855449106925719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_76
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9afc88019e05bf940800000000000000
+      internalID: 5330943545858117545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_77
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5bd0d1908a7a7690800000000000000
+      internalID: -7603630328240874660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_78
+      rect:
+        serializedVersion: 2
+        x: 1973
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cfe6aa2c727382c0800000000000000
+      internalID: -4430571730785341504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_79
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 788138d6cb58d8910800000000000000
+      internalID: 1841274867002054791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_80
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c51864068ba74940800000000000000
+      internalID: 5280377680203093443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_81
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd780e315936231c0800000000000000
+      internalID: -4525445183619168291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_82
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 419aa37b8f45a9960800000000000000
+      internalID: 7609487947598571796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_83
+      rect:
+        serializedVersion: 2
+        x: 2103
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f5812bb99c2adea0800000000000000
+      internalID: -5847312127406012941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_84
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2af39774f35f310800000000000000
+      internalID: 1438125232224183003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_85
+      rect:
+        serializedVersion: 2
+        x: 2209
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 476baf2300139ebc0800000000000000
+      internalID: -3753414937511545228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_86
+      rect:
+        serializedVersion: 2
+        x: 2217
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e96d1263f5473e990800000000000000
+      internalID: -7357909413914356066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_87
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89437627b7c9b56a0800000000000000
+      internalID: -6459397186518567784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_88
+      rect:
+        serializedVersion: 2
+        x: 2233
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4950c8aae6f569360800000000000000
+      internalID: 7176027985173808532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_89
+      rect:
+        serializedVersion: 2
+        x: 2243
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5df05ad156de220800000000000000
+      internalID: 2516778944767710693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_90
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796ae9311bbacbf00800000000000000
+      internalID: 1133969983217247895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_91
+      rect:
+        serializedVersion: 2
+        x: 2347
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14088206144ac7d50800000000000000
+      internalID: 6736439743332515905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_92
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d8805921b75aac70800000000000000
+      internalID: 8983088825157847257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_93
+      rect:
+        serializedVersion: 2
+        x: 2363
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5545b4f4658bd0c0800000000000000
+      internalID: -4549896329879009953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_94
+      rect:
+        serializedVersion: 2
+        x: 2373
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08dadf8c432ff970800000000000000
+      internalID: 8790783809388468234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_95
+      rect:
+        serializedVersion: 2
+        x: 2469
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8204b1268310520800000000000000
+      internalID: 2666474448395184315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_96
+      rect:
+        serializedVersion: 2
+        x: 2477
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 762ada8c0631c2320800000000000000
+      internalID: 2534421996707357287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_97
+      rect:
+        serializedVersion: 2
+        x: 2485
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cdaed9487cc04f80800000000000000
+      internalID: -8124268910768902717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_98
+      rect:
+        serializedVersion: 2
+        x: 2493
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f2f6da6ec1b5860800000000000000
+      internalID: 7519635779902975788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_99
+      rect:
+        serializedVersion: 2
+        x: 2503
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d95117db7ba0a210800000000000000
+      internalID: 1342261237333973461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_100
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2551d4d09d0ca6d80800000000000000
+      internalID: -8256574928366791342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_101
+      rect:
+        serializedVersion: 2
+        x: 2607
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e755f2c4e6c2436e0800000000000000
+      internalID: -1858811893960977026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_102
+      rect:
+        serializedVersion: 2
+        x: 2615
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2616f60492eaec110800000000000000
+      internalID: 1283154436045103458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_103
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0a0ba2592a18b90800000000000000
+      internalID: -7241327964285001557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_104
+      rect:
+        serializedVersion: 2
+        x: 2633
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8645d17fd519bff80800000000000000
+      internalID: -8071698074367601560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_105
+      rect:
+        serializedVersion: 2
+        x: 2729
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01b7e65f312f44b0800000000000000
+      internalID: -5454104067797700340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_106
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17dafe0da861e7c70800000000000000
+      internalID: 8970632293235273073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_107
+      rect:
+        serializedVersion: 2
+        x: 2745
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0d2bdcbc24f7980800000000000000
+      internalID: -8539032925374328611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_108
+      rect:
+        serializedVersion: 2
+        x: 2753
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a7b7072d65b03440800000000000000
+      internalID: 4913626673872091045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_109
+      rect:
+        serializedVersion: 2
+        x: 2763
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b65c7c8ba3fcb370800000000000000
+      internalID: 8339808528105232049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_110
+      rect:
+        serializedVersion: 2
+        x: 2859
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028e5f23f863c8e20800000000000000
+      internalID: 3354115811147376672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_111
+      rect:
+        serializedVersion: 2
+        x: 2867
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530e6e5ec591b8e40800000000000000
+      internalID: 5659645243505958965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_112
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862ad390e2994ea30800000000000000
+      internalID: 4243685171892429416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_113
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df83ee5bedb0d5ba0800000000000000
+      internalID: -6098705269226850051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_114
+      rect:
+        serializedVersion: 2
+        x: 2893
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 864da147b9ad81490800000000000000
+      internalID: -7775224395452459928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_115
+      rect:
+        serializedVersion: 2
+        x: 2989
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd87f6039f2aef10800000000000000
+      internalID: 2299702868249644489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_116
+      rect:
+        serializedVersion: 2
+        x: 2997
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74daa69a641ed4a20800000000000000
+      internalID: 3048340216405994823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_117
+      rect:
+        serializedVersion: 2
+        x: 3005
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763229917e0f676d0800000000000000
+      internalID: -2992940026983996569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_118
+      rect:
+        serializedVersion: 2
+        x: 3013
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d561a86d74dfa6780800000000000000
+      internalID: -8688854046074071459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_119
+      rect:
+        serializedVersion: 2
+        x: 3023
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 726c49f64fe3dbda0800000000000000
+      internalID: -5927512314984741337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_120
+      rect:
+        serializedVersion: 2
+        x: 3119
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 971e6c9ed8261fa90800000000000000
+      internalID: -7281930760829345415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_121
+      rect:
+        serializedVersion: 2
+        x: 3127
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6149230c4d1b4e690800000000000000
+      internalID: -7573733146014608362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_122
+      rect:
+        serializedVersion: 2
+        x: 3135
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e472b5a3ee7c520800000000000000
+      internalID: 2722406434173570626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_123
+      rect:
+        serializedVersion: 2
+        x: 3143
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d1cddf051f95060800000000000000
+      internalID: 6942845630727069085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_124
+      rect:
+        serializedVersion: 2
+        x: 3153
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ca5d03e9e8dfa80800000000000000
+      internalID: -8431426117292413889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_125
+      rect:
+        serializedVersion: 2
+        x: 3249
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f264c953e791cc590800000000000000
+      internalID: -7652713636953307601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_126
+      rect:
+        serializedVersion: 2
+        x: 3257
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd32ea3362f02740800000000000000
+      internalID: 5125362883951214045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_127
+      rect:
+        serializedVersion: 2
+        x: 3265
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d091d6db5e357cb40800000000000000
+      internalID: 5460425319400675597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_128
+      rect:
+        serializedVersion: 2
+        x: 3273
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d060aa51b56b365b0800000000000000
+      internalID: -5376253027828496883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_129
+      rect:
+        serializedVersion: 2
+        x: 3283
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0441bcf07f68af50800000000000000
+      internalID: 6892881760757040141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_130
+      rect:
+        serializedVersion: 2
+        x: 3379
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44e16628a5268e10800000000000000
+      internalID: 2199486872145749066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_131
+      rect:
+        serializedVersion: 2
+        x: 3387
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff815ac15575224a0800000000000000
+      internalID: -6619632479216789249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_132
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb5c1c10165917050800000000000000
+      internalID: 5796578439276381631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_133
+      rect:
+        serializedVersion: 2
+        x: 3403
+        y: 0
+        width: 94
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa727e966ff57700800000000000000
+      internalID: 537616546750692010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_134
+      rect:
+        serializedVersion: 2
+        x: 3413
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfba7015574ad0990800000000000000
+      internalID: -7418092187431752709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_135
+      rect:
+        serializedVersion: 2
+        x: 3509
+        y: 13
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbfded0761b1107e0800000000000000
+      internalID: -1801128592774602821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_136
+      rect:
+        serializedVersion: 2
+        x: 3517
+        y: 11
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a457c88ff0db8ce90800000000000000
+      internalID: -7005141344082692790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_137
+      rect:
+        serializedVersion: 2
+        x: 3525
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7508147103f00230800000000000000
+      internalID: 3603146889464644989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_138
+      rect:
+        serializedVersion: 2
+        x: 3533
+        y: 0
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3779fe6c27ae05930800000000000000
+      internalID: 4130058636983506803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_139
+      rect:
+        serializedVersion: 2
+        x: 3543
+        y: 9
+        width: 93
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48d8f2a267514e80800000000000000
+      internalID: -8196173765684963251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_140
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f891802fceb56280800000000000000
+      internalID: -9050618079318271754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_141
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfcec0b807d94c820800000000000000
+      internalID: 2937645963647184125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_142
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 901ddc6b035e5e580800000000000000
+      internalID: -8798374299610263287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_143
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ee7d0e133089b40800000000000000
+      internalID: 5447107262065143428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_144
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1d99c8ae1ff7e10800000000000000
+      internalID: 2197741132863623665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_145
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa1c65531caee4960800000000000000
+      internalID: 7588260537710330287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_146
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b7f19ca14d2bcf0800000000000000
+      internalID: -237894618788693192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_147
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23cff55587f551e40800000000000000
+      internalID: 5626508279902370866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_148
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07fbb2ed1f7ddd240800000000000000
+      internalID: 4818244610170797936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_149
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0325c2e2138972540800000000000000
+      internalID: 4983118849704219184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_150
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef25198cbf5a97f50800000000000000
+      internalID: 6879712406605484798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_151
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32da3adc7dd998600800000000000000
+      internalID: 471081186230512931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_152
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5cc3b1b1ba954540800000000000000
+      internalID: 4991565849991302236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_153
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0061feac25d573c0800000000000000
+      internalID: -4362346276148125686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_154
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d9cbc9a47c2ac70800000000000000
+      internalID: 8980959730201304401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_155
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe1c7d0ba01034c0800000000000000
+      internalID: -4309926516541874438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_156
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad76b0b5f69a3490800000000000000
+      internalID: -7765728625471095388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_157
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cefcbee627ec781e0800000000000000
+      internalID: -2195559302437285908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_158
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e8c30d802215190800000000000000
+      internalID: -7975556043847725420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_159
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb867e552bdc1400800000000000000
+      internalID: 296352629044710395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_160
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f3943d0e445317d0800000000000000
+      internalID: -2948920636791811086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_161
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761794e3639677600800000000000000
+      internalID: 465956768150286695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_162
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0289911ff7975a90800000000000000
+      internalID: -7325219147127094771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_163
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a06b4e1f14e2cad0800000000000000
+      internalID: -2683331605656018778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_164
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947f678a1381a8230800000000000000
+      internalID: 3641749850241300297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_165
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 848a10ed5886f8bd0800000000000000
+      internalID: -2625765133569120184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_166
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc19b49ce8da8d60800000000000000
+      internalID: 7893359807539256575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_167
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d6a23cb924a0000800000000000000
+      internalID: 2887986528808283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_168
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29175cf63c013610800000000000000
+      internalID: 1599072772994570543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_169
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f78779a6c7096e940800000000000000
+      internalID: 5325102473450846335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_170
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122dcb27eb5ed1bf0800000000000000
+      internalID: -351872589733506527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_171
+      rect:
+        serializedVersion: 2
+        x: 1961
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79ef8d3824137bb0800000000000000
+      internalID: -4939582203231213185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_172
+      rect:
+        serializedVersion: 2
+        x: 2083
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57d94310275633b80800000000000000
+      internalID: -8416271738304422539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_173
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3855dd6e347427a0800000000000000
+      internalID: -6402864958734510017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_174
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d33f047117de1210800000000000000
+      internalID: 1305717411945591760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_175
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021cc58889966dc20800000000000000
+      internalID: 3230885886528635168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_176
+      rect:
+        serializedVersion: 2
+        x: 2343
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8642c1c4900a784e0800000000000000
+      internalID: -1979437549413981080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_177
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf2b3536b31e34f0800000000000000
+      internalID: -847218006601027662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_178
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97660e08fdcd581a0800000000000000
+      internalID: -6807792409202628999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_179
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b78c964aaff3eff80800000000000000
+      internalID: -8070943136468580229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_180
+      rect:
+        serializedVersion: 2
+        x: 2603
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 614897fae41640920800000000000000
+      internalID: 2955594246041207830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_181
+      rect:
+        serializedVersion: 2
+        x: 2611
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844d48b6ccb16fe40800000000000000
+      internalID: 5689765744020345928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_182
+      rect:
+        serializedVersion: 2
+        x: 2733
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb7eb30111f98bae0800000000000000
+      internalID: -1533300777484032065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_183
+      rect:
+        serializedVersion: 2
+        x: 2741
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a279b1ec646fe60800000000000000
+      internalID: 7995656039482993305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_184
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6894c3adb7da730800000000000000
+      internalID: 4011999020301518565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_185
+      rect:
+        serializedVersion: 2
+        x: 2871
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18654a7c9fdc7a360800000000000000
+      internalID: 7180934603545532033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_186
+      rect:
+        serializedVersion: 2
+        x: 2993
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c3af7850363dab30800000000000000
+      internalID: 4300152800479781828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_187
+      rect:
+        serializedVersion: 2
+        x: 3001
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0694771d0e66db0800000000000000
+      internalID: -4798901162662600519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_188
+      rect:
+        serializedVersion: 2
+        x: 3123
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771e6b337c3fd0470800000000000000
+      internalID: 8362608119988543863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_189
+      rect:
+        serializedVersion: 2
+        x: 3131
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33beee2539044350800000000000000
+      internalID: 5999930727589655359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_190
+      rect:
+        serializedVersion: 2
+        x: 3253
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4652a601530508540800000000000000
+      internalID: 5008090974474872164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_191
+      rect:
+        serializedVersion: 2
+        x: 3261
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50b9f4160f29b5ec0800000000000000
+      internalID: -3577103917893313787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_192
+      rect:
+        serializedVersion: 2
+        x: 3383
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bfc3a29df24bfff0800000000000000
+      internalID: -1333718029185102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_193
+      rect:
+        serializedVersion: 2
+        x: 3391
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f469ee2df9bd42b0800000000000000
+      internalID: -5598614264686746377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_194
+      rect:
+        serializedVersion: 2
+        x: 3513
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a669a471724405cd0800000000000000
+      internalID: -2571480452543375766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: After Dying_195
+      rect:
+        serializedVersion: 2
+        x: 3521
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af9c93e9bc4ae6f0800000000000000
+      internalID: -654626434557632601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      After Dying_0: -8604571348995281754
+      After Dying_1: -7989327483313681290
+      After Dying_10: 6227757261049036475
+      After Dying_100: -8256574928366791342
+      After Dying_101: -1858811893960977026
+      After Dying_102: 1283154436045103458
+      After Dying_103: -7241327964285001557
+      After Dying_104: -8071698074367601560
+      After Dying_105: -5454104067797700340
+      After Dying_106: 8970632293235273073
+      After Dying_107: -8539032925374328611
+      After Dying_108: 4913626673872091045
+      After Dying_109: 8339808528105232049
+      After Dying_11: 2696410363440235717
+      After Dying_110: 3354115811147376672
+      After Dying_111: 5659645243505958965
+      After Dying_112: 4243685171892429416
+      After Dying_113: -6098705269226850051
+      After Dying_114: -7775224395452459928
+      After Dying_115: 2299702868249644489
+      After Dying_116: 3048340216405994823
+      After Dying_117: -2992940026983996569
+      After Dying_118: -8688854046074071459
+      After Dying_119: -5927512314984741337
+      After Dying_12: -1657259720643275306
+      After Dying_120: -7281930760829345415
+      After Dying_121: -7573733146014608362
+      After Dying_122: 2722406434173570626
+      After Dying_123: 6942845630727069085
+      After Dying_124: -8431426117292413889
+      After Dying_125: -7652713636953307601
+      After Dying_126: 5125362883951214045
+      After Dying_127: 5460425319400675597
+      After Dying_128: -5376253027828496883
+      After Dying_129: 6892881760757040141
+      After Dying_13: 4022551679534269062
+      After Dying_130: 2199486872145749066
+      After Dying_131: -6619632479216789249
+      After Dying_132: 5796578439276381631
+      After Dying_133: 537616546750692010
+      After Dying_134: -7418092187431752709
+      After Dying_135: -1801128592774602821
+      After Dying_136: -7005141344082692790
+      After Dying_137: 3603146889464644989
+      After Dying_138: 4130058636983506803
+      After Dying_139: -8196173765684963251
+      After Dying_14: -4582836989895225836
+      After Dying_140: -9050618079318271754
+      After Dying_141: 2937645963647184125
+      After Dying_142: -8798374299610263287
+      After Dying_143: 5447107262065143428
+      After Dying_144: 2197741132863623665
+      After Dying_145: 7588260537710330287
+      After Dying_146: -237894618788693192
+      After Dying_147: 5626508279902370866
+      After Dying_148: 4818244610170797936
+      After Dying_149: 4983118849704219184
+      After Dying_15: -7100637342297556804
+      After Dying_150: 6879712406605484798
+      After Dying_151: 471081186230512931
+      After Dying_152: 4991565849991302236
+      After Dying_153: -4362346276148125686
+      After Dying_154: 8980959730201304401
+      After Dying_155: -4309926516541874438
+      After Dying_156: -7765728625471095388
+      After Dying_157: -2195559302437285908
+      After Dying_158: -7975556043847725420
+      After Dying_159: 296352629044710395
+      After Dying_16: -8826145426990073896
+      After Dying_160: -2948920636791811086
+      After Dying_161: 465956768150286695
+      After Dying_162: -7325219147127094771
+      After Dying_163: -2683331605656018778
+      After Dying_164: 3641749850241300297
+      After Dying_165: -2625765133569120184
+      After Dying_166: 7893359807539256575
+      After Dying_167: 2887986528808283
+      After Dying_168: 1599072772994570543
+      After Dying_169: 5325102473450846335
+      After Dying_17: 5769288674628476819
+      After Dying_170: -351872589733506527
+      After Dying_171: -4939582203231213185
+      After Dying_172: -8416271738304422539
+      After Dying_173: -6402864958734510017
+      After Dying_174: 1305717411945591760
+      After Dying_175: 3230885886528635168
+      After Dying_176: -1979437549413981080
+      After Dying_177: -847218006601027662
+      After Dying_178: -6807792409202628999
+      After Dying_179: -8070943136468580229
+      After Dying_18: -3245438449117292472
+      After Dying_180: 2955594246041207830
+      After Dying_181: 5689765744020345928
+      After Dying_182: -1533300777484032065
+      After Dying_183: 7995656039482993305
+      After Dying_184: 4011999020301518565
+      After Dying_185: 7180934603545532033
+      After Dying_186: 4300152800479781828
+      After Dying_187: -4798901162662600519
+      After Dying_188: 8362608119988543863
+      After Dying_189: 5999930727589655359
+      After Dying_19: -8442363525257454082
+      After Dying_190: 5008090974474872164
+      After Dying_191: -3577103917893313787
+      After Dying_192: -1333718029185102
+      After Dying_193: -5598614264686746377
+      After Dying_194: -2571480452543375766
+      After Dying_195: -654626434557632601
+      After Dying_2: -5046705096034047631
+      After Dying_20: 1375956315006908570
+      After Dying_21: -1269403502437526903
+      After Dying_22: 5174948597565019132
+      After Dying_23: -4640340445090943602
+      After Dying_24: 3404833743272310633
+      After Dying_25: 8350848567472290023
+      After Dying_26: -4491681483330882114
+      After Dying_27: -628098904611664247
+      After Dying_28: 6286924809118932594
+      After Dying_29: 4660857003936577763
+      After Dying_3: 3675049477154398560
+      After Dying_30: -2616883845997117778
+      After Dying_31: 7752296329932557185
+      After Dying_32: -749784637047958503
+      After Dying_33: -4234067423623498381
+      After Dying_34: 4948275496476410000
+      After Dying_35: 5699396815992963089
+      After Dying_36: 868115789386901925
+      After Dying_37: -3124374050739010598
+      After Dying_38: 3833341109342051199
+      After Dying_39: 3091005274836087461
+      After Dying_4: 2546658777477672453
+      After Dying_40: 2690038458043619324
+      After Dying_41: -4576563051201453509
+      After Dying_42: 1941888099410001755
+      After Dying_43: 4950568761431794262
+      After Dying_44: 4011179106774752692
+      After Dying_45: 8067641700526499094
+      After Dying_46: -1915468675878242739
+      After Dying_47: -8878191358103227680
+      After Dying_48: 1354906866772121701
+      After Dying_49: 2353592106802140647
+      After Dying_5: -6402740596111378319
+      After Dying_50: 8431391988581793409
+      After Dying_51: 4986703878618782848
+      After Dying_52: 37528221922859261
+      After Dying_53: 1327896550732113305
+      After Dying_54: -3692065060626409735
+      After Dying_55: 6110852173716269294
+      After Dying_56: 2737545662059979037
+      After Dying_57: -430301293254277288
+      After Dying_58: -442436140608816567
+      After Dying_59: 7449395145549846949
+      After Dying_6: -8004173682315205544
+      After Dying_60: -6734965844369288644
+      After Dying_61: -478333790906414055
+      After Dying_62: -3924359448190442949
+      After Dying_63: 1171205468746558134
+      After Dying_64: 5590959572056120382
+      After Dying_65: 1581336701610900179
+      After Dying_66: 112398346023077781
+      After Dying_67: -2532976189360520240
+      After Dying_68: -7524944968293745369
+      After Dying_69: -7202397950772184535
+      After Dying_7: 2887107816121331801
+      After Dying_70: 2806129905564824803
+      After Dying_71: -3763825967459188733
+      After Dying_72: 1384437002292042077
+      After Dying_73: 6697913694710276645
+      After Dying_74: -3993120861079910284
+      After Dying_75: -1789855449106925719
+      After Dying_76: 5330943545858117545
+      After Dying_77: -7603630328240874660
+      After Dying_78: -4430571730785341504
+      After Dying_79: 1841274867002054791
+      After Dying_8: 3078653725024959941
+      After Dying_80: 5280377680203093443
+      After Dying_81: -4525445183619168291
+      After Dying_82: 7609487947598571796
+      After Dying_83: -5847312127406012941
+      After Dying_84: 1438125232224183003
+      After Dying_85: -3753414937511545228
+      After Dying_86: -7357909413914356066
+      After Dying_87: -6459397186518567784
+      After Dying_88: 7176027985173808532
+      After Dying_89: 2516778944767710693
+      After Dying_9: 355706642250380209
+      After Dying_90: 1133969983217247895
+      After Dying_91: 6736439743332515905
+      After Dying_92: 8983088825157847257
+      After Dying_93: -4549896329879009953
+      After Dying_94: 8790783809388468234
+      After Dying_95: 2666474448395184315
+      After Dying_96: 2534421996707357287
+      After Dying_97: -8124268910768902717
+      After Dying_98: 7519635779902975788
+      After Dying_99: 1342261237333973461
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

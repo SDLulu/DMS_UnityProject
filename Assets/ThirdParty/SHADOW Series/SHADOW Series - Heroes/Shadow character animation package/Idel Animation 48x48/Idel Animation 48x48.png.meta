@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: e7dc1539738d5ba42be4ff4cd4b374da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1234850466534396885
+    second: Idel Animation 48x48_0
+  - first:
+      213: -4603718413170894697
+    second: Idel Animation 48x48_1
+  - first:
+      213: -1055979463963558519
+    second: Idel Animation 48x48_2
+  - first:
+      213: -1671385918788548960
+    second: Idel Animation 48x48_3
+  - first:
+      213: 4664262283584040536
+    second: Idel Animation 48x48_4
+  - first:
+      213: -5992892090904542931
+    second: Idel Animation 48x48_5
+  - first:
+      213: 6386435202083405834
+    second: Idel Animation 48x48_6
+  - first:
+      213: -5575259620138887894
+    second: Idel Animation 48x48_7
+  - first:
+      213: 4310173952616876695
+    second: Idel Animation 48x48_8
+  - first:
+      213: 8596610054982686144
+    second: Idel Animation 48x48_9
+  - first:
+      213: 676905059944829400
+    second: Idel Animation 48x48_10
+  - first:
+      213: 2805925288277926352
+    second: Idel Animation 48x48_11
+  - first:
+      213: -5071740645045370871
+    second: Idel Animation 48x48_12
+  - first:
+      213: 5359300461629591106
+    second: Idel Animation 48x48_13
+  - first:
+      213: -5573085196663021223
+    second: Idel Animation 48x48_14
+  - first:
+      213: 6923083038070262550
+    second: Idel Animation 48x48_15
+  - first:
+      213: -7851087336010781993
+    second: Idel Animation 48x48_16
+  - first:
+      213: 1221650827084993623
+    second: Idel Animation 48x48_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Idel Animation 48x48_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 6
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d31280f4f1132110800000000000000
+      internalID: 1234850466534396885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idel Animation 48x48_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 32
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7981609ae7e4c10c0800000000000000
+      internalID: -4603718413170894697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idel Animation 48x48_2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 6
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d3858b5486851f0800000000000000
+      internalID: -1055979463963558519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idel Animation 48x48_3
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 32
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6c40cbc5b0ec8e0800000000000000
+      internalID: -1671385918788548960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idel Animation 48x48_4
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 32
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e6748a5d9cab040800000000000000
+      internalID: 4664262283584040536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idel Animation 48x48_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 30
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2103602568f4dca0800000000000000
+      internalID: -5992892090904542931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idel Animation 48x48_6
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 29
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a004b31cafc21a850800000000000000
+      internalID: 6386435202083405834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idel Animation 48x48_7
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 29
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a25da0b1ae2b0a2b0800000000000000
+      internalID: -5575259620138887894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idel Animation 48x48_8
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 29
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79aced5af50d0db30800000000000000
+      internalID: 4310173952616876695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idel Animation 48x48_9
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 6
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c55bc75c4b4d4770800000000000000
+      internalID: 8596610054982686144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idel Animation 48x48_10
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 6
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d11dacc099d46900800000000000000
+      internalID: 676905059944829400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idel Animation 48x48_11
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 30
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d1671aee26a0f620800000000000000
+      internalID: 2805925288277926352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idel Animation 48x48_12
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 6
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900092b21ce8d99b0800000000000000
+      internalID: -5071740645045370871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idel Animation 48x48_13
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 6
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ec404006f006a40800000000000000
+      internalID: 5359300461629591106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idel Animation 48x48_14
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 6
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951a9e58a8c68a2b0800000000000000
+      internalID: -5573085196663021223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idel Animation 48x48_15
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 6
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61bc5b2d75bb31060800000000000000
+      internalID: 6923083038070262550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idel Animation 48x48_16
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 6
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da628c2aa55b0390800000000000000
+      internalID: -7851087336010781993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idel Animation 48x48_17
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 6
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75496f364fc24f010800000000000000
+      internalID: 1221650827084993623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Idel Animation 48x48_0: 1234850466534396885
+      Idel Animation 48x48_1: -4603718413170894697
+      Idel Animation 48x48_10: 676905059944829400
+      Idel Animation 48x48_11: 2805925288277926352
+      Idel Animation 48x48_12: -5071740645045370871
+      Idel Animation 48x48_13: 5359300461629591106
+      Idel Animation 48x48_14: -5573085196663021223
+      Idel Animation 48x48_15: 6923083038070262550
+      Idel Animation 48x48_16: -7851087336010781993
+      Idel Animation 48x48_17: 1221650827084993623
+      Idel Animation 48x48_2: -1055979463963558519
+      Idel Animation 48x48_3: -1671385918788548960
+      Idel Animation 48x48_4: 4664262283584040536
+      Idel Animation 48x48_5: -5992892090904542931
+      Idel Animation 48x48_6: 6386435202083405834
+      Idel Animation 48x48_7: -5575259620138887894
+      Idel Animation 48x48_8: 4310173952616876695
+      Idel Animation 48x48_9: 8596610054982686144
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

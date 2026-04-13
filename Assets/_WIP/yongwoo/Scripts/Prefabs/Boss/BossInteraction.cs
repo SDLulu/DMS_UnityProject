@@ -10,7 +10,7 @@ using UnityEngine;
 // - 보스가 자기 체력/피격/부활 규칙을 직접 소유하고, 외부에는 얇은 계약만 공개합니다.
 
 [DisallowMultipleComponent]
-public class BossInteraction : MonoBehaviour
+public class BossInteraction : MonoBehaviour, IDamageReceiver
 {
     [Header("Health")]
     [SerializeField] private float maxHealth = 12f;

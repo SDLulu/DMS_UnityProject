@@ -251,27 +251,28 @@ public class SimplePlayerController : MonoBehaviour
 
         if (_jumpBufferTimer > 0f)
         {
-            _jumpBufferTimer -= Time.deltaTime;
+            _jumpBufferTimer -= Time.unscaledDeltaTime;
         }
     }
 
     private void FixedUpdate()
     {
         // 이번 틱에서 사용할 쿨다운과 지면 상태를 먼저 최신값으로 맞춥니다.
+        float realDt = Time.fixedUnscaledDeltaTime;
         if (_dashCooldownTimer > 0f)
         {
-            _dashCooldownTimer = Mathf.Max(0f, _dashCooldownTimer - Time.fixedDeltaTime);
+            _dashCooldownTimer = Mathf.Max(0f, _dashCooldownTimer - realDt);
         }
 
         bool detectedGround = IsGrounded();
         if (_jumpGroundIgnoreTimer > 0f)
         {
-            _jumpGroundIgnoreTimer = Mathf.Max(0f, _jumpGroundIgnoreTimer - Time.fixedDeltaTime);
+            _jumpGroundIgnoreTimer = Mathf.Max(0f, _jumpGroundIgnoreTimer - realDt);
         }
 
         bool risingFromJump = _body.linearVelocity.y > UpwardUngroundedVelocity;
         _isGrounded = detectedGround && _jumpGroundIgnoreTimer <= 0f && !risingFromJump;
-        _coyoteTimer = _isGrounded ? coyoteTime : Mathf.Max(0f, _coyoteTimer - Time.fixedDeltaTime);
+        _coyoteTimer = _isGrounded ? coyoteTime : Mathf.Max(0f, _coyoteTimer - realDt);
 
         // 대시/롤은 일반 이동보다 우선하며, 실행 중에는 해당 루틴만 계속 유지합니다.
         if (IsDashing)
@@ -315,10 +316,10 @@ public class SimplePlayerController : MonoBehaviour
         }
 
         _actionState = PlayerActionState.Normal;
-        TickNormalMovement();
+        TickNormalMovement(realDt);
     }
 
-    private void TickNormalMovement()
+    private void TickNormalMovement(float realDt)
     {
         // 목표 속도는 지상/공중 상태와 점프 정점 보정값을 반영해 계산합니다.
         float targetSpeed = _moveInput * (_isGrounded ? groundMoveSpeed : airMoveSpeed);
@@ -338,7 +339,8 @@ public class SimplePlayerController : MonoBehaviour
             acceleration *= turnaroundAccelerationMultiplier;
         }
 
-        float newSpeed = Mathf.MoveTowards(currentSpeed, targetSpeed, acceleration * Time.fixedDeltaTime);
+        // 슬로우 모션 중에도 플레이어 가속/감속 체감은 유지해야 하므로 실제 시간 기준으로 보간합니다.
+        float newSpeed = Mathf.MoveTowards(currentSpeed, targetSpeed, acceleration * realDt);
 
         // 수평 속도와 점프 발동을 먼저 확정하고, 중력과 낙하 제한은 마지막에 적용합니다.
         Vector2 velocity = _body.linearVelocity;
@@ -417,7 +419,7 @@ public class SimplePlayerController : MonoBehaviour
     private void TickDash()
     {
         // 대시는 중력을 끄고 정해진 시간 동안 수평 속도를 강제로 유지합니다.
-        _actionTimer = Mathf.Max(0f, _actionTimer - Time.fixedDeltaTime);
+        _actionTimer = Mathf.Max(0f, _actionTimer - Time.fixedUnscaledDeltaTime);
         _body.gravityScale = 0f;
         _body.linearVelocity = new Vector2(_actionDirection * dashSpeed, 0f);
 
@@ -442,7 +444,7 @@ public class SimplePlayerController : MonoBehaviour
     private void TickRoll()
     {
         // 구르기 중에는 수평 속도를 강제로 유지하고 낙하 속도만 안전 범위로 제한합니다.
-        _actionTimer = Mathf.Max(0f, _actionTimer - Time.fixedDeltaTime);
+        _actionTimer = Mathf.Max(0f, _actionTimer - Time.fixedUnscaledDeltaTime);
         _body.gravityScale = baseGravityScale;
 
         Vector2 velocity = _body.linearVelocity;
@@ -556,12 +558,12 @@ public class SimplePlayerController : MonoBehaviour
 
     private bool ReadDownHeld()
     {
-        return GameInput.Instance.CrouchHeld || GameInput.Instance.Move.y < -0.5f;
+        return GameInput.Instance.Move.y < -0.5f;
     }
 
     private bool ReadDownPressed()
     {
-        return GameInput.Instance.CrouchPressed || (GameInput.Instance.MoveTriggeredThisFrame && GameInput.Instance.Move.y < -0.5f);
+        return GameInput.Instance.MoveTriggeredThisFrame && GameInput.Instance.Move.y < -0.5f;
     }
 
     private bool ReadDashPressed()

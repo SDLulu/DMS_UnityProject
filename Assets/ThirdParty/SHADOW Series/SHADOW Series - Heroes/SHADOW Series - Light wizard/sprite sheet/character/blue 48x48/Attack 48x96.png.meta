@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: 7af096411fcbdd240a84f46edafa0efe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5811172486974941109
+    second: Attack 48x96_0
+  - first:
+      213: -6597921781930306203
+    second: Attack 48x96_1
+  - first:
+      213: -7546502809961494081
+    second: Attack 48x96_2
+  - first:
+      213: -3599771940201429444
+    second: Attack 48x96_3
+  - first:
+      213: -8400444463685025935
+    second: Attack 48x96_4
+  - first:
+      213: -2406497184402188237
+    second: Attack 48x96_5
+  - first:
+      213: 4453079177903572358
+    second: Attack 48x96_6
+  - first:
+      213: -1351333892646258592
+    second: Attack 48x96_7
+  - first:
+      213: -3529905310429274201
+    second: Attack 48x96_8
+  - first:
+      213: -9048333259327137486
+    second: Attack 48x96_9
+  - first:
+      213: 2207422397465917953
+    second: Attack 48x96_10
+  - first:
+      213: 8997233206957239296
+    second: Attack 48x96_11
+  - first:
+      213: -6616533158043235956
+    second: Attack 48x96_12
+  - first:
+      213: 3309798913777180448
+    second: Attack 48x96_13
+  - first:
+      213: -1125794985636390542
+    second: Attack 48x96_14
+  - first:
+      213: -8673969431057440568
+    second: Attack 48x96_15
+  - first:
+      213: -4685783448476824471
+    second: Attack 48x96_16
+  - first:
+      213: 2738356534592271025
+    second: Attack 48x96_17
+  - first:
+      213: -2556595821034382790
+    second: Attack 48x96_18
+  - first:
+      213: -1761696278994725865
+    second: Attack 48x96_19
+  - first:
+      213: -2411244298414163830
+    second: Attack 48x96_20
+  - first:
+      213: 4628784644013719986
+    second: Attack 48x96_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack 48x96_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 5
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b48d55979619a5fa0800000000000000
+      internalID: -5811172486974941109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_1
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 5
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5655b3cb8197f64a0800000000000000
+      internalID: -6597921781930306203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_2
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 5
+        width: 90
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb902cb6daf654790800000000000000
+      internalID: -7546502809961494081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_3
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 5
+        width: 41
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3600e72e7a0b0ec0800000000000000
+      internalID: -3599771940201429444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_4
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 13
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f38aa8440ab6b80800000000000000
+      internalID: -8400444463685025935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_5
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 5
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 338daba9f876a9ed0800000000000000
+      internalID: -2406497184402188237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_6
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 17
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68581ab3be38ccd30800000000000000
+      internalID: 4453079177903572358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_7
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1
+        width: 84
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068bfdbfbf81f3de0800000000000000
+      internalID: -1351333892646258592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_8
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 5
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af191982d1430fc0800000000000000
+      internalID: -3529905310429274201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_9
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 9
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239147c37dcdd6280800000000000000
+      internalID: -9048333259327137486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_10
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 22
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a723e99f652ae10800000000000000
+      internalID: 2207422397465917953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_11
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 6
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00ce80eaee79cdc70800000000000000
+      internalID: 8997233206957239296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_12
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 15
+        width: 205
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c894d3e062a5d24a0800000000000000
+      internalID: -6616533158043235956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_13
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 10
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02f99a57394ceed20800000000000000
+      internalID: 3309798913777180448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_14
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 6
+        width: 105
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2791a3fdc6f5060f0800000000000000
+      internalID: -1125794985636390542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_15
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 9
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0693552cedf9780800000000000000
+      internalID: -8673969431057440568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_16
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 22
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c422ba7c0c8feb0800000000000000
+      internalID: -4685783448476824471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_17
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 6
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b2fdb082c8900620800000000000000
+      internalID: 2738356534592271025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_18
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 5
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a5ffc65a5258cd0800000000000000
+      internalID: -2556595821034382790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_19
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 5
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 714546071923d87e0800000000000000
+      internalID: -1761696278994725865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_20
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 5
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a88765ef51a898ed0800000000000000
+      internalID: -2411244298414163830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack 48x96_21
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 5
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b188300c1fbc3040800000000000000
+      internalID: 4628784644013719986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Attack 48x96_0: -5811172486974941109
+      Attack 48x96_1: -6597921781930306203
+      Attack 48x96_10: 2207422397465917953
+      Attack 48x96_11: 8997233206957239296
+      Attack 48x96_12: -6616533158043235956
+      Attack 48x96_13: 3309798913777180448
+      Attack 48x96_14: -1125794985636390542
+      Attack 48x96_15: -8673969431057440568
+      Attack 48x96_16: -4685783448476824471
+      Attack 48x96_17: 2738356534592271025
+      Attack 48x96_18: -2556595821034382790
+      Attack 48x96_19: -1761696278994725865
+      Attack 48x96_2: -7546502809961494081
+      Attack 48x96_20: -2411244298414163830
+      Attack 48x96_21: 4628784644013719986
+      Attack 48x96_3: -3599771940201429444
+      Attack 48x96_4: -8400444463685025935
+      Attack 48x96_5: -2406497184402188237
+      Attack 48x96_6: 4453079177903572358
+      Attack 48x96_7: -1351333892646258592
+      Attack 48x96_8: -3529905310429274201
+      Attack 48x96_9: -9048333259327137486
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

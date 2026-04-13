@@ -30,10 +30,6 @@ public class GameInputSettingsPanel : MonoBehaviour
     [Header("Bindings")]
     [SerializeField] private List<BindingRow> bindingRows = new();
 
-    [Header("Sensitivity")]
-    [SerializeField] private Slider lookSensitivitySlider;
-    [SerializeField] private Text lookSensitivityValueText;
-
     [Header("Actions")]
     [SerializeField] private Button resetAllButton;
     [SerializeField] private Text statusText;
@@ -78,14 +74,6 @@ public class GameInputSettingsPanel : MonoBehaviour
         RefreshUi();
     }
 
-    public void SetLookSensitivityWidgets(Slider slider, Text valueText)
-    {
-        lookSensitivitySlider = slider;
-        lookSensitivityValueText = valueText;
-        WireUi();
-        RefreshUi();
-    }
-
     public void SetActionWidgets(Button resetButton, Text status)
     {
         resetAllButton = resetButton;
@@ -123,12 +111,6 @@ public class GameInputSettingsPanel : MonoBehaviour
             }
         }
 
-        if (lookSensitivitySlider != null)
-        {
-            lookSensitivitySlider.onValueChanged.RemoveAllListeners();
-            lookSensitivitySlider.onValueChanged.AddListener(HandleLookSensitivityChanged);
-        }
-
         if (resetAllButton != null)
         {
             resetAllButton.onClick.RemoveAllListeners();
@@ -160,15 +142,6 @@ public class GameInputSettingsPanel : MonoBehaviour
             }
         }
 
-        if (lookSensitivitySlider != null)
-        {
-            lookSensitivitySlider.SetValueWithoutNotify(input.LookSensitivity);
-        }
-
-        if (lookSensitivityValueText != null)
-        {
-            lookSensitivityValueText.text = input.LookSensitivity.ToString("0.00");
-        }
     }
 
     private void StartRebind(int rowIndex)
@@ -234,15 +207,6 @@ public class GameInputSettingsPanel : MonoBehaviour
         GameInputSettingsStore.ResetToDefaults(GameInput.Instance);
         SetStatus("입력 설정을 기본값으로 복구했습니다.");
         RefreshUi();
-    }
-
-    private void HandleLookSensitivityChanged(float value)
-    {
-        GameInput.Instance.LookSensitivity = value;
-        if (lookSensitivityValueText != null)
-        {
-            lookSensitivityValueText.text = GameInput.Instance.LookSensitivity.ToString("0.00");
-        }
     }
 
     private void SetStatus(string message)

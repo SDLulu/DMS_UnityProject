@@ -15,16 +15,12 @@ public static class GameInputSettingsStore
     private class GameInputSettingsData
     {
         public string bindingOverridesJson = string.Empty;
-        public float lookSensitivity = 1f;
     }
 
     private static readonly string SavePath = Path.Combine(Application.persistentDataPath, "game-input-settings.json");
 
-    public static float LookSensitivity { get; private set; } = 1f;
-
     public static void Load(GameInput input)
     {
-        LookSensitivity = 1f;
         if (!File.Exists(SavePath))
         {
             return;
@@ -39,7 +35,6 @@ public static class GameInputSettingsStore
                 return;
             }
 
-            LookSensitivity = Mathf.Max(0.1f, data.lookSensitivity);
             if (!string.IsNullOrWhiteSpace(data.bindingOverridesJson))
             {
                 input.LoadBindingOverridesFromJson(data.bindingOverridesJson);
@@ -57,8 +52,7 @@ public static class GameInputSettingsStore
         {
             GameInputSettingsData data = new GameInputSettingsData
             {
-                bindingOverridesJson = input.SaveBindingOverridesAsJson(),
-                lookSensitivity = LookSensitivity
+                bindingOverridesJson = input.SaveBindingOverridesAsJson()
             };
 
             string directory = Path.GetDirectoryName(SavePath);
@@ -75,14 +69,8 @@ public static class GameInputSettingsStore
         }
     }
 
-    public static void SetLookSensitivity(float value)
-    {
-        LookSensitivity = Mathf.Max(0.1f, value);
-    }
-
     public static void ResetToDefaults(GameInput input)
     {
-        LookSensitivity = 1f;
         input.RemoveAllBindingOverrides();
         Save(input);
     }

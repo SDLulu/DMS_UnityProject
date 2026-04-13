@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: caa2f9a48866962438ea3743614b7dbc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6368925453754011792
+    second: Acid1_0
+  - first:
+      213: 3097495253066877353
+    second: Acid1_1
+  - first:
+      213: -2735032345947341063
+    second: Acid1_2
+  - first:
+      213: -8624404220629270815
+    second: Acid1_3
+  - first:
+      213: -6407003275315169968
+    second: Acid1_4
+  - first:
+      213: -7306804273280009868
+    second: Acid1_5
+  - first:
+      213: -2625320601102473249
+    second: Acid1_6
+  - first:
+      213: 231336884935252526
+    second: Acid1_7
+  - first:
+      213: 69749276935860465
+    second: Acid1_8
+  - first:
+      213: -8630760201559708760
+    second: Acid1_9
+  - first:
+      213: -3169972542348747098
+    second: Acid1_10
+  - first:
+      213: -3534592198314489557
+    second: Acid1_11
+  - first:
+      213: -8406980633045407054
+    second: Acid1_12
+  - first:
+      213: -7746697634899868976
+    second: Acid1_13
+  - first:
+      213: -7793906717859932916
+    second: Acid1_14
+  - first:
+      213: -5508327819385615665
+    second: Acid1_15
+  - first:
+      213: -8086155454496841714
+    second: Acid1_16
+  - first:
+      213: 6050944615450983745
+    second: Acid1_17
+  - first:
+      213: 1925727247399699083
+    second: Acid1_18
+  - first:
+      213: 8229716869430113221
+    second: Acid1_19
+  - first:
+      213: -9127655749578694935
+    second: Acid1_20
+  - first:
+      213: -1885853290159520681
+    second: Acid1_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Acid1_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 11
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09093f7c4f7f26850800000000000000
+      internalID: 6368925453754011792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 8
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9828c75838cfa20800000000000000
+      internalID: 3097495253066877353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_2
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 24
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fefa9a72963b0ad0800000000000000
+      internalID: -2735032345947341063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 27
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee330e2e06ff4880800000000000000
+      internalID: -8624404220629270815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_4
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 25
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05533148770c517a0800000000000000
+      internalID: -6407003275315169968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 30
+        width: 14
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 479b6dff934099a90800000000000000
+      internalID: -7306804273280009868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_6
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 36
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7a5c5a2dcf09bd0800000000000000
+      internalID: -2625320601102473249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_7
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 28
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ad202dbafd53300800000000000000
+      internalID: 231336884935252526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_8
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 22
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f03a1b099cc7f000800000000000000
+      internalID: 69749276935860465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_9
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 33
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab647c0351693880800000000000000
+      internalID: -8630760201559708760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_10
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1
+        width: 95
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae9f8994cef104d0800000000000000
+      internalID: -3169972542348747098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_11
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 7
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2909996f1b92fec0800000000000000
+      internalID: -3534592198314489557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_12
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 14
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba6db508a7645b80800000000000000
+      internalID: -8406980633045407054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_13
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 11
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d24f697b833e7490800000000000000
+      internalID: -7746697634899868976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_14
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 14
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c059d6d422b76d390800000000000000
+      internalID: -7793906717859932916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_15
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 15
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca4e1b580d7e83b0800000000000000
+      internalID: -5508327819385615665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 7
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00e028d47438cf80800000000000000
+      internalID: -8086155454496841714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_17
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 13
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14db487811649f350800000000000000
+      internalID: 6050944615450983745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_18
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 4
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82cc838abe89ba10800000000000000
+      internalID: 1925727247399699083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_19
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 15
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3fb6cc3e3d53270800000000000000
+      internalID: 8229716869430113221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_20
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ee5f46c47d045180800000000000000
+      internalID: -9127655749578694935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid1_21
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 5
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7544a8d9c6a14d5e0800000000000000
+      internalID: -1885853290159520681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Acid1_0: 6368925453754011792
+      Acid1_1: 3097495253066877353
+      Acid1_10: -3169972542348747098
+      Acid1_11: -3534592198314489557
+      Acid1_12: -8406980633045407054
+      Acid1_13: -7746697634899868976
+      Acid1_14: -7793906717859932916
+      Acid1_15: -5508327819385615665
+      Acid1_16: -8086155454496841714
+      Acid1_17: 6050944615450983745
+      Acid1_18: 1925727247399699083
+      Acid1_19: 8229716869430113221
+      Acid1_2: -2735032345947341063
+      Acid1_20: -9127655749578694935
+      Acid1_21: -1885853290159520681
+      Acid1_3: -8624404220629270815
+      Acid1_4: -6407003275315169968
+      Acid1_5: -7306804273280009868
+      Acid1_6: -2625320601102473249
+      Acid1_7: 231336884935252526
+      Acid1_8: 69749276935860465
+      Acid1_9: -8630760201559708760
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

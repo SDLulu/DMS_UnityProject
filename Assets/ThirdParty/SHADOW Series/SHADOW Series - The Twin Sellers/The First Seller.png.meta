@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 97f7bbdae54b5a646bf5b7abb6b6698b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7638000396357088834
+    second: The First Seller_0
+  - first:
+      213: 3666448675757401774
+    second: The First Seller_1
+  - first:
+      213: 957162186198522763
+    second: The First Seller_2
+  - first:
+      213: 6138893077213723262
+    second: The First Seller_3
+  - first:
+      213: 9048472112396210502
+    second: The First Seller_4
+  - first:
+      213: -8814181360718595196
+    second: The First Seller_5
+  - first:
+      213: 6875504406596765080
+    second: The First Seller_6
+  - first:
+      213: -4248599072240571877
+    second: The First Seller_7
+  - first:
+      213: 4646081704587706272
+    second: The First Seller_8
+  - first:
+      213: 4691503593634942654
+    second: The First Seller_9
+  - first:
+      213: 4243553116168829166
+    second: The First Seller_10
+  - first:
+      213: -8843439578049086010
+    second: The First Seller_11
+  - first:
+      213: -5541934978993735124
+    second: The First Seller_12
+  - first:
+      213: 1567687634447995695
+    second: The First Seller_13
+  - first:
+      213: -2929990070431721426
+    second: The First Seller_14
+  - first:
+      213: -896795445990701664
+    second: The First Seller_15
+  - first:
+      213: -1215094941771384637
+    second: The First Seller_16
+  - first:
+      213: -5839791289933995639
+    second: The First Seller_17
+  - first:
+      213: -5798778957774838627
+    second: The First Seller_18
+  - first:
+      213: 355627440019851433
+    second: The First Seller_19
+  - first:
+      213: 7281834375584403018
+    second: The First Seller_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: The First Seller_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9c7dc7b1f500690800000000000000
+      internalID: -7638000396357088834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea6a8b915a7d1e230800000000000000
+      internalID: 3666448675757401774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_2
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 0
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b9cc4efe5884d00800000000000000
+      internalID: 957162186198522763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_3
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 0
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7abd6d7abab13550800000000000000
+      internalID: 6138893077213723262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_4
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 0
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64197630271a29d70800000000000000
+      internalID: 9048472112396210502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_5
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 0
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48bbf7080ccbda580800000000000000
+      internalID: -8814181360718595196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_6
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 0
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89545de64d2ba6f50800000000000000
+      internalID: 6875504406596765080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_7
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 0
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1aeb0267a1f905c0800000000000000
+      internalID: -4248599072240571877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_8
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 0
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af346fb1b23a7040800000000000000
+      internalID: 4646081704587706272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_9
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 0
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe441969a19b1140800000000000000
+      internalID: 4691503593634942654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_10
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 0
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee8beba631124ea30800000000000000
+      internalID: 4243553116168829166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_11
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 0
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cdf0cdee8ac54580800000000000000
+      internalID: -8843439578049086010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_12
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 0
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a34c0cf771713b0800000000000000
+      internalID: -5541934978993735124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_13
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 0
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f239b0af89b81c510800000000000000
+      internalID: 1567687634447995695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_14
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 0
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28de700e859657d0800000000000000
+      internalID: -2929990070431721426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_15
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 0
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a549851b41fd83f0800000000000000
+      internalID: -896795445990701664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_16
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 0
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8b75b969d132fe0800000000000000
+      internalID: -1215094941771384637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_17
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 0
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981601923c4e4fea0800000000000000
+      internalID: -5839791289933995639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_18
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 0
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9422dad249968fa0800000000000000
+      internalID: -5798778957774838627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_19
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 0
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8c3c2c5417fe400800000000000000
+      internalID: 355627440019851433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The First Seller_20
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 0
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ecfe5a8c54e0560800000000000000
+      internalID: 7281834375584403018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      The First Seller_0: -7638000396357088834
+      The First Seller_1: 3666448675757401774
+      The First Seller_10: 4243553116168829166
+      The First Seller_11: -8843439578049086010
+      The First Seller_12: -5541934978993735124
+      The First Seller_13: 1567687634447995695
+      The First Seller_14: -2929990070431721426
+      The First Seller_15: -896795445990701664
+      The First Seller_16: -1215094941771384637
+      The First Seller_17: -5839791289933995639
+      The First Seller_18: -5798778957774838627
+      The First Seller_19: 355627440019851433
+      The First Seller_2: 957162186198522763
+      The First Seller_20: 7281834375584403018
+      The First Seller_3: 6138893077213723262
+      The First Seller_4: 9048472112396210502
+      The First Seller_5: -8814181360718595196
+      The First Seller_6: 6875504406596765080
+      The First Seller_7: -4248599072240571877
+      The First Seller_8: 4646081704587706272
+      The First Seller_9: 4691503593634942654
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

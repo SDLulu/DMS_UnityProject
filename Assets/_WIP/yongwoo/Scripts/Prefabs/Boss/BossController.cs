@@ -3,7 +3,7 @@ using UnityEngine;
 
 // 역할:
 // - 보스 전투의 상태 기계, 타깃 추적, 패턴 선택과 실행을 관리합니다.
-// - 피격/사망은 BossInteraction으로 외부와 연결하고, 씬 흐름은 BossEncounterDirector에 맡깁니다.
+// - 피격/사망은 BossInteraction으로 외부와 연결합니다.
 //
 // 구조 포인트:
 // - 보스 단일 프리팹 안에서 끝나는 전투 규칙의 중심 허브입니다.

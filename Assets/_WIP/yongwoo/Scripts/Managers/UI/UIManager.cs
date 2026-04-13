@@ -19,13 +19,13 @@ public class UIManager : MonoBehaviour
     [Tooltip("입력 설정 패널을 제어하는 컴포넌트입니다.")]
     [SerializeField] private GameInputSettingsPanel inputSettingsPanel;
     [Tooltip("대화 표시 패널입니다. 필요하면 씬에서 자동으로 찾습니다.")]
-    [SerializeField] private EncounterDialoguePanel dialoguePanel;
+    [SerializeField] private DialoguePanel dialoguePanel;
 
     private bool _hasLoggedMissingEventSystemWarning;
 
     public bool HasInputSettingsPanel => ResolveInputSettingsPanelRoot() != null && ResolveInputSettingsPanel() != null;
     public bool IsInputSettingsPanelVisible => ResolveInputSettingsPanelRoot() != null && ResolveInputSettingsPanelRoot().gameObject.activeSelf;
-    public EncounterDialoguePanel DialoguePanel => ResolveDialoguePanel();
+    public DialoguePanel DialoguePanel => ResolveDialoguePanel();
 
     private void Reset()
     {
@@ -58,7 +58,7 @@ public class UIManager : MonoBehaviour
         inputSettingsPanel = panel;
     }
 
-    public void BindDialoguePanel(EncounterDialoguePanel panel)
+    public void BindDialoguePanel(DialoguePanel panel)
     {
         dialoguePanel = panel;
     }
@@ -128,7 +128,7 @@ public class UIManager : MonoBehaviour
             inputSettingsPanelRoot = FindAncestorByName(inputSettingsPanel.transform, "InputSettingsPanel") as RectTransform;
         }
 
-        dialoguePanel ??= Object.FindFirstObjectByType<EncounterDialoguePanel>();
+        dialoguePanel ??= Object.FindFirstObjectByType<DialoguePanel>();
     }
 
     private void ConfigureInputSettingsPanelFromHierarchy()
@@ -147,15 +147,8 @@ public class UIManager : MonoBehaviour
             closeButton.onClick.AddListener(() => SetInputSettingsPanelVisible(false));
         }
 
-        Slider sensitivitySlider = resolvedInputSettingsPanelRoot.Find("SensitivitySlider")?.GetComponent<Slider>();
-        Text sensitivityValueText = resolvedInputSettingsPanelRoot.Find("SensitivityValue")?.GetComponent<Text>();
         Button resetAllButton = resolvedInputSettingsPanelRoot.Find("ResetAllButton")?.GetComponent<Button>();
         Text statusText = resolvedInputSettingsPanelRoot.Find("StatusText")?.GetComponent<Text>();
-
-        if (sensitivitySlider != null && sensitivityValueText != null)
-        {
-            resolvedInputSettingsPanel.SetLookSensitivityWidgets(sensitivitySlider, sensitivityValueText);
-        }
 
         if (resetAllButton != null && statusText != null)
         {
@@ -252,9 +245,9 @@ public class UIManager : MonoBehaviour
         return inputSettingsPanel;
     }
 
-    private EncounterDialoguePanel ResolveDialoguePanel()
+    private DialoguePanel ResolveDialoguePanel()
     {
-        dialoguePanel ??= Object.FindFirstObjectByType<EncounterDialoguePanel>();
+        dialoguePanel ??= Object.FindFirstObjectByType<DialoguePanel>();
         return dialoguePanel;
     }
 
