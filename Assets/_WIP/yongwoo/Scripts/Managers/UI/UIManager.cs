@@ -147,15 +147,8 @@ public class UIManager : MonoBehaviour
             closeButton.onClick.AddListener(() => SetInputSettingsPanelVisible(false));
         }
 
-        Slider sensitivitySlider = resolvedInputSettingsPanelRoot.Find("SensitivitySlider")?.GetComponent<Slider>();
-        Text sensitivityValueText = resolvedInputSettingsPanelRoot.Find("SensitivityValue")?.GetComponent<Text>();
         Button resetAllButton = resolvedInputSettingsPanelRoot.Find("ResetAllButton")?.GetComponent<Button>();
         Text statusText = resolvedInputSettingsPanelRoot.Find("StatusText")?.GetComponent<Text>();
-
-        if (sensitivitySlider != null && sensitivityValueText != null)
-        {
-            resolvedInputSettingsPanel.SetLookSensitivityWidgets(sensitivitySlider, sensitivityValueText);
-        }
 
         if (resetAllButton != null && statusText != null)
         {

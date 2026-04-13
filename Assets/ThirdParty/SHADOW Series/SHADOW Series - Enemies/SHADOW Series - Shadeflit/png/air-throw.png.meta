@@ -1,0 +1,1157 @@
+fileFormatVersion: 2
+guid: 4519a62343329414c947441d6e7187fa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7227756063737274119
+    second: air-throw_0
+  - first:
+      213: -3818996433768843481
+    second: air-throw_1
+  - first:
+      213: -4301359539746825246
+    second: air-throw_2
+  - first:
+      213: -951709559402908221
+    second: air-throw_3
+  - first:
+      213: -1195282494933025580
+    second: air-throw_4
+  - first:
+      213: -1524489019760314966
+    second: air-throw_5
+  - first:
+      213: 114024456776251398
+    second: air-throw_6
+  - first:
+      213: 8345327464799712626
+    second: air-throw_7
+  - first:
+      213: -5984835088015105439
+    second: air-throw_8
+  - first:
+      213: -145824889132068075
+    second: air-throw_9
+  - first:
+      213: 3795971302223915504
+    second: air-throw_10
+  - first:
+      213: -7634034970729962165
+    second: air-throw_11
+  - first:
+      213: -5421267286980020284
+    second: air-throw_12
+  - first:
+      213: -5464062278228398188
+    second: air-throw_13
+  - first:
+      213: -7811918258999465785
+    second: air-throw_14
+  - first:
+      213: -3202520156637242783
+    second: air-throw_15
+  - first:
+      213: 6892158587538499331
+    second: air-throw_16
+  - first:
+      213: -2208331026172784051
+    second: air-throw_17
+  - first:
+      213: 6781977498122347713
+    second: air-throw_18
+  - first:
+      213: 152596646847262865
+    second: air-throw_19
+  - first:
+      213: 6916477876361466708
+    second: air-throw_20
+  - first:
+      213: 7959274506540537022
+    second: air-throw_21
+  - first:
+      213: 4919585373748184099
+    second: air-throw_22
+  - first:
+      213: 5239107428482946476
+    second: air-throw_23
+  - first:
+      213: 6530401704401769282
+    second: air-throw_24
+  - first:
+      213: 5051375472169010578
+    second: air-throw_25
+  - first:
+      213: 1481606114745725447
+    second: air-throw_26
+  - first:
+      213: -3144315983875004473
+    second: air-throw_27
+  - first:
+      213: 4023137432138470412
+    second: air-throw_28
+  - first:
+      213: -443460026983507953
+    second: air-throw_29
+  - first:
+      213: -3835818682385669414
+    second: air-throw_30
+  - first:
+      213: -358124301764147064
+    second: air-throw_31
+  - first:
+      213: -8962703288858285644
+    second: air-throw_32
+  - first:
+      213: 1125400240903512294
+    second: air-throw_33
+  - first:
+      213: -1873491943215878010
+    second: air-throw_34
+  - first:
+      213: -2474534843712827431
+    second: air-throw_35
+  - first:
+      213: 6346745350045951320
+    second: air-throw_36
+  - first:
+      213: 1822922682180554265
+    second: air-throw_37
+  - first:
+      213: -7274100683307363487
+    second: air-throw_38
+  - first:
+      213: -3938448346185999052
+    second: air-throw_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: air-throw_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 54
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0a3c1872ad1bb90800000000000000
+      internalID: -7227756063737274119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_1
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 54
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72779b63af2300bc0800000000000000
+      internalID: -3818996433768843481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_2
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 54
+        width: 55
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb1726c9408e44c0800000000000000
+      internalID: -4301359539746825246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_3
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 54
+        width: 55
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c53276b239dac2f0800000000000000
+      internalID: -951709559402908221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_4
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 55
+        width: 52
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dc364b57e0896fe0800000000000000
+      internalID: -1195282494933025580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_5
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 55
+        width: 52
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa5f339405de7dae0800000000000000
+      internalID: -1524489019760314966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_6
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 55
+        width: 52
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 608fad9a3a8159100800000000000000
+      internalID: 114024456776251398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_7
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 2
+        width: 201
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 275b2b12d1f80d370800000000000000
+      internalID: 8345327464799712626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_8
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 65
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 162e09b423891fca0800000000000000
+      internalID: -5984835088015105439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_9
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 61
+        width: 90
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5135fd3390de9fdf0800000000000000
+      internalID: -145824889132068075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_10
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 54
+        width: 85
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f922a699cffda430800000000000000
+      internalID: 3795971302223915504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_11
+      rect:
+        serializedVersion: 2
+        x: 3358
+        y: 54
+        width: 83
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b452bb614a57e0690800000000000000
+      internalID: -7634034970729962165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_12
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 87
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c73c17202ac3c4b0800000000000000
+      internalID: -5421267286980020284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_13
+      rect:
+        serializedVersion: 2
+        x: 3370
+        y: 106
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49fa59bce40cb24b0800000000000000
+      internalID: -5464062278228398188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_14
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 118
+        width: 34
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8e2f59bbd769390800000000000000
+      internalID: -7811918258999465785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_15
+      rect:
+        serializedVersion: 2
+        x: 3401
+        y: 108
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16adb9d92ec5e83d0800000000000000
+      internalID: -3202520156637242783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_16
+      rect:
+        serializedVersion: 2
+        x: 3419
+        y: 85
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307e3e918bdd5af50800000000000000
+      internalID: 6892158587538499331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_17
+      rect:
+        serializedVersion: 2
+        x: 3436
+        y: 76
+        width: 9
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d425f76c1ae6a51e0800000000000000
+      internalID: -2208331026172784051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_18
+      rect:
+        serializedVersion: 2
+        x: 3636
+        y: 91
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c466422a9c6e1e50800000000000000
+      internalID: 6781977498122347713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_19
+      rect:
+        serializedVersion: 2
+        x: 3637
+        y: 54
+        width: 64
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1903f3187d12e1200800000000000000
+      internalID: 152596646847262865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_20
+      rect:
+        serializedVersion: 2
+        x: 3682
+        y: 77
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4539f55cbf34cff50800000000000000
+      internalID: 6916477876361466708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_21
+      rect:
+        serializedVersion: 2
+        x: 3914
+        y: 54
+        width: 67
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb4db206ef5057e60800000000000000
+      internalID: 7959274506540537022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_22
+      rect:
+        serializedVersion: 2
+        x: 3974
+        y: 118
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 324c77415d0e54440800000000000000
+      internalID: 4919585373748184099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_23
+      rect:
+        serializedVersion: 2
+        x: 4189
+        y: 54
+        width: 88
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca516deb27c05b840800000000000000
+      internalID: 5239107428482946476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_24
+      rect:
+        serializedVersion: 2
+        x: 4470
+        y: 54
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243197720c5a0aa50800000000000000
+      internalID: 6530401704401769282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_25
+      rect:
+        serializedVersion: 2
+        x: 4741
+        y: 54
+        width: 56
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29541c58a371a1640800000000000000
+      internalID: 5051375472169010578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_26
+      rect:
+        serializedVersion: 2
+        x: 5021
+        y: 54
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 702377659e8bf8410800000000000000
+      internalID: 1481606114745725447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_27
+      rect:
+        serializedVersion: 2
+        x: 5299
+        y: 54
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c72c8f95452d54d0800000000000000
+      internalID: -3144315983875004473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_28
+      rect:
+        serializedVersion: 2
+        x: 5576
+        y: 54
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c04d035dd2e05d730800000000000000
+      internalID: 4023137432138470412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_29
+      rect:
+        serializedVersion: 2
+        x: 5853
+        y: 54
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08109b747388d9f0800000000000000
+      internalID: -443460026983507953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_30
+      rect:
+        serializedVersion: 2
+        x: 6130
+        y: 54
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2689d3b3f64cac0800000000000000
+      internalID: -3835818682385669414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_31
+      rect:
+        serializedVersion: 2
+        x: 6407
+        y: 54
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 888c9ef48dfa70bf0800000000000000
+      internalID: -358124301764147064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_32
+      rect:
+        serializedVersion: 2
+        x: 2306
+        y: 66
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9606068d41e9380800000000000000
+      internalID: -8962703288858285644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_33
+      rect:
+        serializedVersion: 2
+        x: 3694
+        y: 59
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e061357e893e9f00800000000000000
+      internalID: 1125400240903512294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_34
+      rect:
+        serializedVersion: 2
+        x: 2323
+        y: 58
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680bf0bf0050006e0800000000000000
+      internalID: -1873491943215878010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_35
+      rect:
+        serializedVersion: 2
+        x: 3685
+        y: 54
+        width: 27
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df8b289bafa8add0800000000000000
+      internalID: -2474534843712827431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_36
+      rect:
+        serializedVersion: 2
+        x: 2342
+        y: 36
+        width: 44
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855e955f44b241850800000000000000
+      internalID: 6346745350045951320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_37
+      rect:
+        serializedVersion: 2
+        x: 2386
+        y: 0
+        width: 78
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ecf5c65825c4910800000000000000
+      internalID: 1822922682180554265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_38
+      rect:
+        serializedVersion: 2
+        x: 2626
+        y: 34
+        width: 40
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163d907e7f33d0b90800000000000000
+      internalID: -7274100683307363487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air-throw_39
+      rect:
+        serializedVersion: 2
+        x: 2675
+        y: 0
+        width: 68
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ddb5f8812d759c0800000000000000
+      internalID: -3938448346185999052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      air-throw_0: -7227756063737274119
+      air-throw_1: -3818996433768843481
+      air-throw_10: 3795971302223915504
+      air-throw_11: -7634034970729962165
+      air-throw_12: -5421267286980020284
+      air-throw_13: -5464062278228398188
+      air-throw_14: -7811918258999465785
+      air-throw_15: -3202520156637242783
+      air-throw_16: 6892158587538499331
+      air-throw_17: -2208331026172784051
+      air-throw_18: 6781977498122347713
+      air-throw_19: 152596646847262865
+      air-throw_2: -4301359539746825246
+      air-throw_20: 6916477876361466708
+      air-throw_21: 7959274506540537022
+      air-throw_22: 4919585373748184099
+      air-throw_23: 5239107428482946476
+      air-throw_24: 6530401704401769282
+      air-throw_25: 5051375472169010578
+      air-throw_26: 1481606114745725447
+      air-throw_27: -3144315983875004473
+      air-throw_28: 4023137432138470412
+      air-throw_29: -443460026983507953
+      air-throw_3: -951709559402908221
+      air-throw_30: -3835818682385669414
+      air-throw_31: -358124301764147064
+      air-throw_32: -8962703288858285644
+      air-throw_33: 1125400240903512294
+      air-throw_34: -1873491943215878010
+      air-throw_35: -2474534843712827431
+      air-throw_36: 6346745350045951320
+      air-throw_37: 1822922682180554265
+      air-throw_38: -7274100683307363487
+      air-throw_39: -3938448346185999052
+      air-throw_4: -1195282494933025580
+      air-throw_5: -1524489019760314966
+      air-throw_6: 114024456776251398
+      air-throw_7: 8345327464799712626
+      air-throw_8: -5984835088015105439
+      air-throw_9: -145824889132068075
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

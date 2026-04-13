@@ -24,14 +24,12 @@ public sealed class GameInput : IDisposable
     private readonly InputActionMap _uiMap;
 
     private readonly InputAction _moveAction;
-    private readonly InputAction _lookAction;
     private readonly InputAction _jumpAction;
-    private readonly InputAction _crouchAction;
     private readonly InputAction _dashAction;
     private readonly InputAction _attackAction;
     private readonly InputAction _interactAction;
-    private readonly InputAction _previousWeaponAction;
-    private readonly InputAction _nextWeaponAction;
+    private readonly InputAction _weaponSwapAction;
+    private readonly InputAction _slowMotionAction;
 
     private readonly InputAction _dialogueAdvanceAction;
     private readonly InputAction _dialogueSkipAction;
@@ -43,28 +41,16 @@ public sealed class GameInput : IDisposable
 
     public bool GameplayEnabled => _playerMap.enabled;
     public bool DialogueEnabled => _dialogueMap.enabled;
-    public float LookSensitivity
-    {
-        get => GameInputSettingsStore.LookSensitivity;
-        set
-        {
-            GameInputSettingsStore.SetLookSensitivity(value);
-            SaveSettings();
-        }
-    }
 
     public Vector2 Move => GameplayEnabled ? _moveAction.ReadValue<Vector2>() : Vector2.zero;
-    public Vector2 LookVector => GameplayEnabled ? _lookAction.ReadValue<Vector2>() * LookSensitivity : Vector2.zero;
     public bool MoveTriggeredThisFrame => GameplayEnabled && _moveAction.triggered;
     public bool JumpPressed => GameplayEnabled && _jumpAction.WasPressedThisFrame();
     public bool JumpHeld => GameplayEnabled && _jumpAction.IsPressed();
-    public bool CrouchPressed => GameplayEnabled && _crouchAction.WasPressedThisFrame();
-    public bool CrouchHeld => GameplayEnabled && _crouchAction.IsPressed();
     public bool DashPressed => GameplayEnabled && _dashAction.WasPressedThisFrame();
     public bool AttackPressed => GameplayEnabled && _attackAction.WasPressedThisFrame();
     public bool InteractPressed => GameplayEnabled && _interactAction.WasPressedThisFrame();
-    public bool PreviousWeaponPressed => GameplayEnabled && _previousWeaponAction.WasPressedThisFrame();
-    public bool NextWeaponPressed => GameplayEnabled && _nextWeaponAction.WasPressedThisFrame();
+    public bool WeaponSwapPressed => GameplayEnabled && _weaponSwapAction.WasPressedThisFrame();
+    public bool SlowMotionHeld => GameplayEnabled && _slowMotionAction.IsPressed();
     public bool DialogueAdvancePressed => DialogueEnabled && _dialogueAdvanceAction.WasPressedThisFrame();
     public bool DialogueSkipPressed => DialogueEnabled && _dialogueSkipAction.WasPressedThisFrame();
     public bool UiClickPressed => _uiMap.enabled && _uiClickAction.WasPressedThisFrame();
@@ -90,14 +76,12 @@ public sealed class GameInput : IDisposable
         _uiMap = _actions.FindActionMap(UiMapName, throwIfNotFound: true);
 
         _moveAction = _playerMap.FindAction("Move", throwIfNotFound: true);
-        _lookAction = _playerMap.FindAction("Look", throwIfNotFound: true);
         _jumpAction = _playerMap.FindAction("Jump", throwIfNotFound: true);
-        _crouchAction = _playerMap.FindAction("Crouch", throwIfNotFound: true);
-        _dashAction = _playerMap.FindAction("Sprint", throwIfNotFound: true);
+        _dashAction = _playerMap.FindAction("Dash", throwIfNotFound: true);
         _attackAction = _playerMap.FindAction("Attack", throwIfNotFound: true);
         _interactAction = _playerMap.FindAction("Interact", throwIfNotFound: true);
-        _previousWeaponAction = _playerMap.FindAction("Previous", throwIfNotFound: true);
-        _nextWeaponAction = _playerMap.FindAction("Next", throwIfNotFound: true);
+        _weaponSwapAction = _playerMap.FindAction("WeaponSwap", throwIfNotFound: true);
+        _slowMotionAction = _playerMap.FindAction("SlowMotion", throwIfNotFound: true);
 
         _dialogueAdvanceAction = _dialogueMap.FindAction("Advance", throwIfNotFound: true);
         _dialogueSkipAction = _dialogueMap.FindAction("Skip", throwIfNotFound: true);

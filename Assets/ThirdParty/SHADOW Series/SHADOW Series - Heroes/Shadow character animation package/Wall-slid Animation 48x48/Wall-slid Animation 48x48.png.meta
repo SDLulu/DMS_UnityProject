@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 44b375eac3eca6a43a01d8673dd26813
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1070198254340388984
+    second: Wall-slid Animation 48x48_0
+  - first:
+      213: 2844004656709597429
+    second: Wall-slid Animation 48x48_1
+  - first:
+      213: -7526057412351255573
+    second: Wall-slid Animation 48x48_2
+  - first:
+      213: 4502174190902835060
+    second: Wall-slid Animation 48x48_3
+  - first:
+      213: 8412478111303036051
+    second: Wall-slid Animation 48x48_4
+  - first:
+      213: -2400604440410593668
+    second: Wall-slid Animation 48x48_5
+  - first:
+      213: 790659899718180413
+    second: Wall-slid Animation 48x48_6
+  - first:
+      213: -5855707329838209793
+    second: Wall-slid Animation 48x48_7
+  - first:
+      213: -1085315573240775874
+    second: Wall-slid Animation 48x48_8
+  - first:
+      213: 4590482367858937314
+    second: Wall-slid Animation 48x48_9
+  - first:
+      213: -8490572641649237859
+    second: Wall-slid Animation 48x48_10
+  - first:
+      213: -8800100205930019561
+    second: Wall-slid Animation 48x48_11
+  - first:
+      213: 7015908483481831379
+    second: Wall-slid Animation 48x48_12
+  - first:
+      213: 7393654648607464544
+    second: Wall-slid Animation 48x48_13
+  - first:
+      213: 22989068731802007
+    second: Wall-slid Animation 48x48_14
+  - first:
+      213: -1310947308894022022
+    second: Wall-slid Animation 48x48_15
+  - first:
+      213: -7818487486531961668
+    second: Wall-slid Animation 48x48_16
+  - first:
+      213: 2838439072613064642
+    second: Wall-slid Animation 48x48_17
+  - first:
+      213: 250475766491402106
+    second: Wall-slid Animation 48x48_18
+  - first:
+      213: 6693411778990392244
+    second: Wall-slid Animation 48x48_19
+  - first:
+      213: -6351638594652315781
+    second: Wall-slid Animation 48x48_20
+  - first:
+      213: 2822993905757582486
+    second: Wall-slid Animation 48x48_21
+  - first:
+      213: -4962669255466586818
+    second: Wall-slid Animation 48x48_22
+  - first:
+      213: -7423594106123898890
+    second: Wall-slid Animation 48x48_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 24
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 878b33564ab1ade00800000000000000
+      internalID: 1070198254340388984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 31
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f87bb6ca2fe77720800000000000000
+      internalID: 2844004656709597429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_2
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 5
+        width: 8
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beb9b9188a21e8790800000000000000
+      internalID: -7526057412351255573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 24
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477f1b5b29fea7e30800000000000000
+      internalID: 4502174190902835060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_4
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 31
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39c67f065402fb470800000000000000
+      internalID: 8412478111303036051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 5
+        width: 8
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c76e91bfaf65faed0800000000000000
+      internalID: -2400604440410593668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_6
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 24
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e19dc5dfcf8fa00800000000000000
+      internalID: 790659899718180413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_7
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 31
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4a75855395cbea0800000000000000
+      internalID: -5855707329838209793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_8
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 5
+        width: 8
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3bb8c38c3f20f0f0800000000000000
+      internalID: -1085315573240775874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 24
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ed0de3646ba4bf30800000000000000
+      internalID: 4590482367858937314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_10
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 31
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d90e8dada2d6b2a80800000000000000
+      internalID: -8490572641649237859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_11
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 5
+        width: 8
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71503b5dc73cfd580800000000000000
+      internalID: -8800100205930019561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_12
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 25
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7859608938d5160800000000000000
+      internalID: 7015908483481831379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_13
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 31
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06cd92acab98b9660800000000000000
+      internalID: 7393654648607464544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_14
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 6
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791e97baf6ca15000800000000000000
+      internalID: 22989068731802007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_15
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 25
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a761e164e549ecde0800000000000000
+      internalID: -1310947308894022022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_16
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 31
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbcfc6c1e072f7390800000000000000
+      internalID: -7818487486531961668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_17
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 6
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cfd0bf3c49246720800000000000000
+      internalID: 2838439072613064642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_18
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 25
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f409ee16ed97300800000000000000
+      internalID: 250475766491402106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_19
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 31
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b3432ebc86c3ec50800000000000000
+      internalID: 6693411778990392244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_20
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 6
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f5610c9527ad7a0800000000000000
+      internalID: -6351638594652315781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_21
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 25
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694f5cb100a4d2720800000000000000
+      internalID: 2822993905757582486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_22
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 31
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d69220b9e012bb0800000000000000
+      internalID: -4962669255466586818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-slid Animation 48x48_23
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 6
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff2dcb0e781af890800000000000000
+      internalID: -7423594106123898890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Wall-slid Animation 48x48_0: 1070198254340388984
+      Wall-slid Animation 48x48_1: 2844004656709597429
+      Wall-slid Animation 48x48_10: -8490572641649237859
+      Wall-slid Animation 48x48_11: -8800100205930019561
+      Wall-slid Animation 48x48_12: 7015908483481831379
+      Wall-slid Animation 48x48_13: 7393654648607464544
+      Wall-slid Animation 48x48_14: 22989068731802007
+      Wall-slid Animation 48x48_15: -1310947308894022022
+      Wall-slid Animation 48x48_16: -7818487486531961668
+      Wall-slid Animation 48x48_17: 2838439072613064642
+      Wall-slid Animation 48x48_18: 250475766491402106
+      Wall-slid Animation 48x48_19: 6693411778990392244
+      Wall-slid Animation 48x48_2: -7526057412351255573
+      Wall-slid Animation 48x48_20: -6351638594652315781
+      Wall-slid Animation 48x48_21: 2822993905757582486
+      Wall-slid Animation 48x48_22: -4962669255466586818
+      Wall-slid Animation 48x48_23: -7423594106123898890
+      Wall-slid Animation 48x48_3: 4502174190902835060
+      Wall-slid Animation 48x48_4: 8412478111303036051
+      Wall-slid Animation 48x48_5: -2400604440410593668
+      Wall-slid Animation 48x48_6: 790659899718180413
+      Wall-slid Animation 48x48_7: -5855707329838209793
+      Wall-slid Animation 48x48_8: -1085315573240775874
+      Wall-slid Animation 48x48_9: 4590482367858937314
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

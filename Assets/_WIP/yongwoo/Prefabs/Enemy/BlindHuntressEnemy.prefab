@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1739759275113567098}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4, y: 0.04, z: 0}
+  m_LocalPosition: {x: 0.242, y: 0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 2500268789649529273}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.64, y: 0.77, z: 0}
+  m_LocalPosition: {x: 0.97, y: 0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87,7 +87,7 @@ Transform:
   m_GameObject: {fileID: 3058842818464740912}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.72, y: 0.74, z: 0}
+  m_LocalPosition: {x: -1.1, y: 0.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -118,7 +118,7 @@ Transform:
   m_GameObject: {fileID: 3409329557768165134}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.32, y: 0.56, z: 0}
+  m_LocalPosition: {x: 0.23, y: 0.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -136,10 +136,10 @@ GameObject:
   - component: {fileID: 2361568797351209224}
   - component: {fileID: 8061201242497487340}
   - component: {fileID: 3955969343580845476}
+  - component: {fileID: 6778694404959982640}
   - component: {fileID: 2316362959611704907}
   - component: {fileID: 6272826118057219278}
   - component: {fileID: 1353036907123616408}
-  - component: {fileID: 6778694404959982640}
   m_Layer: 10
   m_Name: BlindHuntressEnemy
   m_TagString: Untagged
@@ -199,7 +199,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.82}
+  m_Offset: {x: 0.003005743, y: -0.65768105}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -209,7 +209,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.34, y: 0.58}
+  m_Size: {x: 0.22577524, y: 0.86856735}
   m_EdgeRadius: 0
 --- !u!50 &8061201242497487340
 Rigidbody2D:
@@ -237,7 +237,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &3955969343580845476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,6 +262,22 @@ MonoBehaviour:
   brain: {fileID: 0}
   combat: {fileID: 0}
   animationDriver: {fileID: 0}
+--- !u!114 &6778694404959982640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4050542242390436874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5b5b306528d8548b78928a7d1354b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BlindHuntressEnemyEditPreview
+  enablePreview: 1
+  visualRoot: {fileID: 650391316301627489}
+  previewState: 0
+  normalizedTime: 0.394
 --- !u!114 &2316362959611704907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,7 +307,7 @@ MonoBehaviour:
     activeStart: 0.02
     activeEnd: 0.14
     useAnimationEvents: 1
-    hitboxSize: {x: 0.92, y: 0.72}
+    hitboxSize: {x: 1.69, y: 0.38}
     horizontalSpeed: 0
     verticalImpulse: 0
     zeroGravity: 0
@@ -321,7 +337,7 @@ MonoBehaviour:
     activeStart: 0.04
     activeEnd: 0.24
     useAnimationEvents: 1
-    hitboxSize: {x: 1.12, y: 0.68}
+    hitboxSize: {x: 2, y: 0.4}
     horizontalSpeed: 11.5
     verticalImpulse: 0
     zeroGravity: 1
@@ -351,7 +367,7 @@ MonoBehaviour:
     activeStart: 0.04
     activeEnd: 0.16
     useAnimationEvents: 1
-    hitboxSize: {x: 0.82, y: 1.12}
+    hitboxSize: {x: 0.47, y: 1.68}
     horizontalSpeed: 0
     verticalImpulse: 0
     zeroGravity: 0
@@ -416,22 +432,6 @@ MonoBehaviour:
   fallThreshold: -0.15
   crossFadeDuration: 0.04
   hitDuration: 0.16
---- !u!114 &6778694404959982640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4050542242390436874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee5b5b306528d8548b78928a7d1354b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BlindHuntressEnemyEditPreview
-  enablePreview: 0
-  visualRoot: {fileID: 650391316301627489}
-  previewState: 6
-  normalizedTime: 0.2
 --- !u!1 &4212660089735156908
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +457,7 @@ Transform:
   m_GameObject: {fileID: 4212660089735156908}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -546,7 +546,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 6852852300743010206, guid: bc48335a46b143a44ad8ea03c3bce2dc, type: 3}
+  m_Sprite: {fileID: -3584110853964255466, guid: 6ace6f0efbb3b06418394973839d5e39, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -647,7 +647,7 @@ Transform:
   m_GameObject: {fileID: 7108782138447586338}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.66, z: 0}
+  m_LocalPosition: {x: 0, y: 0.76, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

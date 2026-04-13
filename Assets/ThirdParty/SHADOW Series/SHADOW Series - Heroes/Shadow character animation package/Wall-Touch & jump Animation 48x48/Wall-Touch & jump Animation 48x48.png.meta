@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 2aec41036ddebd8419d03171b9d67db1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2954305796707773472
+    second: Wall-Touch & jump Animation 48x48_0
+  - first:
+      213: 516100466870636473
+    second: Wall-Touch & jump Animation 48x48_1
+  - first:
+      213: -896838225835108796
+    second: Wall-Touch & jump Animation 48x48_2
+  - first:
+      213: -9056333051520246267
+    second: Wall-Touch & jump Animation 48x48_3
+  - first:
+      213: 6253327891641691395
+    second: Wall-Touch & jump Animation 48x48_4
+  - first:
+      213: -615103182312302715
+    second: Wall-Touch & jump Animation 48x48_5
+  - first:
+      213: 4137281613942005676
+    second: Wall-Touch & jump Animation 48x48_6
+  - first:
+      213: 6094944850676717441
+    second: Wall-Touch & jump Animation 48x48_7
+  - first:
+      213: 2651122515791043337
+    second: Wall-Touch & jump Animation 48x48_8
+  - first:
+      213: 6616917388276571480
+    second: Wall-Touch & jump Animation 48x48_9
+  - first:
+      213: 2966885006110948435
+    second: Wall-Touch & jump Animation 48x48_10
+  - first:
+      213: -1240867935203843833
+    second: Wall-Touch & jump Animation 48x48_11
+  - first:
+      213: 2473599700505361419
+    second: Wall-Touch & jump Animation 48x48_12
+  - first:
+      213: 2213682893849693115
+    second: Wall-Touch & jump Animation 48x48_13
+  - first:
+      213: -7466334798575060769
+    second: Wall-Touch & jump Animation 48x48_14
+  - first:
+      213: -4880364340736535134
+    second: Wall-Touch & jump Animation 48x48_15
+  - first:
+      213: -5372090767714847646
+    second: Wall-Touch & jump Animation 48x48_16
+  - first:
+      213: 8237362899500739245
+    second: Wall-Touch & jump Animation 48x48_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 29
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e31b5dc7823007d0800000000000000
+      internalID: -2954305796707773472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 29
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bfcc34e3ae892700800000000000000
+      internalID: 516100466870636473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 29
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4465b10a26acd83f0800000000000000
+      internalID: -896838225835108796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_3
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 29
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e91887211715280800000000000000
+      internalID: -9056333051520246267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_4
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 32
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d685df59848c650800000000000000
+      internalID: 6253327891641691395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_5
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 33
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58710162ae6b677f0800000000000000
+      internalID: -615103182312302715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_6
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 12
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf94c625b39a6930800000000000000
+      internalID: 4137281613942005676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_7
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 36
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1879e2e9c08959450800000000000000
+      internalID: 6094944850676717441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 18
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90bd3c1c1edaac420800000000000000
+      internalID: 2651122515791043337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_9
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 4
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d94548e4304db50800000000000000
+      internalID: 6616917388276571480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_10
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 5
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35cfcae913e7c2920800000000000000
+      internalID: 2966885006110948435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_11
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 701a005ff2d87cee0800000000000000
+      internalID: -1240867935203843833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_12
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 6
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c722962ddf35220800000000000000
+      internalID: 2473599700505361419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_13
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 5
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb05450dd498be10800000000000000
+      internalID: 2213682893849693115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_14
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 23
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd8bbcc1f00426890800000000000000
+      internalID: -7466334798575060769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_15
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 5
+        width: 9
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a55ae74d76754cb0800000000000000
+      internalID: -4880364340736535134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 21
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2647339c8ef7275b0800000000000000
+      internalID: -5372090767714847646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall-Touch & jump Animation 48x48_17
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 9
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa29b6e9edf05270800000000000000
+      internalID: 8237362899500739245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Wall-Touch & jump Animation 48x48_0: -2954305796707773472
+      Wall-Touch & jump Animation 48x48_1: 516100466870636473
+      Wall-Touch & jump Animation 48x48_10: 2966885006110948435
+      Wall-Touch & jump Animation 48x48_11: -1240867935203843833
+      Wall-Touch & jump Animation 48x48_12: 2473599700505361419
+      Wall-Touch & jump Animation 48x48_13: 2213682893849693115
+      Wall-Touch & jump Animation 48x48_14: -7466334798575060769
+      Wall-Touch & jump Animation 48x48_15: -4880364340736535134
+      Wall-Touch & jump Animation 48x48_16: -5372090767714847646
+      Wall-Touch & jump Animation 48x48_17: 8237362899500739245
+      Wall-Touch & jump Animation 48x48_2: -896838225835108796
+      Wall-Touch & jump Animation 48x48_3: -9056333051520246267
+      Wall-Touch & jump Animation 48x48_4: 6253327891641691395
+      Wall-Touch & jump Animation 48x48_5: -615103182312302715
+      Wall-Touch & jump Animation 48x48_6: 4137281613942005676
+      Wall-Touch & jump Animation 48x48_7: 6094944850676717441
+      Wall-Touch & jump Animation 48x48_8: 2651122515791043337
+      Wall-Touch & jump Animation 48x48_9: 6616917388276571480
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

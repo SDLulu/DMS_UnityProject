@@ -1,0 +1,1573 @@
+fileFormatVersion: 2
+guid: 1ec9cbe46abcb0945bd2acfa116e2713
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3962381432981871032
+    second: Before Dying_0
+  - first:
+      213: -4360704184407696656
+    second: Before Dying_1
+  - first:
+      213: 3377548666805337589
+    second: Before Dying_2
+  - first:
+      213: -3157320048088137518
+    second: Before Dying_3
+  - first:
+      213: 7247599482998656492
+    second: Before Dying_4
+  - first:
+      213: -8467267653595053012
+    second: Before Dying_5
+  - first:
+      213: 7423751278792706700
+    second: Before Dying_6
+  - first:
+      213: -2539316168444173059
+    second: Before Dying_7
+  - first:
+      213: -5144127055837677328
+    second: Before Dying_8
+  - first:
+      213: -6309929962070841281
+    second: Before Dying_9
+  - first:
+      213: -4565873664116023428
+    second: Before Dying_10
+  - first:
+      213: 6138014001453860578
+    second: Before Dying_11
+  - first:
+      213: 2221159429293017573
+    second: Before Dying_12
+  - first:
+      213: 3554659430263639800
+    second: Before Dying_13
+  - first:
+      213: -2427842511902922134
+    second: Before Dying_14
+  - first:
+      213: -4456628324451122878
+    second: Before Dying_15
+  - first:
+      213: 6709766315614704478
+    second: Before Dying_16
+  - first:
+      213: 5715115130660907891
+    second: Before Dying_17
+  - first:
+      213: 8242049106652801643
+    second: Before Dying_18
+  - first:
+      213: -3335861662330079418
+    second: Before Dying_19
+  - first:
+      213: 1390657433008501243
+    second: Before Dying_20
+  - first:
+      213: -88522202166477486
+    second: Before Dying_21
+  - first:
+      213: 285646528995027174
+    second: Before Dying_22
+  - first:
+      213: -6792076033925675817
+    second: Before Dying_23
+  - first:
+      213: 7771918644308507504
+    second: Before Dying_24
+  - first:
+      213: 8175321935124177765
+    second: Before Dying_25
+  - first:
+      213: -1634073440240076967
+    second: Before Dying_26
+  - first:
+      213: 3266263934669168730
+    second: Before Dying_27
+  - first:
+      213: -8908995171314732361
+    second: Before Dying_28
+  - first:
+      213: 8259930396909598667
+    second: Before Dying_29
+  - first:
+      213: 487509254363805746
+    second: Before Dying_30
+  - first:
+      213: -4861957866467524845
+    second: Before Dying_31
+  - first:
+      213: -867597953348328667
+    second: Before Dying_32
+  - first:
+      213: 2414896973853704646
+    second: Before Dying_33
+  - first:
+      213: -1682681894197892724
+    second: Before Dying_34
+  - first:
+      213: -4654336139561971187
+    second: Before Dying_35
+  - first:
+      213: -6001887990953682926
+    second: Before Dying_36
+  - first:
+      213: -6174377644752631312
+    second: Before Dying_37
+  - first:
+      213: -4209765628335678774
+    second: Before Dying_38
+  - first:
+      213: 3993333254471492906
+    second: Before Dying_39
+  - first:
+      213: 3254737304474070344
+    second: Before Dying_40
+  - first:
+      213: -8988686174358650726
+    second: Before Dying_41
+  - first:
+      213: -6447500099436592200
+    second: Before Dying_42
+  - first:
+      213: 8875175654594934132
+    second: Before Dying_43
+  - first:
+      213: -8081028356087947852
+    second: Before Dying_44
+  - first:
+      213: 7912995633869706473
+    second: Before Dying_45
+  - first:
+      213: -1520558110620979016
+    second: Before Dying_46
+  - first:
+      213: -5332258081594826877
+    second: Before Dying_47
+  - first:
+      213: 79301202339995888
+    second: Before Dying_48
+  - first:
+      213: 2183022941049697154
+    second: Before Dying_49
+  - first:
+      213: 5613344268389523274
+    second: Before Dying_50
+  - first:
+      213: -2010695237387180545
+    second: Before Dying_51
+  - first:
+      213: -2843725778367758723
+    second: Before Dying_52
+  - first:
+      213: -3883503132954475424
+    second: Before Dying_53
+  - first:
+      213: -2000923474471721189
+    second: Before Dying_54
+  - first:
+      213: 3523411405211245217
+    second: Before Dying_55
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Before Dying_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 115
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b9dc717be43df630800000000000000
+      internalID: 3962381432981871032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fad1d5f5aaab73c0800000000000000
+      internalID: -4360704184407696656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fdb6801e967fde20800000000000000
+      internalID: 3377548666805337589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0cc7bf422fe24d0800000000000000
+      internalID: -3157320048088137518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_4
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced80729455a49460800000000000000
+      internalID: 7247599482998656492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_5
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24cf493ee83e7a80800000000000000
+      internalID: -8467267653595053012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_6
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8a8a419476760760800000000000000
+      internalID: 7423751278792706700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_7
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4aa7f066982ccd0800000000000000
+      internalID: -2539316168444173059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_8
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f8b15d82b36c98b0800000000000000
+      internalID: -5144127055837677328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_9
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f386c258120ae68a0800000000000000
+      internalID: -6309929962070841281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_10
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f9d01f712c2a0c0800000000000000
+      internalID: -4565873664116023428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_11
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e60807b63b9e2550800000000000000
+      internalID: 6138014001453860578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_12
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e905849bb423de10800000000000000
+      internalID: 2221159429293017573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_13
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe4b5e1befa45130800000000000000
+      internalID: 3554659430263639800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_14
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6a2f6349129e4ed0800000000000000
+      internalID: -2427842511902922134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_15
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2418521b620e622c0800000000000000
+      internalID: -4456628324451122878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_16
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5398180ae0ed1d50800000000000000
+      internalID: 6709766315614704478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_17
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37be08d6eea205f40800000000000000
+      internalID: 5715115130660907891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_18
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6aad578ef3a16270800000000000000
+      internalID: 8242049106652801643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_19
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647b8f40e73a4b1d0800000000000000
+      internalID: -3335861662330079418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_20
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf17aba319b9c4310800000000000000
+      internalID: 1390657433008501243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_21
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25db121b68185cef0800000000000000
+      internalID: -88522202166477486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_22
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e862143102d6f300800000000000000
+      internalID: 285646528995027174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_23
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d48a6645d2bdb1a0800000000000000
+      internalID: -6792076033925675817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_24
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b7e3164d66bdb60800000000000000
+      internalID: 7771918644308507504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_25
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563298b3cf3947170800000000000000
+      internalID: 8175321935124177765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_26
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957f6912dda9259e0800000000000000
+      internalID: -1634073440240076967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_27
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5020a04eb9145d20800000000000000
+      internalID: 3266263934669168730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_28
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b27d14f714ec5480800000000000000
+      internalID: -8908995171314732361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_29
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc77f39deea21a270800000000000000
+      internalID: 8259930396909598667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_30
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238f11b751bf3c600800000000000000
+      internalID: 487509254363805746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_31
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f7948841bd68cb0800000000000000
+      internalID: -4861957866467524845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_32
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52321d6124ca5f3f0800000000000000
+      internalID: -867597953348328667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_33
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c147b7c000738120800000000000000
+      internalID: 2414896973853704646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_34
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c896a528bb9e5a8e0800000000000000
+      internalID: -1682681894197892724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_35
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d025528d0f9786fb0800000000000000
+      internalID: -4654336139561971187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_36
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 218d58deba205bca0800000000000000
+      internalID: -6001887990953682926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_37
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f9086fce34305aa0800000000000000
+      internalID: -6174377644752631312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_38
+      rect:
+        serializedVersion: 2
+        x: 2431
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca176f1778e395c0800000000000000
+      internalID: -4209765628335678774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_39
+      rect:
+        serializedVersion: 2
+        x: 2463
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a252786ff6b2b6730800000000000000
+      internalID: 3993333254471492906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_40
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84da36685562b2d20800000000000000
+      internalID: 3254737304474070344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_41
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9043eb6c85c14380800000000000000
+      internalID: -8988686174358650726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_42
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b349c3e1d0e586a0800000000000000
+      internalID: -6447500099436592200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_43
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47573533c35fa2b70800000000000000
+      internalID: 8875175654594934132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_44
+      rect:
+        serializedVersion: 2
+        x: 2815
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bdd487768b6adf80800000000000000
+      internalID: -8081028356087947852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_45
+      rect:
+        serializedVersion: 2
+        x: 2847
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e4550aaa9b90dd60800000000000000
+      internalID: 7912995633869706473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_46
+      rect:
+        serializedVersion: 2
+        x: 2943
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0f8146474e5eae0800000000000000
+      internalID: -1520558110620979016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_47
+      rect:
+        serializedVersion: 2
+        x: 2975
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f95dbb6830006b0800000000000000
+      internalID: -5332258081594826877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_48
+      rect:
+        serializedVersion: 2
+        x: 3071
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f0acbbf50cb91100800000000000000
+      internalID: 79301202339995888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_49
+      rect:
+        serializedVersion: 2
+        x: 3103
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283bbc97cc7ab4e10800000000000000
+      internalID: 2183022941049697154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_50
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4f155f0fda96ed40800000000000000
+      internalID: 5613344268389523274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_51
+      rect:
+        serializedVersion: 2
+        x: 3231
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5a7ffa5539814e0800000000000000
+      internalID: -2010695237387180545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_52
+      rect:
+        serializedVersion: 2
+        x: 3327
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7eb4c5a87e0988d0800000000000000
+      internalID: -2843725778367758723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_53
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 9
+        width: 94
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064c12ce9760b1ac0800000000000000
+      internalID: -3883503132954475424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_54
+      rect:
+        serializedVersion: 2
+        x: 3455
+        y: 0
+        width: 116
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b176f5983ba4b34e0800000000000000
+      internalID: -2000923474471721189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Before Dying_55
+      rect:
+        serializedVersion: 2
+        x: 3487
+        y: 9
+        width: 93
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa1d25510ca5e030800000000000000
+      internalID: 3523411405211245217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Before Dying_0: 3962381432981871032
+      Before Dying_1: -4360704184407696656
+      Before Dying_10: -4565873664116023428
+      Before Dying_11: 6138014001453860578
+      Before Dying_12: 2221159429293017573
+      Before Dying_13: 3554659430263639800
+      Before Dying_14: -2427842511902922134
+      Before Dying_15: -4456628324451122878
+      Before Dying_16: 6709766315614704478
+      Before Dying_17: 5715115130660907891
+      Before Dying_18: 8242049106652801643
+      Before Dying_19: -3335861662330079418
+      Before Dying_2: 3377548666805337589
+      Before Dying_20: 1390657433008501243
+      Before Dying_21: -88522202166477486
+      Before Dying_22: 285646528995027174
+      Before Dying_23: -6792076033925675817
+      Before Dying_24: 7771918644308507504
+      Before Dying_25: 8175321935124177765
+      Before Dying_26: -1634073440240076967
+      Before Dying_27: 3266263934669168730
+      Before Dying_28: -8908995171314732361
+      Before Dying_29: 8259930396909598667
+      Before Dying_3: -3157320048088137518
+      Before Dying_30: 487509254363805746
+      Before Dying_31: -4861957866467524845
+      Before Dying_32: -867597953348328667
+      Before Dying_33: 2414896973853704646
+      Before Dying_34: -1682681894197892724
+      Before Dying_35: -4654336139561971187
+      Before Dying_36: -6001887990953682926
+      Before Dying_37: -6174377644752631312
+      Before Dying_38: -4209765628335678774
+      Before Dying_39: 3993333254471492906
+      Before Dying_4: 7247599482998656492
+      Before Dying_40: 3254737304474070344
+      Before Dying_41: -8988686174358650726
+      Before Dying_42: -6447500099436592200
+      Before Dying_43: 8875175654594934132
+      Before Dying_44: -8081028356087947852
+      Before Dying_45: 7912995633869706473
+      Before Dying_46: -1520558110620979016
+      Before Dying_47: -5332258081594826877
+      Before Dying_48: 79301202339995888
+      Before Dying_49: 2183022941049697154
+      Before Dying_5: -8467267653595053012
+      Before Dying_50: 5613344268389523274
+      Before Dying_51: -2010695237387180545
+      Before Dying_52: -2843725778367758723
+      Before Dying_53: -3883503132954475424
+      Before Dying_54: -2000923474471721189
+      Before Dying_55: 3523411405211245217
+      Before Dying_6: 7423751278792706700
+      Before Dying_7: -2539316168444173059
+      Before Dying_8: -5144127055837677328
+      Before Dying_9: -6309929962070841281
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

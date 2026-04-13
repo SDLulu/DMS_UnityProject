@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: 9b96a49f81a8adb45984cc562a0f5950
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3022522910618054569
+    second: down-vertical-dash_0
+  - first:
+      213: -4749311850944600294
+    second: down-vertical-dash_1
+  - first:
+      213: 1448790699894016911
+    second: down-vertical-dash_2
+  - first:
+      213: -2389865816844462976
+    second: down-vertical-dash_3
+  - first:
+      213: -6755759986638952895
+    second: down-vertical-dash_4
+  - first:
+      213: -8403300017799700458
+    second: down-vertical-dash_5
+  - first:
+      213: 3081275570452067634
+    second: down-vertical-dash_6
+  - first:
+      213: 5731736743993483089
+    second: down-vertical-dash_7
+  - first:
+      213: 678616539781521284
+    second: down-vertical-dash_8
+  - first:
+      213: 8008348574833452696
+    second: down-vertical-dash_9
+  - first:
+      213: 2983503127410016371
+    second: down-vertical-dash_10
+  - first:
+      213: 443497604434209624
+    second: down-vertical-dash_11
+  - first:
+      213: -2379507029582784573
+    second: down-vertical-dash_12
+  - first:
+      213: -5157449796885045094
+    second: down-vertical-dash_13
+  - first:
+      213: -4518919545646609799
+    second: down-vertical-dash_14
+  - first:
+      213: -4501883347123913923
+    second: down-vertical-dash_15
+  - first:
+      213: 3430476234953890350
+    second: down-vertical-dash_16
+  - first:
+      213: -5086927068351115352
+    second: down-vertical-dash_17
+  - first:
+      213: 1611092827443525148
+    second: down-vertical-dash_18
+  - first:
+      213: 7884223833201393378
+    second: down-vertical-dash_19
+  - first:
+      213: 1250475529437572184
+    second: down-vertical-dash_20
+  - first:
+      213: 3033022458398529676
+    second: down-vertical-dash_21
+  - first:
+      213: -8409137557188559239
+    second: down-vertical-dash_22
+  - first:
+      213: -866679369725141403
+    second: down-vertical-dash_23
+  - first:
+      213: 6548547257882648179
+    second: down-vertical-dash_24
+  - first:
+      213: -601909944574644738
+    second: down-vertical-dash_25
+  - first:
+      213: -2616634443837699061
+    second: down-vertical-dash_26
+  - first:
+      213: -3242274197696980080
+    second: down-vertical-dash_27
+  - first:
+      213: -8058820671927085506
+    second: down-vertical-dash_28
+  - first:
+      213: -7239790147608188172
+    second: down-vertical-dash_29
+  - first:
+      213: -5622118998324966935
+    second: down-vertical-dash_30
+  - first:
+      213: 1402525884967896409
+    second: down-vertical-dash_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: down-vertical-dash_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 54
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af6edcb29822f920800000000000000
+      internalID: 3022522910618054569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_1
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 54
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17e4e4d80e071eb0800000000000000
+      internalID: -4749311850944600294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_2
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 54
+        width: 51
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b821d27732b1410800000000000000
+      internalID: 1448790699894016911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_3
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 54
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084132e93bd75ded0800000000000000
+      internalID: -2389865816844462976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_4
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 53
+        width: 18
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1466690f518be32a0800000000000000
+      internalID: -6755759986638952895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_5
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 54
+        width: 17
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 610e30a082b716b80800000000000000
+      internalID: -8403300017799700458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_6
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 55
+        width: 18
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23572e75ec3e2ca20800000000000000
+      internalID: 3081275570452067634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_7
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 54
+        width: 18
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f19cb53383b8f40800000000000000
+      internalID: 5731736743993483089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_8
+      rect:
+        serializedVersion: 2
+        x: 2251
+        y: 54
+        width: 85
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48fd160c52eea6900800000000000000
+      internalID: 678616539781521284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_9
+      rect:
+        serializedVersion: 2
+        x: 2527
+        y: 54
+        width: 89
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8962478499e532f60800000000000000
+      internalID: 8008348574833452696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_10
+      rect:
+        serializedVersion: 2
+        x: 2528
+        y: 87
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3708a8f7948876920800000000000000
+      internalID: 2983503127410016371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_11
+      rect:
+        serializedVersion: 2
+        x: 2539
+        y: 106
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ba903b8be972600800000000000000
+      internalID: 443497604434209624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_12
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 118
+        width: 34
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c75c29b6fa4afed0800000000000000
+      internalID: -2379507029582784573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_13
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 108
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90a1cd2cbe0d68b0800000000000000
+      internalID: -5157449796885045094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_14
+      rect:
+        serializedVersion: 2
+        x: 2588
+        y: 85
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a0a219d929941c0800000000000000
+      internalID: -4518919545646609799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_15
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 76
+        width: 9
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3bbe62a2f81681c0800000000000000
+      internalID: -4501883347123913923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_16
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 91
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a98d2d5ff7b9f20800000000000000
+      internalID: 3430476234953890350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_17
+      rect:
+        serializedVersion: 2
+        x: 2806
+        y: 54
+        width: 64
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8afcc9478ca9769b0800000000000000
+      internalID: -5086927068351115352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_18
+      rect:
+        serializedVersion: 2
+        x: 2851
+        y: 68
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1673fff360cb5610800000000000000
+      internalID: 1611092827443525148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_19
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 59
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee33abcdc36a6d60800000000000000
+      internalID: 7884223833201393378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_20
+      rect:
+        serializedVersion: 2
+        x: 3083
+        y: 54
+        width: 88
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ce1746ed49a5110800000000000000
+      internalID: 1250475529437572184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_21
+      rect:
+        serializedVersion: 2
+        x: 3143
+        y: 118
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8850a43bd5771a20800000000000000
+      internalID: 3033022458398529676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_22
+      rect:
+        serializedVersion: 2
+        x: 3358
+        y: 54
+        width: 95
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97e316cf1fdbc4b80800000000000000
+      internalID: -8409137557188559239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_23
+      rect:
+        serializedVersion: 2
+        x: 3639
+        y: 54
+        width: 91
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e9f5184bfe8f3f0800000000000000
+      internalID: -866679369725141403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_24
+      rect:
+        serializedVersion: 2
+        x: 3910
+        y: 54
+        width: 56
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e14fc090d11ea50800000000000000
+      internalID: 6548547257882648179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_25
+      rect:
+        serializedVersion: 2
+        x: 4190
+        y: 54
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd6ade281695a7f0800000000000000
+      internalID: -601909944574644738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_26
+      rect:
+        serializedVersion: 2
+        x: 4468
+        y: 54
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c800c36d8dfabd0800000000000000
+      internalID: -2616634443837699061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_27
+      rect:
+        serializedVersion: 2
+        x: 4745
+        y: 54
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b5bd5abc02103d0800000000000000
+      internalID: -3242274197696980080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_28
+      rect:
+        serializedVersion: 2
+        x: 5022
+        y: 54
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36163ddb41592090800000000000000
+      internalID: -8058820671927085506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_29
+      rect:
+        serializedVersion: 2
+        x: 5299
+        y: 54
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fae0730839178b90800000000000000
+      internalID: -7239790147608188172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_30
+      rect:
+        serializedVersion: 2
+        x: 5576
+        y: 54
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e98ddbee883af1b0800000000000000
+      internalID: -5622118998324966935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down-vertical-dash_31
+      rect:
+        serializedVersion: 2
+        x: 2854
+        y: 54
+        width: 27
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9554dc98cd5c67310800000000000000
+      internalID: 1402525884967896409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      down-vertical-dash_0: 3022522910618054569
+      down-vertical-dash_1: -4749311850944600294
+      down-vertical-dash_10: 2983503127410016371
+      down-vertical-dash_11: 443497604434209624
+      down-vertical-dash_12: -2379507029582784573
+      down-vertical-dash_13: -5157449796885045094
+      down-vertical-dash_14: -4518919545646609799
+      down-vertical-dash_15: -4501883347123913923
+      down-vertical-dash_16: 3430476234953890350
+      down-vertical-dash_17: -5086927068351115352
+      down-vertical-dash_18: 1611092827443525148
+      down-vertical-dash_19: 7884223833201393378
+      down-vertical-dash_2: 1448790699894016911
+      down-vertical-dash_20: 1250475529437572184
+      down-vertical-dash_21: 3033022458398529676
+      down-vertical-dash_22: -8409137557188559239
+      down-vertical-dash_23: -866679369725141403
+      down-vertical-dash_24: 6548547257882648179
+      down-vertical-dash_25: -601909944574644738
+      down-vertical-dash_26: -2616634443837699061
+      down-vertical-dash_27: -3242274197696980080
+      down-vertical-dash_28: -8058820671927085506
+      down-vertical-dash_29: -7239790147608188172
+      down-vertical-dash_3: -2389865816844462976
+      down-vertical-dash_30: -5622118998324966935
+      down-vertical-dash_31: 1402525884967896409
+      down-vertical-dash_4: -6755759986638952895
+      down-vertical-dash_5: -8403300017799700458
+      down-vertical-dash_6: 3081275570452067634
+      down-vertical-dash_7: 5731736743993483089
+      down-vertical-dash_8: 678616539781521284
+      down-vertical-dash_9: 8008348574833452696
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

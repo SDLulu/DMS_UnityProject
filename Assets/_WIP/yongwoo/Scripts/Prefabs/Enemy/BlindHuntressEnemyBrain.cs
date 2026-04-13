@@ -13,6 +13,14 @@ using UnityEditor;
 [RequireComponent(typeof(BlindHuntressEnemyInteraction))]
 public class BlindHuntressEnemyBrain : MonoBehaviour
 {
+    private enum BrainState
+    {
+        Idle,
+        Alert,
+        Pressure,
+        Recover
+    }
+
     [Header("References")]
     [Tooltip("좌우 반전과 애니메이션을 적용할 비주얼 루트입니다. 보통 Visual 자식 오브젝트를 넣습니다.")]
     [SerializeField] private Transform visualRoot;
@@ -36,6 +44,22 @@ public class BlindHuntressEnemyBrain : MonoBehaviour
     [SerializeField] private float airAcceleration = 22f;
     [Tooltip("플레이어와 이 거리보다 가까워지면 추적 이동을 멈추고 패턴 판단만 합니다.")]
     [SerializeField] private float stopDistance = 0.9f;
+
+    [Header("Flow")]
+    [Tooltip("플레이어를 처음 감지했을 때 잠깐 긴장하는 시간입니다. 0이면 즉시 압박 상태로 들어갑니다.")]
+    [SerializeField] private float alertDuration = 0.18f;
+    [Tooltip("압박 상태에 들어간 뒤 최소 이 시간은 먼저 붙거나 간격을 재고, 바로 공격하지 않습니다.")]
+    [SerializeField] private float minPressureTime = 0.28f;
+    [Tooltip("공격이 끝난 뒤 다시 판단하기 전 숨을 고르는 시간입니다.")]
+    [SerializeField] private float recoverDuration = 0.24f;
+    [Tooltip("압박 상태에서 행동을 다시 고르는 간격입니다. 너무 작으면 즉시 반응하고, 너무 크면 멍해집니다.")]
+    [SerializeField] private float decisionInterval = 0.14f;
+    [Tooltip("가장 자연스럽게 유지하고 싶은 전투 거리입니다. 이 거리 부근에서 간격을 재며 압박합니다.")]
+    [SerializeField] private float preferredRange = 1.75f;
+    [Tooltip("preferredRange 주변에서 허용할 여유 폭입니다.")]
+    [SerializeField] private float preferredRangeTolerance = 0.35f;
+    [Tooltip("너무 가까울 때 잠깐 뒤로 빠질 기준 거리입니다.")]
+    [SerializeField] private float retreatDistance = 0.8f;
 
     [Header("Detection")]
     [Tooltip("플레이어를 인식하는 최대 거리입니다. 이 밖으로 나가면 추적을 멈춥니다.")]
@@ -82,6 +106,11 @@ public class BlindHuntressEnemyBrain : MonoBehaviour
     private float _targetRefreshTimer;
     private float _facing = 1f;
     private bool _isGrounded;
+    private BrainState _brainState;
+    private float _stateTimer;
+    private float _pressureTimer;
+    private float _decisionTimer;
+    private bool _wasBusy;
 
     public float FacingDirection => _facing;
     public bool IsGroundedNow => _isGrounded;
@@ -109,6 +138,7 @@ public class BlindHuntressEnemyBrain : MonoBehaviour
 
         _target = targetOverride;
         CacheTargetInteraction();
+        _brainState = BrainState.Idle;
         ApplyFacingToVisual();
     }
 
@@ -130,24 +160,33 @@ public class BlindHuntressEnemyBrain : MonoBehaviour
 
         if (_interaction != null && _interaction.IsDead)
         {
-            ApplyMove(0f, Time.fixedDeltaTime);
+            ChangeState(BrainState.Idle, 0f);
+            ApplyLocomotion(0f, Time.fixedDeltaTime);
             return;
         }
 
         if (_target == null || (_targetInteraction != null && _targetInteraction.IsDead))
         {
-            ApplyMove(0f, Time.fixedDeltaTime);
+            ChangeState(BrainState.Idle, 0f);
+            ApplyLocomotion(0f, Time.fixedDeltaTime);
             return;
         }
 
+        float dt = Time.fixedDeltaTime;
         Vector2 toTarget = _target.position - transform.position;
         float absX = Mathf.Abs(toTarget.x);
         float absY = Mathf.Abs(toTarget.y);
 
         if (toTarget.sqrMagnitude > detectionRange * detectionRange)
         {
-            ApplyMove(0f, Time.fixedDeltaTime);
+            ChangeState(BrainState.Idle, 0f);
+            ApplyLocomotion(0f, dt);
             return;
+        }
+
+        if (_brainState == BrainState.Idle)
+        {
+            ChangeState(BrainState.Alert, alertDuration);
         }
 
         if (!_combat.IsBusy && absX > 0.05f)
@@ -158,49 +197,73 @@ public class BlindHuntressEnemyBrain : MonoBehaviour
 
         if (_combat.IsBusy)
         {
+            _wasBusy = true;
             return;
         }
 
-        if (_isGrounded && ShouldUseUpAttack(absX, toTarget.y) && _combat.CanUseUpAttack)
+        if (_wasBusy)
         {
-            _combat.TryStartUpAttack(_facing);
+            _wasBusy = false;
+            ChangeState(BrainState.Recover, recoverDuration);
+        }
+
+        TickStateTimers(dt);
+
+        switch (_brainState)
+        {
+            case BrainState.Alert:
+                TickAlert(absX, dt);
+                break;
+            case BrainState.Recover:
+                TickRecover(toTarget, absX, absY, dt);
+                break;
+            case BrainState.Pressure:
+                TickPressure(toTarget, absX, absY, dt);
+                break;
+            default:
+                ChangeState(BrainState.Alert, alertDuration);
+                ApplyLocomotion(0f, dt);
+                break;
+        }
+    }
+
+    private void TickAlert(float absX, float dt)
+    {
+        float moveDirection = absX > preferredRange + preferredRangeTolerance ? _facing : 0f;
+        ApplyLocomotion(moveDirection, dt);
+
+        if (_stateTimer <= 0f)
+        {
+            ChangeState(BrainState.Pressure, 0f);
+        }
+    }
+
+    private void TickRecover(Vector2 toTarget, float absX, float absY, float dt)
+    {
+        float moveDirection = GetPressureMoveDirection(toTarget, absX, absY);
+        ApplyLocomotion(moveDirection, dt);
+
+        if (_stateTimer <= 0f)
+        {
+            ChangeState(BrainState.Pressure, 0f);
+        }
+    }
+
+    private void TickPressure(Vector2 toTarget, float absX, float absY, float dt)
+    {
+        _pressureTimer += dt;
+        _decisionTimer -= dt;
+
+        float moveDirection = GetPressureMoveDirection(toTarget, absX, absY);
+        ApplyLocomotion(moveDirection, dt);
+
+        if (_pressureTimer < minPressureTime || _decisionTimer > 0f)
+        {
             return;
         }
 
-        if (_isGrounded && ShouldUseAttack(absX, absY) && _combat.CanUseAttack)
-        {
-            _combat.TryStartAttack(_facing);
-            return;
-        }
-
-        if (_isGrounded && ShouldUseDashAttack(absX, absY) && HasForwardRunway(_facing) && _combat.CanUseDashAttack)
-        {
-            _combat.TryStartDashAttack(_facing);
-            return;
-        }
-
-        if (_isGrounded && ShouldUseJump(absX, toTarget.y) && _combat.CanUseJump)
-        {
-            _combat.TryStartJump(_facing);
-            return;
-        }
-
-        if (_isGrounded && ShouldUseDash(absX, absY) && HasForwardRunway(_facing) && _combat.CanUseDash)
-        {
-            _combat.TryStartDash(_facing);
-            return;
-        }
-
-        float moveDirection = absX > stopDistance ? Mathf.Sign(toTarget.x) : 0f;
-        if (_isGrounded && moveDirection != 0f)
-        {
-            if (!HasGroundAhead(moveDirection) || IsWallBlocked(moveDirection))
-            {
-                moveDirection = 0f;
-            }
-        }
-
-        ApplyMove(moveDirection, Time.fixedDeltaTime);
+        _decisionTimer = decisionInterval;
+        TryCommitAction(absX, absY, toTarget.y);
     }
 
     private void RefreshTarget()
@@ -228,8 +291,13 @@ public class BlindHuntressEnemyBrain : MonoBehaviour
         _isGrounded = Physics2D.OverlapCircle(center, groundCheckRadius, groundLayer) != null;
     }
 
-    private void ApplyMove(float direction, float dt)
+    private void ApplyLocomotion(float direction, float dt)
     {
+        if (_isGrounded && direction != 0f && (!HasGroundAhead(direction) || IsWallBlocked(direction)))
+        {
+            direction = 0f;
+        }
+
         if (_body == null)
         {
             return;
@@ -240,6 +308,108 @@ public class BlindHuntressEnemyBrain : MonoBehaviour
         Vector2 velocity = _body.linearVelocity;
         velocity.x = Mathf.MoveTowards(velocity.x, targetSpeed, acceleration * dt);
         _body.linearVelocity = velocity;
+    }
+
+    private float GetPressureMoveDirection(Vector2 toTarget, float absX, float absY)
+    {
+        float directionToTarget = absX > 0.05f ? Mathf.Sign(toTarget.x) : _facing;
+
+        if (!_isGrounded)
+        {
+            return directionToTarget;
+        }
+
+        if (ShouldUseUpAttack(absX, toTarget.y))
+        {
+            return 0f;
+        }
+
+        if (absY > jumpTriggerHeight)
+        {
+            return directionToTarget;
+        }
+
+        if (absY <= sameLevelTolerance)
+        {
+            if (absX < retreatDistance)
+            {
+                return -directionToTarget;
+            }
+
+            if (absX > preferredRange + preferredRangeTolerance)
+            {
+                return directionToTarget;
+            }
+
+            if (absX < preferredRange - preferredRangeTolerance)
+            {
+                return -directionToTarget;
+            }
+
+            return 0f;
+        }
+
+        return directionToTarget;
+    }
+
+    private bool TryCommitAction(float absX, float absY, float yDelta)
+    {
+        if (_isGrounded && ShouldUseUpAttack(absX, yDelta) && _combat.CanUseUpAttack)
+        {
+            _combat.TryStartUpAttack(_facing);
+            return true;
+        }
+
+        if (_isGrounded && ShouldUseJump(absX, yDelta) && _combat.CanUseJump)
+        {
+            _combat.TryStartJump(_facing);
+            return true;
+        }
+
+        if (_isGrounded && ShouldUseAttack(absX, absY) && _combat.CanUseAttack)
+        {
+            _combat.TryStartAttack(_facing);
+            return true;
+        }
+
+        if (_isGrounded && ShouldUseDashAttack(absX, absY) && HasForwardRunway(_facing) && _combat.CanUseDashAttack)
+        {
+            _combat.TryStartDashAttack(_facing);
+            return true;
+        }
+
+        if (_isGrounded && ShouldUseDash(absX, absY) && HasForwardRunway(_facing) && _combat.CanUseDash)
+        {
+            _combat.TryStartDash(_facing);
+            return true;
+        }
+
+        return false;
+    }
+
+    private void TickStateTimers(float dt)
+    {
+        if (_stateTimer > 0f)
+        {
+            _stateTimer = Mathf.Max(0f, _stateTimer - dt);
+        }
+    }
+
+    private void ChangeState(BrainState nextState, float timer)
+    {
+        if (_brainState == nextState && Mathf.Approximately(_stateTimer, timer))
+        {
+            return;
+        }
+
+        _brainState = nextState;
+        _stateTimer = timer;
+
+        if (nextState == BrainState.Pressure)
+        {
+            _pressureTimer = 0f;
+            _decisionTimer = decisionInterval;
+        }
     }
 
     private bool ShouldUseAttack(float absX, float absY)
@@ -342,6 +512,12 @@ public class BlindHuntressEnemyBrain : MonoBehaviour
         {
             return;
         }
+
+#if UNITY_EDITOR
+        Handles.color = new Color(0.95f, 0.35f, 0.25f, 0.9f);
+        Handles.DrawWireDisc(transform.position, Vector3.forward, detectionRange);
+        Handles.Label(transform.position + Vector3.up * (detectionRange + 0.15f), $"Detect {detectionRange:0.0}");
+#endif
 
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(GetGroundCheckPosition(), groundCheckRadius);

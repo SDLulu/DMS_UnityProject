@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 5ea0460876c6dad4ea18b74f042b73c5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3616960124127257613
+    second: The Second Seller_0
+  - first:
+      213: -1711171058728584657
+    second: The Second Seller_1
+  - first:
+      213: -6749602377439119834
+    second: The Second Seller_2
+  - first:
+      213: -9127356692250998806
+    second: The Second Seller_3
+  - first:
+      213: 3610304912587912691
+    second: The Second Seller_4
+  - first:
+      213: -4924915577856931432
+    second: The Second Seller_5
+  - first:
+      213: 5456858948876825657
+    second: The Second Seller_6
+  - first:
+      213: -8537102673771970363
+    second: The Second Seller_7
+  - first:
+      213: -7226483820788952917
+    second: The Second Seller_8
+  - first:
+      213: -4915371829522151531
+    second: The Second Seller_9
+  - first:
+      213: -8402076844983293002
+    second: The Second Seller_10
+  - first:
+      213: 8804990159230384214
+    second: The Second Seller_11
+  - first:
+      213: -7835098917426368715
+    second: The Second Seller_12
+  - first:
+      213: 3603035837086199924
+    second: The Second Seller_13
+  - first:
+      213: 1814374180613813648
+    second: The Second Seller_14
+  - first:
+      213: -8468677517723189542
+    second: The Second Seller_15
+  - first:
+      213: -3627427313480260319
+    second: The Second Seller_16
+  - first:
+      213: -5055155374539574677
+    second: The Second Seller_17
+  - first:
+      213: 8917254941732906733
+    second: The Second Seller_18
+  - first:
+      213: 747387685259237696
+    second: The Second Seller_19
+  - first:
+      213: 96923255856702207
+    second: The Second Seller_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: The Second Seller_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 88
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb54aa3ee9fdcdc0800000000000000
+      internalID: -3616960124127257613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2abd8efcf2b048e0800000000000000
+      internalID: -1711171058728584657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_2
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626fb9d06689452a0800000000000000
+      internalID: -6749602377439119834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_3
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae7481c727d155180800000000000000
+      internalID: -9127356692250998806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_4
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f576a590316a1230800000000000000
+      internalID: 3610304912587912691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_5
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 899cc01106f27abb0800000000000000
+      internalID: -4924915577856931432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_6
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 934f6356d48aabb40800000000000000
+      internalID: 5456858948876825657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_7
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0c8c6895e168980800000000000000
+      internalID: -8537102673771970363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_8
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba054c6a04f56bb90800000000000000
+      internalID: -7226483820788952917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_9
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 597ce522d5719cbb0800000000000000
+      internalID: -4915371829522151531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_10
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb6c3720a3d56b80800000000000000
+      internalID: -8402076844983293002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_11
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 658bcb326eb913a70800000000000000
+      internalID: 8804990159230384214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_12
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53fe0c6fb03244390800000000000000
+      internalID: -7835098917426368715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_13
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470768e010e800230800000000000000
+      internalID: 3603035837086199924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_14
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095702d44b3fd2910800000000000000
+      internalID: 1814374180613813648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_15
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adeb5c6aaa6397a80800000000000000
+      internalID: -8468677517723189542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_16
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125a57bc31ac8adc0800000000000000
+      internalID: -3627427313480260319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_17
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b62792068fa78d9b0800000000000000
+      internalID: -5055155374539574677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_18
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de62695bf1470cb70800000000000000
+      internalID: 8917254941732906733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_19
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 0
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 049d061d3214f5a00800000000000000
+      internalID: 747387685259237696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Second Seller_20
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 0
+        width: 88
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff220db0037585100800000000000000
+      internalID: 96923255856702207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      The Second Seller_0: -3616960124127257613
+      The Second Seller_1: -1711171058728584657
+      The Second Seller_10: -8402076844983293002
+      The Second Seller_11: 8804990159230384214
+      The Second Seller_12: -7835098917426368715
+      The Second Seller_13: 3603035837086199924
+      The Second Seller_14: 1814374180613813648
+      The Second Seller_15: -8468677517723189542
+      The Second Seller_16: -3627427313480260319
+      The Second Seller_17: -5055155374539574677
+      The Second Seller_18: 8917254941732906733
+      The Second Seller_19: 747387685259237696
+      The Second Seller_2: -6749602377439119834
+      The Second Seller_20: 96923255856702207
+      The Second Seller_3: -9127356692250998806
+      The Second Seller_4: 3610304912587912691
+      The Second Seller_5: -4924915577856931432
+      The Second Seller_6: 5456858948876825657
+      The Second Seller_7: -8537102673771970363
+      The Second Seller_8: -7226483820788952917
+      The Second Seller_9: -4915371829522151531
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
