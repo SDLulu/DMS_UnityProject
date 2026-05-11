@@ -751,7 +751,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -817,12 +817,12 @@ TextureImporter:
       name: Combat-Sheet_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 1846
-        width: 8
-        height: 6
+        x: 0
+        y: 1792
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -839,12 +839,12 @@ TextureImporter:
       name: Combat-Sheet_1
       rect:
         serializedVersion: 2
-        x: 83
-        y: 1843
-        width: 11
-        height: 9
+        x: 64
+        y: 1792
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -861,12 +861,12 @@ TextureImporter:
       name: Combat-Sheet_2
       rect:
         serializedVersion: 2
-        x: 134
-        y: 1796
-        width: 49
-        height: 56
+        x: 128
+        y: 1792
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -883,12 +883,12 @@ TextureImporter:
       name: Combat-Sheet_3
       rect:
         serializedVersion: 2
-        x: 198
-        y: 1797
-        width: 25
-        height: 14
+        x: 192
+        y: 1792
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -905,12 +905,12 @@ TextureImporter:
       name: Combat-Sheet_4
       rect:
         serializedVersion: 2
-        x: 221
-        y: 1811
-        width: 29
-        height: 31
+        x: 256
+        y: 1792
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -927,12 +927,12 @@ TextureImporter:
       name: Combat-Sheet_5
       rect:
         serializedVersion: 2
-        x: 232
-        y: 1807
-        width: 9
-        height: 9
+        x: 320
+        y: 1792
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -949,12 +949,12 @@ TextureImporter:
       name: Combat-Sheet_6
       rect:
         serializedVersion: 2
-        x: 261
-        y: 1797
-        width: 92
-        height: 48
+        x: 0
+        y: 1728
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -971,12 +971,12 @@ TextureImporter:
       name: Combat-Sheet_7
       rect:
         serializedVersion: 2
-        x: 20
-        y: 1767
-        width: 18
-        height: 12
+        x: 64
+        y: 1728
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -993,12 +993,12 @@ TextureImporter:
       name: Combat-Sheet_8
       rect:
         serializedVersion: 2
-        x: 85
-        y: 1738
-        width: 25
-        height: 40
+        x: 128
+        y: 1728
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1015,12 +1015,12 @@ TextureImporter:
       name: Combat-Sheet_9
       rect:
         serializedVersion: 2
-        x: 154
-        y: 1735
-        width: 20
-        height: 37
+        x: 192
+        y: 1728
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1037,12 +1037,12 @@ TextureImporter:
       name: Combat-Sheet_10
       rect:
         serializedVersion: 2
-        x: 218
-        y: 1734
-        width: 18
-        height: 16
+        x: 64
+        y: 1664
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1059,12 +1059,12 @@ TextureImporter:
       name: Combat-Sheet_11
       rect:
         serializedVersion: 2
-        x: 82
-        y: 1667
-        width: 36
-        height: 55
+        x: 128
+        y: 1664
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1081,12 +1081,12 @@ TextureImporter:
       name: Combat-Sheet_12
       rect:
         serializedVersion: 2
-        x: 155
-        y: 1673
-        width: 29
-        height: 53
+        x: 192
+        y: 1664
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1103,12 +1103,12 @@ TextureImporter:
       name: Combat-Sheet_13
       rect:
         serializedVersion: 2
-        x: 219
-        y: 1703
-        width: 25
-        height: 24
+        x: 256
+        y: 1664
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1125,12 +1125,12 @@ TextureImporter:
       name: Combat-Sheet_14
       rect:
         serializedVersion: 2
-        x: 301
-        y: 1721
-        width: 8
-        height: 7
+        x: 0
+        y: 1600
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1147,12 +1147,12 @@ TextureImporter:
       name: Combat-Sheet_15
       rect:
         serializedVersion: 2
-        x: 239
-        y: 1706
-        width: 13
-        height: 12
+        x: 64
+        y: 1600
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1169,12 +1169,12 @@ TextureImporter:
       name: Combat-Sheet_16
       rect:
         serializedVersion: 2
-        x: 307
-        y: 1712
-        width: 11
-        height: 8
+        x: 128
+        y: 1600
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1191,12 +1191,12 @@ TextureImporter:
       name: Combat-Sheet_17
       rect:
         serializedVersion: 2
-        x: 227
-        y: 1687
-        width: 14
-        height: 16
+        x: 192
+        y: 1600
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1213,12 +1213,12 @@ TextureImporter:
       name: Combat-Sheet_18
       rect:
         serializedVersion: 2
-        x: 239
-        y: 1697
-        width: 9
-        height: 9
+        x: 256
+        y: 1600
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1235,12 +1235,12 @@ TextureImporter:
       name: Combat-Sheet_19
       rect:
         serializedVersion: 2
-        x: 285
-        y: 1695
-        width: 13
-        height: 15
+        x: 320
+        y: 1600
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1257,12 +1257,12 @@ TextureImporter:
       name: Combat-Sheet_20
       rect:
         serializedVersion: 2
-        x: 306
-        y: 1698
-        width: 7
-        height: 8
+        x: 384
+        y: 1600
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1279,12 +1279,12 @@ TextureImporter:
       name: Combat-Sheet_21
       rect:
         serializedVersion: 2
-        x: 224
-        y: 1683
-        width: 8
-        height: 8
+        x: 448
+        y: 1600
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1301,12 +1301,12 @@ TextureImporter:
       name: Combat-Sheet_22
       rect:
         serializedVersion: 2
-        x: 287
-        y: 1683
-        width: 7
-        height: 7
+        x: 0
+        y: 1536
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1323,12 +1323,12 @@ TextureImporter:
       name: Combat-Sheet_23
       rect:
         serializedVersion: 2
-        x: 300
-        y: 1687
-        width: 8
-        height: 7
+        x: 64
+        y: 1536
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1345,12 +1345,12 @@ TextureImporter:
       name: Combat-Sheet_24
       rect:
         serializedVersion: 2
-        x: 232
-        y: 1674
-        width: 8
-        height: 9
+        x: 128
+        y: 1536
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1367,12 +1367,12 @@ TextureImporter:
       name: Combat-Sheet_25
       rect:
         serializedVersion: 2
-        x: 298
-        y: 1674
-        width: 7
-        height: 7
+        x: 192
+        y: 1536
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1389,12 +1389,12 @@ TextureImporter:
       name: Combat-Sheet_26
       rect:
         serializedVersion: 2
-        x: 7
-        y: 1609
-        width: 13
-        height: 29
+        x: 256
+        y: 1536
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1411,12 +1411,12 @@ TextureImporter:
       name: Combat-Sheet_27
       rect:
         serializedVersion: 2
-        x: 71
-        y: 1611
-        width: 14
-        height: 31
+        x: 320
+        y: 1536
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1433,12 +1433,12 @@ TextureImporter:
       name: Combat-Sheet_28
       rect:
         serializedVersion: 2
-        x: 137
-        y: 1617
-        width: 13
-        height: 26
+        x: 0
+        y: 1472
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1455,12 +1455,12 @@ TextureImporter:
       name: Combat-Sheet_29
       rect:
         serializedVersion: 2
-        x: 212
-        y: 1627
-        width: 34
-        height: 30
+        x: 64
+        y: 1472
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1477,12 +1477,12 @@ TextureImporter:
       name: Combat-Sheet_30
       rect:
         serializedVersion: 2
-        x: 277
-        y: 1626
-        width: 34
-        height: 29
+        x: 128
+        y: 1472
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1499,12 +1499,12 @@ TextureImporter:
       name: Combat-Sheet_31
       rect:
         serializedVersion: 2
-        x: 345
-        y: 1625
-        width: 30
-        height: 31
+        x: 192
+        y: 1472
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1521,12 +1521,12 @@ TextureImporter:
       name: Combat-Sheet_32
       rect:
         serializedVersion: 2
-        x: 408
-        y: 1625
-        width: 31
-        height: 32
+        x: 256
+        y: 1472
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1543,12 +1543,12 @@ TextureImporter:
       name: Combat-Sheet_33
       rect:
         serializedVersion: 2
-        x: 470
-        y: 1623
-        width: 33
-        height: 35
+        x: 320
+        y: 1472
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1565,12 +1565,12 @@ TextureImporter:
       name: Combat-Sheet_34
       rect:
         serializedVersion: 2
-        x: 8
-        y: 1565
-        width: 12
-        height: 17
+        x: 0
+        y: 1408
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1587,12 +1587,12 @@ TextureImporter:
       name: Combat-Sheet_35
       rect:
         serializedVersion: 2
-        x: 72
-        y: 1558
-        width: 11
-        height: 23
+        x: 64
+        y: 1408
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1609,12 +1609,12 @@ TextureImporter:
       name: Combat-Sheet_36
       rect:
         serializedVersion: 2
-        x: 177
-        y: 1565
-        width: 11
-        height: 6
+        x: 128
+        y: 1408
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1631,12 +1631,12 @@ TextureImporter:
       name: Combat-Sheet_37
       rect:
         serializedVersion: 2
-        x: 213
-        y: 1548
-        width: 39
-        height: 27
+        x: 192
+        y: 1408
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1653,12 +1653,12 @@ TextureImporter:
       name: Combat-Sheet_38
       rect:
         serializedVersion: 2
-        x: 265
-        y: 1482
-        width: 52
-        height: 96
+        x: 0
+        y: 1344
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1675,12 +1675,12 @@ TextureImporter:
       name: Combat-Sheet_39
       rect:
         serializedVersion: 2
-        x: 332
-        y: 1481
-        width: 45
-        height: 99
+        x: 64
+        y: 1344
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1697,12 +1697,12 @@ TextureImporter:
       name: Combat-Sheet_40
       rect:
         serializedVersion: 2
-        x: 141
-        y: 1548
-        width: 42
-        height: 14
+        x: 128
+        y: 1344
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1719,12 +1719,12 @@ TextureImporter:
       name: Combat-Sheet_41
       rect:
         serializedVersion: 2
-        x: 5
-        y: 1489
-        width: 50
-        height: 33
+        x: 192
+        y: 1344
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1741,12 +1741,12 @@ TextureImporter:
       name: Combat-Sheet_42
       rect:
         serializedVersion: 2
-        x: 69
-        y: 1488
-        width: 50
-        height: 33
+        x: 256
+        y: 1344
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1763,12 +1763,12 @@ TextureImporter:
       name: Combat-Sheet_43
       rect:
         serializedVersion: 2
-        x: 132
-        y: 1484
-        width: 54
-        height: 27
+        x: 64
+        y: 1280
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1785,12 +1785,12 @@ TextureImporter:
       name: Combat-Sheet_44
       rect:
         serializedVersion: 2
-        x: 143
-        y: 1508
-        width: 10
-        height: 9
+        x: 128
+        y: 1280
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1807,12 +1807,12 @@ TextureImporter:
       name: Combat-Sheet_45
       rect:
         serializedVersion: 2
-        x: 150
-        y: 1510
-        width: 9
-        height: 13
+        x: 192
+        y: 1280
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1829,12 +1829,12 @@ TextureImporter:
       name: Combat-Sheet_46
       rect:
         serializedVersion: 2
-        x: 160
-        y: 1508
-        width: 14
-        height: 13
+        x: 256
+        y: 1280
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1851,12 +1851,12 @@ TextureImporter:
       name: Combat-Sheet_47
       rect:
         serializedVersion: 2
-        x: 194
-        y: 1483
-        width: 29
-        height: 27
+        x: 0
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1873,12 +1873,12 @@ TextureImporter:
       name: Combat-Sheet_48
       rect:
         serializedVersion: 2
-        x: 206
-        y: 1510
-        width: 33
-        height: 15
+        x: 64
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1895,12 +1895,12 @@ TextureImporter:
       name: Combat-Sheet_49
       rect:
         serializedVersion: 2
-        x: 159
-        y: 1486
-        width: 11
-        height: 14
+        x: 128
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1917,12 +1917,12 @@ TextureImporter:
       name: Combat-Sheet_50
       rect:
         serializedVersion: 2
-        x: 225
-        y: 1494
-        width: 27
-        height: 15
+        x: 192
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1939,12 +1939,12 @@ TextureImporter:
       name: Combat-Sheet_51
       rect:
         serializedVersion: 2
-        x: 262
-        y: 1499
-        width: 15
-        height: 10
+        x: 256
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1961,12 +1961,12 @@ TextureImporter:
       name: Combat-Sheet_52
       rect:
         serializedVersion: 2
-        x: 15
-        y: 1422
-        width: 38
-        height: 37
+        x: 0
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1983,12 +1983,12 @@ TextureImporter:
       name: Combat-Sheet_53
       rect:
         serializedVersion: 2
-        x: 76
-        y: 1438
-        width: 28
-        height: 26
+        x: 64
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2005,12 +2005,12 @@ TextureImporter:
       name: Combat-Sheet_54
       rect:
         serializedVersion: 2
-        x: 100
-        y: 1436
-        width: 21
-        height: 8
+        x: 128
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2027,12 +2027,12 @@ TextureImporter:
       name: Combat-Sheet_55
       rect:
         serializedVersion: 2
-        x: 137
-        y: 1445
-        width: 10
-        height: 10
+        x: 192
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2049,12 +2049,12 @@ TextureImporter:
       name: Combat-Sheet_56
       rect:
         serializedVersion: 2
-        x: 144
-        y: 1453
-        width: 9
-        height: 14
+        x: 256
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2071,12 +2071,12 @@ TextureImporter:
       name: Combat-Sheet_57
       rect:
         serializedVersion: 2
-        x: 161
-        y: 1453
-        width: 10
-        height: 14
+        x: 0
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2093,12 +2093,12 @@ TextureImporter:
       name: Combat-Sheet_58
       rect:
         serializedVersion: 2
-        x: 170
-        y: 1437
-        width: 17
-        height: 7
+        x: 64
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2115,12 +2115,12 @@ TextureImporter:
       name: Combat-Sheet_59
       rect:
         serializedVersion: 2
-        x: 199
-        y: 1438
-        width: 55
-        height: 56
+        x: 128
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2137,12 +2137,12 @@ TextureImporter:
       name: Combat-Sheet_60
       rect:
         serializedVersion: 2
-        x: 86
-        y: 1417
-        width: 8
-        height: 20
+        x: 192
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2159,12 +2159,12 @@ TextureImporter:
       name: Combat-Sheet_61
       rect:
         serializedVersion: 2
-        x: 151
-        y: 1414
-        width: 7
-        height: 11
+        x: 256
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2181,12 +2181,12 @@ TextureImporter:
       name: Combat-Sheet_62
       rect:
         serializedVersion: 2
-        x: 217
-        y: 1387
-        width: 18
-        height: 30
+        x: 320
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2203,12 +2203,12 @@ TextureImporter:
       name: Combat-Sheet_63
       rect:
         serializedVersion: 2
-        x: 6
-        y: 1369
-        width: 25
-        height: 12
+        x: 384
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2225,12 +2225,12 @@ TextureImporter:
       name: Combat-Sheet_64
       rect:
         serializedVersion: 2
-        x: 73
-        y: 1369
-        width: 49
-        height: 12
+        x: 64
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2247,12 +2247,12 @@ TextureImporter:
       name: Combat-Sheet_65
       rect:
         serializedVersion: 2
-        x: 78
-        y: 1318
-        width: 35
-        height: 15
+        x: 128
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2269,12 +2269,12 @@ TextureImporter:
       name: Combat-Sheet_66
       rect:
         serializedVersion: 2
-        x: 143
-        y: 1305
-        width: 39
-        height: 28
+        x: 192
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2291,12 +2291,12 @@ TextureImporter:
       name: Combat-Sheet_67
       rect:
         serializedVersion: 2
-        x: 165
-        y: 1362
-        width: 21
-        height: 29
+        x: 256
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2313,12 +2313,12 @@ TextureImporter:
       name: Combat-Sheet_68
       rect:
         serializedVersion: 2
-        x: 231
-        y: 1301
-        width: 80
-        height: 99
+        x: 0
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2335,12 +2335,12 @@ TextureImporter:
       name: Combat-Sheet_69
       rect:
         serializedVersion: 2
-        x: 234
-        y: 1362
-        width: 7
-        height: 7
+        x: 64
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2357,12 +2357,12 @@ TextureImporter:
       name: Combat-Sheet_70
       rect:
         serializedVersion: 2
-        x: 239
-        y: 1371
-        width: 7
-        height: 7
+        x: 128
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2379,12 +2379,12 @@ TextureImporter:
       name: Combat-Sheet_71
       rect:
         serializedVersion: 2
-        x: 242
-        y: 1356
-        width: 7
-        height: 7
+        x: 192
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2401,12 +2401,12 @@ TextureImporter:
       name: Combat-Sheet_72
       rect:
         serializedVersion: 2
-        x: 14
-        y: 1229
-        width: 16
-        height: 38
+        x: 256
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2423,12 +2423,12 @@ TextureImporter:
       name: Combat-Sheet_73
       rect:
         serializedVersion: 2
-        x: 79
-        y: 1229
-        width: 26
-        height: 38
+        x: 0
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2445,12 +2445,12 @@ TextureImporter:
       name: Combat-Sheet_74
       rect:
         serializedVersion: 2
-        x: 142
-        y: 1229
-        width: 35
-        height: 38
+        x: 64
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2467,12 +2467,12 @@ TextureImporter:
       name: Combat-Sheet_75
       rect:
         serializedVersion: 2
-        x: 227
-        y: 1229
-        width: 16
-        height: 38
+        x: 128
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2489,12 +2489,12 @@ TextureImporter:
       name: Combat-Sheet_76
       rect:
         serializedVersion: 2
-        x: 292
-        y: 1228
-        width: 16
-        height: 39
+        x: 192
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2511,12 +2511,12 @@ TextureImporter:
       name: Combat-Sheet_77
       rect:
         serializedVersion: 2
-        x: 48
-        y: 1177
-        width: 10
-        height: 8
+        x: 256
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2533,12 +2533,12 @@ TextureImporter:
       name: Combat-Sheet_78
       rect:
         serializedVersion: 2
-        x: 109
-        y: 1173
-        width: 12
-        height: 10
+        x: 320
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2555,12 +2555,12 @@ TextureImporter:
       name: Combat-Sheet_79
       rect:
         serializedVersion: 2
-        x: 136
-        y: 1160
-        width: 36
-        height: 24
+        x: 128
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2577,12 +2577,12 @@ TextureImporter:
       name: Combat-Sheet_80
       rect:
         serializedVersion: 2
-        x: 172
-        y: 1170
-        width: 6
-        height: 7
+        x: 192
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2599,12 +2599,12 @@ TextureImporter:
       name: Combat-Sheet_81
       rect:
         serializedVersion: 2
-        x: 199
-        y: 1160
-        width: 31
-        height: 26
+        x: 256
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2621,12 +2621,12 @@ TextureImporter:
       name: Combat-Sheet_82
       rect:
         serializedVersion: 2
-        x: 264
-        y: 1161
-        width: 15
-        height: 29
+        x: 320
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2643,12 +2643,12 @@ TextureImporter:
       name: Combat-Sheet_83
       rect:
         serializedVersion: 2
-        x: 4
-        y: 1117
-        width: 12
-        height: 11
+        x: 384
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2665,12 +2665,12 @@ TextureImporter:
       name: Combat-Sheet_84
       rect:
         serializedVersion: 2
-        x: 68
-        y: 1097
-        width: 55
-        height: 44
+        x: 448
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2687,12 +2687,12 @@ TextureImporter:
       name: Combat-Sheet_85
       rect:
         serializedVersion: 2
-        x: 135
-        y: 1097
-        width: 49
-        height: 44
+        x: 0
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2709,12 +2709,12 @@ TextureImporter:
       name: Combat-Sheet_86
       rect:
         serializedVersion: 2
-        x: 196
-        y: 1100
-        width: 17
-        height: 20
+        x: 64
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2731,12 +2731,12 @@ TextureImporter:
       name: Combat-Sheet_87
       rect:
         serializedVersion: 2
-        x: 217
-        y: 1100
-        width: 7
-        height: 10
+        x: 128
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2753,12 +2753,12 @@ TextureImporter:
       name: Combat-Sheet_88
       rect:
         serializedVersion: 2
-        x: 227
-        y: 1097
-        width: 22
-        height: 44
+        x: 192
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2775,12 +2775,12 @@ TextureImporter:
       name: Combat-Sheet_89
       rect:
         serializedVersion: 2
-        x: 264
-        y: 1053
-        width: 52
-        height: 88
+        x: 0
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2797,12 +2797,12 @@ TextureImporter:
       name: Combat-Sheet_90
       rect:
         serializedVersion: 2
-        x: 330
-        y: 1100
-        width: 46
-        height: 40
+        x: 64
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2819,12 +2819,12 @@ TextureImporter:
       name: Combat-Sheet_91
       rect:
         serializedVersion: 2
-        x: 420
-        y: 1105
-        width: 21
-        height: 34
+        x: 128
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2841,12 +2841,12 @@ TextureImporter:
       name: Combat-Sheet_92
       rect:
         serializedVersion: 2
-        x: 73
-        y: 1046
-        width: 45
-        height: 19
+        x: 192
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2863,12 +2863,12 @@ TextureImporter:
       name: Combat-Sheet_93
       rect:
         serializedVersion: 2
-        x: 159
-        y: 1049
-        width: 24
-        height: 13
+        x: 256
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2885,12 +2885,12 @@ TextureImporter:
       name: Combat-Sheet_94
       rect:
         serializedVersion: 2
-        x: 233
-        y: 1052
-        width: 18
-        height: 7
+        x: 320
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2907,12 +2907,12 @@ TextureImporter:
       name: Combat-Sheet_95
       rect:
         serializedVersion: 2
-        x: 8
-        y: 977
-        width: 29
-        height: 29
+        x: 0
+        y: 640
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2929,12 +2929,12 @@ TextureImporter:
       name: Combat-Sheet_96
       rect:
         serializedVersion: 2
-        x: 92
-        y: 977
-        width: 30
-        height: 29
+        x: 64
+        y: 640
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2951,12 +2951,12 @@ TextureImporter:
       name: Combat-Sheet_97
       rect:
         serializedVersion: 2
-        x: 161
-        y: 977
-        width: 28
-        height: 29
+        x: 128
+        y: 640
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2973,12 +2973,12 @@ TextureImporter:
       name: Combat-Sheet_98
       rect:
         serializedVersion: 2
-        x: 222
-        y: 977
-        width: 96
-        height: 29
+        x: 0
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2995,12 +2995,12 @@ TextureImporter:
       name: Combat-Sheet_99
       rect:
         serializedVersion: 2
-        x: 224
-        y: 986
-        width: 19
-        height: 11
+        x: 64
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3017,12 +3017,12 @@ TextureImporter:
       name: Combat-Sheet_100
       rect:
         serializedVersion: 2
-        x: 240
-        y: 978
-        width: 13
-        height: 12
+        x: 128
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3039,12 +3039,12 @@ TextureImporter:
       name: Combat-Sheet_101
       rect:
         serializedVersion: 2
-        x: 1
-        y: 914
-        width: 17
-        height: 24
+        x: 192
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3061,12 +3061,12 @@ TextureImporter:
       name: Combat-Sheet_102
       rect:
         serializedVersion: 2
-        x: 65
-        y: 913
-        width: 21
-        height: 25
+        x: 256
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3083,12 +3083,12 @@ TextureImporter:
       name: Combat-Sheet_103
       rect:
         serializedVersion: 2
-        x: 135
-        y: 912
-        width: 25
-        height: 30
+        x: 320
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3105,12 +3105,12 @@ TextureImporter:
       name: Combat-Sheet_104
       rect:
         serializedVersion: 2
-        x: 210
-        y: 909
-        width: 29
-        height: 36
+        x: 384
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3127,12 +3127,12 @@ TextureImporter:
       name: Combat-Sheet_105
       rect:
         serializedVersion: 2
-        x: 276
-        y: 908
-        width: 37
-        height: 41
+        x: 448
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3149,12 +3149,12 @@ TextureImporter:
       name: Combat-Sheet_106
       rect:
         serializedVersion: 2
-        x: 354
-        y: 915
-        width: 26
-        height: 33
+        x: 512
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3171,12 +3171,12 @@ TextureImporter:
       name: Combat-Sheet_107
       rect:
         serializedVersion: 2
-        x: 371
-        y: 908
-        width: 7
-        height: 8
+        x: 0
+        y: 512
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3193,12 +3193,12 @@ TextureImporter:
       name: Combat-Sheet_108
       rect:
         serializedVersion: 2
-        x: 141
-        y: 867
-        width: 42
-        height: 23
+        x: 64
+        y: 512
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3215,12 +3215,12 @@ TextureImporter:
       name: Combat-Sheet_109
       rect:
         serializedVersion: 2
-        x: 199
-        y: 805
-        width: 58
-        height: 85
+        x: 128
+        y: 512
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3237,12 +3237,12 @@ TextureImporter:
       name: Combat-Sheet_110
       rect:
         serializedVersion: 2
-        x: 282
-        y: 848
-        width: 37
-        height: 45
+        x: 192
+        y: 512
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3259,12 +3259,12 @@ TextureImporter:
       name: Combat-Sheet_111
       rect:
         serializedVersion: 2
-        x: 360
-        y: 848
-        width: 25
-        height: 49
+        x: 256
+        y: 512
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3281,12 +3281,12 @@ TextureImporter:
       name: Combat-Sheet_112
       rect:
         serializedVersion: 2
-        x: 427
-        y: 882
-        width: 8
-        height: 12
+        x: 320
+        y: 512
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3303,12 +3303,12 @@ TextureImporter:
       name: Combat-Sheet_113
       rect:
         serializedVersion: 2
-        x: 435
-        y: 887
-        width: 8
-        height: 10
+        x: 0
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3325,12 +3325,12 @@ TextureImporter:
       name: Combat-Sheet_114
       rect:
         serializedVersion: 2
-        x: 490
-        y: 887
-        width: 9
-        height: 10
+        x: 64
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3347,12 +3347,12 @@ TextureImporter:
       name: Combat-Sheet_115
       rect:
         serializedVersion: 2
-        x: 499
-        y: 889
-        width: 8
-        height: 8
+        x: 128
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3369,12 +3369,12 @@ TextureImporter:
       name: Combat-Sheet_116
       rect:
         serializedVersion: 2
-        x: 502
-        y: 879
-        width: 8
-        height: 10
+        x: 192
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3391,12 +3391,12 @@ TextureImporter:
       name: Combat-Sheet_117
       rect:
         serializedVersion: 2
-        x: 423
-        y: 868
-        width: 8
-        height: 11
+        x: 256
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3413,12 +3413,12 @@ TextureImporter:
       name: Combat-Sheet_118
       rect:
         serializedVersion: 2
-        x: 432
-        y: 859
-        width: 14
-        height: 25
+        x: 320
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3435,12 +3435,12 @@ TextureImporter:
       name: Combat-Sheet_119
       rect:
         serializedVersion: 2
-        x: 487
-        y: 872
-        width: 9
-        height: 11
+        x: 0
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3457,12 +3457,12 @@ TextureImporter:
       name: Combat-Sheet_120
       rect:
         serializedVersion: 2
-        x: 497
-        y: 850
-        width: 12
-        height: 31
+        x: 64
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3479,12 +3479,12 @@ TextureImporter:
       name: Combat-Sheet_121
       rect:
         serializedVersion: 2
-        x: 431
-        y: 848
-        width: 16
-        height: 14
+        x: 128
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3501,12 +3501,12 @@ TextureImporter:
       name: Combat-Sheet_122
       rect:
         serializedVersion: 2
-        x: 88
-        y: 770
-        width: 22
-        height: 44
+        x: 192
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3523,12 +3523,12 @@ TextureImporter:
       name: Combat-Sheet_123
       rect:
         serializedVersion: 2
-        x: 135
-        y: 774
-        width: 51
-        height: 40
+        x: 256
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3545,12 +3545,12 @@ TextureImporter:
       name: Combat-Sheet_124
       rect:
         serializedVersion: 2
-        x: 154
-        y: 808
-        width: 8
-        height: 8
+        x: 320
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3567,12 +3567,12 @@ TextureImporter:
       name: Combat-Sheet_125
       rect:
         serializedVersion: 2
-        x: 15
-        y: 769
-        width: 73
-        height: 12
+        x: 384
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3589,12 +3589,12 @@ TextureImporter:
       name: Combat-Sheet_126
       rect:
         serializedVersion: 2
-        x: 99
-        y: 770
-        width: 18
-        height: 9
+        x: 0
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3611,12 +3611,12 @@ TextureImporter:
       name: Combat-Sheet_127
       rect:
         serializedVersion: 2
-        x: 88
-        y: 713
-        width: 18
-        height: 44
+        x: 64
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3633,12 +3633,12 @@ TextureImporter:
       name: Combat-Sheet_128
       rect:
         serializedVersion: 2
-        x: 153
-        y: 751
-        width: 6
-        height: 6
+        x: 128
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3655,12 +3655,12 @@ TextureImporter:
       name: Combat-Sheet_129
       rect:
         serializedVersion: 2
-        x: 210
-        y: 718
-        width: 21
-        height: 39
+        x: 192
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3677,12 +3677,12 @@ TextureImporter:
       name: Combat-Sheet_130
       rect:
         serializedVersion: 2
-        x: 273
-        y: 723
-        width: 37
-        height: 35
+        x: 128
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3699,12 +3699,12 @@ TextureImporter:
       name: Combat-Sheet_131
       rect:
         serializedVersion: 2
-        x: 156
-        y: 714
-        width: 23
-        height: 14
+        x: 192
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3721,12 +3721,12 @@ TextureImporter:
       name: Combat-Sheet_132
       rect:
         serializedVersion: 2
-        x: 363
-        y: 726
-        width: 8
-        height: 6
+        x: 256
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3743,12 +3743,12 @@ TextureImporter:
       name: Combat-Sheet_133
       rect:
         serializedVersion: 2
-        x: 203
-        y: 717
-        width: 9
-        height: 8
+        x: 320
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3765,12 +3765,12 @@ TextureImporter:
       name: Combat-Sheet_134
       rect:
         serializedVersion: 2
-        x: 18
-        y: 709
-        width: 10
-        height: 7
+        x: 384
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3787,12 +3787,12 @@ TextureImporter:
       name: Combat-Sheet_135
       rect:
         serializedVersion: 2
-        x: 12
-        y: 678
-        width: 10
-        height: 10
+        x: 448
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3809,12 +3809,12 @@ TextureImporter:
       name: Combat-Sheet_136
       rect:
         serializedVersion: 2
-        x: 14
-        y: 684
-        width: 9
-        height: 7
+        x: 512
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3831,12 +3831,12 @@ TextureImporter:
       name: Combat-Sheet_137
       rect:
         serializedVersion: 2
-        x: 21
-        y: 681
-        width: 8
-        height: 9
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3853,12 +3853,12 @@ TextureImporter:
       name: Combat-Sheet_138
       rect:
         serializedVersion: 2
-        x: 85
-        y: 654
-        width: 13
-        height: 25
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3875,12 +3875,12 @@ TextureImporter:
       name: Combat-Sheet_139
       rect:
         serializedVersion: 2
-        x: 88
-        y: 648
-        width: 15
-        height: 34
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3897,12 +3897,12 @@ TextureImporter:
       name: Combat-Sheet_140
       rect:
         serializedVersion: 2
-        x: 92
-        y: 655
-        width: 14
-        height: 28
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3919,12 +3919,12 @@ TextureImporter:
       name: Combat-Sheet_141
       rect:
         serializedVersion: 2
-        x: 160
-        y: 646
-        width: 11
-        height: 16
+        x: 256
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3941,12 +3941,12 @@ TextureImporter:
       name: Combat-Sheet_142
       rect:
         serializedVersion: 2
-        x: 4
-        y: 563
-        width: 60
-        height: 49
+        x: 320
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3963,12 +3963,12 @@ TextureImporter:
       name: Combat-Sheet_143
       rect:
         serializedVersion: 2
-        x: 75
-        y: 603
-        width: 13
-        height: 8
+        x: 384
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3985,12 +3985,12 @@ TextureImporter:
       name: Combat-Sheet_144
       rect:
         serializedVersion: 2
-        x: 90
-        y: 601
-        width: 20
-        height: 17
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4007,12 +4007,12 @@ TextureImporter:
       name: Combat-Sheet_145
       rect:
         serializedVersion: 2
-        x: 150
-        y: 604
-        width: 14
-        height: 11
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4029,12 +4029,12 @@ TextureImporter:
       name: Combat-Sheet_146
       rect:
         serializedVersion: 2
-        x: 164
-        y: 603
-        width: 19
-        height: 12
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4051,12 +4051,12 @@ TextureImporter:
       name: Combat-Sheet_147
       rect:
         serializedVersion: 2
-        x: 223
-        y: 605
-        width: 24
-        height: 7
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4073,12 +4073,12 @@ TextureImporter:
       name: Combat-Sheet_148
       rect:
         serializedVersion: 2
-        x: 236
-        y: 607
-        width: 17
-        height: 10
+        x: 256
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4095,12 +4095,12 @@ TextureImporter:
       name: Combat-Sheet_149
       rect:
         serializedVersion: 2
-        x: 287
-        y: 592
-        width: 31
-        height: 39
+        x: 320
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4117,12 +4117,12 @@ TextureImporter:
       name: Combat-Sheet_150
       rect:
         serializedVersion: 2
-        x: 360
-        y: 587
-        width: 22
-        height: 31
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4139,12 +4139,12 @@ TextureImporter:
       name: Combat-Sheet_151
       rect:
         serializedVersion: 2
-        x: 361
-        y: 617
-        width: 20
-        height: 19
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4161,12 +4161,12 @@ TextureImporter:
       name: Combat-Sheet_152
       rect:
         serializedVersion: 2
-        x: 426
-        y: 586
-        width: 20
-        height: 46
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4183,12 +4183,12 @@ TextureImporter:
       name: Combat-Sheet_153
       rect:
         serializedVersion: 2
-        x: 484
-        y: 581
-        width: 85
-        height: 50
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4205,12 +4205,12 @@ TextureImporter:
       name: Combat-Sheet_154
       rect:
         serializedVersion: 2
-        x: 91
-        y: 530
-        width: 29
-        height: 35
+        x: 256
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4227,12 +4227,12 @@ TextureImporter:
       name: Combat-Sheet_155
       rect:
         serializedVersion: 2
-        x: 150
-        y: 524
-        width: 19
-        height: 17
+        x: 320
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4249,12 +4249,12 @@ TextureImporter:
       name: Combat-Sheet_156
       rect:
         serializedVersion: 2
-        x: 159
-        y: 539
-        width: 20
-        height: 18
+        x: 384
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4271,12 +4271,12 @@ TextureImporter:
       name: Combat-Sheet_157
       rect:
         serializedVersion: 2
-        x: 148
-        y: 523
-        width: 7
-        height: 6
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4293,12 +4293,12 @@ TextureImporter:
       name: Combat-Sheet_158
       rect:
         serializedVersion: 2
-        x: 196
-        y: 517
-        width: 21
-        height: 16
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4315,12 +4315,12 @@ TextureImporter:
       name: Combat-Sheet_159
       rect:
         serializedVersion: 2
-        x: 216
-        y: 522
-        width: 12
-        height: 14
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4337,12 +4337,12 @@ TextureImporter:
       name: Combat-Sheet_160
       rect:
         serializedVersion: 2
-        x: 257
-        y: 517
-        width: 28
-        height: 15
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4359,12 +4359,12 @@ TextureImporter:
       name: Combat-Sheet_161
       rect:
         serializedVersion: 2
-        x: 320
-        y: 518
-        width: 20
-        height: 15
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4381,12 +4381,12 @@ TextureImporter:
       name: Combat-Sheet_162
       rect:
         serializedVersion: 2
-        x: 77
-        y: 465
-        width: 35
-        height: 39
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4403,12 +4403,12 @@ TextureImporter:
       name: Combat-Sheet_163
       rect:
         serializedVersion: 2
-        x: 136
-        y: 460
-        width: 46
-        height: 43
+        x: 384
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4425,12 +4425,12 @@ TextureImporter:
       name: Combat-Sheet_164
       rect:
         serializedVersion: 2
-        x: 141
-        y: 497
-        width: 6
-        height: 7
+        x: 448
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4443,1639 +4443,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_165
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 457
-        width: 48
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 450aaf4a63e1e8160800000000000000
-      internalID: 7029589288416878676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_166
-      rect:
-        serializedVersion: 2
-        x: 263
-        y: 455
-        width: 51
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: abb2387cd03bb5380800000000000000
-      internalID: -8981388160097113158
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_167
-      rect:
-        serializedVersion: 2
-        x: 325
-        y: 453
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 576467812b51f0850800000000000000
-      internalID: 6345314254647084661
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_168
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 472
-        width: 11
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f34c3c99d4e513720800000000000000
-      internalID: 2824142128723248191
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_169
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 386
-        width: 24
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 408561c439d5a77a0800000000000000
-      internalID: -6378683034998777852
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_170
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 386
-        width: 24
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 787518e935b6b2bb0800000000000000
-      internalID: -4959752557732735097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_171
-      rect:
-        serializedVersion: 2
-        x: 147
-        y: 384
-        width: 29
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 70eb934fb66220170800000000000000
-      internalID: 8143113321340059143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_172
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 385
-        width: 30
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f3b4babade1e971c0800000000000000
-      internalID: -4505321541303841985
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_173
-      rect:
-        serializedVersion: 2
-        x: 274
-        y: 386
-        width: 25
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 422974597a72b4800800000000000000
-      internalID: 597614976274240036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_174
-      rect:
-        serializedVersion: 2
-        x: 294
-        y: 394
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b29ed24aee4bdcca0800000000000000
-      internalID: -5994936591910573781
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_175
-      rect:
-        serializedVersion: 2
-        x: 299
-        y: 389
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d51469eb6d3d6fe0800000000000000
-      internalID: -1194230792496867884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_176
-      rect:
-        serializedVersion: 2
-        x: 338
-        y: 387
-        width: 31
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d2f8162592988c560800000000000000
-      internalID: 7334262803741642541
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_177
-      rect:
-        serializedVersion: 2
-        x: 356
-        y: 388
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac8aa1b4a74e4e090800000000000000
-      internalID: -8006023023660717878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_178
-      rect:
-        serializedVersion: 2
-        x: 406
-        y: 393
-        width: 15
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 267b88942535f93a0800000000000000
-      internalID: -6656510111344183454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_179
-      rect:
-        serializedVersion: 2
-        x: 418
-        y: 391
-        width: 14
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 97536f66446689890800000000000000
-      internalID: -7451093139513264775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_180
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 341
-        width: 54
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c7cc13c3e73a8210800000000000000
-      internalID: 1335941690839320513
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_181
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 341
-        width: 53
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b482238e025306250800000000000000
-      internalID: 5935802724325140555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_182
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 342
-        width: 54
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 35a1c1a67e1910ad0800000000000000
-      internalID: -2737746675360851373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_183
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 342
-        width: 53
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 14fbe825720d15db0800000000000000
-      internalID: -4804830460120219839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_184
-      rect:
-        serializedVersion: 2
-        x: 222
-        y: 261
-        width: 30
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 87e09eab1ae6d4e90800000000000000
-      internalID: -7039849001605591432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_185
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 269
-        width: 28
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d5154a368e0be4960800000000000000
-      internalID: 7588196934316478813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_186
-      rect:
-        serializedVersion: 2
-        x: 354
-        y: 281
-        width: 26
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 031bf8da678fc1d00800000000000000
-      internalID: 944903210442666288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_187
-      rect:
-        serializedVersion: 2
-        x: 394
-        y: 214
-        width: 50
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e47e4ddf78975e560800000000000000
-      internalID: 7342408392483596110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_188
-      rect:
-        serializedVersion: 2
-        x: 481
-        y: 305
-        width: 80
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 184593cab3f2ec760800000000000000
-      internalID: 7479967964447986817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_189
-      rect:
-        serializedVersion: 2
-        x: 149
-        y: 260
-        width: 39
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9363fc49d6393ad90800000000000000
-      internalID: -7087659289693702599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_190
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 218
-        width: 13
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a5f66e4afd196cf10800000000000000
-      internalID: 2289677850294775642
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_191
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 215
-        width: 25
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8c0212ae407c58a40800000000000000
-      internalID: 5369916954631020744
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_192
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 210
-        width: 31
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8e4229005b3545bd0800000000000000
-      internalID: -2642395044495874840
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_193
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 214
-        width: 32
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 71b5b595974baf980800000000000000
-      internalID: -8504286513052558569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_194
-      rect:
-        serializedVersion: 2
-        x: 269
-        y: 214
-        width: 35
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 87bce3011e6d1e450800000000000000
-      internalID: 6116406031074380664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_195
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 226
-        width: 13
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c888c6a9919a39140800000000000000
-      internalID: 4725306361471862924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_196
-      rect:
-        serializedVersion: 2
-        x: 331
-        y: 223
-        width: 19
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d99c18fccee1af30800000000000000
-      internalID: 4585208459743238612
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_197
-      rect:
-        serializedVersion: 2
-        x: 345
-        y: 214
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f3bd5bf9d697d65c0800000000000000
-      internalID: -4220583764038395073
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_198
-      rect:
-        serializedVersion: 2
-        x: 354
-        y: 229
-        width: 11
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e693135b9d9cc77d0800000000000000
-      internalID: -2919236521557935762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_199
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 217
-        width: 13
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bf4e56c71601514c0800000000000000
-      internalID: -4317526656879827717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_200
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 145
-        width: 37
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8a52c76e3d2b2ae20800000000000000
-      internalID: 3360444895146550696
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_201
-      rect:
-        serializedVersion: 2
-        x: 141
-        y: 155
-        width: 42
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fef12ee218d798e40800000000000000
-      internalID: 5659192400558563311
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_202
-      rect:
-        serializedVersion: 2
-        x: 204
-        y: 165
-        width: 37
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c5c0bb29cb5d6f600800000000000000
-      internalID: 501823414390688860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_203
-      rect:
-        serializedVersion: 2
-        x: 267
-        y: 157
-        width: 41
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7f2e9f76c59e91390800000000000000
-      internalID: -7846984292625685769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_204
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 160
-        width: 22
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 16fe5ff76fe8ef690800000000000000
-      internalID: -7566453134575931551
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_205
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 143
-        width: 21
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c803304766839b210800000000000000
-      internalID: 1349171576058359948
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_206
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 88
-        width: 18
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9aec710057ac547a0800000000000000
-      internalID: -6393481492121006423
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_207
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 83
-        width: 27
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f13e490959be8f980800000000000000
-      internalID: -8504788868680850657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_208
-      rect:
-        serializedVersion: 2
-        x: 142
-        y: 80
-        width: 36
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 27bfb10069fab10b0800000000000000
-      internalID: -5756814639881258126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_209
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 80
-        width: 36
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 52e13afbba0a07dc0800000000000000
-      internalID: -3643235439027741147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_210
-      rect:
-        serializedVersion: 2
-        x: 270
-        y: 79
-        width: 38
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 98fe347757fc57da0800000000000000
-      internalID: -5947619629453807735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_211
-      rect:
-        serializedVersion: 2
-        x: 332
-        y: 77
-        width: 43
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6919d7559c6b47340800000000000000
-      internalID: 4860710873678582166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_212
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 82
-        width: 23
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7c8e34bb89d3d7560800000000000000
-      internalID: 7313069096105666759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_213
-      rect:
-        serializedVersion: 2
-        x: 403
-        y: 101
-        width: 15
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 510c5b179bbc3dc40800000000000000
-      internalID: 5535992364305596437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_214
-      rect:
-        serializedVersion: 2
-        x: 418
-        y: 96
-        width: 11
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fd9200c38e6f18060800000000000000
-      internalID: 6954110776936245727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_215
-      rect:
-        serializedVersion: 2
-        x: 425
-        y: 87
-        width: 11
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d5de9f781e1a8ee0800000000000000
-      internalID: -1258160055327468076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_216
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 83
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ad20f19c49e181500800000000000000
-      internalID: 367076994008941274
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_217
-      rect:
-        serializedVersion: 2
-        x: 427
-        y: 80
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 546ea0daac57a5840800000000000000
-      internalID: 5213609031981786693
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_218
-      rect:
-        serializedVersion: 2
-        x: 222
-        y: 38
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d6f8518bd24ad51a0800000000000000
-      internalID: -6819113744500158611
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_219
-      rect:
-        serializedVersion: 2
-        x: 286
-        y: 39
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 02b84eb57ef7983a0800000000000000
-      internalID: -6662653542062060768
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_220
-      rect:
-        serializedVersion: 2
-        x: 338
-        y: 36
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 52ba5787d029564b0800000000000000
-      internalID: -5447787587681539291
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_221
-      rect:
-        serializedVersion: 2
-        x: 402
-        y: 40
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 47b9f158ad4fb6ec0800000000000000
-      internalID: -3572492660014867596
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_222
-      rect:
-        serializedVersion: 2
-        x: 467
-        y: 45
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 29160ba49d0b0c2b0800000000000000
-      internalID: -5566254692122467950
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_223
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 35
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 84175d3fd5b0d46b0800000000000000
-      internalID: -5310575887449231032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_224
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 25
-        width: 13
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6211a22d3dd773850800000000000000
-      internalID: 6356687747774288166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_225
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 36
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 505cc8f0106f78d90800000000000000
-      internalID: -7095432203482643195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_226
-      rect:
-        serializedVersion: 2
-        x: 155
-        y: 25
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 166d64046a8f03370800000000000000
-      internalID: 8300407506170467937
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_227
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 26
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f40f243cc2981dd0800000000000000
-      internalID: -2515098986139941645
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_228
-      rect:
-        serializedVersion: 2
-        x: 274
-        y: 31
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4742628a073048b10800000000000000
-      internalID: 1982713518342153332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_229
-      rect:
-        serializedVersion: 2
-        x: 419
-        y: 27
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 398913839eae67be0800000000000000
-      internalID: -1479737140153575277
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_230
-      rect:
-        serializedVersion: 2
-        x: 484
-        y: 31
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9fdcd4936e28424f0800000000000000
-      internalID: -854414103978062343
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_231
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 22
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4bd100427517e5e80800000000000000
-      internalID: -8187982453432902220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_232
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 12
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 120b514b6539c5170800000000000000
-      internalID: 8168565824741027873
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_233
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 19
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 51be7c19a45d0a7d0800000000000000
-      internalID: -2909090843031246059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_234
-      rect:
-        serializedVersion: 2
-        x: 291
-        y: 17
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a0754239d51466bb0800000000000000
-      internalID: -4943191670836144374
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_235
-      rect:
-        serializedVersion: 2
-        x: 355
-        y: 21
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e56557a39434e4910800000000000000
-      internalID: 1823468880924071518
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_236
-      rect:
-        serializedVersion: 2
-        x: 410
-        y: 16
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c0c33cb2d73cf0b20800000000000000
-      internalID: 3102913610654104588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_237
-      rect:
-        serializedVersion: 2
-        x: 474
-        y: 19
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 86b3e7f5c6dc4f750800000000000000
-      internalID: 6337916440959400808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Combat-Sheet_238
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 9
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 69ef26b179fe2a580800000000000000
-      internalID: -8817221688159437162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1a5129e8d5d616248880d59379f52f56
     internalID: 0
     vertices: []
     indices: 
@@ -6083,7 +4455,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Combat-Sheet_0: 1688984239575767156
       Combat-Sheet_1: -195402904824048437
@@ -6159,88 +4533,14 @@ TextureImporter:
       Combat-Sheet_162: 6805828287026671032
       Combat-Sheet_163: 3782119549681805804
       Combat-Sheet_164: -1474034701193790975
-      Combat-Sheet_165: 7029589288416878676
-      Combat-Sheet_166: -8981388160097113158
-      Combat-Sheet_167: 6345314254647084661
-      Combat-Sheet_168: 2824142128723248191
-      Combat-Sheet_169: -6378683034998777852
       Combat-Sheet_17: 8699952703190805772
-      Combat-Sheet_170: -4959752557732735097
-      Combat-Sheet_171: 8143113321340059143
-      Combat-Sheet_172: -4505321541303841985
-      Combat-Sheet_173: 597614976274240036
-      Combat-Sheet_174: -5994936591910573781
-      Combat-Sheet_175: -1194230792496867884
-      Combat-Sheet_176: 7334262803741642541
-      Combat-Sheet_177: -8006023023660717878
-      Combat-Sheet_178: -6656510111344183454
-      Combat-Sheet_179: -7451093139513264775
       Combat-Sheet_18: -5817082728362248955
-      Combat-Sheet_180: 1335941690839320513
-      Combat-Sheet_181: 5935802724325140555
-      Combat-Sheet_182: -2737746675360851373
-      Combat-Sheet_183: -4804830460120219839
-      Combat-Sheet_184: -7039849001605591432
-      Combat-Sheet_185: 7588196934316478813
-      Combat-Sheet_186: 944903210442666288
-      Combat-Sheet_187: 7342408392483596110
-      Combat-Sheet_188: 7479967964447986817
-      Combat-Sheet_189: -7087659289693702599
       Combat-Sheet_19: 5493924631865087754
-      Combat-Sheet_190: 2289677850294775642
-      Combat-Sheet_191: 5369916954631020744
-      Combat-Sheet_192: -2642395044495874840
-      Combat-Sheet_193: -8504286513052558569
-      Combat-Sheet_194: 6116406031074380664
-      Combat-Sheet_195: 4725306361471862924
-      Combat-Sheet_196: 4585208459743238612
-      Combat-Sheet_197: -4220583764038395073
-      Combat-Sheet_198: -2919236521557935762
-      Combat-Sheet_199: -4317526656879827717
       Combat-Sheet_2: -4499147819533529707
       Combat-Sheet_20: -7701239403725447839
-      Combat-Sheet_200: 3360444895146550696
-      Combat-Sheet_201: 5659192400558563311
-      Combat-Sheet_202: 501823414390688860
-      Combat-Sheet_203: -7846984292625685769
-      Combat-Sheet_204: -7566453134575931551
-      Combat-Sheet_205: 1349171576058359948
-      Combat-Sheet_206: -6393481492121006423
-      Combat-Sheet_207: -8504788868680850657
-      Combat-Sheet_208: -5756814639881258126
-      Combat-Sheet_209: -3643235439027741147
       Combat-Sheet_21: 2839158210573385664
-      Combat-Sheet_210: -5947619629453807735
-      Combat-Sheet_211: 4860710873678582166
-      Combat-Sheet_212: 7313069096105666759
-      Combat-Sheet_213: 5535992364305596437
-      Combat-Sheet_214: 6954110776936245727
-      Combat-Sheet_215: -1258160055327468076
-      Combat-Sheet_216: 367076994008941274
-      Combat-Sheet_217: 5213609031981786693
-      Combat-Sheet_218: -6819113744500158611
-      Combat-Sheet_219: -6662653542062060768
       Combat-Sheet_22: 7264204919026301191
-      Combat-Sheet_220: -5447787587681539291
-      Combat-Sheet_221: -3572492660014867596
-      Combat-Sheet_222: -5566254692122467950
-      Combat-Sheet_223: -5310575887449231032
-      Combat-Sheet_224: 6356687747774288166
-      Combat-Sheet_225: -7095432203482643195
-      Combat-Sheet_226: 8300407506170467937
-      Combat-Sheet_227: -2515098986139941645
-      Combat-Sheet_228: 1982713518342153332
-      Combat-Sheet_229: -1479737140153575277
       Combat-Sheet_23: 1574977449110771120
-      Combat-Sheet_230: -854414103978062343
-      Combat-Sheet_231: -8187982453432902220
-      Combat-Sheet_232: 8168565824741027873
-      Combat-Sheet_233: -2909090843031246059
-      Combat-Sheet_234: -4943191670836144374
-      Combat-Sheet_235: 1823468880924071518
-      Combat-Sheet_236: 3102913610654104588
-      Combat-Sheet_237: 6337916440959400808
-      Combat-Sheet_238: -8817221688159437162
       Combat-Sheet_24: 7453241934035487852
       Combat-Sheet_25: -4707728276206195372
       Combat-Sheet_26: 3606232398151298705

@@ -15,9 +15,11 @@ public class SimpleCameraFollow : MonoBehaviour
     [SerializeField] private float horizontalLookAhead = 1.45f;
     [SerializeField] private float lookAheadSmoothing = 8f;
     [SerializeField] private float verticalFollowSpeed = 5.5f;
-
     private Rigidbody2D _targetBody;
     private float _currentLookAhead;
+    private float _shakeTimer;
+    private float _shakeDuration;
+    private float _shakeStrength;
 
     public PlayerCameraConfig CreateConfigSnapshot()
     {
@@ -75,6 +77,22 @@ public class SimpleCameraFollow : MonoBehaviour
         currentPosition.x = Mathf.Lerp(currentPosition.x, desiredPosition.x, followSpeed * Time.deltaTime);
         currentPosition.y = Mathf.Lerp(currentPosition.y, desiredPosition.y, verticalFollowSpeed * Time.deltaTime);
         currentPosition.z = desiredPosition.z;
+
+        if (_shakeTimer > 0f)
+        {
+            float normalized = _shakeDuration <= 0f ? 0f : _shakeTimer / _shakeDuration;
+            Vector2 shake = Random.insideUnitCircle * (_shakeStrength * normalized);
+            currentPosition += new Vector3(shake.x, shake.y, 0f);
+            _shakeTimer = Mathf.Max(0f, _shakeTimer - Time.unscaledDeltaTime);
+        }
+
         transform.position = currentPosition;
+    }
+
+    public void AddShake(float strength, float duration)
+    {
+        _shakeStrength = Mathf.Max(_shakeStrength, Mathf.Max(0f, strength));
+        _shakeDuration = Mathf.Max(_shakeDuration, Mathf.Max(0.01f, duration));
+        _shakeTimer = Mathf.Max(_shakeTimer, _shakeDuration);
     }
 }

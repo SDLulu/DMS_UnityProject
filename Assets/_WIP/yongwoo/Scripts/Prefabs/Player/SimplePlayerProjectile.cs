@@ -72,7 +72,12 @@ public class SimplePlayerProjectile : MonoBehaviour
             }
         }
 
-        transform.localScale = Vector3.one * Mathf.Max(0.22f, defaultRadius * 4.5f);
+        if (Mathf.Approximately(transform.localScale.x, 1f)
+            && Mathf.Approximately(transform.localScale.y, 1f)
+            && Mathf.Approximately(transform.localScale.z, 1f))
+        {
+            transform.localScale = Vector3.one * Mathf.Max(0.22f, defaultRadius * 4.5f);
+        }
 
         CircleCollider2D circleCollider = GetComponent<CircleCollider2D>();
         circleCollider.isTrigger = true;
@@ -133,7 +138,11 @@ public class SimplePlayerProjectile : MonoBehaviour
         MonoBehaviour receiver = ResolveDamageReceiver(other);
         if (receiver is IDamageReceiver damageReceiver)
         {
-            damageReceiver.ReceiveHit(_damage, _knockback, _owner);
+            if (damageReceiver.ReceiveHit(_damage, _knockback, _owner))
+            {
+                CombatHitFeedback.PlayLightHit();
+            }
+
             Destroy(gameObject);
             return;
         }

@@ -10,7 +10,7 @@ public class SimplePlayerCombatEditor : Editor
     public override void OnInspectorGUI()
     {
         EditorGUILayout.HelpBox(
-            "무기는 PlayerHand 자식으로 배치합니다.\n" +
+            "무기는 WeaponOrigin/MuzzlePoint 구조로 배치합니다.\n" +
             "SwordWeapon/GunWeapon 레퍼런스를 연결하면\n" +
             "Q키로 전환, 좌클릭으로 공격합니다.",
             MessageType.Info);

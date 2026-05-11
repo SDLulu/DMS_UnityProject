@@ -23,6 +23,8 @@ public enum BossAnimationState
 [RequireComponent(typeof(BossInteraction))]
 public class BossController : MonoBehaviour
 {
+    private const string ProjectileLayerName = "Projectile";
+
     [SerializeField] private BossConfig _config = new BossConfig();
     [SerializeField] private string fallbackTargetTag = "Player";
     [SerializeField] private float reacquireInterval = 0.35f;
@@ -663,6 +665,7 @@ public class BossController : MonoBehaviour
             GameObject projectileObject = new GameObject($"{_activePattern.name}_Projectile");
             projectileObject.transform.position = spawnPosition;
             projectileObject.transform.localScale = Vector3.one * Mathf.Max(0.2f, _activePattern.projectileRadius * 3.5f);
+            ApplyProjectileLayer(projectileObject);
 
             SpriteRenderer renderer = projectileObject.AddComponent<SpriteRenderer>();
             renderer.sprite = RuntimeSpriteUtility.WhiteSprite;
@@ -1007,6 +1010,15 @@ public class BossController : MonoBehaviour
         }
 
         return candidate;
+    }
+
+    private static void ApplyProjectileLayer(GameObject projectile)
+    {
+        int layer = LayerMask.NameToLayer(ProjectileLayerName);
+        if (layer >= 0)
+        {
+            projectile.layer = layer;
+        }
     }
 
     private void OnDrawGizmosSelected()

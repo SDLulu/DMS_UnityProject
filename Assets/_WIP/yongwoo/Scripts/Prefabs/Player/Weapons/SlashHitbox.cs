@@ -42,7 +42,13 @@ public class SlashHitbox : MonoBehaviour
             hitLayers = LayerMask.GetMask("Enemy");
         }
 
-        GetComponent<Collider2D>().isTrigger = true;
+        Collider2D collider = GetComponent<Collider2D>();
+        if (collider == null)
+        {
+            collider = gameObject.AddComponent<BoxCollider2D>();
+        }
+
+        collider.isTrigger = true;
         gameObject.SetActive(false);
     }
 
@@ -66,7 +72,10 @@ public class SlashHitbox : MonoBehaviour
 
         _alreadyHit.Add(target);
         Vector2 knockback = _aimDirection * knockbackForce + Vector2.up * knockbackUpForce;
-        damageReceiver.ReceiveHit(damage, knockback, _owner);
+        if (damageReceiver.ReceiveHit(damage, knockback, _owner))
+        {
+            CombatHitFeedback.PlayLightHit();
+        }
     }
 
     private MonoBehaviour ResolveDamageReceiver(Collider2D hit)

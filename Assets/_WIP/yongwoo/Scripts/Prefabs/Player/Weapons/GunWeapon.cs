@@ -5,11 +5,13 @@ using UnityEngine;
 // - 총알은 독립 객체이므로 Instantiate로 생성합니다.
 //
 // 구조 포인트:
-// - PlayerHand의 자식으로 배치되어 마우스 회전을 자동으로 따라갑니다.
+// - 총구 위치는 muzzlePoint 기준으로만 계산하고, 포즈는 플레이어 애니메이션이 담당합니다.
 
 [DisallowMultipleComponent]
 public class GunWeapon : MonoBehaviour
 {
+    private const string ProjectileLayerName = "Projectile";
+
     [Header("Attack")]
     [SerializeField] private float cooldown = 0.18f;
 
@@ -30,6 +32,7 @@ public class GunWeapon : MonoBehaviour
     private float _muzzleFlashTimer;
 
     public bool CanAttack => _cooldownTimer <= 0f;
+    public Transform MuzzlePoint => muzzlePoint;
 
     public void Attack(Vector2 aimDirection, GameObject owner)
     {
@@ -55,6 +58,7 @@ public class GunWeapon : MonoBehaviour
         if (projectilePrefab != null)
         {
             GameObject proj = Instantiate(projectilePrefab, spawnPos, Quaternion.identity);
+            ApplyProjectileLayer(proj);
             SimplePlayerProjectile projectile = proj.GetComponent<SimplePlayerProjectile>();
             if (projectile != null)
             {
@@ -65,6 +69,7 @@ public class GunWeapon : MonoBehaviour
         {
             GameObject proj = new GameObject("PlayerProjectile");
             proj.transform.position = spawnPos;
+            ApplyProjectileLayer(proj);
             SimplePlayerProjectile projectile = proj.AddComponent<SimplePlayerProjectile>();
             projectile.Launch(dir, projectileSpeed, projectileLifetime, damage, knockback, owner);
         }
@@ -95,5 +100,14 @@ public class GunWeapon : MonoBehaviour
         }
 
         _muzzleFlashTimer = 0f;
+    }
+
+    private static void ApplyProjectileLayer(GameObject projectile)
+    {
+        int layer = LayerMask.NameToLayer(ProjectileLayerName);
+        if (layer >= 0)
+        {
+            projectile.layer = layer;
+        }
     }
 }

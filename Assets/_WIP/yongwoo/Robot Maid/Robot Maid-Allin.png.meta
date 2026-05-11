@@ -1,0 +1,3419 @@
+fileFormatVersion: 2
+guid: 679cb3069a96d1843955da1899873b84
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8602821715315827022
+    second: Robot Maid-Allin_0
+  - first:
+      213: 8387102233334117458
+    second: Robot Maid-Allin_1
+  - first:
+      213: -4195911032633501149
+    second: Robot Maid-Allin_2
+  - first:
+      213: 8045583912517850637
+    second: Robot Maid-Allin_3
+  - first:
+      213: -4294048141728029075
+    second: Robot Maid-Allin_4
+  - first:
+      213: 6196209985417483063
+    second: Robot Maid-Allin_5
+  - first:
+      213: 5957909168601179598
+    second: Robot Maid-Allin_6
+  - first:
+      213: -8126956806370236470
+    second: Robot Maid-Allin_7
+  - first:
+      213: -7371258169579458015
+    second: Robot Maid-Allin_8
+  - first:
+      213: 6421170218343085458
+    second: Robot Maid-Allin_9
+  - first:
+      213: -8427821646696530645
+    second: Robot Maid-Allin_10
+  - first:
+      213: -3984442179981209515
+    second: Robot Maid-Allin_11
+  - first:
+      213: 4445678743505496853
+    second: Robot Maid-Allin_12
+  - first:
+      213: 3400193741400996783
+    second: Robot Maid-Allin_13
+  - first:
+      213: 6446019550210824298
+    second: Robot Maid-Allin_14
+  - first:
+      213: -7031717504400751346
+    second: Robot Maid-Allin_15
+  - first:
+      213: 4371600109569642675
+    second: Robot Maid-Allin_16
+  - first:
+      213: 6730845001145037133
+    second: Robot Maid-Allin_17
+  - first:
+      213: -2961015976981214519
+    second: Robot Maid-Allin_18
+  - first:
+      213: 8333705332297255727
+    second: Robot Maid-Allin_19
+  - first:
+      213: 4469034743378944863
+    second: Robot Maid-Allin_20
+  - first:
+      213: -6297231112372879475
+    second: Robot Maid-Allin_21
+  - first:
+      213: 6236817044185052964
+    second: Robot Maid-Allin_22
+  - first:
+      213: -3763252001154905625
+    second: Robot Maid-Allin_23
+  - first:
+      213: 8621202422837631574
+    second: Robot Maid-Allin_24
+  - first:
+      213: -1396541465464272185
+    second: Robot Maid-Allin_25
+  - first:
+      213: -6768105090151915528
+    second: Robot Maid-Allin_26
+  - first:
+      213: -5072196791570372999
+    second: Robot Maid-Allin_27
+  - first:
+      213: -8564552997756760168
+    second: Robot Maid-Allin_28
+  - first:
+      213: -8934948341428973824
+    second: Robot Maid-Allin_29
+  - first:
+      213: -5902128381571182280
+    second: Robot Maid-Allin_30
+  - first:
+      213: -2491304742005592143
+    second: Robot Maid-Allin_31
+  - first:
+      213: -7678424908966058146
+    second: Robot Maid-Allin_32
+  - first:
+      213: 5142851723394251353
+    second: Robot Maid-Allin_33
+  - first:
+      213: 2718476234786834163
+    second: Robot Maid-Allin_34
+  - first:
+      213: 8657147140466669123
+    second: Robot Maid-Allin_35
+  - first:
+      213: -7319912018584262465
+    second: Robot Maid-Allin_36
+  - first:
+      213: -5907659798540395659
+    second: Robot Maid-Allin_37
+  - first:
+      213: -7863312501674168878
+    second: Robot Maid-Allin_38
+  - first:
+      213: 6065072405953865049
+    second: Robot Maid-Allin_39
+  - first:
+      213: -4994471360750764496
+    second: Robot Maid-Allin_40
+  - first:
+      213: -8279673647079918069
+    second: Robot Maid-Allin_41
+  - first:
+      213: -8444224011028295019
+    second: Robot Maid-Allin_42
+  - first:
+      213: 6462748497450497041
+    second: Robot Maid-Allin_43
+  - first:
+      213: 6053252627497169040
+    second: Robot Maid-Allin_44
+  - first:
+      213: 2868133305123640741
+    second: Robot Maid-Allin_45
+  - first:
+      213: 2352695990909129051
+    second: Robot Maid-Allin_46
+  - first:
+      213: -7098901444349427856
+    second: Robot Maid-Allin_47
+  - first:
+      213: -8727394221832180478
+    second: Robot Maid-Allin_48
+  - first:
+      213: -3782096807072198726
+    second: Robot Maid-Allin_49
+  - first:
+      213: 5711285418774719782
+    second: Robot Maid-Allin_50
+  - first:
+      213: -6979036026432403696
+    second: Robot Maid-Allin_51
+  - first:
+      213: 3591543204927167612
+    second: Robot Maid-Allin_52
+  - first:
+      213: 6283239145307760098
+    second: Robot Maid-Allin_53
+  - first:
+      213: 7910375631833911553
+    second: Robot Maid-Allin_54
+  - first:
+      213: 8084259725007094380
+    second: Robot Maid-Allin_55
+  - first:
+      213: -2637084276040027981
+    second: Robot Maid-Allin_56
+  - first:
+      213: 1414251314354348752
+    second: Robot Maid-Allin_57
+  - first:
+      213: -8923238020031762062
+    second: Robot Maid-Allin_58
+  - first:
+      213: -3698246552655931999
+    second: Robot Maid-Allin_59
+  - first:
+      213: 5705731004682068311
+    second: Robot Maid-Allin_60
+  - first:
+      213: -2782310361945448111
+    second: Robot Maid-Allin_61
+  - first:
+      213: -5115505887334016823
+    second: Robot Maid-Allin_62
+  - first:
+      213: 858204559391770639
+    second: Robot Maid-Allin_63
+  - first:
+      213: -3571303451753343258
+    second: Robot Maid-Allin_64
+  - first:
+      213: 7294230121493969529
+    second: Robot Maid-Allin_65
+  - first:
+      213: 5558071720646029208
+    second: Robot Maid-Allin_66
+  - first:
+      213: 3167832812265453907
+    second: Robot Maid-Allin_67
+  - first:
+      213: 141812497522733077
+    second: Robot Maid-Allin_68
+  - first:
+      213: -6410350594189330105
+    second: Robot Maid-Allin_69
+  - first:
+      213: -1405713678197223168
+    second: Robot Maid-Allin_70
+  - first:
+      213: 5039377948037174349
+    second: Robot Maid-Allin_71
+  - first:
+      213: 1510168226608359591
+    second: Robot Maid-Allin_72
+  - first:
+      213: -1674139074004108691
+    second: Robot Maid-Allin_73
+  - first:
+      213: -3397350599024030689
+    second: Robot Maid-Allin_74
+  - first:
+      213: -8390643433727436173
+    second: Robot Maid-Allin_75
+  - first:
+      213: 3009610531738201175
+    second: Robot Maid-Allin_76
+  - first:
+      213: 5965252791722982240
+    second: Robot Maid-Allin_77
+  - first:
+      213: -5657144682492417002
+    second: Robot Maid-Allin_78
+  - first:
+      213: -2963318135659116407
+    second: Robot Maid-Allin_79
+  - first:
+      213: -7951946288780895692
+    second: Robot Maid-Allin_80
+  - first:
+      213: 7905510253612915509
+    second: Robot Maid-Allin_81
+  - first:
+      213: -5865952392279610707
+    second: Robot Maid-Allin_82
+  - first:
+      213: 1854357304466568887
+    second: Robot Maid-Allin_83
+  - first:
+      213: -5497186329611862018
+    second: Robot Maid-Allin_84
+  - first:
+      213: 6408168314350113780
+    second: Robot Maid-Allin_85
+  - first:
+      213: 1900065237064998672
+    second: Robot Maid-Allin_86
+  - first:
+      213: 6951033145650458522
+    second: Robot Maid-Allin_87
+  - first:
+      213: -1381108166795861276
+    second: Robot Maid-Allin_88
+  - first:
+      213: -7696163398905585180
+    second: Robot Maid-Allin_89
+  - first:
+      213: 5155746570148184962
+    second: Robot Maid-Allin_90
+  - first:
+      213: -7503383277810633588
+    second: Robot Maid-Allin_91
+  - first:
+      213: -5951314002961800870
+    second: Robot Maid-Allin_92
+  - first:
+      213: 7938709439222325016
+    second: Robot Maid-Allin_93
+  - first:
+      213: 3067733663549787453
+    second: Robot Maid-Allin_94
+  - first:
+      213: -8203631950491372335
+    second: Robot Maid-Allin_95
+  - first:
+      213: 7114786399676486638
+    second: Robot Maid-Allin_96
+  - first:
+      213: -8723592806524123876
+    second: Robot Maid-Allin_97
+  - first:
+      213: 2992419322386779490
+    second: Robot Maid-Allin_98
+  - first:
+      213: 6877329785229185955
+    second: Robot Maid-Allin_99
+  - first:
+      213: -1193106521468327177
+    second: Robot Maid-Allin_100
+  - first:
+      213: -3904401690370749701
+    second: Robot Maid-Allin_101
+  - first:
+      213: 4405054145462263989
+    second: Robot Maid-Allin_102
+  - first:
+      213: 226041850036781007
+    second: Robot Maid-Allin_103
+  - first:
+      213: -850443697653731401
+    second: Robot Maid-Allin_104
+  - first:
+      213: 7058298067335183001
+    second: Robot Maid-Allin_105
+  - first:
+      213: -8352214505300802140
+    second: Robot Maid-Allin_106
+  - first:
+      213: -290214049466355
+    second: Robot Maid-Allin_107
+  - first:
+      213: -3215429941298293103
+    second: Robot Maid-Allin_108
+  - first:
+      213: -3555887018747349479
+    second: Robot Maid-Allin_109
+  - first:
+      213: -6801106469259038117
+    second: Robot Maid-Allin_110
+  - first:
+      213: -2358629997141437494
+    second: Robot Maid-Allin_111
+  - first:
+      213: 4059649066088522754
+    second: Robot Maid-Allin_112
+  - first:
+      213: -8873353144582988787
+    second: Robot Maid-Allin_113
+  - first:
+      213: -2106799823780143956
+    second: Robot Maid-Allin_114
+  - first:
+      213: -1028053780278178335
+    second: Robot Maid-Allin_115
+  - first:
+      213: -9209662243913041714
+    second: Robot Maid-Allin_116
+  - first:
+      213: -7192377138975630904
+    second: Robot Maid-Allin_117
+  - first:
+      213: 5801567126731183155
+    second: Robot Maid-Allin_118
+  - first:
+      213: -353517619206146840
+    second: Robot Maid-Allin_119
+  - first:
+      213: -4605260493891388580
+    second: Robot Maid-Allin_120
+  - first:
+      213: -3283273853781661512
+    second: Robot Maid-Allin_121
+  - first:
+      213: -1316544757524334150
+    second: Robot Maid-Allin_122
+  - first:
+      213: -1276690597166177339
+    second: Robot Maid-Allin_123
+  - first:
+      213: 3692972484129586984
+    second: Robot Maid-Allin_124
+  - first:
+      213: 7809944247304602018
+    second: Robot Maid-Allin_125
+  - first:
+      213: 7649852519944522906
+    second: Robot Maid-Allin_126
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Robot Maid-Allin_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1855
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41aa6735cc536770800000000000000
+      internalID: 8602821715315827022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1855
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 254f3c06b09f46470800000000000000
+      internalID: 8387102233334117458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_2
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 1855
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32adcbe852125c5c0800000000000000
+      internalID: -4195911032633501149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_3
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1855
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06593ce0f7a7af60800000000000000
+      internalID: 8045583912517850637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_4
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1775
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d66efd747f97864c0800000000000000
+      internalID: -4294048141728029075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_5
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1775
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733998e172c5df550800000000000000
+      internalID: 6196209985417483063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_6
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 1775
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec5248e82debea250800000000000000
+      internalID: 5957909168601179598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_7
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 1775
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7eb53d7df373f80800000000000000
+      internalID: -8126956806370236470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_8
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1775
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1223586dfb704b990800000000000000
+      internalID: -7371258169579458015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_9
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1695
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29538a2fa449c1950800000000000000
+      internalID: 6421170218343085458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_10
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1695
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d3e466ddc5a0b80800000000000000
+      internalID: -8427821646696530645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_11
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 1695
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5501322a2fa64b8c0800000000000000
+      internalID: -3984442179981209515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_12
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1695
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b6624534932bd30800000000000000
+      internalID: 4445678743505496853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_13
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1695
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab76bb513aef2f20800000000000000
+      internalID: 3400193741400996783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_14
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1695
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a681a81e0acd47950800000000000000
+      internalID: 6446019550210824298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_15
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1615
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e050c457f225a6e90800000000000000
+      internalID: -7031717504400751346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_16
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1615
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b015fe432b0bac30800000000000000
+      internalID: 4371600109569642675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_17
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 1615
+        width: 38
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d41b673fdd3c86d50800000000000000
+      internalID: 6730845001145037133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_18
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1615
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca47c538ab58e6d0800000000000000
+      internalID: -2961015976981214519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_19
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1532
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2b4b5a88d447a370800000000000000
+      internalID: 8333705332297255727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_20
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1531
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f532bffcb63350e30800000000000000
+      internalID: 4469034743378944863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_21
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1521
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ff97edaadbb98a0800000000000000
+      internalID: -6297231112372879475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_22
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1519
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42770cfbe00ad8650800000000000000
+      internalID: 6236817044185052964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_23
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 1519
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e942e65e3e36cbc0800000000000000
+      internalID: -3763252001154905625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_24
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1519
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a59fd2de9a4a770800000000000000
+      internalID: 8621202422837631574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_25
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1455
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca06e4bfec7e9ce0800000000000000
+      internalID: -1396541465464272185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_26
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1455
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff5bfa874cd212a0800000000000000
+      internalID: -6768105090151915528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_27
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1455
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976629744efeb99b0800000000000000
+      internalID: -5072196791570372999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_28
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1455
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f83bcec68942980800000000000000
+      internalID: -8564552997756760168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_29
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1455
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f09a6a2dfa00480800000000000000
+      internalID: -8934948341428973824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_30
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1377
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831d2bdf18d671ea0800000000000000
+      internalID: -5902128381571182280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_31
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1377
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bfa281698b1d6dd0800000000000000
+      internalID: -2491304742005592143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_32
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 1377
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5721923a31c07590800000000000000
+      internalID: -7678424908966058146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_33
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1377
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a7b69f4641f5740800000000000000
+      internalID: 5142851723394251353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_34
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1296
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f68fc08bb7f9b520800000000000000
+      internalID: 2718476234786834163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_35
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1296
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 346fdcbe47d542870800000000000000
+      internalID: 8657147140466669123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_36
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 1296
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb82c293dc27a6a90800000000000000
+      internalID: -7319912018584262465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_37
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1296
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57bd42e96b6c30ea0800000000000000
+      internalID: -5907659798540395659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_38
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1216
+        width: 37
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dda2dbf0f6efd290800000000000000
+      internalID: -7863312501674168878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_39
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1216
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95567e518377b2450800000000000000
+      internalID: 6065072405953865049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_40
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1216
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03eb69d52c210bab0800000000000000
+      internalID: -4994471360750764496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_41
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1216
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0673a18fa0b81d80800000000000000
+      internalID: -8279673647079918069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_42
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1135
+        width: 51
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59295da500710da80800000000000000
+      internalID: -8444224011028295019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_43
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1135
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114f93f648b40b950800000000000000
+      internalID: 6462748497450497041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_44
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1135
+        width: 40
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0903ba57139710450800000000000000
+      internalID: 6053252627497169040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_45
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1135
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a59c548b08adc720800000000000000
+      internalID: 2868133305123640741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_46
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1055
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51df92e98476a020800000000000000
+      internalID: 2352695990909129051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_47
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1055
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f7b0a7fb2ab7d90800000000000000
+      internalID: -7098901444349427856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_48
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1055
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d65e8e13112e680800000000000000
+      internalID: -8727394221832180478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_49
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1055
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf825c0efa438bc0800000000000000
+      internalID: -3782096807072198726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_50
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 975
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d6fe424df824f40800000000000000
+      internalID: 5711285418774719782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_51
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 975
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017c7d1e5bb752f90800000000000000
+      internalID: -6979036026432403696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_52
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 975
+        width: 51
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7cd62d1489b7d130800000000000000
+      internalID: 3591543204927167612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_53
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 975
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e5e5ee66bc823750800000000000000
+      internalID: 6283239145307760098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_54
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 975
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 101dd57e9bc47cd60800000000000000
+      internalID: 7910375631833911553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_55
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 895
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c628b0d336f013070800000000000000
+      internalID: 8084259725007094380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_56
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 895
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0bdd3a2d1376bd0800000000000000
+      internalID: -2637084276040027981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_57
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 895
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d2683fc31e60a310800000000000000
+      internalID: 1414251314354348752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_58
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 895
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2713fb15c4a4a2480800000000000000
+      internalID: -8923238020031762062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_59
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 895
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a55121ca503dacc0800000000000000
+      internalID: -3698246552655931999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_60
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 895
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 751e1065e14de2f40800000000000000
+      internalID: 5705731004682068311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_61
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 894
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1516a55977f3369d0800000000000000
+      internalID: -2782310361945448111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_62
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 895
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c85903af721209b0800000000000000
+      internalID: -5115505887334016823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_63
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 815
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08ca23ff74f8eb00800000000000000
+      internalID: 858204559391770639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_64
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 815
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e69d15ae6e207ec0800000000000000
+      internalID: -3571303451753343258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_65
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 815
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a3a9526af4a3560800000000000000
+      internalID: 7294230121493969529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_66
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 815
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f204138cc322d40800000000000000
+      internalID: 5558071720646029208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_67
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 739
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 359b8eaa82766fb20800000000000000
+      internalID: 3167832812265453907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_68
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 739
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510bd8317b1d7f100800000000000000
+      internalID: 141812497522733077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_69
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 738
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74971ab191cd907a0800000000000000
+      internalID: -6410350594189330105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_70
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 739
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00195238bd6ed7ce0800000000000000
+      internalID: -1405713678197223168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_71
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 659
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4451b14b877fe540800000000000000
+      internalID: 5039377948037174349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_72
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 658
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8a21a300235f410800000000000000
+      internalID: 1510168226608359591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_73
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 658
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6a3265d16344c8e0800000000000000
+      internalID: -1674139074004108691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_74
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 659
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c46bf41af2ad0d0800000000000000
+      internalID: -3397350599024030689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_75
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 575
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a56b7a0427e8b80800000000000000
+      internalID: -8390643433727436173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_76
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 576
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ca78045d844c920800000000000000
+      internalID: 3009610531738201175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_77
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 575
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b3e0e0fc5d8c250800000000000000
+      internalID: 5965252791722982240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_78
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 576
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61cac0552e8cd71b0800000000000000
+      internalID: -5657144682492417002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_79
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 495
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988c09f1bdd20e6d0800000000000000
+      internalID: -2963318135659116407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_80
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 415
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43a9a384bf205a190800000000000000
+      internalID: -7951946288780895692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_81
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 415
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b5ec2c0b306bd60800000000000000
+      internalID: 7905510253612915509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_82
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 415
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa22dcd063f79ea0800000000000000
+      internalID: -5865952392279610707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_83
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 415
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b67163c4200cb910800000000000000
+      internalID: 1854357304466568887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_84
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 415
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efff957982216b3b0800000000000000
+      internalID: -5497186329611862018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_85
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 335
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f390c541236ee850800000000000000
+      internalID: 6408168314350113780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_86
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 335
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01fd35124436e5a10800000000000000
+      internalID: 1900065237064998672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_87
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 335
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f267c51d7077060800000000000000
+      internalID: 6951033145650458522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_88
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 335
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e2edb1907155dce0800000000000000
+      internalID: -1381108166795861276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_89
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 335
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1aeda2a2cb13590800000000000000
+      internalID: -7696163398905585180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_90
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 335
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2830f917034ec8740800000000000000
+      internalID: 5155746570148184962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_91
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 255
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c84bd78d9a0aed790800000000000000
+      internalID: -7503383277810633588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_92
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 255
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5167aa127fa86da0800000000000000
+      internalID: -5951314002961800870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_93
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 255
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f13e38c26fb2e60800000000000000
+      internalID: 7938709439222325016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_94
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 255
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d84617387c29a20800000000000000
+      internalID: 3067733663549787453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_95
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 175
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4baeaa438d62e80800000000000000
+      internalID: -8203631950491372335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_96
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 175
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee35f75e88cccb260800000000000000
+      internalID: 7114786399676486638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_97
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 175
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c150af1ef829fe680800000000000000
+      internalID: -8723592806524123876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_98
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 175
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d01e9e485378920800000000000000
+      internalID: 2992419322386779490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_99
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 180
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a39cc3800f217f50800000000000000
+      internalID: 6877329785229185955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_100
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 185
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7faada8a0fb317fe0800000000000000
+      internalID: -1193106521468327177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_101
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 178
+        width: 100
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfa44095957c0d9c0800000000000000
+      internalID: -3904401690370749701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_102
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 177
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b0e3a40865e12d30800000000000000
+      internalID: 4405054145462263989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_103
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 172
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf70df6ddf032300800000000000000
+      internalID: 226041850036781007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_104
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 160
+        width: 72
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf21eb76fd9234f0800000000000000
+      internalID: -850443697653731401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_105
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 159
+        width: 76
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99af65e12bc14f160800000000000000
+      internalID: 7058298067335183001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_106
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 164
+        width: 211
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a54eabc829f61c80800000000000000
+      internalID: -8352214505300802140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_107
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 95
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d083ca64d08fefff0800000000000000
+      internalID: -290214049466355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_108
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 95
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19692c4218f7063d0800000000000000
+      internalID: -3215429941298293103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_109
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 95
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916342aa893f6aec0800000000000000
+      internalID: -3555887018747349479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_110
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 95
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b52343433bd9d91a0800000000000000
+      internalID: -6801106469259038117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_111
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 95
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac3ddcf9386744fd0800000000000000
+      internalID: -2358629997141437494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_112
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 95
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204e3f01155c65830800000000000000
+      internalID: 4059649066088522754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_113
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 95
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c198af3548bd480800000000000000
+      internalID: -8873353144582988787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_114
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 95
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac9abaf8b423c2e0800000000000000
+      internalID: -2106799823780143956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_115
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 95
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed8580a88e9bb1f0800000000000000
+      internalID: -1028053780278178335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_116
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 95
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec87c3aebf4b03080800000000000000
+      internalID: -9209662243913041714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_117
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 95
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c997b4591b8f2c90800000000000000
+      internalID: -7192377138975630904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_118
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 95
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3345561509e438050800000000000000
+      internalID: 5801567126731183155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_119
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 95
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4306d299d081bf0800000000000000
+      internalID: -353517619206146840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_120
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 15
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5bb6730bf3d610c0800000000000000
+      internalID: -4605260493891388580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_121
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 15
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b8240553d77f62d0800000000000000
+      internalID: -3283273853781661512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_122
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 15
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9fbd4b481babde0800000000000000
+      internalID: -1316544757524334150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_123
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 15
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c324d38aa8484ee0800000000000000
+      internalID: -1276690597166177339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_124
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 15
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ff5d978e2104330800000000000000
+      internalID: 3692972484129586984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_125
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 15
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a142300aee726c60800000000000000
+      internalID: 7809944247304602018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Maid-Allin_126
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 15
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c8b63165cb92a60800000000000000
+      internalID: 7649852519944522906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Robot Maid-Allin_0: 8602821715315827022
+      Robot Maid-Allin_1: 8387102233334117458
+      Robot Maid-Allin_10: -8427821646696530645
+      Robot Maid-Allin_100: -1193106521468327177
+      Robot Maid-Allin_101: -3904401690370749701
+      Robot Maid-Allin_102: 4405054145462263989
+      Robot Maid-Allin_103: 226041850036781007
+      Robot Maid-Allin_104: -850443697653731401
+      Robot Maid-Allin_105: 7058298067335183001
+      Robot Maid-Allin_106: -8352214505300802140
+      Robot Maid-Allin_107: -290214049466355
+      Robot Maid-Allin_108: -3215429941298293103
+      Robot Maid-Allin_109: -3555887018747349479
+      Robot Maid-Allin_11: -3984442179981209515
+      Robot Maid-Allin_110: -6801106469259038117
+      Robot Maid-Allin_111: -2358629997141437494
+      Robot Maid-Allin_112: 4059649066088522754
+      Robot Maid-Allin_113: -8873353144582988787
+      Robot Maid-Allin_114: -2106799823780143956
+      Robot Maid-Allin_115: -1028053780278178335
+      Robot Maid-Allin_116: -9209662243913041714
+      Robot Maid-Allin_117: -7192377138975630904
+      Robot Maid-Allin_118: 5801567126731183155
+      Robot Maid-Allin_119: -353517619206146840
+      Robot Maid-Allin_12: 4445678743505496853
+      Robot Maid-Allin_120: -4605260493891388580
+      Robot Maid-Allin_121: -3283273853781661512
+      Robot Maid-Allin_122: -1316544757524334150
+      Robot Maid-Allin_123: -1276690597166177339
+      Robot Maid-Allin_124: 3692972484129586984
+      Robot Maid-Allin_125: 7809944247304602018
+      Robot Maid-Allin_126: 7649852519944522906
+      Robot Maid-Allin_13: 3400193741400996783
+      Robot Maid-Allin_14: 6446019550210824298
+      Robot Maid-Allin_15: -7031717504400751346
+      Robot Maid-Allin_16: 4371600109569642675
+      Robot Maid-Allin_17: 6730845001145037133
+      Robot Maid-Allin_18: -2961015976981214519
+      Robot Maid-Allin_19: 8333705332297255727
+      Robot Maid-Allin_2: -4195911032633501149
+      Robot Maid-Allin_20: 4469034743378944863
+      Robot Maid-Allin_21: -6297231112372879475
+      Robot Maid-Allin_22: 6236817044185052964
+      Robot Maid-Allin_23: -3763252001154905625
+      Robot Maid-Allin_24: 8621202422837631574
+      Robot Maid-Allin_25: -1396541465464272185
+      Robot Maid-Allin_26: -6768105090151915528
+      Robot Maid-Allin_27: -5072196791570372999
+      Robot Maid-Allin_28: -8564552997756760168
+      Robot Maid-Allin_29: -8934948341428973824
+      Robot Maid-Allin_3: 8045583912517850637
+      Robot Maid-Allin_30: -5902128381571182280
+      Robot Maid-Allin_31: -2491304742005592143
+      Robot Maid-Allin_32: -7678424908966058146
+      Robot Maid-Allin_33: 5142851723394251353
+      Robot Maid-Allin_34: 2718476234786834163
+      Robot Maid-Allin_35: 8657147140466669123
+      Robot Maid-Allin_36: -7319912018584262465
+      Robot Maid-Allin_37: -5907659798540395659
+      Robot Maid-Allin_38: -7863312501674168878
+      Robot Maid-Allin_39: 6065072405953865049
+      Robot Maid-Allin_4: -4294048141728029075
+      Robot Maid-Allin_40: -4994471360750764496
+      Robot Maid-Allin_41: -8279673647079918069
+      Robot Maid-Allin_42: -8444224011028295019
+      Robot Maid-Allin_43: 6462748497450497041
+      Robot Maid-Allin_44: 6053252627497169040
+      Robot Maid-Allin_45: 2868133305123640741
+      Robot Maid-Allin_46: 2352695990909129051
+      Robot Maid-Allin_47: -7098901444349427856
+      Robot Maid-Allin_48: -8727394221832180478
+      Robot Maid-Allin_49: -3782096807072198726
+      Robot Maid-Allin_5: 6196209985417483063
+      Robot Maid-Allin_50: 5711285418774719782
+      Robot Maid-Allin_51: -6979036026432403696
+      Robot Maid-Allin_52: 3591543204927167612
+      Robot Maid-Allin_53: 6283239145307760098
+      Robot Maid-Allin_54: 7910375631833911553
+      Robot Maid-Allin_55: 8084259725007094380
+      Robot Maid-Allin_56: -2637084276040027981
+      Robot Maid-Allin_57: 1414251314354348752
+      Robot Maid-Allin_58: -8923238020031762062
+      Robot Maid-Allin_59: -3698246552655931999
+      Robot Maid-Allin_6: 5957909168601179598
+      Robot Maid-Allin_60: 5705731004682068311
+      Robot Maid-Allin_61: -2782310361945448111
+      Robot Maid-Allin_62: -5115505887334016823
+      Robot Maid-Allin_63: 858204559391770639
+      Robot Maid-Allin_64: -3571303451753343258
+      Robot Maid-Allin_65: 7294230121493969529
+      Robot Maid-Allin_66: 5558071720646029208
+      Robot Maid-Allin_67: 3167832812265453907
+      Robot Maid-Allin_68: 141812497522733077
+      Robot Maid-Allin_69: -6410350594189330105
+      Robot Maid-Allin_7: -8126956806370236470
+      Robot Maid-Allin_70: -1405713678197223168
+      Robot Maid-Allin_71: 5039377948037174349
+      Robot Maid-Allin_72: 1510168226608359591
+      Robot Maid-Allin_73: -1674139074004108691
+      Robot Maid-Allin_74: -3397350599024030689
+      Robot Maid-Allin_75: -8390643433727436173
+      Robot Maid-Allin_76: 3009610531738201175
+      Robot Maid-Allin_77: 5965252791722982240
+      Robot Maid-Allin_78: -5657144682492417002
+      Robot Maid-Allin_79: -2963318135659116407
+      Robot Maid-Allin_8: -7371258169579458015
+      Robot Maid-Allin_80: -7951946288780895692
+      Robot Maid-Allin_81: 7905510253612915509
+      Robot Maid-Allin_82: -5865952392279610707
+      Robot Maid-Allin_83: 1854357304466568887
+      Robot Maid-Allin_84: -5497186329611862018
+      Robot Maid-Allin_85: 6408168314350113780
+      Robot Maid-Allin_86: 1900065237064998672
+      Robot Maid-Allin_87: 6951033145650458522
+      Robot Maid-Allin_88: -1381108166795861276
+      Robot Maid-Allin_89: -7696163398905585180
+      Robot Maid-Allin_9: 6421170218343085458
+      Robot Maid-Allin_90: 5155746570148184962
+      Robot Maid-Allin_91: -7503383277810633588
+      Robot Maid-Allin_92: -5951314002961800870
+      Robot Maid-Allin_93: 7938709439222325016
+      Robot Maid-Allin_94: 3067733663549787453
+      Robot Maid-Allin_95: -8203631950491372335
+      Robot Maid-Allin_96: 7114786399676486638
+      Robot Maid-Allin_97: -8723592806524123876
+      Robot Maid-Allin_98: 2992419322386779490
+      Robot Maid-Allin_99: 6877329785229185955
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

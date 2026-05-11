@@ -13,6 +13,9 @@ using UnityEditor;
 [RequireComponent(typeof(BlindHuntressEnemyInteraction))]
 public class BlindHuntressEnemyBrain : MonoBehaviour
 {
+    private const string PlayerLayerName = "Player";
+    private const string EnemyLayerName = "Enemy";
+
     private enum BrainState
     {
         Idle,
@@ -59,7 +62,7 @@ public class BlindHuntressEnemyBrain : MonoBehaviour
     [Tooltip("preferredRange 주변에서 허용할 여유 폭입니다.")]
     [SerializeField] private float preferredRangeTolerance = 0.35f;
     [Tooltip("너무 가까울 때 잠깐 뒤로 빠질 기준 거리입니다.")]
-    [SerializeField] private float retreatDistance = 0.8f;
+    [SerializeField] private float retreatDistance = 1.05f;
 
     [Header("Detection")]
     [Tooltip("플레이어를 인식하는 최대 거리입니다. 이 밖으로 나가면 추적을 멈춥니다.")]
@@ -139,6 +142,7 @@ public class BlindHuntressEnemyBrain : MonoBehaviour
         _target = targetOverride;
         CacheTargetInteraction();
         _brainState = BrainState.Idle;
+        EnsurePlayerEnemyCollision();
         ApplyFacingToVisual();
     }
 
@@ -537,5 +541,15 @@ public class BlindHuntressEnemyBrain : MonoBehaviour
 #else
         return false;
 #endif
+    }
+
+    private static void EnsurePlayerEnemyCollision()
+    {
+        int playerLayer = LayerMask.NameToLayer(PlayerLayerName);
+        int enemyLayer = LayerMask.NameToLayer(EnemyLayerName);
+        if (playerLayer >= 0 && enemyLayer >= 0)
+        {
+            Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
+        }
     }
 }
