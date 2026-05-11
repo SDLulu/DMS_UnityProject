@@ -15,6 +15,7 @@ public class PlayerAnimationDriver : MonoBehaviour
     private static readonly int IdleState = Animator.StringToHash("Base Layer.Idle");
     private static readonly int RunState = Animator.StringToHash("Base Layer.Run");
     private static readonly int AttackState = Animator.StringToHash("Base Layer.Attack");
+    private static readonly int GunAttackState = Animator.StringToHash("Base Layer.GunAttack");
     private static readonly int JumpState = Animator.StringToHash("Base Layer.Jump");
     private static readonly int FallState = Animator.StringToHash("Base Layer.Fall");
     private static readonly int CrouchEnterState = Animator.StringToHash("Base Layer.CrouchEnter");
@@ -43,6 +44,7 @@ public class PlayerAnimationDriver : MonoBehaviour
     private float _groundedConfirmTimer;
     private float _crouchTransitionTimer;
     private int _currentState;
+    private int _attackState = AttackState;
 
     private void Awake()
     {
@@ -95,9 +97,9 @@ public class PlayerAnimationDriver : MonoBehaviour
         if (_attackTimer > 0f)
         {
             _attackTimer -= Time.deltaTime;
-            if (_currentState != AttackState)
+            if (_currentState != _attackState)
             {
-                PlayState(AttackState, true);
+                PlayState(_attackState, true);
             }
             return;
         }
@@ -142,8 +144,9 @@ public class PlayerAnimationDriver : MonoBehaviour
 
     private void HandleAttackPerformed()
     {
+        _attackState = ResolveAttackState();
         _attackTimer = _combat != null ? Mathf.Max(defaultAttackDuration, _combat.AttackAnimationDuration) : defaultAttackDuration;
-        PlayState(AttackState, true);
+        PlayState(_attackState, true);
     }
 
     private void CacheReferences()
@@ -260,5 +263,20 @@ public class PlayerAnimationDriver : MonoBehaviour
 
         _currentState = stateHash;
         _animator.CrossFade(stateHash, crossFadeDuration, 0, restart ? 0f : float.NegativeInfinity);
+    }
+
+    private int ResolveAttackState()
+    {
+        if (_combat == null || _animator == null)
+        {
+            return AttackState;
+        }
+
+        if (_combat.LastAttackWeapon == PlayerWeaponType.Gun && _animator.HasState(0, GunAttackState))
+        {
+            return GunAttackState;
+        }
+
+        return AttackState;
     }
 }

@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: 78d01778fd9d845408b42e0fe19fcca3
+AssetOrigin:
+  serializedVersion: 1
+  productId: 183370
+  packageName: Feel
+  packageVersion: 5.9.1
+  assetPath: Assets/Feel/FeelDemos/Blob/Lighting/ReflectionProbe-0.exr
+  uploadId: 830868
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +41,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 2
+    filterMode: 0
     aniso: 0
     mipBias: 0
     wrapU: 1
@@ -141,10 +148,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 183370
-  packageName: Feel
-  packageVersion: 5.9.1
-  assetPath: Assets/Feel/FeelDemos/Blob/Lighting/ReflectionProbe-0.exr
-  uploadId: 830868

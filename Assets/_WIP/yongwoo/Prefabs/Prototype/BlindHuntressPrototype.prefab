@@ -43,6 +43,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlindHuntressPrototype
       objectReference: {fileID: 0}
+    - target: {fileID: 561777602665425509, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 809301512936430063, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
       propertyPath: m_Controller
       value: 
@@ -95,6 +99,10 @@ PrefabInstance:
       propertyPath: invertVisualFacing
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1700000000000000021, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
+      propertyPath: combat
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2249624132469796711, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
       propertyPath: m_Size.x
       value: 0.34
@@ -117,11 +125,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3651190054026640413, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3651190054026640413, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3651190054026640413, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
       propertyPath: m_LocalPosition.z

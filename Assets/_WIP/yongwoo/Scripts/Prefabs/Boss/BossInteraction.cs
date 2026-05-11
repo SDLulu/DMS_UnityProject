@@ -69,16 +69,16 @@ public class BossInteraction : MonoBehaviour, IDamageReceiver
         }
     }
 
-    public void ReceiveHit(float damage, Vector2 knockback, GameObject source)
+    public bool ReceiveHit(float damage, Vector2 knockback, GameObject source)
     {
         if (_isDead || damage <= 0f || _invulnerabilityTimer > 0f)
         {
-            return;
+            return false;
         }
 
         if (source != null && source.transform.IsChildOf(transform))
         {
-            return;
+            return false;
         }
 
         _currentHealth = Mathf.Max(0f, _currentHealth - damage);
@@ -102,6 +102,8 @@ public class BossInteraction : MonoBehaviour, IDamageReceiver
         {
             HandleDeath();
         }
+
+        return true;
     }
 
     public void ConfigureHealth(float newMaxHealth, Color baseColor, Color newDeadTint, bool preserveHealthRatio = false)

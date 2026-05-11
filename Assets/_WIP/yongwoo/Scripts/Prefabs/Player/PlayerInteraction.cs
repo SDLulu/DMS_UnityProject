@@ -112,16 +112,16 @@ public class PlayerInteraction : MonoBehaviour, IDamageReceiver
         HealthChanged?.Invoke();
     }
 
-    public void ReceiveHit(float damage, Vector2 knockback, GameObject source)
+    public bool ReceiveHit(float damage, Vector2 knockback, GameObject source)
     {
         if (_isDead || damage <= 0f || _invulnerabilityTimer > 0f)
         {
-            return;
+            return false;
         }
 
         if (source != null && source.transform.IsChildOf(transform))
         {
-            return;
+            return false;
         }
 
         _currentHealth = Mathf.Max(0f, _currentHealth - damage);
@@ -145,6 +145,8 @@ public class PlayerInteraction : MonoBehaviour, IDamageReceiver
         {
             HandleDeath();
         }
+
+        return true;
     }
 
     public void ConfigureRespawn(Vector3 spawnPosition, float newRespawnDelay, MonoBehaviour[] behavioursToDisable = null)

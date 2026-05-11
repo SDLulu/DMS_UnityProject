@@ -75,7 +75,11 @@ public class BossProjectile : MonoBehaviour
         }
 
         Vector2 knockback = _direction * _knockback + Vector2.up * (_knockback * 0.35f);
-        target.ReceiveHit(_damage, knockback, _owner);
+        if (target.ReceiveHit(_damage, knockback, _owner))
+        {
+            CombatHitFeedback.PlayLightHit();
+        }
+
         Destroy(gameObject);
     }
 }

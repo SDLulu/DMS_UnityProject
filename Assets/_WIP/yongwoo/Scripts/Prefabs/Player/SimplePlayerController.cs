@@ -14,6 +14,8 @@ public class SimplePlayerController : MonoBehaviour
     private const string LegacyGroundCheckName = "GroundCheck";
     private const string DefaultVisualName = "Visual";
     private const string LegacyVisualName = "RobotMaidVisual";
+    private const string PlayerLayerName = "Player";
+    private const string EnemyLayerName = "Enemy";
     private const float JumpGroundIgnoreDuration = 0.08f;
     private const float UpwardUngroundedVelocity = 0.05f;
 
@@ -177,6 +179,7 @@ public class SimplePlayerController : MonoBehaviour
         _body = GetComponent<Rigidbody2D>();
         _selfColliders = GetComponentsInChildren<Collider2D>(includeInactive: true);
         gameObject.tag = "Player";
+        EnsurePlayerEnemyCollision();
         _body.freezeRotation = true;
 
         if (_body.gravityScale == 0f)
@@ -488,21 +491,25 @@ public class SimplePlayerController : MonoBehaviour
             _visualRenderer = visualRoot.GetComponent<SpriteRenderer>();
         }
 
-        if (_visualRenderer != null)
-        {
-            bool faceRight = _facing >= 0f;
-            _visualRenderer.flipX = invertVisualFacing ? faceRight : !faceRight;
-            return;
-        }
-
         if (visualRoot == null)
         {
             return;
         }
 
         Vector3 scale = visualRoot.localScale;
-        scale.x = Mathf.Abs(scale.x) * (_facing >= 0f ? 1f : -1f);
+        float facingSign = _facing >= 0f ? 1f : -1f;
+        if (invertVisualFacing)
+        {
+            facingSign *= -1f;
+        }
+
+        scale.x = Mathf.Abs(scale.x) * facingSign;
         visualRoot.localScale = scale;
+
+        if (_visualRenderer != null)
+        {
+            _visualRenderer.flipX = false;
+        }
     }
 
     private bool IsGrounded()
@@ -603,5 +610,15 @@ public class SimplePlayerController : MonoBehaviour
 
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+    }
+
+    private static void EnsurePlayerEnemyCollision()
+    {
+        int playerLayer = LayerMask.NameToLayer(PlayerLayerName);
+        int enemyLayer = LayerMask.NameToLayer(EnemyLayerName);
+        if (playerLayer >= 0 && enemyLayer >= 0)
+        {
+            Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
+        }
     }
 }

@@ -15,8 +15,8 @@ public class SimpleParallaxBackground : MonoBehaviour
     [SerializeField] private Transform targetCamera;
     [SerializeField] private float farLayerHorizontal = 0.05f;
     [SerializeField] private float nearLayerHorizontal = 0.28f;
-    [SerializeField] private float farLayerVertical = 0f;
-    [SerializeField] private float nearLayerVertical = 0.04f;
+    [SerializeField] private float farLayerVertical = 1f;
+    [SerializeField] private float nearLayerVertical = 1f;
     [SerializeField] private bool autoRefreshChildren = true;
 
     private readonly List<LayerState> _layers = new();

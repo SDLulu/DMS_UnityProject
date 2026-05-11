@@ -434,7 +434,10 @@ public class BlindHuntressEnemyCombat : MonoBehaviour
             }
 
             _alreadyHit.Add(receiver);
-            damageReceiver.ReceiveHit(damage, knockback, gameObject);
+            if (damageReceiver.ReceiveHit(damage, knockback, gameObject))
+            {
+                CombatHitFeedback.PlayLightHit();
+            }
         }
     }
 

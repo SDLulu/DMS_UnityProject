@@ -6,5 +6,5 @@ using UnityEngine;
 
 public interface IDamageReceiver
 {
-    void ReceiveHit(float damage, Vector2 knockback, GameObject source);
+    bool ReceiveHit(float damage, Vector2 knockback, GameObject source);
 }
