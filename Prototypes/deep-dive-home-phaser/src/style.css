@@ -1,0 +1,121 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #05070b;
+  color: #dce7ff;
+  font-family: "Segoe UI", "Pretendard", system-ui, sans-serif;
+}
+
+#app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #05070b;
+}
+
+#game-root canvas {
+  display: block;
+  width: min(100vw, 1280px);
+  height: min(100vh, 720px);
+  image-rendering: pixelated;
+  box-shadow: 0 0 0 1px rgba(125, 221, 255, 0.14), 0 28px 90px rgba(0, 0, 0, 0.55);
+}
+
+#hud {
+  position: absolute;
+  top: max(18px, calc((100vh - min(100vh, 720px)) / 2 + 18px));
+  left: max(22px, calc((100vw - min(100vw, 1280px)) / 2 + 22px));
+  right: max(22px, calc((100vw - min(100vw, 1280px)) / 2 + 22px));
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  pointer-events: none;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.75);
+}
+
+#objective {
+  max-width: 520px;
+  font-size: 15px;
+  letter-spacing: 0;
+  color: #b8fff4;
+}
+
+#status {
+  font-size: 14px;
+  color: #ffec9a;
+  text-align: right;
+}
+
+#dialogue {
+  position: absolute;
+  left: 50%;
+  bottom: max(28px, calc((100vh - min(100vh, 720px)) / 2 + 28px));
+  width: min(880px, calc(100vw - 44px));
+  min-height: 96px;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  border-left: 3px solid #64f1ff;
+  background: rgba(5, 8, 14, 0.82);
+  padding: 18px 22px;
+  pointer-events: none;
+  box-shadow: 0 0 0 1px rgba(118, 230, 255, 0.16), 0 18px 42px rgba(0, 0, 0, 0.48);
+}
+
+#speaker {
+  margin-bottom: 8px;
+  color: #64f1ff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#line {
+  color: #eef5ff;
+  font-size: 20px;
+  line-height: 1.45;
+  word-break: keep-all;
+}
+
+#prompt {
+  position: absolute;
+  left: 50%;
+  bottom: max(148px, calc((100vh - min(100vh, 720px)) / 2 + 148px));
+  transform: translateX(-50%);
+  padding: 8px 14px;
+  border: 1px solid rgba(120, 246, 255, 0.42);
+  background: rgba(5, 8, 14, 0.74);
+  color: #d4fff9;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+#glitch {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06) 1px, transparent 1px, transparent 5px),
+    linear-gradient(90deg, rgba(255, 0, 91, 0.18), transparent 42%, rgba(0, 229, 255, 0.18));
+  mix-blend-mode: screen;
+  animation: glitch-flicker 0.08s steps(2) infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes glitch-flicker {
+  from {
+    transform: translate3d(-7px, 0, 0);
+    opacity: 0.68;
+  }
+  to {
+    transform: translate3d(6px, 0, 0);
+    opacity: 0.2;
+  }
+}
