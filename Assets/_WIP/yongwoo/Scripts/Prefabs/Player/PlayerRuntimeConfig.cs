@@ -66,6 +66,7 @@ public class PlayerRuntimeConfig : MonoBehaviour
             _spawnPositionInitialized = true;
         }
 
+        CaptureCurrentColliderConfig();
         _config = PlayerConfigLoader.Sanitize(PlayerConfigLoader.DeepClone(_config));
         RefreshRuntimeConfig();
     }
@@ -157,8 +158,26 @@ public class PlayerRuntimeConfig : MonoBehaviour
         return PlayerConfigLoader.Sanitize(snapshot);
     }
 
+    private void CaptureCurrentColliderConfig()
+    {
+        if (_bodyCollider == null)
+        {
+            return;
+        }
+
+        _config ??= new PlayerConfig();
+        _config.collider ??= new PlayerColliderConfig();
+        _config.collider.width = _bodyCollider.size.x;
+        _config.collider.height = _bodyCollider.size.y;
+        _config.collider.offsetX = _bodyCollider.offset.x;
+        _config.collider.offsetY = _bodyCollider.offset.y;
+        _config.collider.isTrigger = _bodyCollider.isTrigger;
+    }
+
     private void OnValidate()
     {
+        _bodyCollider ??= GetComponent<BoxCollider2D>();
+        CaptureCurrentColliderConfig();
         _config = PlayerConfigLoader.Sanitize(PlayerConfigLoader.DeepClone(_config));
 
         if (!Application.isPlaying)

@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 // 역할:
-// - Input System 액션 맵을 감싸는 단일 진입점으로 게임플레이/대화/UI 입력을 제공합니다.
+// - Input System 액션 맵을 감싸는 단일 진입점으로 게임플레이/UI 입력을 제공합니다.
 // - 입력 맵 전환, 리바인드, 감도 값을 한곳에서 관리합니다.
 //
 // 구조 포인트:
@@ -13,14 +13,12 @@ public sealed class GameInput : IDisposable
 {
     private const string InputAssetResourcePath = "Input/InputSystem_Actions";
     private const string PlayerMapName = "Player";
-    private const string DialogueMapName = "Dialogue";
     private const string UiMapName = "UI";
 
     private static GameInput _instance;
 
     private readonly InputActionAsset _actions;
     private readonly InputActionMap _playerMap;
-    private readonly InputActionMap _dialogueMap;
     private readonly InputActionMap _uiMap;
 
     private readonly InputAction _moveAction;
@@ -31,16 +29,12 @@ public sealed class GameInput : IDisposable
     private readonly InputAction _weaponSwapAction;
     private readonly InputAction _slowMotionAction;
 
-    private readonly InputAction _dialogueAdvanceAction;
-    private readonly InputAction _dialogueSkipAction;
-
     private readonly InputAction _uiPointAction;
     private readonly InputAction _uiClickAction;
 
     public static GameInput Instance => _instance ??= CreateInstance();
 
     public bool GameplayEnabled => _playerMap.enabled;
-    public bool DialogueEnabled => _dialogueMap.enabled;
 
     public Vector2 Move => GameplayEnabled ? _moveAction.ReadValue<Vector2>() : Vector2.zero;
     public bool MoveTriggeredThisFrame => GameplayEnabled && _moveAction.triggered;
@@ -51,8 +45,6 @@ public sealed class GameInput : IDisposable
     public bool InteractPressed => GameplayEnabled && _interactAction.WasPressedThisFrame();
     public bool WeaponSwapPressed => GameplayEnabled && _weaponSwapAction.WasPressedThisFrame();
     public bool SlowMotionHeld => GameplayEnabled && _slowMotionAction.IsPressed();
-    public bool DialogueAdvancePressed => DialogueEnabled && _dialogueAdvanceAction.WasPressedThisFrame();
-    public bool DialogueSkipPressed => DialogueEnabled && _dialogueSkipAction.WasPressedThisFrame();
     public bool UiClickPressed => _uiMap.enabled && _uiClickAction.WasPressedThisFrame();
 
     public Vector2 PointerScreenPosition
@@ -72,7 +64,6 @@ public sealed class GameInput : IDisposable
     {
         _actions = actions;
         _playerMap = _actions.FindActionMap(PlayerMapName, throwIfNotFound: true);
-        _dialogueMap = _actions.FindActionMap(DialogueMapName, throwIfNotFound: true);
         _uiMap = _actions.FindActionMap(UiMapName, throwIfNotFound: true);
 
         _moveAction = _playerMap.FindAction("Move", throwIfNotFound: true);
@@ -83,14 +74,10 @@ public sealed class GameInput : IDisposable
         _weaponSwapAction = _playerMap.FindAction("WeaponSwap", throwIfNotFound: true);
         _slowMotionAction = _playerMap.FindAction("SlowMotion", throwIfNotFound: true);
 
-        _dialogueAdvanceAction = _dialogueMap.FindAction("Advance", throwIfNotFound: true);
-        _dialogueSkipAction = _dialogueMap.FindAction("Skip", throwIfNotFound: true);
-
         _uiPointAction = _uiMap.FindAction("Point", throwIfNotFound: true);
         _uiClickAction = _uiMap.FindAction("Click", throwIfNotFound: true);
 
         _uiMap.Enable();
-        _dialogueMap.Disable();
         _playerMap.Enable();
     }
 
@@ -117,21 +104,12 @@ public sealed class GameInput : IDisposable
     public void EnableGameplay()
     {
         _playerMap.Enable();
-        _dialogueMap.Disable();
-        _uiMap.Enable();
-    }
-
-    public void EnableDialogue()
-    {
-        _playerMap.Disable();
-        _dialogueMap.Enable();
         _uiMap.Enable();
     }
 
     public void DisableAllGameplayInput()
     {
         _playerMap.Disable();
-        _dialogueMap.Disable();
         _uiMap.Enable();
     }
 
@@ -263,7 +241,6 @@ public sealed class GameInput : IDisposable
     public void Dispose()
     {
         _playerMap.Disable();
-        _dialogueMap.Disable();
         _uiMap.Disable();
         UnityEngine.Object.Destroy(_actions);
     }

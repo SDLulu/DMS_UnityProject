@@ -21,6 +21,7 @@ public class PlayerConfig
 // 이동, 점프, 대시, 구르기처럼 이동 계층에만 필요한 수치 묶음입니다.
 public class PlayerMovementConfig
 {
+    public int configVersion = 2;
     public float groundMoveSpeed = 6.25f;
     public float airMoveSpeed = 6f;
     public float groundAcceleration = 72f;
@@ -29,6 +30,7 @@ public class PlayerMovementConfig
     public float airDeceleration = 42f;
     public float turnaroundAccelerationMultiplier = 1.65f;
     public float jumpForce = 8.6f;
+    public int extraAirJumps = 1;
     public float coyoteTime = 0.1f;
     public float jumpBufferTime = 0.12f;
     public float fallGravityMultiplier = 2.35f;
@@ -41,6 +43,7 @@ public class PlayerMovementConfig
     public float gravityScale = 3f;
     public float groundCheckRadius = 0.18f;
     public float dashSpeed = 12f;
+    public float dashMaxDistance = 3.5f;
     public float dashDuration = 0.14f;
     public float dashCooldown = 2f;
     public float rollSpeed = 8.5f;
@@ -141,6 +144,29 @@ public struct SerializableVector3
     }
 }
 
+[System.Serializable]
+// 설정 파일 안에서 Unity Color를 직렬화하기 위한 경량 래퍼입니다.
+public struct SerializableColor
+{
+    public float r;
+    public float g;
+    public float b;
+    public float a;
+
+    public SerializableColor(float r, float g, float b, float a = 1f)
+    {
+        this.r = r;
+        this.g = g;
+        this.b = b;
+        this.a = a;
+    }
+
+    public Color ToColor()
+    {
+        return new Color(r, g, b, a);
+    }
+}
+
 // PlayerConfig의 기본값 생성과 범위 보정을 담당하는 로더입니다.
 public static class PlayerConfigLoader
 {
@@ -163,6 +189,18 @@ public static class PlayerConfigLoader
         config.collider ??= new PlayerColliderConfig();
         config.camera ??= new PlayerCameraConfig();
 
+        if (config.movement.configVersion < 1)
+        {
+            config.movement.extraAirJumps = 1;
+            config.movement.configVersion = 1;
+        }
+
+        if (config.movement.configVersion < 2)
+        {
+            config.movement.dashMaxDistance = 3.5f;
+            config.movement.configVersion = 2;
+        }
+
         config.movement.groundMoveSpeed = Mathf.Max(0f, config.movement.groundMoveSpeed);
         config.movement.airMoveSpeed = Mathf.Max(0f, config.movement.airMoveSpeed);
         config.movement.groundAcceleration = Mathf.Max(0f, config.movement.groundAcceleration);
@@ -171,6 +209,7 @@ public static class PlayerConfigLoader
         config.movement.airDeceleration = Mathf.Max(0f, config.movement.airDeceleration);
         config.movement.turnaroundAccelerationMultiplier = Mathf.Max(0f, config.movement.turnaroundAccelerationMultiplier);
         config.movement.jumpForce = Mathf.Max(0f, config.movement.jumpForce);
+        config.movement.extraAirJumps = Mathf.Max(0, config.movement.extraAirJumps);
         config.movement.coyoteTime = Mathf.Max(0f, config.movement.coyoteTime);
         config.movement.jumpBufferTime = Mathf.Max(0f, config.movement.jumpBufferTime);
         config.movement.fallGravityMultiplier = Mathf.Max(0.1f, config.movement.fallGravityMultiplier);
@@ -183,6 +222,7 @@ public static class PlayerConfigLoader
         config.movement.gravityScale = Mathf.Max(0.1f, config.movement.gravityScale);
         config.movement.groundCheckRadius = Mathf.Max(0.01f, config.movement.groundCheckRadius);
         config.movement.dashSpeed = Mathf.Max(0.1f, config.movement.dashSpeed);
+        config.movement.dashMaxDistance = Mathf.Max(0.1f, config.movement.dashMaxDistance);
         config.movement.dashDuration = Mathf.Max(0.01f, config.movement.dashDuration);
         config.movement.dashCooldown = Mathf.Max(0f, config.movement.dashCooldown);
         config.movement.rollSpeed = Mathf.Max(0.1f, config.movement.rollSpeed);

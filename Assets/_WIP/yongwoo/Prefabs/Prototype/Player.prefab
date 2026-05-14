@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 37734614180507818}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.62, z: 0}
-  m_LocalScale: {x: 3, y: 2, z: 1}
+  m_LocalPosition: {x: 1.821163e-30, y: 2.756025e-30, z: 0}
+  m_LocalScale: {x: -3, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5143248950883912884}
@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 2249624132469796711}
   - component: {fileID: 5774349901685184387}
   - component: {fileID: 1697112091944236789}
+  - component: {fileID: 5512345678901234567}
   - component: {fileID: 910200000000000001}
   - component: {fileID: 6982118999348350709}
   - component: {fileID: 6684791423197779739}
@@ -208,7 +209,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.030636072, y: -0.829836}
+  m_Offset: {x: 0.010650158, y: -0.20360279}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -218,7 +219,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.2718854, y: 0.5223038}
+  m_Size: {x: 0.23191357, y: 0.53562707}
   m_EdgeRadius: 0
 --- !u!50 &5774349901685184387
 Rigidbody2D:
@@ -266,29 +267,51 @@ MonoBehaviour:
   airAcceleration: 54
   airDeceleration: 42
   turnaroundAccelerationMultiplier: 1.65
-  jumpForce: 10
+  jumpForce: 8.6
+  extraAirJumps: 1
   coyoteTime: 0.1
   jumpBufferTime: 0.12
-  fallGravityMultiplier: 3
-  jumpCutGravityMultiplier: 3
-  apexGravityMultiplier: 1
-  apexMoveSpeedMultiplier: 1
+  fallGravityMultiplier: 2.35
+  jumpCutGravityMultiplier: 2.9
+  apexGravityMultiplier: 0.92
+  apexMoveSpeedMultiplier: 1.08
   apexThreshold: 1.2
-  maxFallSpeed: 12
+  maxFallSpeed: 18
   groundedStickForce: 1.5
   baseGravityScale: 3
-  dashSpeed: 13
-  dashDuration: 0.12
-  dashCooldown: 0.5
+  dashSpeed: 12
+  dashMaxDistance: 3.5
+  dashDuration: 0.14
+  dashCooldown: 2
+  dashPreviewColor: {r: 1, g: 0, b: 0, a: 1}
+  dashPreviewWidth: 0.04
   rollSpeed: 8.5
   rollDuration: 0.36
   groundCheck: {fileID: 1186911569272290889}
-  groundCheckRadius: 0.12
+  groundCheckRadius: 0.18
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
   visualRoot: {fileID: 3961786691620537870}
   invertVisualFacing: 1
+--- !u!114 &5512345678901234567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561777602665425509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb2fe49329a4feaa1737a9c355f5648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDashAfterimage
+  afterimageMaterial: {fileID: 2100000, guid: 48aa8c5b26744749ace845df084de72e, type: 2}
+  spawnInterval: 0.035
+  lifetime: 0.18
+  maxActiveAfterimages: 8
+  tint: {r: 0.15, g: 1, b: 0.92, a: 0.72}
+  sortingOrderOffset: -1
 --- !u!114 &910200000000000001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,6 +385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerRuntimeConfig
   _config:
     movement:
+      configVersion: 2
       groundMoveSpeed: 6.25
       airMoveSpeed: 6
       groundAcceleration: 72
@@ -369,28 +393,30 @@ MonoBehaviour:
       airAcceleration: 54
       airDeceleration: 42
       turnaroundAccelerationMultiplier: 1.65
-      jumpForce: 10
+      jumpForce: 8.6
+      extraAirJumps: 1
       coyoteTime: 0.1
       jumpBufferTime: 0.12
-      fallGravityMultiplier: 3
-      jumpCutGravityMultiplier: 3
-      apexGravityMultiplier: 1
-      apexMoveSpeedMultiplier: 1
+      fallGravityMultiplier: 2.35
+      jumpCutGravityMultiplier: 2.9
+      apexGravityMultiplier: 0.92
+      apexMoveSpeedMultiplier: 1.08
       apexThreshold: 1.2
-      maxFallSpeed: 24
+      maxFallSpeed: 18
       groundedStickForce: 1.5
       gravityScale: 3
-      groundCheckRadius: 0.12
-      dashSpeed: 13
-      dashDuration: 0.12
-      dashCooldown: 0.5
+      groundCheckRadius: 0.18
+      dashSpeed: 12
+      dashMaxDistance: 3.5
+      dashDuration: 0.14
+      dashCooldown: 2
       rollSpeed: 8.5
       rollDuration: 0.36
     attack:
       defaultWeapon: 0
       attackAnimationDuration: 0.18
       aimFacingThreshold: 0.18
-      swordOriginOffset: {x: 0.22, y: -0.72}
+      swordOriginOffset: {x: 0.22, y: -0.28}
       swordDamage: 1
       swordCooldown: 0.28
       swordRange: 1.1
@@ -402,8 +428,8 @@ MonoBehaviour:
         r: 1
         g: 0.9
         b: 0.2
-        a: 0.32
-      gunMuzzleOffset: {x: 0.28, y: -0.72}
+        a: 0.95
+      gunMuzzleOffset: {x: 0.28, y: -0.28}
       gunDamage: 1
       gunCooldown: 0.18
       gunProjectileSpeed: 15
@@ -438,10 +464,10 @@ MonoBehaviour:
         b: 0.25
         a: 1
     collider:
-      width: 0.2718854
-      height: 0.5223038
-      offsetX: 0.030636072
-      offsetY: -0.829836
+      width: 0.23191357
+      height: 0.53562707
+      offsetX: 0.010650158
+      offsetY: -0.20360279
       isTrigger: 0
     camera:
       offset:
@@ -785,7 +811,7 @@ Transform:
   m_GameObject: {fileID: 6329646601198042698}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.098, z: 0}
+  m_LocalPosition: {x: -0.02, y: -0.472, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

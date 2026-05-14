@@ -18,14 +18,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private RectTransform inputSettingsPanelRoot;
     [Tooltip("입력 설정 패널을 제어하는 컴포넌트입니다.")]
     [SerializeField] private GameInputSettingsPanel inputSettingsPanel;
-    [Tooltip("대화 표시 패널입니다. 필요하면 씬에서 자동으로 찾습니다.")]
-    [SerializeField] private DialoguePanel dialoguePanel;
-
     private bool _hasLoggedMissingEventSystemWarning;
 
     public bool HasInputSettingsPanel => ResolveInputSettingsPanelRoot() != null && ResolveInputSettingsPanel() != null;
     public bool IsInputSettingsPanelVisible => ResolveInputSettingsPanelRoot() != null && ResolveInputSettingsPanelRoot().gameObject.activeSelf;
-    public DialoguePanel DialoguePanel => ResolveDialoguePanel();
 
     private void Reset()
     {
@@ -56,11 +52,6 @@ public class UIManager : MonoBehaviour
     {
         inputSettingsPanelRoot = panelRoot;
         inputSettingsPanel = panel;
-    }
-
-    public void BindDialoguePanel(DialoguePanel panel)
-    {
-        dialoguePanel = panel;
     }
 
     public void ValidateManagedUi(Component context)
@@ -127,8 +118,6 @@ public class UIManager : MonoBehaviour
         {
             inputSettingsPanelRoot = FindAncestorByName(inputSettingsPanel.transform, "InputSettingsPanel") as RectTransform;
         }
-
-        dialoguePanel ??= Object.FindFirstObjectByType<DialoguePanel>();
     }
 
     private void ConfigureInputSettingsPanelFromHierarchy()
@@ -165,8 +154,6 @@ public class UIManager : MonoBehaviour
         TryAddSettingsRow(rows, "Sprint", "대시", "Player", "Sprint", GameInput.Instance.FindBindingIndex("Player", "Sprint", groupContains: "Keyboard&Mouse"));
         TryAddSettingsRow(rows, "Attack", "공격", "Player", "Attack", GameInput.Instance.FindBindingIndex("Player", "Attack", groupContains: "Keyboard&Mouse"));
         TryAddSettingsRow(rows, "Interact", "상호작용", "Player", "Interact", GameInput.Instance.FindBindingIndex("Player", "Interact", groupContains: "Keyboard&Mouse"));
-        TryAddSettingsRow(rows, "DialogueAdvance", "대화 진행", "Dialogue", "Advance", GameInput.Instance.FindBindingIndex("Dialogue", "Advance", groupContains: "Keyboard&Mouse"));
-        TryAddSettingsRow(rows, "DialogueSkip", "대화 스킵", "Dialogue", "Skip", GameInput.Instance.FindBindingIndex("Dialogue", "Skip", groupContains: "Keyboard&Mouse"));
 
         if (rows.Count > 0)
         {
@@ -243,12 +230,6 @@ public class UIManager : MonoBehaviour
             ? resolvedInputSettingsPanelRoot.GetComponent<GameInputSettingsPanel>()
             : Object.FindFirstObjectByType<GameInputSettingsPanel>();
         return inputSettingsPanel;
-    }
-
-    private DialoguePanel ResolveDialoguePanel()
-    {
-        dialoguePanel ??= Object.FindFirstObjectByType<DialoguePanel>();
-        return dialoguePanel;
     }
 
     private static Transform FindAncestorByName(Transform start, string targetName)

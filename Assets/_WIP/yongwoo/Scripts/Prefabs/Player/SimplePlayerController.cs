@@ -18,6 +18,7 @@ public class SimplePlayerController : MonoBehaviour
     private const string EnemyLayerName = "Enemy";
     private const float JumpGroundIgnoreDuration = 0.08f;
     private const float UpwardUngroundedVelocity = 0.05f;
+    private const float PointerDashDeadZone = 0.05f;
 
     private enum PlayerActionState
     {
@@ -36,6 +37,7 @@ public class SimplePlayerController : MonoBehaviour
     [SerializeField] private float airDeceleration = 42f;
     [SerializeField] private float turnaroundAccelerationMultiplier = 1.65f;
     [SerializeField] private float jumpForce = 9.35f;
+    [SerializeField] private int extraAirJumps = 1;
     [SerializeField] private float coyoteTime = 0.1f;
     [SerializeField] private float jumpBufferTime = 0.12f;
     [SerializeField] private float fallGravityMultiplier = 2.85f;
@@ -49,8 +51,11 @@ public class SimplePlayerController : MonoBehaviour
 
     [Header("Dash")]
     [SerializeField] private float dashSpeed = 12f;
-    [SerializeField] private float dashDuration = 0.14f;
+    [SerializeField] private float dashMaxDistance = 3.5f;
+    [SerializeField, HideInInspector] private float dashDuration = 0.14f;
     [SerializeField] private float dashCooldown = 2f;
+    [SerializeField] private Color dashPreviewColor = Color.red;
+    [SerializeField] private float dashPreviewWidth = 0.04f;
 
     [Header("Roll")]
     [SerializeField] private float rollSpeed = 8.5f;
@@ -71,20 +76,27 @@ public class SimplePlayerController : MonoBehaviour
     private bool _isGrounded;
     private float _coyoteTimer;
     private float _jumpBufferTimer;
+    private int _airJumpsRemaining;
     private bool _jumpHeld;
     private float _facing = 1f;
     private float _jumpGroundIgnoreTimer;
     private SpriteRenderer _visualRenderer;
     private Collider2D[] _selfColliders = System.Array.Empty<Collider2D>();
+    private BoxCollider2D _bodyCollider;
 
     private PlayerActionState _actionState;
     private float _actionTimer;
     private float _actionDirection = 1f;
+    private Vector2 _dashDirection = Vector2.right;
+    private float _activeDashSpeed;
+    private float _dashDistanceRemaining;
     private float _dashCooldownTimer;
     private bool _dashQueued;
     private bool _rollQueued;
     private float _queuedRollDirection;
     private bool _useExternalFacing;
+    private LineRenderer _dashPreviewLine;
+    private Camera _mainCamera;
 
     public Vector2 CurrentVelocity => _body != null ? _body.linearVelocity : Vector2.zero;
     public bool IsGroundedNow => _isGrounded;
@@ -121,6 +133,7 @@ public class SimplePlayerController : MonoBehaviour
             airDeceleration = airDeceleration,
             turnaroundAccelerationMultiplier = turnaroundAccelerationMultiplier,
             jumpForce = jumpForce,
+            extraAirJumps = extraAirJumps,
             coyoteTime = coyoteTime,
             jumpBufferTime = jumpBufferTime,
             fallGravityMultiplier = fallGravityMultiplier,
@@ -133,6 +146,7 @@ public class SimplePlayerController : MonoBehaviour
             gravityScale = baseGravityScale,
             groundCheckRadius = groundCheckRadius,
             dashSpeed = dashSpeed,
+            dashMaxDistance = dashMaxDistance,
             dashDuration = dashDuration,
             dashCooldown = dashCooldown,
             rollSpeed = rollSpeed,
@@ -151,6 +165,7 @@ public class SimplePlayerController : MonoBehaviour
         airDeceleration = config.airDeceleration;
         turnaroundAccelerationMultiplier = config.turnaroundAccelerationMultiplier;
         jumpForce = config.jumpForce;
+        extraAirJumps = config.extraAirJumps;
         coyoteTime = config.coyoteTime;
         jumpBufferTime = config.jumpBufferTime;
         fallGravityMultiplier = config.fallGravityMultiplier;
@@ -163,6 +178,7 @@ public class SimplePlayerController : MonoBehaviour
         baseGravityScale = config.gravityScale;
         groundCheckRadius = config.groundCheckRadius;
         dashSpeed = config.dashSpeed;
+        dashMaxDistance = config.dashMaxDistance;
         dashDuration = config.dashDuration;
         dashCooldown = config.dashCooldown;
         rollSpeed = config.rollSpeed;
@@ -177,6 +193,8 @@ public class SimplePlayerController : MonoBehaviour
     private void Awake()
     {
         _body = GetComponent<Rigidbody2D>();
+        _bodyCollider = GetComponent<BoxCollider2D>();
+        _mainCamera = Camera.main;
         _selfColliders = GetComponentsInChildren<Collider2D>(includeInactive: true);
         gameObject.tag = "Player";
         EnsurePlayerEnemyCollision();
@@ -224,6 +242,8 @@ public class SimplePlayerController : MonoBehaviour
         }
 
         ApplyFacingToVisual();
+        EnsureDashPreviewLine();
+        SetDashPreviewVisible(false);
     }
 
     private void Update()
@@ -256,6 +276,8 @@ public class SimplePlayerController : MonoBehaviour
         {
             _jumpBufferTimer -= Time.unscaledDeltaTime;
         }
+
+        UpdateDashPreviewLine();
     }
 
     private void FixedUpdate()
@@ -276,6 +298,10 @@ public class SimplePlayerController : MonoBehaviour
         bool risingFromJump = _body.linearVelocity.y > UpwardUngroundedVelocity;
         _isGrounded = detectedGround && _jumpGroundIgnoreTimer <= 0f && !risingFromJump;
         _coyoteTimer = _isGrounded ? coyoteTime : Mathf.Max(0f, _coyoteTimer - realDt);
+        if (_isGrounded)
+        {
+            _airJumpsRemaining = extraAirJumps;
+        }
 
         // 대시/롤은 일반 이동보다 우선하며, 실행 중에는 해당 루틴만 계속 유지합니다.
         if (IsDashing)
@@ -306,7 +332,7 @@ public class SimplePlayerController : MonoBehaviour
             _dashQueued = false;
             if (_dashCooldownTimer <= 0f)
             {
-                StartDash(ResolveActionDirection());
+                StartDash();
                 return;
             }
         }
@@ -349,11 +375,11 @@ public class SimplePlayerController : MonoBehaviour
         Vector2 velocity = _body.linearVelocity;
         velocity.x = newSpeed;
 
-        if (_jumpBufferTimer > 0f && _coyoteTimer > 0f)
+        if (_jumpBufferTimer > 0f && CanJump())
         {
             velocity.y = jumpForce;
+            ConsumeJump();
             _isGrounded = false;
-            _coyoteTimer = 0f;
             _jumpBufferTimer = 0f;
             _jumpGroundIgnoreTimer = JumpGroundIgnoreDuration;
         }
@@ -406,28 +432,51 @@ public class SimplePlayerController : MonoBehaviour
         _body.linearVelocity = velocity;
     }
 
-    private void StartDash(float direction)
+    private bool CanJump()
+    {
+        return _coyoteTimer > 0f || (!_isGrounded && _airJumpsRemaining > 0);
+    }
+
+    private void ConsumeJump()
+    {
+        if (_coyoteTimer <= 0f && !_isGrounded)
+        {
+            _airJumpsRemaining = Mathf.Max(0, _airJumpsRemaining - 1);
+        }
+
+        _coyoteTimer = 0f;
+    }
+
+    private void StartDash()
     {
         // 대시 시작 시점에 방향과 쿨다운을 고정하고 점프 버퍼를 비웁니다.
+        ResolveDashTarget(out _dashDirection, out float dashDistance);
         _actionState = PlayerActionState.Dash;
-        _actionTimer = dashDuration;
-        _actionDirection = direction;
+        _actionTimer = dashDistance / Mathf.Max(0.01f, dashSpeed);
+        _activeDashSpeed = dashSpeed;
+        _dashDistanceRemaining = dashDistance;
         _dashCooldownTimer = dashCooldown;
         _jumpBufferTimer = 0f;
         _coyoteTimer = 0f;
-        _facing = direction;
+        _facing = _dashDirection.x >= 0f ? 1f : -1f;
         ApplyFacingToVisual();
+        SetDashPreviewVisible(false);
     }
 
     private void TickDash()
     {
-        // 대시는 중력을 끄고 정해진 시간 동안 수평 속도를 강제로 유지합니다.
-        _actionTimer = Mathf.Max(0f, _actionTimer - Time.fixedUnscaledDeltaTime);
+        // 대시는 고정 속도로 이동하고 마지막 틱에서 남은 거리만큼만 움직여 레이저 길이에 맞춥니다.
+        float realDt = Time.fixedUnscaledDeltaTime;
+        _actionTimer = Mathf.Max(0f, _actionTimer - realDt);
         _body.gravityScale = 0f;
-        _body.linearVelocity = new Vector2(_actionDirection * dashSpeed, 0f);
 
-        if (_actionTimer <= 0f)
+        float stepDistance = Mathf.Min(_activeDashSpeed * realDt, _dashDistanceRemaining);
+        _dashDistanceRemaining = Mathf.Max(0f, _dashDistanceRemaining - stepDistance);
+        _body.MovePosition(_body.position + _dashDirection * stepDistance);
+
+        if (_dashDistanceRemaining <= 0.001f || _actionTimer <= 0f)
         {
+            _body.linearVelocity = Vector2.zero;
             FinishAction();
         }
     }
@@ -471,7 +520,39 @@ public class SimplePlayerController : MonoBehaviour
         // 액션 종료 후에는 현재 입력 상태를 다시 읽어 일반 이동 또는 웅크리기로 복귀합니다.
         _actionState = _isGrounded && _downHeld ? PlayerActionState.Crouch : PlayerActionState.Normal;
         _actionTimer = 0f;
+        _dashDistanceRemaining = 0f;
         _body.gravityScale = baseGravityScale;
+    }
+
+    private void ResolveDashTarget(out Vector2 direction, out float distance)
+    {
+        Vector2 origin = GetDashOrigin();
+        if (TryGetPointerWorldPosition(out Vector2 pointerWorld))
+        {
+            Vector2 pointerDelta = pointerWorld - origin;
+            if (pointerDelta.sqrMagnitude > PointerDashDeadZone * PointerDashDeadZone)
+            {
+                distance = Mathf.Min(pointerDelta.magnitude, dashMaxDistance);
+                direction = pointerDelta.normalized;
+                return;
+            }
+        }
+
+        float fallbackDirection = ResolveActionDirection();
+        direction = new Vector2(fallbackDirection, 0f);
+        distance = dashMaxDistance;
+    }
+
+    private Vector2 GetDashOrigin()
+    {
+        if (_bodyCollider == null)
+        {
+            _bodyCollider = GetComponent<BoxCollider2D>();
+        }
+
+        return _bodyCollider != null
+            ? _bodyCollider.bounds.center
+            : transform.position;
     }
 
     private float ResolveActionDirection()
@@ -482,6 +563,112 @@ public class SimplePlayerController : MonoBehaviour
         }
 
         return _facing >= 0f ? 1f : -1f;
+    }
+
+    private void UpdateDashPreviewLine()
+    {
+        if (IsActionLocked || IsCrouching || _dashCooldownTimer > 0f)
+        {
+            SetDashPreviewVisible(false);
+            return;
+        }
+
+        EnsureDashPreviewLine();
+        if (_dashPreviewLine == null)
+        {
+            return;
+        }
+
+        ResolveDashTarget(out Vector2 direction, out float distance);
+        Vector3 start = GetDashOrigin();
+        Vector3 end = start + (Vector3)(direction * distance);
+        _dashPreviewLine.SetPosition(0, start);
+        _dashPreviewLine.SetPosition(1, end);
+        SetDashPreviewVisible(true);
+    }
+
+    private void EnsureDashPreviewLine()
+    {
+        if (_dashPreviewLine != null)
+        {
+            ApplyDashPreviewStyle();
+            return;
+        }
+
+        Transform existing = transform.Find("DashPreviewLine");
+        if (existing != null)
+        {
+            _dashPreviewLine = existing.GetComponent<LineRenderer>();
+        }
+
+        if (_dashPreviewLine == null)
+        {
+            GameObject lineObject = new GameObject("DashPreviewLine");
+            lineObject.transform.SetParent(transform, false);
+            _dashPreviewLine = lineObject.AddComponent<LineRenderer>();
+        }
+
+        _dashPreviewLine.useWorldSpace = true;
+        _dashPreviewLine.positionCount = 2;
+        ApplyDashPreviewStyle();
+    }
+
+    private void ApplyDashPreviewStyle()
+    {
+        if (_dashPreviewLine == null)
+        {
+            return;
+        }
+
+        _dashPreviewLine.startWidth = dashPreviewWidth;
+        _dashPreviewLine.endWidth = dashPreviewWidth;
+        _dashPreviewLine.startColor = dashPreviewColor;
+        _dashPreviewLine.endColor = dashPreviewColor;
+        _dashPreviewLine.numCapVertices = 2;
+        _dashPreviewLine.sortingLayerName = "Effect";
+        _dashPreviewLine.sortingOrder = 100;
+
+        if (_dashPreviewLine.sharedMaterial == null)
+        {
+            Shader shader = Shader.Find("Sprites/Default");
+            if (shader != null)
+            {
+                _dashPreviewLine.sharedMaterial = new Material(shader);
+            }
+        }
+    }
+
+    private void SetDashPreviewVisible(bool visible)
+    {
+        if (_dashPreviewLine != null)
+        {
+            _dashPreviewLine.enabled = visible;
+        }
+    }
+
+    private bool TryGetPointerWorldPosition(out Vector2 pointerWorld)
+    {
+        pointerWorld = Vector2.zero;
+
+        if (!GameInput.Instance.TryGetPointerScreenPosition(out Vector2 screenPosition))
+        {
+            return false;
+        }
+
+        if (_mainCamera == null)
+        {
+            _mainCamera = Camera.main;
+        }
+
+        if (_mainCamera == null)
+        {
+            return false;
+        }
+
+        Vector3 world = _mainCamera.ScreenToWorldPoint(
+            new Vector3(screenPosition.x, screenPosition.y, -_mainCamera.transform.position.z));
+        pointerWorld = world;
+        return true;
     }
 
     private void ApplyFacingToVisual()
@@ -610,6 +797,11 @@ public class SimplePlayerController : MonoBehaviour
 
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+    }
+
+    private void OnDisable()
+    {
+        SetDashPreviewVisible(false);
     }
 
     private static void EnsurePlayerEnemyCollision()

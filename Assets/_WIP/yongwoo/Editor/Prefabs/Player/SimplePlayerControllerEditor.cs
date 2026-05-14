@@ -23,7 +23,9 @@ public class SimplePlayerControllerEditor : Editor
         EditorGUILayout.HelpBox(
             "먼저 만질 핵심 값:\n" +
             "- jumpForce: 점프 높이\n" +
-            "- dashSpeed / dashDuration: 대쉬 거리감\n" +
+            "- extraAirJumps: 공중에서 추가로 점프할 수 있는 횟수\n" +
+            "- dashSpeed / dashMaxDistance: 마우스 방향 대쉬 속도와 최대 거리\n" +
+            "- dashPreviewColor / dashPreviewWidth: 대쉬 예상 궤적 표시\n" +
             "- rollSpeed / rollDuration: 구르기 거리감\n" +
             "- fallGravityMultiplier: 내려오는 속도\n" +
             "- jumpCutGravityMultiplier: 짧게 누른 점프 높이\n" +

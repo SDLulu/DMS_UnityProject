@@ -5,7 +5,7 @@ using UnityEditor;
 #endif
 
 // 역할:
-// - 플레이 중 조정한 플레이어/보스 튜닝값을 대응 프리팹 asset에 다시 기록합니다.
+// - 플레이 중 조정한 플레이어 튜닝값을 대응 프리팹 asset에 다시 기록합니다.
 // - 에디터 전용 흐름에서 런타임 스냅샷을 프리팹 직렬화 값으로 되돌리는 유틸리티입니다.
 //
 // 구조 포인트:
@@ -14,7 +14,6 @@ using UnityEditor;
 public static class PrefabAutoSaveUtility
 {
     public const string PlayerPrefabPath = "Assets/_WIP/yongwoo/Prefabs/Prototype/Player.prefab";
-    public const string BossPrefabPath = "Assets/_WIP/yongwoo/Prefabs/Prototype/Boss.prefab";
 
 #if UNITY_EDITOR
     public static void ApplyPlayerConfigToPrefabAsset(string prefabPath, PlayerConfig config)
@@ -76,9 +75,12 @@ public static class PrefabAutoSaveUtility
         AssetDatabase.SaveAssets();
     }
 
-    public static void ApplyBossConfigToPrefabAsset(string prefabPath, BossConfig config)
+    public static void ApplyPlayerVisualTransformToPrefabAsset(
+        string prefabPath,
+        Vector3 localPosition,
+        Vector3 localScale)
     {
-        if (string.IsNullOrWhiteSpace(prefabPath) || config == null)
+        if (string.IsNullOrWhiteSpace(prefabPath))
         {
             return;
         }
@@ -89,16 +91,15 @@ public static class PrefabAutoSaveUtility
             return;
         }
 
-        BossController controller = prefabAsset.GetComponent<BossController>();
-        if (controller == null)
+        Transform visual = prefabAsset.transform.Find("Visual") ?? prefabAsset.transform.Find("RobotMaidVisual");
+        if (visual == null)
         {
             return;
         }
 
-        BossConfig snapshot = BossConfigLoader.Sanitize(BossConfigLoader.DeepClone(config));
-        controller.SetSerializedConfig(snapshot);
-        controller.RefreshRuntimeConfig(resetBossState: true, preserveHealthRatio: false);
-        EditorUtility.SetDirty(controller);
+        visual.localPosition = localPosition;
+        visual.localScale = localScale;
+        EditorUtility.SetDirty(visual);
         EditorUtility.SetDirty(prefabAsset);
         PrefabUtility.SavePrefabAsset(prefabAsset);
         AssetDatabase.SaveAssets();
@@ -108,7 +109,10 @@ public static class PrefabAutoSaveUtility
     {
     }
 
-    public static void ApplyBossConfigToPrefabAsset(string prefabPath, BossConfig config)
+    public static void ApplyPlayerVisualTransformToPrefabAsset(
+        string prefabPath,
+        Vector3 localPosition,
+        Vector3 localScale)
     {
     }
 #endif

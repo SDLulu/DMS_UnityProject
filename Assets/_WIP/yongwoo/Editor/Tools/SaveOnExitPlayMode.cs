@@ -25,13 +25,12 @@ public static class SaveOnExitPlayMode
             return;
         }
 
-        if (SceneManager.GetActiveScene().name != "Yongwoo")
+        if (!IsYongwooTuningScene(SceneManager.GetActiveScene().name))
         {
             return;
         }
 
         SavePlayerTuning();
-        SaveBossTuning();
     }
 
     private static void SavePlayerTuning()
@@ -46,19 +45,19 @@ public static class SaveOnExitPlayMode
         PrefabAutoSaveUtility.ApplyPlayerConfigToPrefabAsset(
             PrefabAutoSaveUtility.PlayerPrefabPath,
             snapshot);
-    }
 
-    private static void SaveBossTuning()
-    {
-        BossController bossController = Object.FindFirstObjectByType<BossController>();
-        if (bossController == null)
+        SimplePlayerController controller = runtimeConfig.GetComponent<SimplePlayerController>();
+        Transform visual = controller != null ? controller.VisualRoot : runtimeConfig.transform.Find("Visual");
+        if (visual != null)
         {
-            return;
+            PrefabAutoSaveUtility.ApplyPlayerVisualTransformToPrefabAsset(
+                PrefabAutoSaveUtility.PlayerPrefabPath,
+                visual.localPosition,
+                visual.localScale);
         }
-
-        BossConfig snapshot = bossController.CreateConfigSnapshot();
-        PrefabAutoSaveUtility.ApplyBossConfigToPrefabAsset(
-            PrefabAutoSaveUtility.BossPrefabPath,
-            snapshot);
+    }
+    private static bool IsYongwooTuningScene(string sceneName)
+    {
+        return sceneName == "Yongwoo" || sceneName == "Yongwoo_Stage";
     }
 }
