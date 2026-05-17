@@ -16,6 +16,7 @@ namespace UnityCliConnector
 
         static double s_LastWrite;
         const double INTERVAL = 0.5;
+        const string CONNECTOR_VERSION = "0.3.18";
         static string s_ForcedState;
         static double s_CompileRequestTime;
         static string s_FilePath;
@@ -58,7 +59,7 @@ namespace UnityCliConnector
 
         static void Tick()
         {
-            if (HttpServer.Port == 0) return;
+            if (!HttpServer.IsRunning) return;
 
             var now = EditorApplication.timeSinceStartup;
             if (now - s_LastWrite < INTERVAL) return;
@@ -98,6 +99,7 @@ namespace UnityCliConnector
                 port = HttpServer.Port,
                 pid = System.Diagnostics.Process.GetCurrentProcess().Id,
                 unityVersion = Application.unityVersion,
+                connectorVersion = GetConnectorVersion(),
                 timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
                 compileErrors = EditorUtility.scriptCompilationFailed,
             };
@@ -112,6 +114,11 @@ namespace UnityCliConnector
             }
         }
 
+        static string GetConnectorVersion()
+        {
+            return CONNECTOR_VERSION;
+        }
+
         static string GetState()
         {
             if (EditorApplication.isCompiling) return "compiling";
@@ -123,7 +130,11 @@ namespace UnityCliConnector
 
         public static void Cleanup()
         {
-            if (HttpServer.Port == 0) return;
+            MarkStopped();
+        }
+
+        public static void MarkStopped()
+        {
             s_ForcedState = "stopped";
             Write();
         }

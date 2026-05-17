@@ -1,0 +1,16 @@
+{
+    "name": "AISafetyTools.Editor",
+    "rootNamespace": "AISafetyTools",
+    "references": [
+        "UnityCliConnector.Editor"
+    ],
+    "includePlatforms": ["Editor"],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

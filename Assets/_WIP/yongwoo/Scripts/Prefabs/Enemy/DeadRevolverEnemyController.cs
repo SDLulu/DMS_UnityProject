@@ -26,6 +26,7 @@ public class DeadRevolverEnemyController : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private Transform visualRoot;
+    [SerializeField] private Transform hitboxRoot;
     [SerializeField] private Animator visualAnimator;
     [SerializeField] private Transform muzzlePoint;
     [SerializeField] private DeadRevolverEnemyMeleeHitbox punchHitbox;
@@ -288,9 +289,15 @@ public class DeadRevolverEnemyController : MonoBehaviour
             return false;
         }
 
-        return IsGunner
-            ? absX <= gunRange
-            : absX <= meleeRange;
+        if (IsGunner)
+        {
+            return absX <= gunRange;
+        }
+
+        // 근접: 히트박스 영역 안에 플레이어가 있는지를 직접 본다.
+        // 거리 기반 판정과 폴리곤/박스의 실제 영역이 어긋날 일이 없어진다.
+        DeadRevolverEnemyMeleeHitbox hitbox = GetPrimaryHitbox();
+        return hitbox != null && hitbox.HasPlayerInRange;
     }
 
     private bool ShouldSeparateFromTarget(float absX, float absY, float xDelta)
@@ -356,14 +363,23 @@ public class DeadRevolverEnemyController : MonoBehaviour
         body ??= GetComponent<Rigidbody2D>();
         interaction ??= GetComponent<EnemyInteraction>();
         visualRoot ??= transform.Find("Visual");
+        hitboxRoot ??= transform.Find("Hitboxes");
 
         if (visualRoot != null)
         {
             visualAnimator ??= visualRoot.GetComponent<Animator>();
+            visualAnimator ??= visualRoot.GetComponentInChildren<Animator>(true);
             muzzlePoint ??= visualRoot.Find("MuzzlePoint");
             punchHitbox ??= visualRoot.Find("PunchHitbox")?.GetComponent<DeadRevolverEnemyMeleeHitbox>();
             swordHitbox ??= visualRoot.Find("SwordHitbox")?.GetComponent<DeadRevolverEnemyMeleeHitbox>();
             shieldHitbox ??= visualRoot.Find("ShieldHitbox")?.GetComponent<DeadRevolverEnemyMeleeHitbox>();
+        }
+
+        if (hitboxRoot != null)
+        {
+            punchHitbox ??= hitboxRoot.Find("PunchHitbox")?.GetComponent<DeadRevolverEnemyMeleeHitbox>();
+            swordHitbox ??= hitboxRoot.Find("SwordHitbox")?.GetComponent<DeadRevolverEnemyMeleeHitbox>();
+            shieldHitbox ??= hitboxRoot.Find("ShieldHitbox")?.GetComponent<DeadRevolverEnemyMeleeHitbox>();
         }
     }
 
@@ -381,15 +397,21 @@ public class DeadRevolverEnemyController : MonoBehaviour
 
     private void ApplyFacingToVisual()
     {
-        if (visualRoot == null)
+        float sign = invertVisualFacing ? -_facing : _facing;
+
+        if (visualRoot != null)
         {
-            return;
+            Vector3 visualScale = visualRoot.localScale;
+            visualScale.x = Mathf.Abs(visualScale.x) * sign;
+            visualRoot.localScale = visualScale;
         }
 
-        Vector3 scale = visualRoot.localScale;
-        float sign = invertVisualFacing ? -_facing : _facing;
-        scale.x = Mathf.Abs(scale.x) * sign;
-        visualRoot.localScale = scale;
+        if (hitboxRoot != null)
+        {
+            Vector3 hitboxScale = hitboxRoot.localScale;
+            hitboxScale.x = Mathf.Abs(hitboxScale.x) * sign;
+            hitboxRoot.localScale = hitboxScale;
+        }
     }
 
     private void SetMoveAnimation(bool isMoving)
@@ -434,17 +456,68 @@ public class DeadRevolverEnemyController : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = IsGunner ? new Color(1f, 0.7f, 0.3f, 0.65f) : new Color(1f, 0.25f, 0.25f, 0.65f);
+        // 감지 범위 (탐지 시야)
+        Gizmos.matrix = Matrix4x4.identity;
+        Gizmos.color = new Color(0.3f, 0.6f, 1f, 0.45f);
+        Gizmos.DrawWireSphere(transform.position, detectionRange);
 
-        if (!IsGunner)
+        if (IsGunner)
         {
+            // 사거리
+            Gizmos.color = new Color(1f, 0.7f, 0.3f, 0.85f);
+            Gizmos.DrawWireSphere(transform.position, gunRange);
+        }
+        else
+        {
+            // 근접 히트박스 (실제 모양 그대로)
+            Gizmos.color = new Color(1f, 0.25f, 0.25f, 0.9f);
             DeadRevolverEnemyMeleeHitbox hitbox = GetPrimaryHitbox();
-            BoxCollider2D box = hitbox != null ? hitbox.GetComponent<BoxCollider2D>() : null;
-            if (box != null)
+            if (hitbox != null)
             {
-                Gizmos.matrix = box.transform.localToWorldMatrix;
-                Gizmos.DrawWireCube(box.offset, box.size);
+                DrawCollider2DGizmo(hitbox.GetComponent<Collider2D>());
             }
+        }
+    }
+
+    private static void DrawCollider2DGizmo(Collider2D col)
+    {
+        if (col == null)
+        {
+            return;
+        }
+
+        Transform t = col.transform;
+
+        switch (col)
+        {
+            case BoxCollider2D box:
+                Gizmos.matrix = t.localToWorldMatrix;
+                Gizmos.DrawWireCube(box.offset, box.size);
+                Gizmos.matrix = Matrix4x4.identity;
+                break;
+
+            case CircleCollider2D circle:
+            {
+                Vector3 center = t.TransformPoint(circle.offset);
+                float radius = circle.radius * Mathf.Max(Mathf.Abs(t.lossyScale.x), Mathf.Abs(t.lossyScale.y));
+                Gizmos.matrix = Matrix4x4.identity;
+                Gizmos.DrawWireSphere(center, radius);
+                break;
+            }
+
+            case PolygonCollider2D poly:
+                Gizmos.matrix = Matrix4x4.identity;
+                for (int pathIndex = 0; pathIndex < poly.pathCount; pathIndex++)
+                {
+                    Vector2[] points = poly.GetPath(pathIndex);
+                    for (int i = 0; i < points.Length; i++)
+                    {
+                        Vector3 a = t.TransformPoint(points[i] + poly.offset);
+                        Vector3 b = t.TransformPoint(points[(i + 1) % points.Length] + poly.offset);
+                        Gizmos.DrawLine(a, b);
+                    }
+                }
+                break;
         }
     }
 

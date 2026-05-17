@@ -33,8 +33,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2613152956682178006}
+  - {fileID: 1518145896855495487}
   - {fileID: 8001213777112024171}
+  - {fileID: 36049568408704009}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &3323094765145994208
@@ -122,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ac6dd54148a2d04f9b6b07850ab3cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlindHuntressEnemyInteraction
-  maxHealth: 7
+  maxHealth: 1
   invulnerabilityDuration: 0.08
   flashDuration: 0.08
   damageFlashColor: {r: 1, g: 1, b: 1, a: 1}
@@ -147,7 +148,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeadRevolverEnemyController
   archetype: 3
-  visualRoot: {fileID: 2613152956682178006}
+  visualRoot: {fileID: 1518145896855495487}
+  hitboxRoot: {fileID: 36049568408704009}
   visualAnimator: {fileID: 838599192362537498}
   muzzlePoint: {fileID: 0}
   punchHitbox: {fileID: 0}
@@ -162,6 +164,7 @@ MonoBehaviour:
   moveSpeed: 2.8
   acceleration: 28
   stopDistance: 0.92
+  bodySeparationDistance: 0.72
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -275,6 +278,70 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &4428709001381468598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 36049568408704009}
+  m_Layer: 0
+  m_Name: Hitboxes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &36049568408704009
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4428709001381468598}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5562906882828925503}
+  m_Father: {fileID: 3085958016145116591}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5726745345532256715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1518145896855495487}
+  m_Layer: 0
+  m_Name: Visual
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1518145896855495487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5726745345532256715}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2613152956682178006}
+  m_Father: {fileID: 3085958016145116591}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6039551087455048927
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,7 +355,7 @@ GameObject:
   - component: {fileID: 838599192362537498}
   - component: {fileID: 6125821837655657563}
   m_Layer: 10
-  m_Name: Visual
+  m_Name: AnimatedBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -308,8 +375,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5961505501497306688}
-  - {fileID: 5562906882828925503}
-  m_Father: {fileID: 3085958016145116591}
+  m_Father: {fileID: 1518145896855495487}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &798659730848130714
 SpriteRenderer:
@@ -436,7 +502,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2613152956682178006}
+  m_Father: {fileID: 36049568408704009}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2420899396119555487
 BoxCollider2D:
