@@ -89,6 +89,19 @@ public class SimpleCameraFollow : MonoBehaviour
         transform.position = currentPosition;
     }
 
+    public void SnapToTarget()
+    {
+        if (target == null)
+        {
+            return;
+        }
+
+        Vector3 snapped = target.position + offset;
+        snapped.z = offset.z;
+        transform.position = snapped;
+        _currentLookAhead = 0f;
+    }
+
     public void AddShake(float strength, float duration)
     {
         _shakeStrength = Mathf.Max(_shakeStrength, Mathf.Max(0f, strength));

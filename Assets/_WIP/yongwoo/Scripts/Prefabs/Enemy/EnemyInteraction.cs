@@ -12,7 +12,7 @@ public class EnemyInteraction : MonoBehaviour, IDamageReceiver
 {
     [Header("Health")]
     [Tooltip("적의 최대 체력입니다.")]
-    [SerializeField] private float maxHealth = 4f;
+    [SerializeField] private float maxHealth = 1f;
     [Tooltip("피격 후 무적 시간입니다. 같은 공격에 연속으로 맞는 걸 막습니다.")]
     [SerializeField] private float invulnerabilityDuration = 0.08f;
 

@@ -23,8 +23,10 @@
 
 ## 지금 어디까지 (현재 작업 위치)
 
-- 튜토리얼 시퀀스(Yongwoo_Stage) 구현 완료, 미세 조정 단계
-- 시작연출 → 접속대화 → 첫적/연속전투/원거리적 → HOME코어 → 칩접속 까지 동작 확인
+- 2026-05-17 정적 점검 기준: `Yongwoo_Stage` 열림, 씬 dirty 없음, Unity 콘솔 error 없음
+- 튜토리얼 시퀀스(Yongwoo_Stage) 구현 완료, 미세 조정/플레이 검증 단계
+- 시작연출 → 접속대화 → 첫적/연속전투/원거리적 → HOME코어 → 주인공집/광장/골목길 → 칩접속 오브젝트 구성 확인
+- 이번 점검에서는 플레이 모드 실행 안 함: 현재 대량 미커밋 변경이 있고, 규칙상 play 전 체크포인트 커밋 필요
 
 ## 시간 제어 3층 구조 (중요)
 
@@ -40,6 +42,8 @@
 - 적 카메라 포커스: 이름 기반(Brawler/Swordsman/Gunner)으로 매칭
 - 빌더 패턴: `TutorialContentBuilder`는 비파괴 갱신만 (수동 위치 유지)
 - 한글 오브젝트 이름 기본
+- 시스템로그 검은 배경은 `SystemLogPanel.useBackdrop`로 분리. 일반 칩 로그는 배경 없이 표시, 암전은 `ScreenFade` 담당
+- 현재 진행 차단은 `TutorialGate` 클래스명을 유지하되 시나리오상 `ProgressBlocker` 역할로 취급
 
 ---
 
@@ -51,23 +55,27 @@
 - [x] 슬로우 모션 토글 (우클릭)
 - [x] Hand + 마우스 회전
 - [x] 이동 / 점프
+- [x] 마우스 방향 대쉬 + 대쉬 프리뷰 라인
 - [ ] Shift 대쉬 → **질풍참 스타일**로 변경 (대쉬 + 공격 동시, 겐지 swift strike 느낌)
-- [ ] 기본 칼 공격 (좌클릭, Hand 기반 휘두르기)
-- [ ] 사망 → 즉시 리스폰
+- [x] 기본 칼 공격 (좌클릭, `SwordWeapon` / `SlashHitbox`)
+- [x] 사망 → 자동 리스폰 (`PlayerInteraction`, 현재 0.75초 딜레이)
 - [ ] SimplePlayerCombat 정리 (기존 칼/총 스왑 구조 제거)
 
 ## 적
 
-- [ ] 적 베이스 클래스 (HP, 사망)
-- [ ] 적 종류: 근접 돌진형 / 원거리 사격형 / 순찰형
+- [x] 적 HP / 피격 / 사망 공통 창구 (`EnemyInteraction`)
+- [x] DeadRevolver 적 4종 프리팹: Brawler / Swordsman / Gunner / ShieldBearer
+- [x] 근접 히트박스 / 원거리 투사체 판정
+- [ ] 순찰형 적
 
 ## HP 시스템 (인스펙터 친화)
 
 지금은 테스트용으로 하드코딩됨. 인스펙터에서 쉽게 바꿀 수 있게 정리한다.
 
-- [ ] 플레이어 HP — 인스펙터 노출, 기본 1 (일격사)
-- [ ] 적 HP — 인스펙터 노출, 종류별 기본값
-- [ ] HP 변경이 한 곳에서만 일어나도록 정리 (중복 필드 제거)
+- [x] 플레이어 HP — 인스펙터 노출, 기본 1 (일격사)
+- [x] 적 HP — 인스펙터 노출, 종류별 기본값
+- [x] HP 변경은 `IDamageReceiver.ReceiveHit` → `PlayerInteraction` / `EnemyInteraction`에서 처리
+- [ ] `PlayerConfig` / 컴포넌트 직렬화 값 중복이 실제 튜닝 소스 하나로 유지되는지 플레이 검증
 
 ## 다이얼로그 / 트리거
 
@@ -96,7 +104,9 @@
 
 ## 알려진 미해결
 
-- (없음)
+- 정적 점검상 `TutorialGate`와 `SceneEventSequence.WaitForEnemiesDead`는 `activeInHierarchy == false`를 사망 조건으로 본다. 현재 `EnemyInteraction` 사망은 오브젝트를 비활성화하지 않으므로 전투 후 진행 차단이 안 풀릴 위험 있음. 플레이 검증 또는 조건 수정 필요.
+- `SimplePlayerCombat`에 칼/총 스왑 구조가 아직 남아 있음. 플레이어 스코프 확정 기준으로는 칼 중심 정리가 필요.
+- PlayMode 검증 미실행. 실행 전 현재 미커밋 변경을 커밋하거나 별도 체크포인트가 필요.
 
 ---
 

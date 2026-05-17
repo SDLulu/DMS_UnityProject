@@ -43,6 +43,7 @@ public sealed class GameInput : IDisposable
     public bool DashPressed => GameplayEnabled && _dashAction.WasPressedThisFrame();
     public bool AttackPressed => GameplayEnabled && _attackAction.WasPressedThisFrame();
     public bool InteractPressed => GameplayEnabled && _interactAction.WasPressedThisFrame();
+    public bool InteractHeld => GameplayEnabled && _interactAction.IsPressed();
     public bool WeaponSwapPressed => GameplayEnabled && _weaponSwapAction.WasPressedThisFrame();
     public bool SlowMotionHeld => GameplayEnabled && _slowMotionAction.IsPressed();
     public bool UiClickPressed => _uiMap.enabled && _uiClickAction.WasPressedThisFrame();

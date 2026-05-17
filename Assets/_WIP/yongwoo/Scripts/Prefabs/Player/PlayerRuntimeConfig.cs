@@ -67,6 +67,7 @@ public class PlayerRuntimeConfig : MonoBehaviour
         }
 
         CaptureCurrentColliderConfig();
+        CaptureCurrentHealthConfig();
         _config = PlayerConfigLoader.Sanitize(PlayerConfigLoader.DeepClone(_config));
         RefreshRuntimeConfig();
     }
@@ -174,10 +175,23 @@ public class PlayerRuntimeConfig : MonoBehaviour
         _config.collider.isTrigger = _bodyCollider.isTrigger;
     }
 
+    private void CaptureCurrentHealthConfig()
+    {
+        if (_interaction == null)
+        {
+            return;
+        }
+
+        _config ??= new PlayerConfig();
+        _config.health = _interaction.CreateHealthConfigSnapshot();
+    }
+
     private void OnValidate()
     {
         _bodyCollider ??= GetComponent<BoxCollider2D>();
+        _interaction ??= GetComponent<PlayerInteraction>();
         CaptureCurrentColliderConfig();
+        CaptureCurrentHealthConfig();
         _config = PlayerConfigLoader.Sanitize(PlayerConfigLoader.DeepClone(_config));
 
         if (!Application.isPlaying)

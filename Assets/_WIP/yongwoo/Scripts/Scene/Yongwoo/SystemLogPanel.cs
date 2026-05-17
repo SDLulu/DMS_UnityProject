@@ -15,6 +15,7 @@ public class SystemLogPanel : MonoBehaviour
     [SerializeField] private Text logText;
 
     [Header("Visual")]
+    [SerializeField] private bool useBackdrop;
     [SerializeField] private Color backdropColor = Color.black;
 
     private void Reset()
@@ -48,6 +49,12 @@ public class SystemLogPanel : MonoBehaviour
             panelRoot.gameObject.SetActive(true);
         }
 
+        // 이전 FadeTo(0)로 알파가 0이 됐을 수 있으니, 새 메시지가 보이도록 알파를 복원
+        if (panelGroup != null)
+        {
+            panelGroup.alpha = 1f;
+        }
+
         if (logText != null)
         {
             logText.text = message ?? string.Empty;
@@ -55,7 +62,7 @@ public class SystemLogPanel : MonoBehaviour
 
         if (backdropImage != null)
         {
-            backdropImage.color = backdropColor;
+            ApplyBackdrop();
         }
     }
 
@@ -76,7 +83,7 @@ public class SystemLogPanel : MonoBehaviour
 
         if (backdropImage != null)
         {
-            backdropImage.color = backdropColor;
+            ApplyBackdrop();
         }
     }
 
@@ -156,6 +163,19 @@ public class SystemLogPanel : MonoBehaviour
         {
             logText = FindDescendantByName(transform, "LogText")?.GetComponent<Text>();
         }
+
+        ApplyBackdrop();
+    }
+
+    private void ApplyBackdrop()
+    {
+        if (backdropImage == null)
+        {
+            return;
+        }
+
+        backdropImage.gameObject.SetActive(useBackdrop);
+        backdropImage.color = useBackdrop ? backdropColor : Color.clear;
     }
 
     private static Transform FindDescendantByName(Transform root, string targetName)

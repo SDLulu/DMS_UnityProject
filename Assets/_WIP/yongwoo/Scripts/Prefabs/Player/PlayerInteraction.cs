@@ -13,7 +13,7 @@ using UnityEngine;
 public class PlayerInteraction : MonoBehaviour, IDamageReceiver
 {
     [Header("Health")]
-    [SerializeField] private float maxHealth = 5f;
+    [SerializeField] private float maxHealth = 1f;
     [SerializeField] private float invulnerabilityDuration = 0.08f;
 
     [Header("Feedback")]

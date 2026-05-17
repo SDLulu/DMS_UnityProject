@@ -92,7 +92,7 @@ public class PlayerAttackConfig
 // 공통 체력 컴포넌트에 주입할 플레이어 전용 체력/피격 설정입니다.
 public class PlayerHealthConfig
 {
-    public float maxHealth = 5f;
+    public float maxHealth = 1f;
     public float invulnerabilityDuration = 0.08f;
     public float flashDuration = 0.08f;
     public float respawnDelay = 0.75f;
