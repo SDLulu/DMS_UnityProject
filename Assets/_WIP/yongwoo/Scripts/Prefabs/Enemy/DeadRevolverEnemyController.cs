@@ -6,7 +6,7 @@ using UnityEngine;
 
 [DisallowMultipleComponent]
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(BlindHuntressEnemyInteraction))]
+[RequireComponent(typeof(EnemyInteraction))]
 public class DeadRevolverEnemyController : MonoBehaviour
 {
     private const string ProjectileLayerName = "Projectile";
@@ -31,7 +31,7 @@ public class DeadRevolverEnemyController : MonoBehaviour
     [SerializeField] private DeadRevolverEnemyMeleeHitbox punchHitbox;
     [SerializeField] private DeadRevolverEnemyMeleeHitbox swordHitbox;
     [SerializeField] private DeadRevolverEnemyMeleeHitbox shieldHitbox;
-    [SerializeField] private BlindHuntressEnemyInteraction interaction;
+    [SerializeField] private EnemyInteraction interaction;
     [SerializeField] private Rigidbody2D body;
 
     [Header("Target")]
@@ -354,7 +354,7 @@ public class DeadRevolverEnemyController : MonoBehaviour
     private void CacheReferences()
     {
         body ??= GetComponent<Rigidbody2D>();
-        interaction ??= GetComponent<BlindHuntressEnemyInteraction>();
+        interaction ??= GetComponent<EnemyInteraction>();
         visualRoot ??= transform.Find("Visual");
 
         if (visualRoot != null)

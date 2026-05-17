@@ -7,7 +7,7 @@ using UnityEngine;
 [DisallowMultipleComponent]
 [RequireComponent(typeof(BlindHuntressEnemyBrain))]
 [RequireComponent(typeof(BlindHuntressEnemyCombat))]
-[RequireComponent(typeof(BlindHuntressEnemyInteraction))]
+[RequireComponent(typeof(EnemyInteraction))]
 public class BlindHuntressEnemyAnimationDriver : MonoBehaviour
 {
     private static readonly int IdleState = Animator.StringToHash("Base Layer.Idle");
@@ -36,7 +36,7 @@ public class BlindHuntressEnemyAnimationDriver : MonoBehaviour
     private Rigidbody2D _body;
     private BlindHuntressEnemyBrain _brain;
     private BlindHuntressEnemyCombat _combat;
-    private BlindHuntressEnemyInteraction _interaction;
+    private EnemyInteraction _interaction;
     private float _hitTimer;
     private int _currentState;
 
@@ -120,7 +120,7 @@ public class BlindHuntressEnemyAnimationDriver : MonoBehaviour
         _body ??= GetComponent<Rigidbody2D>();
         _brain ??= GetComponent<BlindHuntressEnemyBrain>();
         _combat ??= GetComponent<BlindHuntressEnemyCombat>();
-        _interaction ??= GetComponent<BlindHuntressEnemyInteraction>();
+        _interaction ??= GetComponent<EnemyInteraction>();
 
         if (visualRoot == null)
         {

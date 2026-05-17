@@ -160,7 +160,7 @@ public static class BlindHuntressEnemyBuilder
         BlindHuntressEnemyBrain brain = EnsureComponent<BlindHuntressEnemyBrain>(root);
         BlindHuntressEnemyAnimationDriver animationDriver = EnsureComponent<BlindHuntressEnemyAnimationDriver>(root);
         BlindHuntressEnemyEditPreview editPreview = EnsureComponent<BlindHuntressEnemyEditPreview>(root);
-        EnsureComponent<BlindHuntressEnemyInteraction>(root);
+        EnsureComponent<EnemyInteraction>(root);
 
         SerializedObject combatSo = new SerializedObject(combat);
         combatSo.FindProperty("attackHitboxAnchor").objectReferenceValue = attackHitbox;

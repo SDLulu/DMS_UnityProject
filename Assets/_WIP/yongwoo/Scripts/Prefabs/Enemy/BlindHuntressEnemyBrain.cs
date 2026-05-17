@@ -10,7 +10,7 @@ using UnityEditor;
 [DisallowMultipleComponent]
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BlindHuntressEnemyCombat))]
-[RequireComponent(typeof(BlindHuntressEnemyInteraction))]
+[RequireComponent(typeof(EnemyInteraction))]
 public class BlindHuntressEnemyBrain : MonoBehaviour
 {
     private const string PlayerLayerName = "Player";
@@ -102,7 +102,7 @@ public class BlindHuntressEnemyBrain : MonoBehaviour
 
     private Rigidbody2D _body;
     private BlindHuntressEnemyCombat _combat;
-    private BlindHuntressEnemyInteraction _interaction;
+    private EnemyInteraction _interaction;
     private SpriteRenderer _visualRenderer;
     private Transform _target;
     private PlayerInteraction _targetInteraction;
@@ -122,7 +122,7 @@ public class BlindHuntressEnemyBrain : MonoBehaviour
     {
         _body = GetComponent<Rigidbody2D>();
         _combat = GetComponent<BlindHuntressEnemyCombat>();
-        _interaction = GetComponent<BlindHuntressEnemyInteraction>();
+        _interaction = GetComponent<EnemyInteraction>();
 
         if (groundLayer.value == 0)
         {

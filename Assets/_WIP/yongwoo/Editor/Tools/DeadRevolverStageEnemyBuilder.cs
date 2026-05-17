@@ -121,12 +121,12 @@ public static class DeadRevolverStageEnemyBuilder
             Animator visualAnimator = visual.GetComponent<Animator>();
             bool colliderAdded = root.GetComponent<BoxCollider2D>() == null;
             bool bodyAdded = root.GetComponent<Rigidbody2D>() == null;
-            bool interactionAdded = root.GetComponent<BlindHuntressEnemyInteraction>() == null;
+            bool interactionAdded = root.GetComponent<EnemyInteraction>() == null;
             bool controllerAdded = root.GetComponent<DeadRevolverEnemyController>() == null;
 
             BoxCollider2D collider = EnsureComponent<BoxCollider2D>(root);
             Rigidbody2D body = EnsureComponent<Rigidbody2D>(root);
-            BlindHuntressEnemyInteraction interaction = EnsureComponent<BlindHuntressEnemyInteraction>(root);
+            EnemyInteraction interaction = EnsureComponent<EnemyInteraction>(root);
             DeadRevolverEnemyController controller = EnsureComponent<DeadRevolverEnemyController>(root);
 
             if (bodyAdded)

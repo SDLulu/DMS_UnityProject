@@ -8,7 +8,7 @@ using UnityEngine;
 
 [DisallowMultipleComponent]
 [RequireComponent(typeof(Rigidbody2D))]
-public class BlindHuntressEnemyInteraction : MonoBehaviour, IDamageReceiver
+public class EnemyInteraction : MonoBehaviour, IDamageReceiver
 {
     [Header("Health")]
     [Tooltip("적의 최대 체력입니다.")]
