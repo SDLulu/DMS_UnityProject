@@ -199,7 +199,7 @@ public static class PauseUiInstaller
         SetPrivateString(titleController, "stageSceneName", StageSceneName);
 
         GameObject eventSystem = new GameObject("EventSystem", typeof(EventSystem), typeof(InputSystemUIInputModule));
-        EventSystem.current.SetSelectedGameObject(startButton.gameObject);
+        eventSystem.GetComponent<EventSystem>().SetSelectedGameObject(startButton.gameObject);
 
         EditorSceneManager.SaveScene(titleScene, TitlePath);
 
