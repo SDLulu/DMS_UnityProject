@@ -288,8 +288,20 @@ public static class PauseUiInstaller
 
     private static Font LoadFont()
     {
-        Font font = Resources.GetBuiltinResource<Font>("Arial.ttf");
-        return font != null ? font : Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        Font font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        if (font != null)
+        {
+            return font;
+        }
+
+        try
+        {
+            return Resources.GetBuiltinResource<Font>("Arial.ttf");
+        }
+        catch (System.ArgumentException)
+        {
+            return null;
+        }
     }
 
     private static GameObject FindChildRecursive(Transform root, string name)
