@@ -36,6 +36,11 @@ public class PlayerSlowMotion : MonoBehaviour
 
     private void Update()
     {
+        if (PauseMenuController.IsPaused)
+        {
+            return;
+        }
+
         if (IsExternallyFrozen)
         {
             // 시네마틱 freeze 중에는 timeScale을 건드리지 않는다.
