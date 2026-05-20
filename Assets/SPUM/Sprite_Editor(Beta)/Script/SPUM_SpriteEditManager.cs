@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
-#if UNITY_2023_1_OR_NEWER
+#if UNITY_2023_1_OR_NEWER && !UNITY_6000_0_OR_NEWER
 using UnityEditor.U2D.Sprites;
+#endif
 #endif
 
 [ExecuteInEditMode]
@@ -89,7 +91,7 @@ public class SPUM_SpriteEditManager : MonoBehaviour
     {
         if (SR.sprite != null)
         {
-#if UNITY_2023_2_OR_NEWER
+#if UNITY_2023_2_OR_NEWER && !UNITY_6000_0_OR_NEWER
             // 2023.2 이상에서는 bool 인자를 포함한 SetPivot 사용
             SetPivot(SR, false);
 #else
@@ -100,7 +102,7 @@ public class SPUM_SpriteEditManager : MonoBehaviour
     }
     public void ResetPivot(SpriteRenderer SR)
     {
-#if UNITY_2023_1_OR_NEWER
+#if UNITY_2023_1_OR_NEWER && !UNITY_6000_0_OR_NEWER
     SetPivot(SR, true);
 #else
     // 구버전에서는 직접 중앙 피벗 적용
@@ -253,7 +255,7 @@ public class SPUM_SpriteEditManager : MonoBehaviour
     }
     #pragma warning restore CS0618
     
-#if UNITY_2023_1_OR_NEWER
+#if UNITY_2023_1_OR_NEWER && !UNITY_6000_0_OR_NEWER
     // 23.2 이상 버전용
     public void SetPivot(SpriteRenderer _sprite, bool Reset = false)
     {

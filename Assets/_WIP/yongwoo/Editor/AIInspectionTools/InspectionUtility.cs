@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
@@ -7,6 +8,27 @@ namespace AIInspectionTools
 {
     internal static class InspectionUtility
     {
+        public static string TryGetActiveProjectFolderPath()
+        {
+            try
+            {
+                MethodInfo method = typeof(ProjectWindowUtil).GetMethod(
+                    "GetActiveFolderPath",
+                    BindingFlags.NonPublic | BindingFlags.Static);
+                if (method == null)
+                {
+                    return null;
+                }
+
+                string result = method.Invoke(null, null) as string;
+                return string.IsNullOrEmpty(result) ? null : result;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
         public static GameObject GetSelectedGameObject(Object selected)
         {
             return selected switch
@@ -53,7 +75,7 @@ namespace AIInspectionTools
             };
         }
 
-        public static object DescribeGameObject(GameObject gameObject, int depth, int childLimit, int fieldLimit)
+        public static object DescribeGameObject(GameObject gameObject, int childLimit, int fieldLimit)
         {
             if (gameObject == null)
             {
@@ -76,7 +98,7 @@ namespace AIInspectionTools
                 prefab_source_path = string.IsNullOrEmpty(prefabSourcePath) ? null : prefabSourcePath,
                 nearest_prefab_root = nearestPrefabRoot != null ? GetHierarchyPath(nearestPrefabRoot.transform) : null,
                 transform = DescribeTransform(gameObject.transform),
-                children = DescribeChildren(gameObject.transform, depth, childLimit),
+                children = DescribeChildren(gameObject.transform, childLimit),
                 components = DescribeComponents(gameObject, fieldLimit)
             };
         }
@@ -157,10 +179,10 @@ namespace AIInspectionTools
             };
         }
 
-        private static List<object> DescribeChildren(Transform transform, int depth, int childLimit)
+        private static List<object> DescribeChildren(Transform transform, int childLimit)
         {
             var children = new List<object>();
-            if (transform == null || depth <= 0)
+            if (transform == null)
             {
                 return children;
             }
@@ -173,8 +195,8 @@ namespace AIInspectionTools
                 {
                     name = child.name,
                     active_self = child.gameObject.activeSelf,
-                    component_types = GetComponentTypeNames(child.gameObject),
-                    children = DescribeChildren(child, depth - 1, childLimit)
+                    child_count = child.childCount,
+                    component_types = GetComponentTypeNames(child.gameObject)
                 });
             }
 

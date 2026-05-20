@@ -24,6 +24,7 @@
 ## 지금 어디까지 (현재 작업 위치)
 
 - 2026-05-17 정적 점검 기준: `Yongwoo_Stage` 열림, 씬 dirty 없음, Unity 콘솔 error 없음
+- 2026-05-18 빌드 오류 대응: SPUM 에디터 전용 `UnityEditor.U2D.Sprites` 참조가 Player 빌드에 섞이지 않도록 가드 추가
 - 튜토리얼 시퀀스(Yongwoo_Stage) 구현 완료, 미세 조정/플레이 검증 단계
 - 시작연출 → 접속대화 → 첫적/연속전투/원거리적 → HOME코어 → 주인공집/광장/골목길 → 칩접속 오브젝트 구성 확인
 - 이번 점검에서는 플레이 모드 실행 안 함: 현재 대량 미커밋 변경이 있고, 규칙상 play 전 체크포인트 커밋 필요
@@ -107,6 +108,7 @@
 - 정적 점검상 `TutorialGate`와 `SceneEventSequence.WaitForEnemiesDead`는 `activeInHierarchy == false`를 사망 조건으로 본다. 현재 `EnemyInteraction` 사망은 오브젝트를 비활성화하지 않으므로 전투 후 진행 차단이 안 풀릴 위험 있음. 플레이 검증 또는 조건 수정 필요.
 - `SimplePlayerCombat`에 칼/총 스왑 구조가 아직 남아 있음. 플레이어 스코프 확정 기준으로는 칼 중심 정리가 필요.
 - PlayMode 검증 미실행. 실행 전 현재 미커밋 변경을 커밋하거나 별도 체크포인트가 필요.
+- SPUM 빌드 오류 수정 후 Unity refresh/build 재검증은 미실행. 현재 저장소에 기존 대량 미커밋 변경이 있어 refresh 전 체크포인트 커밋이 필요함.
 
 ---
 
