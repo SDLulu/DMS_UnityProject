@@ -14,6 +14,9 @@ public class PauseMenuController : MonoBehaviour
     [Header("Scene References")]
     [SerializeField] private GameObject pausePanelRoot;
     [SerializeField] private Button pauseButton;
+    [SerializeField] private Image pauseButtonImage;
+    [SerializeField] private Sprite resumeIconSprite;
+    [SerializeField] private Sprite pauseIconSprite;
     [SerializeField] private Button resumeButton;
     [SerializeField] private Button titleButton;
 
@@ -37,6 +40,7 @@ public class PauseMenuController : MonoBehaviour
         TryAutoWire();
         BindButtons();
         SetPanelVisible(false);
+        UpdatePauseButtonVisual();
     }
 
     private void OnEnable()
@@ -100,6 +104,7 @@ public class PauseMenuController : MonoBehaviour
         Time.timeScale = 0f;
         Time.fixedDeltaTime = 0f;
         SetPanelVisible(true);
+        UpdatePauseButtonVisual();
 
         if (EventSystem.current != null && resumeButton != null)
         {
@@ -117,6 +122,7 @@ public class PauseMenuController : MonoBehaviour
         _isPaused = false;
         IsPaused = false;
         SetPanelVisible(false);
+        UpdatePauseButtonVisual();
 
         Time.timeScale = _timeScaleBeforePause;
         Time.fixedDeltaTime = _fixedDeltaTimeBeforePause;
@@ -135,6 +141,7 @@ public class PauseMenuController : MonoBehaviour
     {
         _isPaused = false;
         IsPaused = false;
+        UpdatePauseButtonVisual();
         Time.timeScale = 1f;
         Time.fixedDeltaTime = 0.02f;
         GameInput.Instance.EnableGameplay();
@@ -146,6 +153,11 @@ public class PauseMenuController : MonoBehaviour
         pausePanelRoot ??= GameObject.Find("PauseMenuRoot");
         pauseButton ??= FindButtonByName("PauseButton");
         pauseButton ??= FindButtonByName("설정버튼");
+        if (pauseButtonImage == null && pauseButton != null)
+        {
+            pauseButtonImage = pauseButton.targetGraphic as Image;
+            pauseButtonImage ??= pauseButton.GetComponent<Image>();
+        }
         resumeButton ??= GameObject.Find("ResumeButton")?.GetComponent<Button>();
         titleButton ??= GameObject.Find("TitleButton")?.GetComponent<Button>();
     }
@@ -181,6 +193,20 @@ public class PauseMenuController : MonoBehaviour
             }
 
             pausePanelRoot.SetActive(visible);
+        }
+    }
+
+    private void UpdatePauseButtonVisual()
+    {
+        if (pauseButtonImage == null)
+        {
+            return;
+        }
+
+        Sprite targetSprite = _isPaused ? pauseIconSprite : resumeIconSprite;
+        if (targetSprite != null)
+        {
+            pauseButtonImage.sprite = targetSprite;
         }
     }
 
