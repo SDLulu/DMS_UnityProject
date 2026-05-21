@@ -35,12 +35,24 @@ public class PauseMenuController : MonoBehaviour
     private void Awake()
     {
         TryAutoWire();
+        BindButtons();
         SetPanelVisible(false);
     }
 
     private void OnEnable()
     {
+        TryAutoWire();
         BindButtons();
+    }
+
+    private void OnValidate()
+    {
+        if (Application.isPlaying)
+        {
+            return;
+        }
+
+        TryAutoWire();
     }
 
     private void OnDisable()
@@ -132,7 +144,8 @@ public class PauseMenuController : MonoBehaviour
     private void TryAutoWire()
     {
         pausePanelRoot ??= GameObject.Find("PauseMenuRoot");
-        pauseButton ??= GameObject.Find("PauseButton")?.GetComponent<Button>();
+        pauseButton ??= FindButtonByName("PauseButton");
+        pauseButton ??= FindButtonByName("설정버튼");
         resumeButton ??= GameObject.Find("ResumeButton")?.GetComponent<Button>();
         titleButton ??= GameObject.Find("TitleButton")?.GetComponent<Button>();
     }
@@ -162,7 +175,26 @@ public class PauseMenuController : MonoBehaviour
     {
         if (pausePanelRoot != null)
         {
+            if (visible)
+            {
+                pausePanelRoot.transform.SetAsFirstSibling();
+            }
+
             pausePanelRoot.SetActive(visible);
         }
+    }
+
+    private static Button FindButtonByName(string objectName)
+    {
+        Transform[] transforms = Object.FindObjectsByType<Transform>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        for (int i = 0; i < transforms.Length; i++)
+        {
+            if (transforms[i].name == objectName)
+            {
+                return transforms[i].GetComponent<Button>();
+            }
+        }
+
+        return null;
     }
 }
