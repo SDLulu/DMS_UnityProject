@@ -268,6 +268,8 @@ GameObject:
   - component: {fileID: 306877847}
   - component: {fileID: 306877846}
   - component: {fileID: 306877848}
+  - component: {fileID: 306877850}
+  - component: {fileID: 306877849}
   m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
@@ -592,12 +594,98 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_CompositeOperation: 0
+  m_CompositeOperation: 1
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!66 &306877849
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306877844}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 1
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 306877848}
+    m_ColliderPaths:
+    - - X: 60000000
+        Y: 20000000
+      - X: -60000000
+        Y: 20000000
+      - X: -60000000
+        Y: 10000000
+      - X: 60000000
+        Y: 10000000
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 5.999971, y: 1}
+      - {x: 5.999971, y: 2}
+      - {x: -6, y: 1.9999708}
+      - {x: -5.999971, y: 1}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+  m_UseDelaunayMesh: 0
+  m_CompositeGameObject: {fileID: 306877844}
+--- !u!50 &306877850
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306877844}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &363941245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -732,18 +820,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ece17d9031b94b46b4506790f46e023, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::P_PlayerController
-  moveSpeed: 2
+  inputActions: {fileID: 0}
+  moveSpeed: 1.5
   runSpeed: 8
   jumpForce: 7
-  dashSpeed: 14
-  dashDuration: 0.15
-  dashCooldown: 0.5
+  frontDashSpeed: 10
+  frontDashDuration: 0.2
+  frontDashCooldown: 1
+  backDashSpeed: 7
+  backDashDuration: 0.35
+  backDashCooldown: 1
   groundCheck: {fileID: 2096407798}
   groundCheckRadius: 0.18
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
   visualRoot: {fileID: 431256163}
+  idleAnimationName: Idle
+  walkAnimationName: Blade_Walk
+  runAnimationName: Blade_Run
+  jumpAnimationName: Jump
+  fallAnimationName: Fall
+  frontDashAnimationName: Front_Dash
+  backDashAnimationName: Back_Dash
   debugGroundCheck: 0
 --- !u!70 &431256168
 CapsuleCollider2D:
