@@ -27,6 +27,7 @@ public class P_PlayerController : MonoBehaviour
 
     private Rigidbody2D body;
     private Animator animator;
+    private Collider2D[] selfColliders;
     private Vector2 moveInput;
     private bool isGrounded;
     private bool isDashing;
@@ -58,8 +59,14 @@ public class P_PlayerController : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        selfColliders = GetComponentsInChildren<Collider2D>(includeInactive: true);
         originalGravityScale = body.gravityScale;
         CacheAnimatorParameters();
+
+        if (groundLayer.value == 0)
+        {
+            groundLayer = LayerMask.GetMask("Ground");
+        }
 
         if (visualRoot == null)
         {
@@ -99,8 +106,7 @@ public class P_PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        isGrounded = groundCheck != null &&
-            Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        isGrounded = IsGrounded();
 
         DebugGroundedChanged();
 
@@ -166,6 +172,45 @@ public class P_PlayerController : MonoBehaviour
         Vector3 scale = visualRoot.localScale;
         scale.x = Mathf.Abs(scale.x) * facing;
         visualRoot.localScale = scale;
+    }
+
+    private bool IsGrounded()
+    {
+        if (groundCheck == null)
+        {
+            return false;
+        }
+
+        Collider2D[] hits = Physics2D.OverlapCircleAll(
+            groundCheck.position,
+            groundCheckRadius,
+            groundLayer);
+
+        for (int i = 0; i < hits.Length; i++)
+        {
+            Collider2D hit = hits[i];
+            if (hit == null)
+            {
+                continue;
+            }
+
+            bool isSelfCollider = false;
+            for (int selfIndex = 0; selfIndex < selfColliders.Length; selfIndex++)
+            {
+                if (selfColliders[selfIndex] == hit)
+                {
+                    isSelfCollider = true;
+                    break;
+                }
+            }
+
+            if (!isSelfCollider)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private void UpdateAnimatorParameters()
