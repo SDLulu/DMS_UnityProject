@@ -15,5 +15,5 @@ EditorBuildSettings:
     path: Assets/_WIP/yongwoo/Scenes/Yongwoo_Title.unity
     guid: 40c284890e39bff4d855941fe150c493
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: f3712ab1d44335b47b4d5ef26a559621, type: 3}
   m_UseUCBPForAssetBundles: 0
