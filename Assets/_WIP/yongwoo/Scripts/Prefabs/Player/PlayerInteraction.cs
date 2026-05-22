@@ -27,7 +27,7 @@ public class PlayerInteraction : MonoBehaviour, IDamageReceiver
 
     [Header("References")]
     [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private SimplePlayerController controller;
+    [SerializeField] private MonoBehaviour controller;
     [SerializeField] private SimplePlayerCombat combat;
     [SerializeField] private Rigidbody2D body;
 
@@ -42,6 +42,7 @@ public class PlayerInteraction : MonoBehaviour, IDamageReceiver
     private Color _baseColor = Color.white;
     private MonoBehaviour[] _behavioursToDisable = Array.Empty<MonoBehaviour>();
     private Coroutine _flashRoutine;
+    private SimplePlayerController _simpleController;
     private bool _isDead;
 
     public float CurrentHealth => _currentHealth;
@@ -151,7 +152,7 @@ public class PlayerInteraction : MonoBehaviour, IDamageReceiver
 
     private bool IsRollingInvulnerable()
     {
-        return controller != null && controller.IsRolling;
+        return _simpleController != null && _simpleController.IsRolling;
     }
 
     public void OnDie()
@@ -259,6 +260,8 @@ public class PlayerInteraction : MonoBehaviour, IDamageReceiver
     private void CacheReferences()
     {
         controller ??= GetComponent<SimplePlayerController>();
+        controller ??= GetComponent<P_PlayerController>();
+        _simpleController = controller as SimplePlayerController;
         combat ??= GetComponent<SimplePlayerCombat>();
         body ??= GetComponent<Rigidbody2D>();
         spriteRenderer ??= GetComponent<SpriteRenderer>();

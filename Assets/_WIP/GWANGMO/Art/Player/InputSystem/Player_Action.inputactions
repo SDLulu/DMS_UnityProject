@@ -77,6 +77,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Wall_Grab",
+                    "type": "Button",
+                    "id": "d5154786-f291-4bd7-87ab-9cbc54568b8d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -116,7 +125,7 @@
                 {
                     "name": "",
                     "id": "c053c565-363e-4826-8585-4fac9cc95d63",
-                    "path": "<Mouse>/rightButton",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -211,6 +220,17 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "ca783667-04a3-46e7-b4cc-63e45b572732",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Wall_Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

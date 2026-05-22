@@ -307,7 +307,15 @@ public class BlindHuntressEnemyBrain : MonoBehaviour
         }
 
         SimplePlayerCombat combat = Object.FindFirstObjectByType<SimplePlayerCombat>();
-        _target = combat != null ? combat.transform : null;
+        if (combat != null)
+        {
+            _target = combat.transform;
+            CacheTargetInteraction();
+            return;
+        }
+
+        GameObject taggedPlayer = GameObject.FindGameObjectWithTag("Player");
+        _target = taggedPlayer != null ? taggedPlayer.transform : null;
         CacheTargetInteraction();
     }
 

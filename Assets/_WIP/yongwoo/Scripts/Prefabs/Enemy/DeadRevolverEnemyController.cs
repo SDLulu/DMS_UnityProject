@@ -375,7 +375,15 @@ public class DeadRevolverEnemyController : MonoBehaviour
         }
 
         SimplePlayerCombat player = FindFirstObjectByType<SimplePlayerCombat>();
-        _target = player != null ? player.transform : null;
+        if (player != null)
+        {
+            _target = player.transform;
+            _targetInteraction = _target.GetComponent<PlayerInteraction>();
+            return;
+        }
+
+        GameObject taggedPlayer = GameObject.FindGameObjectWithTag("Player");
+        _target = taggedPlayer != null ? taggedPlayer.transform : null;
         _targetInteraction = _target != null ? _target.GetComponent<PlayerInteraction>() : null;
     }
 
