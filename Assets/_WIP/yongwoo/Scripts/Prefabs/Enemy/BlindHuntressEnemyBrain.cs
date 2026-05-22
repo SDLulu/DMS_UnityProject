@@ -99,6 +99,14 @@ public class BlindHuntressEnemyBrain : MonoBehaviour
     [Header("Visual")]
     [Tooltip("원본 스프라이트의 좌우 방향이 반대로 보일 때 켭니다.")]
     [SerializeField] private bool invertVisualFacing = false;
+    [Tooltip("씬에 배치할 때 처음 바라보는 방향. 타겟을 인지하면 자동으로 갱신됩니다.")]
+    [SerializeField] private InitialFacingDirection initialFacing = InitialFacingDirection.Right;
+
+    public enum InitialFacingDirection
+    {
+        Right,
+        Left
+    }
 
     private Rigidbody2D _body;
     private BlindHuntressEnemyCombat _combat;
@@ -143,8 +151,27 @@ public class BlindHuntressEnemyBrain : MonoBehaviour
         CacheTargetInteraction();
         _brainState = BrainState.Idle;
         EnsurePlayerEnemyCollision();
+        _facing = initialFacing == InitialFacingDirection.Left ? -1f : 1f;
         ApplyFacingToVisual();
     }
+
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        if (Application.isPlaying) return;
+        UnityEditor.EditorApplication.delayCall += () =>
+        {
+            if (this == null) return;
+            if (visualRoot == null) visualRoot = transform.Find("Visual");
+            if (visualRoot != null && _visualRenderer == null)
+            {
+                _visualRenderer = visualRoot.GetComponent<SpriteRenderer>();
+            }
+            _facing = initialFacing == InitialFacingDirection.Left ? -1f : 1f;
+            ApplyFacingToVisual();
+        };
+    }
+#endif
 
     private void Update()
     {
@@ -549,7 +576,7 @@ public class BlindHuntressEnemyBrain : MonoBehaviour
         int enemyLayer = LayerMask.NameToLayer(EnemyLayerName);
         if (playerLayer >= 0 && enemyLayer >= 0)
         {
-            Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
+            Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, true);
         }
     }
 }

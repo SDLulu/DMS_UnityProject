@@ -147,7 +147,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeadRevolverEnemyController
   archetype: 0
+  initialFacing: 1
   visualRoot: {fileID: 55361891913779712}
+  hitboxRoot: {fileID: 0}
   visualAnimator: {fileID: 4917279359359197259}
   muzzlePoint: {fileID: 3196439418266515755}
   punchHitbox: {fileID: 0}
@@ -183,7 +185,7 @@ MonoBehaviour:
   projectileLifetime: 1.45
   projectileDamage: 1
   projectileKnockback: 5
-  projectileRadius: 0.08
+  projectileRadius: 0.01
   projectileColor: {r: 1, g: 0.72, b: 0.28, a: 1}
 --- !u!1 &3501663943655711164
 GameObject:
@@ -214,7 +216,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3196439418266515755}

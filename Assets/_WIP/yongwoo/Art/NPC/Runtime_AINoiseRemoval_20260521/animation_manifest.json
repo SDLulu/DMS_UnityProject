@@ -1,0 +1,61 @@
+{
+  "characters": {
+    "merchant": {
+      "idle": [
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\merchant\\idle\\merchant_idle_00.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\merchant\\idle\\merchant_idle_01.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\merchant\\idle\\merchant_idle_02.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\merchant\\idle\\merchant_idle_03.png"
+      ],
+      "talk": [
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\merchant\\talk\\merchant_talk_00.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\merchant\\talk\\merchant_talk_01.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\merchant\\talk\\merchant_talk_02.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\merchant\\talk\\merchant_talk_03.png"
+      ]
+    },
+    "robot_guide": {
+      "idle": [
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\robot_guide\\idle\\robot_guide_idle_00.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\robot_guide\\idle\\robot_guide_idle_01.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\robot_guide\\idle\\robot_guide_idle_02.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\robot_guide\\idle\\robot_guide_idle_03.png"
+      ],
+      "talk": [
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\robot_guide\\talk\\robot_guide_talk_00.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\robot_guide\\talk\\robot_guide_talk_01.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\robot_guide\\talk\\robot_guide_talk_02.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\robot_guide\\talk\\robot_guide_talk_03.png"
+      ]
+    },
+    "passerby": {
+      "idle": [
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\passerby\\idle\\passerby_idle_00.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\passerby\\idle\\passerby_idle_01.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\passerby\\idle\\passerby_idle_02.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\passerby\\idle\\passerby_idle_03.png"
+      ],
+      "talk": [
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\passerby\\talk\\passerby_talk_00.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\passerby\\talk\\passerby_talk_01.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\passerby\\talk\\passerby_talk_02.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\passerby\\talk\\passerby_talk_03.png"
+      ]
+    },
+    "broker": {
+      "idle": [
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\broker\\idle\\broker_idle_00.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\broker\\idle\\broker_idle_01.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\broker\\idle\\broker_idle_02.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\broker\\idle\\broker_idle_03.png"
+      ],
+      "talk": [
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\broker\\talk\\broker_talk_00.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\broker\\talk\\broker_talk_01.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\broker\\talk\\broker_talk_02.png",
+        "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Frames\\broker\\talk\\broker_talk_03.png"
+      ]
+    }
+  },
+  "qa_overview": "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\QA\\npc_animation_frames_overview.png"
+}

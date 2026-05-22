@@ -10,16 +10,27 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class DeadRevolverEnemyMeleeHitbox : MonoBehaviour
 {
+    private const string PlayerLayerName = "Player";
+
     private readonly HashSet<PlayerInteraction> _alreadyHit = new();
     private readonly HashSet<PlayerInteraction> _inRange = new();
+    private readonly Collider2D[] _overlapResults = new Collider2D[8];
 
     private Collider2D _collider;
+    private LayerMask _playerLayer;
     private GameObject _owner;
     private float _damage;
     private Vector2 _knockback;
     private bool _isActive;
 
-    public bool HasPlayerInRange => _inRange.Count > 0;
+    public bool HasPlayerInRange
+    {
+        get
+        {
+            RefreshOverlaps();
+            return _inRange.Count > 0;
+        }
+    }
 
     public void Activate(GameObject owner, float damage, Vector2 knockback)
     {
@@ -28,6 +39,7 @@ public class DeadRevolverEnemyMeleeHitbox : MonoBehaviour
         _knockback = knockback;
         _alreadyHit.Clear();
         _isActive = true;
+        RefreshOverlaps();
 
         // 활성화 시 이미 영역 안에 있는 플레이어에게도 즉시 데미지 시도
         foreach (var target in _inRange)
@@ -45,8 +57,14 @@ public class DeadRevolverEnemyMeleeHitbox : MonoBehaviour
     private void Awake()
     {
         EnsureCollider();
+        _playerLayer = LayerMask.GetMask(PlayerLayerName);
         _collider.isTrigger = true;
         _collider.enabled = true;
+    }
+
+    private void FixedUpdate()
+    {
+        RefreshOverlaps();
     }
 
     private void OnDisable()
@@ -97,6 +115,28 @@ public class DeadRevolverEnemyMeleeHitbox : MonoBehaviour
         if (_isActive && !wasInRange)
         {
             TryHit(target);
+        }
+    }
+
+    private void RefreshOverlaps()
+    {
+        EnsureCollider();
+        _inRange.Clear();
+
+        ContactFilter2D filter = new ContactFilter2D
+        {
+            useTriggers = true
+        };
+
+        if (_playerLayer.value != 0)
+        {
+            filter.SetLayerMask(_playerLayer);
+        }
+
+        int count = _collider.Overlap(filter, _overlapResults);
+        for (int i = 0; i < count; i++)
+        {
+            TrackOverlap(_overlapResults[i]);
         }
     }
 

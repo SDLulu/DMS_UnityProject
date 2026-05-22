@@ -79,6 +79,13 @@ public class ScreenGlitchOverlay : MonoBehaviour
         ApplyVisual(intensity);
     }
 
+    public void ResetGlitch()
+    {
+        StopPulse();
+        StopFade();
+        SetIntensity(0f);
+    }
+
     private IEnumerator PulseRoutine(float targetIntensity, float duration)
     {
         float previous = intensity;

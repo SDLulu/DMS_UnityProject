@@ -21,8 +21,15 @@ public class DeadRevolverEnemyController : MonoBehaviour
         ShieldBearer
     }
 
+    public enum InitialFacingDirection
+    {
+        Right,
+        Left
+    }
+
     [Header("Identity")]
     [SerializeField] private DeadRevolverArchetype archetype = DeadRevolverArchetype.Brawler;
+    [SerializeField] private InitialFacingDirection initialFacing = InitialFacingDirection.Right;
 
     [Header("References")]
     [SerializeField] private Transform visualRoot;
@@ -96,9 +103,23 @@ public class DeadRevolverEnemyController : MonoBehaviour
         }
 
         EnsurePlayerEnemyCollision();
+        _facing = initialFacing == InitialFacingDirection.Left ? -1f : 1f;
         ApplyFacingToVisual();
         SetMoveAnimation(false);
     }
+
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        if (Application.isPlaying) return;
+        UnityEditor.EditorApplication.delayCall += () =>
+        {
+            if (this == null) return;
+            _facing = initialFacing == InitialFacingDirection.Left ? -1f : 1f;
+            ApplyFacingToVisual();
+        };
+    }
+#endif
 
     private void OnEnable()
     {
@@ -547,7 +568,7 @@ public class DeadRevolverEnemyController : MonoBehaviour
         int enemyLayer = LayerMask.NameToLayer(EnemyLayerName);
         if (playerLayer >= 0 && enemyLayer >= 0)
         {
-            Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
+            Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, true);
         }
     }
 }

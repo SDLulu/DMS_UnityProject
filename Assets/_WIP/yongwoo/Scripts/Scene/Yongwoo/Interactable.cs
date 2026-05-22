@@ -19,8 +19,13 @@ public class Interactable : MonoBehaviour
     [Header("References")]
     [SerializeField] private SystemLogPanel promptPanel;
 
+    [Header("Optional Visual Animation")]
+    [SerializeField] private Animator visualAnimator;
+    [SerializeField] private string talkingParameter = "Talking";
+
     private bool _playerInside;
     private bool _used;
+    private bool _isTalking;
     private Collider2D _collider;
 
     private void Reset()
@@ -38,10 +43,17 @@ public class Interactable : MonoBehaviour
         {
             promptPanel = Object.FindFirstObjectByType<SystemLogPanel>();
         }
+
+        if (visualAnimator == null)
+        {
+            visualAnimator = GetComponentInChildren<Animator>(includeInactive: true);
+        }
     }
 
     private void Update()
     {
+        UpdateTalkingState();
+
         if (!_playerInside || (interactOnce && _used))
         {
             return;
@@ -60,6 +72,7 @@ public class Interactable : MonoBehaviour
             if (onInteractSequence != null)
             {
                 onInteractSequence.Play();
+                SetTalking(true);
             }
         }
     }
@@ -89,6 +102,36 @@ public class Interactable : MonoBehaviour
 
         _playerInside = false;
         promptPanel?.Hide();
+    }
+
+    private void OnDisable()
+    {
+        SetTalking(false);
+    }
+
+    private void UpdateTalkingState()
+    {
+        if (onInteractSequence == null)
+        {
+            return;
+        }
+
+        SetTalking(onInteractSequence.IsPlaying);
+    }
+
+    private void SetTalking(bool talking)
+    {
+        if (_isTalking == talking)
+        {
+            return;
+        }
+
+        _isTalking = talking;
+
+        if (visualAnimator != null && !string.IsNullOrWhiteSpace(talkingParameter))
+        {
+            visualAnimator.SetBool(talkingParameter, talking);
+        }
     }
 
     private static bool IsPlayer(Collider2D other)

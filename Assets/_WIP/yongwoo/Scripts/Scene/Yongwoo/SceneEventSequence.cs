@@ -139,6 +139,8 @@ public class SceneEventSequence : MonoBehaviour
 
     public void Stop()
     {
+        AutoWire();
+
         if (_playRoutine != null)
         {
             StopCoroutine(_playRoutine);
@@ -147,7 +149,7 @@ public class SceneEventSequence : MonoBehaviour
 
         ReleaseTimeFreezeIfHeld();
         systemLogPanel?.Hide();
-        glitchOverlay?.SetIntensity(0f);
+        ResetGlitchOverlay();
         GameInput.Instance.EnableGameplay();
         playerInteraction?.SetGameplayControlEnabled(true, clearVelocity: false);
     }
@@ -254,6 +256,7 @@ public class SceneEventSequence : MonoBehaviour
                     continue;
 
                 case StepType.CameraFocus:
+                    ResetGlitchOverlay();
                     yield return CameraFocusRoutine(step);
                     continue;
 
@@ -281,6 +284,7 @@ public class SceneEventSequence : MonoBehaviour
         }
 
         ReleaseTimeFreezeIfHeld();
+        ResetGlitchOverlay();
         _playRoutine = null;
     }
 
@@ -291,6 +295,7 @@ public class SceneEventSequence : MonoBehaviour
             case StepType.Delay:
                 break;
             case StepType.LockPlayer:
+                ResetGlitchOverlay();
                 GameInput.Instance.DisableAllGameplayInput();
                 playerInteraction?.SetGameplayControlEnabled(false);
                 break;
@@ -336,6 +341,7 @@ public class SceneEventSequence : MonoBehaviour
                 cameraFollow?.AddShake(step.strength, step.duration);
                 break;
             case StepType.FreezeTime:
+                ResetGlitchOverlay();
                 if (!_ownsTimeFreeze)
                 {
                     _ownsTimeFreeze = true;
@@ -366,6 +372,7 @@ public class SceneEventSequence : MonoBehaviour
                 }
                 break;
             case StepType.LockInput:
+                ResetGlitchOverlay();
                 // controller는 살려둔다 (애니메이션/물리/중력 정상). 입력만 차단.
                 GameInput.Instance.DisableAllGameplayInput();
                 break;
@@ -437,6 +444,11 @@ public class SceneEventSequence : MonoBehaviour
 
         glitchOverlay?.SetIntensity(0f);
         systemLogPanel.Show($"{label}\n100%");
+    }
+
+    private void ResetGlitchOverlay()
+    {
+        glitchOverlay?.ResetGlitch();
     }
 
     private IEnumerator CameraFocusRoutine(Step step)

@@ -16,7 +16,7 @@ public class PlayerRuntimeConfig : MonoBehaviour
     private SimplePlayerController _controller;
     private SimplePlayerCombat _combat;
     private PlayerInteraction _interaction;
-    private BoxCollider2D _bodyCollider;
+    private CapsuleCollider2D _bodyCollider;
     private SimpleCameraFollow _cameraFollow;
     private Vector3 _spawnPosition;
 
@@ -29,7 +29,7 @@ public class PlayerRuntimeConfig : MonoBehaviour
         SimplePlayerController controller,
         SimplePlayerCombat combat,
         PlayerInteraction interaction,
-        BoxCollider2D bodyCollider,
+        CapsuleCollider2D bodyCollider,
         SimpleCameraFollow cameraFollow)
     {
         _controller = controller;
@@ -49,7 +49,7 @@ public class PlayerRuntimeConfig : MonoBehaviour
         _controller ??= GetComponent<SimplePlayerController>();
         _combat ??= GetComponent<SimplePlayerCombat>();
         _interaction ??= GetComponent<PlayerInteraction>();
-        _bodyCollider ??= GetComponent<BoxCollider2D>();
+        _bodyCollider ??= GetComponent<CapsuleCollider2D>();
 
         if (_cameraFollow == null)
         {
@@ -79,7 +79,7 @@ public class PlayerRuntimeConfig : MonoBehaviour
         _controller ??= GetComponent<SimplePlayerController>();
         _combat ??= GetComponent<SimplePlayerCombat>();
         _interaction ??= GetComponent<PlayerInteraction>();
-        _bodyCollider ??= GetComponent<BoxCollider2D>();
+        _bodyCollider ??= GetComponent<CapsuleCollider2D>();
 
         if (_cameraFollow == null)
         {
@@ -188,7 +188,7 @@ public class PlayerRuntimeConfig : MonoBehaviour
 
     private void OnValidate()
     {
-        _bodyCollider ??= GetComponent<BoxCollider2D>();
+        _bodyCollider ??= GetComponent<CapsuleCollider2D>();
         _interaction ??= GetComponent<PlayerInteraction>();
         CaptureCurrentColliderConfig();
         CaptureCurrentHealthConfig();

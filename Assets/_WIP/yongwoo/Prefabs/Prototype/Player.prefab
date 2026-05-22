@@ -139,7 +139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3651190054026640413}
-  - component: {fileID: 2249624132469796711}
+  - component: {fileID: 3700632138696626205}
   - component: {fileID: 5774349901685184387}
   - component: {fileID: 1697112091944236789}
   - component: {fileID: 5512345678901234567}
@@ -175,8 +175,8 @@ Transform:
   - {fileID: 8417712401432309100}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2249624132469796711
-BoxCollider2D:
+--- !u!70 &3700632138696626205
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -209,18 +209,9 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.010650158, y: -0.20360279}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.23191357, y: 0.53562707}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0.006883621, y: -0.19964191}
+  m_Size: {x: 0.24528503, y: 0.54564357}
+  m_Direction: 0
 --- !u!50 &5774349901685184387
 Rigidbody2D:
   serializedVersion: 5
@@ -282,7 +273,7 @@ MonoBehaviour:
   dashSpeed: 12
   dashMaxDistance: 3.5
   dashDuration: 0.14
-  dashCooldown: 2
+  dashCooldown: 1
   dashPreviewColor: {r: 1, g: 0, b: 0, a: 1}
   dashPreviewWidth: 0.04
   rollSpeed: 8.5
@@ -464,10 +455,10 @@ MonoBehaviour:
         b: 0.25
         a: 1
     collider:
-      width: 0.23191357
-      height: 0.53562707
-      offsetX: 0.010650158
-      offsetY: -0.20360279
+      width: 0.24528503
+      height: 0.54564357
+      offsetX: 0.006883621
+      offsetY: -0.19964191
       isTrigger: 0
     camera:
       offset:

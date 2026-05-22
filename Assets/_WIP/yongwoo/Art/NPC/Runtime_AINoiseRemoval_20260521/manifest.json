@@ -1,0 +1,46 @@
+{
+  "source": "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\GeneratedDrafts\\2026-05-20_npc_idle_talk_v1_ai_noise_removal_fullres",
+  "outputs": {
+    "merchant": {
+      "source": "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\GeneratedDrafts\\2026-05-20_npc_idle_talk_v1_ai_noise_removal_fullres\\merchant\\merchant_sheet_ai_noise_removal_detail1.png",
+      "sprite": "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Sprites\\merchant_idle.png",
+      "size": [
+        285,
+        375
+      ]
+    },
+    "robot_guide": {
+      "source": "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\GeneratedDrafts\\2026-05-20_npc_idle_talk_v1_ai_noise_removal_fullres\\robot_guide\\robot_guide_sheet_ai_noise_removal_detail1.png",
+      "sprite": "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Sprites\\robot_guide_idle.png",
+      "size": [
+        210,
+        372
+      ]
+    },
+    "passerby": {
+      "source": "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\GeneratedDrafts\\2026-05-20_npc_idle_talk_v1_ai_noise_removal_fullres\\passerby\\passerby_sheet_ai_noise_removal_detail1.png",
+      "sprite": "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Sprites\\passerby_idle.png",
+      "size": [
+        209,
+        347
+      ]
+    },
+    "broker": {
+      "source": "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\GeneratedDrafts\\2026-05-20_npc_idle_talk_v1_ai_noise_removal_fullres\\broker\\broker_sheet_ai_noise_removal_detail1.png",
+      "sprite": "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Sprites\\broker_idle.png",
+      "size": [
+        186,
+        370
+      ]
+    },
+    "broker_portrait": {
+      "source": "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\GeneratedDrafts\\2026-05-20_npc_idle_talk_v1_ai_noise_removal_fullres\\broker_portrait\\broker_portrait_ai_noise_removal_detail1.png",
+      "sprite": "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\Sprites\\broker_portrait.png",
+      "size": [
+        1146,
+        1254
+      ]
+    }
+  },
+  "qa_overview": "C:\\UnityProjects\\DMS\\Assets\\_WIP\\yongwoo\\Art\\NPC\\Runtime_AINoiseRemoval_20260521\\QA\\npc_runtime_ai_noise_removal_overview.png"
+}

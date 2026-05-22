@@ -15,7 +15,7 @@ public class PlayerRuntimeConfigEditor : Editor
     {
         EditorGUILayout.HelpBox(
             "이 컴포넌트는 플레이어 파라미터의 소유자가 아니라 저장/복원용 브리지입니다.\n" +
-            "평소 조정은 SimplePlayerController, SimplePlayerCombat, PlayerInteraction, BoxCollider2D에서 직접 진행하고,\n" +
+            "평소 조정은 SimplePlayerController, SimplePlayerCombat, PlayerInteraction, CapsuleCollider2D에서 직접 진행하고,\n" +
             "이 컴포넌트는 플레이 종료 시 현재 값을 Player 프리팹에 다시 모아 저장합니다.",
             MessageType.Info);
 
@@ -25,7 +25,7 @@ public class PlayerRuntimeConfigEditor : Editor
             "- 이동감: SimplePlayerController\n" +
             "- 공격 판정: SimplePlayerCombat\n" +
             "- 체력/피격/부활: PlayerInteraction\n" +
-            "- 몸통 판정: BoxCollider2D",
+            "- 몸통 판정: CapsuleCollider2D",
             MessageType.None);
 
         if (!Application.isPlaying)

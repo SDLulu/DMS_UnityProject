@@ -203,16 +203,17 @@ public static class PauseUiInstaller
 
         EditorSceneManager.SaveScene(titleScene, TitlePath);
 
+        EditorBuildSettingsScene[] scenes = EditorBuildSettings.scenes;
         string[] requiredPaths = { TitlePath, StagePath };
-        var paths = EditorBuildSettings.scenes.Select(s => s.path).ToList();
+        var sceneList = scenes.ToList();
         foreach (string path in requiredPaths)
         {
-            if (!paths.Contains(path))
+            if (sceneList.All(s => s.path != path))
             {
-                paths.Add(path);
+                sceneList.Add(new EditorBuildSettingsScene(path, true));
             }
         }
-        EditorBuildSettings.scenes = paths.Select(path => new EditorBuildSettingsScene(path, true)).ToArray();
+        EditorBuildSettings.scenes = sceneList.ToArray();
     }
 
     private static Button MakeButton(

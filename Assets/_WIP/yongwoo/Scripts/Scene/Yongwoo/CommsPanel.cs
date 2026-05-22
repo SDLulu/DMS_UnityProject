@@ -11,6 +11,11 @@ public class CommsPanel : MonoBehaviour
     [Header("Scene Layout")]
     [SerializeField] private RectTransform panelRoot;
     [SerializeField] private CanvasGroup panelGroup;
+    [SerializeField] private Image portraitImage;
+    [SerializeField] private Sprite brokerPortraitSprite;
+    [SerializeField] private Sprite merchantPortraitSprite;
+    [SerializeField] private Sprite robotGuidePortraitSprite;
+    [SerializeField] private Sprite passerbyPortraitSprite;
     [SerializeField] private Text speakerText;
     [SerializeField] private Text bodyText;
 
@@ -52,13 +57,16 @@ public class CommsPanel : MonoBehaviour
 
         if (speakerText != null)
         {
-            speakerText.text = string.IsNullOrWhiteSpace(speaker) ? "???" : speaker;
+            speakerText.gameObject.SetActive(true);
+            speakerText.text = string.IsNullOrWhiteSpace(speaker) ? string.Empty : speaker;
         }
 
         if (bodyText != null)
         {
             bodyText.text = body ?? string.Empty;
         }
+
+        UpdatePortrait(speaker);
     }
 
     public void Hide()
@@ -68,6 +76,7 @@ public class CommsPanel : MonoBehaviour
         if (speakerText != null)
         {
             speakerText.text = string.Empty;
+            speakerText.gameObject.SetActive(true);
         }
 
         if (bodyText != null)
@@ -111,6 +120,58 @@ public class CommsPanel : MonoBehaviour
         {
             bodyText = FindDescendantByName(transform, "BodyText")?.GetComponent<Text>();
         }
+
+        if (portraitImage == null)
+        {
+            portraitImage = FindDescendantByName(transform, "PortraitImage")?.GetComponent<Image>();
+        }
+    }
+
+    private void UpdatePortrait(string speaker)
+    {
+        if (portraitImage == null)
+        {
+            return;
+        }
+
+        Sprite portrait = ResolvePortrait(speaker);
+        portraitImage.sprite = portrait;
+        portraitImage.gameObject.SetActive(portrait != null);
+    }
+
+    private Sprite ResolvePortrait(string speaker)
+    {
+        if (string.IsNullOrWhiteSpace(speaker))
+        {
+            return null;
+        }
+
+        if (speaker.Contains("주인공") || speaker.Contains("Player"))
+        {
+            return null;
+        }
+
+        if (speaker.Contains("브로커") || speaker.Contains("Broker"))
+        {
+            return brokerPortraitSprite;
+        }
+
+        if (speaker.Contains("노점상") || speaker.Contains("상인") || speaker.Contains("Merchant"))
+        {
+            return merchantPortraitSprite;
+        }
+
+        if (speaker.Contains("행인") || speaker.Contains("Passerby"))
+        {
+            return passerbyPortraitSprite;
+        }
+
+        if (speaker.Contains("AI") || speaker.Contains("로봇") || speaker.Contains("Robot"))
+        {
+            return robotGuidePortraitSprite;
+        }
+
+        return null;
     }
 
     private static Transform FindDescendantByName(Transform root, string targetName)

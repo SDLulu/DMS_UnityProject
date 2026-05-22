@@ -19,6 +19,8 @@ public class SimplePlayerController : MonoBehaviour
     private const float JumpGroundIgnoreDuration = 0.08f;
     private const float UpwardUngroundedVelocity = 0.05f;
     private const float PointerDashDeadZone = 0.05f;
+    private const float GroundContactVerticalMargin = 0.05f;
+    private const float MinGroundContactNormalY = 0.55f;
 
     private enum PlayerActionState
     {
@@ -81,8 +83,8 @@ public class SimplePlayerController : MonoBehaviour
     private float _facing = 1f;
     private float _jumpGroundIgnoreTimer;
     private SpriteRenderer _visualRenderer;
-    private Collider2D[] _selfColliders = System.Array.Empty<Collider2D>();
-    private BoxCollider2D _bodyCollider;
+    private CapsuleCollider2D _bodyCollider;
+    private readonly ContactPoint2D[] _groundContacts = new ContactPoint2D[8];
 
     private PlayerActionState _actionState;
     private float _actionTimer;
@@ -193,9 +195,8 @@ public class SimplePlayerController : MonoBehaviour
     private void Awake()
     {
         _body = GetComponent<Rigidbody2D>();
-        _bodyCollider = GetComponent<BoxCollider2D>();
+        _bodyCollider = GetComponent<CapsuleCollider2D>();
         _mainCamera = Camera.main;
-        _selfColliders = GetComponentsInChildren<Collider2D>(includeInactive: true);
         gameObject.tag = "Player";
         EnsurePlayerEnemyCollision();
         _body.freezeRotation = true;
@@ -466,11 +467,11 @@ public class SimplePlayerController : MonoBehaviour
     private void TickDash()
     {
         // 대시는 고정 속도로 이동하고 마지막 틱에서 남은 거리만큼만 움직여 레이저 길이에 맞춥니다.
-        float realDt = Time.fixedUnscaledDeltaTime;
-        _actionTimer = Mathf.Max(0f, _actionTimer - realDt);
+        float scaledDt = Time.fixedDeltaTime;
+        _actionTimer = Mathf.Max(0f, _actionTimer - scaledDt);
         _body.gravityScale = 0f;
 
-        float stepDistance = Mathf.Min(_activeDashSpeed * realDt, _dashDistanceRemaining);
+        float stepDistance = Mathf.Min(_activeDashSpeed * scaledDt, _dashDistanceRemaining);
         _dashDistanceRemaining = Mathf.Max(0f, _dashDistanceRemaining - stepDistance);
         _body.MovePosition(_body.position + _dashDirection * stepDistance);
 
@@ -547,7 +548,7 @@ public class SimplePlayerController : MonoBehaviour
     {
         if (_bodyCollider == null)
         {
-            _bodyCollider = GetComponent<BoxCollider2D>();
+            _bodyCollider = GetComponent<CapsuleCollider2D>();
         }
 
         return _bodyCollider != null
@@ -701,32 +702,23 @@ public class SimplePlayerController : MonoBehaviour
 
     private bool IsGrounded()
     {
-        if (groundCheck == null)
+        if (groundCheck == null || _body == null)
         {
             return false;
         }
 
-        // 오버랩 결과 중 자기 자신의 콜라이더만 걸러서 진짜 지면 접촉만 판정합니다.
-        Collider2D[] hits = Physics2D.OverlapCircleAll(groundCheck.position, groundCheckRadius, groundLayer);
-        for (int i = 0; i < hits.Length; i++)
+        float bodyCenterY = _bodyCollider != null ? _bodyCollider.bounds.center.y : _body.position.y;
+        ContactFilter2D filter = new ContactFilter2D();
+        filter.SetLayerMask(groundLayer);
+        filter.useTriggers = false;
+
+        int contactCount = _body.GetContacts(filter, _groundContacts);
+        for (int i = 0; i < contactCount; i++)
         {
-            Collider2D hit = hits[i];
-            if (hit == null)
-            {
-                continue;
-            }
-
-            bool isSelfCollider = false;
-            for (int selfIndex = 0; selfIndex < _selfColliders.Length; selfIndex++)
-            {
-                if (_selfColliders[selfIndex] == hit)
-                {
-                    isSelfCollider = true;
-                    break;
-                }
-            }
-
-            if (!isSelfCollider)
+            ContactPoint2D contact = _groundContacts[i];
+            bool contactBelowBodyCenter = contact.point.y <= bodyCenterY + GroundContactVerticalMargin;
+            bool contactFacesUpOrDown = Mathf.Abs(contact.normal.y) >= MinGroundContactNormalY;
+            if (contactBelowBodyCenter && contactFacesUpOrDown)
             {
                 return true;
             }
@@ -810,7 +802,7 @@ public class SimplePlayerController : MonoBehaviour
         int enemyLayer = LayerMask.NameToLayer(EnemyLayerName);
         if (playerLayer >= 0 && enemyLayer >= 0)
         {
-            Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
+            Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, true);
         }
     }
 }

@@ -114,7 +114,7 @@ public class PlayerInteraction : MonoBehaviour, IDamageReceiver
 
     public bool ReceiveHit(float damage, Vector2 knockback, GameObject source)
     {
-        if (_isDead || damage <= 0f || _invulnerabilityTimer > 0f)
+        if (_isDead || damage <= 0f || _invulnerabilityTimer > 0f || IsRollingInvulnerable())
         {
             return false;
         }
@@ -147,6 +147,24 @@ public class PlayerInteraction : MonoBehaviour, IDamageReceiver
         }
 
         return true;
+    }
+
+    private bool IsRollingInvulnerable()
+    {
+        return controller != null && controller.IsRolling;
+    }
+
+    public void OnDie()
+    {
+        if (_isDead)
+        {
+            return;
+        }
+
+        _currentHealth = 0f;
+        _invulnerabilityTimer = 0f;
+        HealthChanged?.Invoke();
+        HandleDeath();
     }
 
     public void ConfigureRespawn(Vector3 spawnPosition, float newRespawnDelay, MonoBehaviour[] behavioursToDisable = null)
