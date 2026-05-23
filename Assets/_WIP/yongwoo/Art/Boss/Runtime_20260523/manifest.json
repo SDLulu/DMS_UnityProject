@@ -1,5 +1,6 @@
 {
   "created": "2026-05-23",
+  "revision": "dark_silhouette_v2",
   "source_style_refs": [
     "Assets/_WIP/yongwoo/Art/NPC/Runtime_AINoiseRemoval_20260521/Sprites/broker_idle.png",
     "Assets/_WIP/yongwoo/Art/NPC/Runtime_AINoiseRemoval_20260521/Sprites/passerby_idle.png"
@@ -10,5 +11,5 @@
     "boss_clone_b_idle": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/Sprites/boss_clone_b_idle.png",
     "boss_clone_c_idle": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/Sprites/boss_clone_c_idle.png"
   },
-  "notes": "Composite boss draft using existing DMS NPC silhouettes with glitch/data-core recolor. P1 is wired to Boss_P1_Prototype; clone sprites are prepared for P2/P3."
+  "notes": "Darker boss composite. Original NPC clothing/face details are crushed into a void silhouette, with data-core and glitch bars as the primary read."
 }

@@ -13,13 +13,20 @@ public static class BossPrototypePrefabBuilder
     private const string ProjectilePath = BossDir + "/BossProjectile.prefab";
     private const string BossPath = BossDir + "/Boss_P1_Prototype.prefab";
     private const string BossP1SpritePath = "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/Sprites/boss_p1_idle.png";
+    private static readonly string[] BossSpritePaths =
+    {
+        BossP1SpritePath,
+        "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/Sprites/boss_clone_a_idle.png",
+        "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/Sprites/boss_clone_b_idle.png",
+        "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/Sprites/boss_clone_c_idle.png"
+    };
 
     [MenuItem("Tools/Yongwoo/Boss/Rebuild P1 Prototype Prefab")]
     public static void RebuildP1PrototypePrefab()
     {
         EnsureFolder("Assets/_WIP/yongwoo/Prefabs", "Boss");
         CleanupTemporarySceneObjects();
-        ConfigureSpriteImporter(BossP1SpritePath);
+        ConfigureBossSpriteImporters();
 
         BossProjectile projectilePrefab = BuildProjectilePrefab();
         BuildBossPrefab(projectilePrefab);
@@ -228,6 +235,14 @@ public static class BossPrototypePrefabBuilder
     {
         Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(path);
         return sprite != null ? sprite : fallback;
+    }
+
+    private static void ConfigureBossSpriteImporters()
+    {
+        for (int i = 0; i < BossSpritePaths.Length; i++)
+        {
+            ConfigureSpriteImporter(BossSpritePaths[i]);
+        }
     }
 
     private static void ConfigureSpriteImporter(string path)

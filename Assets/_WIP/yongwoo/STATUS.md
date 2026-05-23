@@ -66,6 +66,7 @@
 - 2026-05-23 세계관 분리: `세계관.md` 신규 — 게임 정체성/핵심 용어/등장 인물/in-game 인터페이스 의미/가치 대비/톤. `시나리오.md`에서 컨셉·등장 인물 섹션 제거하고 포인터로 대체. 문서 인덱스(세계관/시나리오/보스시나리오/보스전로직/STATUS/AGENTS) 정리됨
 - 2026-05-23 Unity 보스 P1 프로토타입 구현: `BossPatternDashSlash`(dashSpeed 100), `BossPatternDelayedBlast`/`BossBlastZone`, `BossPatternPredictShot` 추가. `BossPatternBase`는 파생 패턴 여러 개를 한 오브젝트에 붙일 수 있게 `[DisallowMultipleComponent]` 제거. `BossPatternRunner`는 player 미지정 시 `PlayerInteraction` 자동 탐색
 - 2026-05-23 보스 P1 프리팹 조립 완료: `Tools/Yongwoo/Boss/Rebuild P1 Prototype Prefab` 빌더와 `Assets/_WIP/yongwoo/Prefabs/Boss/Boss_P1_Prototype.prefab`, `BossProjectile.prefab` 생성. 프리팹 6슬롯은 단발/연사/확산/대시베기/지연장판/예측탄 순서로 검증. `safe_refresh --compile true`, Unity 콘솔 error 없음. 아직 씬 배치/PlayMode 전투 검증은 미실행
+- 2026-05-23 보스 이미지 초안 적용: 기존 NPC 적용본을 참고하되 재활용 실루엣이 보이지 않도록 어두운 데이터 코어/글리치 실루엣으로 재가공. `Art/Boss/Runtime_20260523/Sprites/`에 `boss_p1_idle`, `boss_clone_a_idle`, `boss_clone_b_idle`, `boss_clone_c_idle` 생성, QA 시트 `QA/boss_runtime_20260523_overview.png` 생성. 네 장 모두 Sprite 320x420, PPU 320, Point filter로 import. `Boss_P1_Prototype` Visual은 `boss_p1_idle` 참조
 
 ## 시간 제어 3층 구조 (중요)
 
@@ -138,7 +139,7 @@
 - [ ] 스테이지 전환 (씬 로드)
 - [x] 타이틀 화면 (목업 `Yongwoo_Title`)
 - [ ] 클리어 / 엔딩
-- [ ] 보스 스테이지 + 보스 *(P1 6패턴 Unity 프로토타입 프리팹 조립 완료. 다음은 씬 배치/PlayMode 튜닝, 이후 P2/P3 분열체와 전환 연출 구현)*
+- [ ] 보스 스테이지 + 보스 *(P1 6패턴 Unity 프로토타입 프리팹 + 어두운 보스 이미지 적용 완료. 다음은 씬 배치/PlayMode 튜닝, 이후 P2/P3 분열체와 전환 연출 구현)*
 - [ ] 히트 이펙트, 사운드 연동
 - [ ] 전체 씬 흐름 연결 (Title → 거주구역 → 뒷골목 → Stage → Ending)
 - [ ] 팀원 씬 머지 + 테스트
