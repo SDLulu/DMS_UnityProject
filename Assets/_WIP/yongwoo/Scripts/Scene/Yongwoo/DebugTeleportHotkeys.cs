@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 // 역할:
-// - 디버그용 핫키(1/2/3)로 플레이어를 지정한 스폰 포인트로 즉시 이동시킵니다.
+// - 디버그용 핫키(1/2/3/4)로 플레이어를 지정한 스폰 포인트로 즉시 이동시킵니다.
 // - 빌드/검증용 임시 컴포넌트라 인스펙터에서 끌 수 있고, 정식 빌드에는 비활성화합니다.
 
 public class DebugTeleportHotkeys : MonoBehaviour
@@ -12,8 +12,10 @@ public class DebugTeleportHotkeys : MonoBehaviour
     [SerializeField] private Transform slot1Village;
     [Tooltip("키 2 — 튜토리얼 시작(접속구역)")]
     [SerializeField] private Transform slot2Tutorial;
-    [Tooltip("키 3 — 보스 시작(재접속_047)")]
+    [Tooltip("키 3 — 보스 구역 진입(재접속_047)")]
     [SerializeField] private Transform slot3Boss;
+    [Tooltip("키 4 — 보스방 앞(스폰_보스방)")]
+    [SerializeField] private Transform slot4BossRoom;
 
     [Header("Options")]
     [SerializeField] private bool enableHotkeys = true;
@@ -43,6 +45,10 @@ public class DebugTeleportHotkeys : MonoBehaviour
         else if (kb.digit3Key.wasPressedThisFrame || kb.numpad3Key.wasPressedThisFrame)
         {
             TeleportTo(slot3Boss, "보스(재접속_047)");
+        }
+        else if (kb.digit4Key.wasPressedThisFrame || kb.numpad4Key.wasPressedThisFrame)
+        {
+            TeleportTo(slot4BossRoom, "보스방 앞");
         }
     }
 

@@ -11,6 +11,7 @@ public static class RuntimeSpriteUtility
 {
     private static Sprite _whiteSprite;
     private static Sprite _circleSprite;
+    private static Sprite _ringSprite;
     private static Material _unlitSpriteMaterial;
     private static Shader _unlitColorShader;
 
@@ -63,6 +64,42 @@ public static class RuntimeSpriteUtility
             }
 
             return _circleSprite;
+        }
+    }
+
+    public static Sprite RingSprite
+    {
+        get
+        {
+            if (_ringSprite == null)
+            {
+                const int size = 128;
+                Texture2D texture = new Texture2D(size, size, TextureFormat.RGBA32, false);
+                texture.filterMode = FilterMode.Bilinear;
+
+                Vector2 center = new Vector2((size - 1) * 0.5f, (size - 1) * 0.5f);
+                float outerRadius = size * 0.5f - 3f;
+                float innerRadius = outerRadius - 8f;
+
+                for (int y = 0; y < size; y++)
+                {
+                    for (int x = 0; x < size; x++)
+                    {
+                        float distance = Vector2.Distance(new Vector2(x, y), center);
+                        float alpha = distance <= outerRadius && distance >= innerRadius ? 1f : 0f;
+                        texture.SetPixel(x, y, new Color(1f, 1f, 1f, alpha));
+                    }
+                }
+
+                texture.Apply();
+                _ringSprite = Sprite.Create(
+                    texture,
+                    new Rect(0f, 0f, size, size),
+                    new Vector2(0.5f, 0.5f),
+                    100f);
+            }
+
+            return _ringSprite;
         }
     }
 

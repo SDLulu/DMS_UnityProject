@@ -3,7 +3,7 @@ using UnityEngine;
 // 역할:
 // - 보스 패턴 4단계(텔레그래프 → 선딜 → 액티브 → 후딜) 공통 시간 흐름을 베이스로 제공합니다.
 // - 구체 패턴(단발/연사/확산 등)은 OnFireBegin/OnFireTick/IsFireFinished만 채우면 됩니다.
-// - 텔레그래프 종료 시점에 플레이어 방향을 락해서 OnFireBegin에 전달합니다.
+// - 텔레그래프 중에는 플레이어를 계속 조준하고, 종료 시점 방향을 락해서 OnFireBegin에 전달합니다.
 
 public abstract class BossPatternBase : MonoBehaviour, IBossPattern
 {
@@ -15,6 +15,9 @@ public abstract class BossPatternBase : MonoBehaviour, IBossPattern
     [Header("Visuals (optional)")]
     [Tooltip("텔레그래프 동안 켜두는 GameObject. 보스→플레이어 방향선 등.")]
     [SerializeField] protected GameObject telegraphVisual;
+    [SerializeField, Min(0f)] private float telegraphPulseSpeed = 18f;
+    [SerializeField, Range(0f, 0.6f)] private float telegraphPulseAlpha = 0.22f;
+    [SerializeField, Range(0f, 0.35f)] private float telegraphPulseWidth = 0.12f;
 
     protected enum Phase { Idle, Telegraph, Prefire, Active, Recovery }
 
@@ -23,6 +26,10 @@ public abstract class BossPatternBase : MonoBehaviour, IBossPattern
     protected Vector2 _lockedAim = Vector2.right;
     protected BossPatternContext _ctx;
     protected bool _isActive;
+
+    private SpriteRenderer _telegraphRenderer;
+    private Color _telegraphBaseColor;
+    private Vector3 _telegraphBaseScale;
 
     public bool IsActive => _isActive;
     public abstract string PatternId { get; }
@@ -46,6 +53,8 @@ public abstract class BossPatternBase : MonoBehaviour, IBossPattern
         switch (_phase)
         {
             case Phase.Telegraph:
+                UpdateTelegraphVisual(ComputeAimDirection());
+                ApplyTelegraphPulse();
                 if (_phaseTimer <= 0f)
                 {
                     _lockedAim = ComputeAimDirection();
@@ -94,6 +103,7 @@ public abstract class BossPatternBase : MonoBehaviour, IBossPattern
                 _phaseTimer = telegraphDuration;
                 SetTelegraphVisible(true);
                 OnTelegraphBegin();
+                UpdateTelegraphVisual(ComputeAimDirection());
                 break;
             case Phase.Prefire:
                 _phaseTimer = prefireDelay;
@@ -114,6 +124,11 @@ public abstract class BossPatternBase : MonoBehaviour, IBossPattern
         if (telegraphVisual != null)
         {
             telegraphVisual.SetActive(visible);
+            CacheTelegraphVisual();
+            if (!visible)
+            {
+                ResetTelegraphPulse();
+            }
         }
     }
 
@@ -124,8 +139,87 @@ public abstract class BossPatternBase : MonoBehaviour, IBossPattern
             return Vector2.right;
         }
 
-        Vector2 delta = _ctx.player.position - _ctx.boss.position;
+        Vector2 delta = _ctx.player.position - GetAimOriginPosition();
         return delta.sqrMagnitude > 0.0001f ? delta.normalized : Vector2.right;
+    }
+
+    protected virtual Vector3 GetAimOriginPosition()
+    {
+        return _ctx.boss != null ? _ctx.boss.position : transform.position;
+    }
+
+    protected virtual void UpdateTelegraphVisual(Vector2 aimDirection)
+    {
+        if (telegraphVisual == null)
+        {
+            return;
+        }
+
+        Vector2 direction = aimDirection.sqrMagnitude > 0.0001f ? aimDirection.normalized : Vector2.right;
+        Transform visualTransform = telegraphVisual.transform;
+        float length = Mathf.Max(0.1f, Mathf.Abs(visualTransform.localScale.x));
+        Vector3 origin = GetAimOriginPosition();
+        visualTransform.position = origin + (Vector3)(direction * (length * 0.5f));
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        visualTransform.rotation = Quaternion.Euler(0f, 0f, angle);
+    }
+
+    private void CacheTelegraphVisual()
+    {
+        if (telegraphVisual == null)
+        {
+            return;
+        }
+
+        SpriteRenderer renderer = telegraphVisual.GetComponent<SpriteRenderer>();
+        if (_telegraphRenderer == renderer && _telegraphBaseScale != Vector3.zero)
+        {
+            return;
+        }
+
+        _telegraphRenderer = renderer;
+        _telegraphBaseScale = telegraphVisual.transform.localScale;
+        _telegraphBaseColor = _telegraphRenderer != null ? _telegraphRenderer.color : Color.white;
+    }
+
+    private void ApplyTelegraphPulse()
+    {
+        if (telegraphVisual == null)
+        {
+            return;
+        }
+
+        CacheTelegraphVisual();
+        float pulse = 0.5f + Mathf.Sin(Time.unscaledTime * telegraphPulseSpeed) * 0.5f;
+
+        if (_telegraphRenderer != null)
+        {
+            Color color = _telegraphBaseColor;
+            color.a = Mathf.Clamp01(_telegraphBaseColor.a + telegraphPulseAlpha * pulse);
+            _telegraphRenderer.color = color;
+        }
+
+        Vector3 scale = _telegraphBaseScale;
+        scale.y = _telegraphBaseScale.y * (1f + telegraphPulseWidth * pulse);
+        telegraphVisual.transform.localScale = scale;
+    }
+
+    private void ResetTelegraphPulse()
+    {
+        if (telegraphVisual == null)
+        {
+            return;
+        }
+
+        if (_telegraphBaseScale != Vector3.zero)
+        {
+            telegraphVisual.transform.localScale = _telegraphBaseScale;
+        }
+
+        if (_telegraphRenderer != null)
+        {
+            _telegraphRenderer.color = _telegraphBaseColor;
+        }
     }
 
     protected virtual void OnTelegraphBegin() { }

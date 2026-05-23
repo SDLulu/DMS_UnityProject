@@ -18,6 +18,11 @@ public class BossPatternSpread : BossPatternBase
 
     public override string PatternId => "P1-3 Spread";
 
+    protected override Vector3 GetAimOriginPosition()
+    {
+        return muzzle != null ? muzzle.position : base.GetAimOriginPosition();
+    }
+
     protected override void OnFireBegin(Vector2 aimDirection)
     {
         if (projectilePrefab == null || shotCount <= 0)

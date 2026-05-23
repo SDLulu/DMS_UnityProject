@@ -1,7 +1,7 @@
 using UnityEngine;
 
 // 역할:
-// - 씬 뷰에서 스폰 포인트, 트리거, 게이트 등 튜토리얼 오브젝트의 위치를 기즈모로 표시합니다.
+// - 씬 뷰에서 스폰 포인트, 트리거, 게이트, 보스 아레나 앵커 등 배치 오브젝트를 기즈모로 표시합니다.
 // - 라벨 텍스트와 색상으로 역할을 구분합니다.
 
 public class TutorialMarker : MonoBehaviour
@@ -11,7 +11,9 @@ public class TutorialMarker : MonoBehaviour
         SpawnPoint,
         Trigger,
         Gate,
-        Interactable
+        Interactable,
+        BossCameraAnchor,
+        BossTeleportAnchor,
     }
 
     [SerializeField] private MarkerType markerType = MarkerType.SpawnPoint;
@@ -36,31 +38,28 @@ public class TutorialMarker : MonoBehaviour
             MarkerType.Trigger => Color.yellow,
             MarkerType.Gate => Color.red,
             MarkerType.Interactable => Color.green,
+            MarkerType.BossCameraAnchor => new Color(0.2f, 0.85f, 1f),
+            MarkerType.BossTeleportAnchor => new Color(0.2f, 1f, 0.35f),
             _ => Color.white
         };
+    }
+
+    public void Configure(MarkerType type, float radius = 0.4f)
+    {
+        markerType = type;
+        gizmoRadius = radius;
+        AutoColor();
     }
 
 #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
-        Gizmos.color = gizmoColor;
-        Gizmos.DrawWireSphere(transform.position, gizmoRadius);
-
-        UnityEditor.Handles.color = gizmoColor;
-        var style = new GUIStyle(UnityEditor.EditorStyles.boldLabel);
-        style.normal.textColor = gizmoColor;
-        style.fontSize = 11;
-        style.alignment = TextAnchor.MiddleCenter;
-
-        Vector3 labelPos = transform.position + Vector3.up * (gizmoRadius + 0.3f);
-        string label = gameObject.name;
-        UnityEditor.Handles.Label(labelPos, label, style);
+        TutorialGizmoDraw.DrawPoint(transform.position, gizmoRadius, gizmoColor, gameObject.name);
     }
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = new Color(gizmoColor.r, gizmoColor.g, gizmoColor.b, 0.25f);
-        Gizmos.DrawSphere(transform.position, gizmoRadius);
+        TutorialGizmoDraw.DrawFilledPoint(transform.position, gizmoRadius, gizmoColor);
     }
 #endif
 }

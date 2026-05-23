@@ -18,6 +18,18 @@ public class BossPatternDelayedBlast : BossPatternBase
 
     public override string PatternId => "Delayed Blast";
 
+    protected override void UpdateTelegraphVisual(Vector2 aimDirection)
+    {
+        if (telegraphVisual == null)
+        {
+            return;
+        }
+
+        Vector3 playerPos = _ctx.player != null ? _ctx.player.position : transform.position;
+        telegraphVisual.transform.position = playerPos;
+        telegraphVisual.transform.rotation = Quaternion.identity;
+    }
+
     protected override void OnFireBegin(Vector2 aimDirection)
     {
         Vector3[] positions = BuildBlastPositions();

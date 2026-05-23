@@ -23,6 +23,7 @@
 
 ## 지금 어디까지 (현재 작업 위치)
 
+- 2026-05-23 `Yongwoo_Title` 씬 bake 방식: Play 시 자동 세팅 제거. `TitleUI`/`ScanLine` 컴포넌트·값은 씬에 저장, 에디터 인스펙터에서 조절. 재 bake: `DMS → Yongwoo → Setup Title UI Effects`
 - 2026-05-17 정적 점검 기준: `Yongwoo_Stage` 열림, 씬 dirty 없음, Unity 콘솔 error 없음
 - 2026-05-18 빌드 오류 대응: SPUM 에디터 전용 `UnityEditor.U2D.Sprites` 참조가 Player 빌드에 섞이지 않도록 가드 추가
 - 2026-05-20 Day1 버그 수정 완료: 슬로우 중 대시 속도 scaled time 적용, `DeathZone` 낙사 트리거 추가, `ScreenGlitchOverlay.ResetGlitch()` 경로 추가
@@ -67,6 +68,23 @@
 - 2026-05-23 Unity 보스 P1 프로토타입 구현: `BossPatternDashSlash`(dashSpeed 100), `BossPatternDelayedBlast`/`BossBlastZone`, `BossPatternPredictShot` 추가. `BossPatternBase`는 파생 패턴 여러 개를 한 오브젝트에 붙일 수 있게 `[DisallowMultipleComponent]` 제거. `BossPatternRunner`는 player 미지정 시 `PlayerInteraction` 자동 탐색
 - 2026-05-23 보스 P1 프리팹 조립 완료: `Tools/Yongwoo/Boss/Rebuild P1 Prototype Prefab` 빌더와 `Assets/_WIP/yongwoo/Prefabs/Boss/Boss_P1_Prototype.prefab`, `BossProjectile.prefab` 생성. 프리팹 6슬롯은 단발/연사/확산/대시베기/지연장판/예측탄 순서로 검증. `safe_refresh --compile true`, Unity 콘솔 error 없음. 아직 씬 배치/PlayMode 전투 검증은 미실행
 - 2026-05-23 보스 이미지 초안 적용: 기존 NPC 적용본을 참고하되 재활용 실루엣이 보이지 않도록 어두운 데이터 코어/글리치 실루엣으로 재가공. `Art/Boss/Runtime_20260523/Sprites/`에 `boss_p1_idle`, `boss_clone_a_idle`, `boss_clone_b_idle`, `boss_clone_c_idle` 생성, QA 시트 `QA/boss_runtime_20260523_overview.png` 생성. 네 장 모두 Sprite 320x420, PPU 320, Point filter로 import. `Boss_P1_Prototype` Visual은 `boss_p1_idle` 참조
+- 2026-05-23 보스 P1 씬 배치: `Yongwoo_Stage` `보스씬/보스/Boss_P1_Prototype` @ (58, -24.8). 디버그 텔포 키 4 → `스폰_보스방` (-12, -23.99) 추가. 키 3은 기존 `스폰_재접속_047` 유지
+- 2026-05-23 보스 아레나 고정: `BossBattleArena` + `트리거_보스전입장`. 입장 시 Cuphead식 고정 카메라, **카메라 화면 크기**만큼 플레이어 클램프, 보스 텔포 5앵커 연결. `플레이어범위` 박스 제거
+- 2026-05-23 보스 아레나 씬 기즈모: `TutorialMarker`에 `BossCameraAnchor`/`BossTeleportAnchor` 타입 추가, `TutorialGizmoDraw` 공통화, `BossBattleArena` 아레나 와이어 박스. `Tools/Yongwoo/Boss/Ensure Arena Tutorial Markers`로 `카메라앵커`/Anchor_01~05/입장 트리거 마커 연결. 규칙은 `AGENTS.md` §씬 배치 기즈모
+
+- 2026-05-23 P1 텔포 앵커 배치: `보스전로직.md` §4.3 (4모서리+중앙 위) 기준 `Place P1 Teleport Anchors` 메뉴로 `Yongwoo_Stage` 적용·저장
+- 2026-05-23 보스 조준감 수정: `BossPatternBase`가 텔레그래프 중 플레이어 방향으로 계속 회전하고, 단발/연사/확산/예측탄은 보스 중심이 아니라 `Muzzle` 기준으로 조준. `BossPatternRunner`는 P1 슬롯 누락 시 6패턴을 자동 보강
+- 2026-05-23 P2/P3 Unity 전환 구현: `BossPhaseController`가 P1 사망→P2 2분열(각 4HP)→P3 3분열(각 3HP)을 처리. A/B/C 분열체 스프라이트 연결, 역할별 패턴 슬롯 지정, 대시/텔포 아레나 클램프 적용
+- 2026-05-23 P2/P3 전용 패턴 추가: `BossPatternTeleportSlam`, `BossPatternLaserWall`/`BossLaserWallZone`, `BossPatternSafeZoneCollapse`/`BossSafeZoneCollapse`. PlayMode 강제 전환 스모크에서 P1→P2 2체→P3 3체 생성, Unity console error 없음
+- 2026-05-23 보스전 가시성 1차: 보스 `Visual` 어두운 틴트(`BossBodyVisual.DarkTint`), P3 안전지대는 안전 원 대신 **아레나 나머지 빨간 위험**(`SpriteMask`+`VisibleOutsideMask`), 보스 탄 `defaultRadius` 0.03(기존 1/4)+`TrailRenderer`+Unlit 트레일. `BossProjectile.prefab`/`Boss_P1_Prototype` 반영, compile error 없음
+- 2026-05-24 보스 이미지 방향 수정: 분열체가 서로 다른 NPC처럼 보이지 않도록 `boss_p1_idle_composite` 하나를 기준 실루엣으로 쓰고, P1/A/B/C는 색·글리치 바·작은 역할 표식만 다르게 굽는 방식으로 교체. 기존 보스 스프라이트 `.meta` GUID는 유지. QA 시트는 `Art/Boss/Runtime_20260523/QA/boss_runtime_20260523_overview.png`
+- 2026-05-24 보스 이펙트 업그레이드: HTML 프로토타입 감각에 맞춰 텔레그래프 펄스, 대시 잔상, 장판 PulseRing/HotCore, 레이저 HotCore, 안전지대 SafeRing을 런타임 이펙트로 추가. 보스 PNG 색을 살리기 위해 `BossBodyVisual.DarkTint`는 흰색 틴트로 변경
+- 2026-05-24 보스 최소 idle 애니메이션 시트 생성: hatch-pet의 고정 셀/투명 atlas/QA 방식을 참고해 `Art/Boss/Runtime_20260523/AnimationSheets/boss_minimal_idle_4x4.png` 생성. 규격은 320x420 셀, 4프레임, 4행(P1/A/B/C), 전체 1280x1680. 역할별 4프레임 strip과 preview GIF, contact QA는 같은 폴더 하위에 있음
+- 2026-05-24 보스 Hybrid 비주얼 1차: `BossPhaseController`가 idle frame sprite 배열(에디터 자동 로드/빌더 직렬화) + 런타임 자식 레이어(`Hybrid_Core`, `Hybrid_Halo`, `Hybrid_VerticalLine`, `Hybrid_GlitchBar_*`)를 생성해 몸통 bob/scale pulse, 코어 점멸, 링 흔들림, 글리치 바 점멸을 처리. 빌더도 P2/P3 패턴과 idle frame 배열을 다시 연결하도록 보강
+- 2026-05-24 보스 피드백 레이어 추가: `BossPhaseController`가 `BossInteraction.Damaged/Died`를 받아 피격 코어 버스트(`Boss_ImpactSpark`), 카메라 shake, 분열/처치 버스트를 생성. `BossTeleporter`는 텔포 숨김 시점에 현재 자식 `SpriteRenderer`를 다시 수집해 Hybrid 레이어까지 함께 숨기도록 보강. 현재 `Yongwoo_Stage` dirty 때문에 refresh/compile 검증은 보류
+- 2026-05-24 보스 투사체 Hybrid 강화: `BossProjectile`에 HotCore/Ring/Streak 자식 레이어, 네온 3색 trail gradient, 발사/충돌 spark burst, 자식 레이어 pulse를 추가. 루트 스케일은 흔들지 않아 판정 크기 변동을 피함. `Yongwoo_Stage` dirty 때문에 refresh/compile/PlayMode 검증은 아직 보류
+- 2026-05-24 보스 아레나 Hybrid 프레임 추가: `BossBattleArena`가 전투 입장 시 `Boss_ArenaFX` 런타임 자식을 만들고 화면 경계선/코너/스캔라인을 pulse 처리. 씬 YAML을 직접 수정하지 않고 코드 생성 방식으로 적용. `Yongwoo_Stage` dirty 때문에 refresh/compile/PlayMode 검증은 아직 보류
+- 2026-05-24 보스 반응성 레이어 추가: `BossEffectFade`를 확장/축소 fade 공용으로 보강하고, 보스 피격·분열·처치와 투사체 충돌에 `RingSprite` shockwave를 추가. 보스방 입장/P1→P2/P2→P3/P3 완료 시 기존 `ScreenGlitchOverlay.Pulse`를 짧게 호출해 화면 반응도 연결. `Yongwoo_Stage` dirty 때문에 refresh/compile/PlayMode 검증은 아직 보류
 
 ## 시간 제어 3층 구조 (중요)
 
@@ -139,7 +157,7 @@
 - [ ] 스테이지 전환 (씬 로드)
 - [x] 타이틀 화면 (목업 `Yongwoo_Title`)
 - [ ] 클리어 / 엔딩
-- [ ] 보스 스테이지 + 보스 *(P1 6패턴 Unity 프로토타입 프리팹 + 어두운 보스 이미지 적용 완료. 다음은 씬 배치/PlayMode 튜닝, 이후 P2/P3 분열체와 전환 연출 구현)*
+- [ ] 보스 스테이지 + 보스 *(P1/P2/P3 전환과 주요 패턴 구현됨. **사용자 플레이 기준 전투감 튜닝, 등장/전환/처치 연출 연결**이 다음)*
 - [ ] 히트 이펙트, 사운드 연동
 - [ ] 전체 씬 흐름 연결 (Title → 거주구역 → 뒷골목 → Stage → Ending)
 - [ ] 팀원 씬 머지 + 테스트
@@ -160,7 +178,7 @@
 - 전체 튜토리얼 PlayMode 관통 검증은 아직 필요. Day1은 짧은 런타임 확인만 완료.
 - 일시정지/타이틀 로드 PlayMode 검증은 아직 필요. 현재 `Yongwoo_Stage.unity`에 기존 미커밋 변경이 섞여 있어 규칙상 play 전 별도 체크포인트 정리가 필요.
 - SPUM 빌드 오류 수정 후 Player build 재검증은 아직 미실행. Unity refresh/compile은 Day1에서 에러 없이 통과.
-- `Boss_P1_Prototype.prefab`은 정적/컴파일 검증까지 완료. 실제 보스방 배치, player 자동 탐색, 6패턴 전투감, 대시베기 100u/s 거리, 장판 판정 반경은 PlayMode에서 확인 필요.
+- `Boss_P1_Prototype`은 `Yongwoo_Stage` `보스씬/보스`에 배치됨. P1→P2→P3 강제 전환 스모크는 통과했지만, 실제 플레이 손맛 기준으로 조준선 길이/탄속/대시 속도/장판·레이저 압박은 튜닝 필요.
 
 ---
 

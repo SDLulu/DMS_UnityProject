@@ -16,11 +16,15 @@ public class BossPatternDashSlash : BossPatternBase
 
     [Header("Fallback Visual")]
     [SerializeField] private Color slashColor = new Color(1f, 0.25f, 0.28f, 0.28f);
+    [SerializeField] private Color afterimageColor = new Color(1f, 0.2f, 0.15f, 0.32f);
+    [SerializeField, Min(0.01f)] private float afterimageInterval = 0.035f;
+    [SerializeField, Min(0.01f)] private float afterimageLifetime = 0.16f;
 
     private readonly HashSet<IDamageReceiver> _hitTargets = new();
     private readonly Collider2D[] _overlapResults = new Collider2D[12];
 
     private float _dashTimer;
+    private float _afterimageTimer;
 
     public override string PatternId => "Dash Slash";
 
@@ -28,6 +32,8 @@ public class BossPatternDashSlash : BossPatternBase
     {
         _hitTargets.Clear();
         _dashTimer = dashDuration;
+        _afterimageTimer = 0f;
+        SpawnAfterimage();
         SampleHit();
     }
 
@@ -36,8 +42,21 @@ public class BossPatternDashSlash : BossPatternBase
         if (_ctx.boss != null)
         {
             Vector3 delta = (Vector3)(_lockedAim * dashSpeed * deltaTime);
-            _ctx.boss.position += delta;
+            Vector3 nextPosition = _ctx.boss.position + delta;
+            if (_ctx.teleporter != null)
+            {
+                nextPosition = _ctx.teleporter.ClampToArena(nextPosition);
+            }
+
+            _ctx.boss.position = nextPosition;
             transform.position = _ctx.boss.position;
+        }
+
+        _afterimageTimer -= deltaTime;
+        if (_afterimageTimer <= 0f)
+        {
+            SpawnAfterimage();
+            _afterimageTimer = afterimageInterval;
         }
 
         SampleHit();
@@ -97,6 +116,37 @@ public class BossPatternDashSlash : BossPatternBase
         }
 
         return null;
+    }
+
+    private void SpawnAfterimage()
+    {
+        if (_ctx.boss == null)
+        {
+            return;
+        }
+
+        SpriteRenderer source = _ctx.boss.GetComponentInChildren<SpriteRenderer>();
+        if (source == null || source.sprite == null)
+        {
+            return;
+        }
+
+        GameObject ghost = new GameObject("Boss_DashAfterimage");
+        ghost.transform.SetPositionAndRotation(source.transform.position, source.transform.rotation);
+        ghost.transform.localScale = source.transform.lossyScale;
+
+        SpriteRenderer renderer = ghost.AddComponent<SpriteRenderer>();
+        renderer.sprite = source.sprite;
+        renderer.flipX = source.flipX;
+        renderer.flipY = source.flipY;
+        renderer.color = afterimageColor;
+        renderer.sortingLayerID = source.sortingLayerID;
+        renderer.sortingLayerName = source.sortingLayerName;
+        renderer.sortingOrder = source.sortingOrder - 1;
+        renderer.sharedMaterial = source.sharedMaterial;
+
+        BossEffectFade fade = ghost.AddComponent<BossEffectFade>();
+        fade.Begin(afterimageLifetime, shrinkOverLifetime: false);
     }
 
     private void OnDrawGizmosSelected()

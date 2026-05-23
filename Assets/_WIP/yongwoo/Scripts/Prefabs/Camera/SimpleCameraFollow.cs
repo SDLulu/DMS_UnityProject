@@ -20,6 +20,10 @@ public class SimpleCameraFollow : MonoBehaviour
     private float _shakeTimer;
     private float _shakeDuration;
     private float _shakeStrength;
+    private bool _arenaLocked;
+    private Vector3 _arenaFixedPosition;
+
+    public bool IsArenaLocked => _arenaLocked;
 
     public PlayerCameraConfig CreateConfigSnapshot()
     {
@@ -49,8 +53,36 @@ public class SimpleCameraFollow : MonoBehaviour
         _targetBody = target != null ? target.GetComponent<Rigidbody2D>() : null;
     }
 
+    public void LockToArenaPosition(Vector3 worldPosition)
+    {
+        _arenaLocked = true;
+        _arenaFixedPosition = worldPosition;
+        _currentLookAhead = 0f;
+        transform.position = worldPosition;
+    }
+
+    public void UnlockArenaFollow()
+    {
+        _arenaLocked = false;
+    }
+
     private void LateUpdate()
     {
+        if (_arenaLocked)
+        {
+            Vector3 lockedPosition = _arenaFixedPosition;
+            if (_shakeTimer > 0f)
+            {
+                float normalized = _shakeDuration <= 0f ? 0f : _shakeTimer / _shakeDuration;
+                Vector2 shake = Random.insideUnitCircle * (_shakeStrength * normalized);
+                lockedPosition += new Vector3(shake.x, shake.y, 0f);
+                _shakeTimer = Mathf.Max(0f, _shakeTimer - Time.unscaledDeltaTime);
+            }
+
+            transform.position = lockedPosition;
+            return;
+        }
+
         if (target == null)
         {
             GameObject playerObject = GameObject.FindGameObjectWithTag("Player");

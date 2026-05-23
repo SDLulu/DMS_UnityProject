@@ -13,6 +13,8 @@ public class BossBlastZone : MonoBehaviour
 
     private CircleCollider2D _collider;
     private SpriteRenderer _renderer;
+    private SpriteRenderer _ringRenderer;
+    private SpriteRenderer _coreRenderer;
     private GameObject _owner;
     private float _damage;
     private Color _warningColor;
@@ -29,6 +31,14 @@ public class BossBlastZone : MonoBehaviour
         _collider.radius = 0.5f;
         transform.localScale = Vector3.one * (safeRadius * 2f);
         _renderer.color = _warningColor;
+        if (_ringRenderer != null)
+        {
+            _ringRenderer.color = WithAlpha(_warningColor, 0.85f);
+        }
+        if (_coreRenderer != null)
+        {
+            _coreRenderer.color = new Color(1f, 1f, 1f, 0f);
+        }
         StartCoroutine(LifetimeRoutine(Mathf.Max(0f, warningDuration), Mathf.Max(0.01f, activeDuration)));
     }
 
@@ -59,19 +69,77 @@ public class BossBlastZone : MonoBehaviour
                 _renderer.sharedMaterial = RuntimeSpriteUtility.UnlitSpriteMaterial;
             }
         }
+
+        if (_ringRenderer == null)
+        {
+            GameObject ring = new GameObject("PulseRing");
+            ring.transform.SetParent(transform, false);
+            ring.transform.localScale = Vector3.one * 1.08f;
+            _ringRenderer = ring.AddComponent<SpriteRenderer>();
+            _ringRenderer.sprite = RuntimeSpriteUtility.RingSprite;
+            _ringRenderer.sortingLayerName = "Effect";
+            _ringRenderer.sortingOrder = 42;
+            if (RuntimeSpriteUtility.UnlitSpriteMaterial != null)
+            {
+                _ringRenderer.sharedMaterial = RuntimeSpriteUtility.UnlitSpriteMaterial;
+            }
+        }
+
+        if (_coreRenderer == null)
+        {
+            GameObject core = new GameObject("HotCore");
+            core.transform.SetParent(transform, false);
+            core.transform.localScale = Vector3.one * 0.28f;
+            _coreRenderer = core.AddComponent<SpriteRenderer>();
+            _coreRenderer.sprite = RuntimeSpriteUtility.CircleSprite;
+            _coreRenderer.sortingLayerName = "Effect";
+            _coreRenderer.sortingOrder = 43;
+            if (RuntimeSpriteUtility.UnlitSpriteMaterial != null)
+            {
+                _coreRenderer.sharedMaterial = RuntimeSpriteUtility.UnlitSpriteMaterial;
+            }
+        }
     }
 
     private IEnumerator LifetimeRoutine(float warningDuration, float activeDuration)
     {
         _collider.enabled = false;
-        yield return new WaitForSeconds(warningDuration);
+        float warningTimer = 0f;
+        while (warningTimer < warningDuration)
+        {
+            float pulse = 0.5f + Mathf.Sin(Time.time * 18f) * 0.5f;
+            _renderer.color = WithAlpha(_warningColor, Mathf.Lerp(0.18f, 0.34f, pulse));
+            if (_ringRenderer != null)
+            {
+                _ringRenderer.color = WithAlpha(_warningColor, Mathf.Lerp(0.55f, 0.95f, pulse));
+                _ringRenderer.transform.localScale = Vector3.one * Mathf.Lerp(1.02f, 1.13f, pulse);
+            }
+
+            warningTimer += Time.deltaTime;
+            yield return null;
+        }
 
         _hitTargets.Clear();
         _renderer.color = _activeColor;
+        if (_ringRenderer != null)
+        {
+            _ringRenderer.color = Color.white;
+            _ringRenderer.transform.localScale = Vector3.one * 1.1f;
+        }
+        if (_coreRenderer != null)
+        {
+            _coreRenderer.color = new Color(1f, 1f, 1f, 0.55f);
+        }
         _collider.enabled = true;
 
         yield return new WaitForSeconds(activeDuration);
         Destroy(gameObject);
+    }
+
+    private static Color WithAlpha(Color color, float alpha)
+    {
+        color.a = Mathf.Clamp01(alpha);
+        return color;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

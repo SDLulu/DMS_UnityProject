@@ -41,9 +41,38 @@ public class BossInteraction : MonoBehaviour, IDamageReceiver
     public bool IsDead => _isDead;
     public bool IsAlive => !_isDead;
 
+    public void ResetHealth(int newMaxHealth)
+    {
+        maxHealth = Mathf.Max(1, newMaxHealth);
+        _currentHealth = maxHealth;
+        _invulnerabilityTimer = 0f;
+        _isDead = false;
+        _isTeleportInvulnerable = false;
+
+        if (_flashRoutine != null)
+        {
+            StopCoroutine(_flashRoutine);
+            _flashRoutine = null;
+        }
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = _baseColor;
+        }
+    }
+
     public void SetTeleportInvulnerable(bool active)
     {
         _isTeleportInvulnerable = active;
+    }
+
+    public void SetBaseVisualColor(Color color)
+    {
+        _baseColor = color;
+        if (spriteRenderer != null && !_isDead)
+        {
+            spriteRenderer.color = _baseColor;
+        }
     }
 
     private void Awake()

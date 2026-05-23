@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>단일 스프라이트 · 코드 애니메이션 한계 맵</title>
+  <style>
+    :root {
+      --bg: #0e1117;
+      --panel: #161b26;
+      --border: #2a3348;
+      --text: #e8ecf4;
+      --muted: #8b95a8;
+      --ok: #3dd68c;
+      --warn: #f5c451;
+      --no: #f07178;
+      --accent: #7aa2f7;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", "Malgun Gothic", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+    header {
+      padding: 1.5rem 1.5rem 0.75rem;
+      border-bottom: 1px solid var(--border);
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    h1 { font-size: 1.35rem; font-weight: 650; letter-spacing: -0.02em; }
+    .subtitle { color: var(--muted); font-size: 0.9rem; margin-top: 0.35rem; max-width: 72ch; }
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      margin-top: 1rem;
+      font-size: 0.82rem;
+    }
+    .legend span { display: inline-flex; align-items: center; gap: 0.4rem; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot.ok { background: var(--ok); }
+    .dot.warn { background: var(--warn); }
+    .dot.no { background: var(--no); }
+
+    main { max-width: 1400px; margin: 0 auto; padding: 1rem 1.5rem 2rem; }
+    section { margin-bottom: 2rem; }
+    section h2 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+      padding-left: 0.15rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.75rem;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.15s;
+    }
+    .card:hover { border-color: #3d4a66; }
+    .card.paused .stage::after {
+      content: "⏸";
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.45);
+      font-size: 1.5rem;
+    }
+    .stage {
+      position: relative;
+      height: 140px;
+      background: repeating-conic-gradient(#1a2030 0% 25%, #151a28 0% 50%) 50% / 16px 16px;
+      cursor: pointer;
+    }
+    .stage canvas { display: block; width: 100%; height: 100%; image-rendering: pixelated; }
+    .meta { padding: 0.65rem 0.75rem 0.75rem; flex: 1; display: flex; flex-direction: column; gap: 0.25rem; }
+    .meta .title { font-size: 0.88rem; font-weight: 600; }
+    .meta .unity { font-size: 0.72rem; color: var(--accent); font-family: Consolas, monospace; }
+    .meta .desc { font-size: 0.75rem; color: var(--muted); }
+    .badge {
+      align-self: flex-start;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      margin-bottom: 0.15rem;
+    }
+    .badge.ok { background: rgba(61,214,140,0.15); color: var(--ok); }
+    .badge.warn { background: rgba(245,196,81,0.15); color: var(--warn); }
+    .badge.no { background: rgba(240,113,120,0.15); color: var(--no); }
+
+    .compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+    @media (max-width: 640px) { .compare { grid-template-columns: 1fr; } }
+    .compare .card .stage { height: 180px; }
+
+    .source-preview {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+    }
+    .source-preview canvas {
+      width: 64px;
+      height: 64px;
+      image-rendering: pixelated;
+      border: 2px solid var(--border);
+      border-radius: 4px;
+      background: #1a2030;
+    }
+    .source-preview p { font-size: 0.85rem; color: var(--muted); }
+    .source-preview strong { color: var(--text); }
+
+    footer {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 1.5rem 2rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+    footer code { color: var(--accent); font-size: 0.85em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>스프라이트 1장 · 코드만으로 어디까지?</h1>
+    <p class="subtitle">
+      같은 픽셀 이미지 1장을 모든 데모에 재사용합니다. 클릭하면 해당 셀만 일시정지.
+      Unity 대응: <code>Transform</code>, <code>SpriteRenderer.color</code>, <code>MaterialPropertyBlock</code>, 셰이더, 자식 오브젝트 복제.
+    </p>
+    <div class="legend">
+      <span><i class="dot ok"></i> 충분히 실전 가능</span>
+      <span><i class="dot warn"></i> 연출용·제한적 (진짜 모션은 아님)</span>
+      <span><i class="dot no"></i> 1장만으로는 불가 → 시트/본/메시 필요</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="source-preview">
+      <canvas id="sourceSprite" width="32" height="32"></canvas>
+      <p>
+        <strong>소스 에셋:</strong> 32×32 픽셀 PNG 1장 (프레임 1개).<br />
+        아래 모든 연출은 이 이미지를 <em>복사·변형·색만 바꿔</em> 그립니다. 프레임을 바꾸지 않습니다.
+      </p>
+    </div>
+
+    <section>
+      <h2>✅ Transform · 색 · 알파 (SpriteRenderer만으로)</h2>
+      <div class="grid" id="grid-ok"></div>
+    </section>
+
+    <section>
+      <h2>⚠️ 속임수 연출 (느낌은 나지만 그림은 안 바뀜)</h2>
+      <div class="grid" id="grid-warn"></div>
+    </section>
+
+    <section>
+      <h2>❌ 1장으로는 안 됨 (에셋 추가 필요)</h2>
+      <div class="compare" id="grid-no"></div>
+    </section>
+  </main>
+
+  <footer>
+    파일 위치: <code>Assets/_WIP/yongwoo/Tools/single-sprite-animation-lab.html</code> — 브라우저에서 더블클릭으로 열면 됩니다.
+    보스 스프라이트로 보려면 같은 폴더에 PNG를 두고 <code>SPRITE_URL</code> 상수를 바꾸세요.
+  </footer>
+
+  <script>
+    // 같은 폴더에 boss_p1_idle.png 를 복사해 두면 실제 에셋으로도 볼 수 있음 (없으면 아래 절차 생성)
+    const SPRITE_URL = ""; // 예: "boss_p1_idle.png"
+
+    const W = 32, H = 32;
+
+    function buildPixelSprite() {
+      const c = document.createElement("canvas");
+      c.width = W; c.height = H;
+      const g = c.getContext("2d");
+      const P = (x, y, col) => { g.fillStyle = col; g.fillRect(x, y, 1, 1); };
+      const outline = "#1a1028";
+      const skin = "#e8b4a0";
+      const coat = "#4a3f7a";
+      const coatHi = "#6b5cad";
+      const eye = "#fff5e8";
+      const pupil = "#2a1838";
+      const horn = "#c45c8a";
+      for (let y = 0; y < H; y++)
+        for (let x = 0; x < W; x++)
+          P(x, y, "transparent");
+      // shadow
+      for (let x = 10; x < 22; x++) P(x, 30, "rgba(0,0,0,0.35)");
+      // legs
+      for (let y = 24; y < 30; y++) { P(12, y, coat); P(13, y, coat); P(18, y, coat); P(19, y, coat); }
+      // body
+      for (let y = 14; y < 25; y++)
+        for (let x = 10; x < 22; x++)
+          P(x, y, y < 16 ? coatHi : coat);
+      // arms
+      for (let y = 15; y < 22; y++) { P(8, y, coat); P(9, y, coat); P(22, y, coat); P(23, y, coat); }
+      // head
+      for (let y = 6; y < 15; y++)
+        for (let x = 11; x < 21; x++)
+          P(x, y, skin);
+      // horns
+      P(10, 5, horn); P(11, 4, horn); P(12, 3, horn);
+      P(21, 5, horn); P(20, 4, horn); P(19, 3, horn);
+      // eyes
+      P(13, 9, eye); P(14, 9, pupil); P(17, 9, eye); P(18, 9, pupil);
+      // mouth
+      P(15, 12, "#8b4560"); P(16, 12, "#8b4560");
+      // outline pass
+      const keys = [[11,5],[20,5],[10,14],[21,14]];
+      keys.forEach(([x,y]) => P(x, y, outline));
+      return c;
+    }
+
+    let spriteCanvas = buildPixelSprite();
+    let spriteReady = Promise.resolve();
+
+    if (SPRITE_URL) {
+      spriteReady = new Promise((res, rej) => {
+        const img = new Image();
+        img.onload = () => {
+          const c = document.createElement("canvas");
+          c.width = img.naturalWidth;
+          c.height = img.naturalHeight;
+          c.getContext("2d").drawImage(img, 0, 0);
+          spriteCanvas = c;
+          res();
+        };
+        img.onerror = rej;
+        img.src = SPRITE_URL;
+      });
+    }
+
+    const sw = () => spriteCanvas.width;
+    const sh = () => spriteCanvas.height;
+
+    function drawSprite(ctx, t, opts = {}) {
+      const {
+        x = 0, y = 0,
+        scaleX = 1, scaleY = 1,
+        rotation = 0,
+        alpha = 1,
+        tint = null,
+        flipX = false,
+        flipY = false,
+        sliceWave = 0,
+        ghost = null,
+      } = opts;
+
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.translate(x, y);
+      ctx.rotate(rotation);
+      ctx.scale(flipX ? -scaleX : scaleX, flipY ? -scaleY : scaleY);
+
+      if (tint) {
+        ctx.filter = `none`;
+        const off = document.createElement("canvas");
+        off.width = sw(); off.height = sh();
+        const og = off.getContext("2d");
+        og.drawImage(spriteCanvas, 0, 0);
+        og.globalCompositeOperation = "source-atop";
+        og.fillStyle = tint;
+        og.fillRect(0, 0, sw(), sh());
+        ctx.drawImage(off, -sw() / 2, -sh() / 2, sw(), sh());
+      } else if (sliceWave > 0) {
+        const strips = 8;
+        const shh = sh() / strips;
+        for (let i = 0; i < strips; i++) {
+          const sy = i * shh;
+          const offset = Math.sin(t * 6 + i * 0.7) * sliceWave;
+          ctx.drawImage(spriteCanvas, 0, sy, sw(), shh, -sw() / 2 + offset, -sh() / 2 + sy, sw(), shh);
+        }
+      } else {
+        ctx.drawImage(spriteCanvas, -sw() / 2, -sh() / 2, sw(), sh());
+      }
+
+      if (ghost) {
+        ghost.forEach((g, i) => {
+          ctx.save();
+          ctx.globalAlpha = g.a * alpha * 0.45;
+          ctx.translate(g.dx, g.dy);
+          ctx.scale(g.sx, g.sy);
+          ctx.drawImage(spriteCanvas, -sw() / 2, -sh() / 2, sw(), sh());
+          ctx.restore();
+        });
+      }
+
+      ctx.restore();
+    }
+
+    function makeCard(container, cfg) {
+      const card = document.createElement("article");
+      card.className = "card";
+      const stage = document.createElement("div");
+      stage.className = "stage";
+      const canvas = document.createElement("canvas");
+      canvas.width = 200;
+      canvas.height = 140;
+      stage.appendChild(canvas);
+      const meta = document.createElement("div");
+      meta.className = "meta";
+      meta.innerHTML = `
+        <span class="badge ${cfg.tier}">${cfg.tierLabel}</span>
+        <div class="title">${cfg.title}</div>
+        <div class="unity">${cfg.unity}</div>
+        <div class="desc">${cfg.desc}</div>
+      `;
+      card.appendChild(stage);
+      card.appendChild(meta);
+      container.appendChild(card);
+
+      let paused = false;
+      let start = performance.now();
+      stage.addEventListener("click", () => {
+        paused = !paused;
+        card.classList.toggle("paused", paused);
+        if (!paused) start += performance.now() - (card._pauseAt || 0);
+        else card._pauseAt = performance.now();
+      });
+
+      const ctx = canvas.getContext("2d");
+      const cx = canvas.width / 2;
+      const cy = canvas.height / 2 + 8;
+      const scale = 3.2;
+
+      function frame(now) {
+        requestAnimationFrame(frame);
+        if (paused) return;
+        const t = (now - start) / 1000;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        // floor line
+        ctx.strokeStyle = "rgba(122,162,247,0.25)";
+        ctx.beginPath();
+        ctx.moveTo(20, cy + (sh() * scale) / 2 - 4);
+        ctx.lineTo(canvas.width - 20, cy + (sh() * scale) / 2 - 4);
+        ctx.stroke();
+        cfg.draw(ctx, t, cx, cy, scale);
+      }
+      requestAnimationFrame(frame);
+    }
+
+    const demosOk = [
+      {
+        tier: "ok", tierLabel: "가능",
+        title: "Idle Bob",
+        unity: "transform.position += sin(t)*v",
+        desc: "호흡·대기. 가장 흔한 보스 idle.",
+        draw(ctx, t, cx, cy, s) {
+          const bob = Math.sin(t * 2.5) * 4;
+          drawSprite(ctx, t, { x: cx, y: cy + bob, scaleX: s, scaleY: s });
+        },
+      },
+      {
+        tier: "ok", tierLabel: "가능",
+        title: "Scale Pulse",
+        unity: "localScale = 1 + sin(t)*0.05",
+        desc: "살아있음 느낌. UI·보스 공통.",
+        draw(ctx, t, cx, cy, s) {
+          const p = 1 + Math.sin(t * 3) * 0.06;
+          drawSprite(ctx, t, { x: cx, y: cy, scaleX: s * p, scaleY: s * (1 + Math.sin(t * 3 + 1) * 0.03) });
+        },
+      },
+      {
+        tier: "ok", tierLabel: "가능",
+        title: "Flip X",
+        unity: "transform.localScale.x *= -1",
+        desc: "좌우 보기. 스프라이트 1장으로 방향 전환.",
+        draw(ctx, t, cx, cy, s) {
+          const flip = Math.sin(t * 1.2) > 0;
+          drawSprite(ctx, t, { x: cx, y: cy, scaleX: s, scaleY: s, flipX: flip });
+        },
+      },
+      {
+        tier: "ok", tierLabel: "가능",
+        title: "Hurt Tint",
+        unity: "spriteRenderer.color = Color.red",
+        desc: "피격 플래시. MaterialPropertyBlock도 동일.",
+        draw(ctx, t, cx, cy, s) {
+          const hit = (Math.sin(t * 8) * 0.5 + 0.5) > 0.85;
+          drawSprite(ctx, t, {
+            x: cx, y: cy, scaleX: s, scaleY: s,
+            tint: hit ? "rgba(255,80,80,0.75)" : null,
+          });
+        },
+      },
+      {
+        tier: "ok", tierLabel: "가능",
+        title: "Alpha Fade",
+        unity: "color.a = 1 - t/duration",
+        desc: "사망·소멸·텔레포트 잔상.",
+        draw(ctx, t, cx, cy, s) {
+          const a = 0.35 + (Math.sin(t * 1.5) * 0.5 + 0.5) * 0.65;
+          drawSprite(ctx, t, { x: cx, y: cy, scaleX: s, scaleY: s, alpha: a });
+        },
+      },
+      {
+        tier: "ok", tierLabel: "가능",
+        title: "Knockback Slide",
+        unity: "position += dir * curve",
+        desc: "맞았을 때 밀림. 그림은 그대로.",
+        draw(ctx, t, cx, cy, s) {
+          const phase = (t % 1.2) / 1.2;
+          const kick = phase < 0.15 ? (phase / 0.15) * 28 : 28 * (1 - (phase - 0.15) / 0.85);
+          drawSprite(ctx, t, { x: cx - kick, y: cy, scaleX: s, scaleY: s });
+        },
+      },
+      {
+        tier: "ok", tierLabel: "가능",
+        title: "Rotation",
+        unity: "transform.rotation = angle",
+        desc: "투사체·데bris·스핀 공격에 적합.",
+        draw(ctx, t, cx, cy, s) {
+          drawSprite(ctx, t, { x: cx, y: cy, scaleX: s, scaleY: s, rotation: t * 2.2 });
+        },
+      },
+      {
+        tier: "ok", tierLabel: "가능",
+        title: "Spawn Pop",
+        unity: "scale = EaseOutBack(t)",
+        desc: "등장·소환 이펙트.",
+        draw(ctx, t, cx, cy, s) {
+          const phase = (t % 1.8) / 1.8;
+          const pop = phase < 0.35 ? (phase / 0.35) : 1;
+          const ease = 1 - Math.pow(1 - pop, 3);
+          const sc = s * (0.2 + ease * 0.8) * (pop >= 1 ? 1 : 1.1);
+          drawSprite(ctx, t, { x: cx, y: cy, scaleX: sc, scaleY: sc, alpha: 0.3 + ease * 0.7 });
+        },
+      },
+    ];
+
+    const demosWarn = [
+      {
+        tier: "warn", tierLabel: "제한적",
+        title: "Squash & Stretch",
+        unity: "scaleY / scaleX 보간",
+        desc: "점프·착지 느낌. 다리는 안 움직임.",
+        draw(ctx, t, cx, cy, s) {
+          const jump = (t % 1.4) / 1.4;
+          let sy = s, sx = s, oy = 0;
+          if (jump < 0.35) {
+            const p = jump / 0.35;
+            sy = s * (1 - p * 0.35);
+            sx = s * (1 + p * 0.12);
+          } else if (jump < 0.7) {
+            const p = (jump - 0.35) / 0.35;
+            oy = -Math.sin(p * Math.PI) * 36;
+            sy = s * (0.65 + p * 0.2);
+            sx = s * (1.12 - p * 0.08);
+          } else {
+            const p = (jump - 0.7) / 0.3;
+            sy = s * (0.85 + (1 - p) * 0.2);
+            sx = s * (1.04 - (1 - p) * 0.06);
+          }
+          drawSprite(ctx, t, { x: cx, y: cy + oy, scaleX: sx, scaleY: sy });
+        },
+      },
+      {
+        tier: "warn", tierLabel: "제한적",
+        title: "Hit Shake",
+        unity: "position += Random.insideUnitCircle * amp",
+        desc: "피격 흔들림. 프레임 변경 없음.",
+        draw(ctx, t, cx, cy, s) {
+          const burst = (t % 0.9) < 0.25;
+          const amp = burst ? 5 : 0;
+          const sx = (Math.random() - 0.5) * amp;
+          const sy = (Math.random() - 0.5) * amp;
+          drawSprite(ctx, t, { x: cx + sx, y: cy + sy, scaleX: s, scaleY: s, tint: burst ? "rgba(255,120,120,0.5)" : null });
+        },
+      },
+      {
+        tier: "warn", tierLabel: "제한적",
+        title: "Afterimage",
+        unity: "복제 SpriteRenderer + alpha",
+        desc: "잔상·대시. 드로우콜 증가 주의.",
+        draw(ctx, t, cx, cy, s) {
+          const ghost = [];
+          for (let i = 1; i <= 4; i++) {
+            ghost.push({ dx: -i * 10, dy: 0, sx: 1, sy: 1, a: 1 - i * 0.2 });
+          }
+          const dash = ((t * 0.7) % 1) < 0.5;
+          drawSprite(ctx, t, {
+            x: cx + (dash ? Math.sin(t * 12) * 8 : 0),
+            y: cy,
+            scaleX: s, scaleY: s,
+            ghost: dash ? ghost : null,
+          });
+        },
+      },
+      {
+        tier: "warn", tierLabel: "제한적",
+        title: "Glow Outline",
+        unity: "Unlit + scale + color additive",
+        desc: "외곽선 발광. 셰이더 없이는 두꺼워 보임.",
+        draw(ctx, t, cx, cy, s) {
+          const glow = 0.5 + Math.sin(t * 4) * 0.5;
+          ctx.save();
+          ctx.globalAlpha = 0.35 * glow;
+          ctx.filter = "blur(2px)";
+          for (let i = 0; i < 4; i++) {
+            const a = (i / 4) * Math.PI * 2;
+            drawSprite(ctx, t, {
+              x: cx + Math.cos(a) * 3,
+              y: cy + Math.sin(a) * 3,
+              scaleX: s * 1.08,
+              scaleY: s * 1.08,
+              tint: "rgba(120,180,255,0.9)",
+            });
+          }
+          ctx.restore();
+          drawSprite(ctx, t, { x: cx, y: cy, scaleX: s, scaleY: s });
+        },
+      },
+      {
+        tier: "warn", tierLabel: "제한적",
+        title: "Slice Wave",
+        unity: "Mesh vertices / shader UV",
+        desc: "휩씬·충격파 느낌. 실루엣은 깨짐.",
+        draw(ctx, t, cx, cy, s) {
+          ctx.save();
+          ctx.translate(cx, cy);
+          ctx.scale(s, s);
+          drawSprite(ctx, t, { x: 0, y: 0, scaleX: 1, scaleY: 1, sliceWave: 3 });
+          ctx.restore();
+        },
+      },
+      {
+        tier: "warn", tierLabel: "제한적",
+        title: "Satellite Orbit",
+        unity: "자식 Transform 회전",
+        desc: "같은 스프라이트로 오라·클론 연출.",
+        draw(ctx, t, cx, cy, s) {
+          drawSprite(ctx, t, { x: cx, y: cy, scaleX: s, scaleY: s });
+          for (let i = 0; i < 3; i++) {
+            const a = t * 2 + (i * Math.PI * 2) / 3;
+            const r = 38;
+            drawSprite(ctx, t, {
+              x: cx + Math.cos(a) * r,
+              y: cy + Math.sin(a) * r * 0.5,
+              scaleX: s * 0.45,
+              scaleY: s * 0.45,
+              alpha: 0.7,
+              tint: "rgba(180,140,255,0.6)",
+            });
+          }
+        },
+      },
+      {
+        tier: "warn", tierLabel: "제한적",
+        title: "Fake Walk",
+        unity: "bob + lean + squash",
+        desc: "걷는 척만 가능. 발 교차는 안 보임.",
+        draw(ctx, t, cx, cy, s) {
+          const walk = t * 4;
+          const bob = Math.abs(Math.sin(walk)) * 5;
+          const lean = Math.sin(walk) * 0.08;
+          const sx = s * (1 + Math.sin(walk * 2) * 0.04);
+          const sy = s * (1 - Math.abs(Math.sin(walk)) * 0.08);
+          drawSprite(ctx, t, {
+            x: cx + Math.sin(walk) * 18,
+            y: cy - bob,
+            scaleX: sx,
+            scaleY: sy,
+            rotation: lean,
+          });
+        },
+      },
+      {
+        tier: "warn", tierLabel: "제한적",
+        title: "White Flash",
+        unity: "_FlashAmount 셰이더 or color lerp",
+        desc: "필살·페이즈 전환 순간 강조.",
+        draw(ctx, t, cx, cy, s) {
+          const flash = (Math.sin(t * 3) * 0.5 + 0.5) > 0.92;
+          drawSprite(ctx, t, {
+            x: cx, y: cy, scaleX: s, scaleY: s,
+            tint: flash ? "rgba(255,255,255,0.95)" : null,
+          });
+        },
+      },
+    ];
+
+    const demosNo = [
+      {
+        tier: "no", tierLabel: "불가",
+        title: "Walk Cycle (프레임 필요)",
+        unity: "Sprite[] frames 또는 Animator",
+        desc: "다리·팔이 교차하려면 시트 최소 4~8프레임.",
+        draw(ctx, t, cx, cy, s) {
+          drawSprite(ctx, t, { x: cx - 40, y: cy, scaleX: s, scaleY: s, alpha: 0.5 });
+          ctx.fillStyle = "#f07178";
+          ctx.font = "11px sans-serif";
+          ctx.textAlign = "center";
+          ctx.fillText("같은 그림 반복", cx + 30, cy - 20);
+          ctx.fillText("≠ 걷기", cx + 30, cy - 6);
+          drawSprite(ctx, t, { x: cx + 40, y: cy, scaleX: s, scaleY: s, alpha: 0.5 });
+          ctx.strokeStyle = "#f07178";
+          ctx.setLineDash([4, 4]);
+          ctx.beginPath();
+          ctx.moveTo(cx - 10, cy);
+          ctx.lineTo(cx + 10, cy);
+          ctx.stroke();
+          ctx.setLineDash([]);
+        },
+      },
+      {
+        tier: "no", tierLabel: "불가",
+        title: "Attack / Cast (그림 바뀜)",
+        unity: "애니메이션 클립 or 시트",
+        desc: "무기·팔 각도가 바뀌는 동작은 새 그림 필요.",
+        draw(ctx, t, cx, cy, s) {
+          drawSprite(ctx, t, { x: cx, y: cy, scaleX: s, scaleY: s });
+          ctx.fillStyle = "rgba(240,113,120,0.2)";
+          ctx.fillRect(cx - 55, cy - 45, 110, 90);
+          ctx.strokeStyle = "#f07178";
+          ctx.strokeRect(cx - 55, cy - 45, 110, 90);
+          ctx.fillStyle = "#f07178";
+          ctx.font = "12px sans-serif";
+          ctx.textAlign = "center";
+          ctx.fillText("휘두르기 / 캐스팅", cx, cy + 52);
+          ctx.fillText("→ 스프라이트 시트", cx, cy + 66);
+        },
+      },
+      {
+        tier: "no", tierLabel: "불가",
+        title: "Expression Change",
+        unity: "별도 얼굴 프레임 or bone",
+        desc: "눈·입 모양 변경은 1장으로 불가.",
+        draw(ctx, t, cx, cy, s) {
+          drawSprite(ctx, t, { x: cx, y: cy, scaleX: s * 1.2, scaleY: s * 1.2 });
+          ctx.fillStyle = "#8b95a8";
+          ctx.font = "11px sans-serif";
+          ctx.textAlign = "center";
+          ctx.fillText("scale/tint만으로는", cx, cy - 42);
+          ctx.fillText("표정 교체 불가", cx, cy - 28);
+        },
+      },
+      {
+        tier: "no", tierLabel: "불가",
+        title: "Soft Deform (몸체 굽힘)",
+        unity: "2D Bone / Skinned Mesh",
+        desc: "관절 단위 변형은 메시·본 리그 필요.",
+        draw(ctx, t, cx, cy, s) {
+          drawSprite(ctx, t, { x: cx, y: cy, scaleX: s, scaleY: s, sliceWave: 2 });
+          ctx.fillStyle = "#f07178";
+          ctx.font = "11px sans-serif";
+          ctx.textAlign = "center";
+          ctx.fillText("슬라이스 = 깨짐", cx, cy + 48);
+          ctx.fillText("≠ 자연스러운 굽힘", cx, cy + 62);
+        },
+      },
+    ];
+
+    spriteReady.then(() => {
+      const src = document.getElementById("sourceSprite");
+      src.getContext("2d").imageSmoothingEnabled = false;
+      src.getContext("2d").drawImage(spriteCanvas, 0, 0, 32, 32);
+
+      demosOk.forEach(d => makeCard(document.getElementById("grid-ok"), d));
+      demosWarn.forEach(d => makeCard(document.getElementById("grid-warn"), d));
+      demosNo.forEach(d => makeCard(document.getElementById("grid-no"), d));
+    });
+  </script>
+</body>
+</html>

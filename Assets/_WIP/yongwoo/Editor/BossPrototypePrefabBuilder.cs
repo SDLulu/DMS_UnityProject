@@ -13,12 +13,20 @@ public static class BossPrototypePrefabBuilder
     private const string ProjectilePath = BossDir + "/BossProjectile.prefab";
     private const string BossPath = BossDir + "/Boss_P1_Prototype.prefab";
     private const string BossP1SpritePath = "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/Sprites/boss_p1_idle.png";
+    private const string BossP1IdleFramesPath = "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/AnimationSheets/boss_p1_idle_minimal_idle_4f.png";
     private static readonly string[] BossSpritePaths =
     {
         BossP1SpritePath,
         "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/Sprites/boss_clone_a_idle.png",
         "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/Sprites/boss_clone_b_idle.png",
         "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/Sprites/boss_clone_c_idle.png"
+    };
+    private static readonly string[] BossIdleFramePaths =
+    {
+        BossP1IdleFramesPath,
+        "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/AnimationSheets/boss_clone_a_idle_minimal_idle_4f.png",
+        "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/AnimationSheets/boss_clone_b_idle_minimal_idle_4f.png",
+        "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/AnimationSheets/boss_clone_c_idle_minimal_idle_4f.png"
     };
 
     [MenuItem("Tools/Yongwoo/Boss/Rebuild P1 Prototype Prefab")]
@@ -45,15 +53,19 @@ public static class BossPrototypePrefabBuilder
 
         SpriteRenderer projectileRenderer = projectileGo.AddComponent<SpriteRenderer>();
         projectileRenderer.sprite = RuntimeSpriteUtility.CircleSprite;
-        projectileRenderer.color = new Color(1f, 0.25f, 0.25f, 0.9f);
+        projectileRenderer.color = new Color(1f, 0.35f, 0.3f, 0.95f);
         projectileRenderer.sortingLayerName = "Effect";
         projectileRenderer.sortingOrder = 42;
 
         CircleCollider2D projectileCollider = projectileGo.AddComponent<CircleCollider2D>();
         projectileCollider.isTrigger = true;
+        projectileCollider.radius = 0.03f;
 
         projectileGo.AddComponent<Rigidbody2D>();
-        projectileGo.AddComponent<BossProjectile>();
+        projectileGo.AddComponent<TrailRenderer>();
+        BossProjectile projectile = projectileGo.AddComponent<BossProjectile>();
+        projectileGo.transform.localScale = Vector3.one * 0.135f;
+        SetField(projectile, "defaultRadius", 0.03f);
 
         PrefabUtility.SaveAsPrefabAsset(projectileGo, ProjectilePath);
         UnityEngine.Object.DestroyImmediate(projectileGo);
@@ -159,6 +171,31 @@ public static class BossPrototypePrefabBuilder
         SetField(predict, "backDistance", 1.7f);
         SetField(predict, "telegraphVisual", MakeTelegraph("Telegraph_Predict", boss.transform, new Color(0.45f, 0.85f, 1f, 0.35f), new Vector2(2f, 0.1f)));
 
+        BossPatternTeleportSlam slam = boss.AddComponent<BossPatternTeleportSlam>();
+        SetBaseTiming(slam, 0.55f, 0.1f, 0.55f);
+        SetField(slam, "hitRadius", 1.2f);
+        SetField(slam, "activeDuration", 0.22f);
+        SetField(slam, "damage", 1f);
+        SetField(slam, "telegraphVisual", MakeTelegraph("Telegraph_Slam", boss.transform, new Color(1f, 0.1f, 0.12f, 0.28f), new Vector2(1.28f, 1.28f)));
+
+        BossPatternLaserWall laser = boss.AddComponent<BossPatternLaserWall>();
+        SetBaseTiming(laser, 0.75f, 0.1f, 0.6f);
+        SetField(laser, "wallLength", 18f);
+        SetField(laser, "wallWidth", 1.52f);
+        SetField(laser, "warningDuration", 0.12f);
+        SetField(laser, "activeDuration", 0.45f);
+        SetField(laser, "damage", 1f);
+
+        BossPatternSafeZoneCollapse safeZone = boss.AddComponent<BossPatternSafeZoneCollapse>();
+        SetBaseTiming(safeZone, 0.8f, 0f, 0.7f);
+        SetField(safeZone, "safeRadius", 2.2f);
+        SetField(safeZone, "warningDuration", 0.8f);
+        SetField(safeZone, "activeDuration", 1.1f);
+        SetField(safeZone, "damage", 1f);
+
+        BossPhaseController phaseController = boss.AddComponent<BossPhaseController>();
+        ConfigurePhaseController(phaseController, interaction, teleporter, runner, bossRenderer);
+
         SetField(runner, "interaction", interaction);
         SetField(runner, "teleporter", teleporter);
         SetField(runner, "patternSlots", new MonoBehaviour[] { straight, volley, spread, dash, blast, predict });
@@ -169,6 +206,27 @@ public static class BossPrototypePrefabBuilder
 
         PrefabUtility.SaveAsPrefabAsset(boss, BossPath);
         UnityEngine.Object.DestroyImmediate(boss);
+    }
+
+    private static void ConfigurePhaseController(
+        BossPhaseController phaseController,
+        BossInteraction interaction,
+        BossTeleporter teleporter,
+        BossPatternRunner runner,
+        SpriteRenderer visualRenderer)
+    {
+        SetField(phaseController, "interaction", interaction);
+        SetField(phaseController, "teleporter", teleporter);
+        SetField(phaseController, "runner", runner);
+        SetField(phaseController, "visualRenderer", visualRenderer);
+        SetField(phaseController, "p1Sprite", LoadSpriteOrFallback(BossSpritePaths[0], RuntimeSpriteUtility.WhiteSprite));
+        SetField(phaseController, "cloneASprite", LoadSpriteOrFallback(BossSpritePaths[1], RuntimeSpriteUtility.WhiteSprite));
+        SetField(phaseController, "cloneBSprite", LoadSpriteOrFallback(BossSpritePaths[2], RuntimeSpriteUtility.WhiteSprite));
+        SetField(phaseController, "cloneCSprite", LoadSpriteOrFallback(BossSpritePaths[3], RuntimeSpriteUtility.WhiteSprite));
+        SetField(phaseController, "p1IdleFrames", LoadSpriteFrames(BossIdleFramePaths[0]));
+        SetField(phaseController, "cloneAIdleFrames", LoadSpriteFrames(BossIdleFramePaths[1]));
+        SetField(phaseController, "cloneBIdleFrames", LoadSpriteFrames(BossIdleFramePaths[2]));
+        SetField(phaseController, "cloneCIdleFrames", LoadSpriteFrames(BossIdleFramePaths[3]));
     }
 
     private static GameObject MakeTelegraph(string name, Transform parent, Color color, Vector2 size)
@@ -235,6 +293,22 @@ public static class BossPrototypePrefabBuilder
     {
         Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(path);
         return sprite != null ? sprite : fallback;
+    }
+
+    private static Sprite[] LoadSpriteFrames(string path)
+    {
+        UnityEngine.Object[] assets = AssetDatabase.LoadAllAssetsAtPath(path);
+        System.Collections.Generic.List<Sprite> sprites = new();
+        for (int i = 0; i < assets.Length; i++)
+        {
+            if (assets[i] is Sprite sprite)
+            {
+                sprites.Add(sprite);
+            }
+        }
+
+        sprites.Sort((a, b) => string.CompareOrdinal(a.name, b.name));
+        return sprites.ToArray();
     }
 
     private static void ConfigureBossSpriteImporters()

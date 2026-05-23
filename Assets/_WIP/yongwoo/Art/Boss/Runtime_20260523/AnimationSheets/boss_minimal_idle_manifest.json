@@ -1,0 +1,40 @@
+{
+  "created": "2026-05-24",
+  "basis": "hatch-pet deterministic atlas/QA idea adapted for DMS boss, not a Codex pet package",
+  "cellSize": [
+    320,
+    420
+  ],
+  "framesPerLoop": 4,
+  "frameDurationMs": 140,
+  "motion": "minimal idle loop: subtle vertical bob, tiny scale pulse, sparse hard-edged glitch bars, core blink",
+  "masterSheet": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/AnimationSheets/boss_minimal_idle_4x4.png",
+  "masterLayout": "4 columns frames x 4 rows roles; rows top-to-bottom: boss_p1_idle, boss_clone_a_idle, boss_clone_b_idle, boss_clone_c_idle",
+  "roleStrips": [
+    {
+      "role": "boss_p1_idle",
+      "strip": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/AnimationSheets/boss_p1_idle_minimal_idle_4f.png",
+      "preview": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/AnimationSheets/QA/boss_p1_idle_minimal_idle_preview.gif",
+      "row": 0
+    },
+    {
+      "role": "boss_clone_a_idle",
+      "strip": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/AnimationSheets/boss_clone_a_idle_minimal_idle_4f.png",
+      "preview": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/AnimationSheets/QA/boss_clone_a_idle_minimal_idle_preview.gif",
+      "row": 1
+    },
+    {
+      "role": "boss_clone_b_idle",
+      "strip": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/AnimationSheets/boss_clone_b_idle_minimal_idle_4f.png",
+      "preview": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/AnimationSheets/QA/boss_clone_b_idle_minimal_idle_preview.gif",
+      "row": 2
+    },
+    {
+      "role": "boss_clone_c_idle",
+      "strip": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/AnimationSheets/boss_clone_c_idle_minimal_idle_4f.png",
+      "preview": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/AnimationSheets/QA/boss_clone_c_idle_minimal_idle_preview.gif",
+      "row": 3
+    }
+  ],
+  "qaContact": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/AnimationSheets/QA/boss_minimal_idle_contact.png"
+}

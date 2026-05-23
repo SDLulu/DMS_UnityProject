@@ -1,15 +1,24 @@
 {
   "created": "2026-05-23",
-  "revision": "dark_silhouette_v2",
+  "date": "2026-05-24",
+  "revision": "single_silhouette_color_clones_v4",
+  "previousRevision": "npc_silhouette_color_v3",
   "source_style_refs": [
-    "Assets/_WIP/yongwoo/Art/NPC/Runtime_AINoiseRemoval_20260521/Sprites/broker_idle.png",
-    "Assets/_WIP/yongwoo/Art/NPC/Runtime_AINoiseRemoval_20260521/Sprites/passerby_idle.png"
+    "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/SourceComposite/boss_p1_idle_composite.png"
   ],
+  "method": "All P1/A/B/C boss sprites now derive from one P1 silhouette. Clone identity is expressed through color, glitch bars, and small role marks only, so they read as split copies of the same boss.",
   "sprites": {
     "boss_p1_idle": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/Sprites/boss_p1_idle.png",
     "boss_clone_a_idle": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/Sprites/boss_clone_a_idle.png",
     "boss_clone_b_idle": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/Sprites/boss_clone_b_idle.png",
     "boss_clone_c_idle": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/Sprites/boss_clone_c_idle.png"
   },
-  "notes": "Darker boss composite. Original NPC clothing/face details are crushed into a void silhouette, with data-core and glitch bars as the primary read."
+  "sourceComposites": {
+    "boss_p1_idle": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/SourceComposite/boss_p1_idle_composite.png",
+    "boss_clone_a_idle": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/SourceComposite/boss_clone_a_idle_composite.png",
+    "boss_clone_b_idle": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/SourceComposite/boss_clone_b_idle_composite.png",
+    "boss_clone_c_idle": "Assets/_WIP/yongwoo/Art/Boss/Runtime_20260523/SourceComposite/boss_clone_c_idle_composite.png"
+  },
+  "keptExistingMeta": true,
+  "notes": "This version intentionally avoids distinct NPC silhouettes for clones. The shared silhouette should make P2/P3 feel like one boss splitting into color-coded fragments."
 }

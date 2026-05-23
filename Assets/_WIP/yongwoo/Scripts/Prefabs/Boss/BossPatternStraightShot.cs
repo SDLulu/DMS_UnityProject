@@ -15,6 +15,11 @@ public class BossPatternStraightShot : BossPatternBase
 
     public override string PatternId => "P1-1 StraightShot";
 
+    protected override Vector3 GetAimOriginPosition()
+    {
+        return muzzle != null ? muzzle.position : base.GetAimOriginPosition();
+    }
+
     protected override void OnFireBegin(Vector2 aimDirection)
     {
         if (projectilePrefab == null)
