@@ -55,6 +55,17 @@
 - 2026-05-23 슬로우 자원 시스템 구현 완료: `PlayerSlowMotion`에 5칸 자원 + 1칸=1초 소비 + 1칸/4초 회복. `SlowGaugeUI` 컴포넌트 신규 — `Hp UI` 5칸 Image 동기화. Unity 측 와이어링은 사용자 수동 작업 필요(SlowGaugeUI 추가 + Image 5개 배열 할당)
 - 2026-05-23 칼 사거리 실측: `SlashHitbox` Polygon 0.432×0.237 × Visual scale 3 ≈ 1.30u 폭. 캐릭터 중심에서 ~1.5u 도달. 시안 가정 1.0~1.5u와 일치, 패턴 거리값 보정 불필요
 - 2026-05-23 보스 프리팹 골격 코드 작성: `Scripts/Prefabs/Boss/`에 `BossInteraction`(HP=5, 텔포 무적 플래그, 경직·넉백 없음), `BossTeleporter`(선딜→사라짐→0.4s 무적→출현), `IBossPattern`(인터페이스+Context), `BossPatternRunner`(슬롯 3개 순환+텔포 사이클) 4종. 다음 작업: P1 패턴 컴포넌트 3종(단발/연사/확산) 구현 + 발사체 프리팹 + 보스 프리팹 조립
+- 2026-05-23 보스전 게임플레이 로직을 `보스전로직.md`로 분리. `보스시나리오.md`는 스토리/대사/톤 전용. 패턴 표, 행동 룰, 확정 가정, 시퀀스 step, 구현 매핑 표는 모두 `보스전로직.md`에 있고 다음 구현은 이 문서를 기준으로 진행한다
+- 2026-05-23 P1 패턴 컴포넌트 3종 + 발사체 구현: `BossProjectile`(timeScale 적용 슬로우 영향), `BossPatternBase`(텔레그래프→선딜→액티브→후딜 공통 4페이즈, 텔레그래프 종료 시점 조준 락), `BossPatternStraightShot`(P1-1 단발 탄속 14), `BossPatternVolley`(P1-2 연사 4발 탄속 12 간격 0.15s), `BossPatternSpread`(P1-3 확산 5way 탄속 10 인접 30°). 수치 디폴트는 `보스전로직.md` §2.2 표 그대로. 다음 작업: 보스 발사체 프리팹 + 보스 본체 프리팹 조립 + 텔레그래프 비주얼
+- 2026-05-23 보스전 감각 확인용 HTML 프로토타입 추가: `Assets/_WIP/yongwoo/BossHtmlPrototype/index.html`. `보스전로직.md` 기준으로 P1 단발/연사/확산+텔포, 슬로우 자원, P2 분열체 A/B 미리보기를 캔버스로 구현. Unity 씬/프리팹 변경 없음
+- 2026-05-23 보스전 설계 재정리: `보스전로직.md`를 P3 3분열 원형 → P2 2분열 축약 → P1 6패턴 통합형 순서로 개편. P3는 A(추격/근접), B(탄막/예측), C(공간장악/장판·벽) 3역할. `보스시나리오.md`도 3분열 전환/마지막 대사에 맞춰 갱신
+- 2026-05-23 HTML 보스 프로토타입 P3-first 반영 완료: `BossHtmlPrototype/index.html` 기본 시작을 P3 3분열로 변경하고 P1/P2/P3 버튼, P1 6패턴 통합형, P2 2분열 축약형, P3 A/B/C 3분열 패턴을 구현. Playwright로 P1/P2/P3 캔버스 렌더와 `render_game_to_text` 상태 확인, 콘솔 에러 없음
+- 2026-05-23 HTML 보스 프로토타입 라이브 튜닝 패널 추가: 사이드바에서 페이즈별 패턴을 선택하고 텔레그래프/선딜/후딜/탄속/발수/간격/각도/대시시간/대시속도/반경/장판지연 값을 즉시 조정 가능. `paramDump`와 `render_game_to_text.selectedParams`로 현재 값을 복사해 문서/Unity 이식에 반영할 수 있음. 대시 베기는 짧던 기본값을 P1 0.32s×14u/s, P2/P3 0.30s×18.5u/s로 상향
+- 2026-05-23 HTML 보스 프로토타입 튜닝 반영: 대시 베기 속도 기본값을 P1/P2/P3 모두 100u/s로 상향하고 튜너 최대값을 140까지 확장. P3-C 레이저 벽은 `laserWidth` 파라미터를 추가해 텔레그래프/활성 폭을 1.52u(기존 0.38u의 약 4배)로 확대
+- 2026-05-23 슬로우 게이지 UI 연동 + 엣지케이스 정리: `Hp UI` Animator의 "New Animation" looping 클립(t=0~1.38, bar_0~bar_11, 12프레임)을 `SlowGaugeUI`로 normalizedTime 직접 제어. wrap point 회피 위해 `fullNormalizedTime=0.92`, 코드에 `Clamp(0, 0.9999)` 안전마진. 시작 깜빡임 방지로 `Start()` 즉시 동기화. `PlayerSlowMotion`에 래치 + `minActivationCharges`(기본 1) 추가 — 0칸 도달 시 강제 해제, 재발동은 1칸 회복 후. 소비/회복 2배 가속(0.5s/2s)
+- 2026-05-23 세계관 분리: `세계관.md` 신규 — 게임 정체성/핵심 용어/등장 인물/in-game 인터페이스 의미/가치 대비/톤. `시나리오.md`에서 컨셉·등장 인물 섹션 제거하고 포인터로 대체. 문서 인덱스(세계관/시나리오/보스시나리오/보스전로직/STATUS/AGENTS) 정리됨
+- 2026-05-23 Unity 보스 P1 프로토타입 구현: `BossPatternDashSlash`(dashSpeed 100), `BossPatternDelayedBlast`/`BossBlastZone`, `BossPatternPredictShot` 추가. `BossPatternBase`는 파생 패턴 여러 개를 한 오브젝트에 붙일 수 있게 `[DisallowMultipleComponent]` 제거. `BossPatternRunner`는 player 미지정 시 `PlayerInteraction` 자동 탐색
+- 2026-05-23 보스 P1 프리팹 조립 완료: `Tools/Yongwoo/Boss/Rebuild P1 Prototype Prefab` 빌더와 `Assets/_WIP/yongwoo/Prefabs/Boss/Boss_P1_Prototype.prefab`, `BossProjectile.prefab` 생성. 프리팹 6슬롯은 단발/연사/확산/대시베기/지연장판/예측탄 순서로 검증. `safe_refresh --compile true`, Unity 콘솔 error 없음. 아직 씬 배치/PlayMode 전투 검증은 미실행
 
 ## 시간 제어 3층 구조 (중요)
 
@@ -127,7 +138,7 @@
 - [ ] 스테이지 전환 (씬 로드)
 - [x] 타이틀 화면 (목업 `Yongwoo_Title`)
 - [ ] 클리어 / 엔딩
-- [ ] 보스 스테이지 + 보스 *(디자인 확정 — `보스시나리오.md` 섹션 3. 골격 코드 작성됨(BossInteraction/Teleporter/PatternRunner/IBossPattern). 패턴 구현체·프리팹 조립 남음)*
+- [ ] 보스 스테이지 + 보스 *(P1 6패턴 Unity 프로토타입 프리팹 조립 완료. 다음은 씬 배치/PlayMode 튜닝, 이후 P2/P3 분열체와 전환 연출 구현)*
 - [ ] 히트 이펙트, 사운드 연동
 - [ ] 전체 씬 흐름 연결 (Title → 거주구역 → 뒷골목 → Stage → Ending)
 - [ ] 팀원 씬 머지 + 테스트
@@ -148,6 +159,7 @@
 - 전체 튜토리얼 PlayMode 관통 검증은 아직 필요. Day1은 짧은 런타임 확인만 완료.
 - 일시정지/타이틀 로드 PlayMode 검증은 아직 필요. 현재 `Yongwoo_Stage.unity`에 기존 미커밋 변경이 섞여 있어 규칙상 play 전 별도 체크포인트 정리가 필요.
 - SPUM 빌드 오류 수정 후 Player build 재검증은 아직 미실행. Unity refresh/compile은 Day1에서 에러 없이 통과.
+- `Boss_P1_Prototype.prefab`은 정적/컴파일 검증까지 완료. 실제 보스방 배치, player 자동 탐색, 6패턴 전투감, 대시베기 100u/s 거리, 장판 판정 반경은 PlayMode에서 확인 필요.
 
 ---
 

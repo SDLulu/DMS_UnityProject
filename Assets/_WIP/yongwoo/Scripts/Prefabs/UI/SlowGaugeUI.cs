@@ -1,73 +1,91 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 // 역할:
-// - 기존 Hp UI(Image 5칸)를 PlayerSlowMotion 자원 게이지로 재활용합니다.
-// - 자원이 가득 차면 5칸 모두 켜지고, 0이면 모두 꺼집니다. 부분 칸은 알파로 보간합니다.
+// - 기존 Hp UI에 붙어 있는 Animator의 "게이지가 차는" 루프 클립을 슬로우 자원 게이지로 재활용합니다.
+// - Animator의 클립 normalizedTime을 자원량(0~1)에 매핑해 정지 상태로 표시합니다.
 // - HP 표시는 일격사 룰로 의미가 없어 사용하지 않습니다.
 
 [DisallowMultipleComponent]
 public class SlowGaugeUI : MonoBehaviour
 {
     [Header("Source")]
-    [Tooltip("동기화할 PlayerSlowMotion 컴포넌트입니다. 비워두면 씬에서 검색합니다.")]
+    [Tooltip("동기화할 PlayerSlowMotion. 비워두면 씬에서 검색합니다.")]
     [SerializeField] private PlayerSlowMotion source;
 
-    [Header("Targets")]
-    [Tooltip("칸 한 개당 이미지. 인덱스 0이 첫 칸입니다.")]
-    [SerializeField] private Image[] chargeImages;
+    [Header("Animator")]
+    [Tooltip("게이지 채움 애니메이션이 들어 있는 Animator. 비워두면 이 오브젝트에서 찾습니다.")]
+    [SerializeField] private Animator animator;
+    [Tooltip("클립을 평가할 Animator 레이어 인덱스.")]
+    [SerializeField, Min(0)] private int layerIndex = 0;
 
-    [Header("Visual")]
-    [Tooltip("자원이 충분히 찬 칸의 알파 값입니다.")]
-    [SerializeField, Range(0f, 1f)] private float filledAlpha = 1f;
-    [Tooltip("빈 칸의 알파 값입니다. 0이면 완전히 보이지 않습니다.")]
-    [SerializeField, Range(0f, 1f)] private float emptyAlpha = 0.15f;
-    [Tooltip("부분 칸도 알파로 부드럽게 표현할지 여부. 끄면 칸 단위 on/off만 합니다.")]
-    [SerializeField] private bool useFractionalFill = true;
+    [Header("Mapping")]
+    [Tooltip("자원 0일 때의 클립 normalizedTime.")]
+    [SerializeField, Range(0f, 1f)] private float emptyNormalizedTime = 0f;
+    [Tooltip("자원이 가득 찼을 때의 클립 normalizedTime.")]
+    [SerializeField, Range(0f, 1f)] private float fullNormalizedTime = 1f;
+
+    private int _stateHash;
+    private bool _hashCached;
 
     private void Reset()
     {
         source = Object.FindFirstObjectByType<PlayerSlowMotion>();
+        animator = GetComponent<Animator>();
     }
 
     private void OnEnable()
     {
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>();
+        }
+
         if (source == null)
         {
             source = Object.FindFirstObjectByType<PlayerSlowMotion>();
         }
+
+        _hashCached = false;
+        if (animator != null)
+        {
+            animator.speed = 0f;
+        }
+    }
+
+    private void Start()
+    {
+        // 시작 첫 프레임에 Animator가 원래 normalizedTime 0으로 한 프레임 깜빡이는 걸 막는다.
+        SyncToCharges();
     }
 
     private void LateUpdate()
     {
-        if (source == null || chargeImages == null || chargeImages.Length == 0)
+        SyncToCharges();
+    }
+
+    private void SyncToCharges()
+    {
+        if (animator == null || source == null)
         {
             return;
         }
 
-        float charges = source.CurrentChargesRaw;
-        for (int i = 0; i < chargeImages.Length; i++)
+        if (!_hashCached)
         {
-            Image image = chargeImages[i];
-            if (image == null)
+            AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(layerIndex);
+            _stateHash = info.shortNameHash != 0 ? info.shortNameHash : info.fullPathHash;
+            _hashCached = _stateHash != 0;
+            if (!_hashCached)
             {
-                continue;
+                return;
             }
-
-            float slotFill;
-            if (useFractionalFill)
-            {
-                slotFill = Mathf.Clamp01(charges - i);
-            }
-            else
-            {
-                slotFill = (i < Mathf.FloorToInt(charges)) ? 1f : 0f;
-            }
-
-            float alpha = Mathf.Lerp(emptyAlpha, filledAlpha, slotFill);
-            Color color = image.color;
-            color.a = alpha;
-            image.color = color;
         }
+
+        float fill = Mathf.Clamp01(source.ChargeFillNormalized);
+        float target = Mathf.Lerp(emptyNormalizedTime, fullNormalizedTime, fill);
+        // Looping 클립에서 normalizedTime=1.0은 0으로 wrap된다. 1.0 직전까지로 clamp해 깜빡임 방지.
+        target = Mathf.Clamp(target, 0f, 0.9999f);
+        animator.Play(_stateHash, layerIndex, target);
+        animator.Update(0f);
     }
 }

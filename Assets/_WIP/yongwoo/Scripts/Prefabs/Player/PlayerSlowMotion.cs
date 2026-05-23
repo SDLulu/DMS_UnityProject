@@ -19,9 +19,11 @@ public class PlayerSlowMotion : MonoBehaviour
     [Tooltip("슬로우 자원 최대 칸 수입니다.")]
     [SerializeField, Min(1)] private int maxCharges = 5;
     [Tooltip("1칸을 소비하는 데 걸리는 실시간 초입니다. (소비 속도)")]
-    [SerializeField, Min(0.05f)] private float chargeConsumeSeconds = 1f;
+    [SerializeField, Min(0.05f)] private float chargeConsumeSeconds = 0.5f;
     [Tooltip("1칸을 회복하는 데 걸리는 실시간 초입니다.")]
-    [SerializeField, Min(0.05f)] private float chargeRegenSeconds = 4f;
+    [SerializeField, Min(0.05f)] private float chargeRegenSeconds = 2f;
+    [Tooltip("슬로우를 새로 켜는 데 필요한 최소 자원 칸입니다. 발동 후엔 0까지 소진 가능하지만, 0이 된 뒤 다시 켜려면 이 값까지 회복돼야 합니다. 0칸 도달 시 한 프레임 회복으로 다시 발동되는 깜빡임 방지용.")]
+    [SerializeField, Range(0.05f, 5f)] private float minActivationCharges = 1f;
 
     [Header("Debug")]
     [SerializeField] private bool isSlowMotionActive;
@@ -30,6 +32,7 @@ public class PlayerSlowMotion : MonoBehaviour
     private float _targetTimeScale = 1f;
     private int _externalFreezeRefs;
     private float _chargesNormalized; // 0 ~ maxCharges 실수값
+    private bool _isSlowMotionLatched;
 
     public bool IsSlowMotionActive => isSlowMotionActive;
     public bool IsExternallyFrozen => _externalFreezeRefs > 0;
@@ -74,16 +77,34 @@ public class PlayerSlowMotion : MonoBehaviour
         {
             // 시네마틱 freeze 중에는 timeScale과 자원을 건드리지 않는다.
             isSlowMotionActive = false;
+            _isSlowMotionLatched = false;
             _targetTimeScale = Time.timeScale;
             debugCurrentCharges = _chargesNormalized;
             return;
         }
 
         bool slowInputHeld = GameInput.Instance.SlowMotionHeld;
-        bool canSlow = slowInputHeld && _chargesNormalized > 0f;
-        isSlowMotionActive = canSlow;
 
-        if (canSlow)
+        if (_isSlowMotionLatched)
+        {
+            // 켜진 상태: 입력 떼거나 자원 소진 시 해제.
+            if (!slowInputHeld || _chargesNormalized <= 0f)
+            {
+                _isSlowMotionLatched = false;
+            }
+        }
+        else
+        {
+            // 꺼진 상태: 입력 + 최소 자원 임계값 충족 시 켠다.
+            if (slowInputHeld && _chargesNormalized >= minActivationCharges)
+            {
+                _isSlowMotionLatched = true;
+            }
+        }
+
+        isSlowMotionActive = _isSlowMotionLatched;
+
+        if (isSlowMotionActive)
         {
             _chargesNormalized = Mathf.Max(0f, _chargesNormalized - Time.unscaledDeltaTime / chargeConsumeSeconds);
         }

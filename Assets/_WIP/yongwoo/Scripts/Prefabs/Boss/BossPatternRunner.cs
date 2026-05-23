@@ -2,7 +2,7 @@ using UnityEngine;
 
 // 역할:
 // - 보스 본체의 패턴 사이클을 돌립니다.
-// - P1은 슬롯 3개(단발 / 연사 / 확산)를 사이클로 순환합니다. 보스시나리오 표 기준.
+// - P1은 슬롯 6개(단발 / 연사 / 확산 / 대시베기 / 장판 / 예측탄)를 순환합니다. 보스전로직.md 기준.
 // - 실제 발사체/장판은 각 패턴 컴포넌트가 들고 있고, 러너는 순서·간격·텔포 트리거만 담당합니다.
 
 [DisallowMultipleComponent]
@@ -14,7 +14,7 @@ public class BossPatternRunner : MonoBehaviour
     [SerializeField] private Transform player;
 
     [Header("Patterns (P1)")]
-    [Tooltip("순환할 패턴 슬롯. 보스시나리오 P1 표 = 단발/연사/확산 3개.")]
+    [Tooltip("순환할 패턴 슬롯. 보스전로직 P1 표 = 단발/연사/확산/대시베기/장판/예측탄 6개.")]
     [SerializeField] private MonoBehaviour[] patternSlots;
 
     [Header("Timing")]
@@ -52,6 +52,7 @@ public class BossPatternRunner : MonoBehaviour
     {
         interaction ??= GetComponent<BossInteraction>();
         teleporter ??= GetComponent<BossTeleporter>();
+        player ??= FindFirstObjectByType<PlayerInteraction>()?.transform;
     }
 
     private void OnEnable()
