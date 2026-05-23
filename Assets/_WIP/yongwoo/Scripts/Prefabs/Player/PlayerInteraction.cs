@@ -28,7 +28,7 @@ public class PlayerInteraction : MonoBehaviour, IDamageReceiver
     [Header("References")]
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private MonoBehaviour controller;
-    [SerializeField] private SimplePlayerCombat combat;
+    [SerializeField] private MonoBehaviour combat;
     [SerializeField] private Rigidbody2D body;
 
     public event Action Damaged;
@@ -43,6 +43,7 @@ public class PlayerInteraction : MonoBehaviour, IDamageReceiver
     private MonoBehaviour[] _behavioursToDisable = Array.Empty<MonoBehaviour>();
     private Coroutine _flashRoutine;
     private SimplePlayerController _simpleController;
+    private P_PlayerController _pController;
     private bool _isDead;
 
     public float CurrentHealth => _currentHealth;
@@ -152,7 +153,8 @@ public class PlayerInteraction : MonoBehaviour, IDamageReceiver
 
     private bool IsRollingInvulnerable()
     {
-        return _simpleController != null && _simpleController.IsRolling;
+        return (_simpleController != null && _simpleController.IsRolling)
+            || (_pController != null && _pController.IsDashing);
     }
 
     public void OnDie()
@@ -262,13 +264,30 @@ public class PlayerInteraction : MonoBehaviour, IDamageReceiver
         controller ??= GetComponent<SimplePlayerController>();
         controller ??= GetComponent<P_PlayerController>();
         _simpleController = controller as SimplePlayerController;
+        _pController = controller as P_PlayerController;
         combat ??= GetComponent<SimplePlayerCombat>();
+        combat ??= FindComponentByTypeName("P_PlayerCombat");
         body ??= GetComponent<Rigidbody2D>();
         spriteRenderer ??= GetComponent<SpriteRenderer>();
         if (spriteRenderer == null)
         {
             spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         }
+    }
+
+    private MonoBehaviour FindComponentByTypeName(string typeName)
+    {
+        MonoBehaviour[] behaviours = GetComponents<MonoBehaviour>();
+        for (int i = 0; i < behaviours.Length; i++)
+        {
+            MonoBehaviour behaviour = behaviours[i];
+            if (behaviour != null && behaviour.GetType().Name == typeName)
+            {
+                return behaviour;
+            }
+        }
+
+        return null;
     }
 
     private void HandleDeath()
