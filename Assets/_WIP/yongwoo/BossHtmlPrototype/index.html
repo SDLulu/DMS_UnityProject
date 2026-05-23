@@ -1,0 +1,1510 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DMS Boss P3 Prototype</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101116;
+      --panel: #191b22;
+      --line: #343947;
+      --text: #eef2f6;
+      --muted: #9da7b6;
+      --a: #ff575f;
+      --b: #6bd9ff;
+      --c: #f6c84f;
+      --player: #e7f4ff;
+      --slow: #70e5ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", "Malgun Gothic", Arial, sans-serif;
+    }
+
+    body {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 330px;
+    }
+
+    main {
+      min-width: 0;
+      min-height: 0;
+      display: grid;
+      place-items: center;
+      padding: 14px;
+      background:
+        linear-gradient(0deg, rgba(255,255,255,0.026) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.026) 1px, transparent 1px),
+        radial-gradient(circle at 50% 54%, rgba(112,229,255,0.10), transparent 36%),
+        #0d0e13;
+      background-size: 34px 34px, 34px 34px, 100% 100%, 100% 100%;
+    }
+
+    canvas {
+      display: block;
+      width: min(100%, calc((100vh - 28px) * 1.777));
+      max-height: calc(100vh - 28px);
+      height: auto;
+      aspect-ratio: 16 / 9;
+      border: 1px solid #303746;
+      background: #11131a;
+      box-shadow: 0 20px 70px rgba(0,0,0,0.45);
+    }
+
+    aside {
+      min-height: 0;
+      overflow: auto;
+      padding: 18px;
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+    }
+
+    h1, h2, p { margin: 0; }
+    h1 { font-size: 20px; line-height: 1.25; }
+    h2 {
+      margin-top: 20px;
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+    p {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .metric {
+      display: grid;
+      grid-template-columns: 92px 1fr;
+      gap: 8px;
+      align-items: center;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    .label { color: var(--muted); }
+    strong { font-weight: 700; }
+
+    .bar {
+      height: 8px;
+      overflow: hidden;
+      border: 1px solid #3f4658;
+      background: #0e1015;
+    }
+
+    .bar > i {
+      display: block;
+      height: 100%;
+      width: 0;
+      background: var(--a);
+    }
+
+    .bar.slow > i { background: var(--slow); }
+
+    .roles {
+      display: grid;
+      gap: 8px;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    .role {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 8px;
+      align-items: center;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #282d39;
+    }
+
+    .dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      justify-self: center;
+    }
+
+    .dot.a { background: var(--a); }
+    .dot.b { background: var(--b); }
+    .dot.c { background: var(--c); }
+
+    .kbd {
+      display: grid;
+      gap: 7px;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    .kbd div {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid #282d39;
+    }
+
+    .kbd b { white-space: nowrap; }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    button {
+      height: 38px;
+      border: 1px solid #566174;
+      background: #20242e;
+      color: var(--text);
+      font: inherit;
+      cursor: pointer;
+    }
+
+    button:hover { background: #2a2f3b; }
+
+    .wide { grid-column: 1 / -1; }
+    .small { font-size: 12px; }
+
+    .tuner {
+      display: grid;
+      gap: 8px;
+      margin-top: 10px;
+      font-size: 12px;
+    }
+
+    .tuner select,
+    .tuner input,
+    .tuner textarea {
+      width: 100%;
+      border: 1px solid #3f4658;
+      background: #11141b;
+      color: var(--text);
+      font: inherit;
+    }
+
+    .tuner select {
+      height: 34px;
+      padding: 0 8px;
+    }
+
+    .tune-row {
+      display: grid;
+      grid-template-columns: 96px 1fr 64px;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .tune-row label {
+      color: var(--muted);
+    }
+
+    .tune-row input[type="range"] {
+      accent-color: var(--slow);
+    }
+
+    .tune-row input[type="number"] {
+      height: 28px;
+      padding: 0 6px;
+    }
+
+    .tuner textarea {
+      min-height: 86px;
+      resize: vertical;
+      padding: 8px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 900px) {
+      body {
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(0, 1fr) auto;
+      }
+
+      aside {
+        max-height: 38vh;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+
+      main { padding: 8px; }
+      canvas {
+        width: 100%;
+        max-height: calc(62vh - 16px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <canvas id="game" width="1280" height="720" aria-label="DMS boss P3 prototype canvas"></canvas>
+  </main>
+  <aside>
+    <h1>HOME의 문지기</h1>
+    <p>P3 3분열을 먼저 만든 버전. A는 추격, B는 탄막, C는 공간 장악을 맡고 P2/P1은 그 축약판으로 내려온다.</p>
+
+    <h2>상태</h2>
+    <div class="metric"><span class="label">Phase</span><strong id="phaseText">P3</strong></div>
+    <div class="metric"><span class="label">Pattern</span><strong id="patternText">-</strong></div>
+    <div class="metric"><span class="label">Boss HP</span><span class="bar"><i id="bossHpBar"></i></span></div>
+    <div class="metric"><span class="label">Slow</span><span class="bar slow"><i id="slowBar"></i></span></div>
+    <div class="metric"><span class="label">Result</span><strong id="resultText">진행 중</strong></div>
+
+    <h2>분열 역할</h2>
+    <div class="roles">
+      <div class="role"><span class="dot a"></span><span>A: 추격 / 대시 베기 / 내려찍기</span></div>
+      <div class="role"><span class="dot b"></span><span>B: 확산탄 / 예측 3점 / 나선 연사</span></div>
+      <div class="role"><span class="dot c"></span><span>C: 장판 / 레이저 벽 / 안전지대 축소</span></div>
+    </div>
+
+    <h2>조작</h2>
+    <div class="kbd">
+      <div><span>이동</span><b>A/D 또는 방향키</b></div>
+      <div><span>점프</span><b>Space</b></div>
+      <div><span>대시</span><b>Shift</b></div>
+      <div><span>구르기</span><b>S + 좌/우</b></div>
+      <div><span>공격</span><b>좌클릭</b></div>
+      <div><span>슬로우</span><b>우클릭 유지</b></div>
+      <div><span>페이즈</span><b>1 / 2 / 3</b></div>
+    </div>
+
+    <div class="buttons">
+      <button id="p1Btn" type="button">P1</button>
+      <button id="p2Btn" type="button">P2</button>
+      <button id="p3Btn" type="button">P3</button>
+      <button id="restartBtn" type="button">Restart</button>
+      <button id="nextBtn" class="wide" type="button">Force Next Pattern</button>
+    </div>
+
+    <h2>튜닝</h2>
+    <div class="tuner">
+      <select id="patternSelect" aria-label="Pattern parameter target"></select>
+      <div id="tuneControls"></div>
+      <button id="activeBtn" type="button">Load Active Pattern</button>
+      <textarea id="paramDump" readonly></textarea>
+    </div>
+    <p class="small">Unity 씬/프리팹은 건드리지 않는 감각 확인용 HTML입니다.</p>
+  </aside>
+
+  <script>
+    (() => {
+      const canvas = document.getElementById("game");
+      const ctx = canvas.getContext("2d");
+      const ui = {
+        phase: document.getElementById("phaseText"),
+        pattern: document.getElementById("patternText"),
+        bossHp: document.getElementById("bossHpBar"),
+        slow: document.getElementById("slowBar"),
+        result: document.getElementById("resultText"),
+        p1: document.getElementById("p1Btn"),
+        p2: document.getElementById("p2Btn"),
+        p3: document.getElementById("p3Btn"),
+        restart: document.getElementById("restartBtn"),
+        next: document.getElementById("nextBtn"),
+        patternSelect: document.getElementById("patternSelect"),
+        tuneControls: document.getElementById("tuneControls"),
+        active: document.getElementById("activeBtn"),
+        paramDump: document.getElementById("paramDump"),
+      };
+
+      const W = canvas.width;
+      const H = canvas.height;
+      const world = { left: -10, right: 10, floor: -3.2, ceiling: 4.2, scale: 52 };
+      const keys = new Set();
+      const mouse = { x: W * 0.5, y: H * 0.5, left: false, right: false };
+      let lastTime = performance.now();
+      let manualStepping = false;
+
+      const colors = { P1: "#ff575f", A: "#ff575f", B: "#6bd9ff", C: "#f6c84f" };
+      const anchors = [
+        { x: -7.8, y: 2.8 }, { x: 7.8, y: 2.8 },
+        { x: -7.8, y: -1.8 }, { x: 7.8, y: -1.8 },
+        { x: 0, y: 3.3 }, { x: 0, y: -1.4 },
+      ];
+
+      const tuneFields = [
+        { key: "telegraph", label: "텔레그래프", min: 0.1, max: 1.5, step: 0.05 },
+        { key: "pre", label: "선딜", min: 0, max: 0.5, step: 0.02 },
+        { key: "recovery", label: "후딜", min: 0.1, max: 1.2, step: 0.05 },
+        { key: "speed", label: "탄속", min: 4, max: 24, step: 0.5 },
+        { key: "count", label: "발수", min: 1, max: 9, step: 1 },
+        { key: "interval", label: "간격", min: 0.05, max: 0.35, step: 0.01 },
+        { key: "arc", label: "각도", min: 30, max: 180, step: 5 },
+        { key: "dashTime", label: "대시시간", min: 0.08, max: 0.45, step: 0.01 },
+        { key: "dashSpeed", label: "대시속도", min: 5, max: 140, step: 1 },
+        { key: "radius", label: "반경", min: 0.5, max: 3.2, step: 0.05 },
+        { key: "warn", label: "장판지연", min: 0.3, max: 1.8, step: 0.05 },
+        { key: "laserWidth", label: "레이저폭", min: 0.2, max: 3.5, step: 0.05 },
+      ];
+
+      const specTable = {
+        "P1:straight": { name: "단발 직선탄", telegraph: 0.55, pre: 0.12, recovery: 0.45, speed: 15, count: 1 },
+        "P1:volley": { name: "연사", telegraph: 0.65, pre: 0.08, recovery: 0.5, speed: 13, count: 4, interval: 0.13 },
+        "P1:spread5": { name: "확산 5way", telegraph: 0.8, pre: 0.12, recovery: 0.6, speed: 10.5, count: 5, arc: 120 },
+        "P1:dash": { name: "대시 베기", telegraph: 0.6, pre: 0.12, recovery: 0.55, dashTime: 0.32, dashSpeed: 100 },
+        "P1:blast2": { name: "지연 폭발 장판", telegraph: 0.65, pre: 0, recovery: 0.6, count: 2, warn: 1, radius: 1.4 },
+        "P1:predict": { name: "예측 3점 사격", telegraph: 0.7, pre: 0.1, recovery: 0.55, speed: 12, count: 3, interval: 0.12 },
+
+        "P2-A:dash": { name: "대시 베기", telegraph: 0.5, pre: 0.12, recovery: 0.45, dashTime: 0.3, dashSpeed: 100 },
+        "P2-A:fast": { name: "빠른 단발", telegraph: 0.4, pre: 0.08, recovery: 0.35, speed: 18, count: 1 },
+        "P2-A:slam": { name: "짧은 텔포 내려찍기", telegraph: 0.65, pre: 0.12, recovery: 0.6, radius: 1.25 },
+        "P2-B:spread7": { name: "7way 확산", telegraph: 0.9, pre: 0.12, recovery: 0.7, speed: 10, count: 7, arc: 150 },
+        "P2-B:blast3": { name: "지연 폭발 장판", telegraph: 0.6, pre: 0, recovery: 0.6, count: 3, warn: 1, radius: 1.5 },
+        "P2-B:predict": { name: "예측 3점 사격", telegraph: 0.65, pre: 0.12, recovery: 0.6, speed: 13, count: 3, interval: 0.12 },
+
+        "P3-A:dash": { name: "대시 베기", telegraph: 0.45, pre: 0.12, recovery: 0.45, dashTime: 0.3, dashSpeed: 100 },
+        "P3-A:fast": { name: "빠른 단발", telegraph: 0.35, pre: 0.08, recovery: 0.35, speed: 19, count: 1 },
+        "P3-A:slam": { name: "순간이동 내려찍기", telegraph: 0.55, pre: 0.1, recovery: 0.55, radius: 1.2 },
+        "P3-B:spread7": { name: "7way 확산", telegraph: 0.8, pre: 0.12, recovery: 0.6, speed: 10, count: 7, arc: 150 },
+        "P3-B:predict": { name: "예측 3점 사격", telegraph: 0.55, pre: 0.1, recovery: 0.55, speed: 13, count: 3, interval: 0.12 },
+        "P3-B:spiral": { name: "나선 연사", telegraph: 0.7, pre: 0.1, recovery: 0.55, speed: 12, count: 6, interval: 0.12, angleStep: 18 },
+        "P3-C:blast3": { name: "지연 폭발 장판", telegraph: 0.55, pre: 0, recovery: 0.55, count: 3, warn: 0.9, radius: 1.45 },
+        "P3-C:laser": { name: "가로/세로 레이저 벽", telegraph: 0.75, pre: 0.1, recovery: 0.6, laserWidth: 1.52 },
+        "P3-C:safe": { name: "안전지대 축소", telegraph: 0.8, pre: 0, recovery: 0.7, radius: 2.2 },
+      };
+
+      const state = {
+        phase: "P3",
+        mode: "playing",
+        t: 0,
+        message: "나눠도... 남는 게 있어.",
+        patternText: "-",
+        player: null,
+        bosses: [],
+        projectiles: [],
+        slashes: [],
+        blasts: [],
+        lasers: [],
+        safeZones: [],
+        markers: [],
+        particles: [],
+        scheduler: null,
+        shake: 0,
+        glitch: 0,
+        flash: 0,
+        forceNext: false,
+        selectedTuneKey: "P3-A:dash",
+      };
+
+      function phaseConfig(phase) {
+        if (phase === "P1") {
+          return {
+            title: "P1 통합형",
+            hp: 5,
+            opener: "그건 팔 물건이 아니야.",
+            bosses: [{ id: "P1", x: 0, y: 1.6, patterns: ["straight", "volley", "spread5", "dash", "blast2", "predict"] }],
+            sequence: ["P1", "P1", "P1", "P1", "P1", "P1"],
+          };
+        }
+        if (phase === "P2") {
+          return {
+            title: "P2 2분열",
+            hp: 4,
+            opener: "나는 집을 남기려 했을 뿐이야.",
+            bosses: [
+              { id: "A", x: -5.2, y: 2.2, patterns: ["dash", "fast", "slam"] },
+              { id: "B", x: 5.8, y: 2.8, patterns: ["spread7", "blast3", "predict"] },
+            ],
+            sequence: ["A", "B", "A", "B", "A", "B"],
+          };
+        }
+        return {
+          title: "P3 3분열",
+          hp: 3,
+          opener: "나눠도... 남는 게 있어.",
+          bosses: [
+            { id: "A", x: -6.2, y: 2.2, patterns: ["dash", "fast", "slam"] },
+            { id: "B", x: 5.8, y: 2.8, patterns: ["spread7", "predict", "spiral"] },
+            { id: "C", x: 0.8, y: 3.4, patterns: ["blast3", "laser", "safe"] },
+          ],
+          sequence: ["A", "B", "C", "A", "B", "C", "C", "B", "A"],
+        };
+      }
+
+      function makePlayer() {
+        return {
+          x: -1.5, y: world.floor, vx: 0, vy: 0,
+          w: 0.62, h: 1.15, face: 1,
+          grounded: true, invuln: 0,
+          dashCd: 0, dashTime: 0,
+          rollCd: 0, rollTime: 0,
+          attackCd: 0, attackTime: 0, slashActive: 0,
+          slow: 5, slowMax: 5, slowRegen: 0,
+        };
+      }
+
+      function makeBoss(def, hp) {
+        return {
+          id: def.id,
+          role: def.id === "P1" ? "통합" : def.id === "A" ? "추격" : def.id === "B" ? "탄막" : "공간",
+          x: def.x, y: def.y, r: def.id === "P1" ? 0.62 : 0.5,
+          hp, maxHp: hp, alive: true,
+          color: colors[def.id] || colors.P1,
+          patterns: def.patterns,
+          seq: 0, active: null,
+          invuln: 0, invisible: 0, lastAnchor: -1,
+        };
+      }
+
+      function startPhase(phase) {
+        const cfg = phaseConfig(phase);
+        state.phase = phase;
+        state.mode = "playing";
+        state.t = 0;
+        state.message = cfg.opener;
+        state.patternText = cfg.title;
+        state.player = makePlayer();
+        state.bosses = cfg.bosses.map((b) => makeBoss(b, cfg.hp));
+        state.projectiles = [];
+        state.slashes = [];
+        state.blasts = [];
+        state.lasers = [];
+        state.safeZones = [];
+        state.markers = [];
+        state.particles = [];
+        state.scheduler = { sequence: cfg.sequence, index: 0, cooldown: phase === "P3" ? 1.0 : 0.7, activeId: null };
+        state.shake = 0.35;
+        state.glitch = 0.65;
+        state.flash = 0;
+        state.forceNext = false;
+        populateTuner();
+        updateUi();
+      }
+
+      function screenToWorld(x, y) {
+        return { x: (x - W * 0.5) / world.scale, y: (H * 0.58 - y) / world.scale };
+      }
+
+      function worldToScreen(p) {
+        return { x: W * 0.5 + p.x * world.scale, y: H * 0.58 - p.y * world.scale };
+      }
+
+      function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+      function dist(a, b) { return Math.hypot(a.x - b.x, a.y - b.y); }
+      function norm(x, y) {
+        const l = Math.hypot(x, y) || 1;
+        return { x: x / l, y: y / l };
+      }
+
+      function aimAtPlayer(b) {
+        return norm(state.player.x - b.x, state.player.y + 0.55 - b.y);
+      }
+
+      function currentScale() {
+        return mouse.right && state.player.slow > 0 && state.mode === "playing" ? 0.33 : 1;
+      }
+
+      function update(dtRaw) {
+        state.t += dtRaw;
+        updateFx(dtRaw);
+        if (state.mode !== "playing") {
+          render();
+          return;
+        }
+        const dt = dtRaw * currentScale();
+        updatePlayer(dtRaw, dt);
+        updateScheduler(dt);
+        updateBosses(dt);
+        updateProjectiles(dt);
+        updateHazards(dt);
+        updateParticles(dtRaw);
+        resolveHits();
+        updateUi();
+        render();
+      }
+
+      function updateFx(dt) {
+        state.shake = Math.max(0, state.shake - dt * 2.4);
+        state.glitch = Math.max(0, state.glitch - dt * 1.5);
+        state.flash = Math.max(0, state.flash - dt * 2.2);
+      }
+
+      function updatePlayer(dtRaw, dt) {
+        const p = state.player;
+        const left = keys.has("arrowleft") || keys.has("a");
+        const right = keys.has("arrowright") || keys.has("d");
+        const down = keys.has("arrowdown") || keys.has("s");
+        const jump = keys.has(" ");
+        const dash = keys.has("shift");
+
+        if (mouse.right && p.slow > 0) {
+          p.slow = Math.max(0, p.slow - dtRaw);
+          p.slowRegen = 0;
+        } else {
+          p.slowRegen += dtRaw;
+          if (p.slowRegen >= 4 && p.slow < p.slowMax) {
+            p.slow = Math.min(p.slowMax, p.slow + 1);
+            p.slowRegen = 0;
+          }
+        }
+
+        p.invuln = Math.max(0, p.invuln - dt);
+        p.dashCd = Math.max(0, p.dashCd - dt);
+        p.rollCd = Math.max(0, p.rollCd - dt);
+        p.attackCd = Math.max(0, p.attackCd - dt);
+        p.attackTime = Math.max(0, p.attackTime - dt);
+        p.slashActive = Math.max(0, p.slashActive - dt);
+
+        if (left) p.face = -1;
+        if (right) p.face = 1;
+
+        if (dash && p.dashCd <= 0) {
+          const target = screenToWorld(mouse.x, mouse.y);
+          const d = norm(target.x - p.x, target.y - (p.y + 0.5));
+          p.vx = d.x * 28;
+          p.vy = d.y * 17;
+          p.dashCd = 2;
+          p.dashTime = 0.12;
+          burst(p.x, p.y + 0.45, "#70e5ff", 10);
+        }
+
+        if (down && (left || right) && p.grounded && p.rollCd <= 0) {
+          p.rollCd = 0.72;
+          p.rollTime = 0.36;
+          p.invuln = Math.max(p.invuln, 0.36);
+          p.vx = (left ? -1 : 1) * 9.8;
+          burst(p.x, p.y + 0.18, "#8ef0a1", 6);
+        }
+
+        if (mouse.left && p.attackCd <= 0) {
+          p.attackCd = 0.28;
+          p.attackTime = 0.14;
+          p.slashActive = 0.09;
+        }
+
+        if (jump && p.grounded) {
+          p.vy = 9.7;
+          p.grounded = false;
+        }
+
+        if (p.dashTime > 0) {
+          p.dashTime -= dt;
+        } else if (p.rollTime > 0) {
+          p.rollTime -= dt;
+        } else {
+          const axis = (right ? 1 : 0) - (left ? 1 : 0);
+          p.vx += (axis * 5.1 - p.vx) * Math.min(1, dt * 13);
+        }
+
+        p.vy -= 24 * dt;
+        p.x = clamp(p.x + p.vx * dt, world.left + 0.3, world.right - 0.3);
+        p.y += p.vy * dt;
+        if (p.y <= world.floor) {
+          p.y = world.floor;
+          p.vy = Math.max(0, p.vy);
+          p.grounded = true;
+        } else {
+          p.grounded = false;
+        }
+      }
+
+      function updateScheduler(dt) {
+        const live = state.bosses.filter((b) => b.alive);
+        if (live.length === 0) {
+          state.mode = "won";
+          state.message = "[HOME 파일 접근 가능]";
+          return;
+        }
+        const activeExists = live.some((b) => b.active);
+        if (activeExists) return;
+        state.scheduler.cooldown -= dt;
+        if (!state.forceNext && state.scheduler.cooldown > 0) return;
+        state.forceNext = false;
+
+        const cfg = phaseConfig(state.phase);
+        let picked = null;
+        for (let i = 0; i < cfg.sequence.length + 2; i++) {
+          const id = cfg.sequence[state.scheduler.index % cfg.sequence.length];
+          state.scheduler.index++;
+          picked = live.find((b) => b.id === id) || live[0];
+          if (picked) break;
+        }
+        if (!picked) return;
+        beginPattern(picked);
+      }
+
+      function updateBosses(dt) {
+        for (const b of state.bosses) {
+          b.invuln = Math.max(0, b.invuln - dt);
+          b.invisible = Math.max(0, b.invisible - dt);
+          if (!b.alive || !b.active) continue;
+          tickPattern(b, dt);
+        }
+      }
+
+      function nextPattern(b) {
+        const pattern = b.patterns[b.seq % b.patterns.length];
+        b.seq++;
+        return pattern;
+      }
+
+      function beginPattern(b) {
+        const type = nextPattern(b);
+        const spec = patternSpec(type, b.id);
+        b.active = {
+          type,
+          phase: "telegraph",
+          timer: spec.telegraph,
+          spec,
+          aim: aimAtPlayer(b),
+          shotCount: 0,
+          shotTimer: 0,
+          dashTime: spec.dashTime || 0,
+          markersMade: false,
+        };
+        state.patternText = `${state.phase}-${b.id}: ${spec.name}`;
+        state.message = state.patternText;
+      }
+
+      function patternSpec(type, id) {
+        const key = specKey(type, id);
+        return { ...specTable[key], key };
+      }
+
+      function specKey(type, id) {
+        return id === "P1" ? `P1:${type}` : `${state.phase}-${id}:${type}`;
+      }
+
+      function phaseTuneKeys() {
+        const prefix = state.phase === "P1" ? "P1:" : `${state.phase}-`;
+        return Object.keys(specTable).filter((key) => key.startsWith(prefix));
+      }
+
+      function populateTuner() {
+        const keysForPhase = phaseTuneKeys();
+        if (!keysForPhase.includes(state.selectedTuneKey)) {
+          state.selectedTuneKey = keysForPhase[0] || Object.keys(specTable)[0];
+        }
+        ui.patternSelect.innerHTML = "";
+        for (const key of keysForPhase) {
+          const opt = document.createElement("option");
+          opt.value = key;
+          opt.textContent = `${key} / ${specTable[key].name}`;
+          ui.patternSelect.appendChild(opt);
+        }
+        ui.patternSelect.value = state.selectedTuneKey;
+        renderTuner();
+      }
+
+      function renderTuner() {
+        const spec = specTable[state.selectedTuneKey];
+        ui.tuneControls.innerHTML = "";
+        if (!spec) return;
+
+        for (const field of tuneFields) {
+          if (!(field.key in spec)) continue;
+
+          const row = document.createElement("div");
+          row.className = "tune-row";
+
+          const label = document.createElement("label");
+          label.textContent = field.label;
+
+          const range = document.createElement("input");
+          range.type = "range";
+          range.min = field.min;
+          range.max = field.max;
+          range.step = field.step;
+          range.value = spec[field.key];
+
+          const number = document.createElement("input");
+          number.type = "number";
+          number.min = field.min;
+          number.max = field.max;
+          number.step = field.step;
+          number.value = spec[field.key];
+
+          const setValue = (raw) => {
+            const numeric = Number(raw);
+            if (!Number.isFinite(numeric)) return;
+            const clamped = clamp(numeric, field.min, field.max);
+            const value = field.key === "count" ? Math.round(clamped) : clamped;
+            spec[field.key] = value;
+            range.value = value;
+            number.value = value;
+            applyLiveSpec(state.selectedTuneKey, field.key, value);
+            updateParamDump();
+          };
+
+          range.addEventListener("input", () => setValue(range.value));
+          number.addEventListener("input", () => setValue(number.value));
+
+          row.appendChild(label);
+          row.appendChild(range);
+          row.appendChild(number);
+          ui.tuneControls.appendChild(row);
+        }
+        updateParamDump();
+      }
+
+      function applyLiveSpec(key, field, value) {
+        for (const b of state.bosses) {
+          if (b.active?.spec?.key === key) {
+            b.active.spec[field] = value;
+            if (field === "dashTime" && b.active.type === "dash") b.active.dashTime = value;
+          }
+        }
+      }
+
+      function loadActivePattern() {
+        const active = state.bosses.find((b) => b.active?.spec?.key);
+        if (!active) return;
+        state.selectedTuneKey = active.active.spec.key;
+        populateTuner();
+      }
+
+      function updateParamDump() {
+        const spec = specTable[state.selectedTuneKey];
+        if (!spec) {
+          ui.paramDump.value = "";
+          return;
+        }
+        ui.paramDump.value = `${state.selectedTuneKey}\n${JSON.stringify(spec, null, 2)}`;
+      }
+
+      function tickPattern(b, dt) {
+        const a = b.active;
+        a.timer -= dt;
+
+        if (a.phase === "telegraph") {
+          if (!a.markersMade) {
+            makeTelegraphMarkers(b, a);
+            a.markersMade = true;
+          }
+          if (a.timer <= 0) {
+            a.phase = "pre";
+            a.timer = a.spec.pre;
+            a.aim = aimAtPlayer(b);
+          }
+          return;
+        }
+
+        if (a.phase === "pre") {
+          if (a.timer <= 0) {
+            a.phase = "active";
+            a.timer = 0;
+            startActive(b, a);
+          }
+          return;
+        }
+
+        if (a.phase === "active") {
+          if (runActive(b, a, dt)) {
+            a.phase = "recovery";
+            a.timer = a.spec.recovery;
+          }
+          return;
+        }
+
+        if (a.phase === "recovery" && a.timer <= 0) {
+          b.active = null;
+          teleportBoss(b);
+          state.scheduler.cooldown = state.phase === "P3" ? 0.2 : 0.28;
+        }
+      }
+
+      function makeTelegraphMarkers(b, a) {
+        const type = a.type;
+        if (type === "slam") {
+          state.markers.push({ kind: "slam", x: state.player.x, y: world.floor, r: a.spec.radius, life: a.spec.telegraph + a.spec.pre, color: b.color });
+        }
+        if (type === "blast2" || type === "blast3") {
+          for (const spot of blastSpots(a.spec.count)) {
+            state.markers.push({ kind: "blast", x: spot.x, y: world.floor, r: a.spec.radius, life: a.spec.telegraph + a.spec.pre, color: b.color });
+          }
+        }
+        if (type === "laser") {
+          const vertical = Math.abs(state.player.vx) > 1 || Math.random() > 0.5;
+          state.markers.push({ kind: "laser", vertical, x: state.player.x, y: state.player.y + 0.5, width: a.spec.laserWidth || 1.52, life: a.spec.telegraph + a.spec.pre, color: b.color });
+        }
+        if (type === "safe") {
+          const x = clamp(state.player.x + (Math.random() > 0.5 ? 2.8 : -2.8), world.left + 2, world.right - 2);
+          state.markers.push({ kind: "safe", x, y: world.floor + 0.2, r: a.spec.radius || 2.2, life: a.spec.telegraph + a.spec.pre, color: b.color });
+        }
+      }
+
+      function startActive(b, a) {
+        if (["straight", "fast"].includes(a.type)) fireProjectile(b, a.aim, a.spec.speed, b.color);
+        if (a.type === "volley") {
+          fireProjectile(b, a.aim, a.spec.speed, b.color);
+          a.shotCount = 1;
+          a.shotTimer = a.spec.interval;
+        }
+        if (a.type === "spread5" || a.type === "spread7") fireSpread(b, a.spec.count, a.spec.arc, a.spec.speed, b.color);
+        if (a.type === "dash") {
+          a.dashTime = a.spec.dashTime;
+          state.shake = Math.max(state.shake, 0.35);
+        }
+        if (a.type === "slam") {
+          b.x = clamp(state.player.x, world.left + 0.8, world.right - 0.8);
+          b.y = 2.4;
+          state.slashes.push({ x: b.x, y: world.floor + 0.45, r: a.spec.radius, t: 0.18, owner: b.id, color: b.color });
+          state.shake = Math.max(state.shake, 0.5);
+        }
+        if (a.type === "blast2" || a.type === "blast3") {
+          for (const spot of blastSpots(a.spec.count)) {
+            state.blasts.push({ x: spot.x, y: world.floor, r: a.spec.radius, warn: a.spec.warn, boom: 0.28, active: false, color: b.color });
+          }
+        }
+        if (a.type === "predict") {
+          a.predictDirs = predictDirs(b);
+          fireProjectile(b, a.predictDirs[0], a.spec.speed, b.color);
+          a.shotCount = 1;
+          a.shotTimer = a.spec.interval;
+        }
+        if (a.type === "spiral") {
+          a.baseAngle = Math.atan2(a.aim.y, a.aim.x);
+          fireAngleProjectile(b, a.baseAngle, a.spec.speed, b.color);
+          a.shotCount = 1;
+          a.shotTimer = a.spec.interval;
+        }
+        if (a.type === "laser") {
+          const marker = state.markers.find((m) => m.kind === "laser");
+          state.lasers.push({ vertical: marker?.vertical ?? true, x: marker?.x ?? state.player.x, y: marker?.y ?? 0, width: marker?.width ?? a.spec.laserWidth ?? 1.52, t: 0.45, color: b.color });
+          state.shake = Math.max(state.shake, 0.45);
+        }
+        if (a.type === "safe") {
+          const marker = state.markers.find((m) => m.kind === "safe");
+          state.safeZones.push({ x: marker?.x ?? 0, y: world.floor + 0.2, r: marker?.r ?? a.spec.radius ?? 2.2, t: 1.1, color: b.color });
+          state.glitch = Math.max(state.glitch, 0.45);
+        }
+      }
+
+      function runActive(b, a, dt) {
+        if (a.type === "dash") {
+          b.x += a.aim.x * a.spec.dashSpeed * dt;
+          b.y += a.aim.y * a.spec.dashSpeed * 0.55 * dt;
+          b.x = clamp(b.x, world.left + 0.6, world.right - 0.6);
+          b.y = clamp(b.y, world.floor + 0.6, world.ceiling - 0.2);
+          state.slashes.push({ x: b.x, y: b.y, r: 0.95, t: 0.08, owner: b.id, color: b.color });
+          a.dashTime -= dt;
+          return a.dashTime <= 0;
+        }
+
+        if (a.type === "volley") {
+          a.shotTimer -= dt;
+          if (a.shotTimer <= 0 && a.shotCount < a.spec.count) {
+            fireProjectile(b, a.aim, a.spec.speed, b.color);
+            a.shotCount++;
+            a.shotTimer = a.spec.interval;
+          }
+          return a.shotCount >= a.spec.count;
+        }
+
+        if (a.type === "predict") {
+          a.shotTimer -= dt;
+          if (a.shotTimer <= 0 && a.shotCount < a.spec.count) {
+            fireProjectile(b, a.predictDirs[a.shotCount], a.spec.speed, b.color);
+            a.shotCount++;
+            a.shotTimer = a.spec.interval;
+          }
+          return a.shotCount >= a.spec.count;
+        }
+
+        if (a.type === "spiral") {
+          a.shotTimer -= dt;
+          if (a.shotTimer <= 0 && a.shotCount < a.spec.count) {
+            const angle = a.baseAngle + (a.shotCount * a.spec.angleStep * Math.PI / 180);
+            fireAngleProjectile(b, angle, a.spec.speed, b.color);
+            a.shotCount++;
+            a.shotTimer = a.spec.interval;
+          }
+          return a.shotCount >= a.spec.count;
+        }
+
+        return true;
+      }
+
+      function blastSpots(count) {
+        const p = state.player;
+        const spots = [{ x: p.x }];
+        if (count >= 2) spots.push({ x: clamp(p.x + (p.vx >= 0 ? 2.4 : -2.4), world.left + 1.5, world.right - 1.5) });
+        if (count >= 3) spots.push({ x: clamp(p.x + (p.vx >= 0 ? -2.6 : 2.6), world.left + 1.5, world.right - 1.5) });
+        return spots;
+      }
+
+      function predictDirs(b) {
+        const p = state.player;
+        const targets = [
+          { x: p.x, y: p.y + 0.55 },
+          { x: clamp(p.x + Math.sign(p.vx || p.face) * 2.2, world.left, world.right), y: p.y + 0.55 },
+          { x: clamp(p.x - Math.sign(p.vx || p.face) * 1.7, world.left, world.right), y: p.y + 0.55 },
+        ];
+        return targets.map((t) => norm(t.x - b.x, t.y - b.y));
+      }
+
+      function fireProjectile(b, dir, speed, color) {
+        state.projectiles.push({ x: b.x, y: b.y, dx: dir.x, dy: dir.y, speed, r: 0.13, life: 3.2, color, owner: b.id });
+        burst(b.x, b.y, color, 5);
+      }
+
+      function fireAngleProjectile(b, angle, speed, color) {
+        fireProjectile(b, { x: Math.cos(angle), y: Math.sin(angle) }, speed, color);
+      }
+
+      function fireSpread(b, count, arcDeg, speed, color) {
+        const aim = aimAtPlayer(b);
+        const base = Math.atan2(aim.y, aim.x);
+        const arc = arcDeg * Math.PI / 180;
+        for (let i = 0; i < count; i++) {
+          const t = count === 1 ? 0.5 : i / (count - 1);
+          fireAngleProjectile(b, base - arc * 0.5 + arc * t, speed, color);
+        }
+      }
+
+      function teleportBoss(b) {
+        b.invuln = 0.35;
+        b.invisible = 0.28;
+        const idx = pickAnchor(b);
+        b.lastAnchor = idx;
+        b.x = anchors[idx].x;
+        b.y = anchors[idx].y;
+        state.glitch = Math.max(state.glitch, 0.35);
+        burst(b.x, b.y, b.color, 11);
+      }
+
+      function pickAnchor(b) {
+        let best = 0;
+        let score = -Infinity;
+        for (let i = 0; i < anchors.length; i++) {
+          if (i === b.lastAnchor) continue;
+          const a = anchors[i];
+          let s = Math.random();
+          const d = dist(a, state.player);
+          if (b.id === "A") s -= Math.abs(d - 5) * 0.18;
+          if (b.id === "B") s += d * 0.08;
+          if (b.id === "C") s += Math.abs(a.y - 3.0) * 0.08;
+          if (state.bosses.some((o) => o !== b && o.alive && dist(a, o) < 2.2)) s -= 2;
+          if (s > score) { score = s; best = i; }
+        }
+        return best;
+      }
+
+      function updateProjectiles(dt) {
+        for (const p of state.projectiles) {
+          p.x += p.dx * p.speed * dt;
+          p.y += p.dy * p.speed * dt;
+          p.life -= dt;
+        }
+        state.projectiles = state.projectiles.filter((p) => p.life > 0 && p.x > world.left - 2 && p.x < world.right + 2 && p.y > world.floor - 2 && p.y < world.ceiling + 2);
+      }
+
+      function updateHazards(dt) {
+        for (const m of state.markers) m.life -= dt;
+        state.markers = state.markers.filter((m) => m.life > 0);
+
+        for (const s of state.slashes) s.t -= dt;
+        state.slashes = state.slashes.filter((s) => s.t > 0);
+
+        for (const b of state.blasts) {
+          if (!b.active) {
+            b.warn -= dt;
+            if (b.warn <= 0) {
+              b.active = true;
+              state.shake = Math.max(state.shake, 0.5);
+            }
+          } else {
+            b.boom -= dt;
+          }
+        }
+        state.blasts = state.blasts.filter((b) => !b.active || b.boom > 0);
+
+        for (const l of state.lasers) l.t -= dt;
+        state.lasers = state.lasers.filter((l) => l.t > 0);
+
+        for (const z of state.safeZones) z.t -= dt;
+        state.safeZones = state.safeZones.filter((z) => z.t > 0);
+      }
+
+      function updateParticles(dt) {
+        for (const p of state.particles) {
+          p.x += p.vx * dt;
+          p.y += p.vy * dt;
+          p.vy -= 2.5 * dt;
+          p.life -= dt;
+        }
+        state.particles = state.particles.filter((p) => p.life > 0);
+      }
+
+      function resolveHits() {
+        const p = state.player;
+        if (p.invuln <= 0) {
+          for (const bullet of state.projectiles) {
+            if (circleRect(bullet.x, bullet.y, bullet.r, p.x, p.y + p.h * 0.5, p.w, p.h)) return killPlayer("피격. P1부터 재시작.");
+          }
+          for (const s of state.slashes) {
+            if (s.owner !== "player" && Math.hypot(p.x - s.x, p.y + 0.55 - s.y) < s.r) return killPlayer("근접 압박에 맞음.");
+          }
+          for (const b of state.blasts) {
+            if (b.active && Math.hypot(p.x - b.x, p.y - b.y) < b.r) return killPlayer("장판 폭발.");
+          }
+          for (const l of state.lasers) {
+            if (l.vertical && Math.abs(p.x - l.x) < l.width) return killPlayer("레이저 벽.");
+            if (!l.vertical && Math.abs(p.y + 0.55 - l.y) < l.width) return killPlayer("레이저 벽.");
+          }
+          for (const z of state.safeZones) {
+            if (Math.hypot(p.x - z.x, p.y - z.y) > z.r) return killPlayer("안전지대 밖.");
+          }
+        }
+
+        if (p.slashActive > 0) {
+          const sx = p.x + p.face * 1.05;
+          const sy = p.y + 0.55;
+          for (const b of state.bosses) {
+            if (!b.alive || b.invuln > 0 || b.invisible > 0) continue;
+            if (Math.hypot(b.x - sx, b.y - sy) < b.r + 0.9) {
+              b.hp -= 1;
+              b.invuln = 0.08;
+              p.slashActive = 0;
+              state.flash = 0.25;
+              state.shake = Math.max(state.shake, 0.25);
+              burst(b.x, b.y, "#ffffff", 16);
+              if (b.hp <= 0) defeatBoss(b);
+              break;
+            }
+          }
+        }
+      }
+
+      function defeatBoss(b) {
+        b.alive = false;
+        b.active = null;
+        burst(b.x, b.y, b.color, 32);
+        state.glitch = Math.max(state.glitch, 0.75);
+        state.shake = Math.max(state.shake, 0.6);
+        const live = state.bosses.filter((o) => o.alive);
+        if (live.length === 0) {
+          if (state.phase === "P1") return startPhase("P2");
+          if (state.phase === "P2") return startPhase("P3");
+          state.mode = "won";
+          state.message = "[인격 흔적 소거] [회수 가능]";
+        } else {
+          state.message = state.phase === "P3" ? "문은... 열어둔다고 했는데..." : "나눠도... 남는 게 있어.";
+        }
+      }
+
+      function killPlayer(message) {
+        state.mode = "dead";
+        state.message = message;
+        state.shake = 1;
+        state.glitch = 0.9;
+      }
+
+      function circleRect(cx, cy, cr, rx, ry, rw, rh) {
+        const nx = clamp(cx, rx - rw * 0.5, rx + rw * 0.5);
+        const ny = clamp(cy, ry - rh * 0.5, ry + rh * 0.5);
+        return Math.hypot(cx - nx, cy - ny) <= cr;
+      }
+
+      function burst(x, y, color, count) {
+        for (let i = 0; i < count; i++) {
+          const a = Math.random() * Math.PI * 2;
+          const s = 0.7 + Math.random() * 3.4;
+          state.particles.push({ x, y, vx: Math.cos(a) * s, vy: Math.sin(a) * s, life: 0.25 + Math.random() * 0.55, color });
+        }
+      }
+
+      function render() {
+        const sx = (Math.random() - 0.5) * state.shake * 14;
+        const sy = (Math.random() - 0.5) * state.shake * 10;
+        ctx.save();
+        ctx.clearRect(0, 0, W, H);
+        ctx.translate(sx, sy);
+        drawArena();
+        drawSafeZones();
+        drawMarkers();
+        drawTelegraphs();
+        drawBlasts();
+        drawLasers();
+        drawProjectiles();
+        drawBosses();
+        drawPlayer();
+        drawParticles();
+        drawHud();
+        ctx.restore();
+        drawFx();
+      }
+
+      function drawArena() {
+        const floor = worldToScreen({ x: 0, y: world.floor }).y;
+        const top = worldToScreen({ x: 0, y: world.ceiling }).y;
+        const left = worldToScreen({ x: world.left, y: 0 }).x;
+        const right = worldToScreen({ x: world.right, y: 0 }).x;
+        const g = ctx.createLinearGradient(0, top, 0, floor);
+        g.addColorStop(0, "#151722");
+        g.addColorStop(0.65, "#10121a");
+        g.addColorStop(1, "#1d202a");
+        ctx.fillStyle = g;
+        ctx.fillRect(0, 0, W, H);
+        ctx.strokeStyle = "rgba(112,229,255,0.08)";
+        ctx.lineWidth = 1;
+        for (let x = Math.ceil(world.left); x <= world.right; x++) {
+          const px = worldToScreen({ x, y: 0 }).x;
+          ctx.beginPath(); ctx.moveTo(px, top); ctx.lineTo(px, floor); ctx.stroke();
+        }
+        for (let y = Math.ceil(world.floor); y <= world.ceiling; y++) {
+          const py = worldToScreen({ x: 0, y }).y;
+          ctx.beginPath(); ctx.moveTo(left, py); ctx.lineTo(right, py); ctx.stroke();
+        }
+        ctx.fillStyle = "#252b38";
+        ctx.fillRect(left, floor, right - left, 16);
+        ctx.strokeStyle = "#5b6578";
+        ctx.lineWidth = 3;
+        ctx.beginPath(); ctx.moveTo(left, floor); ctx.lineTo(right, floor); ctx.stroke();
+        ctx.strokeStyle = "rgba(255,255,255,0.10)";
+        ctx.strokeRect(left, top, right - left, floor - top);
+        for (const a of anchors) {
+          const p = worldToScreen(a);
+          ctx.strokeStyle = "rgba(255,255,255,0.16)";
+          ctx.beginPath(); ctx.arc(p.x, p.y, 11, 0, Math.PI * 2); ctx.stroke();
+        }
+      }
+
+      function drawTelegraphs() {
+        for (const b of state.bosses) {
+          if (!b.alive || !b.active || b.active.phase !== "telegraph") continue;
+          const a = b.active;
+          const bs = worldToScreen(b);
+          const ps = worldToScreen({ x: state.player.x, y: state.player.y + 0.55 });
+          ctx.save();
+          ctx.globalAlpha = 0.6 + Math.sin(state.t * 20) * 0.18;
+          ctx.strokeStyle = b.color;
+          ctx.lineWidth = 4;
+          if (a.type === "spread5" || a.type === "spread7") {
+            const count = a.spec.count;
+            const arc = a.spec.arc * Math.PI / 180;
+            const base = Math.atan2(aimAtPlayer(b).y, aimAtPlayer(b).x);
+            ctx.lineWidth = 2;
+            for (let i = 0; i < count; i++) {
+              const t = count === 1 ? 0.5 : i / (count - 1);
+              const ang = base - arc * 0.5 + arc * t;
+              ctx.beginPath(); ctx.moveTo(bs.x, bs.y); ctx.lineTo(bs.x + Math.cos(ang) * 360, bs.y - Math.sin(ang) * 360); ctx.stroke();
+            }
+          } else if (a.type === "spiral") {
+            ctx.beginPath(); ctx.arc(bs.x, bs.y, 48 + Math.sin(state.t * 16) * 12, 0, Math.PI * 1.6); ctx.stroke();
+          } else {
+            ctx.beginPath(); ctx.moveTo(bs.x, bs.y); ctx.lineTo(ps.x, ps.y); ctx.stroke();
+          }
+          ctx.restore();
+        }
+      }
+
+      function drawMarkers() {
+        for (const m of state.markers) {
+          const p = worldToScreen(m);
+          ctx.save();
+          ctx.globalAlpha = 0.32 + Math.sin(state.t * 18) * 0.12;
+          ctx.strokeStyle = m.color;
+          ctx.fillStyle = `${m.color}22`;
+          ctx.lineWidth = 3;
+          if (m.kind === "laser") {
+            ctx.lineWidth = Math.max(3, (m.width || 1.52) * world.scale);
+            ctx.beginPath();
+            if (m.vertical) { ctx.moveTo(p.x, 120); ctx.lineTo(p.x, 610); }
+            else { ctx.moveTo(120, p.y); ctx.lineTo(1160, p.y); }
+            ctx.stroke();
+          } else {
+            ctx.beginPath(); ctx.arc(p.x, p.y, (m.r || 1.2) * world.scale, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+          }
+          ctx.restore();
+        }
+      }
+
+      function drawSafeZones() {
+        for (const z of state.safeZones) {
+          const p = worldToScreen(z);
+          ctx.save();
+          ctx.fillStyle = "rgba(0,0,0,0.38)";
+          ctx.fillRect(0, 0, W, H);
+          ctx.globalCompositeOperation = "destination-out";
+          ctx.beginPath(); ctx.arc(p.x, p.y, z.r * world.scale, 0, Math.PI * 2); ctx.fill();
+          ctx.globalCompositeOperation = "source-over";
+          ctx.strokeStyle = z.color;
+          ctx.lineWidth = 4;
+          ctx.beginPath(); ctx.arc(p.x, p.y, z.r * world.scale, 0, Math.PI * 2); ctx.stroke();
+          ctx.restore();
+        }
+      }
+
+      function drawBlasts() {
+        for (const b of state.blasts) {
+          const p = worldToScreen(b);
+          ctx.save();
+          ctx.globalAlpha = b.active ? 0.75 : 0.35 + Math.sin(state.t * 18) * 0.12;
+          ctx.fillStyle = b.active ? `${b.color}66` : `${b.color}22`;
+          ctx.strokeStyle = b.active ? "#ffffff" : b.color;
+          ctx.lineWidth = b.active ? 2 : 3;
+          ctx.beginPath(); ctx.arc(p.x, p.y, b.r * world.scale, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+          ctx.restore();
+        }
+      }
+
+      function drawLasers() {
+        for (const l of state.lasers) {
+          const p = worldToScreen(l);
+          ctx.save();
+          ctx.globalAlpha = 0.78;
+          ctx.fillStyle = `${l.color}88`;
+          ctx.strokeStyle = "#ffffff";
+          ctx.lineWidth = 2;
+          if (l.vertical) {
+            ctx.fillRect(p.x - l.width * world.scale * 0.5, 110, l.width * world.scale, 510);
+            ctx.strokeRect(p.x - l.width * world.scale * 0.5, 110, l.width * world.scale, 510);
+          } else {
+            ctx.fillRect(110, p.y - l.width * world.scale * 0.5, 1060, l.width * world.scale);
+            ctx.strokeRect(110, p.y - l.width * world.scale * 0.5, 1060, l.width * world.scale);
+          }
+          ctx.restore();
+        }
+      }
+
+      function drawProjectiles() {
+        for (const p of state.projectiles) {
+          const s = worldToScreen(p);
+          ctx.save();
+          ctx.translate(s.x, s.y);
+          ctx.rotate(-Math.atan2(p.dy, p.dx));
+          ctx.fillStyle = p.color;
+          ctx.beginPath(); ctx.ellipse(0, 0, 14, 6, 0, 0, Math.PI * 2); ctx.fill();
+          ctx.fillStyle = "rgba(255,255,255,0.35)";
+          ctx.fillRect(-18, -2, 16, 4);
+          ctx.restore();
+        }
+      }
+
+      function drawBosses() {
+        for (const b of state.bosses) {
+          if (!b.alive || b.invisible > 0) continue;
+          const p = worldToScreen(b);
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.globalAlpha = b.invuln > 0 ? 0.5 : 1;
+          ctx.fillStyle = "rgba(0,0,0,0.28)";
+          ctx.beginPath(); ctx.ellipse(0, 36, b.r * world.scale * 0.9, 10, 0, 0, Math.PI * 2); ctx.fill();
+          ctx.fillStyle = b.color;
+          ctx.beginPath();
+          ctx.moveTo(0, -b.r * world.scale * 1.25);
+          ctx.lineTo(b.r * world.scale * 0.95, 0);
+          ctx.lineTo(0, b.r * world.scale * 1.25);
+          ctx.lineTo(-b.r * world.scale * 0.95, 0);
+          ctx.closePath(); ctx.fill();
+          ctx.strokeStyle = "#ffffff"; ctx.lineWidth = 2; ctx.stroke();
+          ctx.fillStyle = "#101116"; ctx.fillRect(-18, -7, 36, 14);
+          ctx.fillStyle = b.id === "P1" ? "#ffffff" : "#101116";
+          ctx.font = "12px Segoe UI"; ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillText(b.id, 0, 0);
+          ctx.restore();
+          ctx.fillStyle = "#0c0d12";
+          ctx.fillRect(p.x - 32, p.y - 58, 64, 6);
+          ctx.fillStyle = b.color;
+          ctx.fillRect(p.x - 32, p.y - 58, 64 * (b.hp / b.maxHp), 6);
+        }
+      }
+
+      function drawPlayer() {
+        const p = state.player;
+        const s = worldToScreen({ x: p.x, y: p.y + p.h * 0.5 });
+        ctx.save();
+        ctx.translate(s.x, s.y);
+        ctx.globalAlpha = p.invuln > 0 ? 0.62 : 1;
+        ctx.fillStyle = "rgba(0,0,0,0.34)";
+        ctx.beginPath(); ctx.ellipse(0, p.h * world.scale * 0.5 + 8, 22, 7, 0, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = "#e7f4ff";
+        ctx.fillRect(-p.w * world.scale * 0.5, -p.h * world.scale * 0.5, p.w * world.scale, p.h * world.scale);
+        ctx.fillStyle = "#1b2029"; ctx.fillRect(-8 + p.face * 5, -22, 16, 8);
+        ctx.strokeStyle = "#70e5ff"; ctx.lineWidth = 2; ctx.strokeRect(-p.w * world.scale * 0.5, -p.h * world.scale * 0.5, p.w * world.scale, p.h * world.scale);
+        ctx.restore();
+        if (p.attackTime > 0) {
+          const slash = worldToScreen({ x: p.x + p.face * 1.05, y: p.y + 0.55 });
+          ctx.save();
+          ctx.translate(slash.x, slash.y); ctx.scale(p.face, 1);
+          ctx.strokeStyle = "rgba(255,255,255,0.86)"; ctx.lineWidth = 6;
+          ctx.beginPath(); ctx.arc(0, 0, 48, -0.8, 0.8); ctx.stroke();
+          ctx.strokeStyle = "rgba(112,229,255,0.72)"; ctx.lineWidth = 2;
+          ctx.beginPath(); ctx.arc(0, 0, 62, -0.55, 0.55); ctx.stroke();
+          ctx.restore();
+        }
+      }
+
+      function drawParticles() {
+        for (const p of state.particles) {
+          const s = worldToScreen(p);
+          ctx.globalAlpha = clamp(p.life * 2, 0, 1);
+          ctx.fillStyle = p.color;
+          ctx.fillRect(s.x - 2, s.y - 2, 4, 4);
+        }
+        ctx.globalAlpha = 1;
+      }
+
+      function drawHud() {
+        ctx.fillStyle = "rgba(9,10,14,0.72)";
+        ctx.fillRect(24, 22, 520, 96);
+        ctx.strokeStyle = "rgba(255,255,255,0.12)";
+        ctx.strokeRect(24, 22, 520, 96);
+        ctx.fillStyle = "#eef2f6";
+        ctx.font = "700 22px Segoe UI, Malgun Gothic";
+        ctx.fillText(phaseConfig(state.phase).title, 42, 55);
+        ctx.fillStyle = "#9da7b6";
+        ctx.font = "14px Segoe UI, Malgun Gothic";
+        ctx.fillText(state.patternText || state.message, 42, 81);
+        for (let i = 0; i < state.player.slowMax; i++) {
+          ctx.fillStyle = i < Math.ceil(state.player.slow) ? "#70e5ff" : "#222837";
+          ctx.fillRect(42 + i * 32, 96, 24, 8);
+        }
+        if (state.mode !== "playing") {
+          ctx.fillStyle = "rgba(0,0,0,0.68)";
+          ctx.fillRect(0, 0, W, H);
+          ctx.textAlign = "center";
+          ctx.fillStyle = state.mode === "won" ? "#8ef0a1" : "#ff575f";
+          ctx.font = "700 42px Segoe UI, Malgun Gothic";
+          ctx.fillText(state.mode === "won" ? "회수 가능" : "접속 붕괴", W / 2, H / 2 - 22);
+          ctx.fillStyle = "#eef2f6";
+          ctx.font = "20px Segoe UI, Malgun Gothic";
+          ctx.fillText(state.message, W / 2, H / 2 + 22);
+          ctx.fillStyle = "#9da7b6";
+          ctx.font = "16px Segoe UI, Malgun Gothic";
+          ctx.fillText("R 또는 Restart", W / 2, H / 2 + 58);
+          ctx.textAlign = "left";
+        }
+      }
+
+      function drawFx() {
+        if (mouse.right && state.player.slow > 0 && state.mode === "playing") {
+          ctx.fillStyle = "rgba(112,229,255,0.08)";
+          ctx.fillRect(0, 0, W, H);
+        }
+        if (state.glitch > 0) {
+          ctx.save();
+          ctx.globalAlpha = state.glitch * 0.34;
+          for (let i = 0; i < 8; i++) {
+            ctx.fillStyle = i % 2 ? "#ff575f" : "#6bd9ff";
+            ctx.fillRect(Math.random() * W, Math.random() * H, 80 + Math.random() * 180, 2 + Math.random() * 8);
+          }
+          ctx.restore();
+        }
+        if (state.flash > 0) {
+          ctx.fillStyle = `rgba(255,255,255,${state.flash * 0.25})`;
+          ctx.fillRect(0, 0, W, H);
+        }
+      }
+
+      function updateUi() {
+        const live = state.bosses.filter((b) => b.alive);
+        const maxHp = live.reduce((n, b) => n + b.maxHp, 0) || 1;
+        const hp = live.reduce((n, b) => n + b.hp, 0);
+        ui.phase.textContent = state.phase;
+        ui.pattern.textContent = state.patternText || state.message;
+        ui.bossHp.style.width = `${clamp(hp / maxHp, 0, 1) * 100}%`;
+        ui.slow.style.width = `${clamp(state.player.slow / state.player.slowMax, 0, 1) * 100}%`;
+        ui.result.textContent = state.mode === "playing" ? "진행 중" : state.mode === "won" ? "승리" : "사망";
+      }
+
+      function frame(now) {
+        if (!manualStepping) {
+          update(clamp((now - lastTime) / 1000, 0, 1 / 30));
+        }
+        lastTime = now;
+        requestAnimationFrame(frame);
+      }
+
+      function keyName(e) { return e.key.length === 1 ? e.key.toLowerCase() : e.key.toLowerCase(); }
+
+      window.addEventListener("keydown", (e) => {
+        const k = keyName(e);
+        keys.add(k);
+        if (k === "r") startPhase(state.phase);
+        if (k === "1") startPhase("P1");
+        if (k === "2") startPhase("P2");
+        if (k === "3") startPhase("P3");
+        if (k === "n") state.forceNext = true;
+        if ([" ", "arrowleft", "arrowright", "arrowdown", "shift"].includes(k)) e.preventDefault();
+      });
+
+      window.addEventListener("keyup", (e) => keys.delete(keyName(e)));
+
+      canvas.addEventListener("mousemove", (e) => {
+        const rect = canvas.getBoundingClientRect();
+        mouse.x = (e.clientX - rect.left) * (canvas.width / rect.width);
+        mouse.y = (e.clientY - rect.top) * (canvas.height / rect.height);
+      });
+      canvas.addEventListener("mousedown", (e) => {
+        if (e.button === 0) mouse.left = true;
+        if (e.button === 2) mouse.right = true;
+      });
+      window.addEventListener("mouseup", (e) => {
+        if (e.button === 0) mouse.left = false;
+        if (e.button === 2) mouse.right = false;
+      });
+      canvas.addEventListener("contextmenu", (e) => e.preventDefault());
+
+      ui.p1.addEventListener("click", () => startPhase("P1"));
+      ui.p2.addEventListener("click", () => startPhase("P2"));
+      ui.p3.addEventListener("click", () => startPhase("P3"));
+      ui.restart.addEventListener("click", () => startPhase(state.phase));
+      ui.next.addEventListener("click", () => { state.forceNext = true; });
+      ui.patternSelect.addEventListener("change", () => {
+        state.selectedTuneKey = ui.patternSelect.value;
+        renderTuner();
+      });
+      ui.active.addEventListener("click", loadActivePattern);
+
+      window.render_game_to_text = () => JSON.stringify({
+        coordinateSystem: "world units, origin center, x right, y up",
+        mode: state.mode,
+        phase: state.phase,
+        message: state.message,
+        pattern: state.patternText,
+        player: {
+          x: Number(state.player.x.toFixed(2)),
+          y: Number(state.player.y.toFixed(2)),
+          slow: Number(state.player.slow.toFixed(2)),
+          grounded: state.player.grounded,
+          dashCd: Number(state.player.dashCd.toFixed(2)),
+          invuln: Number(state.player.invuln.toFixed(2)),
+        },
+        bosses: state.bosses.filter((b) => b.alive).map((b) => ({
+          id: b.id,
+          role: b.role,
+          x: Number(b.x.toFixed(2)),
+          y: Number(b.y.toFixed(2)),
+          hp: b.hp,
+          active: b.active ? { type: b.active.type, phase: b.active.phase, name: b.active.spec.name } : null,
+          invulnerable: b.invuln > 0 || b.invisible > 0,
+        })),
+        projectiles: state.projectiles.slice(0, 12).map((p) => ({ x: Number(p.x.toFixed(2)), y: Number(p.y.toFixed(2)), speed: p.speed })),
+        hazards: {
+          blasts: state.blasts.length,
+          lasers: state.lasers.length,
+          safeZones: state.safeZones.length,
+          markers: state.markers.length,
+        },
+        selectedParams: {
+          key: state.selectedTuneKey,
+          values: specTable[state.selectedTuneKey],
+        },
+      });
+
+      window.advanceTime = (ms) => {
+        manualStepping = true;
+        const steps = Math.max(1, Math.round(ms / (1000 / 60)));
+        for (let i = 0; i < steps; i++) update(1 / 60);
+        return window.render_game_to_text();
+      };
+
+      startPhase("P3");
+      requestAnimationFrame(frame);
+    })();
+  </script>
+</body>
+</html>
