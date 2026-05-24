@@ -42,6 +42,7 @@ public class GunWeapon : MonoBehaviour
         }
 
         _cooldownTimer = cooldown;
+        YongwooAudioManager.Play(YongwooSfxId.GunFire, 0.72f, 0.04f);
 
         if (muzzleFlash != null)
         {

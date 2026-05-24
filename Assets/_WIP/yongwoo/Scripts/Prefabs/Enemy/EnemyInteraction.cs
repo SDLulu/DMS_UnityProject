@@ -105,6 +105,10 @@ public class EnemyInteraction : MonoBehaviour, IDamageReceiver
         }
 
         _flashRoutine = StartCoroutine(FlashRoutine());
+        if (_currentHealth > 0f)
+        {
+            YongwooAudioManager.Play(YongwooSfxId.EnemyHurt, 0.68f, 0.05f);
+        }
         Damaged?.Invoke();
 
         if (_currentHealth <= 0f)
@@ -154,6 +158,7 @@ public class EnemyInteraction : MonoBehaviour, IDamageReceiver
     private void HandleDeath()
     {
         _isDead = true;
+        YongwooAudioManager.Play(YongwooSfxId.EnemyDeath, 0.72f, 0.04f);
         Died?.Invoke();
 
         if (spriteRenderer != null)

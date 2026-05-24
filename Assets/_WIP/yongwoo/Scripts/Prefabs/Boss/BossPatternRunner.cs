@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 // 역할:
@@ -30,6 +31,7 @@ public class BossPatternRunner : MonoBehaviour
     private float _stateTimer;
     private RunnerState _state = RunnerState.Idle;
     private IBossPattern _currentPattern;
+    private bool _allowAutoPatternMerge = true;
 
     private enum RunnerState
     {
@@ -42,6 +44,30 @@ public class BossPatternRunner : MonoBehaviour
 
     public IBossPattern CurrentPattern => _currentPattern;
 
+    public void SetPatternSlots(MonoBehaviour[] slots, bool allowAutoMerge = false)
+    {
+        patternSlots = slots;
+        _slotIndex = 0;
+        _allowAutoPatternMerge = allowAutoMerge;
+    }
+
+    public void RestartPatternLoop(float delay)
+    {
+        if (_currentPattern != null && _currentPattern.IsActive)
+        {
+            _currentPattern.EndPattern();
+        }
+
+        _currentPattern = null;
+        _slotIndex = 0;
+        if (!enabled)
+        {
+            enabled = true;
+        }
+        _state = RunnerState.Startup;
+        _stateTimer = Mathf.Max(0f, delay);
+    }
+
     private void Reset()
     {
         interaction = GetComponent<BossInteraction>();
@@ -52,7 +78,8 @@ public class BossPatternRunner : MonoBehaviour
     {
         interaction ??= GetComponent<BossInteraction>();
         teleporter ??= GetComponent<BossTeleporter>();
-        player ??= FindFirstObjectByType<PlayerInteraction>()?.transform;
+        ResolvePlayer();
+        EnsurePatternSlots();
     }
 
     private void OnEnable()
@@ -150,6 +177,9 @@ public class BossPatternRunner : MonoBehaviour
 
     private void StartNextPattern()
     {
+        ResolvePlayer();
+        EnsurePatternSlots();
+
         IBossPattern next = PickNextPattern();
         if (next == null)
         {
@@ -189,5 +219,51 @@ public class BossPatternRunner : MonoBehaviour
         }
 
         return null;
+    }
+
+    private void ResolvePlayer()
+    {
+        if (player != null)
+        {
+            return;
+        }
+
+        player = FindFirstObjectByType<PlayerInteraction>()?.transform;
+    }
+
+    private void EnsurePatternSlots()
+    {
+        if (!_allowAutoPatternMerge)
+        {
+            return;
+        }
+
+        MonoBehaviour[] attached = GetComponents<MonoBehaviour>();
+        List<MonoBehaviour> merged = patternSlots != null
+            ? new List<MonoBehaviour>(patternSlots)
+            : new List<MonoBehaviour>();
+
+        bool changed = false;
+        for (int i = 0; i < attached.Length; i++)
+        {
+            MonoBehaviour candidate = attached[i];
+            if (candidate == null || candidate == this || candidate is not IBossPattern)
+            {
+                continue;
+            }
+
+            if (merged.Contains(candidate))
+            {
+                continue;
+            }
+
+            merged.Add(candidate);
+            changed = true;
+        }
+
+        if (changed || patternSlots == null)
+        {
+            patternSlots = merged.ToArray();
+        }
     }
 }

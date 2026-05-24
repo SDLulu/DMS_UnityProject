@@ -156,42 +156,38 @@ public static class PauseUiInstaller
         AddImage(bg, new Color(0.02f, 0.028f, 0.032f, 1f));
 
         GameObject scanLine = new GameObject("ScanLine", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
-        SetRect(scanLine, bg.transform, new Vector2(0f, 0.48f), new Vector2(1f, 0.48f), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(0f, 3f));
+        SetRect(scanLine, bg.transform, new Vector2(0.10f, 0.51f), new Vector2(0.90f, 0.57f), new Vector2(0.5f, 0.5f), Vector2.zero, Vector2.zero);
         AddImage(scanLine, new Color(0.16f, 0.95f, 0.82f, 0.45f));
 
         GameObject title = new GameObject("TitleText", typeof(RectTransform), typeof(CanvasRenderer), typeof(Text));
-        SetRect(title, canvasGo.transform, new Vector2(0.12f, 0.58f), new Vector2(0.88f, 0.82f), new Vector2(0.5f, 0.5f), Vector2.zero, Vector2.zero);
-        AddText(title, "DEEP DIVE: HOME", 72, TextAnchor.MiddleCenter, new Color(0.83f, 1f, 0.96f, 1f));
-
-        GameObject subtitle = new GameObject("SubtitleText", typeof(RectTransform), typeof(CanvasRenderer), typeof(Text));
-        SetRect(subtitle, canvasGo.transform, new Vector2(0.2f, 0.5f), new Vector2(0.8f, 0.58f), new Vector2(0.5f, 0.5f), Vector2.zero, Vector2.zero);
-        AddText(subtitle, "목업 타이틀 씬", 26, TextAnchor.MiddleCenter, new Color(0.6f, 0.78f, 0.78f, 1f));
+        SetRect(title, canvasGo.transform, new Vector2(0.08f, 0.58f), new Vector2(0.92f, 0.84f), new Vector2(0.5f, 0.5f), Vector2.zero, Vector2.zero);
+        AddText(title, "DEEP DIVE: HOME", 104, TextAnchor.MiddleCenter, new Color(0.90f, 1f, 0.98f, 1f));
 
         Button startButton = MakeButton(
             canvasGo.transform,
             "StartButton",
             "게임 시작",
-            new Vector2(0.5f, 0.38f),
-            new Vector2(0.5f, 0.38f),
+            new Vector2(0.5f, 0.36f),
+            new Vector2(0.5f, 0.36f),
             new Vector2(0.5f, 0.5f),
             Vector2.zero,
-            new Vector2(300f, 60f),
-            new Color(0.08f, 0.42f, 0.38f, 1f),
+            new Vector2(480f, 68f),
+            new Color(0.10f, 0.40f, 0.36f, 0.28f),
             Color.white,
-            24);
+            38);
 
         Button quitButton = MakeButton(
             canvasGo.transform,
             "QuitButton",
             "종료",
-            new Vector2(0.5f, 0.3f),
-            new Vector2(0.5f, 0.3f),
+            new Vector2(0.5f, 0.26f),
+            new Vector2(0.5f, 0.26f),
             new Vector2(0.5f, 0.5f),
             Vector2.zero,
-            new Vector2(300f, 54f),
-            new Color(0.16f, 0.18f, 0.2f, 1f),
-            new Color(0.9f, 0.95f, 0.96f, 1f),
-            22);
+            new Vector2(420f, 60f),
+            new Color(0.12f, 0.14f, 0.16f, 0.22f),
+            new Color(0.88f, 0.96f, 0.97f, 0.95f),
+            34);
 
         TitleSceneController titleController = canvasGo.AddComponent<TitleSceneController>();
         SetPrivateObjectReference(titleController, "startButton", startButton);
@@ -201,6 +197,7 @@ public static class PauseUiInstaller
         GameObject eventSystem = new GameObject("EventSystem", typeof(EventSystem), typeof(InputSystemUIInputModule));
         eventSystem.GetComponent<EventSystem>().SetSelectedGameObject(startButton.gameObject);
 
+        TitleUiEffectSetup.ApplyToTitleUi(canvasGo);
         EditorSceneManager.SaveScene(titleScene, TitlePath);
 
         EditorBuildSettingsScene[] scenes = EditorBuildSettings.scenes;

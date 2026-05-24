@@ -105,6 +105,7 @@ public class PauseMenuController : MonoBehaviour
         Time.fixedDeltaTime = 0f;
         SetPanelVisible(true);
         UpdatePauseButtonVisual();
+        YongwooAudioManager.Play(YongwooSfxId.PauseOpen, 0.58f, 0.02f);
 
         if (EventSystem.current != null && resumeButton != null)
         {
@@ -123,6 +124,7 @@ public class PauseMenuController : MonoBehaviour
         IsPaused = false;
         SetPanelVisible(false);
         UpdatePauseButtonVisual();
+        YongwooAudioManager.Play(YongwooSfxId.PauseClose, 0.52f, 0.02f);
 
         Time.timeScale = _timeScaleBeforePause;
         Time.fixedDeltaTime = _fixedDeltaTimeBeforePause;
@@ -142,6 +144,7 @@ public class PauseMenuController : MonoBehaviour
         _isPaused = false;
         IsPaused = false;
         UpdatePauseButtonVisual();
+        YongwooAudioManager.Play(YongwooSfxId.UiClick, 0.5f, 0.02f);
         Time.timeScale = 1f;
         Time.fixedDeltaTime = 0.02f;
         GameInput.Instance.EnableGameplay();

@@ -57,10 +57,44 @@ public class ScreenGlitchOverlay : MonoBehaviour
         ApplyVisual(intensity);
     }
 
+    public IEnumerator PlayTransitionCover(float fadeIn, float hold, float fadeOut, float peakIntensity = 1f)
+    {
+        StopPulse();
+        StopFade();
+        peakIntensity = Mathf.Clamp01(peakIntensity);
+        fadeIn = Mathf.Max(0f, fadeIn);
+        hold = Mathf.Max(0f, hold);
+        fadeOut = Mathf.Max(0f, fadeOut);
+
+        if (fadeIn > 0f)
+        {
+            yield return FadeRoutine(peakIntensity, fadeIn);
+        }
+        else
+        {
+            SetIntensity(peakIntensity);
+        }
+
+        if (hold > 0f)
+        {
+            yield return new WaitForSecondsRealtime(hold);
+        }
+
+        if (fadeOut > 0f)
+        {
+            yield return FadeRoutine(0f, fadeOut);
+        }
+        else
+        {
+            SetIntensity(0f);
+        }
+    }
+
     public IEnumerator Pulse(float targetIntensity, float duration)
     {
         StopFade();
         StopPulse();
+        YongwooAudioManager.Play(YongwooSfxId.GlitchPulse, Mathf.Lerp(0.28f, 0.68f, Mathf.Clamp01(targetIntensity)), 0.04f);
         _pulseRoutine = StartCoroutine(PulseRoutine(targetIntensity, duration));
         yield return _pulseRoutine;
     }

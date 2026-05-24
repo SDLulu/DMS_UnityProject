@@ -1,17 +1,15 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 // 역할:
-// - Yongwoo 씬의 배경 루트 오브젝트에 붙어 카메라 움직임에 따라 레이어를 서로 다른 비율로 이동시킵니다.
-// - 전투 규칙과 무관한 순수 시각 보조 컴포넌트입니다.
-//
-// 구조 포인트:
-// - 시스템 매니저가 아니라 Yongwoo 씬 표현용 배경 오브젝트에 직접 붙는 뷰 컴포넌트입니다.
+// - Yongwoo 씬의 배경 루트 오브젝트에 붙어 추적 기준점 이동량에 따라 레이어를 서로 다른 비율로 이동시킵니다.
+// - 평소: targetCamera.position (원본과 동일).
+// - 보스전: SimpleCameraFollow.GetParallaxReferencePosition() (캐릭터 + 오차 보정).
 
 [DisallowMultipleComponent]
 public class SimpleParallaxBackground : MonoBehaviour
 {
+    [SerializeField] private SimpleCameraFollow cameraFollow;
     [SerializeField] private Transform targetCamera;
     [SerializeField] private float farLayerHorizontal = 0.05f;
     [SerializeField] private float nearLayerHorizontal = 0.28f;
@@ -20,7 +18,7 @@ public class SimpleParallaxBackground : MonoBehaviour
     [SerializeField] private bool autoRefreshChildren = true;
 
     private readonly List<LayerState> _layers = new();
-    private Vector3 _cameraStartPosition;
+    private Vector3 _referenceStartPosition;
     private int _cachedChildCount = -1;
     private bool _isInitialized;
 
@@ -41,7 +39,12 @@ public class SimpleParallaxBackground : MonoBehaviour
             return;
         }
 
-        Vector3 cameraOffset = targetCamera.position - _cameraStartPosition;
+        if (!TryGetReferencePosition(out Vector3 reference))
+        {
+            return;
+        }
+
+        Vector3 referenceOffset = reference - _referenceStartPosition;
 
         for (int i = 0; i < _layers.Count; i++)
         {
@@ -52,8 +55,8 @@ public class SimpleParallaxBackground : MonoBehaviour
             }
 
             Vector3 parallaxOffset = new Vector3(
-                cameraOffset.x * layer.HorizontalMultiplier,
-                cameraOffset.y * layer.VerticalMultiplier,
+                referenceOffset.x * layer.HorizontalMultiplier,
+                referenceOffset.y * layer.VerticalMultiplier,
                 0f);
 
             layer.Transform.localPosition = layer.StartLocalPosition + parallaxOffset;
@@ -95,12 +98,12 @@ public class SimpleParallaxBackground : MonoBehaviour
 
     private bool TryInitialize()
     {
-        if (targetCamera == null && Camera.main != null)
+        if (!TryGetReferencePosition(out Vector3 reference))
         {
-            targetCamera = Camera.main.transform;
+            return false;
         }
 
-        if (targetCamera == null || _layers.Count == 0)
+        if (_layers.Count == 0)
         {
             return false;
         }
@@ -110,7 +113,7 @@ public class SimpleParallaxBackground : MonoBehaviour
             return true;
         }
 
-        _cameraStartPosition = targetCamera.position;
+        _referenceStartPosition = reference;
         for (int i = 0; i < _layers.Count; i++)
         {
             LayerState layer = _layers[i];
@@ -124,6 +127,30 @@ public class SimpleParallaxBackground : MonoBehaviour
         }
 
         _isInitialized = true;
+        return true;
+    }
+
+    private bool TryGetReferencePosition(out Vector3 reference)
+    {
+        if (targetCamera == null && Camera.main != null)
+        {
+            targetCamera = Camera.main.transform;
+        }
+
+        cameraFollow ??= FindFirstObjectByType<SimpleCameraFollow>();
+        if (cameraFollow != null && cameraFollow.IsArenaLocked)
+        {
+            reference = cameraFollow.GetParallaxReferencePosition();
+            return true;
+        }
+
+        if (targetCamera == null)
+        {
+            reference = Vector3.zero;
+            return false;
+        }
+
+        reference = targetCamera.position;
         return true;
     }
 
@@ -163,7 +190,7 @@ public class SimpleParallaxBackground : MonoBehaviour
         return int.MaxValue;
     }
 
-    [Serializable]
+    [System.Serializable]
     private struct LayerState
     {
         public Transform Transform;

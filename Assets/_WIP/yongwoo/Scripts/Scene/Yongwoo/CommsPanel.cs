@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,6 +19,14 @@ public class CommsPanel : MonoBehaviour
     [SerializeField] private Sprite passerbyPortraitSprite;
     [SerializeField] private Text speakerText;
     [SerializeField] private Text bodyText;
+
+    [Header("Typing")]
+    [SerializeField] private bool useTypewriter = true;
+    [SerializeField, Min(1f)] private float charactersPerSecond = 36f;
+    [SerializeField, Range(0.1f, 1f)] private float maxTypingDurationRatio = 0.65f;
+    [SerializeField, Min(1)] private int typingSoundEveryCharacters = 2;
+
+    private Coroutine _typingRoutine;
 
     private void Reset()
     {
@@ -42,6 +51,11 @@ public class CommsPanel : MonoBehaviour
 
     public void ShowLine(string speaker, string body)
     {
+        ShowLine(speaker, body, 0f);
+    }
+
+    public void ShowLine(string speaker, string body, float maxDuration)
+    {
         TryAutoBind();
 
         if (panelRoot != null)
@@ -63,15 +77,17 @@ public class CommsPanel : MonoBehaviour
 
         if (bodyText != null)
         {
-            bodyText.text = body ?? string.Empty;
+            StartTypewriter(body ?? string.Empty, maxDuration);
         }
 
         UpdatePortrait(speaker);
+        YongwooAudioManager.Play(YongwooSfxId.CommsIn, 0.55f, 0.02f);
     }
 
     public void Hide()
     {
         TryAutoBind();
+        bool wasVisible = panelRoot != null && panelRoot.gameObject.activeInHierarchy;
 
         if (speakerText != null)
         {
@@ -84,6 +100,8 @@ public class CommsPanel : MonoBehaviour
             bodyText.text = string.Empty;
         }
 
+        StopTypewriter();
+
         if (panelGroup != null)
         {
             panelGroup.alpha = 1f;
@@ -92,6 +110,11 @@ public class CommsPanel : MonoBehaviour
         if (panelRoot != null)
         {
             panelRoot.gameObject.SetActive(false);
+        }
+
+        if (wasVisible && Application.isPlaying)
+        {
+            YongwooAudioManager.Play(YongwooSfxId.CommsOut, 0.4f, 0.02f);
         }
     }
 
@@ -172,6 +195,69 @@ public class CommsPanel : MonoBehaviour
         }
 
         return null;
+    }
+
+    private void StartTypewriter(string message, float maxDuration)
+    {
+        StopTypewriter();
+
+        if (bodyText == null)
+        {
+            return;
+        }
+
+        if (!useTypewriter || maxDuration <= 0f || string.IsNullOrEmpty(message))
+        {
+            bodyText.text = message;
+            return;
+        }
+
+        _typingRoutine = StartCoroutine(TypewriterRoutine(message, maxDuration));
+    }
+
+    private IEnumerator TypewriterRoutine(string message, float maxDuration)
+    {
+        bodyText.text = string.Empty;
+
+        int characterCount = message.Length;
+        float naturalDuration = characterCount / Mathf.Max(1f, charactersPerSecond);
+        float typingDuration = Mathf.Min(naturalDuration, maxDuration * maxTypingDurationRatio);
+        float interval = characterCount > 0 ? typingDuration / characterCount : 0f;
+
+        for (int i = 0; i < characterCount; i++)
+        {
+            bodyText.text = message.Substring(0, i + 1);
+            if (ShouldPlayTypingSound(message[i], i))
+            {
+                YongwooAudioManager.Play(YongwooSfxId.TypingTick, 0.28f, 0.04f);
+            }
+
+            if (interval > 0f)
+            {
+                yield return new WaitForSecondsRealtime(interval);
+            }
+        }
+
+        bodyText.text = message;
+        _typingRoutine = null;
+    }
+
+    private bool ShouldPlayTypingSound(char character, int index)
+    {
+        return !char.IsWhiteSpace(character)
+            && typingSoundEveryCharacters > 0
+            && index % typingSoundEveryCharacters == 0;
+    }
+
+    private void StopTypewriter()
+    {
+        if (_typingRoutine == null)
+        {
+            return;
+        }
+
+        StopCoroutine(_typingRoutine);
+        _typingRoutine = null;
     }
 
     private static Transform FindDescendantByName(Transform root, string targetName)

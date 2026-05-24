@@ -20,6 +20,28 @@ public class SimpleCameraFollow : MonoBehaviour
     private float _shakeTimer;
     private float _shakeDuration;
     private float _shakeStrength;
+    private bool _arenaLocked;
+    private Vector3 _arenaFixedPosition;
+    private Vector3 _parallaxLockPlayerReference;
+    private Vector3 _parallaxLockCameraReference;
+
+    public bool IsArenaLocked => _arenaLocked;
+
+    /// <summary>
+    /// 패럴럭스 기준점. 평소는 camera.position과 동일하고,
+    /// 보스전 고정 시에는 입장 시 카메라·캐릭터 오차를 유지한 채 좌우 이동만 반영합니다.
+    /// (reference = player + parallaxOffsetFromPlayer)
+    /// </summary>
+    public Vector3 GetParallaxReferencePosition()
+    {
+        Transform player = ResolveTarget();
+        if (player == null)
+        {
+            return transform.position;
+        }
+
+        return player.position + GetParallaxOffsetFromPlayer(player);
+    }
 
     public PlayerCameraConfig CreateConfigSnapshot()
     {
@@ -49,18 +71,82 @@ public class SimpleCameraFollow : MonoBehaviour
         _targetBody = target != null ? target.GetComponent<Rigidbody2D>() : null;
     }
 
+    public void LockToArenaPosition(Vector3 worldPosition)
+    {
+        Transform player = ResolveTarget();
+        _parallaxLockCameraReference = transform.position;
+
+        _arenaLocked = true;
+        _arenaFixedPosition = worldPosition;
+        _currentLookAhead = 0f;
+        transform.position = worldPosition;
+
+        if (player != null)
+        {
+            _parallaxLockPlayerReference = player.position;
+        }
+    }
+
+    public void UnlockArenaFollow()
+    {
+        _arenaLocked = false;
+    }
+
+    private Vector3 GetParallaxOffsetFromPlayer(Transform player)
+    {
+        if (!_arenaLocked)
+        {
+            // 매 프레임 실제 카메라-캐릭터 오차(offset + lookAhead + lerp) → camera.position 과 동일
+            return transform.position - player.position;
+        }
+
+        // 입장 직전 카메라 Y 유지 + 캐릭터 좌우 delta + 쉐이크
+        Vector3 playerHorizontalDelta = new Vector3(player.position.x - _parallaxLockPlayerReference.x, 0f, 0f);
+        Vector3 cameraShake = transform.position - _arenaFixedPosition;
+        return _parallaxLockCameraReference + playerHorizontalDelta + cameraShake - player.position;
+    }
+
+    private Transform ResolveTarget()
+    {
+        if (target != null)
+        {
+            return target;
+        }
+
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject == null)
+        {
+            return null;
+        }
+
+        target = playerObject.transform;
+        _targetBody = target.GetComponent<Rigidbody2D>();
+        return target;
+    }
+
     private void LateUpdate()
     {
+        if (_arenaLocked)
+        {
+            Vector3 lockedPosition = _arenaFixedPosition;
+            if (_shakeTimer > 0f)
+            {
+                float normalized = _shakeDuration <= 0f ? 0f : _shakeTimer / _shakeDuration;
+                Vector2 shake = Random.insideUnitCircle * (_shakeStrength * normalized);
+                lockedPosition += new Vector3(shake.x, shake.y, 0f);
+                _shakeTimer = Mathf.Max(0f, _shakeTimer - Time.unscaledDeltaTime);
+            }
+
+            transform.position = lockedPosition;
+            return;
+        }
+
         if (target == null)
         {
-            GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
-            if (playerObject == null)
+            if (ResolveTarget() == null)
             {
                 return;
             }
-
-            target = playerObject.transform;
-            _targetBody = target.GetComponent<Rigidbody2D>();
         }
 
         if (_targetBody == null && target != null)

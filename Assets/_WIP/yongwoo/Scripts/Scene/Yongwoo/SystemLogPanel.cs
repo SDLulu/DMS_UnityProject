@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,6 +18,14 @@ public class SystemLogPanel : MonoBehaviour
     [Header("Visual")]
     [SerializeField] private bool useBackdrop;
     [SerializeField] private Color backdropColor = Color.black;
+
+    [Header("Typing")]
+    [SerializeField] private bool useTypewriter = true;
+    [SerializeField, Min(1f)] private float charactersPerSecond = 42f;
+    [SerializeField, Range(0.1f, 1f)] private float maxTypingDurationRatio = 0.55f;
+    [SerializeField, Min(1)] private int typingSoundEveryCharacters = 2;
+
+    private Coroutine _typingRoutine;
 
     private void Reset()
     {
@@ -41,6 +50,11 @@ public class SystemLogPanel : MonoBehaviour
 
     public void Show(string message)
     {
+        Show(message, 0f);
+    }
+
+    public void Show(string message, float maxDuration)
+    {
         TryAutoBind();
 
         if (panelRoot != null)
@@ -57,13 +71,15 @@ public class SystemLogPanel : MonoBehaviour
 
         if (logText != null)
         {
-            logText.text = message ?? string.Empty;
+            StartTypewriter(message ?? string.Empty, maxDuration);
         }
 
         if (backdropImage != null)
         {
             ApplyBackdrop();
         }
+
+        YongwooAudioManager.Play(YongwooSfxId.SystemLogIn, 0.58f, 0.02f);
     }
 
     public void SetAlpha(float alpha)
@@ -132,6 +148,8 @@ public class SystemLogPanel : MonoBehaviour
             logText.text = string.Empty;
         }
 
+        StopTypewriter();
+
         if (panelRoot != null)
         {
             panelRoot.gameObject.SetActive(false);
@@ -176,6 +194,69 @@ public class SystemLogPanel : MonoBehaviour
 
         backdropImage.gameObject.SetActive(useBackdrop);
         backdropImage.color = useBackdrop ? backdropColor : Color.clear;
+    }
+
+    private void StartTypewriter(string message, float maxDuration)
+    {
+        StopTypewriter();
+
+        if (logText == null)
+        {
+            return;
+        }
+
+        if (!useTypewriter || maxDuration <= 0f || string.IsNullOrEmpty(message))
+        {
+            logText.text = message;
+            return;
+        }
+
+        _typingRoutine = StartCoroutine(TypewriterRoutine(message, maxDuration));
+    }
+
+    private IEnumerator TypewriterRoutine(string message, float maxDuration)
+    {
+        logText.text = string.Empty;
+
+        int characterCount = message.Length;
+        float naturalDuration = characterCount / Mathf.Max(1f, charactersPerSecond);
+        float typingDuration = Mathf.Min(naturalDuration, maxDuration * maxTypingDurationRatio);
+        float interval = characterCount > 0 ? typingDuration / characterCount : 0f;
+
+        for (int i = 0; i < characterCount; i++)
+        {
+            logText.text = message.Substring(0, i + 1);
+            if (ShouldPlayTypingSound(message[i], i))
+            {
+                YongwooAudioManager.Play(YongwooSfxId.TypingTick, 0.34f, 0.04f);
+            }
+
+            if (interval > 0f)
+            {
+                yield return new WaitForSecondsRealtime(interval);
+            }
+        }
+
+        logText.text = message;
+        _typingRoutine = null;
+    }
+
+    private bool ShouldPlayTypingSound(char character, int index)
+    {
+        return !char.IsWhiteSpace(character)
+            && typingSoundEveryCharacters > 0
+            && index % typingSoundEveryCharacters == 0;
+    }
+
+    private void StopTypewriter()
+    {
+        if (_typingRoutine == null)
+        {
+            return;
+        }
+
+        StopCoroutine(_typingRoutine);
+        _typingRoutine = null;
     }
 
     private static Transform FindDescendantByName(Transform root, string targetName)

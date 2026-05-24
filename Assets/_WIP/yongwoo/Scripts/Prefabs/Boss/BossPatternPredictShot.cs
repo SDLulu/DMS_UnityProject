@@ -22,6 +22,11 @@ public class BossPatternPredictShot : BossPatternBase
 
     public override string PatternId => "Predict 3 Shot";
 
+    protected override Vector3 GetAimOriginPosition()
+    {
+        return muzzle != null ? muzzle.position : base.GetAimOriginPosition();
+    }
+
     protected override void OnFireBegin(Vector2 aimDirection)
     {
         BuildDirections();
@@ -48,8 +53,9 @@ public class BossPatternPredictShot : BossPatternBase
 
     private void BuildDirections()
     {
+        Vector3 origin = GetAimOriginPosition();
         Vector3 bossPos = _ctx.boss != null ? _ctx.boss.position : transform.position;
-        Vector3 playerPos = _ctx.player != null ? _ctx.player.position : bossPos + Vector3.right;
+        Vector3 playerPos = _ctx.player != null ? _ctx.player.position : origin + Vector3.right;
 
         Vector2 velocity = Vector2.zero;
         if (_ctx.player != null && _ctx.player.TryGetComponent(out Rigidbody2D body))
@@ -66,9 +72,9 @@ public class BossPatternPredictShot : BossPatternBase
         Vector3 lead = playerPos + Vector3.right * sign * leadDistance;
         Vector3 back = playerPos - Vector3.right * sign * backDistance;
 
-        _directions[0] = DirectionTo(bossPos, playerPos);
-        _directions[1] = DirectionTo(bossPos, lead);
-        _directions[2] = DirectionTo(bossPos, back);
+        _directions[0] = DirectionTo(origin, playerPos);
+        _directions[1] = DirectionTo(origin, lead);
+        _directions[2] = DirectionTo(origin, back);
     }
 
     private static Vector2 DirectionTo(Vector3 from, Vector3 to)

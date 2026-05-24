@@ -39,6 +39,7 @@ public class TitleSceneController : MonoBehaviour
 
     public void LoadStageScene()
     {
+        YongwooAudioManager.Play(YongwooSfxId.TitleStart, 0.65f, 0.02f);
         Time.timeScale = 1f;
         Time.fixedDeltaTime = 0.02f;
         SceneManager.LoadScene(stageSceneName);
@@ -46,6 +47,7 @@ public class TitleSceneController : MonoBehaviour
 
     public void QuitGame()
     {
+        YongwooAudioManager.Play(YongwooSfxId.TitleQuit, 0.5f, 0.02f);
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 
 // 역할:
 // - 씬에 배치한 이벤트 단계를 순서대로 실행하는 얇은 진행 컴포넌트입니다.
@@ -38,7 +39,8 @@ public class SceneEventSequence : MonoBehaviour
         UnfreezeTime,
         SetCameraTarget,
         LockInput,
-        UnlockInput
+        UnlockInput,
+        PlayCutsceneVideo
     }
 
     public enum InputWaitType
@@ -71,6 +73,8 @@ public class SceneEventSequence : MonoBehaviour
         [Range(0f, 1f)] public float glitchIntensity = 0.6f;
         [Range(0f, 100f)] public float progressFrom;
         [Range(0f, 100f)] public float progressTo = 100f;
+        public VideoClip videoClip;
+        public bool skippable = true;
     }
 
     [Header("Playback")]
@@ -87,12 +91,14 @@ public class SceneEventSequence : MonoBehaviour
     [SerializeField] private ScreenFade screenFade;
     [SerializeField] private ScreenGlitchOverlay glitchOverlay;
     [SerializeField] private PlayerSlowMotion playerSlowMotion;
+    [SerializeField] private CutsceneVideoPanel cutsceneVideoPanel;
 
     private Coroutine _playRoutine;
     private bool _hasPlayed;
     private bool _ownsTimeFreeze;
 
     public bool IsPlaying => _playRoutine != null;
+    public int StepCount => steps.Count;
 
     private void Reset()
     {
@@ -273,6 +279,13 @@ public class SceneEventSequence : MonoBehaviour
                         }
                     }
                     continue;
+
+                case StepType.PlayCutsceneVideo:
+                    if (cutsceneVideoPanel != null)
+                    {
+                        yield return cutsceneVideoPanel.Play(step.videoClip, step.skippable);
+                    }
+                    continue;
             }
 
             ExecuteStep(step);
@@ -304,7 +317,7 @@ public class SceneEventSequence : MonoBehaviour
                 playerInteraction?.SetGameplayControlEnabled(true, clearVelocity: false);
                 break;
             case StepType.ShowSystemLog:
-                systemLogPanel?.Show(step.message);
+                systemLogPanel?.Show(step.message, step.duration);
                 break;
             case StepType.HideSystemLog:
                 systemLogPanel?.Hide();
@@ -315,7 +328,7 @@ public class SceneEventSequence : MonoBehaviour
             case StepType.FadeSystemLog:
                 break;
             case StepType.ShowCommsLine:
-                commsPanel?.ShowLine(step.speaker, step.message);
+                commsPanel?.ShowLine(step.speaker, step.message, step.duration);
                 break;
             case StepType.HideComms:
                 commsPanel?.Hide();
@@ -350,11 +363,13 @@ public class SceneEventSequence : MonoBehaviour
                         playerSlowMotion.PushExternalFreeze();
                     }
                 }
+                YongwooAudioManager.Play(YongwooSfxId.TimeFreeze, 0.58f, 0.02f);
                 Time.timeScale = 0f;
                 Time.fixedDeltaTime = 0f;
                 break;
             case StepType.UnfreezeTime:
                 ReleaseTimeFreezeIfHeld();
+                YongwooAudioManager.Play(YongwooSfxId.TimeUnfreeze, 0.5f, 0.02f);
                 break;
             case StepType.SetCameraTarget:
                 if (cameraFollow != null)
@@ -497,6 +512,7 @@ public class SceneEventSequence : MonoBehaviour
             };
             if (detected)
             {
+                YongwooAudioManager.Play(YongwooSfxId.UiConfirm, 0.45f, 0.02f);
                 yield break;
             }
         }
@@ -593,5 +609,35 @@ public class SceneEventSequence : MonoBehaviour
                 playerSlowMotion = Object.FindFirstObjectByType<PlayerSlowMotion>();
             }
         }
+
+        if (cutsceneVideoPanel == null)
+        {
+            cutsceneVideoPanel = Object.FindFirstObjectByType<CutsceneVideoPanel>(FindObjectsInactive.Include);
+        }
     }
+
+    public void ConfigureSteps(IEnumerable<Step> newSteps)
+    {
+        steps.Clear();
+        if (newSteps != null)
+        {
+            steps.AddRange(newSteps);
+        }
+
+#if UNITY_EDITOR
+        if (!Application.isPlaying)
+        {
+            UnityEditor.EditorUtility.SetDirty(this);
+        }
+#endif
+    }
+
+#if UNITY_EDITOR
+    public int EditorStepCount => steps.Count;
+
+    public void EditorSetSteps(IEnumerable<Step> newSteps)
+    {
+        ConfigureSteps(newSteps);
+    }
+#endif
 }

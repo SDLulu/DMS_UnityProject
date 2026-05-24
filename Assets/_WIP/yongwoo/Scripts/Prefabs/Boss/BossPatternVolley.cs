@@ -20,6 +20,11 @@ public class BossPatternVolley : BossPatternBase
 
     public override string PatternId => "P1-2 Volley";
 
+    protected override Vector3 GetAimOriginPosition()
+    {
+        return muzzle != null ? muzzle.position : base.GetAimOriginPosition();
+    }
+
     protected override void OnFireBegin(Vector2 aimDirection)
     {
         _shotsFired = 0;

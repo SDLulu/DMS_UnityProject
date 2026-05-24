@@ -25,7 +25,15 @@ public class BossTeleporter : MonoBehaviour
     [SerializeField] private BossInteraction interaction;
     [SerializeField] private SpriteRenderer[] visualsToHide;
 
+    [Header("VFX")]
+    [SerializeField] private Color departRingColor = new Color(0.45f, 0.85f, 1f, 0.55f);
+    [SerializeField] private Color arriveRingColor = new Color(1f, 0.25f, 0.2f, 0.65f);
+    [SerializeField, Min(0.1f)] private float ringDiameter = 1.6f;
+
     private bool _isHopping;
+    private bool _arenaAnchorsOnly;
+    private bool _hasArenaBounds;
+    private Bounds _arenaBounds;
 
     public bool IsHopping => _isHopping;
 
@@ -44,6 +52,23 @@ public class BossTeleporter : MonoBehaviour
         }
     }
 
+    public void SetAnchors(Transform[] newAnchors, bool arenaAnchorsOnly = false)
+    {
+        anchors = newAnchors;
+        _arenaAnchorsOnly = arenaAnchorsOnly;
+    }
+
+    public void SetArenaBounds(Bounds bounds)
+    {
+        _arenaBounds = bounds;
+        _hasArenaBounds = true;
+    }
+
+    public Vector3 ClampToArena(Vector3 worldPosition)
+    {
+        return ClampDestination(worldPosition);
+    }
+
     public Coroutine HopToRandom()
     {
         return StartCoroutine(HopRoutine(PickDestination()));
@@ -58,8 +83,8 @@ public class BossTeleporter : MonoBehaviour
     {
         if (anchors != null && anchors.Length > 0)
         {
-            int safety = 8;
-            Transform pick = null;
+            Transform fallback = null;
+            int safety = anchors.Length * 4;
             while (safety-- > 0)
             {
                 Transform candidate = anchors[Random.Range(0, anchors.Length)];
@@ -68,25 +93,55 @@ public class BossTeleporter : MonoBehaviour
                     continue;
                 }
 
+                fallback ??= candidate;
+
                 if (Vector3.SqrMagnitude(candidate.position - transform.position) < 0.01f)
                 {
                     continue;
                 }
 
-                pick = candidate;
-                break;
+                return ClampDestination(candidate.position);
             }
 
-            if (pick != null)
+            if (fallback != null)
             {
-                return pick.position;
+                return ClampDestination(fallback.position);
             }
+
+            if (_arenaAnchorsOnly)
+            {
+                return transform.position;
+            }
+        }
+
+        if (_arenaAnchorsOnly || offsetRange.sqrMagnitude <= 0.0001f)
+        {
+            return transform.position;
         }
 
         Vector3 here = transform.position;
         float dx = Random.Range(-offsetRange.x, offsetRange.x);
         float dy = Random.Range(-offsetRange.y, offsetRange.y);
-        return here + new Vector3(dx, dy, 0f);
+        return ClampDestination(here + new Vector3(dx, dy, 0f));
+    }
+
+    public void PatternBlinkTo(Vector3 destination)
+    {
+        Vector3 origin = transform.position;
+        BossVfxUtility.SpawnRingBurst(origin, departRingColor, ringDiameter);
+        BossVfxUtility.SpawnFlashDisc(origin, new Color(departRingColor.r, departRingColor.g, departRingColor.b, 0.35f), ringDiameter * 0.55f);
+        YongwooAudioManager.Play(YongwooSfxId.BossTeleportOut, 0.62f, 0.04f);
+
+        interaction?.SetTeleportInvulnerable(true);
+        SetVisualsVisible(false);
+
+        transform.position = ClampDestination(destination);
+
+        SetVisualsVisible(true);
+        BossVfxUtility.SpawnRingBurst(transform.position, arriveRingColor, ringDiameter * 1.1f);
+        BossVfxUtility.SpawnFlashDisc(transform.position, new Color(arriveRingColor.r, arriveRingColor.g, arriveRingColor.b, 0.42f), ringDiameter * 0.65f);
+        YongwooAudioManager.Play(YongwooSfxId.BossTeleportIn, 0.66f, 0.04f);
+        interaction?.SetTeleportInvulnerable(false);
     }
 
     private IEnumerator HopRoutine(Vector3 destination)
@@ -103,20 +158,46 @@ public class BossTeleporter : MonoBehaviour
             yield return new WaitForSeconds(telegraphDuration);
         }
 
+        Vector3 origin = transform.position;
+        BossVfxUtility.SpawnRingBurst(origin, departRingColor, ringDiameter);
+        BossVfxUtility.SpawnFlashDisc(origin, new Color(departRingColor.r, departRingColor.g, departRingColor.b, 0.35f), ringDiameter * 0.55f);
+        YongwooAudioManager.Play(YongwooSfxId.BossTeleportOut, 0.62f, 0.04f);
+
         interaction?.SetTeleportInvulnerable(true);
         SetVisualsVisible(false);
 
         yield return new WaitForSeconds(invulnerableHopDuration);
 
-        transform.position = destination;
+        transform.position = ClampDestination(destination);
+        BossVfxUtility.SpawnRingBurst(transform.position, arriveRingColor, ringDiameter * 1.1f);
+        BossVfxUtility.SpawnFlashDisc(transform.position, new Color(arriveRingColor.r, arriveRingColor.g, arriveRingColor.b, 0.42f), ringDiameter * 0.65f);
+        YongwooAudioManager.Play(YongwooSfxId.BossTeleportIn, 0.66f, 0.04f);
         SetVisualsVisible(true);
         interaction?.SetTeleportInvulnerable(false);
 
         _isHopping = false;
     }
 
+    private Vector3 ClampDestination(Vector3 destination)
+    {
+        if (!_hasArenaBounds)
+        {
+            return destination;
+        }
+
+        destination.x = Mathf.Clamp(destination.x, _arenaBounds.min.x, _arenaBounds.max.x);
+        destination.y = Mathf.Clamp(destination.y, _arenaBounds.min.y, _arenaBounds.max.y);
+        return destination;
+    }
+
     private void SetVisualsVisible(bool visible)
     {
+        SpriteRenderer[] currentVisuals = GetComponentsInChildren<SpriteRenderer>(includeInactive: true);
+        if (currentVisuals != null && currentVisuals.Length > 0)
+        {
+            visualsToHide = currentVisuals;
+        }
+
         if (visualsToHide == null)
         {
             return;

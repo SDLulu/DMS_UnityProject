@@ -33,6 +33,7 @@ public class PlayerSlowMotion : MonoBehaviour
     private int _externalFreezeRefs;
     private float _chargesNormalized; // 0 ~ maxCharges 실수값
     private bool _isSlowMotionLatched;
+    private bool _wasSlowMotionActive;
 
     public bool IsSlowMotionActive => isSlowMotionActive;
     public bool IsExternallyFrozen => _externalFreezeRefs > 0;
@@ -103,6 +104,11 @@ public class PlayerSlowMotion : MonoBehaviour
         }
 
         isSlowMotionActive = _isSlowMotionLatched;
+        if (isSlowMotionActive != _wasSlowMotionActive)
+        {
+            YongwooAudioManager.Play(isSlowMotionActive ? YongwooSfxId.SlowmoOn : YongwooSfxId.SlowmoOff, 0.56f, 0.02f);
+            _wasSlowMotionActive = isSlowMotionActive;
+        }
 
         if (isSlowMotionActive)
         {
@@ -124,6 +130,7 @@ public class PlayerSlowMotion : MonoBehaviour
     private void OnDisable()
     {
         _externalFreezeRefs = 0;
+        _wasSlowMotionActive = false;
         Time.timeScale = 1f;
         Time.fixedDeltaTime = 0.02f;
     }

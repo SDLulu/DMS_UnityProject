@@ -32,6 +32,7 @@ public class SwordWeapon : MonoBehaviour
         }
 
         _cooldownTimer = cooldown;
+        YongwooAudioManager.Play(YongwooSfxId.SwordSwing, 0.62f, 0.05f);
 
         if (!useAnimationEvents)
         {

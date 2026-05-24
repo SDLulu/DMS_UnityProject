@@ -273,6 +273,97 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2006416650881867932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8378774354011062134}
+  - component: {fileID: 410900003171280266}
+  m_Layer: 0
+  m_Name: Telegraph_Slam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8378774354011062134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006416650881867932}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3769975989843259567}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &410900003171280266
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006416650881867932}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 1100000003
+  m_SortingLayer: 6
+  m_SortingOrder: 38
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 0.1, b: 0.12, a: 0.28}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.28, y: 1.28}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &3030742737324695477
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,6 +475,10 @@ GameObject:
   - component: {fileID: 7247238381332385460}
   - component: {fileID: 6139157596923617922}
   - component: {fileID: 3949546267485500004}
+  - component: {fileID: 2716643793045706114}
+  - component: {fileID: 313480188961737844}
+  - component: {fileID: 2906192520098229379}
+  - component: {fileID: 4678945472939285531}
   m_Layer: 10
   m_Name: Boss_P1_Prototype
   m_TagString: Untagged
@@ -412,6 +507,7 @@ Transform:
   - {fileID: 716219802497984819}
   - {fileID: 4337902800080387960}
   - {fileID: 2811067175930095158}
+  - {fileID: 8378774354011062134}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &6163931116420958946
@@ -555,6 +651,9 @@ MonoBehaviour:
   prefireDelay: 0.12
   recoveryDelay: 0.45
   telegraphVisual: {fileID: 4218717066890768869}
+  telegraphPulseSpeed: 18
+  telegraphPulseAlpha: 0.22
+  telegraphPulseWidth: 0.12
   projectilePrefab: {fileID: 2477383323817986990, guid: 4fbabfb27bfb7354f879c7fe10fdc6b3, type: 3}
   muzzle: {fileID: 2177981642514548707}
   projectileSpeed: 15
@@ -576,6 +675,9 @@ MonoBehaviour:
   prefireDelay: 0.08
   recoveryDelay: 0.5
   telegraphVisual: {fileID: 1303852217194633934}
+  telegraphPulseSpeed: 18
+  telegraphPulseAlpha: 0.22
+  telegraphPulseWidth: 0.12
   projectilePrefab: {fileID: 2477383323817986990, guid: 4fbabfb27bfb7354f879c7fe10fdc6b3, type: 3}
   muzzle: {fileID: 2177981642514548707}
   shotCount: 4
@@ -599,6 +701,9 @@ MonoBehaviour:
   prefireDelay: 0.12
   recoveryDelay: 0.6
   telegraphVisual: {fileID: 890578658969369362}
+  telegraphPulseSpeed: 18
+  telegraphPulseAlpha: 0.22
+  telegraphPulseWidth: 0.12
   projectilePrefab: {fileID: 2477383323817986990, guid: 4fbabfb27bfb7354f879c7fe10fdc6b3, type: 3}
   muzzle: {fileID: 2177981642514548707}
   shotCount: 5
@@ -622,7 +727,10 @@ MonoBehaviour:
   prefireDelay: 0.12
   recoveryDelay: 0.55
   telegraphVisual: {fileID: 4415791582707907640}
-  dashDuration: 0.32
+  telegraphPulseSpeed: 18
+  telegraphPulseAlpha: 0.22
+  telegraphPulseWidth: 0.12
+  dashDuration: 0.66
   dashSpeed: 100
   hitRadius: 0.95
   damage: 1
@@ -630,6 +738,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   slashColor: {r: 1, g: 0.25, b: 0.28, a: 0.28}
+  afterimageColor: {r: 1, g: 0.2, b: 0.15, a: 0.32}
+  afterimageInterval: 0.035
+  afterimageLifetime: 0.16
 --- !u!114 &6139157596923617922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,6 +757,9 @@ MonoBehaviour:
   prefireDelay: 0
   recoveryDelay: 0.6
   telegraphVisual: {fileID: 3030742737324695477}
+  telegraphPulseSpeed: 18
+  telegraphPulseAlpha: 0.22
+  telegraphPulseWidth: 0.12
   blastPrefab: {fileID: 0}
   blastCount: 2
   warningDuration: 1
@@ -671,6 +785,9 @@ MonoBehaviour:
   prefireDelay: 0.1
   recoveryDelay: 0.55
   telegraphVisual: {fileID: 1659128549920081991}
+  telegraphPulseSpeed: 18
+  telegraphPulseAlpha: 0.22
+  telegraphPulseWidth: 0.12
   projectilePrefab: {fileID: 2477383323817986990, guid: 4fbabfb27bfb7354f879c7fe10fdc6b3, type: 3}
   muzzle: {fileID: 2177981642514548707}
   shotCount: 3
@@ -680,6 +797,103 @@ MonoBehaviour:
   damage: 1
   leadDistance: 2.2
   backDistance: 1.7
+--- !u!114 &2716643793045706114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3721130810009569530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4b92286ddb41c428037f86bfafb0bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossPhaseController
+  p1Health: 5
+  p2CloneHealth: 4
+  p3CloneHealth: 3
+  p2StartupDelay: 0.7
+  p3StartupDelay: 0.8
+  p1Sprite: {fileID: 21300000, guid: 38303dd6b1f26eb47be6e13aa8d6f2ce, type: 3}
+  cloneASprite: {fileID: 21300000, guid: bc664ad0db812db45be05cf7977142ac, type: 3}
+  cloneBSprite: {fileID: 21300000, guid: fd252eed1fee885409a9125f3268c5e9, type: 3}
+  cloneCSprite: {fileID: 21300000, guid: bb3e4a3e13e8da846a4e96d50fb37df4, type: 3}
+  interaction: {fileID: 7369652232772697368}
+  teleporter: {fileID: 6168382163793100008}
+  runner: {fileID: 3148416036734529447}
+  visualRenderer: {fileID: 8185588163060949613}
+--- !u!114 &313480188961737844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3721130810009569530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 905dd727c765d4149adb3a17033c02f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossPatternTeleportSlam
+  telegraphDuration: 0.55
+  prefireDelay: 0.1
+  recoveryDelay: 0.55
+  telegraphVisual: {fileID: 2006416650881867932}
+  telegraphPulseSpeed: 18
+  telegraphPulseAlpha: 0.22
+  telegraphPulseWidth: 0.12
+  hitRadius: 1.25
+  activeDuration: 0.22
+  damage: 1
+  gizmoColor: {r: 1, g: 0.1, b: 0.12, a: 0.35}
+--- !u!114 &2906192520098229379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3721130810009569530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371eb231fb1553148a5d8a3724f80ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossPatternLaserWall
+  telegraphDuration: 0.75
+  prefireDelay: 0.1
+  recoveryDelay: 0.6
+  telegraphVisual: {fileID: 0}
+  telegraphPulseSpeed: 18
+  telegraphPulseAlpha: 0.22
+  telegraphPulseWidth: 0.12
+  wallLength: 18
+  wallWidth: 1.52
+  warningDuration: 0.12
+  activeDuration: 0.45
+  damage: 1
+  warningColor: {r: 0.45, g: 0.85, b: 1, a: 0.22}
+  activeColor: {r: 0.45, g: 0.85, b: 1, a: 0.65}
+--- !u!114 &4678945472939285531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3721130810009569530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d054d6abfa2a9b42bc37830e20d66bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossPatternSafeZoneCollapse
+  telegraphDuration: 0.8
+  prefireDelay: 0
+  recoveryDelay: 0.7
+  telegraphVisual: {fileID: 0}
+  telegraphPulseSpeed: 18
+  telegraphPulseAlpha: 0.22
+  telegraphPulseWidth: 0.12
+  safeRadius: 2.2
+  warningDuration: 0.8
+  activeDuration: 1.1
+  damage: 1
 --- !u!1 &4218717066890768869
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,13 +1188,13 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 0.25, b: 0.28, a: 0.95}
+  m_Sprite: {fileID: 21300000, guid: 38303dd6b1f26eb47be6e13aa8d6f2ce, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.04, y: 0.04}
+  m_Size: {x: 1, y: 1.3125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
