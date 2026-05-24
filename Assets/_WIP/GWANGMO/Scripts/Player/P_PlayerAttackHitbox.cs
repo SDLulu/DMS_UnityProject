@@ -19,6 +19,19 @@ public class P_PlayerAttackHitbox : MonoBehaviour
     private Vector2 hitDirection = Vector2.right;
     private bool isActive;
 
+    public void Configure(float hitDamage, float hitKnockbackForce, float hitKnockbackUpForce, LayerMask targetLayers)
+    {
+        damage = hitDamage;
+        knockbackForce = hitKnockbackForce;
+        knockbackUpForce = hitKnockbackUpForce;
+        hitLayers = targetLayers;
+
+        if (hitLayers.value == 0)
+        {
+            hitLayers = LayerMask.GetMask("Enemy");
+        }
+    }
+
     private void Awake()
     {
         hitbox = GetComponent<Collider2D>();

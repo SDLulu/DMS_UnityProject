@@ -32,11 +32,9 @@ AnimationClip:
       value: {fileID: 6840568129027096764, guid: 27740c0b33c77ed49b2123795bc9ff48, type: 3}
     - time: 0.39999998
       value: {fileID: 8418023336569312456, guid: 27740c0b33c77ed49b2123795bc9ff48, type: 3}
-    - time: 0.48000002
+    - time: 0.56
       value: {fileID: 7358502877353442616, guid: 27740c0b33c77ed49b2123795bc9ff48, type: 3}
-    - time: 0.55
-      value: {fileID: 7358502877353442616, guid: 27740c0b33c77ed49b2123795bc9ff48, type: 3}
-    - time: 0.7
+    - time: 0.65
       value: {fileID: 7358502877353442616, guid: 27740c0b33c77ed49b2123795bc9ff48, type: 3}
     attribute: m_Sprite
     path: 
@@ -68,13 +66,12 @@ AnimationClip:
     - {fileID: 8418023336569312456, guid: 27740c0b33c77ed49b2123795bc9ff48, type: 3}
     - {fileID: 7358502877353442616, guid: 27740c0b33c77ed49b2123795bc9ff48, type: 3}
     - {fileID: 7358502877353442616, guid: 27740c0b33c77ed49b2123795bc9ff48, type: 3}
-    - {fileID: 7358502877353442616, guid: 27740c0b33c77ed49b2123795bc9ff48, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.71
+    m_StopTime: 0.65999997
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -93,4 +90,25 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.25
+    functionName: BeginDashAttackMovement
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.48
+    functionName: EndDashAttackMovement
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.65
+    functionName: FinishDashAttack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

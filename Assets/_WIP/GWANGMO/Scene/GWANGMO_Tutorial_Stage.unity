@@ -2406,7 +2406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "E : \uD68C\uC218"
+  promptText: "F : \uD68C\uC218"
   onInteractSequence: {fileID: 1368105874}
   interactOnce: 1
   promptPanel: {fileID: 0}
@@ -3108,25 +3108,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5173051156885705453, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
-      propertyPath: afterimageMaterial
-      value: 
-      objectReference: {fileID: 2100000, guid: 48aa8c5b26744749ace845df084de72e, type: 2}
+    - target: {fileID: 4405743594548499032, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: dashAttackDamage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405743594548499032, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: dashAttackHitLayers.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
     - target: {fileID: 6327591350310485490, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
       propertyPath: m_Name
       value: Player_ver02
-      objectReference: {fileID: 0}
-    - target: {fileID: 6502604406046889367, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6502604406046889367, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6502604406046889367, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: 6502604406046889367, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3168,12 +3160,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8350363513639191596, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: jumpForce
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350363513639191596, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: extraAirJumps
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5873271259736042933, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 952575019}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
 --- !u!1 &184993602
@@ -17708,7 +17705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "E : \uC6D0\uBCF8 \uCE69 \uC811\uC18D"
+  promptText: "F: \uC6D0\uBCF8 \uCE69 \uC811\uC18D"
   onInteractSequence: {fileID: 1038742603}
   interactOnce: 1
   promptPanel: {fileID: 0}
@@ -17851,37 +17848,6 @@ Transform:
   m_Children:
   - {fileID: 596246430}
   m_Father: {fileID: 791060129}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &952575018
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 952575019}
-  m_Layer: 0
-  m_Name: DashAttackHitbox
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &952575019
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952575018}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1819575241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &957033797
 GameObject:
@@ -22664,7 +22630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "\uACE8\uBAA9\uAE38\uB85C \uD5A5\uD55C\uB2E4."
+  promptText: "F: \uACE8\uBAA9\uAE38\uB85C \uD5A5\uD55C\uB2E4."
   onInteractSequence: {fileID: 1272284502}
   interactOnce: 0
   promptPanel: {fileID: 0}
@@ -47750,11 +47716,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!4 &1819575241 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5873271259736042933, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
-  m_PrefabInstance: {fileID: 183210589}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1821000245
 GameObject:
   m_ObjectHideFlags: 0
@@ -48707,7 +48668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "\uBC16\uC73C\uB85C \uB098\uAC04\uB2E4."
+  promptText: "F: \uBC16\uC73C\uB85C \uB098\uAC04\uB2E4."
   onInteractSequence: {fileID: 481904827}
   interactOnce: 0
   promptPanel: {fileID: 0}

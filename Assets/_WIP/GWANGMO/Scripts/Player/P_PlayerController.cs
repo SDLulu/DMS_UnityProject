@@ -27,7 +27,9 @@ public class P_PlayerController : MonoBehaviour
         Normal,
         FrontDash,
         BackDash,
+        IaidoDashWindup,
         IaidoDash,
+        IaidoDashRecovery,
         WallGrab
     }
 
@@ -61,6 +63,9 @@ public class P_PlayerController : MonoBehaviour
     [SerializeField] private float frontDashSpeed = 14f;
     [SerializeField] private float frontDashDuration = 0.15f;
     [SerializeField] private float frontDashCooldown = 0.5f;
+
+    [Header("Dash Attack")]
+    [SerializeField] private float dashAttackSpeed = 20f;
 
     [Header("Back Dash")]
     [SerializeField] private float backDashSpeed = 10f;
@@ -156,7 +161,10 @@ public class P_PlayerController : MonoBehaviour
         actionState == PlayerActionState.IaidoDash;
     public bool IsWallGrabbing => actionState == PlayerActionState.WallGrab;
     public bool IsRunning => isRunning;
-    public bool IsActionLocked => IsDashing || IsWallGrabbing;
+    public bool IsActionLocked => IsDashing ||
+        IsWallGrabbing ||
+        actionState == PlayerActionState.IaidoDashWindup ||
+        actionState == PlayerActionState.IaidoDashRecovery;
     public bool InteractPressedThisFrame { get; private set; }
     public Transform VisualRoot => visualRoot;
     public Transform GroundSensor => groundCheck;
@@ -238,7 +246,7 @@ public class P_PlayerController : MonoBehaviour
 
         if (iaidoAttackPressed && frontDashCooldownTimer <= 0f && !IsActionLocked)
         {
-            StartDash(PlayerActionState.IaidoDash, GetFrontDashDirection(), frontDashSpeed, frontDashDuration, iaidoDashAnimationName);
+            StartDashAttackWindup();
             frontDashCooldownTimer = frontDashCooldown;
         }
 
@@ -260,6 +268,20 @@ public class P_PlayerController : MonoBehaviour
         if (IsDashing)
         {
             TickDash();
+            UpdateAnimatorParameters();
+            return;
+        }
+
+        if (actionState == PlayerActionState.IaidoDashWindup)
+        {
+            TickDashAttackWindup();
+            UpdateAnimatorParameters();
+            return;
+        }
+
+        if (actionState == PlayerActionState.IaidoDashRecovery)
+        {
+            TickDashAttackRecovery();
             UpdateAnimatorParameters();
             return;
         }
@@ -471,8 +493,42 @@ public class P_PlayerController : MonoBehaviour
         PlayAnimation(animationName);
     }
 
+    private void StartDashAttackWindup()
+    {
+        actionState = PlayerActionState.IaidoDashWindup;
+        dashDirection = GetFrontDashDirection();
+        activeDashSpeed = dashAttackSpeed;
+        dashTimer = 0f;
+        dashDistanceRemaining = 0f;
+        jumpBufferTimer = 0f;
+        coyoteTimer = 0f;
+
+        body.gravityScale = 0f;
+        body.linearVelocity = Vector2.zero;
+        PlayAnimation(iaidoDashAnimationName);
+    }
+
+    private void TickDashAttackWindup()
+    {
+        body.gravityScale = 0f;
+        body.linearVelocity = Vector2.zero;
+    }
+
+    private void TickDashAttackRecovery()
+    {
+        body.gravityScale = 0f;
+        body.linearVelocity = Vector2.zero;
+    }
+
     private void TickDash()
     {
+        if (actionState == PlayerActionState.IaidoDash)
+        {
+            body.gravityScale = 0f;
+            body.MovePosition(body.position + dashDirection * activeDashSpeed * Time.fixedDeltaTime);
+            return;
+        }
+
         float scaledDt = Time.fixedDeltaTime;
         dashTimer = Mathf.Max(0f, dashTimer - scaledDt);
         body.gravityScale = 0f;
@@ -485,6 +541,45 @@ public class P_PlayerController : MonoBehaviour
         {
             FinishAction();
         }
+    }
+
+    public void BeginDashAttackMovement()
+    {
+        if (actionState != PlayerActionState.IaidoDashWindup)
+        {
+            return;
+        }
+
+        actionState = PlayerActionState.IaidoDash;
+        dashDirection = GetFrontDashDirection();
+        activeDashSpeed = dashAttackSpeed;
+        body.gravityScale = 0f;
+        body.linearVelocity = Vector2.zero;
+    }
+
+    public void EndDashAttackMovement()
+    {
+        if (actionState != PlayerActionState.IaidoDashWindup &&
+            actionState != PlayerActionState.IaidoDash)
+        {
+            return;
+        }
+
+        actionState = PlayerActionState.IaidoDashRecovery;
+        body.gravityScale = 0f;
+        body.linearVelocity = Vector2.zero;
+    }
+
+    public void FinishDashAttack()
+    {
+        if (actionState != PlayerActionState.IaidoDashWindup &&
+            actionState != PlayerActionState.IaidoDash &&
+            actionState != PlayerActionState.IaidoDashRecovery)
+        {
+            return;
+        }
+
+        FinishAction();
     }
 
     private bool ShouldStartWallGrab()

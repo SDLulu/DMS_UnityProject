@@ -6,6 +6,7 @@ public class P_PlayerCombat : MonoBehaviour
 {
     private const string PlayerActionMapName = "Player";
     private const string AttackActionName = "Attack";
+    private const string DashAttackHitboxPath = "Hitboxes/DashAttackHitbox";
 
     [Header("Input")]
     [SerializeField] private InputActionAsset inputActions;
@@ -14,12 +15,19 @@ public class P_PlayerCombat : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private P_PlayerController controller;
     [SerializeField] private P_PlayerAttackHitbox attack1Hitbox;
+    [SerializeField] private P_PlayerAttackHitbox dashAttackHitbox;
 
     [Header("Attack 1")]
     [SerializeField] private string attack1AnimationName = "Attack_1";
     [SerializeField] private string idleAnimationName = "Idle";
     [SerializeField] private float attack1Duration = 0.5f;
     [SerializeField] private bool lockControllerDuringAttack = true;
+
+    [Header("Dash Attack")]
+    [SerializeField] private float dashAttackDamage = 20f;
+    [SerializeField] private float dashAttackKnockbackForce = 8f;
+    [SerializeField] private float dashAttackKnockbackUpForce = 2.5f;
+    [SerializeField] private LayerMask dashAttackHitLayers;
 
     private InputActionMap playerActionMap;
     private InputAction attackAction;
@@ -38,6 +46,7 @@ public class P_PlayerCombat : MonoBehaviour
             attack1Hitbox = GetComponentInChildren<P_PlayerAttackHitbox>(includeInactive: true);
         }
 
+        ResolveDashAttackHitbox();
         ResolveInputActions();
     }
 
@@ -49,6 +58,7 @@ public class P_PlayerCombat : MonoBehaviour
     private void OnDisable()
     {
         EndAttack1Hitbox();
+        EndDashAttackHitbox();
 
         if (lockControllerDuringAttack && controller != null)
         {
@@ -83,6 +93,17 @@ public class P_PlayerCombat : MonoBehaviour
         {
             FinishAttack();
         }
+    }
+
+    public void BeginDashAttackHitbox()
+    {
+        Vector2 direction = GetFacingDirection();
+        dashAttackHitbox?.BeginHitbox(gameObject, direction);
+    }
+
+    public void EndDashAttackHitbox()
+    {
+        dashAttackHitbox?.EndHitbox();
     }
 
     private void TryStartAttack1()
@@ -171,6 +192,32 @@ public class P_PlayerCombat : MonoBehaviour
     private bool CanStartGroundAttack()
     {
         return controller == null || controller.IsGroundedNow;
+    }
+
+    private void ResolveDashAttackHitbox()
+    {
+        if (dashAttackHitbox == null)
+        {
+            Transform hitboxTransform = transform.Find(DashAttackHitboxPath);
+            if (hitboxTransform != null)
+            {
+                dashAttackHitbox = hitboxTransform.GetComponent<P_PlayerAttackHitbox>();
+                if (dashAttackHitbox == null && hitboxTransform.GetComponent<Collider2D>() != null)
+                {
+                    dashAttackHitbox = hitboxTransform.gameObject.AddComponent<P_PlayerAttackHitbox>();
+                }
+            }
+        }
+
+        if (dashAttackHitbox != null)
+        {
+            dashAttackHitbox.Configure(
+                dashAttackDamage,
+                dashAttackKnockbackForce,
+                dashAttackKnockbackUpForce,
+                dashAttackHitLayers);
+            dashAttackHitbox.EndHitbox();
+        }
     }
 
     private void ResolveInputActions()
