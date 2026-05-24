@@ -19,6 +19,19 @@ public class BossPatternTeleportSlam : BossPatternBase
 
     public override string PatternId => "Teleport Slam";
 
+    public override void BeginPattern(BossPatternContext context)
+    {
+        keepTelegraphDuringPrefire = true;
+        prefireDelay = 0.15f;
+        base.BeginPattern(context);
+    }
+
+    private void Reset()
+    {
+        keepTelegraphDuringPrefire = true;
+        prefireDelay = 0.15f;
+    }
+
     protected override void UpdateTelegraphVisual(Vector2 aimDirection)
     {
         if (telegraphVisual == null)
@@ -29,7 +42,20 @@ public class BossPatternTeleportSlam : BossPatternBase
         Vector3 target = _ctx.player != null ? _ctx.player.position : transform.position;
         telegraphVisual.transform.position = target;
         telegraphVisual.transform.rotation = Quaternion.identity;
-        telegraphVisual.transform.localScale = Vector3.one * (hitRadius * 2f);
+
+        SpriteRenderer renderer = telegraphVisual.GetComponent<SpriteRenderer>();
+        if (renderer != null)
+        {
+            renderer.sprite = RuntimeSpriteUtility.CircleSprite;
+            if (RuntimeSpriteUtility.UnlitSpriteMaterial != null)
+            {
+                renderer.sharedMaterial = RuntimeSpriteUtility.UnlitSpriteMaterial;
+            }
+        }
+
+        telegraphVisual.transform.localScale = RuntimeSpriteUtility.UniformWorldScale(
+            RuntimeSpriteUtility.CircleSprite,
+            hitRadius * 2f);
     }
 
     protected override void OnFireBegin(Vector2 aimDirection)
@@ -43,8 +69,11 @@ public class BossPatternTeleportSlam : BossPatternBase
 
         if (_ctx.boss != null)
         {
+            BossVfxUtility.SpawnRingBurst(_ctx.boss.position, new Color(0.45f, 0.85f, 1f, 0.55f), 1.4f);
             _ctx.boss.position = _slamPosition;
             transform.position = _slamPosition;
+            BossVfxUtility.SpawnRingBurst(_slamPosition, new Color(1f, 0.15f, 0.12f, 0.75f), hitRadius * 2.2f);
+            BossVfxUtility.SpawnFlashDisc(_slamPosition, new Color(1f, 0.2f, 0.15f, 0.45f), hitRadius * 1.6f);
         }
 
         _activeTimer = activeDuration;

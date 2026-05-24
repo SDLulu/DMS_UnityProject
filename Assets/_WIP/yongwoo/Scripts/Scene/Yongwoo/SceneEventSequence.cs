@@ -317,7 +317,7 @@ public class SceneEventSequence : MonoBehaviour
                 playerInteraction?.SetGameplayControlEnabled(true, clearVelocity: false);
                 break;
             case StepType.ShowSystemLog:
-                systemLogPanel?.Show(step.message);
+                systemLogPanel?.Show(step.message, step.duration);
                 break;
             case StepType.HideSystemLog:
                 systemLogPanel?.Hide();
@@ -328,7 +328,7 @@ public class SceneEventSequence : MonoBehaviour
             case StepType.FadeSystemLog:
                 break;
             case StepType.ShowCommsLine:
-                commsPanel?.ShowLine(step.speaker, step.message);
+                commsPanel?.ShowLine(step.speaker, step.message, step.duration);
                 break;
             case StepType.HideComms:
                 commsPanel?.Hide();
@@ -363,11 +363,13 @@ public class SceneEventSequence : MonoBehaviour
                         playerSlowMotion.PushExternalFreeze();
                     }
                 }
+                YongwooAudioManager.Play(YongwooSfxId.TimeFreeze, 0.58f, 0.02f);
                 Time.timeScale = 0f;
                 Time.fixedDeltaTime = 0f;
                 break;
             case StepType.UnfreezeTime:
                 ReleaseTimeFreezeIfHeld();
+                YongwooAudioManager.Play(YongwooSfxId.TimeUnfreeze, 0.5f, 0.02f);
                 break;
             case StepType.SetCameraTarget:
                 if (cameraFollow != null)
@@ -510,6 +512,7 @@ public class SceneEventSequence : MonoBehaviour
             };
             if (detected)
             {
+                YongwooAudioManager.Play(YongwooSfxId.UiConfirm, 0.45f, 0.02f);
                 yield break;
             }
         }

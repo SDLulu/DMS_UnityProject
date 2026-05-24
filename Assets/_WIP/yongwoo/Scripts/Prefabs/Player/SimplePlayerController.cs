@@ -380,6 +380,7 @@ public class SimplePlayerController : MonoBehaviour
         {
             velocity.y = jumpForce;
             ConsumeJump();
+            YongwooAudioManager.Play(YongwooSfxId.Jump, 0.55f, 0.04f);
             _isGrounded = false;
             _jumpBufferTimer = 0f;
             _jumpGroundIgnoreTimer = JumpGroundIgnoreDuration;
@@ -462,6 +463,7 @@ public class SimplePlayerController : MonoBehaviour
         _facing = _dashDirection.x >= 0f ? 1f : -1f;
         ApplyFacingToVisual();
         SetDashPreviewVisible(false);
+        YongwooAudioManager.Play(YongwooSfxId.Dash, 0.68f, 0.04f);
     }
 
     private void TickDash()
@@ -492,6 +494,7 @@ public class SimplePlayerController : MonoBehaviour
         _coyoteTimer = 0f;
         _facing = direction;
         ApplyFacingToVisual();
+        YongwooAudioManager.Play(YongwooSfxId.Roll, 0.58f, 0.04f);
     }
 
     private void TickRoll()

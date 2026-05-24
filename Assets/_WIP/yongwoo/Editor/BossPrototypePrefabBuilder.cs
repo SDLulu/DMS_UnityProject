@@ -59,13 +59,13 @@ public static class BossPrototypePrefabBuilder
 
         CircleCollider2D projectileCollider = projectileGo.AddComponent<CircleCollider2D>();
         projectileCollider.isTrigger = true;
-        projectileCollider.radius = 0.03f;
+        projectileCollider.radius = RuntimeSpriteUtility.CircleSprite.bounds.extents.x;
 
         projectileGo.AddComponent<Rigidbody2D>();
         projectileGo.AddComponent<TrailRenderer>();
         BossProjectile projectile = projectileGo.AddComponent<BossProjectile>();
-        projectileGo.transform.localScale = Vector3.one * 0.135f;
-        SetField(projectile, "defaultRadius", 0.03f);
+        projectileGo.transform.localScale = Vector3.one * 0.45f;
+        SetField(projectile, "defaultRadius", 0.1f);
 
         PrefabUtility.SaveAsPrefabAsset(projectileGo, ProjectilePath);
         UnityEngine.Object.DestroyImmediate(projectileGo);
@@ -140,13 +140,16 @@ public static class BossPrototypePrefabBuilder
         SetField(spread, "telegraphVisual", MakeTelegraph("Telegraph_Spread", boss.transform, new Color(1f, 0.35f, 0.1f, 0.35f), new Vector2(2f, 0.12f)));
 
         BossPatternDashSlash dash = boss.AddComponent<BossPatternDashSlash>();
-        SetBaseTiming(dash, 0.6f, 0.12f, 0.55f);
-        SetField(dash, "dashDuration", 0.32f);
-        SetField(dash, "dashSpeed", 100f);
+        SetBaseTiming(dash, 0.6f, 0.14f, 0.55f);
+        SetField(dash, "keepTelegraphDuringPrefire", true);
+        SetField(dash, "dashDistanceMultiplier", 2f);
+        SetField(dash, "dashDuration", 0.66f);
+        SetField(dash, "telegraphLineWidth", 0.48f);
+        SetField(dash, "telegraphAlpha", 0.38f);
         SetField(dash, "hitRadius", 0.95f);
         SetField(dash, "damage", 1f);
         SetField(dash, "targetLayers", new LayerMask { value = LayerMask.GetMask("Player") });
-        SetField(dash, "telegraphVisual", MakeTelegraph("Telegraph_DashSlash", boss.transform, new Color(1f, 0.1f, 0.12f, 0.55f), new Vector2(6f, 0.08f)));
+        SetField(dash, "telegraphVisual", MakeTelegraph("Telegraph_DashSlash", boss.transform, new Color(1f, 0.1f, 0.12f, 0.38f), new Vector2(6f, 0.48f)));
 
         BossPatternDelayedBlast blast = boss.AddComponent<BossPatternDelayedBlast>();
         SetBaseTiming(blast, 0.65f, 0f, 0.6f);
@@ -172,17 +175,19 @@ public static class BossPrototypePrefabBuilder
         SetField(predict, "telegraphVisual", MakeTelegraph("Telegraph_Predict", boss.transform, new Color(0.45f, 0.85f, 1f, 0.35f), new Vector2(2f, 0.1f)));
 
         BossPatternTeleportSlam slam = boss.AddComponent<BossPatternTeleportSlam>();
-        SetBaseTiming(slam, 0.55f, 0.1f, 0.55f);
+        SetBaseTiming(slam, 0.55f, 0.15f, 0.55f);
+        SetField(slam, "keepTelegraphDuringPrefire", true);
         SetField(slam, "hitRadius", 1.2f);
         SetField(slam, "activeDuration", 0.22f);
         SetField(slam, "damage", 1f);
         SetField(slam, "telegraphVisual", MakeTelegraph("Telegraph_Slam", boss.transform, new Color(1f, 0.1f, 0.12f, 0.28f), new Vector2(1.28f, 1.28f)));
 
         BossPatternLaserWall laser = boss.AddComponent<BossPatternLaserWall>();
-        SetBaseTiming(laser, 0.75f, 0.1f, 0.6f);
-        SetField(laser, "wallLength", 18f);
+        SetBaseTiming(laser, 0.75f, 0.15f, 0.6f);
+        SetField(laser, "keepTelegraphDuringPrefire", true);
         SetField(laser, "wallWidth", 1.52f);
-        SetField(laser, "warningDuration", 0.12f);
+        SetField(laser, "wallSpanPadding", 0.35f);
+        SetField(laser, "postTelegraphWarning", 0.12f);
         SetField(laser, "activeDuration", 0.45f);
         SetField(laser, "damage", 1f);
 
@@ -239,7 +244,7 @@ public static class BossPrototypePrefabBuilder
         renderer.color = color;
         renderer.sortingLayerName = "Effect";
         renderer.sortingOrder = 38;
-        go.transform.localScale = size;
+        go.transform.localScale = RuntimeSpriteUtility.WorldSizeToLocalScale(RuntimeSpriteUtility.WhiteSprite, size);
         go.SetActive(false);
         return go;
     }

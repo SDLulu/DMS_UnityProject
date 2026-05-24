@@ -730,7 +730,7 @@ MonoBehaviour:
   telegraphPulseSpeed: 18
   telegraphPulseAlpha: 0.22
   telegraphPulseWidth: 0.12
-  dashDuration: 0.32
+  dashDuration: 0.66
   dashSpeed: 100
   hitRadius: 0.95
   damage: 1

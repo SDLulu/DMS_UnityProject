@@ -171,9 +171,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossProjectile
   defaultColor: {r: 1, g: 0.25, b: 0.25, a: 0.9}
-  defaultRadius: 0.03
+  accentColor: {r: 0, g: 0.9, b: 1, a: 0.9}
+  hotCoreColor: {r: 1, g: 0.95, b: 0.72, a: 1}
+  defaultRadius: 0.1
   visualScaleMultiplier: 4.5
-  trailTime: 0.12
+  trailTime: 0.16
+  trailHeadWidthScale: 1.35
+  trailTailWidthFactor: 0.04
+  pulseScale: 0.18
+  pulseSpeed: 22
 --- !u!96 &133489466262383601
 TrailRenderer:
   serializedVersion: 4

@@ -9,8 +9,8 @@ using UnityEngine.Rendering;
 public class BossSafeZoneCollapse : MonoBehaviour
 {
     [Header("Danger Overlay")]
-    [SerializeField] private Color warningDangerColor = new Color(1f, 0.15f, 0.12f, 0.28f);
-    [SerializeField] private Color activeDangerColor = new Color(1f, 0.12f, 0.1f, 0.5f);
+    [SerializeField] private Color warningDangerColor = new Color(1f, 0.12f, 0.1f, 0.38f);
+    [SerializeField] private Color activeDangerColor = new Color(1f, 0.08f, 0.06f, 0.55f);
 
     private Transform _player;
     private GameObject _owner;
@@ -57,7 +57,7 @@ public class BossSafeZoneCollapse : MonoBehaviour
         _safeMask.frontSortingOrder = 36;
         _safeMask.backSortingLayerID = SortingLayer.NameToID("Effect");
         _safeMask.backSortingOrder = 34;
-        maskObject.transform.localScale = Vector3.one * (_safeRadius * 2f);
+        maskObject.transform.localScale = RuntimeSpriteUtility.UniformWorldScale(RuntimeSpriteUtility.CircleSprite, _safeRadius * 2f);
 
         GameObject ringObject = new GameObject("SafeRing");
         ringObject.transform.SetParent(transform, false);
@@ -68,7 +68,7 @@ public class BossSafeZoneCollapse : MonoBehaviour
         _safeRing.color = new Color(0.45f, 0.85f, 1f, 0.85f);
         _safeRing.sortingLayerName = "Effect";
         _safeRing.sortingOrder = 37;
-        _safeRing.transform.localScale = Vector3.one * (_safeRadius * 2f);
+        _safeRing.transform.localScale = RuntimeSpriteUtility.UniformWorldScale(RuntimeSpriteUtility.RingSprite, _safeRadius * 2f);
         if (RuntimeSpriteUtility.UnlitSpriteMaterial != null)
         {
             _safeRing.sharedMaterial = RuntimeSpriteUtility.UnlitSpriteMaterial;
@@ -91,7 +91,7 @@ public class BossSafeZoneCollapse : MonoBehaviour
 
         Vector3 arenaSize = arenaBounds.size;
         arenaSize.z = 1f;
-        _dangerFill.transform.localScale = arenaSize;
+        _dangerFill.transform.localScale = RuntimeSpriteUtility.WorldSizeToLocalScale(RuntimeSpriteUtility.WhiteSprite, new Vector2(arenaSize.x, arenaSize.y));
     }
 
     private IEnumerator LifetimeRoutine(float warningDuration, float activeDuration)
@@ -108,7 +108,9 @@ public class BossSafeZoneCollapse : MonoBehaviour
             if (_safeRing != null)
             {
                 _safeRing.color = new Color(0.45f, 0.85f, 1f, Mathf.Lerp(0.45f, 0.95f, pulse));
-                _safeRing.transform.localScale = Vector3.one * (_safeRadius * 2f * Mathf.Lerp(0.98f, 1.06f, pulse));
+                _safeRing.transform.localScale = RuntimeSpriteUtility.UniformWorldScale(
+                    RuntimeSpriteUtility.RingSprite,
+                    _safeRadius * 2f * Mathf.Lerp(0.98f, 1.06f, pulse));
             }
 
             warningTimer += Time.deltaTime;
@@ -122,7 +124,7 @@ public class BossSafeZoneCollapse : MonoBehaviour
         if (_safeRing != null)
         {
             _safeRing.color = Color.white;
-            _safeRing.transform.localScale = Vector3.one * (_safeRadius * 2.08f);
+            _safeRing.transform.localScale = RuntimeSpriteUtility.UniformWorldScale(RuntimeSpriteUtility.RingSprite, _safeRadius * 2.08f);
         }
 
         float timer = activeDuration;

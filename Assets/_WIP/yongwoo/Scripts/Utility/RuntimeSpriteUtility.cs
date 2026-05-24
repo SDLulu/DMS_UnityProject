@@ -127,6 +127,32 @@ public static class RuntimeSpriteUtility
         }
     }
 
+    public static Vector3 WorldSizeToLocalScale(Sprite sprite, Vector2 worldSize)
+    {
+        if (sprite == null)
+        {
+            return new Vector3(worldSize.x, worldSize.y, 1f);
+        }
+
+        Vector2 spriteSize = sprite.bounds.size;
+        return new Vector3(
+            worldSize.x / Mathf.Max(0.0001f, spriteSize.x),
+            worldSize.y / Mathf.Max(0.0001f, spriteSize.y),
+            1f);
+    }
+
+    public static Vector3 UniformWorldScale(Sprite sprite, float worldDiameter)
+    {
+        if (sprite == null)
+        {
+            return Vector3.one * worldDiameter;
+        }
+
+        float maxAxis = Mathf.Max(sprite.bounds.size.x, sprite.bounds.size.y);
+        float scale = worldDiameter / Mathf.Max(0.0001f, maxAxis);
+        return new Vector3(scale, scale, 1f);
+    }
+
     public static Material CreateUnlitColorMaterial(Color color)
     {
         _unlitColorShader ??= Shader.Find("Universal Render Pipeline/Unlit")

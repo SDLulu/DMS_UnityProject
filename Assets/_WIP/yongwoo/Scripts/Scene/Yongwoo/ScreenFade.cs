@@ -26,11 +26,13 @@ public class ScreenFade : MonoBehaviour
 
     public IEnumerator FadeOut(float duration)
     {
+        YongwooAudioManager.Play(YongwooSfxId.FadeOut, 0.48f, 0.01f);
         return Fade(1f, duration);
     }
 
     public IEnumerator FadeIn(float duration)
     {
+        YongwooAudioManager.Play(YongwooSfxId.FadeIn, 0.42f, 0.01f);
         return Fade(0f, duration);
     }
 

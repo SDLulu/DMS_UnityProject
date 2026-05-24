@@ -120,11 +120,16 @@ public class BossInteraction : MonoBehaviour, IDamageReceiver
         }
 
         _flashRoutine = StartCoroutine(FlashRoutine());
+        if (_currentHealth > 0)
+        {
+            YongwooAudioManager.Play(YongwooSfxId.BossHurt, 0.76f, 0.04f);
+        }
         Damaged?.Invoke(_currentHealth);
 
         if (_currentHealth <= 0)
         {
             _isDead = true;
+            YongwooAudioManager.Play(YongwooSfxId.BossDeath, 0.82f, 0.02f);
             Died?.Invoke();
         }
 

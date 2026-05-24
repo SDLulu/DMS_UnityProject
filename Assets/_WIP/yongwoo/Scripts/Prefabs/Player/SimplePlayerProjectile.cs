@@ -141,9 +141,9 @@ public class SimplePlayerProjectile : MonoBehaviour
             if (damageReceiver.ReceiveHit(_damage, _knockback, _owner))
             {
                 CombatHitFeedback.PlayLightHit();
+                Destroy(gameObject);
             }
 
-            Destroy(gameObject);
             return;
         }
 

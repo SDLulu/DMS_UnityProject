@@ -16,6 +16,7 @@ public static class CombatHitFeedback
 
     public static void PlayLightHit()
     {
+        YongwooAudioManager.Play(YongwooSfxId.HitLight, 0.72f, 0.05f);
         EnsureRunner().Play(DefaultHitStopDuration, DefaultHitStopScale, DefaultShakeDuration, DefaultShakeStrength);
         SimpleCameraFollow cameraFollow = Camera.main != null ? Camera.main.GetComponent<SimpleCameraFollow>() : null;
         cameraFollow?.AddShake(DefaultShakeStrength, DefaultShakeDuration);

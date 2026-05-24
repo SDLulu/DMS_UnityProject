@@ -68,6 +68,7 @@ public class Interactable : MonoBehaviour
         {
             _used = true;
             promptPanel?.Hide();
+            YongwooAudioManager.Play(YongwooSfxId.UiConfirm, 0.56f, 0.03f);
 
             if (onInteractSequence != null)
             {
@@ -91,6 +92,7 @@ public class Interactable : MonoBehaviour
 
         _playerInside = true;
         promptPanel?.Show(promptText);
+        YongwooAudioManager.Play(YongwooSfxId.UiPromptIn, 0.42f, 0.03f);
     }
 
     private void OnTriggerExit2D(Collider2D other)

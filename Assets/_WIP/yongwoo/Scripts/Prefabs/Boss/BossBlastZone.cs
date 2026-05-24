@@ -29,7 +29,7 @@ public class BossBlastZone : MonoBehaviour
         _activeColor = activeColor;
         float safeRadius = Mathf.Max(0.05f, radius);
         _collider.radius = 0.5f;
-        transform.localScale = Vector3.one * (safeRadius * 2f);
+        transform.localScale = RuntimeSpriteUtility.UniformWorldScale(RuntimeSpriteUtility.CircleSprite, safeRadius * 2f);
         _renderer.color = _warningColor;
         if (_ringRenderer != null)
         {
@@ -104,6 +104,7 @@ public class BossBlastZone : MonoBehaviour
     private IEnumerator LifetimeRoutine(float warningDuration, float activeDuration)
     {
         _collider.enabled = false;
+        YongwooAudioManager.Play(YongwooSfxId.BossBlastArm, 0.5f, 0.04f);
         float warningTimer = 0f;
         while (warningTimer < warningDuration)
         {
@@ -131,6 +132,7 @@ public class BossBlastZone : MonoBehaviour
             _coreRenderer.color = new Color(1f, 1f, 1f, 0.55f);
         }
         _collider.enabled = true;
+        YongwooAudioManager.Play(YongwooSfxId.BossBlastExplode, 0.68f, 0.04f);
 
         yield return new WaitForSeconds(activeDuration);
         Destroy(gameObject);

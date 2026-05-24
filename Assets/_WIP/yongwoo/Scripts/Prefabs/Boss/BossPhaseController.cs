@@ -447,6 +447,7 @@ public class BossPhaseController : MonoBehaviour
             StopCoroutine(_transitionRoutine);
         }
 
+        YongwooAudioManager.Play(YongwooSfxId.BossPhaseShift, 0.78f, 0.02f);
         _transitionRoutine = StartCoroutine(PlayPhaseTransitionRoutine(setupPhase, narrativeSequence));
     }
 
@@ -457,6 +458,7 @@ public class BossPhaseController : MonoBehaviour
             StopCoroutine(_transitionRoutine);
         }
 
+        YongwooAudioManager.Play(YongwooSfxId.BossDeath, 0.85f, 0.01f);
         _transitionRoutine = StartCoroutine(PlayFinalDefeatRoutine());
     }
 

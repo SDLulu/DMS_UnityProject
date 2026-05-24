@@ -25,6 +25,11 @@ public class BossTeleporter : MonoBehaviour
     [SerializeField] private BossInteraction interaction;
     [SerializeField] private SpriteRenderer[] visualsToHide;
 
+    [Header("VFX")]
+    [SerializeField] private Color departRingColor = new Color(0.45f, 0.85f, 1f, 0.55f);
+    [SerializeField] private Color arriveRingColor = new Color(1f, 0.25f, 0.2f, 0.65f);
+    [SerializeField, Min(0.1f)] private float ringDiameter = 1.6f;
+
     private bool _isHopping;
     private bool _arenaAnchorsOnly;
     private bool _hasArenaBounds;
@@ -120,6 +125,25 @@ public class BossTeleporter : MonoBehaviour
         return ClampDestination(here + new Vector3(dx, dy, 0f));
     }
 
+    public void PatternBlinkTo(Vector3 destination)
+    {
+        Vector3 origin = transform.position;
+        BossVfxUtility.SpawnRingBurst(origin, departRingColor, ringDiameter);
+        BossVfxUtility.SpawnFlashDisc(origin, new Color(departRingColor.r, departRingColor.g, departRingColor.b, 0.35f), ringDiameter * 0.55f);
+        YongwooAudioManager.Play(YongwooSfxId.BossTeleportOut, 0.62f, 0.04f);
+
+        interaction?.SetTeleportInvulnerable(true);
+        SetVisualsVisible(false);
+
+        transform.position = ClampDestination(destination);
+
+        SetVisualsVisible(true);
+        BossVfxUtility.SpawnRingBurst(transform.position, arriveRingColor, ringDiameter * 1.1f);
+        BossVfxUtility.SpawnFlashDisc(transform.position, new Color(arriveRingColor.r, arriveRingColor.g, arriveRingColor.b, 0.42f), ringDiameter * 0.65f);
+        YongwooAudioManager.Play(YongwooSfxId.BossTeleportIn, 0.66f, 0.04f);
+        interaction?.SetTeleportInvulnerable(false);
+    }
+
     private IEnumerator HopRoutine(Vector3 destination)
     {
         if (_isHopping)
@@ -134,12 +158,20 @@ public class BossTeleporter : MonoBehaviour
             yield return new WaitForSeconds(telegraphDuration);
         }
 
+        Vector3 origin = transform.position;
+        BossVfxUtility.SpawnRingBurst(origin, departRingColor, ringDiameter);
+        BossVfxUtility.SpawnFlashDisc(origin, new Color(departRingColor.r, departRingColor.g, departRingColor.b, 0.35f), ringDiameter * 0.55f);
+        YongwooAudioManager.Play(YongwooSfxId.BossTeleportOut, 0.62f, 0.04f);
+
         interaction?.SetTeleportInvulnerable(true);
         SetVisualsVisible(false);
 
         yield return new WaitForSeconds(invulnerableHopDuration);
 
         transform.position = ClampDestination(destination);
+        BossVfxUtility.SpawnRingBurst(transform.position, arriveRingColor, ringDiameter * 1.1f);
+        BossVfxUtility.SpawnFlashDisc(transform.position, new Color(arriveRingColor.r, arriveRingColor.g, arriveRingColor.b, 0.42f), ringDiameter * 0.65f);
+        YongwooAudioManager.Play(YongwooSfxId.BossTeleportIn, 0.66f, 0.04f);
         SetVisualsVisible(true);
         interaction?.SetTeleportInvulnerable(false);
 

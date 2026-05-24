@@ -85,6 +85,7 @@ public class SimplePlayerCombat : MonoBehaviour
                 ? PlayerWeaponType.Gun
                 : PlayerWeaponType.Sword;
             ApplyWeaponVisibility();
+            YongwooAudioManager.Play(YongwooSfxId.WeaponSwap, 0.52f, 0.04f);
         }
 
         UpdatePointerFacing();

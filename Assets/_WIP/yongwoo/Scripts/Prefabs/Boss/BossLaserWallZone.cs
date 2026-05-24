@@ -17,6 +17,7 @@ public class BossLaserWallZone : MonoBehaviour
     private float _damage;
     private bool _vertical;
     private Color _warningColor;
+    private Vector2 _worldSize;
 
     public void Arm(GameObject owner, float damage, Vector2 size, float warningDuration, float activeDuration, Color warningColor, Color activeColor)
     {
@@ -24,9 +25,9 @@ public class BossLaserWallZone : MonoBehaviour
         _owner = owner;
         _damage = Mathf.Max(0f, damage);
         _warningColor = warningColor;
-        _vertical = size.y >= size.x;
-        transform.localScale = new Vector3(Mathf.Max(0.1f, size.x), Mathf.Max(0.1f, size.y), 1f);
-        _collider.size = Vector2.one;
+        _worldSize = new Vector2(Mathf.Max(0.1f, size.x), Mathf.Max(0.1f, size.y));
+        _vertical = _worldSize.y >= _worldSize.x;
+        ApplyVisualAndColliderSize(_worldSize);
         _collider.enabled = false;
         _renderer.color = warningColor;
         ConfigureCoreScale();
@@ -43,11 +44,7 @@ public class BossLaserWallZone : MonoBehaviour
         _collider ??= GetComponent<BoxCollider2D>();
         _collider.isTrigger = true;
 
-        _renderer ??= GetComponent<SpriteRenderer>();
-        if (_renderer == null)
-        {
-            _renderer = gameObject.AddComponent<SpriteRenderer>();
-        }
+        _renderer ??= ResolveVisualRenderer();
 
         if (_renderer.sprite == null)
         {
@@ -57,6 +54,15 @@ public class BossLaserWallZone : MonoBehaviour
             if (RuntimeSpriteUtility.UnlitSpriteMaterial != null)
             {
                 _renderer.sharedMaterial = RuntimeSpriteUtility.UnlitSpriteMaterial;
+            }
+        }
+
+        if (_coreRenderer == null)
+        {
+            Transform coreTransform = transform.Find("HotCore");
+            if (coreTransform != null)
+            {
+                _coreRenderer = coreTransform.GetComponent<SpriteRenderer>();
             }
         }
 
@@ -99,6 +105,7 @@ public class BossLaserWallZone : MonoBehaviour
             _coreRenderer.color = new Color(1f, 1f, 1f, 0.6f);
         }
         _collider.enabled = true;
+        Physics2D.SyncTransforms();
 
         yield return new WaitForSeconds(activeDuration);
         Destroy(gameObject);
@@ -112,9 +119,70 @@ public class BossLaserWallZone : MonoBehaviour
         }
 
         _coreRenderer.transform.localPosition = Vector3.zero;
+        if (_renderer != null)
+        {
+            Vector3 visualScale = _renderer.transform.localScale;
+            _coreRenderer.transform.localScale = _vertical
+                ? new Vector3(Mathf.Clamp(visualScale.x * 0.35f, 0.08f, 1f), visualScale.y, 1f)
+                : new Vector3(visualScale.x, Mathf.Clamp(visualScale.y * 0.35f, 0.08f, 1f), 1f);
+            return;
+        }
+
         _coreRenderer.transform.localScale = _vertical
             ? new Vector3(0.18f, 1f, 1f)
             : new Vector3(1f, 0.18f, 1f);
+    }
+
+    private void ApplyVisualAndColliderSize(Vector2 worldSize)
+    {
+        if (_renderer.sprite == null)
+        {
+            _renderer.sprite = RuntimeSpriteUtility.WhiteSprite;
+        }
+
+        transform.localScale = Vector3.one;
+        _collider.offset = Vector2.zero;
+        _collider.size = worldSize;
+
+        Transform visualTransform = _renderer.transform;
+        visualTransform.localPosition = Vector3.zero;
+        visualTransform.localScale = RuntimeSpriteUtility.WorldSizeToLocalScale(_renderer.sprite, worldSize);
+    }
+
+    private SpriteRenderer ResolveVisualRenderer()
+    {
+        Transform visualTransform = transform.Find("Visual");
+        if (visualTransform != null)
+        {
+            SpriteRenderer visualRenderer = visualTransform.GetComponent<SpriteRenderer>();
+            if (visualRenderer != null)
+            {
+                return visualRenderer;
+            }
+        }
+
+        SpriteRenderer rootRenderer = GetComponent<SpriteRenderer>();
+        if (rootRenderer != null)
+        {
+            GameObject visual = new GameObject("Visual");
+            visual.transform.SetParent(transform, false);
+            visual.transform.localPosition = rootRenderer.transform.localPosition;
+            visual.transform.localRotation = rootRenderer.transform.localRotation;
+            visual.transform.localScale = rootRenderer.transform.localScale;
+
+            SpriteRenderer migrated = visual.AddComponent<SpriteRenderer>();
+            migrated.sprite = rootRenderer.sprite;
+            migrated.color = rootRenderer.color;
+            migrated.sortingLayerName = rootRenderer.sortingLayerName;
+            migrated.sortingOrder = rootRenderer.sortingOrder;
+            migrated.sharedMaterial = rootRenderer.sharedMaterial;
+            Destroy(rootRenderer);
+            return migrated;
+        }
+
+        GameObject created = new GameObject("Visual");
+        created.transform.SetParent(transform, false);
+        return created.AddComponent<SpriteRenderer>();
     }
 
     private static Color WithAlpha(Color color, float alpha)

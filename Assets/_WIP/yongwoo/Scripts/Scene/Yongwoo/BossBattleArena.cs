@@ -21,7 +21,6 @@ public class BossBattleArena : MonoBehaviour
     [Header("Battle")]
     [SerializeField] private BossTeleporter bossTeleporter;
     [SerializeField] private BossPatternRunner patternRunner;
-    [SerializeField] private SimpleParallaxBackground backgroundParallax;
 
     [Header("Hybrid Arena Visuals")]
     [SerializeField] private bool useArenaHybridFrame = true;
@@ -29,6 +28,9 @@ public class BossBattleArena : MonoBehaviour
     [SerializeField, Min(0f)] private float arenaPulseSpeed = 5.2f;
     [SerializeField] private Color arenaFrameColor = new Color(0f, 0.92f, 1f, 0.34f);
     [SerializeField] private Color arenaWarningColor = new Color(1f, 0.18f, 0.42f, 0.28f);
+
+    [Header("Battle UI")]
+    [SerializeField] private BossHealthBarUI bossHealthBar;
 
     [Header("References")]
     [SerializeField] private SimpleCameraFollow cameraFollow;
@@ -98,6 +100,7 @@ public class BossBattleArena : MonoBehaviour
         RefreshTeleportAnchorsFromHierarchy();
 
         _isActive = true;
+        YongwooAudioManager.Play(YongwooSfxId.BossArenaEnter, 0.68f, 0.02f);
 
         if (cameraFollow != null && cameraAnchor != null)
         {
@@ -113,11 +116,6 @@ public class BossBattleArena : MonoBehaviour
 
         _cameraWorldBounds = ComputeCameraWorldBounds();
         ValidateAndFitArenaContents();
-
-        if (backgroundParallax != null)
-        {
-            backgroundParallax.enabled = false;
-        }
 
         if (bossTeleporter != null)
         {
@@ -137,6 +135,39 @@ public class BossBattleArena : MonoBehaviour
         EnsureArenaHybridVisuals();
         UpdateArenaHybridVisuals();
         PulseScreenGlitch(0.28f, 0.14f);
+        BindBossHealthBar();
+    }
+
+    private void BindBossHealthBar()
+    {
+        bossHealthBar ??= FindFirstObjectByType<BossHealthBarUI>();
+        if (bossHealthBar == null)
+        {
+            GameObject barHost = new GameObject("BossHealthBarUI");
+            barHost.transform.SetParent(transform, false);
+            bossHealthBar = barHost.AddComponent<BossHealthBarUI>();
+        }
+
+        BossPhaseController rootBoss = FindRootBossPhaseController();
+        if (rootBoss != null)
+        {
+            bossHealthBar.Bind(rootBoss);
+        }
+    }
+
+    private static BossPhaseController FindRootBossPhaseController()
+    {
+        BossPhaseController[] controllers = FindObjectsByType<BossPhaseController>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        for (int i = 0; i < controllers.Length; i++)
+        {
+            BossPhaseController controller = controllers[i];
+            if (controller != null && controller.IsRootController)
+            {
+                return controller;
+            }
+        }
+
+        return null;
     }
 
     private Bounds ComputeCameraWorldBounds()
@@ -373,12 +404,6 @@ public class BossBattleArena : MonoBehaviour
                 patternRunner ??= runner;
                 bossTeleporter ??= runner.GetComponent<BossTeleporter>();
             }
-        }
-
-        if (backgroundParallax == null)
-        {
-            Transform bossScene = transform.root;
-            backgroundParallax = bossScene.GetComponentInChildren<SimpleParallaxBackground>(true);
         }
 
         glitchOverlay ??= FindFirstObjectByType<ScreenGlitchOverlay>();

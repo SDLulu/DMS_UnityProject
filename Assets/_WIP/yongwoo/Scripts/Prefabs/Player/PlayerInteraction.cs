@@ -140,6 +140,10 @@ public class PlayerInteraction : MonoBehaviour, IDamageReceiver
         }
 
         _flashRoutine = StartCoroutine(FlashRoutine());
+        if (_currentHealth > 0f)
+        {
+            YongwooAudioManager.Play(YongwooSfxId.PlayerHurt, 0.72f, 0.04f);
+        }
         Damaged?.Invoke();
         HealthChanged?.Invoke();
 
@@ -293,6 +297,7 @@ public class PlayerInteraction : MonoBehaviour, IDamageReceiver
     private void HandleDeath()
     {
         _isDead = true;
+        YongwooAudioManager.Play(YongwooSfxId.PlayerDeath, 0.8f, 0.02f);
         Died?.Invoke();
 
         if (spriteRenderer != null)
@@ -352,6 +357,7 @@ public class PlayerInteraction : MonoBehaviour, IDamageReceiver
         SetManagedBehavioursEnabled(true);
         HealthChanged?.Invoke();
         Respawned?.Invoke();
+        YongwooAudioManager.Play(YongwooSfxId.PlayerRespawn, 0.65f, 0.02f);
     }
 
     private void SetManagedBehavioursEnabled(bool enabled)

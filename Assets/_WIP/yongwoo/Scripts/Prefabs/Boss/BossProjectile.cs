@@ -297,6 +297,7 @@ public class BossProjectile : MonoBehaviour
         }
 
         _burstSpawned = true;
+        YongwooAudioManager.Play(YongwooSfxId.BossProjectileImpact, 0.62f, 0.05f);
         Vector2 direction = _body != null && _body.linearVelocity.sqrMagnitude > 0.001f
             ? _body.linearVelocity.normalized
             : (Vector2)transform.right;
