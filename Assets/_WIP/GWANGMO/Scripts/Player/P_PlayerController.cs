@@ -92,6 +92,7 @@ public class P_PlayerController : MonoBehaviour
     [SerializeField] private string fallAnimationName = "Fall";
     [SerializeField] private string frontDashAnimationName = "Front_Dash";
     [SerializeField] private string backDashAnimationName = "Back_Dash";
+    [SerializeField] private string iaidoDashAnimationName = "Dash_Attack";
 
     [Header("Debug")]
     [SerializeField] private bool debugGroundCheck;
@@ -237,7 +238,7 @@ public class P_PlayerController : MonoBehaviour
 
         if (iaidoAttackPressed && frontDashCooldownTimer <= 0f && !IsActionLocked)
         {
-            StartDash(PlayerActionState.IaidoDash, GetFrontDashDirection(), frontDashSpeed, frontDashDuration, frontDashAnimationName);
+            StartDash(PlayerActionState.IaidoDash, GetFrontDashDirection(), frontDashSpeed, frontDashDuration, iaidoDashAnimationName);
             frontDashCooldownTimer = frontDashCooldown;
         }
 
