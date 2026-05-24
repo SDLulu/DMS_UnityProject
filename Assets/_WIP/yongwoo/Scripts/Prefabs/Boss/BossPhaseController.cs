@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -32,6 +33,22 @@ public class BossPhaseController : MonoBehaviour
     [Header("Transition Timing")]
     [SerializeField, Min(0f)] private float p2StartupDelay = 0.7f;
     [SerializeField, Min(0f)] private float p3StartupDelay = 0.8f;
+
+    [Header("Phase Transition Glitch")]
+    [SerializeField, Min(0f)] private float phaseGlitchFadeIn = 0.22f;
+    [SerializeField, Min(0f)] private float phaseGlitchHold = 0.2f;
+    [SerializeField, Min(0f)] private float phaseGlitchFadeOut = 0.4f;
+    [SerializeField, Range(0f, 1f)] private float phaseGlitchPeak = 0.4f;
+
+    [Header("Final Defeat")]
+    [SerializeField, Min(0.1f)] private float finaleMergeDuration = 0.58f;
+    [SerializeField, Min(0f)] private float finaleGlitchHold = 0.32f;
+    [SerializeField, Min(1)] private int finaleSoulMoteCount = 72;
+
+    [Header("Narrative Sequences")]
+    [SerializeField] private SceneEventSequence p1ToP2Sequence;
+    [SerializeField] private SceneEventSequence p2ToP3Sequence;
+    [SerializeField] private SceneEventSequence finalDefeatSequence;
 
     [Header("Sprites")]
     [SerializeField] private Sprite p1Sprite;
@@ -70,8 +87,13 @@ public class BossPhaseController : MonoBehaviour
     private Phase _phase = Phase.P1;
     private Role _role = Role.Main;
     private bool _reportedDead;
+    private bool _defeated;
     private bool _transitioning;
     private bool _subscribed;
+    private Coroutine _transitionRoutine;
+    private bool _rootHealthInitialized;
+    private bool _ownsTransitionFreeze;
+    private PlayerSlowMotion _transitionSlowMotion;
     private bool _hybridVisualsReady;
     private Vector3 _visualBaseLocalPosition;
     private Vector3 _visualBaseLocalScale = Vector3.one;
@@ -84,6 +106,14 @@ public class BossPhaseController : MonoBehaviour
     private SpriteRenderer _haloRenderer;
     private SpriteRenderer _verticalLineRenderer;
     private readonly List<SpriteRenderer> _glitchBars = new();
+    private readonly List<SpriteRenderer> _fadeRenderers = new();
+    private readonly List<Color> _fadeStartColors = new();
+
+    public bool IsRootController => _owner == null;
+    public bool IsDefeated => _defeated || _reportedDead;
+    public int AggregateCurrentHealth { get; private set; }
+    public int AggregateMaxHealth { get; private set; }
+    public event System.Action<int, int> AggregateHealthChanged;
 
 #if UNITY_EDITOR
     private static readonly string[] EditorIdleFramePaths =
@@ -103,13 +133,34 @@ public class BossPhaseController : MonoBehaviour
         Subscribe();
     }
 
+    private void Start()
+    {
+        if (!IsRootController || _rootHealthInitialized)
+        {
+            return;
+        }
+
+        _rootHealthInitialized = true;
+        _members.Clear();
+        _members.Add(this);
+        interaction?.ResetHealth(p1Health);
+        SubscribeMemberHealth(this);
+        RefreshAggregateHealth();
+    }
+
     private void Update()
     {
+        if (_defeated)
+        {
+            return;
+        }
+
         UpdateHybridVisuals();
     }
 
     private void OnDestroy()
     {
+        ReleaseTransitionFreeze();
         Unsubscribe();
     }
 
@@ -150,10 +201,16 @@ public class BossPhaseController : MonoBehaviour
 
     private void HandleDamaged(int currentHealth)
     {
+        if (_defeated)
+        {
+            return;
+        }
+
         SpawnImpactBurst(transform.position, _rolePrimary, _roleSecondary, 9, 0.18f, 0.06f);
         SpawnShockwave(transform.position, _rolePrimary, 0.18f, 0.34f, 2.1f, 0.56f);
         ShakeCamera(damageShakeStrength, damageShakeDuration);
         UpdateGlitchBars(1f);
+        GetRoot().RefreshAggregateHealth();
     }
 
     private void HandleDied()
@@ -165,6 +222,8 @@ public class BossPhaseController : MonoBehaviour
 
         if (_owner != null)
         {
+            ApplyDefeatedPresentation();
+            GetRoot().RefreshAggregateHealth();
             _owner.ReportMemberDead(this);
             return;
         }
@@ -174,21 +233,21 @@ public class BossPhaseController : MonoBehaviour
             SpawnImpactBurst(transform.position, _rolePrimary, _roleSecondary, 18, 0.32f, 0.12f);
             SpawnShockwave(transform.position, _roleSecondary, 0.42f, 0.72f, 3.1f, 0.72f);
             ShakeCamera(splitShakeStrength, splitShakeDuration);
-            PulseScreenGlitch(0.42f, 0.12f);
-            EnterP2();
+            p1ToP2Sequence ??= BossStoryRuntimeSequenceFactory.EnsureP1ToP2Sequence(transform);
+            BeginPhaseTransition(EnterP2, p1ToP2Sequence);
             return;
         }
 
         SpawnImpactBurst(transform.position, _rolePrimary, _roleSecondary, 12, 0.24f, 0.08f);
         SpawnShockwave(transform.position, _rolePrimary, 0.28f, 0.48f, 2.4f, 0.62f);
         ShakeCamera(damageShakeStrength, damageShakeDuration);
+        ApplyDefeatedPresentation();
+        GetRoot().RefreshAggregateHealth();
         ReportMemberDead(this);
     }
 
     private void EnterP2()
     {
-        _transitioning = true;
-
         CacheArena();
         ClearMembers(keepSelf: true);
         _phase = Phase.P2;
@@ -197,18 +256,12 @@ public class BossPhaseController : MonoBehaviour
         _members.Add(this);
 
         ConfigureMember(this, Phase.P2, Role.A, p2CloneHealth, cloneASprite, PointInArena(0.28f, 0.55f), p2StartupDelay);
-        SpawnSplitArrivalBurst(transform.position, Role.A);
         BossPhaseController cloneB = CreateClone("Boss_P2_B", Phase.P2, Role.B, p2CloneHealth, cloneBSprite, PointInArena(0.72f, 0.62f), p2StartupDelay);
         _members.Add(cloneB);
-        SpawnSplitArrivalBurst(cloneB.transform.position, Role.B);
-
-        _transitioning = false;
     }
 
     private void EnterP3()
     {
-        _transitioning = true;
-
         CacheArena();
         ClearMembers(keepSelf: true);
         _phase = Phase.P3;
@@ -217,15 +270,24 @@ public class BossPhaseController : MonoBehaviour
         _members.Add(this);
 
         ConfigureMember(this, Phase.P3, Role.A, p3CloneHealth, cloneASprite, PointInArena(0.2f, 0.62f), p3StartupDelay);
-        SpawnSplitArrivalBurst(transform.position, Role.A);
         BossPhaseController cloneB = CreateClone("Boss_P3_B", Phase.P3, Role.B, p3CloneHealth, cloneBSprite, PointInArena(0.8f, 0.62f), p3StartupDelay);
         BossPhaseController cloneC = CreateClone("Boss_P3_C", Phase.P3, Role.C, p3CloneHealth, cloneCSprite, PointInArena(0.5f, 0.82f), p3StartupDelay);
         _members.Add(cloneB);
         _members.Add(cloneC);
-        SpawnSplitArrivalBurst(cloneB.transform.position, Role.B);
-        SpawnSplitArrivalBurst(cloneC.transform.position, Role.C);
+    }
 
-        _transitioning = false;
+    private void PlayPhaseRevealBursts()
+    {
+        for (int i = 0; i < _members.Count; i++)
+        {
+            BossPhaseController member = _members[i];
+            if (member == null)
+            {
+                continue;
+            }
+
+            SpawnSplitArrivalBurst(member.transform.position, member._role);
+        }
     }
 
     private BossPhaseController CreateClone(string cloneName, Phase phase, Role role, int health, Sprite sprite, Vector3 position, float startupDelay)
@@ -245,10 +307,12 @@ public class BossPhaseController : MonoBehaviour
         member._phase = phase;
         member._role = role;
         member._reportedDead = false;
+        member._defeated = false;
         member._transitioning = false;
         member.transform.position = position;
 
         member.interaction?.ResetHealth(health);
+        RestoreMemberCollidersAndVisuals(member);
 
         if (member.visualRenderer != null)
         {
@@ -275,6 +339,29 @@ public class BossPhaseController : MonoBehaviour
         {
             member.runner.SetPatternSlots(member.BuildPatternSlots(role), allowAutoMerge: false);
             member.runner.RestartPatternLoop(startupDelay);
+        }
+
+        GetRoot().TrackMember(member);
+    }
+
+    private static void RestoreMemberCollidersAndVisuals(BossPhaseController member)
+    {
+        Collider2D[] colliders = member.GetComponentsInChildren<Collider2D>(true);
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            if (colliders[i] != null)
+            {
+                colliders[i].enabled = true;
+            }
+        }
+
+        SpriteRenderer[] renderers = member.GetComponentsInChildren<SpriteRenderer>(true);
+        for (int i = 0; i < renderers.Length; i++)
+        {
+            if (renderers[i] != null)
+            {
+                renderers[i].enabled = true;
+            }
         }
     }
 
@@ -343,16 +430,266 @@ public class BossPhaseController : MonoBehaviour
             SpawnImpactBurst(transform.position, _rolePrimary, _roleSecondary, 16, 0.28f, 0.1f);
             SpawnShockwave(transform.position, _roleSecondary, 0.46f, 0.78f, 3.2f, 0.7f);
             ShakeCamera(splitShakeStrength, splitShakeDuration);
-            PulseScreenGlitch(0.46f, 0.14f);
-            EnterP3();
+            p2ToP3Sequence ??= BossStoryRuntimeSequenceFactory.EnsureP2ToP3Sequence(transform);
+            BeginPhaseTransition(EnterP3, p2ToP3Sequence);
         }
         else if (_phase == Phase.P3)
         {
-            SpawnImpactBurst(transform.position, _rolePrimary, _roleSecondary, 22, 0.42f, 0.14f);
-            SpawnShockwave(transform.position, _roleSecondary, 0.62f, 0.92f, 3.8f, 0.78f);
-            ShakeCamera(splitShakeStrength * 1.2f, splitShakeDuration);
-            PulseScreenGlitch(0.5f, 0.18f);
-            _phase = Phase.Complete;
+            finalDefeatSequence ??= BossStoryRuntimeSequenceFactory.EnsureFinalDefeatSequence(transform, ComputeMergeCenter(CollectPhaseMemberPositions()));
+            BeginFinalDefeatSequence();
+        }
+    }
+
+    private void BeginPhaseTransition(System.Action setupPhase, SceneEventSequence narrativeSequence)
+    {
+        if (_transitionRoutine != null)
+        {
+            StopCoroutine(_transitionRoutine);
+        }
+
+        _transitionRoutine = StartCoroutine(PlayPhaseTransitionRoutine(setupPhase, narrativeSequence));
+    }
+
+    private void BeginFinalDefeatSequence()
+    {
+        if (_transitionRoutine != null)
+        {
+            StopCoroutine(_transitionRoutine);
+        }
+
+        _transitionRoutine = StartCoroutine(PlayFinalDefeatRoutine());
+    }
+
+    private IEnumerator PlayPhaseTransitionRoutine(System.Action setupPhase, SceneEventSequence narrativeSequence)
+    {
+        _transitioning = true;
+        SetAllMemberRunnersEnabled(false);
+        SetGameplayControl(false);
+
+        if (narrativeSequence != null)
+        {
+            narrativeSequence.Play();
+            while (narrativeSequence.IsPlaying)
+            {
+                yield return null;
+            }
+        }
+
+        SetGameplayControl(false);
+        PushTransitionFreeze();
+        glitchOverlay ??= FindFirstObjectByType<ScreenGlitchOverlay>();
+        if (glitchOverlay != null)
+        {
+            yield return glitchOverlay.PlayTransitionCover(
+                phaseGlitchFadeIn,
+                phaseGlitchHold,
+                0f,
+                phaseGlitchPeak);
+        }
+
+        setupPhase?.Invoke();
+
+        yield return new WaitForSecondsRealtime(0.06f);
+
+        if (glitchOverlay != null)
+        {
+            yield return glitchOverlay.FadeTo(0f, phaseGlitchFadeOut);
+        }
+
+        PlayPhaseRevealBursts();
+
+        _transitioning = false;
+        _transitionRoutine = null;
+        RefreshAggregateHealth();
+        ReleaseTransitionFreeze();
+        SetGameplayControl(true);
+    }
+
+    private IEnumerator PlayFinalDefeatRoutine()
+    {
+        _transitioning = true;
+        SetAllMemberRunnersEnabled(false);
+        SetGameplayControl(false);
+        PushTransitionFreeze();
+
+        List<Vector3> mergeSources = CollectPhaseMemberPositions();
+        Vector3 mergeCenter = ComputeMergeCenter(mergeSources);
+        Color primary = RolePrimaryColor(_role);
+        Color accent = RoleSecondaryColor(_role);
+
+        SpawnImpactBurst(mergeCenter, primary, accent, 22, 0.42f, 0.14f);
+        SpawnShockwave(mergeCenter, accent, 0.62f, 0.92f, 3.8f, 0.78f);
+        ShakeCamera(splitShakeStrength * 1.35f, splitShakeDuration * 1.25f);
+
+        SetPhaseMemberVisualsVisible(false);
+
+        if (mergeSources.Count > 0)
+        {
+            yield return BossFinaleVfx.PlayConvergence(this, mergeSources, mergeCenter, finaleMergeDuration, primary, accent);
+        }
+
+        glitchOverlay ??= FindFirstObjectByType<ScreenGlitchOverlay>();
+        if (glitchOverlay != null)
+        {
+            yield return glitchOverlay.FadeTo(phaseGlitchPeak, phaseGlitchFadeIn);
+        }
+
+        BossFinaleVfx.SpawnHollowKnightSoulBurst(mergeCenter, primary, accent, finaleSoulMoteCount);
+        BossVfxUtility.SpawnRingBurst(mergeCenter, Color.white, 2.4f, 0.55f, 90);
+        BossVfxUtility.SpawnFlashDisc(mergeCenter, new Color(1f, 1f, 1f, 0.88f), 2f, 0.38f, 91);
+
+        yield return new WaitForSecondsRealtime(finaleGlitchHold);
+
+        if (glitchOverlay != null)
+        {
+            yield return glitchOverlay.FadeTo(0f, phaseGlitchFadeOut * 1.35f);
+        }
+
+        ReleaseTransitionFreeze();
+
+        _phase = Phase.Complete;
+
+        if (finalDefeatSequence != null)
+        {
+            finalDefeatSequence.Play();
+            while (finalDefeatSequence.IsPlaying)
+            {
+                yield return null;
+            }
+        }
+
+        _transitioning = false;
+        _transitionRoutine = null;
+    }
+
+    private static void SetGameplayControl(bool enabled)
+    {
+        if (enabled)
+        {
+            GameInput.Instance.EnableGameplay();
+        }
+        else
+        {
+            GameInput.Instance.DisableAllGameplayInput();
+        }
+
+        PlayerInteraction player = FindFirstObjectByType<PlayerInteraction>();
+        player?.SetGameplayControlEnabled(enabled, clearVelocity: !enabled);
+    }
+
+    private void PushTransitionFreeze()
+    {
+        if (_ownsTransitionFreeze)
+        {
+            return;
+        }
+
+        _transitionSlowMotion ??= FindFirstObjectByType<PlayerSlowMotion>();
+        _transitionSlowMotion?.PushExternalFreeze();
+        Time.timeScale = 0f;
+        Time.fixedDeltaTime = 0f;
+        _ownsTransitionFreeze = true;
+    }
+
+    private void ReleaseTransitionFreeze()
+    {
+        if (!_ownsTransitionFreeze)
+        {
+            return;
+        }
+
+        _ownsTransitionFreeze = false;
+        _transitionSlowMotion?.PopExternalFreeze();
+        Time.timeScale = 1f;
+        Time.fixedDeltaTime = 0.02f;
+    }
+
+    private List<Vector3> CollectPhaseMemberPositions()
+    {
+        List<Vector3> points = new();
+        BossPhaseController[] controllers = FindObjectsByType<BossPhaseController>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        for (int i = 0; i < controllers.Length; i++)
+        {
+            BossPhaseController member = controllers[i];
+            if (member == null || member._phase != _phase)
+            {
+                continue;
+            }
+
+            if (member != this && member._owner != this)
+            {
+                continue;
+            }
+
+            points.Add(member.transform.position);
+        }
+
+        return points;
+    }
+
+    private Vector3 ComputeMergeCenter(List<Vector3> points)
+    {
+        if (points == null || points.Count == 0)
+        {
+            return transform.position;
+        }
+
+        Vector3 sum = Vector3.zero;
+        for (int i = 0; i < points.Count; i++)
+        {
+            sum += points[i];
+        }
+
+        return sum / points.Count;
+    }
+
+    private void SetPhaseMemberVisualsVisible(bool visible)
+    {
+        BossPhaseController[] controllers = FindObjectsByType<BossPhaseController>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        for (int i = 0; i < controllers.Length; i++)
+        {
+            BossPhaseController member = controllers[i];
+            if (member == null || member._phase != _phase)
+            {
+                continue;
+            }
+
+            if (member != this && member._owner != this)
+            {
+                continue;
+            }
+
+            SpriteRenderer[] renderers = member.GetComponentsInChildren<SpriteRenderer>(true);
+            for (int r = 0; r < renderers.Length; r++)
+            {
+                if (renderers[r] != null)
+                {
+                    renderers[r].enabled = visible;
+                }
+            }
+        }
+    }
+
+    private void SetAllMemberRunnersEnabled(bool enabled)
+    {
+        BossPhaseController[] controllers = FindObjectsByType<BossPhaseController>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        for (int i = 0; i < controllers.Length; i++)
+        {
+            BossPhaseController member = controllers[i];
+            if (member == null || member._phase != _phase)
+            {
+                continue;
+            }
+
+            if (member != this && member._owner != this)
+            {
+                continue;
+            }
+
+            if (member.runner != null)
+            {
+                member.runner.enabled = enabled;
+            }
         }
     }
 
@@ -402,6 +739,178 @@ public class BossPhaseController : MonoBehaviour
         }
 
         return false;
+    }
+
+    private BossPhaseController GetRoot()
+    {
+        BossPhaseController root = this;
+        while (root._owner != null)
+        {
+            root = root._owner;
+        }
+
+        return root;
+    }
+
+    private void TrackMember(BossPhaseController member)
+    {
+        if (!IsRootController || member == null)
+        {
+            return;
+        }
+
+        if (!_members.Contains(member))
+        {
+            _members.Add(member);
+        }
+
+        SubscribeMemberHealth(member);
+    }
+
+    private void SubscribeMemberHealth(BossPhaseController member)
+    {
+        if (!IsRootController || member?.interaction == null)
+        {
+            return;
+        }
+
+        member.interaction.Damaged -= OnMemberHealthChanged;
+        member.interaction.Died -= OnMemberHealthChanged;
+        member.interaction.Damaged += OnMemberHealthChanged;
+        member.interaction.Died += OnMemberHealthChanged;
+    }
+
+    private void OnMemberHealthChanged(int _)
+    {
+        RefreshAggregateHealth();
+    }
+
+    private void OnMemberHealthChanged()
+    {
+        RefreshAggregateHealth();
+    }
+
+    public void RefreshAggregateHealth()
+    {
+        if (!IsRootController)
+        {
+            _owner?.RefreshAggregateHealth();
+            return;
+        }
+
+        int current = 0;
+        int max = 0;
+        BossPhaseController[] controllers = FindObjectsByType<BossPhaseController>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        for (int i = 0; i < controllers.Length; i++)
+        {
+            BossPhaseController member = controllers[i];
+            if (member == null || member._phase != _phase)
+            {
+                continue;
+            }
+
+            if (member != this && member._owner != this)
+            {
+                continue;
+            }
+
+            if (member.interaction == null)
+            {
+                continue;
+            }
+
+            max += member.interaction.MaxHealth;
+            current += member.IsDefeated ? 0 : member.interaction.CurrentHealth;
+        }
+
+        AggregateCurrentHealth = current;
+        AggregateMaxHealth = max;
+        AggregateHealthChanged?.Invoke(current, max);
+    }
+
+    private void ApplyDefeatedPresentation()
+    {
+        if (_defeated)
+        {
+            return;
+        }
+
+        _defeated = true;
+
+        if (runner != null)
+        {
+            runner.enabled = false;
+        }
+
+        if (teleporter != null)
+        {
+            teleporter.enabled = false;
+        }
+
+        Collider2D[] colliders = GetComponentsInChildren<Collider2D>(true);
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            if (colliders[i] != null)
+            {
+                colliders[i].enabled = false;
+            }
+        }
+
+        StartCoroutine(FadeOutVisualsRoutine(0.45f));
+    }
+
+    private IEnumerator FadeOutVisualsRoutine(float duration)
+    {
+        _fadeRenderers.Clear();
+        _fadeStartColors.Clear();
+
+        SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>(true);
+        for (int i = 0; i < renderers.Length; i++)
+        {
+            SpriteRenderer renderer = renderers[i];
+            if (renderer == null)
+            {
+                continue;
+            }
+
+            _fadeRenderers.Add(renderer);
+            _fadeStartColors.Add(renderer.color);
+        }
+
+        float age = 0f;
+        while (age < duration)
+        {
+            age += Time.deltaTime;
+            float alpha = 1f - Mathf.Clamp01(age / duration);
+            for (int i = 0; i < _fadeRenderers.Count; i++)
+            {
+                SpriteRenderer renderer = _fadeRenderers[i];
+                if (renderer == null)
+                {
+                    continue;
+                }
+
+                Color color = _fadeStartColors[i];
+                color.a = _fadeStartColors[i].a * alpha;
+                renderer.color = color;
+            }
+
+            yield return null;
+        }
+
+        for (int i = 0; i < _fadeRenderers.Count; i++)
+        {
+            SpriteRenderer renderer = _fadeRenderers[i];
+            if (renderer == null)
+            {
+                continue;
+            }
+
+            Color color = _fadeStartColors[i];
+            color.a = 0f;
+            renderer.color = color;
+            renderer.enabled = false;
+        }
     }
 
     private void CacheArena()
@@ -622,11 +1131,11 @@ public class BossPhaseController : MonoBehaviour
             return;
         }
 
-        Random.State randomState = Random.state;
+        UnityEngine.Random.State randomState = UnityEngine.Random.state;
         unchecked
         {
             int seed = gameObject.GetInstanceID() ^ Mathf.FloorToInt(Time.time / Mathf.Max(0.01f, glitchInterval));
-            Random.InitState(seed);
+            UnityEngine.Random.InitState(seed);
         }
 
         for (int i = 0; i < _glitchBars.Count; i++)
@@ -637,24 +1146,24 @@ public class BossPhaseController : MonoBehaviour
                 continue;
             }
 
-            bool visible = Random.value > 0.18f;
+            bool visible = UnityEngine.Random.value > 0.18f;
             bar.enabled = visible;
             if (!visible)
             {
                 continue;
             }
 
-            float side = Random.value > 0.5f ? 1f : -1f;
-            float y = Random.Range(-0.48f, 0.5f);
-            float x = side * Random.Range(0.18f, 0.42f);
-            float width = Random.Range(0.12f, 0.34f);
-            float height = Random.Range(0.006f, 0.018f);
+            float side = UnityEngine.Random.value > 0.5f ? 1f : -1f;
+            float y = UnityEngine.Random.Range(-0.48f, 0.5f);
+            float x = side * UnityEngine.Random.Range(0.18f, 0.42f);
+            float width = UnityEngine.Random.Range(0.12f, 0.34f);
+            float height = UnityEngine.Random.Range(0.006f, 0.018f);
             bar.transform.localPosition = new Vector3(x, y, 0f);
             bar.transform.localScale = new Vector3(width, height, 1f);
-            Color color = Random.value > 0.5f ? _rolePrimary : _roleSecondary;
-            SetRendererColor(bar, color, Random.Range(0.18f, 0.5f) + pulse * 0.15f);
+            Color color = UnityEngine.Random.value > 0.5f ? _rolePrimary : _roleSecondary;
+            SetRendererColor(bar, color, UnityEngine.Random.Range(0.18f, 0.5f) + pulse * 0.15f);
         }
-        Random.state = randomState;
+        UnityEngine.Random.state = randomState;
     }
 
     private void SpawnSplitArrivalBurst(Vector3 position, Role role)
@@ -670,33 +1179,33 @@ public class BossPhaseController : MonoBehaviour
             return;
         }
 
-        Random.State randomState = Random.state;
+        UnityEngine.Random.State randomState = UnityEngine.Random.state;
         unchecked
         {
-            Random.InitState(gameObject.GetInstanceID() ^ Mathf.RoundToInt(Time.time * 1000f) ^ count);
+            UnityEngine.Random.InitState(gameObject.GetInstanceID() ^ Mathf.RoundToInt(Time.time * 1000f) ^ count);
         }
 
         for (int i = 0; i < count; i++)
         {
             GameObject spark = new GameObject("Boss_ImpactSpark");
-            spark.transform.position = position + new Vector3(Random.Range(-radius, radius), Random.Range(-radius, radius), 0f);
-            spark.transform.rotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
-            spark.transform.localScale = new Vector3(Random.Range(0.08f, 0.28f), Random.Range(0.006f, 0.018f), 1f);
+            spark.transform.position = position + new Vector3(UnityEngine.Random.Range(-radius, radius), UnityEngine.Random.Range(-radius, radius), 0f);
+            spark.transform.rotation = Quaternion.Euler(0f, 0f, UnityEngine.Random.Range(0f, 360f));
+            spark.transform.localScale = new Vector3(UnityEngine.Random.Range(0.08f, 0.28f), UnityEngine.Random.Range(0.006f, 0.018f), 1f);
 
             SpriteRenderer renderer = spark.AddComponent<SpriteRenderer>();
             renderer.sprite = RuntimeSpriteUtility.WhiteSprite;
             renderer.sortingLayerName = "Effect";
             renderer.sortingOrder = 70 + i;
             renderer.sharedMaterial = RuntimeSpriteUtility.UnlitSpriteMaterial;
-            Color color = Random.value > 0.45f ? primary : secondary;
-            color.a = Random.Range(0.42f, 0.88f);
+            Color color = UnityEngine.Random.value > 0.45f ? primary : secondary;
+            color.a = UnityEngine.Random.Range(0.42f, 0.88f);
             renderer.color = color;
 
             BossEffectFade fade = spark.AddComponent<BossEffectFade>();
-            fade.Begin(lifetime * Random.Range(0.75f, 1.15f), shrinkOverLifetime: true);
+            fade.Begin(lifetime * UnityEngine.Random.Range(0.75f, 1.15f), shrinkOverLifetime: true);
         }
 
-        Random.state = randomState;
+        UnityEngine.Random.state = randomState;
     }
 
     private void SpawnShockwave(Vector3 position, Color color, float startRadius, float lifetime, float expandMultiplier, float alpha)
@@ -802,7 +1311,7 @@ public class BossPhaseController : MonoBehaviour
 #if UNITY_EDITOR
     private static Sprite[] LoadEditorSpriteFrames(string path)
     {
-        Object[] assets = UnityEditor.AssetDatabase.LoadAllAssetsAtPath(path);
+        UnityEngine.Object[] assets = UnityEditor.AssetDatabase.LoadAllAssetsAtPath(path);
         List<Sprite> sprites = new();
         for (int i = 0; i < assets.Length; i++)
         {

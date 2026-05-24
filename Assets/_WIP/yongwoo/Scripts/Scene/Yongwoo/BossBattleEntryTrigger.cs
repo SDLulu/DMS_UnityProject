@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 // 역할:
@@ -10,8 +11,11 @@ public class BossBattleEntryTrigger : MonoBehaviour
     [SerializeField] private BossBattleArena arena;
     [SerializeField] private bool triggerOnce = true;
     [SerializeField] private string requiredTag = "Player";
+    [SerializeField] private SceneEventSequence beforeBattleSequence;
+    [SerializeField] private bool waitForBeforeBattleSequence = true;
 
     private bool _hasTriggered;
+    private bool _isEntering;
     private Collider2D _collider;
 
     private void Reset()
@@ -42,6 +46,11 @@ public class BossBattleEntryTrigger : MonoBehaviour
             return;
         }
 
+        if (_isEntering)
+        {
+            return;
+        }
+
         if (arena == null)
         {
             Debug.LogWarning("[BossBattleEntry] arena 참조 없음", this);
@@ -61,7 +70,28 @@ public class BossBattleEntryTrigger : MonoBehaviour
         }
 
         _hasTriggered = true;
+        beforeBattleSequence ??= BossStoryRuntimeSequenceFactory.EnsureEntrySequence(transform);
+        StartCoroutine(EnterBattleRoutine());
+    }
+
+    private IEnumerator EnterBattleRoutine()
+    {
+        _isEntering = true;
+
+        if (beforeBattleSequence != null)
+        {
+            beforeBattleSequence.Play();
+            if (waitForBeforeBattleSequence)
+            {
+                while (beforeBattleSequence.IsPlaying)
+                {
+                    yield return null;
+                }
+            }
+        }
+
         arena.EnterBattle();
+        _isEntering = false;
     }
 
     private void EnsureTutorialMarker()

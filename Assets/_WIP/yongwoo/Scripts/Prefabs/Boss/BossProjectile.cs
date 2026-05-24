@@ -12,14 +12,17 @@ using UnityEngine;
 public class BossProjectile : MonoBehaviour
 {
     [Header("Fallback Visual")]
-    [SerializeField] private Color defaultColor = new Color(1f, 0.35f, 0.3f, 0.95f);
+    [SerializeField] private Color defaultColor = new Color(1f, 0.35f, 0.3f, 0.85f);
     [SerializeField] private Color accentColor = new Color(0f, 0.9f, 1f, 0.9f);
     [SerializeField] private Color hotCoreColor = new Color(1f, 0.95f, 0.72f, 1f);
-    [SerializeField] private float defaultRadius = 0.03f;
-    [SerializeField] private float visualScaleMultiplier = 4.5f;
-    [SerializeField] private float trailTime = 0.12f;
+    [SerializeField] private float defaultRadius = 0.1f;
+    [SerializeField, Min(0.1f)] private float visualScaleMultiplier = 4.5f;
+    [SerializeField, Min(0.05f)] private float trailTime = 0.16f;
+    [SerializeField, Min(0.5f)] private float trailHeadWidthScale = 1.35f;
+    [SerializeField, Range(0f, 0.35f)] private float trailTailWidthFactor = 0.04f;
     [SerializeField, Min(0f)] private float pulseScale = 0.18f;
     [SerializeField, Min(0f)] private float pulseSpeed = 22f;
+    [SerializeField, Min(0f)] private float hitScanPadding = 0.04f;
 
     private float _lifetime = 4f;
     private float _damage = 1f;
@@ -32,8 +35,11 @@ public class BossProjectile : MonoBehaviour
     private Vector3 _coreBaseScale;
     private Vector3 _ringBaseScale;
     private Vector3 _streakBaseScale;
+    private CircleCollider2D _collider;
+    private float _visualWorldRadius;
     private float _age;
     private bool _burstSpawned;
+    private bool _hitResolved;
 
     public void Launch(Vector2 direction, float speed, float lifetime, float damage, GameObject owner)
     {
@@ -71,8 +77,6 @@ public class BossProjectile : MonoBehaviour
 
     private void SetupFallbackVisuals()
     {
-        float visualRadius = Mathf.Max(0.015f, defaultRadius);
-
         _bodyRenderer = GetComponent<SpriteRenderer>();
         if (_bodyRenderer != null)
         {
@@ -90,20 +94,45 @@ public class BossProjectile : MonoBehaviour
             }
         }
 
-        transform.localScale = Vector3.one * (visualRadius * visualScaleMultiplier);
+        ApplyVisualScale();
+        SyncColliderToVisual();
 
-        _coreRenderer = EnsureLayer("Projectile_HotCore", RuntimeSpriteUtility.CircleSprite, 46, hotCoreColor, new Vector3(0.46f, 0.46f, 1f));
-        _ringRenderer = EnsureLayer("Projectile_Ring", RuntimeSpriteUtility.RingSprite, 45, accentColor, new Vector3(1.3f, 1.3f, 1f));
-        _streakRenderer = EnsureLayer("Projectile_Streak", RuntimeSpriteUtility.WhiteSprite, 44, accentColor, new Vector3(2.1f, 0.22f, 1f));
+        _coreRenderer = EnsureLayer("Projectile_HotCore", RuntimeSpriteUtility.CircleSprite, 46, hotCoreColor, new Vector3(0.55f, 0.55f, 1f));
+        _ringRenderer = EnsureLayer("Projectile_Ring", RuntimeSpriteUtility.RingSprite, 45, accentColor, new Vector3(1.15f, 1.15f, 1f));
+        _streakRenderer = EnsureLayer("Projectile_Streak", RuntimeSpriteUtility.WhiteSprite, 44, accentColor, new Vector3(1.35f, 0.18f, 1f));
         _coreBaseScale = _coreRenderer.transform.localScale;
         _ringBaseScale = _ringRenderer.transform.localScale;
         _streakBaseScale = _streakRenderer.transform.localScale;
 
-        CircleCollider2D circleCollider = GetComponent<CircleCollider2D>();
-        circleCollider.isTrigger = true;
-        circleCollider.radius = visualRadius;
+        SetupTrail();
+    }
 
-        SetupTrail(visualRadius);
+    private void ApplyVisualScale()
+    {
+        float uniformScale = Mathf.Max(0.22f, defaultRadius * visualScaleMultiplier);
+        transform.localScale = Vector3.one * uniformScale;
+        _visualWorldRadius = ComputeVisualWorldRadius();
+    }
+
+    private float ComputeVisualWorldRadius()
+    {
+        Sprite sprite = _bodyRenderer != null && _bodyRenderer.sprite != null
+            ? _bodyRenderer.sprite
+            : RuntimeSpriteUtility.CircleSprite;
+        float spriteRadius = Mathf.Max(0.001f, sprite.bounds.extents.x);
+        float scale = Mathf.Max(0.001f, Mathf.Abs(transform.localScale.x));
+        return spriteRadius * scale;
+    }
+
+    private void SyncColliderToVisual()
+    {
+        _collider ??= GetComponent<CircleCollider2D>();
+        _collider.isTrigger = true;
+
+        Sprite sprite = _bodyRenderer != null && _bodyRenderer.sprite != null
+            ? _bodyRenderer.sprite
+            : RuntimeSpriteUtility.CircleSprite;
+        _collider.radius = Mathf.Max(0.001f, sprite.bounds.extents.x);
     }
 
     private SpriteRenderer EnsureLayer(string objectName, Sprite sprite, int sortingOrder, Color color, Vector3 localScale)
@@ -136,7 +165,7 @@ public class BossProjectile : MonoBehaviour
         return renderer;
     }
 
-    private void SetupTrail(float visualRadius)
+    private void SetupTrail()
     {
         TrailRenderer trail = GetComponent<TrailRenderer>();
         if (trail == null)
@@ -144,12 +173,20 @@ public class BossProjectile : MonoBehaviour
             return;
         }
 
+        float headWidth = Mathf.Max(0.08f, _visualWorldRadius * 2f * trailHeadWidthScale);
+
         trail.time = trailTime;
-        trail.minVertexDistance = 0.02f;
-        trail.startWidth = Mathf.Max(0.03f, visualRadius * 2.2f);
-        trail.endWidth = 0.004f;
-        trail.numCapVertices = 2;
-        trail.numCornerVertices = 2;
+        trail.minVertexDistance = 0.012f;
+        // widthCurve/colorGradient t=0 → 총알(머리), t=1 → 꼬리(오래된 궤적)
+        trail.widthMultiplier = headWidth;
+        trail.widthCurve = new AnimationCurve(
+            new Keyframe(0f, 1f),
+            new Keyframe(0.22f, 0.74f),
+            new Keyframe(0.5f, 0.42f),
+            new Keyframe(0.78f, 0.14f),
+            new Keyframe(1f, trailTailWidthFactor));
+        trail.numCapVertices = 4;
+        trail.numCornerVertices = 3;
         trail.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
         trail.receiveShadows = false;
         trail.sortingLayerName = "Effect";
@@ -167,14 +204,16 @@ public class BossProjectile : MonoBehaviour
         gradient.SetKeys(
             new[]
             {
-                new GradientColorKey(hotCoreColor, 0f),
-                new GradientColorKey(defaultColor, 0.32f),
-                new GradientColorKey(accentColor, 1f)
+                new GradientColorKey(accentColor, 0f),
+                new GradientColorKey(defaultColor, 0.55f),
+                new GradientColorKey(defaultColor, 1f)
             },
             new[]
             {
                 new GradientAlphaKey(Mathf.Clamp01(defaultColor.a), 0f),
-                new GradientAlphaKey(0.5f, 0.45f),
+                new GradientAlphaKey(0.82f, 0.18f),
+                new GradientAlphaKey(0.45f, 0.45f),
+                new GradientAlphaKey(0.12f, 0.75f),
                 new GradientAlphaKey(0f, 1f)
             });
         trail.colorGradient = gradient;
@@ -192,6 +231,7 @@ public class BossProjectile : MonoBehaviour
         }
 
         UpdateHybridProjectileVisuals();
+        ScanPlayerOverlap();
     }
 
     private void UpdateHybridProjectileVisuals()
@@ -224,24 +264,9 @@ public class BossProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (_owner != null && other.transform.IsChildOf(_owner.transform))
+        if (TryResolveHit(other, destroyOnWorld: true))
         {
             return;
-        }
-
-        MonoBehaviour receiver = ResolveDamageReceiver(other);
-        if (receiver is IDamageReceiver damageReceiver)
-        {
-            damageReceiver.ReceiveHit(_damage, Vector2.zero, _owner);
-            SpawnImpactBurst();
-            Destroy(gameObject);
-            return;
-        }
-
-        if (!other.isTrigger)
-        {
-            SpawnImpactBurst();
-            Destroy(gameObject);
         }
     }
 
@@ -332,6 +357,88 @@ public class BossProjectile : MonoBehaviour
         Color color = renderer.color;
         color.a = Mathf.Clamp01(alpha);
         renderer.color = color;
+    }
+
+    private void ScanPlayerOverlap()
+    {
+        if (_hitResolved || _collider == null)
+        {
+            return;
+        }
+
+        float scale = Mathf.Max(Mathf.Abs(transform.lossyScale.x), Mathf.Abs(transform.lossyScale.y));
+        float radius = Mathf.Max(0.01f, _collider.radius * scale + hitScanPadding);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, radius);
+        for (int i = 0; i < hits.Length; i++)
+        {
+            Collider2D hit = hits[i];
+            if (hit == null || hit == _collider)
+            {
+                continue;
+            }
+
+            PlayerInteraction player = hit.GetComponentInParent<PlayerInteraction>();
+            if (player == null)
+            {
+                continue;
+            }
+
+            TryDamageReceiver(player);
+            return;
+        }
+    }
+
+    private bool TryResolveHit(Collider2D other, bool destroyOnWorld)
+    {
+        if (_hitResolved || other == null)
+        {
+            return true;
+        }
+
+        if (_owner != null && other.transform.IsChildOf(_owner.transform))
+        {
+            return true;
+        }
+
+        MonoBehaviour receiver = ResolveDamageReceiver(other);
+        if (receiver is IDamageReceiver damageReceiver)
+        {
+            TryDamageReceiver(damageReceiver);
+            return true;
+        }
+
+        if (destroyOnWorld && !other.isTrigger)
+        {
+            ResolveImpactOnly();
+            return true;
+        }
+
+        return false;
+    }
+
+    private void TryDamageReceiver(IDamageReceiver damageReceiver)
+    {
+        if (_hitResolved || damageReceiver == null)
+        {
+            return;
+        }
+
+        _hitResolved = true;
+        damageReceiver.ReceiveHit(_damage, Vector2.zero, _owner);
+        SpawnImpactBurst();
+        Destroy(gameObject);
+    }
+
+    private void ResolveImpactOnly()
+    {
+        if (_hitResolved)
+        {
+            return;
+        }
+
+        _hitResolved = true;
+        SpawnImpactBurst();
+        Destroy(gameObject);
     }
 
     private static MonoBehaviour ResolveDamageReceiver(Collider2D hit)
