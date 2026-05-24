@@ -234,6 +234,11 @@ public class BossProjectile : MonoBehaviour
         ScanPlayerOverlap();
     }
 
+    private void FixedUpdate()
+    {
+        ScanPlayerOverlap();
+    }
+
     private void UpdateHybridProjectileVisuals()
     {
         float pulse = 0.5f + Mathf.Sin(_age * pulseSpeed) * 0.5f;
@@ -268,6 +273,11 @@ public class BossProjectile : MonoBehaviour
         {
             return;
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        TryResolveHit(other, destroyOnWorld: false);
     }
 
     private void OnDestroy()
@@ -359,11 +369,11 @@ public class BossProjectile : MonoBehaviour
         renderer.color = color;
     }
 
-    private void ScanPlayerOverlap()
+    private bool ScanPlayerOverlap()
     {
         if (_hitResolved || _collider == null)
         {
-            return;
+            return false;
         }
 
         float scale = Mathf.Max(Mathf.Abs(transform.lossyScale.x), Mathf.Abs(transform.lossyScale.y));
@@ -383,9 +393,10 @@ public class BossProjectile : MonoBehaviour
                 continue;
             }
 
-            TryDamageReceiver(player);
-            return;
+            return TryDamageReceiver(player);
         }
+
+        return false;
     }
 
     private bool TryResolveHit(Collider2D other, bool destroyOnWorld)
@@ -409,6 +420,11 @@ public class BossProjectile : MonoBehaviour
 
         if (destroyOnWorld && !other.isTrigger)
         {
+            if (ScanPlayerOverlap())
+            {
+                return true;
+            }
+
             ResolveImpactOnly();
             return true;
         }
@@ -416,17 +432,22 @@ public class BossProjectile : MonoBehaviour
         return false;
     }
 
-    private void TryDamageReceiver(IDamageReceiver damageReceiver)
+    private bool TryDamageReceiver(IDamageReceiver damageReceiver)
     {
         if (_hitResolved || damageReceiver == null)
         {
-            return;
+            return false;
+        }
+
+        if (!damageReceiver.ReceiveHit(_damage, Vector2.zero, _owner))
+        {
+            return false;
         }
 
         _hitResolved = true;
-        damageReceiver.ReceiveHit(_damage, Vector2.zero, _owner);
         SpawnImpactBurst();
         Destroy(gameObject);
+        return true;
     }
 
     private void ResolveImpactOnly()

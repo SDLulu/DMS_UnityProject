@@ -87,8 +87,8 @@
 - 2026-05-24 보스 아레나 Hybrid 프레임 추가: `BossBattleArena`가 전투 입장 시 `Boss_ArenaFX` 런타임 자식을 만들고 화면 경계선/코너/스캔라인을 pulse 처리. 씬 YAML을 직접 수정하지 않고 코드 생성 방식으로 적용. `Yongwoo_Stage` dirty 때문에 refresh/compile/PlayMode 검증은 아직 보류
 - 2026-05-24 보스 반응성 레이어 추가: `BossEffectFade`를 확장/축소 fade 공용으로 보강하고, 보스 피격·분열·처치와 투사체 충돌에 `RingSprite` shockwave를 추가. 보스방 입장/P1→P2/P2→P3/P3 완료 시 기존 `ScreenGlitchOverlay.Pulse`를 짧게 호출해 화면 반응도 연결. `Yongwoo_Stage` dirty 때문에 refresh/compile/PlayMode 검증은 아직 보류
 - 2026-05-24 보스 스토리 연출 훅 설치 완료: 영상 파일은 사용자가 제작하는 전제로 `CutsceneVideoPanel` + `SceneEventSequence.PlayCutsceneVideo` step 추가. `BossBattleEntryTrigger.beforeBattleSequence`로 보스 등장 대사를 전투 시작 전에 재생 가능, `BossPhaseController`에 P1→P2/P2→P3/최종 처치 시퀀스 슬롯 추가. 페이즈 전환 전체 동안 플레이어 조작/시간이 튀지 않도록 `BossPhaseController`에서 전역 조작 잠금 + 전환 freeze 보강. 메뉴가 없어도 시퀀스 참조가 비어 있으면 `BossStoryRuntimeSequenceFactory`가 런타임 기본 시퀀스를 생성. `StoryMemoryVisual` 추가로 기억조각/HOME 코어가 별도 아트 없이도 pulse/ring/glitch bar로 보이게 함. `Tools/Yongwoo/Boss/Install Story Sequence Hooks` 실행 및 씬 저장 완료 — `보스연출` 루트, 기억조각 2개, `HOME코어_회수가능`, 보스 등장/전환/HOME 회수 시퀀스, 비디오 슬롯 생성/연결 확인. `unity-scanner read`로 씬 반영 확인, Unity 콘솔 error 없음, PlayMode 검증은 체크포인트 전이라 보류
-- 2026-05-24 보스 투사체 피격 보강: `BossProjectile`이 `OnTriggerEnter2D`만 의존하던 구조에 매 프레임 `Physics2D.OverlapCircleAll` 플레이어 샘플링을 추가. 빠른 키네마틱 트리거 탄환이 플레이어와 겹쳤는데 트리거 이벤트를 놓치는 경우에도 `PlayerInteraction.ReceiveHit()`를 호출하고 투사체 impact 처리. Unity 콘솔 error 없음. 실제 보스 탄 피격 PlayMode 검증은 체크포인트 후 필요
-- 2026-05-24 AI 영상 프롬프트팩 작성: `AI영상_프롬프트팩.md`에 인트로/기억 조각 1/기억 조각 2/엔딩 4개 복붙용 한글 프롬프트 정리. 방향은 대사·자막 없는 담백한 픽셀아트풍 컷신, 레퍼런스는 인트로 Image #1, 기억 조각 Image #2, 엔딩 Image #1+#2 기준
+- 2026-05-24 보스 투사체 피격 보강: `BossProjectile`이 `OnTriggerEnter2D`만 의존하던 구조에 `Update`/`FixedUpdate`의 `Physics2D.OverlapCircleAll` 플레이어 샘플링과 `OnTriggerStay2D`를 추가. 플레이어와 월드가 동시에 겹치면 플레이어 피격을 먼저 시도하고, `ReceiveHit()`가 실제 성공했을 때만 탄을 소모. 빠른 키네마틱 트리거 탄환이 플레이어와 겹쳤는데 트리거 이벤트를 놓치는 경우에도 `PlayerInteraction.ReceiveHit()` 경로를 탄다. PlayMode에서 `BossProjectile` overlap 스캔을 플레이어 콜라이더 중심에 대해 강제 호출해 `ReceiveHit=true`, 체력 1→0, `IsDead=true` 확인. 자동 프레임 진행 기반 관통 검증은 추가 필요
+- 2026-05-24 AI 영상 프롬프트팩 작성: `AI영상_프롬프트팩.md`에 인트로/기억 조각 1/기억 조각 2/엔딩 4개 복붙용 한글 프롬프트 정리. 방향은 대사·자막 없는 담백한 픽셀아트풍 컷신, 레퍼런스는 인트로 Image #1, 기억 조각 Image #2, 엔딩 Image #1+#2 기준. 스타일 일관성 흔들림을 줄이기 위해 4개 프롬프트 모두에 같은 `공통 고정 스타일` 블록과 검수 기준을 반복 삽입
 
 ## 시간 제어 3층 구조 (중요)
 
@@ -184,7 +184,7 @@
 - SPUM 빌드 오류 수정 후 Player build 재검증은 아직 미실행. Unity refresh/compile은 Day1에서 에러 없이 통과.
 - `Boss_P1_Prototype`은 `Yongwoo_Stage` `보스씬/보스`에 배치됨. P1→P2→P3 강제 전환 스모크는 통과했지만, 실제 플레이 손맛 기준으로 조준선 길이/탄속/대시 속도/장판·레이저 압박은 튜닝 필요. VFX 스케일 버그는 2026-05-24 수정 — PlayMode 재검증 필요
 - 보스 스토리 연출 훅은 코드/메뉴/씬 설치까지 완료. 다음에는 현재 작업분 체크포인트 후 PlayMode에서 기억조각 상호작용, 보스 등장 대사, P1→P2/P2→P3 대사, 처치 후 `HOME코어_회수가능` 활성화와 HOME 분석 로그 흐름을 검증해야 함. 사용자가 제작한 영상 클립은 `시퀀스_기억조각_01`, `시퀀스_기억조각_02`, `시퀀스_보스_처치후_HOME회수`의 `PlayCutsceneVideo` step에 연결
-- 보스 투사체는 trigger + overlap 샘플링으로 피격 경로를 보강했지만, 실제 플레이에서 보스 탄이 플레이어를 사망/리스폰시키는지 아직 관통 검증 필요
+- 보스 투사체는 trigger + overlap 샘플링으로 피격 경로를 보강했고 PlayMode 강제 overlap 스캔은 통과. 실제 플레이에서 보스가 발사한 탄을 플레이어가 맞고 사망/리스폰하는 전체 흐름은 아직 관통 검증 필요
 
 ---
 
