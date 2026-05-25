@@ -66,6 +66,7 @@ public class P_PlayerController : MonoBehaviour
 
     [Header("Dash Attack")]
     [SerializeField] private float dashAttackSpeed = 20f;
+    [SerializeField] private float dashAttackCooldown = 0.5f;
 
     [Header("Back Dash")]
     [SerializeField] private float backDashSpeed = 10f;
@@ -143,6 +144,7 @@ public class P_PlayerController : MonoBehaviour
     private float dashTimer;
     private float dashDistanceRemaining;
     private float frontDashCooldownTimer;
+    private float dashAttackCooldownTimer;
     private float backDashCooldownTimer;
     private float facing = 1f;
     private int wallDirection;
@@ -249,10 +251,10 @@ public class P_PlayerController : MonoBehaviour
             backDashCooldownTimer = backDashCooldown;
         }
 
-        if (iaidoAttackPressed && frontDashCooldownTimer <= 0f && !IsActionLocked)
+        if (iaidoAttackPressed && dashAttackCooldownTimer <= 0f && !IsActionLocked)
         {
             StartDashAttackWindup();
-            frontDashCooldownTimer = frontDashCooldown;
+            dashAttackCooldownTimer = dashAttackCooldown;
         }
 
         if (debugGroundCheck)
@@ -314,6 +316,11 @@ public class P_PlayerController : MonoBehaviour
         if (frontDashCooldownTimer > 0f)
         {
             frontDashCooldownTimer = Mathf.Max(0f, frontDashCooldownTimer - realDt);
+        }
+
+        if (dashAttackCooldownTimer > 0f)
+        {
+            dashAttackCooldownTimer = Mathf.Max(0f, dashAttackCooldownTimer - realDt);
         }
 
         if (backDashCooldownTimer > 0f)
