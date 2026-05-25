@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 // 역할:
 // - 풀스크린 페이드 인/아웃 전환을 제공합니다.
@@ -9,12 +10,30 @@ using UnityEngine;
 public class ScreenFade : MonoBehaviour
 {
     [SerializeField] private CanvasGroup fadeGroup;
+    [SerializeField] private Graphic fadeGraphic;
+
+    private Color _defaultFadeColor = Color.black;
 
     private void Awake()
     {
         if (fadeGroup == null)
         {
             fadeGroup = GetComponent<CanvasGroup>();
+        }
+
+        if (fadeGraphic == null)
+        {
+            fadeGraphic = GetComponent<Graphic>();
+        }
+
+        if (fadeGraphic == null)
+        {
+            fadeGraphic = GetComponentInChildren<Graphic>(includeInactive: true);
+        }
+
+        if (fadeGraphic != null)
+        {
+            _defaultFadeColor = fadeGraphic.color;
         }
 
         if (fadeGroup != null)
@@ -34,6 +53,36 @@ public class ScreenFade : MonoBehaviour
     {
         YongwooAudioManager.Play(YongwooSfxId.FadeIn, 0.42f, 0.01f);
         return Fade(0f, duration);
+    }
+
+    public IEnumerator Flash(Color color, float fadeInDuration, float holdDuration, float fadeOutDuration)
+    {
+        if (fadeGroup == null)
+        {
+            yield break;
+        }
+
+        Color previousColor = _defaultFadeColor;
+        if (fadeGraphic != null)
+        {
+            previousColor = fadeGraphic.color;
+            fadeGraphic.color = color;
+        }
+
+        YongwooAudioManager.Play(YongwooSfxId.GlitchPulse, 0.42f, 0.02f);
+        yield return Fade(1f, fadeInDuration);
+
+        if (holdDuration > 0f)
+        {
+            yield return new WaitForSecondsRealtime(holdDuration);
+        }
+
+        yield return Fade(0f, fadeOutDuration);
+
+        if (fadeGraphic != null)
+        {
+            fadeGraphic.color = previousColor;
+        }
     }
 
     private IEnumerator Fade(float targetAlpha, float duration)

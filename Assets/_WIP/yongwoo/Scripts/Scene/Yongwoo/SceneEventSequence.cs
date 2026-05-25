@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
 // 역할:
@@ -40,7 +41,12 @@ public class SceneEventSequence : MonoBehaviour
         SetCameraTarget,
         LockInput,
         UnlockInput,
-        PlayCutsceneVideo
+        PlayCutsceneVideo,
+        RiseObject,
+        WaitForCutsceneVideo,
+        ExitBossArena,
+        WhiteFlash,
+        LoadTitleScene
     }
 
     public enum InputWaitType
@@ -51,7 +57,8 @@ public class SceneEventSequence : MonoBehaviour
         Dash,
         Attack,
         Interact,
-        Roll
+        Roll,
+        Space
     }
 
     [System.Serializable]
@@ -94,6 +101,7 @@ public class SceneEventSequence : MonoBehaviour
     [SerializeField] private CutsceneVideoPanel cutsceneVideoPanel;
 
     private Coroutine _playRoutine;
+    private Coroutine _cutsceneVideoRoutine;
     private bool _hasPlayed;
     private bool _ownsTimeFreeze;
 
@@ -225,6 +233,13 @@ public class SceneEventSequence : MonoBehaviour
                     }
                     continue;
 
+                case StepType.WhiteFlash:
+                    if (screenFade != null)
+                    {
+                        yield return screenFade.Flash(Color.white, step.duration, step.strength, step.duration);
+                    }
+                    continue;
+
                 case StepType.GlitchPulse:
                     if (glitchOverlay != null)
                     {
@@ -281,10 +296,37 @@ public class SceneEventSequence : MonoBehaviour
                     continue;
 
                 case StepType.PlayCutsceneVideo:
-                    if (cutsceneVideoPanel != null)
+                    if (step.waitForCompletion)
                     {
-                        yield return cutsceneVideoPanel.Play(step.videoClip, step.skippable);
+                        yield return PlayCutsceneVideoRoutine(step);
                     }
+                    else
+                    {
+                        if (_cutsceneVideoRoutine != null)
+                        {
+                            StopCoroutine(_cutsceneVideoRoutine);
+                        }
+                        _cutsceneVideoRoutine = StartCoroutine(PlayCutsceneVideoRoutine(step));
+                    }
+                    continue;
+
+                case StepType.RiseObject:
+                    yield return RiseObjectRoutine(step);
+                    continue;
+
+                case StepType.WaitForCutsceneVideo:
+                    while (CutsceneVideoPanel.IsAnyPlaying)
+                    {
+                        yield return null;
+                    }
+                    continue;
+
+                case StepType.ExitBossArena:
+                    ExecuteStep(step);
+                    continue;
+
+                case StepType.LoadTitleScene:
+                    ExecuteStep(step);
                     continue;
             }
 
@@ -394,7 +436,83 @@ public class SceneEventSequence : MonoBehaviour
             case StepType.UnlockInput:
                 GameInput.Instance.EnableGameplay();
                 break;
+            case StepType.ExitBossArena:
+                BossBattleArena arena = Object.FindFirstObjectByType<BossBattleArena>(FindObjectsInactive.Include);
+                arena?.ExitBattle();
+                break;
+            case StepType.LoadTitleScene:
+                ReleaseTimeFreezeIfHeld();
+                Time.timeScale = 1f;
+                Time.fixedDeltaTime = 0.02f;
+                SceneManager.LoadScene("Yongwoo_Title");
+                break;
         }
+    }
+
+    private IEnumerator PlayCutsceneVideoRoutine(Step step)
+    {
+        if (cutsceneVideoPanel == null)
+        {
+            yield break;
+        }
+
+        VideoClip clip = step.videoClip;
+        bool hasStoryVideoKey = false;
+        YongwooStoryVideoKey storyVideoKey = default;
+
+        if (clip == null)
+        {
+            hasStoryVideoKey = YongwooStoryVideoClips.TryResolveKeyForSequence(gameObject.name, out storyVideoKey);
+            clip = hasStoryVideoKey ? YongwooStoryVideoClips.Load(storyVideoKey) : null;
+        }
+
+        if (hasStoryVideoKey)
+        {
+            cutsceneVideoPanel.SetStoryVideoKey(storyVideoKey);
+        }
+        else
+        {
+            cutsceneVideoPanel.ClearStoryVideoKey();
+        }
+
+        yield return cutsceneVideoPanel.Play(clip, step.skippable);
+
+        if (_cutsceneVideoRoutine != null)
+        {
+            _cutsceneVideoRoutine = null;
+        }
+    }
+
+    private static IEnumerator RiseObjectRoutine(Step step)
+    {
+        if (step.targetObject == null)
+        {
+            if (step.duration > 0f)
+            {
+                yield return new WaitForSecondsRealtime(step.duration);
+            }
+            yield break;
+        }
+
+        Transform target = step.targetObject.transform;
+        Vector3 end = target.position;
+        Vector3 start = end - Vector3.up * Mathf.Max(0f, step.strength);
+        float duration = Mathf.Max(0.01f, step.duration);
+
+        step.targetObject.SetActive(true);
+        target.position = start;
+
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            float t = Mathf.Clamp01(elapsed / duration);
+            t = t * t * (3f - 2f * t);
+            target.position = Vector3.LerpUnclamped(start, end, t);
+            yield return null;
+        }
+
+        target.position = end;
     }
 
     private IEnumerator ShowProgressLogRoutine(Step step)
@@ -508,6 +626,7 @@ public class SceneEventSequence : MonoBehaviour
                 InputWaitType.Attack => input.AttackPressed,
                 InputWaitType.Interact => input.InteractPressed,
                 InputWaitType.Roll => input.Move.y < -0.5f && Mathf.Abs(input.Move.x) > 0.5f,
+                InputWaitType.Space => UnityEngine.Input.GetKeyDown(KeyCode.Space),
                 _ => false
             };
             if (detected)

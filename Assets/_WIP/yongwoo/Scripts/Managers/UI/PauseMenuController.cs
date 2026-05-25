@@ -69,6 +69,11 @@ public class PauseMenuController : MonoBehaviour
 
     private void Update()
     {
+        if (CutsceneVideoPanel.IsAnyPlaying)
+        {
+            return;
+        }
+
         if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             TogglePause();

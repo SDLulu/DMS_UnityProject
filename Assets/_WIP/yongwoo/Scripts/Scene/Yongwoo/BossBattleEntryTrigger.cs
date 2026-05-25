@@ -78,6 +78,8 @@ public class BossBattleEntryTrigger : MonoBehaviour
     {
         _isEntering = true;
 
+        arena.EnterIntroView();
+
         if (beforeBattleSequence != null)
         {
             beforeBattleSequence.Play();

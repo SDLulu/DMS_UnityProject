@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 // 역할:
-// - 타이틀·버튼: 평소 아주 살짝 흔들림, 호버 시 밝아짐 (할로우나이트식 텍스트 메뉴).
+// - 타이틀·버튼: 평소 아주 살짝 흔들림, 호버 시 밝아짐.
 
 [DisallowMultipleComponent]
 public class TitleUiMotion : MonoBehaviour
@@ -117,12 +117,19 @@ public class TitleUiMotion : MonoBehaviour
             return;
         }
 
-        ApplyTextStyle("TitleText", 104, new Color(0.90f, 1f, 0.98f, 1f));
-        ApplyButtonTextStyle("StartButton/Text", 38, new Color(0.95f, 1f, 0.99f, 1f));
-        ApplyButtonTextStyle("QuitButton/Text", 34, new Color(0.88f, 0.96f, 0.97f, 0.95f));
+        ApplyTextStyle("TitleGlowPink", "DEEP DIVE", 92, new Color(1f, 0.16f, 0.70f, 0.50f), TextAnchor.MiddleCenter);
+        ApplyTextStyle("TitleGlowCyan", "DEEP DIVE", 92, new Color(0.10f, 0.95f, 1f, 0.42f), TextAnchor.MiddleCenter);
+        ApplyTextStyle("TitleText", "DEEP DIVE", 88, new Color(1f, 0.96f, 1f, 1f), TextAnchor.MiddleCenter);
+        ApplyTextStyle("SubtitleText", "HOME RECOVERY PROTOCOL // DEBTOR 047", 20, new Color(0.96f, 0.74f, 0.38f, 0.92f), TextAnchor.MiddleCenter);
+        ApplyTextStyle("CoreText", "HOME", 24, new Color(0.82f, 1f, 0.98f, 0.96f), TextAnchor.MiddleCenter);
+        ApplyTextStyle("MenuLabel", "CONNECT", 17, new Color(0.50f, 0.96f, 0.88f, 0.80f), TextAnchor.MiddleCenter);
+        ApplyTextStyle("BuildTag", "DMS // HOME ARCHIVE", 16, new Color(0.60f, 0.75f, 0.77f, 0.72f), TextAnchor.MiddleLeft);
+        ApplyTextStyle("TopStatus", "ACCESS NODE 047", 16, new Color(0.60f, 0.88f, 0.84f, 0.74f), TextAnchor.MiddleRight);
+        ApplyButtonTextStyle("StartButton/Text", "START", 30, new Color(0.95f, 1f, 0.99f, 1f));
+        ApplyButtonTextStyle("QuitButton/Text", "QUIT", 24, new Color(0.82f, 0.90f, 0.92f, 0.92f));
     }
 
-    private void ApplyTextStyle(string path, int fontSize, Color color)
+    private void ApplyTextStyle(string path, string value, int fontSize, Color color, TextAnchor alignment)
     {
         Text text = transform.Find(path)?.GetComponent<Text>();
         if (text == null)
@@ -131,27 +138,32 @@ public class TitleUiMotion : MonoBehaviour
         }
 
         text.font = displayFont;
+        text.text = value;
+        text.fontSize = fontSize;
+        text.fontStyle = FontStyle.Normal;
+        text.color = color;
+        text.alignment = alignment;
+        text.horizontalOverflow = HorizontalWrapMode.Overflow;
+        text.verticalOverflow = VerticalWrapMode.Overflow;
+        text.lineSpacing = 0.86f;
+    }
+
+    private void ApplyButtonTextStyle(string path, string value, int fontSize, Color color)
+    {
+        Text text = transform.Find(path)?.GetComponent<Text>();
+        if (text == null)
+        {
+            return;
+        }
+
+        text.font = displayFont;
+        text.text = value;
         text.fontSize = fontSize;
         text.fontStyle = FontStyle.Normal;
         text.color = color;
         text.alignment = TextAnchor.MiddleCenter;
         text.horizontalOverflow = HorizontalWrapMode.Overflow;
         text.verticalOverflow = VerticalWrapMode.Overflow;
-    }
-
-    private void ApplyButtonTextStyle(string path, int fontSize, Color color)
-    {
-        Text text = transform.Find(path)?.GetComponent<Text>();
-        if (text == null)
-        {
-            return;
-        }
-
-        text.font = displayFont;
-        text.fontSize = fontSize;
-        text.fontStyle = FontStyle.Normal;
-        text.color = color;
-        text.alignment = TextAnchor.MiddleCenter;
     }
 
     private void ApplyHoverColor(MotionTarget target, float hoverAmount)
@@ -232,9 +244,12 @@ public class TitleUiMotion : MonoBehaviour
     private void AutoWireTargets()
     {
         targets.Clear();
-        TryAddTextTarget("TitleText", new Vector2(0.7f, 1.0f), 0f, 0.35f);
-        TryAddButtonTarget("StartButton", new Vector2(0.5f, 0.7f), 2.4f, 0.32f);
-        TryAddButtonTarget("QuitButton", new Vector2(0.45f, 0.65f), 3.6f, 0.28f);
+        TryAddTextTarget("TitleText", new Vector2(0.45f, 0.55f), 0f, 0.24f);
+        TryAddTextTarget("SubtitleText", new Vector2(0.26f, 0.32f), 1.2f, 0.16f);
+        TryAddTextTarget("CoreText", new Vector2(0.22f, 0.28f), 1.7f, 0.20f);
+        TryAddTextTarget("MenuLabel", new Vector2(0.25f, 0.35f), 2.1f, 0.2f);
+        TryAddButtonTarget("StartButton", new Vector2(0.45f, 0.55f), 2.4f, 0.32f);
+        TryAddButtonTarget("QuitButton", new Vector2(0.35f, 0.48f), 3.6f, 0.28f);
     }
 
     private void TryAddTextTarget(string childName, Vector2 idleAmplitude, float phaseOffset, float hoverBrighten)

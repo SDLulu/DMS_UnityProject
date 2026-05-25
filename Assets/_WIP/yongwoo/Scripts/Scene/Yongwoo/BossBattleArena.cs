@@ -39,6 +39,8 @@ public class BossBattleArena : MonoBehaviour
 
     private bool _isActive;
     private Bounds _cameraWorldBounds;
+    private float _previousCameraOrthoSize;
+    private bool _hasPreviousCameraOrthoSize;
     private Transform _arenaFxRoot;
     private SpriteRenderer[] _arenaBorders;
     private SpriteRenderer[] _arenaScanlines;
@@ -60,6 +62,17 @@ public class BossBattleArena : MonoBehaviour
         Bounds bounds = ArenaBounds;
         return worldPosition.x >= bounds.min.x && worldPosition.x <= bounds.max.x
             && worldPosition.y >= bounds.min.y && worldPosition.y <= bounds.max.y;
+    }
+
+    public void EnterIntroView()
+    {
+        AutoWire();
+        RefreshTeleportAnchorsFromHierarchy();
+        CachePreviousCameraOrthoSize();
+        LockCameraToArenaAnchor();
+        ApplyArenaCameraOrtho();
+        _cameraWorldBounds = ComputeCameraWorldBounds();
+        ValidateAndFitArenaContents();
     }
 
     private void Reset()
@@ -102,17 +115,9 @@ public class BossBattleArena : MonoBehaviour
         _isActive = true;
         YongwooAudioManager.Play(YongwooSfxId.BossArenaEnter, 0.68f, 0.02f);
 
-        if (cameraFollow != null && cameraAnchor != null)
-        {
-            Vector3 anchor = cameraAnchor.position;
-            anchor.z = cameraFollow.transform.position.z;
-            cameraFollow.LockToArenaPosition(anchor);
-        }
-
-        if (cameraOrthoSize > 0f && Camera.main != null)
-        {
-            Camera.main.orthographicSize = cameraOrthoSize;
-        }
+        CachePreviousCameraOrthoSize();
+        LockCameraToArenaAnchor();
+        ApplyArenaCameraOrtho();
 
         _cameraWorldBounds = ComputeCameraWorldBounds();
         ValidateAndFitArenaContents();
@@ -138,6 +143,42 @@ public class BossBattleArena : MonoBehaviour
         BindBossHealthBar();
     }
 
+    public void ExitBattle()
+    {
+        AutoWire();
+
+        _isActive = false;
+        _cameraWorldBounds = default;
+
+        if (cameraFollow != null)
+        {
+            cameraFollow.UnlockArenaFollow();
+            PlayerInteraction player = FindFirstObjectByType<PlayerInteraction>();
+            if (player != null)
+            {
+                cameraFollow.SetTarget(player.transform);
+            }
+        }
+
+        if (_hasPreviousCameraOrthoSize && Camera.main != null)
+        {
+            Camera.main.orthographicSize = _previousCameraOrthoSize;
+        }
+        _hasPreviousCameraOrthoSize = false;
+
+        if (patternRunner != null)
+        {
+            patternRunner.enabled = false;
+        }
+
+        HideBossHealthBar();
+
+        if (_arenaFxRoot != null)
+        {
+            _arenaFxRoot.gameObject.SetActive(false);
+        }
+    }
+
     private void BindBossHealthBar()
     {
         bossHealthBar ??= FindFirstObjectByType<BossHealthBarUI>();
@@ -153,6 +194,57 @@ public class BossBattleArena : MonoBehaviour
         {
             bossHealthBar.Bind(rootBoss);
         }
+    }
+
+    public void HideBossHealthBar()
+    {
+        bossHealthBar ??= FindFirstObjectByType<BossHealthBarUI>();
+        if (bossHealthBar == null)
+        {
+            return;
+        }
+
+        bossHealthBar.SetVisible(false);
+        bossHealthBar.Unbind();
+    }
+
+    private void CachePreviousCameraOrthoSize()
+    {
+        if (_hasPreviousCameraOrthoSize)
+        {
+            return;
+        }
+
+        Camera mainCamera = Camera.main;
+        if (mainCamera == null)
+        {
+            return;
+        }
+
+        _previousCameraOrthoSize = mainCamera.orthographicSize;
+        _hasPreviousCameraOrthoSize = true;
+    }
+
+    private void LockCameraToArenaAnchor()
+    {
+        if (cameraFollow == null || cameraAnchor == null)
+        {
+            return;
+        }
+
+        Vector3 anchor = cameraAnchor.position;
+        anchor.z = cameraFollow.transform.position.z;
+        cameraFollow.LockToArenaPosition(anchor);
+    }
+
+    private void ApplyArenaCameraOrtho()
+    {
+        if (cameraOrthoSize <= 0f || Camera.main == null)
+        {
+            return;
+        }
+
+        Camera.main.orthographicSize = cameraOrthoSize;
     }
 
     private static BossPhaseController FindRootBossPhaseController()
@@ -226,6 +318,7 @@ public class BossBattleArena : MonoBehaviour
             if (existing != null)
             {
                 _arenaFxRoot = existing;
+                _arenaFxRoot.gameObject.SetActive(true);
             }
             else
             {
@@ -233,6 +326,10 @@ public class BossBattleArena : MonoBehaviour
                 root.transform.SetParent(transform, false);
                 _arenaFxRoot = root.transform;
             }
+        }
+        else if (!_arenaFxRoot.gameObject.activeSelf)
+        {
+            _arenaFxRoot.gameObject.SetActive(true);
         }
 
         _arenaBorders ??= new SpriteRenderer[4];

@@ -49,6 +49,7 @@ public class BossPhaseController : MonoBehaviour
     [SerializeField] private SceneEventSequence p1ToP2Sequence;
     [SerializeField] private SceneEventSequence p2ToP3Sequence;
     [SerializeField] private SceneEventSequence finalDefeatSequence;
+    [SerializeField] private SceneEventSequence postFinalDefeatSequence;
 
     [Header("Sprites")]
     [SerializeField] private Sprite p1Sprite;
@@ -222,7 +223,11 @@ public class BossPhaseController : MonoBehaviour
 
         if (_owner != null)
         {
-            ApplyDefeatedPresentation();
+            bool holdForFinalDeath = _owner.ShouldHoldVisualForFinalDeath(this);
+            if (!holdForFinalDeath)
+            {
+                ApplyDefeatedPresentation();
+            }
             GetRoot().RefreshAggregateHealth();
             _owner.ReportMemberDead(this);
             return;
@@ -241,9 +246,23 @@ public class BossPhaseController : MonoBehaviour
         SpawnImpactBurst(transform.position, _rolePrimary, _roleSecondary, 12, 0.24f, 0.08f);
         SpawnShockwave(transform.position, _rolePrimary, 0.28f, 0.48f, 2.4f, 0.62f);
         ShakeCamera(damageShakeStrength, damageShakeDuration);
-        ApplyDefeatedPresentation();
+        if (!ShouldHoldVisualForFinalDeath(this))
+        {
+            ApplyDefeatedPresentation();
+        }
         GetRoot().RefreshAggregateHealth();
         ReportMemberDead(this);
+    }
+
+    private bool ShouldHoldVisualForFinalDeath(BossPhaseController dyingMember)
+    {
+        BossPhaseController root = GetRoot();
+        if (root._phase != Phase.P3 || dyingMember == null)
+        {
+            return false;
+        }
+
+        return !root.HasAlivePhaseMembersExcept(dyingMember);
     }
 
     private void EnterP2()
@@ -436,6 +455,7 @@ public class BossPhaseController : MonoBehaviour
         else if (_phase == Phase.P3)
         {
             finalDefeatSequence ??= BossStoryRuntimeSequenceFactory.EnsureFinalDefeatSequence(transform, ComputeMergeCenter(CollectPhaseMemberPositions()));
+            postFinalDefeatSequence ??= BossStoryRuntimeSequenceFactory.EnsurePostFinalDefeatSequence(transform, ComputeMergeCenter(CollectPhaseMemberPositions()));
             BeginFinalDefeatSequence();
         }
     }
@@ -513,7 +533,19 @@ public class BossPhaseController : MonoBehaviour
         SetAllMemberRunnersEnabled(false);
         SetGameplayControl(false);
         PushTransitionFreeze();
+        BossBattleArena arena = FindFirstObjectByType<BossBattleArena>(FindObjectsInactive.Include);
+        arena?.HideBossHealthBar();
 
+        if (finalDefeatSequence != null)
+        {
+            finalDefeatSequence.Play();
+            while (finalDefeatSequence.IsPlaying)
+            {
+                yield return null;
+            }
+        }
+
+        SetGameplayControl(false);
         List<Vector3> mergeSources = CollectPhaseMemberPositions();
         Vector3 mergeCenter = ComputeMergeCenter(mergeSources);
         Color primary = RolePrimaryColor(_role);
@@ -551,10 +583,10 @@ public class BossPhaseController : MonoBehaviour
 
         _phase = Phase.Complete;
 
-        if (finalDefeatSequence != null)
+        if (postFinalDefeatSequence != null)
         {
-            finalDefeatSequence.Play();
-            while (finalDefeatSequence.IsPlaying)
+            postFinalDefeatSequence.Play();
+            while (postFinalDefeatSequence.IsPlaying)
             {
                 yield return null;
             }
@@ -735,6 +767,36 @@ public class BossPhaseController : MonoBehaviour
 
             bool ownedByThis = candidate == this || candidate._owner == this;
             if (ownedByThis && !candidate._reportedDead)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private bool HasAlivePhaseMembersExcept(BossPhaseController ignoredMember)
+    {
+        BossPhaseController[] controllers = FindObjectsByType<BossPhaseController>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        for (int i = 0; i < controllers.Length; i++)
+        {
+            BossPhaseController candidate = controllers[i];
+            if (candidate == null || candidate == ignoredMember || candidate._phase != _phase)
+            {
+                continue;
+            }
+
+            bool ownedByThis = candidate == this || candidate._owner == this;
+            if (!ownedByThis)
+            {
+                continue;
+            }
+
+            bool alive = !candidate._reportedDead
+                && !candidate._defeated
+                && candidate.interaction != null
+                && candidate.interaction.CurrentHealth > 0;
+            if (alive)
             {
                 return true;
             }

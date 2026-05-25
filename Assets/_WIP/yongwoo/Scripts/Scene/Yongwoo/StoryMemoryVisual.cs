@@ -67,10 +67,16 @@ public class StoryMemoryVisual : MonoBehaviour
             _body = gameObject.AddComponent<SpriteRenderer>();
         }
 
-        _body.sprite = RuntimeSpriteUtility.CircleSprite;
+        if (_body.sprite == null)
+        {
+            _body.sprite = RuntimeSpriteUtility.CircleSprite;
+        }
         _body.sortingLayerName = "Effect";
         _body.sortingOrder = 30;
-        _body.sharedMaterial = RuntimeSpriteUtility.UnlitSpriteMaterial;
+        if (_body.sharedMaterial == null)
+        {
+            _body.sharedMaterial = RuntimeSpriteUtility.UnlitSpriteMaterial;
+        }
 
         if (_baseScale == Vector3.one)
         {
