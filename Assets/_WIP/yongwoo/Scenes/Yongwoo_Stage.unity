@@ -9436,37 +9436,6 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
-  m_Version: 2
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -53099,6 +53068,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 477773456377894689, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1146934744460746744, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -53114,6 +53087,10 @@ PrefabInstance:
     - target: {fileID: 1933802453419103657, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405743594548499032, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: dashAttackDamage
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6133505650375937175, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
       propertyPath: m_Layer
@@ -57815,6 +57792,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 576332414}
     m_Modifications:
+    - target: {fileID: 2716643793045706114, guid: a79c36fb2831c874c84537e7e653063e, type: 3}
+      propertyPath: p1Health
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716643793045706114, guid: a79c36fb2831c874c84537e7e653063e, type: 3}
+      propertyPath: p2CloneHealth
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716643793045706114, guid: a79c36fb2831c874c84537e7e653063e, type: 3}
+      propertyPath: p3CloneHealth
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 2716643793045706114, guid: a79c36fb2831c874c84537e7e653063e, type: 3}
       propertyPath: p1ToP2Sequence
       value: 
