@@ -208,7 +208,7 @@ public class BossLaserWallZone : MonoBehaviour
             return;
         }
 
-        IDamageReceiver receiver = ResolveDamageReceiver(other);
+        PlayerInteraction receiver = ResolveDamageReceiver(other);
         if (receiver == null || _hitTargets.Contains(receiver))
         {
             return;
@@ -218,17 +218,8 @@ public class BossLaserWallZone : MonoBehaviour
         receiver.ReceiveHit(_damage, Vector2.zero, _owner);
     }
 
-    private static IDamageReceiver ResolveDamageReceiver(Collider2D hit)
+    private static PlayerInteraction ResolveDamageReceiver(Collider2D hit)
     {
-        MonoBehaviour[] behaviours = hit.GetComponentsInParent<MonoBehaviour>();
-        for (int i = 0; i < behaviours.Length; i++)
-        {
-            if (behaviours[i] is IDamageReceiver receiver)
-            {
-                return receiver;
-            }
-        }
-
-        return null;
+        return hit.GetComponentInParent<PlayerInteraction>();
     }
 }

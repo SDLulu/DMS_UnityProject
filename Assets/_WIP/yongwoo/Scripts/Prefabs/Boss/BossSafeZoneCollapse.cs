@@ -152,7 +152,7 @@ public class BossSafeZoneCollapse : MonoBehaviour
             return;
         }
 
-        IDamageReceiver receiver = ResolveDamageReceiver(_player);
+        PlayerInteraction receiver = ResolveDamageReceiver(_player);
         if (receiver == null)
         {
             return;
@@ -162,17 +162,8 @@ public class BossSafeZoneCollapse : MonoBehaviour
         receiver.ReceiveHit(_damage, Vector2.zero, _owner);
     }
 
-    private static IDamageReceiver ResolveDamageReceiver(Transform target)
+    private static PlayerInteraction ResolveDamageReceiver(Transform target)
     {
-        MonoBehaviour[] behaviours = target.GetComponentsInParent<MonoBehaviour>();
-        for (int i = 0; i < behaviours.Length; i++)
-        {
-            if (behaviours[i] is IDamageReceiver receiver)
-            {
-                return receiver;
-            }
-        }
-
-        return null;
+        return target.GetComponentInParent<PlayerInteraction>();
     }
 }

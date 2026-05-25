@@ -412,10 +412,10 @@ public class BossProjectile : MonoBehaviour
             return true;
         }
 
-        MonoBehaviour receiver = ResolveDamageReceiver(other);
-        if (receiver is IDamageReceiver damageReceiver)
+        PlayerInteraction receiver = ResolveDamageReceiver(other);
+        if (receiver != null)
         {
-            TryDamageReceiver(damageReceiver);
+            TryDamageReceiver(receiver);
             return true;
         }
 
@@ -463,18 +463,8 @@ public class BossProjectile : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private static MonoBehaviour ResolveDamageReceiver(Collider2D hit)
+    private static PlayerInteraction ResolveDamageReceiver(Collider2D hit)
     {
-        MonoBehaviour[] behaviours = hit.GetComponentsInParent<MonoBehaviour>();
-        for (int i = 0; i < behaviours.Length; i++)
-        {
-            MonoBehaviour behaviour = behaviours[i];
-            if (behaviour is IDamageReceiver)
-            {
-                return behaviour;
-            }
-        }
-
-        return null;
+        return hit.GetComponentInParent<PlayerInteraction>();
     }
 }

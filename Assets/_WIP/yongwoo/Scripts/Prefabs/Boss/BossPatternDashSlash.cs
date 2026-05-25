@@ -226,7 +226,7 @@ public class BossPatternDashSlash : BossPatternBase
                 continue;
             }
 
-            IDamageReceiver receiver = ResolveDamageReceiver(hit);
+            PlayerInteraction receiver = ResolveDamageReceiver(hit);
             if (receiver == null || _hitTargets.Contains(receiver))
             {
                 continue;
@@ -237,18 +237,9 @@ public class BossPatternDashSlash : BossPatternBase
         }
     }
 
-    private static IDamageReceiver ResolveDamageReceiver(Collider2D hit)
+    private static PlayerInteraction ResolveDamageReceiver(Collider2D hit)
     {
-        MonoBehaviour[] behaviours = hit.GetComponentsInParent<MonoBehaviour>();
-        for (int i = 0; i < behaviours.Length; i++)
-        {
-            if (behaviours[i] is IDamageReceiver receiver)
-            {
-                return receiver;
-            }
-        }
-
-        return null;
+        return hit.GetComponentInParent<PlayerInteraction>();
     }
 
     private void SpawnDashLaunchVfx(Vector3 origin, Vector2 direction)
