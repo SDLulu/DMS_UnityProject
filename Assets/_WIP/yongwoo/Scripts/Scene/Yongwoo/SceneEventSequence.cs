@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
@@ -94,6 +95,7 @@ public class SceneEventSequence : MonoBehaviour
     [SerializeField] private CommsPanel commsPanel;
     [SerializeField] private PlayerInteraction playerInteraction;
     [SerializeField] private SimplePlayerController playerController;
+    [SerializeField] private P_PlayerController pPlayerController;
     [SerializeField] private SimpleCameraFollow cameraFollow;
     [SerializeField] private ScreenFade screenFade;
     [SerializeField] private ScreenGlitchOverlay glitchOverlay;
@@ -622,10 +624,10 @@ public class SceneEventSequence : MonoBehaviour
                 InputWaitType.AnyKey => UnityEngine.Input.anyKeyDown,
                 InputWaitType.Move => input.Move.sqrMagnitude > 0.01f,
                 InputWaitType.Jump => input.JumpPressed,
-                InputWaitType.Dash => input.DashPressed,
-                InputWaitType.Attack => input.AttackPressed,
+                InputWaitType.Dash => input.DashPressed || WasKeyboardPressed(Key.Q) || WasKeyboardPressed(Key.LeftShift),
+                InputWaitType.Attack => input.AttackPressed || WasKeyboardPressed(Key.E),
                 InputWaitType.Interact => input.InteractPressed,
-                InputWaitType.Roll => input.Move.y < -0.5f && Mathf.Abs(input.Move.x) > 0.5f,
+                InputWaitType.Roll => WasKeyboardPressed(Key.LeftShift) || (input.Move.y < -0.5f && Mathf.Abs(input.Move.x) > 0.5f),
                 InputWaitType.Space => UnityEngine.Input.GetKeyDown(KeyCode.Space),
                 _ => false
             };
@@ -637,10 +639,18 @@ public class SceneEventSequence : MonoBehaviour
         }
     }
 
+    private static bool WasKeyboardPressed(Key key)
+    {
+        Keyboard keyboard = Keyboard.current;
+        return keyboard != null && keyboard[key].wasPressedThisFrame;
+    }
+
     private IEnumerator WaitForPlayerActionReady()
     {
         float timeout = 1.5f;
-        while (playerController != null && playerController.IsActionLocked && timeout > 0f)
+        while (((playerController != null && playerController.IsActionLocked)
+                || (pPlayerController != null && pPlayerController.IsActionLocked))
+            && timeout > 0f)
         {
             timeout -= Time.unscaledDeltaTime;
             yield return null;
@@ -697,9 +707,19 @@ public class SceneEventSequence : MonoBehaviour
             playerController = playerInteraction.GetComponent<SimplePlayerController>();
         }
 
+        if (pPlayerController == null && playerInteraction != null)
+        {
+            pPlayerController = playerInteraction.GetComponent<P_PlayerController>();
+        }
+
         if (playerController == null)
         {
             playerController = Object.FindFirstObjectByType<SimplePlayerController>();
+        }
+
+        if (pPlayerController == null)
+        {
+            pPlayerController = Object.FindFirstObjectByType<P_PlayerController>();
         }
 
         if (cameraFollow == null)

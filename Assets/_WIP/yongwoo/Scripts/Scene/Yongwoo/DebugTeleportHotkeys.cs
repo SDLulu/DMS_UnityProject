@@ -60,10 +60,10 @@ public class DebugTeleportHotkeys : MonoBehaviour
             return;
         }
 
-        var player = FindFirstObjectByType<SimplePlayerController>();
+        PlayerInteraction player = FindFirstObjectByType<PlayerInteraction>();
         if (player == null)
         {
-            Debug.LogWarning("[DebugTeleport] SimplePlayerController 못 찾음", this);
+            Debug.LogWarning("[DebugTeleport] PlayerInteraction 못 찾음", this);
             return;
         }
 
