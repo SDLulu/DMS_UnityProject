@@ -754,6 +754,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -1750,6 +1751,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -2491,6 +2493,8 @@ MonoBehaviour:
   requiredTag: Player
   beforeBattleSequence: {fileID: 1781378594}
   waitForBeforeBattleSequence: 1
+  respawnPoint: {fileID: 0}
+  updateRespawnOnEnter: 1
 --- !u!61 &132791345
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2878,6 +2882,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -3852,6 +3857,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -7662,6 +7668,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -7915,6 +7922,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -8943,6 +8951,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -9110,6 +9119,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -9739,6 +9749,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -12905,6 +12916,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -13360,6 +13372,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -18982,6 +18995,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -20414,6 +20428,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -22890,22 +22905,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 477773456377894689, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
-      propertyPath: damage
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 664268049526648672, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4405743594548499032, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
-      propertyPath: dashAttackDamage
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4405743594548499032, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
-      propertyPath: attack1HitSoundVolume
-      value: 0.3
-      objectReference: {fileID: 0}
     - target: {fileID: 6327591350310485490, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
       propertyPath: m_Name
       value: Player_ver02
@@ -22950,18 +22949,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8350363513639191596, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
-      propertyPath: jumpForce
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350363513639191596, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
-      propertyPath: extraAirJumps
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350363513639191596, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
-      propertyPath: iaidoDashSoundVolume
-      value: 0.366
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22989,6 +22976,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fedbd9da29a143549ae060c4c2ef407b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSlowMotion
+--- !u!114 &1091836180 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8350363513639191596, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+  m_PrefabInstance: {fileID: 1091836177}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ece17d9031b94b46b4506790f46e023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::P_PlayerController
 --- !u!1001 &1111127684
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26073,6 +26071,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -26833,6 +26832,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -27421,6 +27421,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -27911,6 +27912,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -29174,6 +29176,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -41849,6 +41852,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -49358,6 +49362,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -49710,6 +49715,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -50134,6 +50140,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -50865,6 +50872,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -51318,6 +51326,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -51577,6 +51586,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -52635,6 +52645,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
@@ -53181,6 +53192,7 @@ MonoBehaviour:
   commsPanel: {fileID: 441387437}
   playerInteraction: {fileID: 1091836178}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1091836180}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
