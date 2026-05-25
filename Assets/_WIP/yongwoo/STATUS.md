@@ -111,6 +111,7 @@
 - 2026-05-25 HOME 코어/END 대사창 피드백 반영: `HOME코어_회수가능`은 기존 `튜토리얼진행/상호작용/HOME코어`의 `Chest_0` 스프라이트를 계속 쓰되, 설치 메뉴 실행 때마다 보스 위치 근처로 재배치하도록 수정. 이전 저장 위치가 아레나 카메라 위쪽 밖이라 처치 후 안 보일 수 있었음. END 직전 `주인공: 없어.` 대사창은 `HideComms`를 즉시 넣어 암전 END 화면에 남지 않게 함. 시퀀스 데이터 확인 결과 회수 코어 위치 `(60.20, -37.24)`, 스프라이트 `Chest_0`, END 전 `HideComms` 확인
 
 - 2026-05-25 Git 반영: `origin/main`/`origin/GWANGMO_Ver3`의 광모 플레이어·사운드 변경 3커밋을 `yongwoo`에 병합. `BossBattleArena`는 보스전 종료 시 카메라락 해제 로직과 광모 `P_PlayerController` 아레나 클램프 지원이 함께 반영됨. `safe_refresh --compile true`, Unity 콘솔 error 없음
+- 2026-05-25 광모 플레이어 통합: 최신 `Yongwoo_Stage`는 유지하고 active Player만 `GWANGMO/Art/Player/Prefab/Player_ver02` 기반으로 교체. `SceneEventSequence` 28개는 `P_PlayerController`/새 `PlayerInteraction`/새 `PlayerSlowMotion` 참조로 재연결, 기존 active `SimplePlayerController` Player 제거. 안내 로그는 F 상호작용, 발도술 E, 회피 Shift/앞대쉬 Q 기준으로 반영
 
 ## 시간 제어 3층 구조 (중요)
 

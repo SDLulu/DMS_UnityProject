@@ -752,12 +752,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &51789238
 Transform:
@@ -1214,7 +1215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "E : \uC548\uB0B4 \uBC1B\uB294\uB2E4"
+  promptText: "F : \uC548\uB0B4 \uBC1B\uB294\uB2E4"
   onInteractSequence: {fileID: 1700234915}
   interactOnce: 0
   promptPanel: {fileID: 0}
@@ -1748,12 +1749,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!1 &88002001
 GameObject:
@@ -2329,7 +2331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "E : \uD68C\uC218"
+  promptText: "F : \uD68C\uC218"
   onInteractSequence: {fileID: 1368105874}
   interactOnce: 1
   promptPanel: {fileID: 0}
@@ -2876,12 +2878,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!1 &155471229
 GameObject:
@@ -3217,7 +3220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "E : \uD655\uC778"
+  promptText: "F : \uD655\uC778"
   onInteractSequence: {fileID: 1822299227}
   interactOnce: 0
   promptPanel: {fileID: 0}
@@ -3850,12 +3853,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &202370529
 Transform:
@@ -6987,7 +6991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "E : \uAE30\uC5B5 \uC870\uAC01 \uC7AC\uC0DD"
+  promptText: "F : \uAE30\uC5B5 \uC870\uAC01 \uC7AC\uC0DD"
   onInteractSequence: {fileID: 1360759064}
   interactOnce: 0
   promptPanel: {fileID: 0}
@@ -7660,12 +7664,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!1 &388686177
 GameObject:
@@ -8078,12 +8083,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &402285402
 Transform:
@@ -9106,12 +9112,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!1 &481904826
 GameObject:
@@ -9273,12 +9280,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &481904828
 Transform:
@@ -9423,7 +9431,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_RenderShadows: 1
@@ -9433,7 +9441,6 @@ MonoBehaviour:
   m_Cameras: []
   m_RendererIndex: -1
   m_VolumeLayerMask:
-    serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
@@ -9536,7 +9543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc32dd2eb905cc4587a0f2a9deede15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleCameraFollow
-  target: {fileID: 0}
+  target: {fileID: 1943201612}
   offset: {x: 0, y: 1, z: -10}
   followSpeed: 7.5
   horizontalLookAhead: 1.45
@@ -9847,7 +9854,8 @@ MonoBehaviour:
     skippable: 1
   - type: 3
     speaker: 
-    message: "\uB9C8\uC6B0\uC2A4 \uC67C\uD074\uB9AD : \uACF5\uACA9"
+    message: "\uB9C8\uC6B0\uC2A4 \uC67C\uD074\uB9AD : \uACF5\uACA9 / \uBC1C\uB3C4\uC220
+      : E"
     duration: 0
     alpha: 1
     targetObject: {fileID: 0}
@@ -9901,12 +9909,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &529611379
 Transform:
@@ -10863,7 +10872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "E : \uB9D0\uC744 \uAC74\uB2E4"
+  promptText: "F : \uB9D0\uC744 \uAC74\uB2E4"
   onInteractSequence: {fileID: 1326674074}
   interactOnce: 0
   promptPanel: {fileID: 0}
@@ -13014,7 +13023,7 @@ MonoBehaviour:
     skippable: 1
   - type: 3
     speaker: 
-    message: "\u2193 + \u2190 / \u2192 : \uD68C\uD53C"
+    message: "\uD68C\uD53C : Shift / \uC55E \uB300\uC26C : Q"
     duration: 0
     alpha: 1
     targetObject: {fileID: 0}
@@ -13068,12 +13077,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &736345846
 Transform:
@@ -13469,7 +13479,7 @@ MonoBehaviour:
     skippable: 1
   - type: 3
     speaker: 
-    message: "\u2193 + \u2190 / \u2192 : \uD68C\uD53C"
+    message: "\uD68C\uD53C : Shift / \uC55E \uB300\uC26C : Q"
     duration: 0
     alpha: 1
     targetObject: {fileID: 0}
@@ -13523,12 +13533,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &766239283
 Transform:
@@ -18767,7 +18778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "E : \uC6D0\uBCF8 \uCE69 \uC811\uC18D"
+  promptText: "F : \uC6D0\uBCF8 \uCE69 \uC811\uC18D"
   onInteractSequence: {fileID: 1038742603}
   interactOnce: 1
   promptPanel: {fileID: 0}
@@ -19145,12 +19156,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &957350708
 Transform:
@@ -19242,17 +19254,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &963483914 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 910200000000000001, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-  m_PrefabInstance: {fileID: 8719791984963783185}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f4fa31c0d654e36944cf7b53b4b5cf7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
 --- !u!1 &968809468 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4746371970803258004, guid: 968c3bfd21d880a4d9e1022ec1094512, type: 3}
@@ -20005,7 +20006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "E : \uAE30\uC5B5 \uC870\uAC01 \uC7AC\uC0DD"
+  promptText: "F : \uAE30\uC5B5 \uC870\uAC01 \uC7AC\uC0DD"
   onInteractSequence: {fileID: 402285401}
   interactOnce: 0
   promptPanel: {fileID: 0}
@@ -20588,12 +20589,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &1038742604
 Transform:
@@ -24336,7 +24338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "E : \uBCF8\uB2E4"
+  promptText: "F : \uBCF8\uB2E4"
   onInteractSequence: {fileID: 1949338874}
   interactOnce: 0
   promptPanel: {fileID: 0}
@@ -26004,12 +26006,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &1272284503
 Transform:
@@ -26365,6 +26368,7 @@ MonoBehaviour:
   bossHealthBar: {fileID: 0}
   cameraFollow: {fileID: 519420033}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   glitchOverlay: {fileID: 0}
 --- !u!4 &1300302434
 Transform:
@@ -26763,12 +26767,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &1326674075
 Transform:
@@ -27498,12 +27503,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &1360759065
 Transform:
@@ -27988,12 +27994,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &1368105875
 Transform:
@@ -29251,12 +29258,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &1436242296
 Transform:
@@ -29950,7 +29958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "E : \uC0B4\uD3B4\uBCF8\uB2E4"
+  promptText: "F : \uC0B4\uD3B4\uBCF8\uB2E4"
   onInteractSequence: {fileID: 51789237}
   interactOnce: 0
   promptPanel: {fileID: 0}
@@ -30466,28 +30474,6 @@ RectTransform:
   m_AnchoredPosition: {x: -28, y: 24}
   m_SizeDelta: {x: 360, y: 36}
   m_Pivot: {x: 1, y: 0}
---- !u!114 &1514794000 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5899011097298882466, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-  m_PrefabInstance: {fileID: 8719791984963783185}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fedbd9da29a143549ae060c4c2ef407b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerSlowMotion
---- !u!114 &1514794006 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1697112091944236789, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-  m_PrefabInstance: {fileID: 8719791984963783185}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed5be3a2974be0d4d82f90bd37d43de6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SimplePlayerController
 --- !u!1 &1519940379
 GameObject:
   m_ObjectHideFlags: 0
@@ -31748,7 +31734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "E : \uB9D0\uC744 \uAC74\uB2E4"
+  promptText: "F : \uB9D0\uC744 \uAC74\uB2E4"
   onInteractSequence: {fileID: 957350707}
   interactOnce: 0
   promptPanel: {fileID: 0}
@@ -41734,12 +41720,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &1700234916
 Transform:
@@ -48890,12 +48877,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!1 &1763291934
 GameObject:
@@ -49563,12 +49551,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!1 &1789222355
 GameObject:
@@ -49915,12 +49904,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &1802555578
 Transform:
@@ -50339,12 +50329,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &1822299228
 Transform:
@@ -51070,12 +51061,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &1857055822
 Transform:
@@ -51940,12 +51932,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!1 &1881847610
 GameObject:
@@ -52145,7 +52138,7 @@ MonoBehaviour:
     skippable: 1
   - type: 3
     speaker: 
-    message: "E : \uCE69 \uC811\uC18D"
+    message: "F : \uCE69 \uC811\uC18D"
     duration: 1.2
     alpha: 1
     targetObject: {fileID: 0}
@@ -52199,12 +52192,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &1881847612
 Transform:
@@ -53095,6 +53089,133 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &1943201610
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1146934744460746744, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241902300211597223, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800292848910216502, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933802453419103657, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133505650375937175, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327591350310485490, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502604406046889367, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502604406046889367, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502604406046889367, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502604406046889367, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502604406046889367, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502604406046889367, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502604406046889367, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502604406046889367, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502604406046889367, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502604406046889367, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350363513639191596, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: jumpForce
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350363513639191596, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: extraAirJumps
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350363513639191596, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: iaidoDashSoundVolume
+      value: 0.366
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+--- !u!114 &1943201611 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1234745578814746631, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+  m_PrefabInstance: {fileID: 1943201610}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fedbd9da29a143549ae060c4c2ef407b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSlowMotion
+--- !u!4 &1943201612 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6502604406046889367, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+  m_PrefabInstance: {fileID: 1943201610}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1943201613 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8350363513639191596, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+  m_PrefabInstance: {fileID: 1943201610}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ece17d9031b94b46b4506790f46e023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::P_PlayerController
+--- !u!114 &1943201614 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6932854629934979588, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+  m_PrefabInstance: {fileID: 1943201610}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f4fa31c0d654e36944cf7b53b4b5cf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
 --- !u!1 &1944379399
 GameObject:
   m_ObjectHideFlags: 0
@@ -53257,12 +53378,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &1949338875
 Transform:
@@ -53803,12 +53925,13 @@ MonoBehaviour:
     skippable: 1
   systemLogPanel: {fileID: 1273548082}
   commsPanel: {fileID: 441387437}
-  playerInteraction: {fileID: 963483914}
-  playerController: {fileID: 1514794006}
+  playerInteraction: {fileID: 1943201614}
+  playerController: {fileID: 0}
+  pPlayerController: {fileID: 1943201613}
   cameraFollow: {fileID: 519420033}
   screenFade: {fileID: 430482508}
   glitchOverlay: {fileID: 1962529551}
-  playerSlowMotion: {fileID: 1514794000}
+  playerSlowMotion: {fileID: 1943201611}
   cutsceneVideoPanel: {fileID: 49980340}
 --- !u!4 &1965288988
 Transform:
@@ -59097,101 +59220,12 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5114038986988484339, guid: 968c3bfd21d880a4d9e1022ec1094512, type: 3}
   m_PrefabInstance: {fileID: 5040985746062387061}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &8719791984963783185
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 561777602665425509, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 561777602665425509, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 767779722435611025, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: _config.collider.width
-      value: 0.24528503
-      objectReference: {fileID: 0}
-    - target: {fileID: 767779722435611025, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: _config.collider.height
-      value: 0.54564357
-      objectReference: {fileID: 0}
-    - target: {fileID: 767779722435611025, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: _config.collider.offsetX
-      value: 0.006883621
-      objectReference: {fileID: 0}
-    - target: {fileID: 767779722435611025, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: _config.collider.offsetY
-      value: -0.19964191
-      objectReference: {fileID: 0}
-    - target: {fileID: 3651190054026640413, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -15.74
-      objectReference: {fileID: 0}
-    - target: {fileID: 3651190054026640413, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -9.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 3651190054026640413, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3651190054026640413, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3651190054026640413, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3651190054026640413, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3651190054026640413, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3651190054026640413, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3651190054026640413, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3651190054026640413, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5774349901685184387, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5899011097298882466, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: chargeRegenSeconds
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5899011097298882466, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
-      propertyPath: chargeConsumeSeconds
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ae054e84c84cb954b8d9755aa56905ec, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 8719791984963783185}
+  - {fileID: 1943201610}
   - {fileID: 1742100001}
   - {fileID: 87985126}
   - {fileID: 888734462}
