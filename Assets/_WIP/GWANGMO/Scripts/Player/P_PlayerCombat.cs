@@ -22,6 +22,8 @@ public class P_PlayerCombat : MonoBehaviour
     [SerializeField] private string idleAnimationName = "Idle";
     [SerializeField] private float attack1Duration = 0.5f;
     [SerializeField] private bool lockControllerDuringAttack = true;
+    [SerializeField] private AudioClip attack1HitSound;
+    [SerializeField, Range(0f, 1f)] private float attack1HitSoundVolume = 1f;
 
     [Header("Dash Attack")]
     [SerializeField] private float dashAttackDamage = 20f;
@@ -33,7 +35,9 @@ public class P_PlayerCombat : MonoBehaviour
     private InputAction attackAction;
     private float attackTimer;
     private bool isAttacking;
+    private bool attack1HitSoundPlayed;
     private bool dashAttackSoundPlayed;
+    private AudioSource actionAudioSource;
 
     public bool IsAttacking => isAttacking;
 
@@ -53,12 +57,14 @@ public class P_PlayerCombat : MonoBehaviour
 
     private void OnEnable()
     {
+        SubscribeAttack1Hitbox();
         SubscribeDashAttackHitbox();
         playerActionMap?.Enable();
     }
 
     private void OnDisable()
     {
+        UnsubscribeAttack1Hitbox();
         UnsubscribeDashAttackHitbox();
         EndAttack1Hitbox();
         EndDashAttackHitbox();
@@ -85,6 +91,7 @@ public class P_PlayerCombat : MonoBehaviour
     public void BeginAttack1Hitbox()
     {
         Vector2 direction = GetFacingDirection();
+        attack1HitSoundPlayed = false;
         attack1Hitbox?.BeginHitbox(gameObject, direction);
     }
 
@@ -119,6 +126,7 @@ public class P_PlayerCombat : MonoBehaviour
 
         isAttacking = true;
         attackTimer = GetAttack1Duration();
+        attack1HitSoundPlayed = false;
         attack1Hitbox?.EndHitbox();
 
         if (lockControllerDuringAttack && controller != null)
@@ -225,6 +233,27 @@ public class P_PlayerCombat : MonoBehaviour
         }
     }
 
+    private void SubscribeAttack1Hitbox()
+    {
+        if (attack1Hitbox == null)
+        {
+            return;
+        }
+
+        attack1Hitbox.HitConfirmed -= HandleAttack1HitConfirmed;
+        attack1Hitbox.HitConfirmed += HandleAttack1HitConfirmed;
+    }
+
+    private void UnsubscribeAttack1Hitbox()
+    {
+        if (attack1Hitbox == null)
+        {
+            return;
+        }
+
+        attack1Hitbox.HitConfirmed -= HandleAttack1HitConfirmed;
+    }
+
     private void SubscribeDashAttackHitbox()
     {
         if (dashAttackHitbox == null)
@@ -246,6 +275,17 @@ public class P_PlayerCombat : MonoBehaviour
         dashAttackHitbox.HitConfirmed -= HandleDashAttackHitConfirmed;
     }
 
+    private void HandleAttack1HitConfirmed()
+    {
+        if (attack1HitSoundPlayed)
+        {
+            return;
+        }
+
+        attack1HitSoundPlayed = true;
+        PlayAttack1HitSound();
+    }
+
     private void HandleDashAttackHitConfirmed()
     {
         if (dashAttackSoundPlayed)
@@ -255,6 +295,34 @@ public class P_PlayerCombat : MonoBehaviour
 
         dashAttackSoundPlayed = true;
         controller?.StartDashSound();
+    }
+
+    private void PlayAttack1HitSound()
+    {
+        if (attack1HitSound == null)
+        {
+            return;
+        }
+
+        EnsureActionAudioSource();
+        actionAudioSource.PlayOneShot(attack1HitSound, attack1HitSoundVolume);
+    }
+
+    private void EnsureActionAudioSource()
+    {
+        if (actionAudioSource != null)
+        {
+            return;
+        }
+
+        actionAudioSource = GetComponent<AudioSource>();
+        if (actionAudioSource == null)
+        {
+            actionAudioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        actionAudioSource.playOnAwake = false;
+        actionAudioSource.spatialBlend = 0f;
     }
 
     private void ResolveInputActions()

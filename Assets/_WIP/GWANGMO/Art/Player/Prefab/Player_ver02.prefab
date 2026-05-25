@@ -496,6 +496,7 @@ MonoBehaviour:
   frontDashDuration: 0.15
   frontDashCooldown: 1
   dashAttackSpeed: 30
+  dashAttackCooldown: 1
   backDashSpeed: 7
   backDashDuration: 0.25
   backDashCooldown: 1
@@ -567,6 +568,8 @@ MonoBehaviour:
   idleAnimationName: Idle
   attack1Duration: 0.5
   lockControllerDuringAttack: 1
+  attack1HitSound: {fileID: 8300000, guid: 6acaa1ff908c49149ac05960fb63f6c4, type: 3}
+  attack1HitSoundVolume: 1
   dashAttackDamage: 2
   dashAttackKnockbackForce: 8
   dashAttackKnockbackUpForce: 2.5
