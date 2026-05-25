@@ -99,6 +99,10 @@ public class P_PlayerController : MonoBehaviour
     [SerializeField] private string backDashAnimationName = "Back_Dash";
     [SerializeField] private string iaidoDashAnimationName = "Dash_Attack";
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip iaidoDashSound;
+    [SerializeField, Range(0f, 1f)] private float iaidoDashSoundVolume = 1f;
+
     [Header("Debug")]
     [SerializeField] private bool debugGroundCheck;
     [SerializeField] private bool debugWallCheck;
@@ -107,6 +111,7 @@ public class P_PlayerController : MonoBehaviour
     private Rigidbody2D body;
     private CapsuleCollider2D bodyCollider;
     private Animator animator;
+    private AudioSource actionAudioSource;
     private Collider2D[] selfColliders;
     private InputActionMap playerActionMap;
     private InputAction moveAction;
@@ -557,6 +562,17 @@ public class P_PlayerController : MonoBehaviour
         body.linearVelocity = Vector2.zero;
     }
 
+    public void StartDashSound()
+    {
+        if (iaidoDashSound == null)
+        {
+            return;
+        }
+
+        EnsureActionAudioSource();
+        actionAudioSource.PlayOneShot(iaidoDashSound, iaidoDashSoundVolume);
+    }
+
     public void EndDashAttackMovement()
     {
         if (actionState != PlayerActionState.IaidoDashWindup &&
@@ -580,6 +596,24 @@ public class P_PlayerController : MonoBehaviour
         }
 
         FinishAction();
+    }
+
+    private void EnsureActionAudioSource()
+    {
+        if (actionAudioSource != null)
+        {
+            return;
+        }
+
+        actionAudioSource = GetComponent<AudioSource>();
+        if (actionAudioSource == null)
+        {
+            actionAudioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        actionAudioSource.playOnAwake = false;
+        actionAudioSource.loop = false;
+        actionAudioSource.spatialBlend = 0f;
     }
 
     private bool ShouldStartWallGrab()

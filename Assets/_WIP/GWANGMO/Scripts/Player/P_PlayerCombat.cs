@@ -33,6 +33,7 @@ public class P_PlayerCombat : MonoBehaviour
     private InputAction attackAction;
     private float attackTimer;
     private bool isAttacking;
+    private bool dashAttackSoundPlayed;
 
     public bool IsAttacking => isAttacking;
 
@@ -52,11 +53,13 @@ public class P_PlayerCombat : MonoBehaviour
 
     private void OnEnable()
     {
+        SubscribeDashAttackHitbox();
         playerActionMap?.Enable();
     }
 
     private void OnDisable()
     {
+        UnsubscribeDashAttackHitbox();
         EndAttack1Hitbox();
         EndDashAttackHitbox();
 
@@ -98,6 +101,7 @@ public class P_PlayerCombat : MonoBehaviour
     public void BeginDashAttackHitbox()
     {
         Vector2 direction = GetFacingDirection();
+        dashAttackSoundPlayed = false;
         dashAttackHitbox?.BeginHitbox(gameObject, direction);
     }
 
@@ -211,6 +215,7 @@ public class P_PlayerCombat : MonoBehaviour
 
         if (dashAttackHitbox != null)
         {
+            SubscribeDashAttackHitbox();
             dashAttackHitbox.Configure(
                 dashAttackDamage,
                 dashAttackKnockbackForce,
@@ -218,6 +223,38 @@ public class P_PlayerCombat : MonoBehaviour
                 dashAttackHitLayers);
             dashAttackHitbox.EndHitbox();
         }
+    }
+
+    private void SubscribeDashAttackHitbox()
+    {
+        if (dashAttackHitbox == null)
+        {
+            return;
+        }
+
+        dashAttackHitbox.HitConfirmed -= HandleDashAttackHitConfirmed;
+        dashAttackHitbox.HitConfirmed += HandleDashAttackHitConfirmed;
+    }
+
+    private void UnsubscribeDashAttackHitbox()
+    {
+        if (dashAttackHitbox == null)
+        {
+            return;
+        }
+
+        dashAttackHitbox.HitConfirmed -= HandleDashAttackHitConfirmed;
+    }
+
+    private void HandleDashAttackHitConfirmed()
+    {
+        if (dashAttackSoundPlayed)
+        {
+            return;
+        }
+
+        dashAttackSoundPlayed = true;
+        controller?.StartDashSound();
     }
 
     private void ResolveInputActions()

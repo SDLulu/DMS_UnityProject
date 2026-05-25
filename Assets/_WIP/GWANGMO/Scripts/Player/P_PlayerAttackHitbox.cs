@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,6 +19,8 @@ public class P_PlayerAttackHitbox : MonoBehaviour
     private GameObject owner;
     private Vector2 hitDirection = Vector2.right;
     private bool isActive;
+
+    public event Action HitConfirmed;
 
     public void Configure(float hitDamage, float hitKnockbackForce, float hitKnockbackUpForce, LayerMask targetLayers)
     {
@@ -118,6 +121,7 @@ public class P_PlayerAttackHitbox : MonoBehaviour
         Vector2 knockback = hitDirection * knockbackForce + Vector2.up * knockbackUpForce;
         if (damageReceiver.ReceiveHit(damage, knockback, owner))
         {
+            HitConfirmed?.Invoke();
             CombatHitFeedback.PlayLightHit();
         }
     }

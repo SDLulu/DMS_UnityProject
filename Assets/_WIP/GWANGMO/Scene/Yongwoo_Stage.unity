@@ -6974,7 +6974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "E : \uAE30\uC5B5 \uC870\uAC01 \uC7AC\uC0DD"
+  promptText: "F : \uAE30\uC5B5 \uC870\uAC01 \uC7AC\uC0DD"
   onInteractSequence: {fileID: 1360759064}
   interactOnce: 0
   promptPanel: {fileID: 0}
@@ -9668,7 +9668,8 @@ MonoBehaviour:
     skippable: 1
   - type: 3
     speaker: 
-    message: "\uB9C8\uC6B0\uC2A4 \uC67C\uD074\uB9AD : \uACF5\uACA9"
+    message: "\uB9C8\uC6B0\uC2A4 \uC67C\uD074\uB9AD : \uACF5\uACA9 / \uBC1C\uB3C4\uC220
+      : E"
     duration: 0
     alpha: 1
     targetObject: {fileID: 0}
@@ -12834,7 +12835,7 @@ MonoBehaviour:
     skippable: 1
   - type: 3
     speaker: 
-    message: "\u2193 + \u2190 / \u2192 : \uD68C\uD53C"
+    message: " \uD68C\uD53C : Shift / \uC55E \uB300\uC26C : Q"
     duration: 0
     alpha: 1
     targetObject: {fileID: 0}
@@ -13289,7 +13290,7 @@ MonoBehaviour:
     skippable: 1
   - type: 3
     speaker: 
-    message: "\u2193 + \u2190 / \u2192 : \uD68C\uD53C"
+    message: " \uD68C\uD53C : Shift / \uC55E \uB300\uC26C : Q"
     duration: 0
     alpha: 1
     targetObject: {fileID: 0}
@@ -19814,7 +19815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "E : \uAE30\uC5B5 \uC870\uAC01 \uC7AC\uC0DD"
+  promptText: "F : \uAE30\uC5B5 \uC870\uAC01 \uC7AC\uC0DD"
   onInteractSequence: {fileID: 402285401}
   interactOnce: 0
   promptPanel: {fileID: 0}
@@ -22931,6 +22932,10 @@ PrefabInstance:
       propertyPath: extraAirJumps
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8350363513639191596, guid: 0475a7c081c725b47acdce7f887f9c9a, type: 3}
+      propertyPath: iaidoDashSoundVolume
+      value: 0.366
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24372,7 +24377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "E : \uBCF8\uB2E4"
+  promptText: "F : \uBCF8\uB2E4"
   onInteractSequence: {fileID: 1949338874}
   interactOnce: 0
   promptPanel: {fileID: 0}
@@ -26401,6 +26406,7 @@ MonoBehaviour:
   bossHealthBar: {fileID: 0}
   cameraFollow: {fileID: 519420033}
   playerController: {fileID: 0}
+  pPlayerController: {fileID: 0}
   glitchOverlay: {fileID: 0}
 --- !u!4 &1300302434
 Transform:
@@ -27570,7 +27576,7 @@ MonoBehaviour:
     skippable: 1
   - type: 3
     speaker: 
-    message: "E \uAE38\uAC8C \uB204\uB974\uAE30 : HOME \uD68C\uC218"
+    message: "F \uAE38\uAC8C \uB204\uB974\uAE30 : HOME \uD68C\uC218"
     duration: 0.75
     alpha: 1
     targetObject: {fileID: 0}
@@ -29839,7 +29845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5aca08c85e7c448a7db3a237785997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  promptText: "E : \uC0B4\uD3B4\uBCF8\uB2E4"
+  promptText: "F : \uC0B4\uD3B4\uBCF8\uB2E4"
   onInteractSequence: {fileID: 51789237}
   interactOnce: 0
   promptPanel: {fileID: 0}
@@ -48500,6 +48506,12 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 7d09c59432f30204c86b9e61fc40e18c, type: 2}
   - m_RefCount: 34
     m_Data: {fileID: 11400000, guid: cfc05844d293cc141bdada0334c50443, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 3
     m_Data: {fileID: 1311292938678518200, guid: c9a9733380b1101458b959204d86e7ed, type: 3}
@@ -48551,6 +48563,12 @@ Tilemap:
     m_Data: {fileID: 3472386878078561809, guid: f8c4051220aa50c4bbeae16bf3fa78c6, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 470847719800923021, guid: 868f22b3dbc543d49890def7843e5ead, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 554
     m_Data:
@@ -51477,7 +51495,7 @@ MonoBehaviour:
     skippable: 1
   - type: 3
     speaker: 
-    message: "E : \uCE69 \uC811\uC18D"
+    message: "F : \uCE69 \uC811\uC18D"
     duration: 1.2
     alpha: 1
     targetObject: {fileID: 0}
@@ -58377,7 +58395,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5114038986988484339, guid: 968c3bfd21d880a4d9e1022ec1094512, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -2
+      value: -1.999939
       objectReference: {fileID: 0}
     - target: {fileID: 5114038986988484339, guid: 968c3bfd21d880a4d9e1022ec1094512, type: 3}
       propertyPath: m_AnchoredPosition.y
