@@ -2493,6 +2493,8 @@ MonoBehaviour:
   requiredTag: Player
   beforeBattleSequence: {fileID: 1781378594}
   waitForBeforeBattleSequence: 1
+  respawnPoint: {fileID: 2053830401}
+  updateRespawnOnEnter: 1
 --- !u!61 &132791345
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -14,6 +14,10 @@ public class BossBattleEntryTrigger : MonoBehaviour
     [SerializeField] private SceneEventSequence beforeBattleSequence;
     [SerializeField] private bool waitForBeforeBattleSequence = true;
 
+    [Header("Respawn")]
+    [SerializeField] private Transform respawnPoint;
+    [SerializeField] private bool updateRespawnOnEnter = true;
+
     private bool _hasTriggered;
     private bool _isEntering;
     private Collider2D _collider;
@@ -37,6 +41,7 @@ public class BossBattleEntryTrigger : MonoBehaviour
         _collider.isTrigger = true;
         arena ??= GetComponentInParent<BossBattleArena>();
         arena ??= FindFirstObjectByType<BossBattleArena>();
+        respawnPoint ??= FindDeepChild(transform.root, "스폰_보스방");
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -63,12 +68,13 @@ public class BossBattleEntryTrigger : MonoBehaviour
         }
 
         bool hasRequiredTag = string.IsNullOrWhiteSpace(requiredTag) || other.CompareTag(requiredTag);
-        bool hasPlayerInteraction = other.GetComponentInParent<PlayerInteraction>() != null;
-        if (!hasRequiredTag && !hasPlayerInteraction)
+        PlayerInteraction player = other.GetComponentInParent<PlayerInteraction>();
+        if (!hasRequiredTag && player == null)
         {
             return;
         }
 
+        ApplyRespawnPoint(player);
         _hasTriggered = true;
         beforeBattleSequence ??= BossStoryRuntimeSequenceFactory.EnsureEntrySequence(transform);
         StartCoroutine(EnterBattleRoutine());
@@ -94,6 +100,35 @@ public class BossBattleEntryTrigger : MonoBehaviour
 
         arena.EnterBattle();
         _isEntering = false;
+    }
+
+    private void ApplyRespawnPoint(PlayerInteraction player)
+    {
+        if (!updateRespawnOnEnter || player == null || respawnPoint == null)
+        {
+            return;
+        }
+
+        player.SetSpawnPosition(respawnPoint.position);
+    }
+
+    private static Transform FindDeepChild(Transform root, string childName)
+    {
+        if (root == null || string.IsNullOrWhiteSpace(childName))
+        {
+            return null;
+        }
+
+        Transform[] children = root.GetComponentsInChildren<Transform>(true);
+        for (int i = 0; i < children.Length; i++)
+        {
+            if (children[i].name == childName)
+            {
+                return children[i];
+            }
+        }
+
+        return null;
     }
 
     private void EnsureTutorialMarker()

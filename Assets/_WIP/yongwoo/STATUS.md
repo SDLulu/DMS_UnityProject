@@ -113,6 +113,7 @@
 - 2026-05-25 Git 반영: `origin/main`/`origin/GWANGMO_Ver3`의 광모 플레이어·사운드 변경 3커밋을 `yongwoo`에 병합. `BossBattleArena`는 보스전 종료 시 카메라락 해제 로직과 광모 `P_PlayerController` 아레나 클램프 지원이 함께 반영됨. `safe_refresh --compile true`, Unity 콘솔 error 없음
 - 2026-05-25 광모 플레이어 통합: 최신 `Yongwoo_Stage`는 유지하고 active Player만 `GWANGMO/Art/Player/Prefab/Player_ver02` 기반으로 교체. `SceneEventSequence` 28개는 `P_PlayerController`/새 `PlayerInteraction`/새 `PlayerSlowMotion` 참조로 재연결, 기존 active `SimplePlayerController` Player 제거. 안내 로그는 F 상호작용, 발도술 E, 회피 Shift/앞대쉬 Q 기준으로 반영
 - 2026-05-25 광모 플레이어 레이어 차이 수정: 광모 씬은 `Player_ver02/Hitboxes`와 `WallCheck_Left/Right`가 `Default`인데, Yongwoo 씬 통합본은 Player 하위 전체가 `Player` 레이어로 저장되어 보스 피격/벽 체크가 광모 씬과 달라질 수 있었음. `Hitboxes`/`Attack1Hitbox`/`DashAttackHitbox`/`WallCheck_Left`/`WallCheck_Right`를 `Default`, 루트와 `GroundCheck`는 `Player`로 맞춤. `safe_refresh --compile true`, Unity 콘솔 error 없음, `dotnet build` 오류 0개
+- 2026-05-25 구간별 사망 리스폰 보강: `DebugTeleportHotkeys`는 키 1~4 텔레포트 후 해당 위치를 `PlayerInteraction` 스폰으로 저장. `BossBattleEntryTrigger`는 보스전 입장 시 `스폰_보스방`을 사망 리스폰 지점으로 저장하도록 `respawnPoint`를 연결. 기존 `TeleportPlayer` step과 `DeathZone`은 각 텔포/낙사 구간 스폰 갱신을 계속 담당
 
 ## 시간 제어 3층 구조 (중요)
 

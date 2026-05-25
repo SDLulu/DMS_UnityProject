@@ -68,13 +68,8 @@ public class DebugTeleportHotkeys : MonoBehaviour
         }
 
         Vector3 dest = target.position;
-        var rb = player.GetComponent<Rigidbody2D>();
-        if (rb != null)
-        {
-            rb.position = dest;
-            rb.linearVelocity = Vector2.zero;
-        }
-        player.transform.position = dest;
+        player.MoveToPosition(dest);
+        player.SetSpawnPosition(dest);
 
         if (logTeleport)
         {
