@@ -522,6 +522,8 @@ MonoBehaviour:
   frontDashAnimationName: Front_Dash
   backDashAnimationName: Back_Dash
   iaidoDashAnimationName: Dash_Attack
+  iaidoDashSound: {fileID: 8300000, guid: e287ea4533a771f4cb0c12ff64992955, type: 3}
+  iaidoDashSoundVolume: 1
   debugGroundCheck: 0
   debugWallCheck: 0
 --- !u!114 &1234745578814746631

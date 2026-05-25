@@ -35,6 +35,7 @@ public class BossBattleArena : MonoBehaviour
     [Header("References")]
     [SerializeField] private SimpleCameraFollow cameraFollow;
     [SerializeField] private SimplePlayerController playerController;
+    [SerializeField] private P_PlayerController pPlayerController;
     [SerializeField] private ScreenGlitchOverlay glitchOverlay;
 
     private bool _isActive;
@@ -282,14 +283,20 @@ public class BossBattleArena : MonoBehaviour
     private void ClampPlayerToCameraBounds()
     {
         playerController ??= FindFirstObjectByType<SimplePlayerController>();
-        if (playerController == null)
+        pPlayerController ??= FindFirstObjectByType<P_PlayerController>();
+
+        Transform playerTransform = playerController != null
+            ? playerController.transform
+            : pPlayerController != null
+                ? pPlayerController.transform
+                : null;
+        if (playerTransform == null)
         {
             return;
         }
 
         Bounds bounds = _cameraWorldBounds;
-        Transform playerTransform = playerController.transform;
-        Rigidbody2D body = playerController.GetComponent<Rigidbody2D>();
+        Rigidbody2D body = playerTransform.GetComponent<Rigidbody2D>();
 
         Vector3 pos = playerTransform.position;
         pos.x = Mathf.Clamp(pos.x, bounds.min.x, bounds.max.x);
