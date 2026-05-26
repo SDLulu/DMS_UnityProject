@@ -1,6 +1,15 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+public enum YongwooBgmId
+{
+    None,
+    HomeAndPlaza,
+    AccessArea,
+    BossBattle
+}
 
 public enum YongwooSfxId
 {
@@ -50,9 +59,11 @@ public enum YongwooSfxId
 [DisallowMultipleComponent]
 public sealed class YongwooAudioManager : MonoBehaviour
 {
-    private const string ResourceRoot = "Yongwoo/SFX/";
+    private const string SfxResourceRoot = "Yongwoo/SFX/";
+    private const string BgmResourceRoot = "Yongwoo/BGM/";
     private const int InitialSourceCount = 8;
     private const float DefaultVolume = 0.75f;
+    private const float DefaultBgmFadeDuration = 0.75f;
 
     private static readonly Dictionary<YongwooSfxId, string> ResourceNames = new()
     {
@@ -99,14 +110,27 @@ public sealed class YongwooAudioManager : MonoBehaviour
         { YongwooSfxId.BossPhaseShift, "보스_페이즈전환" },
     };
 
+    private static readonly Dictionary<YongwooBgmId, string> BgmResourceNames = new()
+    {
+        { YongwooBgmId.HomeAndPlaza, "집과광장" },
+        { YongwooBgmId.AccessArea, "접속구역" },
+        { YongwooBgmId.BossBattle, "보스전" },
+    };
+
     private static YongwooAudioManager _instance;
 
     [Header("Runtime Mix")]
     [SerializeField, Range(0f, 1f)] private float masterVolume = 1f;
+    [SerializeField, Range(0f, 1f)] private float bgmVolume = 0.5f;
     [SerializeField, Min(1)] private int sourceCount = InitialSourceCount;
 
     private readonly Dictionary<YongwooSfxId, AudioClip> _clipCache = new();
+    private readonly Dictionary<YongwooBgmId, AudioClip> _bgmClipCache = new();
     private readonly List<AudioSource> _sources = new();
+    private AudioSource _bgmSource;
+    private Coroutine _bgmRoutine;
+    private YongwooBgmId _currentBgm = YongwooBgmId.None;
+    private int _bgmSuspendCount;
     private int _nextSourceIndex;
 
     public static void Play(YongwooSfxId id, float volume = DefaultVolume, float pitchJitter = 0f)
@@ -123,6 +147,26 @@ public sealed class YongwooAudioManager : MonoBehaviour
         }
 
         AudioSource.PlayClipAtPoint(clip, position, Mathf.Clamp01(volume) * Instance.masterVolume);
+    }
+
+    public static void PlayBgm(YongwooBgmId id, float fadeDuration = DefaultBgmFadeDuration)
+    {
+        Instance.PlayBgmInternal(id, fadeDuration);
+    }
+
+    public static void StopBgm(float fadeDuration = DefaultBgmFadeDuration)
+    {
+        Instance.PlayBgmInternal(YongwooBgmId.None, fadeDuration);
+    }
+
+    public static void SuspendBgmForVideo(float fadeDuration = 0.25f)
+    {
+        Instance.SuspendBgmInternal(fadeDuration);
+    }
+
+    public static void ResumeBgmAfterVideo(float fadeDuration = DefaultBgmFadeDuration)
+    {
+        Instance.ResumeBgmInternal(fadeDuration);
     }
 
     private static YongwooAudioManager Instance
@@ -159,6 +203,7 @@ public sealed class YongwooAudioManager : MonoBehaviour
         _instance = this;
         DontDestroyOnLoad(gameObject);
         EnsureSources();
+        EnsureBgmSource();
     }
 
     private void PlayInternal(YongwooSfxId id, float volume, float pitchJitter)
@@ -186,9 +231,166 @@ public sealed class YongwooAudioManager : MonoBehaviour
             return null;
         }
 
-        AudioClip clip = Resources.Load<AudioClip>(ResourceRoot + resourceName);
+        AudioClip clip = Resources.Load<AudioClip>(SfxResourceRoot + resourceName);
         _clipCache[id] = clip;
         return clip;
+    }
+
+    private void PlayBgmInternal(YongwooBgmId id, float fadeDuration)
+    {
+        EnsureBgmSource();
+
+        if (_currentBgm == id && id != YongwooBgmId.None)
+        {
+            if (_bgmSuspendCount == 0 && _bgmSource.clip != null && !_bgmSource.isPlaying)
+            {
+                _bgmSource.Play();
+            }
+
+            StartBgmRoutine(FadeBgmVolumeRoutine(_bgmSuspendCount > 0 ? 0f : TargetBgmVolume(), fadeDuration));
+            return;
+        }
+
+        AudioClip clip = GetBgmClip(id);
+        _currentBgm = id;
+        StartBgmRoutine(SwitchBgmRoutine(clip, fadeDuration));
+    }
+
+    private AudioClip GetBgmClip(YongwooBgmId id)
+    {
+        if (id == YongwooBgmId.None)
+        {
+            return null;
+        }
+
+        if (_bgmClipCache.TryGetValue(id, out AudioClip cached))
+        {
+            return cached;
+        }
+
+        if (!BgmResourceNames.TryGetValue(id, out string resourceName))
+        {
+            return null;
+        }
+
+        AudioClip clip = Resources.Load<AudioClip>(BgmResourceRoot + resourceName);
+        _bgmClipCache[id] = clip;
+        return clip;
+    }
+
+    private IEnumerator SwitchBgmRoutine(AudioClip nextClip, float fadeDuration)
+    {
+        yield return FadeBgmVolumeRoutine(0f, fadeDuration);
+
+        if (nextClip == null)
+        {
+            _bgmSource.Stop();
+            _bgmSource.clip = null;
+            yield break;
+        }
+
+        _bgmSource.clip = nextClip;
+        _bgmSource.loop = true;
+        _bgmSource.volume = 0f;
+
+        if (_bgmSuspendCount > 0)
+        {
+            _bgmSource.Pause();
+            yield break;
+        }
+
+        _bgmSource.Play();
+        yield return FadeBgmVolumeRoutine(TargetBgmVolume(), fadeDuration);
+    }
+
+    private void SuspendBgmInternal(float fadeDuration)
+    {
+        _bgmSuspendCount++;
+        if (_bgmSuspendCount > 1)
+        {
+            return;
+        }
+
+        EnsureBgmSource();
+        StartBgmRoutine(SuspendBgmRoutine(fadeDuration));
+    }
+
+    private IEnumerator SuspendBgmRoutine(float fadeDuration)
+    {
+        yield return FadeBgmVolumeRoutine(0f, fadeDuration);
+        if (_bgmSource != null && _bgmSource.isPlaying)
+        {
+            _bgmSource.Pause();
+        }
+    }
+
+    private void ResumeBgmInternal(float fadeDuration)
+    {
+        if (_bgmSuspendCount <= 0)
+        {
+            return;
+        }
+
+        _bgmSuspendCount--;
+        if (_bgmSuspendCount > 0)
+        {
+            return;
+        }
+
+        EnsureBgmSource();
+        if (_currentBgm == YongwooBgmId.None || _bgmSource.clip == null)
+        {
+            return;
+        }
+
+        if (!_bgmSource.isPlaying)
+        {
+            _bgmSource.UnPause();
+            if (!_bgmSource.isPlaying)
+            {
+                _bgmSource.Play();
+            }
+        }
+
+        StartBgmRoutine(FadeBgmVolumeRoutine(TargetBgmVolume(), fadeDuration));
+    }
+
+    private IEnumerator FadeBgmVolumeRoutine(float targetVolume, float duration)
+    {
+        EnsureBgmSource();
+
+        float startVolume = _bgmSource.volume;
+        float timer = 0f;
+        float safeDuration = Mathf.Max(0f, duration);
+        if (safeDuration <= 0f)
+        {
+            _bgmSource.volume = targetVolume;
+            yield break;
+        }
+
+        while (timer < safeDuration)
+        {
+            timer += Time.unscaledDeltaTime;
+            _bgmSource.volume = Mathf.Lerp(startVolume, targetVolume, Mathf.Clamp01(timer / safeDuration));
+            yield return null;
+        }
+
+        _bgmSource.volume = targetVolume;
+    }
+
+    private void StartBgmRoutine(IEnumerator routine)
+    {
+        if (_bgmRoutine != null)
+        {
+            StopCoroutine(_bgmRoutine);
+        }
+
+        _bgmRoutine = StartCoroutine(routine);
+    }
+
+    private float TargetBgmVolume()
+    {
+        return Mathf.Clamp01(masterVolume * bgmVolume);
     }
 
     private AudioSource NextSource()
@@ -213,5 +415,21 @@ public sealed class YongwooAudioManager : MonoBehaviour
             source.spatialBlend = 0f;
             _sources.Add(source);
         }
+    }
+
+    private void EnsureBgmSource()
+    {
+        if (_bgmSource != null)
+        {
+            return;
+        }
+
+        GameObject sourceObject = new GameObject("BGM");
+        sourceObject.transform.SetParent(transform, false);
+        _bgmSource = sourceObject.AddComponent<AudioSource>();
+        _bgmSource.playOnAwake = false;
+        _bgmSource.loop = true;
+        _bgmSource.spatialBlend = 0f;
+        _bgmSource.volume = 0f;
     }
 }

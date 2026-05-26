@@ -180,6 +180,11 @@ public class CutsceneVideoPanel : MonoBehaviour
 
     private void MarkPlaying()
     {
+        if (!_isRegisteredAsPlaying)
+        {
+            YongwooAudioManager.SuspendBgmForVideo();
+        }
+
         _isRegisteredAsPlaying = true;
         IsAnyPlaying = true;
     }
@@ -193,6 +198,7 @@ public class CutsceneVideoPanel : MonoBehaviour
 
         _isRegisteredAsPlaying = false;
         IsAnyPlaying = false;
+        YongwooAudioManager.ResumeBgmAfterVideo();
     }
 
     private void GetEffectiveAudioSettings(out bool muted, out float volume)

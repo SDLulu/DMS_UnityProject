@@ -115,6 +115,7 @@
 - 2026-05-25 광모 플레이어 레이어 차이 수정: 광모 씬은 `Player_ver02/Hitboxes`와 `WallCheck_Left/Right`가 `Default`인데, Yongwoo 씬 통합본은 Player 하위 전체가 `Player` 레이어로 저장되어 보스 피격/벽 체크가 광모 씬과 달라질 수 있었음. `Hitboxes`/`Attack1Hitbox`/`DashAttackHitbox`/`WallCheck_Left`/`WallCheck_Right`를 `Default`, 루트와 `GroundCheck`는 `Player`로 맞춤. `safe_refresh --compile true`, Unity 콘솔 error 없음, `dotnet build` 오류 0개
 - 2026-05-25 구간별 사망 리스폰 보강: `DebugTeleportHotkeys`는 키 1~4 텔레포트 후 해당 위치를 `PlayerInteraction` 스폰으로 저장. `BossBattleEntryTrigger`는 보스전 입장 시 `스폰_보스방`을 사망 리스폰 지점으로 저장하도록 `respawnPoint`를 연결. 기존 `TeleportPlayer` step과 `DeathZone`은 각 텔포/낙사 구간 스폰 갱신을 계속 담당
 - 2026-05-25 보스 아군 오폭 방지: 보스 탄/장판/레이저/대시베기/텔레포트 내려찍기/안전지대 판정이 `IDamageReceiver` 전체를 찾던 구조라 분신·본체의 `BossInteraction`도 맞을 수 있었음. 보스 공격 판정의 대상 탐색을 `PlayerInteraction`으로 제한해 보스끼리 피해를 주지 않도록 수정. `dotnet build` 오류 0개, `safe_refresh --compile true`, Unity 콘솔 error 없음
+- 2026-05-26 구간별 BGM 1차 구현: `Resources/Yongwoo/BGM`에 `집과광장`, `접속구역`, `보스전` MP3를 추가. `YongwooAudioManager`가 루프 BGM/페이드/영상 중 일시정지·재개를 관리하고, `YongwooBgmAreaController`가 `Yongwoo_Stage`에서 플레이어 위치와 `BossBattleArena.IsActive` 기준으로 집·광장/접속구역/보스전 BGM을 자동 전환. `CutsceneVideoPanel` 재생 중에는 BGM을 자동으로 멈추고 종료 후 현재 구간 BGM을 재개
 
 ## 시간 제어 3층 구조 (중요)
 
