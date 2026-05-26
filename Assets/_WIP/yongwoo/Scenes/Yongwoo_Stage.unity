@@ -1659,7 +1659,7 @@ MonoBehaviour:
     skippable: 1
   - type: 3
     speaker: 
-    message: "A / D : \uC774\uB3D9"
+    message: "A / D : \uC774\uB3D9 CTRL: \uAC77\uAE30 / \uB6F0\uAE30"
     duration: 0
     alpha: 1
     targetObject: {fileID: 0}
