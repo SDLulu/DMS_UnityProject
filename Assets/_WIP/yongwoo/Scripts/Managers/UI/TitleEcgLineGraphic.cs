@@ -294,9 +294,8 @@ public class TitleEcgLineGraphic : MaskableGraphic
         SetVerticesDirty();
     }
 
-    protected override void OnValidate()
+    private void OnValidate()
     {
-        base.OnValidate();
         SetVerticesDirty();
     }
 
